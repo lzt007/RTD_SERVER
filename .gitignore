@@ -1,0 +1,25 @@
+# Local recovered originals, extracted assets, caches, generated images
+/resources/
+/data/
+/backups/
+/build/
+/dist/
+/logs/
+/.venv/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.apk
+*.aab
+*.dll
+*.exe
+*.jar
+*.jks
+*.keystore
+*.png
+*.jpg
+*.jpeg
+*.unity3d

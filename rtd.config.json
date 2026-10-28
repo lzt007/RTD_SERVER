@@ -1,0 +1,29 @@
+{
+  "api": {
+    "host": "127.0.0.1",
+    "port": 18766
+  },
+  "resources": {
+    "host": "127.0.0.1",
+    "port": 18765,
+    "public_base_url": "http://127.0.0.1:18765"
+  },
+  "paths": {
+    "database": "data/rtd.sqlite3",
+    "request_log": "logs/requests.jsonl",
+    "backups": "backups",
+    "master_data": "resources/master-data",
+    "level_data": "resources/level-data",
+    "bundles": "resources/bundles",
+    "cache": "resources/cache/Shared",
+    "startup": "resources/startup",
+    "unit_icons": "resources/unit-icons",
+    "icon_sources": "resources/icon-sources",
+    "gacha_pools": "config/local-gacha-pools.json",
+    "visual_policy": "config/enemy-visual-placeholders.json"
+  },
+  "features": {
+    "visual_recovery": true,
+    "experimental_content": false
+  }
+}

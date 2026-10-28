@@ -1,0 +1,19 @@
+# 挑战奖励与礼物
+
+原客户端实际端点为`post_quest_challenge_reward`、`get_presents`和单数`open_present`。前者真实构造器使用Dictionary<string,string>，发送reward_id字符串（虽存在未使用的整数DTO）；支持规范ASCII正整数字符串及整数，拒绝bool/符号/空白/前导零。响应result只有reward_id/present_type/present_param_0/present_param_1；成功将奖励送入礼物箱并设置reward_state，玩家余额和单位此时不增加。挑战分数由master30同category配置的非零挑战槽与已保存state1的唯一quest/challenge对交集计数，不接受请求自报数量。
+
+PresentData严格字段为serial_number/send_user_id/send_user_name/message/present_type/present_param_0/present_param_1/date/open_limit。serial按账号持久高水位单调分配；生成的挑战礼物永久保存（open_limit0，本地政策）。原PresentPanel对非零open_limit固定显示date加7天；本实现到期边界拒绝领取、get隐藏，保留原记录。
+
+`open_present`只接收1–100个唯一正整数serial_number_list；所有礼物必须属于当前账号、有效且未领取。全批校验后同事务扣除礼物、增加收益/单位、更新高水位/图鉴并保存回执。未知/他人/重复/过期/不支持类型/容量或货币不足整批失败，不产生部分领取。
+
+支持1金币（上限9999999）、2好友点（10000）、3免费水晶（总999）、4单位（1至原lv_max，原累计等级经验）。type5付费来源不明，明确8197且不消耗礼物。只有领取单位时检查max_unit，当前单位超容量不阻止金币礼物。水晶只增加free_paid_point和total_paid_point，不伪造paid_point。
+
+响应UserPT仅serial_number_list/user/get_units，user严格ComPlayerDataPT，单位严格MasterDataRTD.UnitData（exp且去leader）。原ClientData.AddUnits不检查重复实例：本地回执正常retry0重放返回当前user和空get_units；网络retry>0仅当原获单位仍拥有且与快照完全相同时重发该单位。服务端始终只发一次；后续售出/进化/强化后不重发旧单位。此约定依赖原客户端网络重试在消费响应之前；任意外部伪造旧retry仍可能造成原客户端显示重复，重登从服务端校正，不声称客户端抗重放完善。
+
+原DLL SHA c83aea19ee65ae973815daf6a04e430d9e87b8426b6180c1fe507e4260763ecc；REA parent ev_7669188b3fbd88825d699c35ab6f4a20396d8a035e3bdf701f4a10cb012097f2和ev_b7f095b21316885ecbe67484e5308f9e74033fba68223ac22e3b71b4b11f8a1a。11+8选择类型全部匹配，metadata完整；#US分别1/2处terminal flag异常，不宣称字符串全覆盖。
+
+当前9项新增真实API测试通过，含两API并发领取/发奖、写后故障回滚、跨账号、过期边界、整批cap、正常/网络重试、重排/重启及后续单位变化。全57服务端回归通过49.070s。
+
+实机隔离challenge-presents-20261025：11000/category100已有3枚真实奖牌，20:20:29领奖10、20:21:29领奖11，原版目标达成对话框与礼物箱显示15012/15013各lv1，serial1/2。送入礼物箱时金币和3单位不变。两次原确认框成功open_present，新增实例1030/15012/1/0、1031/15013/1/0，保持单调高水位，69575金币/5单位/0礼物/2回执；after-challenge-awards.sqlite3和after-two-claims.sqlite3留证。
+
+客户端/API双重启及独立审查通过；重启后原单位行和两本书lv1显示正确，完整存档仅unit_collection_flags[21]6→14（原15013的g_id171发现位）变化。after-presents-restart.sqlite3和restart-verified.json留证，状态SHA d095125b5b1ad97f7a2712f84a334687395b791eb762f5d3094f77edd4f0578b。独立9项测试5.676s通过，补查跨类别不计分、恰好达到货币上限及已移除单位重试不复活均通过。T22登录历史日历、连续属性奖励及post_bonus尚未完成。

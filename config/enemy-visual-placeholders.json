@@ -1,0 +1,3311 @@
+{
+  "policy": "fixed-four-boss-placeholder-v2",
+  "placeholder": {
+    "model": "ms02_four_un_01_zako",
+    "texture": "na"
+  },
+  "source_enemy_master_hash": "700614136",
+  "substitutions": [
+    {
+      "enemy_id": 10010,
+      "before": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11010,
+        11050,
+        11052,
+        11103
+      ]
+    },
+    {
+      "enemy_id": 10011,
+      "before": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11020,
+        11050,
+        11101
+      ]
+    },
+    {
+      "enemy_id": 10012,
+      "before": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11030,
+        11052,
+        11102,
+        13207
+      ]
+    },
+    {
+      "enemy_id": 10013,
+      "before": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11040,
+        11100
+      ]
+    },
+    {
+      "enemy_id": 10020,
+      "before": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11103,
+        11110,
+        11130,
+        20112,
+        20132,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10021,
+      "before": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11101,
+        11120,
+        11130,
+        20122,
+        20132,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10022,
+      "before": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11102,
+        11110,
+        11120,
+        11130,
+        20112,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10023,
+      "before": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11100,
+        11110,
+        11120,
+        20122,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10030,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11140,
+        20112,
+        20132,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10031,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11140,
+        20122,
+        20132,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10032,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20112,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10033,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11140,
+        20122,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10037,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 10038,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 10110,
+      "before": {
+        "model": "ms01_squ_lv2",
+        "texture": "ms01_squ_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11011,
+        11053,
+        11103,
+        11141
+      ]
+    },
+    {
+      "enemy_id": 10111,
+      "before": {
+        "model": "ms01_squ_lv2",
+        "texture": "ms01_squ_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11021,
+        11053,
+        11101,
+        11141
+      ]
+    },
+    {
+      "enemy_id": 10112,
+      "before": {
+        "model": "ms01_squ_lv2",
+        "texture": "ms01_squ_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11031,
+        11050,
+        11102,
+        13207
+      ]
+    },
+    {
+      "enemy_id": 10113,
+      "before": {
+        "model": "ms01_squ_lv2",
+        "texture": "ms01_squ_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11041,
+        11050,
+        11100,
+        11141
+      ]
+    },
+    {
+      "enemy_id": 10120,
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11103,
+        11110,
+        11112,
+        11131,
+        11140
+      ]
+    },
+    {
+      "enemy_id": 10121,
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11101,
+        11120,
+        11122,
+        11131,
+        11140,
+        20102,
+        20122
+      ]
+    },
+    {
+      "enemy_id": 10122,
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11102,
+        11110,
+        11112,
+        11120,
+        11122,
+        11131,
+        20142,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10123,
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11100,
+        11110,
+        11112,
+        11120,
+        11122,
+        11140,
+        20102,
+        20122,
+        20142,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10131,
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20102,
+        20122
+      ]
+    },
+    {
+      "enemy_id": 10132,
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20142,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10133,
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11100,
+        20102,
+        20122,
+        20142,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 10200,
+      "before": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11012,
+        11051,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10201,
+      "before": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11022,
+        11051,
+        11052,
+        20101,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10202,
+      "before": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11032,
+        11051,
+        11053,
+        13207,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10203,
+      "before": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11042,
+        11051,
+        11052,
+        11053,
+        20101,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10210,
+      "before": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11012,
+        11051,
+        11103,
+        11111,
+        11113,
+        11131,
+        11142,
+        20131,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10211,
+      "before": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11022,
+        11051,
+        11052,
+        11101,
+        11121,
+        11123,
+        11131,
+        11142,
+        20101,
+        20131,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10212,
+      "before": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11032,
+        11051,
+        11053,
+        11102,
+        11111,
+        11113,
+        11121,
+        11123,
+        11131,
+        13208,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10213,
+      "before": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11042,
+        11051,
+        11052,
+        11053,
+        11100,
+        11111,
+        11113,
+        11121,
+        11123,
+        11142,
+        20101,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 10220,
+      "before": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11130,
+        11140,
+        11142,
+        20112
+      ]
+    },
+    {
+      "enemy_id": 10221,
+      "before": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11130,
+        11140,
+        11142
+      ]
+    },
+    {
+      "enemy_id": 10222,
+      "before": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11130,
+        13208,
+        20112,
+        20142
+      ]
+    },
+    {
+      "enemy_id": 10223,
+      "before": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11140,
+        11142,
+        20142
+      ]
+    },
+    {
+      "enemy_id": 10230,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20112
+      ]
+    },
+    {
+      "enemy_id": 10231,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11101
+      ]
+    },
+    {
+      "enemy_id": 10232,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20112,
+        20142
+      ]
+    },
+    {
+      "enemy_id": 10233,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20142
+      ]
+    },
+    {
+      "enemy_id": 10300,
+      "before": {
+        "model": "ms01_dra_lv1",
+        "texture": "ms01_dra_lv1_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11110,
+        11111,
+        11112,
+        11113,
+        11130,
+        11132,
+        11133,
+        11141,
+        11142,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10301,
+      "before": {
+        "model": "ms01_dra_lv1",
+        "texture": "ms01_dra_lv1_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11120,
+        11121,
+        11123,
+        11130,
+        11132,
+        11133,
+        11141,
+        11142,
+        20101,
+        20120,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10302,
+      "before": {
+        "model": "ms01_dra_lv1",
+        "texture": "ms01_dra_lv1_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11110,
+        11111,
+        11112,
+        11113,
+        11120,
+        11121,
+        11123,
+        11130,
+        11133,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10303,
+      "before": {
+        "model": "ms01_dra_lv1",
+        "texture": "ms01_dra_lv1_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11110,
+        11111,
+        11112,
+        11113,
+        11120,
+        11121,
+        11123,
+        11141,
+        11142,
+        20101,
+        20120,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10310,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11133,
+        11143,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10311,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11133,
+        11143,
+        20101,
+        20120,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10312,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11132,
+        11133,
+        13208,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10313,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11143,
+        20101,
+        20120,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10322,
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11102,
+        13208
+      ]
+    },
+    {
+      "enemy_id": 10323,
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20101
+      ]
+    },
+    {
+      "enemy_id": 10327,
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 10328,
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 10400,
+      "before": {
+        "model": "ms01_bear_lv1",
+        "texture": "ms01_bear_lv1_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11112,
+        11113,
+        11132,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10401,
+      "before": {
+        "model": "ms01_bear_lv1",
+        "texture": "ms01_bear_lv1_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11122,
+        11123,
+        11132,
+        20120,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10402,
+      "before": {
+        "model": "ms01_bear_lv1",
+        "texture": "ms01_bear_lv1_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11112,
+        11113,
+        11122,
+        11123,
+        11132,
+        13206,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10403,
+      "before": {
+        "model": "ms01_bear_lv1",
+        "texture": "ms01_bear_lv1_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11112,
+        11113,
+        11122,
+        11123,
+        20120,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10410,
+      "before": {
+        "model": "ms01_bear_lv2",
+        "texture": "ms01_bear_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11133,
+        11143,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10411,
+      "before": {
+        "model": "ms01_bear_lv2",
+        "texture": "ms01_bear_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11133,
+        11143,
+        20120,
+        20130
+      ]
+    },
+    {
+      "enemy_id": 10412,
+      "before": {
+        "model": "ms01_bear_lv2",
+        "texture": "ms01_bear_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11133,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10413,
+      "before": {
+        "model": "ms01_bear_lv2",
+        "texture": "ms01_bear_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11143,
+        20120,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 10430,
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20132
+      ]
+    },
+    {
+      "enemy_id": 10431,
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20102,
+        20132
+      ]
+    },
+    {
+      "enemy_id": 10433,
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20102
+      ]
+    },
+    {
+      "enemy_id": 10500,
+      "before": {
+        "model": "ms01_sco_lv1",
+        "texture": "ms01_sco_lv1_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11111
+      ]
+    },
+    {
+      "enemy_id": 10501,
+      "before": {
+        "model": "ms01_sco_lv1",
+        "texture": "ms01_sco_lv1_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11121,
+        11122
+      ]
+    },
+    {
+      "enemy_id": 10502,
+      "before": {
+        "model": "ms01_sco_lv1",
+        "texture": "ms01_sco_lv1_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11111,
+        11121,
+        11122
+      ]
+    },
+    {
+      "enemy_id": 10503,
+      "before": {
+        "model": "ms01_sco_lv1",
+        "texture": "ms01_sco_lv1_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11111,
+        11121,
+        11122,
+        20000
+      ]
+    },
+    {
+      "enemy_id": 10510,
+      "before": {
+        "model": "ms01_sco_lv2",
+        "texture": "ms01_sco_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11131,
+        11132,
+        20131
+      ]
+    },
+    {
+      "enemy_id": 10511,
+      "before": {
+        "model": "ms01_sco_lv2",
+        "texture": "ms01_sco_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11131,
+        11132,
+        20131
+      ]
+    },
+    {
+      "enemy_id": 10512,
+      "before": {
+        "model": "ms01_sco_lv2",
+        "texture": "ms01_sco_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11131,
+        11132
+      ]
+    },
+    {
+      "enemy_id": 10513,
+      "before": {
+        "model": "ms01_sco_lv2",
+        "texture": "ms01_sco_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20000
+      ]
+    },
+    {
+      "enemy_id": 10520,
+      "before": {
+        "model": "ms01_sco_lv3",
+        "texture": "ms01_sco_lv3_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11141,
+        11143,
+        20131
+      ]
+    },
+    {
+      "enemy_id": 10521,
+      "before": {
+        "model": "ms01_sco_lv3",
+        "texture": "ms01_sco_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11141,
+        11143
+      ]
+    },
+    {
+      "enemy_id": 10522,
+      "before": {
+        "model": "ms01_sco_lv3",
+        "texture": "ms01_sco_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10523,
+      "before": {
+        "model": "ms01_sco_lv3",
+        "texture": "ms01_sco_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11141,
+        11143,
+        20000,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10532,
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20152
+      ]
+    },
+    {
+      "enemy_id": 10533,
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20000,
+        20152
+      ]
+    },
+    {
+      "enemy_id": 11002,
+      "before": {
+        "model": "ms02_dra_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        13207
+      ]
+    },
+    {
+      "enemy_id": 11010,
+      "before": {
+        "model": "ms02_four_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11111
+      ]
+    },
+    {
+      "enemy_id": 11011,
+      "before": {
+        "model": "ms02_four_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11121
+      ]
+    },
+    {
+      "enemy_id": 11012,
+      "before": {
+        "model": "ms02_four_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11131
+      ]
+    },
+    {
+      "enemy_id": 11013,
+      "before": {
+        "model": "ms02_four_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11141
+      ]
+    },
+    {
+      "enemy_id": 11018,
+      "before": {
+        "model": "ms02_four_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20000
+      ]
+    },
+    {
+      "enemy_id": 11022,
+      "before": {
+        "model": "ms02_four_holy_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        13208
+      ]
+    },
+    {
+      "enemy_id": 12100,
+      "before": {
+        "model": "ms01_sla_lv1_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11012,
+        11022,
+        11032,
+        11042
+      ]
+    },
+    {
+      "enemy_id": 12101,
+      "before": {
+        "model": "ms01_sla_lv2_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11052
+      ]
+    },
+    {
+      "enemy_id": 12102,
+      "before": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11053,
+        11103,
+        20100,
+        20110,
+        20120,
+        20130,
+        20140,
+        20150,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 12103,
+      "before": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20102,
+        20112,
+        20122,
+        20132,
+        20142,
+        20152,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 12104,
+      "before": {
+        "model": "ms01_sla_lv1_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        13206
+      ]
+    },
+    {
+      "enemy_id": 12106,
+      "before": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        13207
+      ]
+    },
+    {
+      "enemy_id": 12201,
+      "before": {
+        "model": "ms01_sla_lv2_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11112,
+        11122,
+        11132,
+        11142
+      ]
+    },
+    {
+      "enemy_id": 12202,
+      "before": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11113,
+        11123,
+        11133,
+        11143,
+        20101,
+        20111,
+        20121,
+        20131,
+        20141,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 12300,
+      "before": {
+        "model": "ms01_bird_lv1_fire",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20133
+      ]
+    },
+    {
+      "enemy_id": 12301,
+      "before": {
+        "model": "ms01_bird_lv1_water",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20133
+      ]
+    },
+    {
+      "enemy_id": 12302,
+      "before": {
+        "model": "ms01_bird_lv1_holy",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20143,
+        20153,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12303,
+      "before": {
+        "model": "ms01_bird_lv1_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20143,
+        20153,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12305,
+      "before": {
+        "model": "ms01_bird_lv2_fire",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20133
+      ]
+    },
+    {
+      "enemy_id": 12306,
+      "before": {
+        "model": "ms01_bird_lv2_water",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20133
+      ]
+    },
+    {
+      "enemy_id": 12307,
+      "before": {
+        "model": "ms01_bird_lv2_holy",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20143,
+        20153,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12308,
+      "before": {
+        "model": "ms01_bird_lv2_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20143,
+        20153,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12310,
+      "before": {
+        "model": "ms01_crab_lv1_fire",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20133,
+        20153
+      ]
+    },
+    {
+      "enemy_id": 12311,
+      "before": {
+        "model": "ms01_crab_lv1_water",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20133,
+        20153
+      ]
+    },
+    {
+      "enemy_id": 12312,
+      "before": {
+        "model": "ms01_crab_lv1_holy",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20143,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12313,
+      "before": {
+        "model": "ms01_crab_lv1_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20143,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12315,
+      "before": {
+        "model": "ms01_crab_lv2_fire",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20133,
+        20153
+      ]
+    },
+    {
+      "enemy_id": 12316,
+      "before": {
+        "model": "ms01_crab_lv2_water",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20133,
+        20153
+      ]
+    },
+    {
+      "enemy_id": 12317,
+      "before": {
+        "model": "ms01_crab_lv2_holy",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113,
+        20143,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 12318,
+      "before": {
+        "model": "ms01_crab_lv2_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103,
+        20123,
+        20143,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 14242,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 14243,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 14442,
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 14443,
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 14538,
+      "before": {
+        "model": "ms01_sco_sh_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20000
+      ]
+    },
+    {
+      "enemy_id": 14550,
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        20141
+      ]
+    },
+    {
+      "enemy_id": 20000,
+      "before": {
+        "model": "ms03_dra_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20112
+      ]
+    },
+    {
+      "enemy_id": 20002,
+      "before": {
+        "model": "ms03_dra_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        13208,
+        20162
+      ]
+    },
+    {
+      "enemy_id": 20003,
+      "before": {
+        "model": "ms03_dra_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20102
+      ]
+    },
+    {
+      "enemy_id": 20010,
+      "before": {
+        "model": "ms03_four_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20132
+      ]
+    },
+    {
+      "enemy_id": 20011,
+      "before": {
+        "model": "ms03_four_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20122
+      ]
+    },
+    {
+      "enemy_id": 20012,
+      "before": {
+        "model": "ms03_four_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20152
+      ]
+    },
+    {
+      "enemy_id": 20122,
+      "before": {
+        "model": "ms03_fly_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20142
+      ]
+    },
+    {
+      "enemy_id": 20126,
+      "before": {
+        "model": "ms03_fly_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20133
+      ]
+    },
+    {
+      "enemy_id": 20128,
+      "before": {
+        "model": "ms03_fly_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20153
+      ]
+    },
+    {
+      "enemy_id": 21010,
+      "before": {
+        "model": "ms02_dra_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20103
+      ]
+    },
+    {
+      "enemy_id": 21011,
+      "before": {
+        "model": "ms02_four_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20143
+      ]
+    },
+    {
+      "enemy_id": 21012,
+      "before": {
+        "model": "ms03_dra_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20113
+      ]
+    },
+    {
+      "enemy_id": 21014,
+      "before": {
+        "model": "ms03_fly_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20163
+      ]
+    },
+    {
+      "enemy_id": 21034,
+      "before": {
+        "model": "ms00_death_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20000
+      ]
+    },
+    {
+      "enemy_id": 31032,
+      "before": {
+        "model": "ms00_death_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20100
+      ]
+    },
+    {
+      "enemy_id": 31033,
+      "before": {
+        "model": "ms00_death_shadow",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20121
+      ]
+    },
+    {
+      "enemy_id": 40001,
+      "before": {
+        "model": "ms01_golem_fire",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20110,
+        20111,
+        20112,
+        20113,
+        20130,
+        20132,
+        20150
+      ]
+    },
+    {
+      "enemy_id": 40002,
+      "before": {
+        "model": "ms01_golem_water",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20120,
+        20121,
+        20122,
+        20123,
+        20131,
+        20133,
+        20151
+      ]
+    },
+    {
+      "enemy_id": 40003,
+      "before": {
+        "model": "ms01_golem_holy",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20140,
+        20142,
+        20152,
+        20160,
+        20162,
+        20163
+      ]
+    },
+    {
+      "enemy_id": 40004,
+      "before": {
+        "model": "ms01_golem_dark",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20100,
+        20102,
+        20103,
+        20141,
+        20143,
+        20153
+      ]
+    },
+    {
+      "enemy_id": 40005,
+      "before": {
+        "model": "ms01_golem_un",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20101,
+        20111,
+        20121,
+        20140,
+        20151,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 41222,
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11001
+      ]
+    },
+    {
+      "enemy_id": 41223,
+      "before": {
+        "model": "ms01_dra_lv1",
+        "texture": "ms01_dra_lv1_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11002
+      ]
+    },
+    {
+      "enemy_id": 41224,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11010
+      ]
+    },
+    {
+      "enemy_id": 41225,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11011
+      ]
+    },
+    {
+      "enemy_id": 41226,
+      "before": {
+        "model": "ms02_four_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11012
+      ]
+    },
+    {
+      "enemy_id": 41227,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11020
+      ]
+    },
+    {
+      "enemy_id": 41228,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11021
+      ]
+    },
+    {
+      "enemy_id": 41229,
+      "before": {
+        "model": "ms02_four_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11022
+      ]
+    },
+    {
+      "enemy_id": 41230,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11030
+      ]
+    },
+    {
+      "enemy_id": 41231,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11031
+      ]
+    },
+    {
+      "enemy_id": 41232,
+      "before": {
+        "model": "ms02_four_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11032
+      ]
+    },
+    {
+      "enemy_id": 41233,
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11040
+      ]
+    },
+    {
+      "enemy_id": 41234,
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11041
+      ]
+    },
+    {
+      "enemy_id": 41235,
+      "before": {
+        "model": "ms02_four_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11042
+      ]
+    },
+    {
+      "enemy_id": 41236,
+      "before": {
+        "model": "ms01_bear_lv2",
+        "texture": "ms01_bear_lv2_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11050
+      ]
+    },
+    {
+      "enemy_id": 41237,
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11051
+      ]
+    },
+    {
+      "enemy_id": 41238,
+      "before": {
+        "model": "ms01_sco_lv3",
+        "texture": "ms01_sco_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model",
+        "texture"
+      ],
+      "quest_ids": [
+        11052
+      ]
+    },
+    {
+      "enemy_id": 41539,
+      "before": {
+        "model": "ms02_dra_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11112
+      ]
+    },
+    {
+      "enemy_id": 41540,
+      "before": {
+        "model": "ms03_dra_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11113
+      ]
+    },
+    {
+      "enemy_id": 41541,
+      "before": {
+        "model": "ms02_dra_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11122
+      ]
+    },
+    {
+      "enemy_id": 41542,
+      "before": {
+        "model": "ms03_dra_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11123
+      ]
+    },
+    {
+      "enemy_id": 41543,
+      "before": {
+        "model": "ms02_dra_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11132
+      ]
+    },
+    {
+      "enemy_id": 41544,
+      "before": {
+        "model": "ms03_dra_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11133
+      ]
+    },
+    {
+      "enemy_id": 41545,
+      "before": {
+        "model": "ms02_dra_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11142
+      ]
+    },
+    {
+      "enemy_id": 41546,
+      "before": {
+        "model": "ms03_dra_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        11143
+      ]
+    },
+    {
+      "enemy_id": 65001,
+      "before": {
+        "model": "ms00_kaidan_iseki",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20000
+      ]
+    },
+    {
+      "enemy_id": 65002,
+      "before": {
+        "model": "ms00_floor_move_l",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20100,
+        20101,
+        20103,
+        20110,
+        20111,
+        20112,
+        20120,
+        20121,
+        20122,
+        20130,
+        20131,
+        20133,
+        20140,
+        20141,
+        20150,
+        20151,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 65003,
+      "before": {
+        "model": "ms00_floor_move_s",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20100,
+        20101,
+        20103,
+        20110,
+        20111,
+        20112,
+        20120,
+        20121,
+        20122,
+        20130,
+        20131,
+        20133,
+        20140,
+        20141,
+        20150,
+        20151,
+        20160,
+        20161
+      ]
+    },
+    {
+      "enemy_id": 65004,
+      "before": {
+        "model": "ms00_floor_move_r",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "missing": [
+        "model"
+      ],
+      "quest_ids": [
+        20100,
+        20101,
+        20103,
+        20110,
+        20111,
+        20112,
+        20120,
+        20121,
+        20122,
+        20130,
+        20131,
+        20133,
+        20140,
+        20141,
+        20150,
+        20151,
+        20160,
+        20161
+      ]
+    }
+  ]
+}

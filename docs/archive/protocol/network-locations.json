@@ -1,0 +1,578 @@
+[
+  {
+    "path": "analysis/decompiled/AssetBundleDefine.cs",
+    "sha256": "9c3ddf5b4ecd556f176faf9cdd6129ffe3526e01cee279ed2de857d65db2f424",
+    "locations": [
+      {
+        "line": 54,
+        "text": "return \"http://www.acquirespdl.jp/RTD/DLC/\" + SystemUtility.GetPlatformURL() + VersionDir[(int)m_Version] + \"/\" + m_FileName + \".unity3d\";"
+      },
+      {
+        "line": 63,
+        "text": "private const string mc_RootDirPath = \"http://www.acquirespdl.jp/RTD/DLC/\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/AssetBundleLoader.cs",
+    "sha256": "eca2312b1fd94e27206b5a2c422705ad30b806f5db8c432d875bb041c5120615",
+    "locations": [
+      {
+        "line": 92,
+        "text": "public readonly string m_ServerPath = \"http://www.acquirespdl.jp/QRPG/DLC/\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/BannerManager.cs",
+    "sha256": "5948712492ac324fa3a364463d6a71c7e88f313bfbaa73f4e60fbec4421e3015",
+    "locations": [
+      {
+        "line": 160,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetTitleBannerAppUrl());"
+      },
+      {
+        "line": 164,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetTitleBannerStoreUrl());"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/ComManager.cs",
+    "sha256": "11cff27fbd5c0a5adfc42680f896a60dcb0762baf9e3c5390b3cf3bb0a1986dc",
+    "locations": [
+      {
+        "line": 117,
+        "text": "public const string TextAddress = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 119,
+        "text": "public const string HttpAddress = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 121,
+        "text": "public const string HttpAddressSSL = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 406,
+        "text": "string text = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 419,
+        "text": "string text = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 647,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetAppAddress());"
+      },
+      {
+        "line": 706,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetAppAddress());"
+      },
+      {
+        "line": 1838,
+        "text": "www = new WWW(m_Address, form.data, headers);"
+      },
+      {
+        "line": 1877,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetAppAddress());"
+      },
+      {
+        "line": 2069,
+        "text": "www = new WWW(m_Address, form.data, headers);"
+      },
+      {
+        "line": 2219,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetAppAddress());"
+      },
+      {
+        "line": 2252,
+        "text": "WWW www = new WWW(m_Address, form.data, headers);"
+      },
+      {
+        "line": 3273,
+        "text": "WWW www = new WWW(Singleton<ResidentManager>.Instance.GetTitleBannerImageUrl(), form.data, headers);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/CreateCommonText.cs",
+    "sha256": "559248ed2bf61a20f17aa16363396633ceb5dd41d3d63000a6ced3eb66c79fb5",
+    "locations": [
+      {
+        "line": 11,
+        "text": "private static string AppPage = \"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=562157624&mt=8\";"
+      },
+      {
+        "line": 13,
+        "text": "private static string ReviewPage = \"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=562157624&mt=8&type=Purple+Software\";"
+      },
+      {
+        "line": 15,
+        "text": "private static string InfoPage = \"http://smartphone.acquire.co.jp/rtd/app/webview/info/\";"
+      },
+      {
+        "line": 17,
+        "text": "private static string HomePage = \"http://smartphone.acquire.co.jp/rtd/support/\";"
+      },
+      {
+        "line": 19,
+        "text": "private static string FamitsuPage = \"http://app.famitsu.com/?p=109682\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/DebugMenu.cs",
+    "sha256": "fc3aa725a085bcd15edce84e7093ea15cfc104c32b8d02f0790bb490720dfcca",
+    "locations": [
+      {
+        "line": 534,
+        "text": "string value13 = \"http://10.2.1.109/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 535,
+        "text": "string value14 = \"http://10.2.1.109/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 536,
+        "text": "string value15 = \"http://10.2.1.109/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 550,
+        "text": "string value10 = \"http://10.2.1.115/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 551,
+        "text": "string value11 = \"http://10.2.1.115/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 552,
+        "text": "string value12 = \"http://10.2.1.115/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 566,
+        "text": "string value7 = \"http://10.2.1.116/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 567,
+        "text": "string value8 = \"http://10.2.1.116/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 568,
+        "text": "string value9 = \"http://10.2.1.116/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 582,
+        "text": "string value4 = \"https://rtd-stg.acquire-spgmsv.jp/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 583,
+        "text": "string value5 = \"https://rtd-stg.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 584,
+        "text": "string value6 = \"https://rtd-stg.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 598,
+        "text": "string value = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 599,
+        "text": "string value2 = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      },
+      {
+        "line": 600,
+        "text": "string value3 = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/DownloadTexture.cs",
+    "sha256": "98be80b3d5763a53436126db8c51cf1eacdf58c264601fc4c518e58807d068ea",
+    "locations": [
+      {
+        "line": 7,
+        "text": "public string url = \"http://www.tasharen.com/misc/logo.png\";"
+      },
+      {
+        "line": 15,
+        "text": "WWW www = new WWW(url);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/GlobalDefines.cs",
+    "sha256": "87eba6f74b6b374f94d23c068f89bd0c213af4f4c40ad5450643f52c89de3528",
+    "locations": [
+      {
+        "line": 458,
+        "text": "public static string ETC_INFO_ADDRESSS = \"http://smartphone.acquire.co.jp/rtd/app/webview/info/\";"
+      },
+      {
+        "line": 460,
+        "text": "public static string ETC_SUPPORT_ADDRESS = \"http://smartphone.acquire.co.jp/rtd/support/\";"
+      },
+      {
+        "line": 462,
+        "text": "public static string ETC_HINT_INDEX_ADDRESS = \"http://smartphone.acquire.co.jp/rtd/app/appmenu/hintlist/index.html\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/iOSUtil.cs",
+    "sha256": "43c9e564ffd26c6dfa7dd62ddab9585cbeb59f2e729f78590254f8fd4bebde6a",
+    "locations": [
+      {
+        "line": 105,
+        "text": "public static bool CanOpenURL(string url)"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMEtcInfo.cs",
+    "sha256": "c3019ff63fc016a9f1c42c530f69a6a3fed0188503303f5d2397fdbf30d9c9bd",
+    "locations": [
+      {
+        "line": 86,
+        "text": "m_WebViewObj.LoadURL(Singleton<ResidentManager>.Instance.GetInfoAddress());"
+      },
+      {
+        "line": 131,
+        "text": "m_WebViewObj.LoadURL(\"about:blank\");"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMEtcMenu.cs",
+    "sha256": "2ef552879f2e397ee888f26cda0823b3ca9a398cd69c87584d1b0c3a8a312ba2",
+    "locations": [
+      {
+        "line": 150,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetSupportAddress());"
+      },
+      {
+        "line": 155,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetSettlementAddress());"
+      },
+      {
+        "line": 175,
+        "text": "Application.OpenURL(GlobalDefines.ETC_HINT_INDEX_ADDRESS);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMFriendSearch.cs",
+    "sha256": "18e94ff9d781925d4a003c28861900da27a0c9b2836fa0e21b6f42c58b3d5950",
+    "locations": [
+      {
+        "line": 403,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.m_CommonText.GooglePlayAppURL);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMInformationSite.cs",
+    "sha256": "19dd7ef10514021d7def5f7be353f3cd6c47df9037517b3c053420cef34a640b",
+    "locations": [
+      {
+        "line": 46,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetFamitsuAddress());"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMQuest.cs",
+    "sha256": "a8c94d0461ea029a52a22b39965b6d7c6df6dc8ed08447b4fb29697241fe3278",
+    "locations": [
+      {
+        "line": 662,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetTitleBannerStoreUrl());"
+      },
+      {
+        "line": 674,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.GetTitleBannerStoreUrl());"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/MMShop.cs",
+    "sha256": "388d209ae51f84b5d0a8d789137841f40c39a952a52d46e40b53eaea16ca0602",
+    "locations": [
+      {
+        "line": 318,
+        "text": "Application.OpenURL(Singleton<ResidentManager>.Instance.m_CommonText.GooglePlayAppURL);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/NGUITools.cs",
+    "sha256": "ce18825d16c0a4011b218a9dbfa94929d2bc6e3b46b173868e1b7f7074d39ad0",
+    "locations": [
+      {
+        "line": 84,
+        "text": "public static WWW OpenURL(string url)"
+      },
+      {
+        "line": 89,
+        "text": "result = new WWW(url);"
+      },
+      {
+        "line": 98,
+        "text": "public static WWW OpenURL(string url, WWWForm form)"
+      },
+      {
+        "line": 102,
+        "text": "return OpenURL(url);"
+      },
+      {
+        "line": 107,
+        "text": "result = new WWW(url, form);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/ResidentManager.cs",
+    "sha256": "5cfdc2906ede9a80d2c01f3ec69196ae6fbf30d9dc0ebc365b2ab87483d06b92",
+    "locations": [
+      {
+        "line": 679,
+        "text": "string textAddress = \"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/com_text4.json\";"
+      },
+      {
+        "line": 680,
+        "text": "WWW wwwText = new WWW(\"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/com_text4.json\", form.data, headers);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/SocialManager.cs",
+    "sha256": "6cef5825c77611ba594b79d7cfb683420c5ebc0641abc27413a33779d7dfff78",
+    "locations": [
+      {
+        "line": 115,
+        "text": "string value2 = \"http://www.acquirespdl.jp/RTD/icon.png\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/TitleInfo.cs",
+    "sha256": "7d468501420cbd3b24ab46524edac07a26647e8d422373d5d90a3e38286408af",
+    "locations": [
+      {
+        "line": 79,
+        "text": "m_WebViewObj.LoadURL(Singleton<ResidentManager>.Instance.GetInfoAddress());"
+      },
+      {
+        "line": 103,
+        "text": "m_WebViewObj.LoadURL(\"about:blank\");"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled/UIAgreementDialog.cs",
+    "sha256": "b87a08f21e706b8955bd23b455aa260b807004dfc30e90036934cf619d34ad1a",
+    "locations": [
+      {
+        "line": 21,
+        "text": "private const string URL_AGREEMENT = \"http://rtd.neocyon.com/M/Policy/terms.aspx\";"
+      },
+      {
+        "line": 23,
+        "text": "private const string URL_USERPOLICY = \"http://rtd.neocyon.com/M/Policy/privacy.aspx\";"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled-firstpass/Facebook.cs",
+    "sha256": "f2d0c95a5e908ae7d9c5c18a74898bd2741da1ca36c197a4b73fee5e9b77b509",
+    "locations": [
+      {
+        "line": 32,
+        "text": "_baseUrl = \"https://graph.facebook.com/\";"
+      },
+      {
+        "line": 139,
+        "text": "string url = \"http://graph.facebook.com/\" + userId + \"/picture?type=large\";"
+      },
+      {
+        "line": 145,
+        "text": "WWW www = new WWW(url);"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled-firstpass/FacebookUIManager.cs",
+    "sha256": "09240ff006f0c08696dce46d7c102eb473588ba37549028f42d9cc2f39ad78c1",
+    "locations": [
+      {
+        "line": 83,
+        "text": "Facebook.instance.postMessageWithLinkAndLinkToImage(\"link post from Unity: \" + Time.deltaTime, \"http://prime31.com\", \"prime[31]\", \"http://prime31.com/assets/images/prime31logo.png\", \"Prime31 Logo\", completionHandler);"
+      },
+      {
+        "line": 88,
+        "text": "dictionary.Add(\"link\", \"http://prime31.com\");"
+      },
+      {
+        "line": 90,
+        "text": "dictionary.Add(\"picture\", \"http://prime31.com/assets/images/prime31logo.png\");"
+      },
+      {
+        "line": 99,
+        "text": "dictionary2.Add(\"link\", \"http://prime31.com\");"
+      },
+      {
+        "line": 101,
+        "text": "dictionary2.Add(\"picture\", \"http://prime31.com/assets/images/prime31logo.png\");"
+      }
+    ]
+  },
+  {
+    "path": "analysis/decompiled-firstpass/WebViewObject.cs",
+    "sha256": "533bcf05b304e585f88813c98985e2e7bb97eec44faf6de459c9de0ae41f2af2",
+    "locations": [
+      {
+        "line": 45,
+        "text": "public void LoadURL(string url)"
+      }
+    ]
+  },
+  {
+    "path": "analysis/TracePatcher/Program.cs",
+    "sha256": "1ae84532beface45f0696e832436071a99e161a887cf6643e4c0717fa1c486cb",
+    "locations": [
+      {
+        "line": 56,
+        "text": "if(ins.OpCode==OpCodes.Ldstr&&ins.Operand is string url&&url==\"http://www.acquirespdl.jp/RTD/DLC/\") ins.Operand=\"http://127.0.0.1:18765/\";"
+      },
+      {
+        "line": 70,
+        "text": "if(ins.OpCode==OpCodes.Ldstr&&ins.Operand is string url&&url==\"https://rtd.acquire-spgmsv.jp/rtd/2.4.0/api/\") {"
+      },
+      {
+        "line": 71,
+        "text": "ins.Operand=\"http://127.0.0.1:18766/rtd/2.4.0/api/\";patched++;"
+      }
+    ]
+  },
+  {
+    "path": "analysis/smali/org/example/ScriptBridge/GZipArchive.smali",
+    "sha256": "2a4117e355be52d0332ce27189032340b494f34e4f220ae41aafe13f2490bcfc",
+    "locations": [
+      {
+        "line": 152,
+        "text": "new-instance v1, Lorg/apache/http/util/ByteArrayBuffer;"
+      },
+      {
+        "line": 156,
+        "text": "invoke-direct {v1, v2}, Lorg/apache/http/util/ByteArrayBuffer;-><init>(I)V"
+      },
+      {
+        "line": 176,
+        "text": "invoke-virtual {v1, v2, v4, v3}, Lorg/apache/http/util/ByteArrayBuffer;->append([BII)V"
+      },
+      {
+        "line": 228,
+        "text": "invoke-virtual {v1}, Lorg/apache/http/util/ByteArrayBuffer;->toByteArray()[B"
+      }
+    ]
+  },
+  {
+    "path": "analysis/smali/com/unity3d/player/WWW.smali",
+    "sha256": "72625ac426c65df0b2c87d33f11b75b951365ac504ed529cf09f22ff73033c70",
+    "locations": [
+      {
+        "line": 320,
+        "text": "new-instance v11, Ljava/net/URL;"
+      },
+      {
+        "line": 324,
+        "text": "invoke-direct {v11, v0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V"
+      },
+      {
+        "line": 326,
+        "text": "invoke-virtual {v11}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;"
+      },
+      {
+        "line": 328,
+        "text": ".catch Ljava/net/MalformedURLException; {:try_start_11 .. :try_end_1b} :catch_46"
+      },
+      {
+        "line": 372,
+        "text": "invoke-virtual {v9, v1, v0}, Ljava/net/URLConnection;->addRequestProperty(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "line": 381,
+        "text": "invoke-virtual {v0}, Ljava/net/MalformedURLException;->toString()Ljava/lang/String;"
+      },
+      {
+        "line": 411,
+        "text": "invoke-virtual {v9, v0}, Ljava/net/URLConnection;->setDoOutput(Z)V"
+      },
+      {
+        "line": 414,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;"
+      },
+      {
+        "line": 479,
+        "text": "instance-of v0, v9, Ljava/net/HttpURLConnection;"
+      },
+      {
+        "line": 485,
+        "text": "check-cast v0, Ljava/net/HttpURLConnection;"
+      },
+      {
+        "line": 488,
+        "text": "invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I"
+      },
+      {
+        "line": 494,
+        "text": "invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;"
+      },
+      {
+        "line": 525,
+        "text": "invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V"
+      },
+      {
+        "line": 555,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getHeaderFields()Ljava/util/Map;"
+      },
+      {
+        "line": 574,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentLength()I"
+      },
+      {
+        "line": 586,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentLength()I"
+      },
+      {
+        "line": 616,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentType()Ljava/lang/String;"
+      },
+      {
+        "line": 626,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentType()Ljava/lang/String;"
+      },
+      {
+        "line": 680,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentLength()I"
+      },
+      {
+        "line": 686,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getContentLength()I"
+      },
+      {
+        "line": 691,
+        "text": "invoke-virtual {v11}, Ljava/net/URL;->getProtocol()Ljava/lang/String;"
+      },
+      {
+        "line": 703,
+        "text": "invoke-virtual {v11}, Ljava/net/URL;->getProtocol()Ljava/lang/String;"
+      },
+      {
+        "line": 730,
+        "text": "invoke-virtual {v9}, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;"
+      }
+    ]
+  }
+]

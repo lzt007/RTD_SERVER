@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "normal": [
+    {"unit_id": 10000, "level": 1, "weight": 1},
+    {"unit_id": 10021, "level": 1, "weight": 1},
+    {"unit_id": 10030, "level": 1, "weight": 1},
+    {"unit_id": 10033, "level": 1, "weight": 1},
+    {"unit_id": 11100, "level": 1, "weight": 1},
+    {"unit_id": 11102, "level": 1, "weight": 1},
+    {"unit_id": 11112, "level": 1, "weight": 1},
+    {"unit_id": 11133, "level": 1, "weight": 1}
+  ],
+  "rare": [
+    {"unit_id": 20000, "level": 1, "weight": 1},
+    {"unit_id": 20010, "level": 1, "weight": 1},
+    {"unit_id": 20020, "level": 1, "weight": 1},
+    {"unit_id": 20030, "level": 1, "weight": 1}
+  ]
+}

@@ -1,0 +1,108 @@
+test_account_restart_and_storage (test_accounts.AccountsTest.test_account_restart_and_storage) ... 127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 37122 UUID already registered differently
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 8193 Client version must be 2.4.0
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 8195 Unknown UUID
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/login.php HTTP/1.1" 200 -
+login 8196 Authentication required
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:13] "POST /rtd/2.4.0/api/login.php?user_id=2 HTTP/1.1" 200 -
+login 8198 Session/player mismatch
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/login.php?user_id=1 HTTP/1.1" 200 -
+login 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/login.php HTTP/1.1" 200 -
+login 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/form_units.php HTTP/1.1" 200 -
+form_units 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/save_local_flags.php HTTP/1.1" 200 -
+save_local_flags 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/form_units.php HTTP/1.1" 200 -
+form_units 8198 Unowned unit
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/order_quest.php HTTP/1.1" 200 -
+order_quest 8197 Only tutorial quest 10000 is supported
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/get_units.php HTTP/1.1" 200 -
+get_units 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:14] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+ok
+test_expired_session (test_accounts.AccountsTest.test_expired_session) ... 127.0.0.1 - - [24/Oct/2026 18:49:15] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:15] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:15] "POST /rtd/2.4.0/api/login.php HTTP/1.1" 200 -
+login 8196 Authentication required
+127.0.0.1 - - [24/Oct/2026 18:49:15] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+ok
+test_full_startup_master_manifest (test_accounts.AccountsTest.test_full_startup_master_manifest) ... 127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/get_master.php HTTP/1.1" 200 -
+get_master 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/get_master.php HTTP/1.1" 200 -
+get_master 4096 
+ok
+test_settlement_survives_response_loss_and_restart (test_accounts.AccountsTest.test_settlement_survives_response_loss_and_restart) ... 127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/clear_quest2.php HTTP/1.1" 200 -
+clear_quest2 8197 No matching active quest
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/order_quest.php HTTP/1.1" 200 -
+order_quest 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/clear_quest2.php HTTP/1.1" 200 -
+clear_quest2 8194 Invalid quest reward: exp
+127.0.0.1 - - [24/Oct/2026 18:49:16] "POST /rtd/2.4.0/api/clear_quest2.php HTTP/1.1" 200 -
+clear_quest2 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/clear_quest2.php HTTP/1.1" 200 -
+clear_quest2 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/get_quest_info.php HTTP/1.1" 200 -
+get_quest_info 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/get_units.php HTTP/1.1" 200 -
+get_units 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/get_friends.php HTTP/1.1" 200 -
+get_friends 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/get_presents.php HTTP/1.1" 200 -
+get_presents 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:17] "POST /rtd/2.4.0/api/buy_gacha.php HTTP/1.1" 200 -
+buy_gacha 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/buy_gacha.php HTTP/1.1" 200 -
+buy_gacha 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/get_units.php HTTP/1.1" 200 -
+get_units 4096 
+ok
+test_tutorial_order_restart_is_idempotent (test_accounts.AccountsTest.test_tutorial_order_restart_is_idempotent) ... 127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/create_user.php HTTP/1.1" 200 -
+create_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/auth_user.php HTTP/1.1" 200 -
+auth_user 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/get_quest_info.php HTTP/1.1" 200 -
+get_quest_info 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/get_level_master.php HTTP/1.1" 200 -
+get_level_master 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/get_level_master.php HTTP/1.1" 200 -
+get_level_master 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:18] "POST /rtd/2.4.0/api/order_quest.php HTTP/1.1" 200 -
+order_quest 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:19] "POST /rtd/2.4.0/api/order_quest.php HTTP/1.1" 200 -
+order_quest 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:19] "POST /rtd/2.4.0/api/get_quest_info.php HTTP/1.1" 200 -
+get_quest_info 4096 
+127.0.0.1 - - [24/Oct/2026 18:49:19] "POST /rtd/2.4.0/api/order_quest.php HTTP/1.1" 200 -
+order_quest 8197 Only tutorial quest 10000 is supported
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 6.239s
+
+OK

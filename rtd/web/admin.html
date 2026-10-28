@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>卡池与活动管理 · RTD</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/admin/assets/admin.css">
+  <script type="module" src="/admin/assets/admin.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/admin/" aria-label="RTD 运营后台首页"><span class="brand-mark">R</span><span>RTD<span class="brand-sub">运营管理</span></span></a>
+    <div class="nav-label">内容管理</div>
+    <nav aria-label="管理页面">
+      <button class="nav-item selected" data-page="gachas" aria-current="page"><span class="nav-icon">◇</span>卡池管理<span class="nav-count" id="pool-count">—</span></button>
+      <button class="nav-item" data-page="events"><span class="nav-icon">▦</span>活动管理<span class="nav-count" id="event-count">—</span></button>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span>本地模拟服务<span class="sidebar-caption">Road to Dragons</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span class="breadcrumb">运营后台 <span>/</span> <strong id="breadcrumb">卡池管理</strong></span><span class="connection" id="connection">正在连接…</span></header>
+    <main>
+      <section class="page-heading"><div><div class="eyebrow">CONTENT OPERATIONS</div><h1 id="page-title">卡池管理</h1><p id="page-description">设置召唤内容与开放时间。</p></div><div class="heading-actions"><button id="refresh" class="button secondary" type="button">↻ 刷新配置</button><button id="create-event" class="button primary" type="button" hidden>＋ 新建活动</button></div></section>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <section id="summary" class="summary-grid" aria-label="配置概况"></section>
+      <section class="section-heading"><h2 id="list-title">全部卡池</h2><span id="updated-at" class="muted">正在读取配置</span></section>
+      <div id="content" aria-live="polite"><div class="empty-state"><span class="loader"></span><h2>正在读取配置</h2><p>连接本地运营服务…</p></div></div>
+      <p class="page-footnote" id="page-footnote">卡池消耗与抽数沿用原客户端规则。教程首次召唤不受卡池配置影响。</p>
+    </main>
+  </div>
+  <dialog id="editor" aria-labelledby="editor-title">
+    <form id="editor-form">
+      <header class="dialog-header"><div><span class="eyebrow" id="editor-kicker">卡池设置</span><h2 id="editor-title">编辑卡池</h2></div><button class="icon-button" id="close-editor" type="button" aria-label="关闭编辑">×</button></header>
+      <div class="dialog-body"><div id="form-error" class="notice error" role="alert" tabindex="-1" hidden></div><fieldset id="editor-fields"></fieldset></div>
+      <footer class="dialog-footer"><span id="draft-status" class="muted">修改后保存生效</span><div><button class="button secondary" id="cancel-editor" type="button">取消</button><button class="button primary" id="save-editor" type="submit">保存配置</button></div></footer>
+    </form>
+  </dialog>
+  <dialog id="unit-preview" aria-labelledby="unit-preview-title">
+    <header class="dialog-header"><h2 id="unit-preview-title">角色预览</h2><button id="close-unit-preview" class="icon-button" type="button" aria-label="关闭角色预览">×</button></header>
+    <div id="unit-preview-body" class="unit-preview-body"></div>
+  </dialog>
+  <datalist id="unit-catalog"></datalist>
+  <datalist id="quest-catalog"></datalist>
+</body>
+</html>
