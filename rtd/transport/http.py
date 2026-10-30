@@ -61,6 +61,8 @@ def handler_for(api, log_path, run_id=None):
             req, response = None, None
             started = time.monotonic()
             request_id = uuid.uuid4().hex
+            client_ip = self.client_address[0]
+            print(f'API IN id={request_id} client={client_ip} operation={operation}', flush=True)
             api.store.local.trace = {}
             try:
                 size = int(self.headers.get('Content-Length', '0'))
@@ -100,7 +102,9 @@ def handler_for(api, log_path, run_id=None):
             with log_lock:
                 with log_path.open('a', encoding='utf-8') as out:
                     out.write(compact(entry)+'\n')
-            print(operation, response['code'], response.get('message', ''), flush=True)
+            print(f'API OUT id={request_id} client={client_ip} operation={operation} '
+                  f'code={response["code"]} duration_ms={entry["duration_ms"]} '
+                  f'message={response.get("message", "")}', flush=True)
 
     return Handler
 
