@@ -3,6 +3,8 @@ from . import presents, challenge_rewards, shop, gacha, unit_gifts, battle_conti
 
 from . import special_units
 
+from . import simulated_store
+
 ROUTES = {
     'sp_compose_unit': special_units.sp_compose_unit,
     'ultimate_evolve': unit_evolve.evolve_unit,
@@ -24,6 +26,11 @@ ROUTES = {
     'clear_quest2': quests.clear_quest,
     'buy_gacha': gacha.purchase,
     'buy_gacha_special': gacha.purchase,
+    'simulate_purchase': simulated_store.purchase,
+    'google_play_bill_begin': simulated_store.purchase,
+    'google_play_bill_point': simulated_store.purchase,
+    'app_store_purchase_begin': simulated_store.purchase,
+    'app_store_purchase_point': simulated_store.purchase,
     'get_friends': social.get_friends,
     'select_user_code': social.search,
     'send_friend_request': social.relation,

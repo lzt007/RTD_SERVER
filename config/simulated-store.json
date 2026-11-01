@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "products": {
+    "local.crystals.1": {"paid_point": 1, "free_paid_point": 0},
+    "local.crystals.6": {"paid_point": 6, "free_paid_point": 0},
+    "local.crystals.12": {"paid_point": 12, "free_paid_point": 0},
+    "local.crystals.30": {"paid_point": 30, "free_paid_point": 0},
+    "local.crystals.60": {"paid_point": 60, "free_paid_point": 0}
+  }
+}

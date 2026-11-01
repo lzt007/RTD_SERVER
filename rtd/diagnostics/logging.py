@@ -3,7 +3,7 @@ import hashlib
 from ..common import compact
 
 SECRET_FIELDS = {'uuid', 'session_id', 'token', 'password', 'move_password',
-                 'receipt', 'purchase_token', 'signature', 'authorization', 'cookie'}
+                 'receipt', 'encoded_receipt', 'signeddata', 'purchase_token', 'signature', 'authorization', 'cookie'}
 
 
 def redact(value):
