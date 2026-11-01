@@ -1,0 +1,47 @@
+[
+  {
+    "key": "machine",
+    "name": "新手助战·機神王",
+    "unit_id": 15550
+  },
+  {
+    "key": "sea",
+    "name": "新手助战·海龍王",
+    "unit_id": 15559
+  },
+  {
+    "key": "supply",
+    "name": "新手助战·覇壊王",
+    "unit_id": 15562
+  },
+  {
+    "key": "time",
+    "name": "新手助战·刻帝王",
+    "unit_id": 15565
+  },
+  {
+    "key": "book",
+    "name": "新手助战·禁書王",
+    "unit_id": 15577
+  },
+  {
+    "key": "sword",
+    "name": "新手助战·全转剑",
+    "unit_id": 16003
+  },
+  {
+    "key": "bow",
+    "name": "新手助战·全转弓",
+    "unit_id": 14209
+  },
+  {
+    "key": "lance",
+    "name": "新手助战·全转枪",
+    "unit_id": 15033
+  },
+  {
+    "key": "staff",
+    "name": "新手助战·全转杖",
+    "unit_id": 14203
+  }
+]

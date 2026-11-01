@@ -77,8 +77,10 @@ def relation(api,state,req,token,operation):
             if left and right and (left['status'],right['status'])==(1,2):continue
             if left or right:raise ProtocolError(8706,'Local friend relationship already exists')
             capacity(state,8704);capacity(other,8704)
-            if len(links)>=100 or len(their)>=100:raise ProtocolError(8704,'Local friend queue is full')
-            date=stamp();links[key]=dict(status=1,date=date);their[my_key]=dict(status=2,date=date)
+            if len(links)>=100 or ('npc_helper_key' not in other and len(their)>=100):raise ProtocolError(8704,'Local friend queue is full')
+            date=stamp()
+            outgoing,incoming=(0,0) if 'npc_helper_key' in other else (1,2)
+            links[key]=dict(status=outgoing,date=date);their[my_key]=dict(status=incoming,date=date)
         elif operation=='accept_friend_request':
             if left and right and left['status']==right['status']==0:continue
             if not left or not right or (left['status'],right['status'])!=(2,1):

@@ -154,6 +154,8 @@ class Store:
             row = db.execute('SELECT id,state FROM players WHERE uuid=?', (key,)).fetchone()
             if not row:
                 raise ProtocolError(8195, 'Unknown UUID')
+            if 'npc_helper_key' in json.loads(row[1]):
+                raise ProtocolError(8195, 'Helper accounts cannot authenticate')
             token = secrets.token_hex(24)
             db.execute('INSERT INTO sessions VALUES(?,?,?)', (token, row[0], int(time.time())+86400*30))
             return json.loads(row[1]), token
