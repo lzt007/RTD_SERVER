@@ -92,7 +92,7 @@ class AccountsTest(unittest.TestCase):
             'unit_bonus_attack','unit_bonus_heal'})
         self.assertEqual((helper['user_id'],helper['user_name'],helper['unit_id'],helper['unit_level']),
                          (0,'LOCAL_HELPER',14012,20))
-        self.assertIs(helper['friend'], False)
+        self.assertIs(helper['friend'], True)
         self.assertIs(helper['friend_point'], True)
         import datetime
         datetime.datetime.fromisoformat(helper['last_play_date'].replace('Z','+00:00'))

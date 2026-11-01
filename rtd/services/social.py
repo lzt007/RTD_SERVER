@@ -93,7 +93,9 @@ def relation(api,state,req,token,operation):
 
 
 def helper_profile(api,state,uid):
-    peer=target(api,state,uid)
+    peer=api.store.by_id(uid)
+    if uid==state['player']['user_id'] or peer is None:
+        raise ProtocolError(9472,'Helper account is unavailable')
     row=profile(peer);row.pop('create_date')
     from ..policies.helper_rewards import claimed
     row.update(friend=state.get('friend_links',{}).get(str(uid),{}).get('status')==0,
