@@ -3,6 +3,15 @@ from rtd.services.api import API
 from rtd.common import ProtocolError
 
 class SimulatedPurchaseTest(unittest.TestCase):
+ def test_original_catalog_products(self):
+  for suffix,amount in [('10000',1),('10010',6),('10020',12),('10030',30),('10040',60),('10050',85)]:
+   product='rtd_item_'+suffix
+   self.assertEqual(self.call('google_play_bill_begin',product_id=product),[])
+   before=self.api.store.session(self.token)['player']['paid_point']
+   signed=json.dumps(dict(productId=product,orderId='catalog-'+suffix))
+   result=self.call('google_play_bill_point',signedData=signed,signature='local-simulation')
+   self.assertEqual(result['paid_point'],before+amount)
+   self.assertEqual(self.call('google_play_bill_point',signedData=signed,signature='local-simulation'),result)
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
   self.path=pathlib.Path(self.temp.name)/'pay.sqlite3';self.api=API(self.path)

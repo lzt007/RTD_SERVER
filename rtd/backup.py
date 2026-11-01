@@ -25,8 +25,9 @@ def inspect(path):
         if db.execute('PRAGMA foreign_key_check').fetchall():
             raise ValueError('Backup has invalid foreign keys')
         version=db.execute('PRAGMA user_version').fetchone()[0]
-        if version not in (1,2):raise ValueError('Unsupported backup schema version')
-        tables=TABLES+('runtime_config',) if version==2 else TABLES
+        if version not in (1,2,3):raise ValueError('Unsupported backup schema version')
+        tables=TABLES+('runtime_config',) if version>=2 else TABLES
+        if version>=3:tables+=('admin_reward_batches',)
         return dict(schema_version=version,table_counts={t:db.execute('SELECT count(*) FROM '+t).fetchone()[0] for t in tables})
 
 

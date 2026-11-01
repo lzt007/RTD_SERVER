@@ -5,6 +5,18 @@
     "local.crystals.6": {"paid_point": 6, "free_paid_point": 0},
     "local.crystals.12": {"paid_point": 12, "free_paid_point": 0},
     "local.crystals.30": {"paid_point": 30, "free_paid_point": 0},
-    "local.crystals.60": {"paid_point": 60, "free_paid_point": 0}
+    "local.crystals.60": {"paid_point": 60, "free_paid_point": 0},
+    "rtd_item_10000": {"paid_point": 1, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10000": {"paid_point": 1, "free_paid_point": 0},
+    "rtd_item_10010": {"paid_point": 6, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10010": {"paid_point": 6, "free_paid_point": 0},
+    "rtd_item_10020": {"paid_point": 12, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10020": {"paid_point": 12, "free_paid_point": 0},
+    "rtd_item_10030": {"paid_point": 30, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10030": {"paid_point": 30, "free_paid_point": 0},
+    "rtd_item_10040": {"paid_point": 60, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10040": {"paid_point": 60, "free_paid_point": 0},
+    "rtd_item_10050": {"paid_point": 85, "free_paid_point": 0},
+    "jp.co.acquire.rtd_10050": {"paid_point": 85, "free_paid_point": 0}
   }
 }

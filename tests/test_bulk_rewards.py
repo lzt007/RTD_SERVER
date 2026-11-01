@@ -18,6 +18,15 @@ class BulkRewardsTest(unittest.TestCase):
         self.assertEqual(self.api.delivery.read('3'),[])
         self.assertEqual(len(self.api.delivery.read('1')),1)
         with self.assertRaises(ConfigurationError):self.api.delivery.broadcast(dict(self.body,present_param_0=6))
+    def test_backup_restore_keeps_batch_idempotency(self):
+        from rtd.backup import create_backup,restore_backup
+        original=self.api.delivery.broadcast(self.body)
+        root=pathlib.Path(self.temp.name)
+        create_backup(root/'test.sqlite3',root/'backup.sqlite3')
+        restore_backup(root/'backup.sqlite3',root/'restored.sqlite3')
+        restored=API(root/'restored.sqlite3')
+        self.assertEqual(restored.delivery.broadcast(self.body)['data'],original['data'])
+        self.assertEqual(len(restored.delivery.read('1')),1)
     def test_selected_atomic_failure_and_npc_exclusion(self):
         s=self.api.store.by_id(2);s['npc_helper_key']='test';self.api.store.save(s)
         r=self.api.delivery.broadcast(self.body)
