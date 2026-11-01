@@ -73,8 +73,8 @@ class Operations:
             raise ConfigurationError('ends_at must be later than starts_at')
 
     def entries(self,rows,drop=False,allow_empty=False):
-        if not isinstance(rows,list) or not (0 if allow_empty else 1)<=len(rows)<=256:
-            raise ConfigurationError('Expected up to 256 weighted entries')
+        if not isinstance(rows,list) or not (0 if allow_empty else 1)<=len(rows)<=(256 if drop else 4096):
+            raise ConfigurationError('Too many weighted entries')
         seen=set()
         for row in rows:
             exact(row,('unit_id','level_min','level_max','weight') if drop else ('unit_id','level','weight'))

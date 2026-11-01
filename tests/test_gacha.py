@@ -36,7 +36,7 @@ class GachaTest(unittest.TestCase):
         self.assertEqual((a['friend_point'],b['friend_point']),(1900,1800))
         self.assertEqual((a['unit']['instance_id'],b['unit']['instance_id']),(1004,1005))
         self.assertEqual(len(self.state()['units']),5)
-        normal={10000,10021,10030,10033,11100,11102,11112,11133}
+        normal={r['unit_id'] for r in self.api.operations.read()['gachas'][0]['entries']}
         self.assertIn(a['unit']['unit_id'],normal);self.assertNotIn('leader',a['unit'])
         self.assertEqual((a['unit']['level'],a['unit']['exp']),(1,0))
         self.assertTrue({a['unit']['unit_id'],b['unit']['unit_id']}<=
@@ -47,7 +47,7 @@ class GachaTest(unittest.TestCase):
 
     def test_rare_original_total_balance_field_and_free_paid_split(self):
         r=self.call(gacha_id='20000',tutorial_flag='False',paid_point='7')['result']
-        self.assertIn(r['unit']['unit_id'],{20000,20010,20020,20030})
+        self.assertIn(r['unit']['unit_id'],{r['unit_id'] for r in self.api.operations.read()['gachas'][1]['entries']})
         self.assertEqual((r['free_paid_point'],r['paid_point'],r['total_paid_point']),(0,2,2))
         self.error(8197,gacha_id='20000',tutorial_flag=False,paid_point='7')
         self.error(8961,gacha_id='20000',tutorial_flag=False,paid_point='2')
@@ -104,11 +104,11 @@ class GachaTest(unittest.TestCase):
                 gacha_id=30000,tutorial_flag=False,retry=1),[self.api,other]))
         self.assertEqual(results,[first,first]);self.assertEqual(self.state(),before)
 
-    def test_existing_tutorial_stays_fixed_and_has_its_own_receipt(self):
+    def test_tutorial_uses_rare_pool_and_has_its_own_receipt(self):
         self.player(free_paid_point=7,paid_point=0,total_paid_point=7)
         s=self.state();s['player']['quest_clear_flags'][0]|=2;self.api.store.save(s)
         r=self.call(gacha_id='20000',tutorial_flag='True')['result']
-        self.assertEqual(r['unit']['unit_id'],20000)
+        self.assertIn(r['unit']['unit_id'],{e['unit_id'] for e in self.api.operations.read()['gachas'][1]['entries']})
         before=self.state()
         self.assertEqual(self.call(gacha_id='20000',tutorial_flag=True)['result'],r)
         self.assertEqual(self.state(),before)

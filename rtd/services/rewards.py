@@ -2,6 +2,7 @@ import copy
 from ..common import ProtocolError, compact
 from ..config import ROOT, STARTERS
 from ..policies.instance_ids import allocate_instance_ids
+from ..policies.gacha_pools import draw
 
 def buy_gacha(self, state, req, token, operation):
     player = state['player']
@@ -12,8 +13,9 @@ def buy_gacha(self, state, req, token, operation):
     else:
         if not player['quest_clear_flags'][0] & 2 or player['free_paid_point'] < 5:
             raise ProtocolError(8197, 'Tutorial summon is not ready')
-        # Deterministic local fixture, not a recovered historical gacha pool.
-        unit_id=STARTERS[(state['starter']+1)%4][0][0]
+        # New tutorial draws obey the same exclusions as the rare pool.
+        pool,_=self.operations.gacha(20000)
+        unit_id=draw(pool['entries'],1)[0]['unit_id']
         unit=dict(instance_id=allocate_instance_ids(state,1)[0],
             user_id=player['user_id'],unit_id=unit_id,member_id=0,leader=0,
             level=1,exp=0,bonus_life=0,bonus_attack=0,bonus_heal=0,bonus_limit=0,attribute_exp=0,favorite=0)

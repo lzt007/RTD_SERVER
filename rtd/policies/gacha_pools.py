@@ -15,8 +15,8 @@ def load_pools(masters,path=None):
     units={u['id']:u for u in masters[10]['data_list']}
     for name in ('normal','rare'):
         rows=data[name]
-        if not isinstance(rows,list) or not 1<=len(rows)<=256:
-            raise ValueError('Expected 1-256 local pool entries')
+        if not isinstance(rows,list) or not 1<=len(rows)<=4096:
+            raise ValueError('Expected 1-4096 local pool entries')
         seen=set()
         for row in rows:
             if (not isinstance(row,dict) or set(row)!={'unit_id','level','weight'}

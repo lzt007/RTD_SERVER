@@ -13,12 +13,22 @@ from ..diagnostics.logging import redact
 from ..storage.identity import database_path_id
 from .admin import handle_admin
 from .admin_web import serve_admin_web
+from .admin_auth import admin_password, authorize_admin
 
 def handler_for(api, log_path, run_id=None):
     log_lock = threading.Lock()
+    password = admin_password()
 
     class Handler(http.server.BaseHTTPRequestHandler):
         protocol_version = 'HTTP/1.1'
+
+        def parse_request(self):
+            if not super().parse_request():
+                return False
+            path = urllib.parse.urlsplit(self.path).path
+            if path == '/admin' or path.startswith('/admin/'):
+                return authorize_admin(self, password)
+            return True
 
         def admin(self):
             path=urllib.parse.urlsplit(self.path).path

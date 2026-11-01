@@ -25,7 +25,7 @@ class LiveConfigurationTest(unittest.TestCase):
         cfg=self.api.operations.read()
         self.assertEqual(cfg['revision'],1);self.assertEqual(cfg['events'],[])
         self.assertEqual([p['id'] for p in cfg['gachas']],[10000,20000,30000])
-        self.assertEqual([len(p['entries']) for p in cfg['gachas']],[8,4,8])
+        self.assertEqual([len(p['entries']) for p in cfg['gachas']],[550,510,550])
         self.assertTrue(all(p['enabled'] for p in cfg['gachas']))
         catalog=self.api.operations.catalog()
         configurable={q['quest_id'] for q in catalog['quests'] if q['event_configurable']}
@@ -45,7 +45,7 @@ class LiveConfigurationTest(unittest.TestCase):
         p.update(enabled=False,entries=[dict(unit_id=10021,level=2,weight=7)])
         cfg=self.api.operations.update('gachas','10000',p)
         self.assertEqual(cfg['revision'],2);self.assertEqual(other.operations.read(),cfg)
-        self.assertEqual(cfg['gachas'][2]['entries'][0]['unit_id'],10000)
+        self.assertEqual(cfg['gachas'][2]['entries'][0]['unit_id'],15000)
         self.api.operations.update('events','local-11000',event())
         expected=other.operations.read();self.assertEqual(expected['revision'],3)
         self.assertEqual(API(self.path).operations.read(),expected)
