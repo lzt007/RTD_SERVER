@@ -113,7 +113,7 @@ class TransactionsTest(unittest.TestCase):
         self.api=API(self.path)
         self.assertEqual(self.state(),before)
         with self.api.store.connect() as db:
-            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0],2)
+            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0],3)
             self.assertEqual(db.execute('PRAGMA integrity_check').fetchone()[0],'ok')
         old=sqlite3.connect(backup)
         try:

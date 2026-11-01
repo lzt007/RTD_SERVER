@@ -118,3 +118,10 @@ export function eventPayload(draft,catalog,revision,events=[],isNew=false) {
   }
   return {id:draft.id,...base,quests,expected_revision:revision};
 }
+
+export function rewardRequestId(cryptoSource=globalThis.crypto) {
+  if (cryptoSource.randomUUID) return cryptoSource.randomUUID();
+  // getRandomValues remains available on HTTP origins where randomUUID is absent.
+  const bytes=cryptoSource.getRandomValues(new Uint8Array(16));
+  return 'reward-'+Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+}

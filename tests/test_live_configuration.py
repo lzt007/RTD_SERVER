@@ -38,7 +38,7 @@ class LiveConfigurationTest(unittest.TestCase):
             db.executescript('DROP TABLE runtime_config; PRAGMA user_version=1;')
         self.api=API(self.path)
         self.assertEqual(self.api.operations.read(),cfg)
-        with self.api.store.connect() as db:self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0],2)
+        with self.api.store.connect() as db:self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0],3)
 
     def test_updates_restart_other_instance_revision_and_backup(self):
         other=API(self.path);p=copy.deepcopy(self.api.operations.read()['gachas'][0])

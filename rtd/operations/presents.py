@@ -81,3 +81,37 @@ class Delivery:
                 state.setdefault('admin_present_receipts',{})[body['request_id']]=dict(fingerprint=fingerprint,present=copy.deepcopy(gift))
                 self.store.save(state);replayed=False
             return dict(data=dict(user_id=uid,request_id=body['request_id'],present=gift),replayed=replayed)
+
+    def broadcast(self,body):
+        if not isinstance(body,dict) or set(body)!={'request_id','message','present_type','present_param_0','present_param_1','target','user_ids'}:
+            raise ConfigurationError('Invalid reward batch fields')
+        gift={k:v for k,v in body.items() if k not in ('target','user_ids')}
+        self.validate(gift)
+        target=body['target'];ids=body['user_ids']
+        if target not in ('all','selected') or not isinstance(ids,list):
+            raise ConfigurationError('Choose all or selected accounts')
+        if (target=='all' and ids) or (target=='selected' and (not 1<=len(ids)<=1000 or
+                any(type(uid) is not int or not 1<=uid<=2147483647 for uid in ids) or len(set(ids))!=len(ids))):
+            raise ConfigurationError('Invalid recipient list')
+        canonical=dict(body,user_ids=sorted(ids))
+        fingerprint=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        with self.store.transaction() as db:
+            previous=db.execute('SELECT fingerprint,result FROM admin_reward_batches WHERE request_id=?',(gift['request_id'],)).fetchone()
+            if previous:
+                if previous[0]!=fingerprint:raise ConfigurationError('request_id already used with different reward',409)
+                return dict(data=json.loads(previous[1]),replayed=True)
+            if target=='all':
+                states=[json.loads(row[0]) for row in db.execute('SELECT state FROM players ORDER BY id')]
+                states=[s for s in states if 'npc_helper_key' not in s]
+            else:
+                states=[self.load(db,uid) for uid in sorted(ids)]
+                if any('npc_helper_key' in s for s in states):raise ConfigurationError('Helper accounts cannot receive operator rewards')
+            recipients=[]
+            for state in states:
+                present=issue(state,gift['present_type'],gift['present_param_0'],gift['present_param_1'],gift['message'])
+                self.store.save(state)
+                recipients.append(dict(user_id=state['player']['user_id'],serial_number=present['serial_number']))
+            result=dict(request_id=gift['request_id'],user_ids=[r['user_id'] for r in recipients],recipients=recipients,count=len(recipients))
+            db.execute('INSERT INTO admin_reward_batches(request_id,fingerprint,result) VALUES(?,?,?)',
+                       (gift['request_id'],fingerprint,compact(result)))
+            return dict(data=result,replayed=False)

@@ -23,11 +23,12 @@ def handle_admin(handler,api):
         path=urllib.parse.urlsplit(handler.path).path
         parts=path.removeprefix('/admin/v1/').split('/')
         resource=parts[0];key=parts[1] if len(parts)==2 else None
-        if (len(parts)>2 or resource not in ('config','gachas','events','catalog','players','presents')
-                or (key is not None and (not key or resource in ('config','catalog','players')))
+        if (len(parts)>2 or resource not in ('config','gachas','events','catalog','players','presents','rewards')
+                or (key is not None and (not key or resource in ('config','catalog','players','rewards')))
                 or (resource=='presents' and key is None)):
             raise ConfigurationError('Management resource not found',404)
         method=handler.command
+        if resource=='rewards' and method!='POST':raise ConfigurationError('Unsupported method',405)
         if method=='GET':
             if resource=='players':result=dict(data=api.delivery.players())
             elif resource=='presents':result=dict(data=api.delivery.read(key))
@@ -45,6 +46,7 @@ def handle_admin(handler,api):
         else:
             if not ((resource=='config' and key is None and method=='PUT') or
                     (resource=='presents' and key is not None and method=='POST') or
+                    (resource=='rewards' and key is None and method=='POST') or
                     (resource in ('gachas','events') and key is not None and
                      (method in ('PUT','PATCH') or (method=='DELETE' and resource=='events')))):
                 raise ConfigurationError('Unsupported method',405)
@@ -56,8 +58,8 @@ def handle_admin(handler,api):
                 try:
                     body=json.loads(payload.decode('utf-8'))
                 except (ValueError,UnicodeError):raise ConfigurationError('Malformed UTF-8 JSON body',400) from None
-            if resource=='presents':
-                result=api.delivery.send(key,body)
+            if resource in ('presents','rewards'):
+                result=api.delivery.broadcast(body) if resource=='rewards' else api.delivery.send(key,body)
                 status=200 if result['replayed'] else 201
             else:
                 cfg=api.operations.update(resource,key,body,method)

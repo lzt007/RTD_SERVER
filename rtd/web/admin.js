@@ -1,7 +1,12 @@
-import {toDraft, poolPayload, eventPayload, addQuest, unitPreview} from './admin-model.mjs';
+import {toDraft, poolPayload, eventPayload, addQuest, unitPreview, rewardRequestId} from './admin-model.mjs';
 
 const $ = selector => document.querySelector(selector);
 const state = {page:'gachas',config:null,catalog:null,availability:null,draft:null,kind:null,dirty:false,busy:false};
+try {state.rewardPending=JSON.parse(sessionStorage.getItem('rtd-reward-pending')||'null');} catch {state.rewardPending=null;}
+function rememberReward(payload) {
+  state.rewardPending=payload;
+  try {if (payload) sessionStorage.setItem('rtd-reward-pending',JSON.stringify(payload));else sessionStorage.removeItem('rtd-reward-pending');} catch {}
+}
 let sequence=0;
 function el(tag, attrs={}, ...children) {
   const node=document.createElement(tag);
@@ -55,7 +60,7 @@ async function request(path, method='GET', body) {
     if (!response.ok) {
       const message=response.status===409?'配置已被其他操作更新。当前草稿已保留，请记录修改后关闭并刷新，再重新编辑。':
         `保存失败：${data.error?.message ?? `HTTP ${response.status}`}`;
-      throw new Error(message);
+      const error=new Error(message);error.status=response.status;throw error;
     }
     return data;
   } catch (error) {
@@ -123,7 +128,8 @@ function toggle(kind,item) {
 }
 function render() {
   if (!state.config) return;
-  const eventPage=state.page==='events',title=eventPage?'活动管理':'卡池管理';
+  const rewardPage=state.page==='rewards';
+  const eventPage=state.page==='events',title=rewardPage?'奖励发放':eventPage?'活动管理':'卡池管理';
   $('#page-title').textContent=title;$('#breadcrumb').textContent=title;
   $('#page-description').textContent=eventPage?'组织活动关卡，配置日程与掉落规则。':'配置召唤内容、条目权重与开放时间。';
   $('#list-title').textContent=eventPage?'全部活动':'全部卡池';
@@ -134,6 +140,13 @@ function render() {
   for (const nav of document.querySelectorAll('[data-page]')) {
     const selected=nav.dataset.page===state.page;nav.classList.toggle('selected',selected);
     if (selected) nav.setAttribute('aria-current','page');else nav.removeAttribute('aria-current');
+  }
+  if (rewardPage) {
+    $('#create-event').hidden=true;$('#summary').replaceChildren();
+    $('#page-description').textContent='向全服或指定账号的礼物箱发放奖励。';
+    $('#list-title').textContent='新建奖励批次';
+    $('#page-footnote').textContent='全服范围为提交时已存在的真实账号，不包含助战假账号。相同请求编号只发放一次。';
+    renderRewards();return;
   }
   const cards=[['开放卡池',state.availability.gachas.filter(g=>g.effective_open).length,'/ 3','◇'],
     ['开放活动',state.availability.events.filter(e=>e.effective_open).length,`/ ${state.config.events.length}`,'▦'],
@@ -331,3 +344,56 @@ $('#cancel-editor').addEventListener('click',closeEditor);$('#close-editor').add
 $('#editor').addEventListener('cancel',event=>{event.preventDefault();closeEditor();});
 window.addEventListener('beforeunload',event=>{if (state.dirty) {event.preventDefault();event.returnValue='';}});
 refresh();
+
+function renderRewards() {
+  const content=$('#content');content.className='event-list';
+  const form=el('form',{class:'pool-card'}),body=el('div',{class:'card-body'});
+  const target=el('select',{},el('option',{value:'selected'},'指定账号'),el('option',{value:'all'},'全服真实账号'));
+  const ids=el('input',{placeholder:'账号 ID，多个用逗号或空格分隔'});
+  const kind=el('select',{},...[['1','金币'],['2','友情点'],['3','水晶'],['4','角色']].map(([value,label])=>el('option',{value},label)));
+  const amount=el('input',{type:'number',min:1,step:1,value:1,required:true});
+  const level=el('input',{type:'number',min:1,max:99,step:1,value:1});
+  const message=el('input',{value:'运营奖励',maxlength:120,required:true});
+  const result=el('div',{role:'status'}),submit=el('button',{type:'submit',class:'button primary'},'确认并发放');
+  const retry=state.rewardPending;
+  if (retry) {
+    target.value=retry.target;ids.value=retry.user_ids.join(',');kind.value=retry.present_type;
+    amount.value=retry.present_param_0;level.value=retry.present_param_1||1;message.value=retry.message;
+    submit.textContent='重试上次发放';
+  }
+  function lock(value) {for (const input of [target,ids,kind,amount,level,message]) input.disabled=value;}
+  lock(!!retry);
+  target.addEventListener('change',()=>{ids.disabled=target.value==='all';});
+  body.append(field('发放范围',target),field('指定账号 ID',ids),field('奖励类型',kind),
+    field('数量／角色 ID',amount),field('角色等级（仅角色奖励使用）',level),field('礼物说明',message),
+    submit,result);
+  form.append(body);content.replaceChildren(form);
+  form.addEventListener('submit',async event=>{
+    event.preventDefault();if (state.busy) return;
+    let payload=state.rewardPending;
+    if (!payload) {
+      const parsed=ids.value.trim()?ids.value.trim().split(/[,，\s]+/).map(Number):[];
+      payload={request_id:rewardRequestId(),target:target.value,user_ids:target.value==='all'?[]:parsed,
+        message:message.value,present_type:Number(kind.value),present_param_0:Number(amount.value),
+        present_param_1:Number(kind.value)===4?Number(level.value):0};
+      if (payload.target==='selected' && (!parsed.length || parsed.some(n=>!Number.isSafeInteger(n)||n<1))) {
+        result.textContent='请输入有效的账号 ID。';return;
+      }
+      if (!window.confirm(`确认向${payload.target==='all'?'全服真实账号':payload.user_ids.join('、')}发放奖励？`)) return;
+      rememberReward(payload);
+    }
+    lock(true);setBusy(true);submit.disabled=true;
+    try {
+      const response=await request('/admin/v1/rewards','POST',payload);
+      result.textContent=`批次 ${payload.request_id}：已向 ${response.data.count} 个账号发放${response.replayed?'（已完成批次，未重复发放）':''}。`;
+      rememberReward(null);lock(false);submit.textContent='确认并发放';
+    } catch (error) {
+      if (error.status && error.status<500) {
+        rememberReward(null);lock(false);submit.textContent='确认并发放';result.textContent=error.message;
+      } else {
+        result.textContent=`${error.message}。请求编号 ${payload.request_id} 已保留，重试不会重复发放。`;
+        submit.textContent='重试上次发放';
+      }
+    } finally {setBusy(false);submit.disabled=false;}
+  });
+}
