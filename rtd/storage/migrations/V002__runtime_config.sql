@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS runtime_config (
+    id INTEGER PRIMARY KEY CHECK(id=1), document TEXT NOT NULL);

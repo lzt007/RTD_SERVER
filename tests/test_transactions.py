@@ -102,7 +102,7 @@ class TransactionsTest(unittest.TestCase):
     def test_legacy_schema_upgrade_and_backup_restore(self):
         before = self.state()
         with self.api.store.connect() as db:
-            db.executescript('DROP TABLE operation_receipts; DROP TABLE quest_runs; PRAGMA user_version=0;')
+            db.executescript('DROP TABLE schema_history; DROP TABLE operation_receipts; DROP TABLE quest_runs; PRAGMA user_version=0;')
         backup = pathlib.Path(self.temp.name)/'schema0.sqlite3'
         with self.api.store.connect() as db:
             target=sqlite3.connect(backup)

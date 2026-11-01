@@ -16,45 +16,10 @@ class Store:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.lock = threading.RLock()
         self.local = threading.local()
+        from .migration import migrate
         with self.connect() as db:
-            db.executescript('''
-            PRAGMA journal_mode=WAL;
-            CREATE TABLE IF NOT EXISTS players (
-                id INTEGER PRIMARY KEY AUTOINCREMENT, uuid TEXT UNIQUE NOT NULL,
-                state TEXT NOT NULL, created_at INTEGER NOT NULL);
-            CREATE TABLE IF NOT EXISTS sessions (
-                token TEXT PRIMARY KEY, player_id INTEGER NOT NULL,
-                expires_at INTEGER NOT NULL,
-                FOREIGN KEY(player_id) REFERENCES players(id));
-            ''')
-            version = db.execute('PRAGMA user_version').fetchone()[0]
-            if version > 2:
-                raise RuntimeError('Database schema is newer than this server')
-            if version == 0:
-                db.executescript('''
-                BEGIN IMMEDIATE;
-                CREATE TABLE quest_runs (
-                    run_id TEXT PRIMARY KEY, player_id INTEGER NOT NULL REFERENCES players(id),
-                    quest_id INTEGER NOT NULL, status TEXT NOT NULL CHECK(status IN ('active','cleared','abandoned')),
-                    snapshot TEXT NOT NULL, order_result TEXT NOT NULL,
-                    created_at INTEGER NOT NULL, completed_at INTEGER);
-                CREATE UNIQUE INDEX one_active_run ON quest_runs(player_id) WHERE status='active';
-                CREATE TABLE operation_receipts (
-                    run_id TEXT NOT NULL REFERENCES quest_runs(run_id), operation TEXT NOT NULL,
-                    fingerprint TEXT NOT NULL, result TEXT NOT NULL,
-                    PRIMARY KEY(run_id,operation));
-                PRAGMA user_version=1;
-                COMMIT;
-                ''')
-                version=1
-            if version==1:
-                db.executescript('''
-                BEGIN IMMEDIATE;
-                CREATE TABLE IF NOT EXISTS runtime_config (
-                    id INTEGER PRIMARY KEY CHECK(id=1), document TEXT NOT NULL);
-                PRAGMA user_version=2;
-                COMMIT;
-                ''')
+            migrate(db)
+            db.execute('PRAGMA journal_mode=WAL')
 
     @contextlib.contextmanager
     def connect(self):
