@@ -13,7 +13,7 @@ EVENT_POINT_QUESTS={13206,13207,13208}
 SINGLE_QUESTS={10001}|ORDINARY_QUESTS|EVENT_POINT_QUESTS
 LAYER_ROOTS={20000}
 VERIFIED_LAYER_QUESTS={20000,20100,20103,20110,20120,20122,20131}
-VERIFIED_QUESTS={10001,11000,11001,11002}|STORY_BATCH_QUESTS|AREA_150_QUESTS|VERIFIED_LAYER_QUESTS
+VERIFIED_QUESTS={10001}|ORDINARY_QUESTS|VERIFIED_LAYER_QUESTS
 
 
 def layer_quests(api):
@@ -21,7 +21,7 @@ def layer_quests(api):
 
 
 def available(api,quest_id):
-    return quest_id in VERIFIED_QUESTS or api.experimental_content
+    return quest_id not in getattr(api, 'blocked_quests', set())
 
 
 def require_unlocked(api,state,quest,*,local_schedule=False):

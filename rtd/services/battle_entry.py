@@ -19,9 +19,7 @@ HASH_TYPES = (30,31,21,20,10,11,12,13,14,32,33,90,16,17)
 
 def order_single_floor(api, state, req, session, quest_id):
     player = state['player']
-    if quest_id in ORDINARY_QUESTS and not api.visual_recovery:
-        raise ProtocolError(8197, 'Ordinary quest requires approved visual recovery')
-    if not available(api,quest_id):raise ProtocolError(8197,'Quest client resources have not been approved/verified')
+    if not available(api,quest_id):raise ProtocolError(8197,'Quest is blocked by server configuration')
     quest=next(q for q in api.masters[30]['data_list'] if q['id']==quest_id)
     if quest_id==10001:
         if not player['quest_clear_flags'][0]&2:raise ProtocolError(9472,'Required tutorial is not complete')

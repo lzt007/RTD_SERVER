@@ -13,6 +13,9 @@ def load_config(filename=None):
             port=data[section].get('port')
             if isinstance(port,bool) or not isinstance(port,int) or not 1<=port<=65535:
                 raise ValueError(section+' port must be an integer from 1 to 65535')
+    blocked=data.get('features', {}).get('blocked_quests', [])
+    if not isinstance(blocked,list) or any(type(q) is not int or q<=0 for q in blocked):
+        raise ValueError('features.blocked_quests must be a list of positive integer quest IDs')
     return data
 
 SETTINGS=load_config()

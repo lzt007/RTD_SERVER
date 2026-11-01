@@ -24,6 +24,7 @@
   },
   "features": {
     "visual_recovery": true,
-    "experimental_content": false
+    "experimental_content": false,
+    "blocked_quests": []
   }
 }

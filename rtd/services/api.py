@@ -20,6 +20,7 @@ from ..policies.quest_content import VERIFIED_QUESTS,SINGLE_QUESTS,layer_quests
 
 class API:
     def __init__(self, database):
+        self.blocked_quests = set(SETTINGS.get('features', {}).get('blocked_quests', []))
         self.store = Store(database)
         self.masters, self.levels = load_catalog()
         self.delivery=Delivery(self.store,self.masters)
@@ -32,8 +33,8 @@ class API:
         self.visual_recovery = apply_visual_recovery(self.masters) if visual == '1' else None
         configurable=(SINGLE_QUESTS|layer_quests(self))-{10001}
         self.operations=Operations(self.store,self.masters,lambda:load_pools(self.masters)[0],
-            event_quests=configurable if self.experimental_content else VERIFIED_QUESTS-{10001},
-            configurable_quests=configurable,playable_quests=VERIFIED_QUESTS|{10000})
+            event_quests=configurable-self.blocked_quests,
+            configurable_quests=configurable,playable_quests=(SINGLE_QUESTS|layer_quests(self)|{10000})-self.blocked_quests)
 
     def master_table(self,kind):
         return self.operations.quest_table() if kind==30 else self.masters.get(kind)

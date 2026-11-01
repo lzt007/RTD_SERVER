@@ -64,6 +64,8 @@ def save_quest_new_flags(self, state, req, token, operation):
 
 def order_quest(self, state, req, token, operation):
     player = state['player']
+    if str(req.get('quest_id')) in {str(q) for q in self.blocked_quests}:
+        raise ProtocolError(8197, 'Quest is blocked by server configuration')
     if str(req.get('quest_id')) in {str(id) for id in layer_quests(self)}:
         return order_layer(self,state,req,token,int(req['quest_id']))
     if str(req.get('quest_id')) in {str(id) for id in SINGLE_QUESTS}:
