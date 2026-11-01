@@ -24,3 +24,13 @@ __pycache__/
 *.jpeg
 *.unity3d
 .idea
+
+# Large resources and generated packages (kept locally)
+*.zip
+*.7z
+*.rar
+*.apk
+*.aab
+*.obb
+*.unity3d
+*.assets
