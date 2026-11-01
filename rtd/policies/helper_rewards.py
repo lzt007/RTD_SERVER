@@ -22,7 +22,7 @@ def freeze(state,helper,bonus):
     if not uid:return None
     extra=bonus.get('num',0) if bonus.get('type')==10 else 0
     if type(extra) is not int or extra<0:raise ProtocolError(8197,'Invalid helper login bonus')
-    return dict(helper_id=uid,day=day,points=BASE,bonus=extra,eligible=not claimed(state,uid,day))
+    return dict(helper_id=uid,day=day,points=BASE if helper['friend'] else 5,bonus=extra,eligible=not claimed(state,uid,day))
 
 
 def balance(player):

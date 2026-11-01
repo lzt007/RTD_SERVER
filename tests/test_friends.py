@@ -59,6 +59,14 @@ class FriendsTest(unittest.TestCase):
         self.assertEqual(e.exception.args[0],8704)
         self.assertEqual(self.call('get_friends')[0]['friend_status'],1)
 
+    def test_send_to_full_peer_uses_client_recognized_error(self):
+        peer=self.state(1);peer['player']['max_friend']=0;self.api.store.save(peer)
+        before=[self.state(i) for i in range(2)]
+        with self.assertRaises(ProtocolError) as error:
+            self.call('send_friend_request',friend_user_id='2')
+        self.assertEqual(error.exception.args[0],8704)
+        self.assertEqual([self.state(i) for i in range(2)],before)
+
     def test_invalid_self_unknown_and_outgoing_accept(self):
         for op,params in (('send_friend_request',dict(friend_user_id=True)),
                           ('send_friend_request',dict(friend_user_id=1)),
@@ -137,7 +145,7 @@ class FriendsTest(unittest.TestCase):
         self.assertEqual((rows[1]['friend'],rows[1]['friend_point']),(True,False))
         self.assertEqual(rows[1]['unit_id'],self.state(1)['units'][0]['unit_id'])
         self.call('delete_friend',friend_user_id=[2])
-        self.assertEqual([r['user_id'] for r in self.call('get_helpers')],[0])
+        self.assertEqual([r['user_id'] for r in self.call('get_helpers')],[0,2])
 
     def test_friend_order_snapshot_survives_friend_profile_change_and_removal(self):
         from rtd.services.battle_entry import HASH_TYPES

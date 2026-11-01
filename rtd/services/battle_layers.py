@@ -7,7 +7,7 @@ import uuid
 from ..common import ProtocolError,compact
 from ..operations.configuration import is_open
 from ..policies.helpers import local_helper
-from ..policies.helper_rewards import claimed,freeze
+from ..policies.helper_rewards import freeze
 from ..policies.attribute_rewards import reward_snapshot
 from ..policies.event_points import freeze as freeze_event_points
 from ..policies.login_rewards import active_bonus
@@ -17,7 +17,7 @@ from .battle_entry import HASH_TYPES
 from .battle_generation import generate_enemies
 from .battle_rewards import settle_single_floor,complete_battle
 from .shop import number
-from .social import profile
+from .social import helper_profile
 
 
 def snapshot(state):
@@ -75,10 +75,7 @@ def order_layer(api,state,req,session,quest_id):
         owned={u['instance_id'] for u in state['units']}
         if len(set(party[:3]))!=3 or not set(party[:3])<=owned:raise ProtocolError(9472,'A complete party is required')
         if helper_id:
-            peer=api.store.by_id(helper_id)
-            if peer is None or state.get('friend_links',{}).get(str(helper_id),{}).get('status')!=0:
-                raise ProtocolError(9472,'Helper is not an accepted friend')
-            helper=profile(peer);helper.pop('create_date');helper.update(friend=True,friend_point=claimed(state,helper_id))
+            helper=helper_profile(api,state,helper_id)
         else:helper=local_helper(state['starter'])
         if player['action_point']<quest['stamina']:raise ProtocolError(9472,'Not enough stamina')
         bonus=active_bonus(state);count=0

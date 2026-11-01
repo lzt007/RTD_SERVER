@@ -7,11 +7,11 @@ from ..policies.stamina import spend
 from .battle_generation import generate_enemies
 from ..policies.login_rewards import active_bonus
 from ..policies.helpers import local_helper
-from ..policies.helper_rewards import claimed,freeze
+from ..policies.helper_rewards import freeze
 from ..policies.attribute_rewards import reward_snapshot
 from ..policies.event_points import freeze as freeze_event_points
 from .shop import number
-from .social import profile
+from .social import helper_profile
 from ..policies.quest_content import available,require_unlocked,ORDINARY_QUESTS
 
 HASH_TYPES = (30,31,21,20,10,11,12,13,14,32,33,90,16,17)
@@ -72,10 +72,7 @@ def order_single_floor(api, state, req, session, quest_id):
         event=api.operations.event_for_quest(quest_id)
         if event and not is_open(event[0]):raise ProtocolError(8197,'Local event is closed')
         if helper_id:
-            peer=api.store.by_id(helper_id)
-            if peer is None or state.get('friend_links',{}).get(str(helper_id),{}).get('status')!=0:
-                raise ProtocolError(9472,'Helper is not an accepted local friend')
-            helper=profile(peer);helper.pop('create_date');helper.update(friend=True,friend_point=claimed(state,helper_id))
+            helper=helper_profile(api,state,helper_id)
         else:helper=local_helper(state['starter'])
         if len(state['units']) > player['max_unit']:
             raise ProtocolError(9472, 'Unit inventory exceeds capacity')

@@ -67,6 +67,8 @@ def search(api,state,req,token,operation):
 
 def relation(api,state,req,token,operation):
     mine=state['player']['user_id'];links=state.setdefault('friend_links',{});accepted=0
+    if operation=='send_friend_request' and number(req.get('friend_user_id'))==0:
+        raise ProtocolError(8706,'Local companion cannot receive friend requests')
     targets=[number(req.get('friend_user_id'),True)] if operation=='send_friend_request' else ids(req)
     for uid in targets:
         key=str(uid);other=target(api,state,uid);their=other.setdefault('friend_links',{});my_key=str(mine)
@@ -74,7 +76,7 @@ def relation(api,state,req,token,operation):
         if operation=='send_friend_request':
             if left and right and (left['status'],right['status'])==(1,2):continue
             if left or right:raise ProtocolError(8706,'Local friend relationship already exists')
-            capacity(state,8704);capacity(other,8705)
+            capacity(state,8704);capacity(other,8704)
             if len(links)>=100 or len(their)>=100:raise ProtocolError(8704,'Local friend queue is full')
             date=stamp();links[key]=dict(status=1,date=date);their[my_key]=dict(status=2,date=date)
         elif operation=='accept_friend_request':
@@ -90,3 +92,10 @@ def relation(api,state,req,token,operation):
     return dict(code=4096,session_id=token,result=dict(count=accepted) if operation=='accept_friend_request' else [])
 
 
+def helper_profile(api,state,uid):
+    peer=target(api,state,uid)
+    row=profile(peer);row.pop('create_date')
+    from ..policies.helper_rewards import claimed
+    row.update(friend=state.get('friend_links',{}).get(str(uid),{}).get('status')==0,
+               friend_point=claimed(state,uid))
+    return row

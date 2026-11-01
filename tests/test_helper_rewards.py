@@ -68,6 +68,43 @@ class HelperRewardsTest(unittest.TestCase):
                 if key.endswith('_drop_id') and value not in known:
                     drops.append(dict(drops[0],id=value));known.add(value)
 
+    def test_stranger_borrow_clear_apply_accept(self):
+        rows=self.call('get_helpers')
+        stranger=next(r for r in rows if r['user_id']==3)
+        self.assertFalse(stranger['friend'])
+        self.order(helper=3)
+        self.clear()
+        self.assertEqual(self.state()['player']['friend_point'],105)
+        self.assertEqual(self.call('send_friend_request',friend_user_id='3'),[])
+        self.assertEqual(self.call('get_friends',who=2)[0]['friend_status'],2)
+        self.assertEqual(self.call('accept_friend_request',who=2,friend_user_id=[1]),{'count':1})
+        self.assertTrue(next(r for r in self.call('get_helpers') if r['user_id']==3)['friend'])
+        self.assertEqual(self.call('login',who=2)['received_friend_point'],10)
+
+    def test_stranger_reward_uses_entry_relationship_after_accept(self):
+        self.order(helper=3)
+        self.call('send_friend_request',friend_user_id=3)
+        self.call('accept_friend_request',who=2,friend_user_id=[1])
+        self.clear()
+        self.assertEqual(self.state()['player']['friend_point'],105)
+        self.order(helper=3);self.clear()
+        self.assertEqual(self.state()['player']['friend_point'],105)
+        self.clock.return_value=NOW+86400
+        self.order(helper=3);self.clear()
+        self.assertEqual(self.state()['player']['friend_point'],115)
+
+    def test_layer_root_accepts_stranger_and_freezes_profile(self):
+        self.open_layers();self.order(quest=20000,helper=3)
+        self.assertEqual(self.state()['battle_helper']['user_id'],3)
+        self.assertFalse(self.state()['battle_helper']['friend'])
+        self.assertEqual(self.state()['battle_helper_reward']['points'],5)
+
+    def test_npc_does_not_offer_friend_request(self):
+        self.assertTrue(self.call('get_helpers')[0]['friend'])
+        with self.assertRaises(ProtocolError) as error:
+            self.call('send_friend_request',friend_user_id='0')
+        self.assertEqual(error.exception.args[0],8706)
+
     def test_eligible_list_successful_clear_and_provider_login_once(self):
         self.assertFalse(self.call('get_helpers')[1]['friend_point'])
         before=self.both();self.order()
@@ -218,8 +255,9 @@ class HelperRewardsTest(unittest.TestCase):
             with self.subTest(uid=uid),self.assertRaises(ProtocolError):self.order(helper=uid)
             self.assertEqual(self.both(),before)
         self.call('delete_friend',friend_user_id=[2]);before=self.both()
-        with self.assertRaises(ProtocolError):self.order()
-        self.assertEqual(self.both(),before)
+        self.order()
+        self.assertFalse(self.state()['battle_helper']['friend'])
+        self.assertEqual(self.state(1),before[1])
 
 
 if __name__=='__main__':unittest.main()

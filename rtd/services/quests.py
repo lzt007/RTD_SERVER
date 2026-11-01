@@ -24,6 +24,12 @@ def get_helpers(self, state, req, token, operation):
         if peer is None:continue
         row=profile(peer);row.pop('create_date');row.update(friend=True,friend_point=claimed(state,int(uid)))
         rows.append(row)
+    from .social import helper_profile
+    with self.store.connect() as db:
+        candidates=db.execute('SELECT id FROM players WHERE id!=? ORDER BY id',
+                              (state['player']['user_id'],)).fetchall()
+    strangers=[uid for (uid,) in candidates if str(uid) not in state.get('friend_links',{})][:20]
+    rows.extend(helper_profile(self,state,uid) for uid in strangers)
     return dict(code=4096, session_id=token, result=rows)
 
 def get_quest_info(self, state, req, token, operation):
