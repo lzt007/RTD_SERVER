@@ -8,10 +8,6 @@
     15005,
     15006,
     15007,
-    15008,
-    15009,
-    15010,
-    15011,
     15012,
     15013,
     15014,
@@ -734,9 +730,6 @@
     16733,
     16734,
     16735,
-    16736,
-    16737,
-    16738,
     16739,
     16740,
     16741,
@@ -753,9 +746,38 @@
     20230,
     30200,
     30210,
-    30220,
-    30230
+    30220
   ],
+  "unavailable_units": {
+    "15008": [
+      "missing portrait (g_id=0)",
+      "missing model"
+    ],
+    "15009": [
+      "missing portrait (g_id=0)",
+      "missing model"
+    ],
+    "15010": [
+      "missing portrait (g_id=0)",
+      "missing model"
+    ],
+    "15011": [
+      "missing portrait (g_id=0)",
+      "missing model"
+    ],
+    "16736": [
+      "a_skill_id: missing skills [28240]"
+    ],
+    "16737": [
+      "a_skill_id: missing skills [28240]"
+    ],
+    "16738": [
+      "a_skill_id: missing skills [28240]"
+    ],
+    "30230": [
+      "missing portrait (g_id=0)"
+    ]
+  },
   "quest_sources": {
     "10000": [
       10000,
@@ -5595,8 +5617,9 @@
   },
   "counts": {
     "total": 751,
-    "materials": 40,
+    "materials": 36,
     "excluded": 201,
-    "eligible": 510
+    "eligible": 506,
+    "unavailable": 8
   }
 }

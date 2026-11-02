@@ -10,12 +10,19 @@ from scripts.apply_gacha_policy import migrate
 
 
 class SummonPolicyTest(unittest.TestCase):
+    def test_incomplete_units_never_enter_generated_pools(self):
+        masters,_=load_catalog();p,report=build_pools(masters)
+        broken={15008,15009,15010,15011,30230,16736,16737,16738}
+        for name in ('normal','rare'):
+            self.assertFalse(broken & {r['unit_id'] for r in p[name]})
+        self.assertEqual(set(map(int,report['unavailable_units'])),broken)
+
     def test_membership_and_exact_group_probability(self):
         masters,_=load_catalog();p,report=build_pools(masters)
         rare={r['unit_id'] for r in p['rare']}
         excluded=set(report['excluded_ids'])
         self.assertFalse(rare & (MATERIAL_IDS|STARTER_IDS|excluded))
-        self.assertEqual(rare|MATERIAL_IDS|excluded,{u['id'] for u in masters[10]['data_list']})
+        self.assertEqual(rare|MATERIAL_IDS|excluded|set(map(int,report['unavailable_units'])),{u['id'] for u in masters[10]['data_list']})
         total=sum(r['weight'] for r in p['normal'])
         material=sum(r['weight'] for r in p['normal'] if r['unit_id'] in MATERIAL_IDS)
         self.assertEqual(Fraction(material,total),Fraction(9,10))
@@ -34,6 +41,6 @@ class SummonPolicyTest(unittest.TestCase):
             current=api.operations.read()
             self.assertEqual(current['revision'],cfg['revision']+1)
             self.assertFalse(current['gachas'][0]['enabled'])
-            self.assertEqual(len(current['gachas'][0]['entries']),550)
+            self.assertEqual(len(current['gachas'][0]['entries']),542)
             self.assertEqual(current['events'],cfg['events'])
             self.assertFalse(migrate(path)['changed'])
