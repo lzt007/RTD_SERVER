@@ -59,7 +59,7 @@ rsync -a --exclude-from="$STAGE/.database-excludes" --exclude='/.database-exclud
 if [[ ! -f "$TARGET/rtd.config.json" ]]; then
     cp "$STAGE/rtd.config.json" "$TARGET/rtd.config.json"
 fi
-systemctl restart rtd_api.service rtd_resource.service
-systemctl is-active --quiet rtd_api.service
-systemctl is-active --quiet rtd_resource.service
-echo '部署完成，rtd_api 和 rtd_resource 已重启。'
+systemctl restart rtd-api.service rtd-resources.service
+systemctl is-active --quiet rtd-api.service
+systemctl is-active --quiet rtd-resources.service
+echo '部署完成，rtd-api 和 rtd-resources 已重启。'
