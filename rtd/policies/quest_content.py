@@ -32,7 +32,22 @@ def require_unlocked(api,state,quest,*,local_schedule=False):
         kind=quest[f'open_type_{i}'];value=quest[f'open_param_{i}']
         if kind==0:continue
         if local_schedule and kind in (1,4,5,6):continue
-        if kind==6 and value==0:continue
+        if kind==6:
+            if value:raise ProtocolError(8197,'Quest orders are stopped')
+            continue
+        if kind==7:
+            flag=quest['flag_no']
+            if not state['player']['quest_clear_flags'][flag//8]&(1<<(flag%8)):
+                raise ProtocolError(9472,'Quest must already be cleared')
+            continue
+        if kind==9:
+            if not value:continue
+            target=quests.get(value)
+            if target is None:raise ProtocolError(8197,'Missing not-clear prerequisite master')
+            flag=target['flag_no']
+            if state['player']['quest_clear_flags'][flag//8]&(1<<(flag%8)):
+                raise ProtocolError(8197,'Quest is closed after prerequisite clear')
+            continue
         if kind==1:
             # Original client: Sunday=0 ... Saturday=6, 7 is every day.
             day=(dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).weekday()+1)%7

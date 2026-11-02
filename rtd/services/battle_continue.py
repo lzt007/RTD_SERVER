@@ -2,14 +2,15 @@
 from ..common import ProtocolError
 from .shop import number
 from .presents import USER_FIELDS
-from ..policies.quest_content import SINGLE_QUESTS,layer_quests
+from ..policies.quest_content import layer_quests
+from ..policies.event_content import single_quests
 
 
 def continue_quest(api,state,req,token,operation):
     floor=number(req.get('floor'));count=number(req.get('quest_continue'),True)
     retry=number(req.get('retry',0));battle=state.get('battle');player=state['player']
     run=api.store.active_run(player['user_id'])
-    supported=(SINGLE_QUESTS-{10001})|layer_quests(api)
+    supported=(single_quests(api)-{10001})|layer_quests(api)
     if not battle or battle['quest_id'] not in supported or battle['quest_status']!=1 or floor!=len(state.get('battle_history',[])) or not run:
         raise ProtocolError(9472,'No supported active single-floor battle')
     current=battle['quest_continue'];receipt=state.get('battle_continue_receipt',{})

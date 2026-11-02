@@ -11,6 +11,7 @@ from ..policies.helper_rewards import claimed
 from .battle_entry import order_single_floor
 from .battle_rewards import settle_single_floor
 from ..policies.quest_content import SINGLE_QUESTS,available
+from ..policies.event_content import single_quests
 from ..policies.quest_content import layer_quests
 from .battle_layers import order_layer,settle_layers
 
@@ -46,7 +47,7 @@ def clear_quest(self, state, req, token, operation):
             'battle_history' in state or any(isinstance(row,dict) and type(row.get('quest_id')) is int and row['quest_id'] in layer_quests(self) for row in entries)):
         return dict(code=4096,session_id=token,result=settle_layers(self,state,req))
     if (operation == 'clear_quest2' and isinstance(entries,list) and len(entries) == 1
-            and isinstance(entries[0],dict) and type(entries[0].get('quest_id')) is int and entries[0]['quest_id'] in SINGLE_QUESTS):
+            and isinstance(entries[0],dict) and type(entries[0].get('quest_id')) is int and entries[0]['quest_id'] in single_quests(self)):
         result = settle_single_floor(self,state,req,entries[0]['quest_id'])
     else:
         result = self.settle_tutorial(state, operation, req)
@@ -74,7 +75,7 @@ def order_quest(self, state, req, token, operation):
         raise ProtocolError(8197, 'Quest is blocked by server configuration')
     if str(req.get('quest_id')) in {str(id) for id in layer_quests(self)}:
         return order_layer(self,state,req,token,int(req['quest_id']))
-    if str(req.get('quest_id')) in {str(id) for id in SINGLE_QUESTS}:
+    if str(req.get('quest_id')) in {str(id) for id in single_quests(self)}:
         if not available(self,int(req['quest_id'])):raise ProtocolError(8197,'Quest resources are not enabled')
         return order_single_floor(self, state, req, token, int(req['quest_id']))
     if str(req.get('quest_id')) != '10000' or req.get('floor', 0) != 0:

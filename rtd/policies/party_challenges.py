@@ -1,6 +1,6 @@
 """Original party challenges use all four accepted original unit masters."""
 from ..common import ProtocolError
-from .quest_content import SINGLE_QUESTS
+from .event_content import single_quests
 
 
 def _party_masters(api,state):
@@ -8,7 +8,7 @@ def _party_masters(api,state):
     helper=state.get('battle_helper',{}).get('unit_id')
     # Legacy/multilayer runs without this single-floor snapshot are not evidence
     # of an attribute challenge. In particular, never fall back to evolved units.
-    if (state['battle']['quest_id'] not in SINGLE_QUESTS
+    if (state['battle']['quest_id'] not in single_quests(api)
             or not isinstance(ids,list) or len(ids)!=3
             or any(type(i) is not int or i<=0 for i in ids)
             or type(helper) is not int or helper<=0):

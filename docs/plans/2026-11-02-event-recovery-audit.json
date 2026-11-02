@@ -1,0 +1,8585 @@
+{
+  "supported": 69,
+  "visual_substitutions": [
+    {
+      "enemy_id": 10130,
+      "quest_ids": [
+        12010,
+        12030,
+        12050,
+        12204,
+        13010
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 10320,
+      "quest_ids": [
+        12010,
+        12030,
+        12050
+      ],
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_fire"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_fire"
+      }
+    },
+    {
+      "enemy_id": 10321,
+      "quest_ids": [
+        12020,
+        12030,
+        12050
+      ],
+      "before": {
+        "model": "ms01_dra_lv3",
+        "texture": "ms01_dra_lv3_water"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_water"
+      }
+    },
+    {
+      "enemy_id": 10432,
+      "quest_ids": [
+        12041,
+        12051,
+        12061,
+        13011
+      ],
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_holy"
+      },
+      "after": {
+        "model": "ms01_bear_lv3",
+        "texture": "ms01_bear_lv3_holy"
+      }
+    },
+    {
+      "enemy_id": 10530,
+      "quest_ids": [
+        12011,
+        12031,
+        12051,
+        12204,
+        13011
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 10531,
+      "quest_ids": [
+        12021,
+        12031,
+        12051,
+        12207
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11000,
+      "quest_ids": [
+        12010
+      ],
+      "before": {
+        "model": "ms02_dra_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11001,
+      "quest_ids": [
+        12020
+      ],
+      "before": {
+        "model": "ms02_dra_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11003,
+      "quest_ids": [
+        12000
+      ],
+      "before": {
+        "model": "ms02_dra_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11007,
+      "quest_ids": [
+        13000
+      ],
+      "before": {
+        "model": "ms02_dra_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11025,
+      "quest_ids": [
+        12052
+      ],
+      "before": {
+        "model": "ms02_four_fire_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11026,
+      "quest_ids": [
+        12052
+      ],
+      "before": {
+        "model": "ms02_four_water_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11027,
+      "quest_ids": [
+        12052,
+        12062
+      ],
+      "before": {
+        "model": "ms02_four_holy_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11028,
+      "quest_ids": [
+        12052
+      ],
+      "before": {
+        "model": "ms02_four_dark_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11120,
+      "quest_ids": [
+        12012,
+        12032,
+        12052,
+        13012
+      ],
+      "before": {
+        "model": "ms02_four_fire_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11121,
+      "quest_ids": [
+        12022,
+        12032,
+        12052
+      ],
+      "before": {
+        "model": "ms02_four_water_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11122,
+      "quest_ids": [
+        12042,
+        12052,
+        13012
+      ],
+      "before": {
+        "model": "ms02_four_holy_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 11123,
+      "quest_ids": [
+        12002,
+        12042,
+        12052
+      ],
+      "before": {
+        "model": "ms02_four_dark_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12107,
+      "quest_ids": [
+        12000,
+        12010,
+        12020,
+        12030,
+        12040,
+        12050,
+        12060,
+        12192,
+        12193,
+        12196,
+        12204,
+        13010,
+        13013,
+        13014,
+        13020,
+        13022
+      ],
+      "before": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12110,
+      "quest_ids": [
+        12173,
+        12174,
+        12176,
+        12177,
+        12179,
+        12180,
+        12182,
+        12183
+      ],
+      "before": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12206,
+      "quest_ids": [
+        12195,
+        13021
+      ],
+      "before": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12210,
+      "quest_ids": [
+        12175,
+        12178,
+        12181,
+        12184
+      ],
+      "before": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12212,
+      "quest_ids": [
+        12173,
+        12174,
+        12176,
+        12177,
+        12179,
+        12180,
+        12182,
+        12183
+      ],
+      "before": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12326,
+      "quest_ids": [
+        11999
+      ],
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_dark"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_dark"
+      }
+    },
+    {
+      "enemy_id": 12327,
+      "quest_ids": [
+        12009
+      ],
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_fire"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_fire"
+      }
+    },
+    {
+      "enemy_id": 12328,
+      "quest_ids": [
+        12019
+      ],
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_water"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_water"
+      }
+    },
+    {
+      "enemy_id": 12329,
+      "quest_ids": [
+        12029
+      ],
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12330,
+      "quest_ids": [
+        12039
+      ],
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12331,
+      "quest_ids": [
+        12049
+      ],
+      "before": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 12332,
+      "quest_ids": [
+        12059
+      ],
+      "before": {
+        "model": "ms01_dra_lv2",
+        "texture": "ms01_dra_lv2_holy"
+      },
+      "after": {
+        "model": "ms01_dra_lv4",
+        "texture": "ms01_dra_lv4_holy"
+      }
+    },
+    {
+      "enemy_id": 14132,
+      "quest_ids": [
+        13002
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14230,
+      "quest_ids": [
+        12012,
+        12062,
+        13013,
+        13014
+      ],
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14231,
+      "quest_ids": [
+        12002,
+        12022,
+        12209,
+        13013
+      ],
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14232,
+      "quest_ids": [
+        12012,
+        12062,
+        13002,
+        13013,
+        13014,
+        13022,
+        13030,
+        13031
+      ],
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14233,
+      "quest_ids": [
+        12002,
+        12022,
+        12209,
+        13014,
+        13022
+      ],
+      "before": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14430,
+      "quest_ids": [
+        12012,
+        12032,
+        12062,
+        12172,
+        12193,
+        12205,
+        13012,
+        13013,
+        13014
+      ],
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_fire"
+      },
+      "after": {
+        "model": "ms01_bear_lv3",
+        "texture": "ms01_bear_lv3_fire"
+      }
+    },
+    {
+      "enemy_id": 14431,
+      "quest_ids": [
+        12002,
+        12022,
+        12032,
+        12172,
+        12193,
+        12208,
+        12209,
+        13013
+      ],
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_water"
+      },
+      "after": {
+        "model": "ms01_bear_lv3",
+        "texture": "ms01_bear_lv3_water"
+      }
+    },
+    {
+      "enemy_id": 14432,
+      "quest_ids": [
+        12012,
+        12042,
+        12062,
+        12172,
+        12193,
+        12205,
+        13002,
+        13012,
+        13013,
+        13022,
+        13030,
+        13031
+      ],
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_holy"
+      },
+      "after": {
+        "model": "ms01_bear_lv3",
+        "texture": "ms01_bear_lv3_holy"
+      }
+    },
+    {
+      "enemy_id": 14433,
+      "quest_ids": [
+        12002,
+        12022,
+        12042,
+        12172,
+        12193,
+        12208,
+        12209,
+        13014,
+        13022
+      ],
+      "before": {
+        "model": "ms01_bear_lv4",
+        "texture": "ms01_bear_lv4_dark"
+      },
+      "after": {
+        "model": "ms01_bear_lv3",
+        "texture": "ms01_bear_lv3_dark"
+      }
+    },
+    {
+      "enemy_id": 14530,
+      "quest_ids": [
+        12012,
+        12032,
+        12172,
+        12193,
+        12205,
+        13012,
+        13013,
+        13014
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14531,
+      "quest_ids": [
+        12022,
+        12032,
+        12172,
+        12193,
+        12208,
+        12209,
+        13013
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14532,
+      "quest_ids": [
+        12042,
+        12062,
+        12172,
+        12193,
+        12205,
+        13012,
+        13013,
+        13014,
+        13031
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 14533,
+      "quest_ids": [
+        12002,
+        12042,
+        12172,
+        12193,
+        12208,
+        12209,
+        13014
+      ],
+      "before": {
+        "model": "ms01_sco_lv4",
+        "texture": "ms01_sco_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15010,
+      "quest_ids": [
+        12195
+      ],
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15011,
+      "quest_ids": [
+        12195
+      ],
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15012,
+      "quest_ids": [
+        12195
+      ],
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15013,
+      "quest_ids": [
+        12195
+      ],
+      "before": {
+        "model": "ms01_squ_lv3",
+        "texture": "ms01_squ_lv3_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15020,
+      "quest_ids": [
+        12196
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_fire"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15021,
+      "quest_ids": [
+        12196
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_water"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15022,
+      "quest_ids": [
+        12196
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_holy"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 15023,
+      "quest_ids": [
+        12196
+      ],
+      "before": {
+        "model": "ms01_squ_lv4",
+        "texture": "ms01_squ_lv4_dark"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20001,
+      "quest_ids": [
+        12021
+      ],
+      "before": {
+        "model": "ms03_dra_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20004,
+      "quest_ids": [
+        12031,
+        12041,
+        12192
+      ],
+      "before": {
+        "model": "ms03_dra_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20014,
+      "quest_ids": [
+        13012
+      ],
+      "before": {
+        "model": "ms03_four_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms03_four_un_02",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20104,
+      "quest_ids": [
+        13021
+      ],
+      "before": {
+        "model": "ms03_dra_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20120,
+      "quest_ids": [
+        12012
+      ],
+      "before": {
+        "model": "ms03_fly_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20121,
+      "quest_ids": [
+        12022
+      ],
+      "before": {
+        "model": "ms03_fly_water_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20123,
+      "quest_ids": [
+        12002
+      ],
+      "before": {
+        "model": "ms03_fly_dark_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20124,
+      "quest_ids": [
+        12032
+      ],
+      "before": {
+        "model": "ms03_fly_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20125,
+      "quest_ids": [
+        12205
+      ],
+      "before": {
+        "model": "ms03_fly_fire_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20127,
+      "quest_ids": [
+        13030
+      ],
+      "before": {
+        "model": "ms03_fly_holy_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 20129,
+      "quest_ids": [
+        12196,
+        13013,
+        13031
+      ],
+      "before": {
+        "model": "ms03_fly_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 21000,
+      "quest_ids": [
+        12050
+      ],
+      "before": {
+        "model": "ms02_dra_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 21002,
+      "quest_ids": [
+        12051,
+        13011
+      ],
+      "before": {
+        "model": "ms03_dra_un_02",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 21033,
+      "quest_ids": [
+        12209
+      ],
+      "before": {
+        "model": "ms00_death_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms00_death_01",
+        "texture": "na"
+      }
+    },
+    {
+      "enemy_id": 31050,
+      "quest_ids": [
+        13022
+      ],
+      "before": {
+        "model": "ms03_fly_un_01",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      }
+    }
+  ],
+  "quests": [
+    {
+      "id": 11999,
+      "name": "蠢動の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12000,
+      "name": "蠢動の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12001,
+      "name": "蠢動の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12002,
+      "name": "蠢動の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12009,
+      "name": "業火の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12010,
+      "name": "業火の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12011,
+      "name": "業火の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12012,
+      "name": "業火の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12019,
+      "name": "深海の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12020,
+      "name": "深海の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12021,
+      "name": "深海の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12022,
+      "name": "深海の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12029,
+      "name": "蒼炎の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12030,
+      "name": "蒼炎の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12031,
+      "name": "蒼炎の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12032,
+      "name": "蒼炎の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12039,
+      "name": "陰陽の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12040,
+      "name": "陰陽の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12041,
+      "name": "陰陽の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12042,
+      "name": "陰陽の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12049,
+      "name": "四族の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12050,
+      "name": "四族の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12051,
+      "name": "四族の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12052,
+      "name": "四族の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12059,
+      "name": "極光の呼声・入門",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12060,
+      "name": "極光の呼声・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12061,
+      "name": "極光の呼声・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12062,
+      "name": "極光の呼声・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12100,
+      "name": "天下の回り物１・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12101,
+      "name": "天下の回り物２・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12102,
+      "name": "天下の回り物１・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12103,
+      "name": "天下の回り物２・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12104,
+      "name": "純白の結晶１・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12105,
+      "name": "純白の結晶２・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12106,
+      "name": "純白の結晶１・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12107,
+      "name": "純白の結晶２・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12108,
+      "name": "魂の器１・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12109,
+      "name": "魂の器２・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12110,
+      "name": "魂の器１・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12111,
+      "name": "魂の器２・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12112,
+      "name": "業火の英雄・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12113,
+      "name": "氷河の英雄・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12114,
+      "name": "白雷の英雄・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12115,
+      "name": "深淵の英雄・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12116,
+      "name": "虚無の英雄・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12117,
+      "name": "業火の英雄・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12118,
+      "name": "氷河の英雄・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12119,
+      "name": "白雷の英雄・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12120,
+      "name": "深淵の英雄・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12121,
+      "name": "虚無の英雄・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12122,
+      "name": "魔物の住処１・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12123,
+      "name": "魔物の住処２・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12124,
+      "name": "魔物の住処３・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12125,
+      "name": "魔物の住処４・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12126,
+      "name": "魔物の住処５・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12127,
+      "name": "魔物の住処１・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12128,
+      "name": "魔物の住処２・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12129,
+      "name": "魔物の住処３・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12130,
+      "name": "魔物の住処４・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12131,
+      "name": "魔物の住処５・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12132,
+      "name": "ルルイエの主・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12133,
+      "name": "銀鋼の群狼王・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12134,
+      "name": "アシュートの守護神・初",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12135,
+      "name": "正義と悪・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12136,
+      "name": "ルルイエの主・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12137,
+      "name": "銀鋼の群狼王・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12138,
+      "name": "アシュートの守護神・中",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12139,
+      "name": "正義と悪・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12140,
+      "name": "ルルイエの主・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12141,
+      "name": "銀鋼の群狼王・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12142,
+      "name": "アシュートの守護神・上",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12143,
+      "name": "正義と悪・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12144,
+      "name": "純銀の結晶・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12145,
+      "name": "純銀の結晶・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12146,
+      "name": "純銀の結晶・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12147,
+      "name": "聖雷の神威１・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12148,
+      "name": "聖雷の神威１・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12149,
+      "name": "聖雷の神威１・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12150,
+      "name": "聖雷の神威２・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12151,
+      "name": "聖雷の神威２・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12152,
+      "name": "聖雷の神威２・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12153,
+      "name": "聖夜の決戦・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12154,
+      "name": "聖夜の決戦・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12155,
+      "name": "聖夜の決戦・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12156,
+      "name": "幸運の使者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12157,
+      "name": "幸運の使者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12158,
+      "name": "幸運の使者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12159,
+      "name": "魂の器１・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12160,
+      "name": "魂の器２・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12161,
+      "name": "精練の儀式・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12162,
+      "name": "精練の儀式・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12163,
+      "name": "精練の儀式・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12164,
+      "name": "元月の儀式・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12165,
+      "name": "元月の儀式・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12166,
+      "name": "元月の儀式・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12167,
+      "name": "遅咲きの節分祭・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12168,
+      "name": "遅咲きの節分祭・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12169,
+      "name": "遅咲きの節分祭・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12170,
+      "name": "バレンタイン作戦・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12171,
+      "name": "バレンタイン作戦・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12172,
+      "name": "バレンタイン作戦・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12173,
+      "name": "幻影の金脈・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12174,
+      "name": "幻影の金脈・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12175,
+      "name": "幻影の金脈・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12176,
+      "name": "幻影の金脈・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12177,
+      "name": "幻影の金脈・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12178,
+      "name": "幻影の金脈・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12179,
+      "name": "幻影の金脈・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12180,
+      "name": "幻影の金脈・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12181,
+      "name": "幻影の金脈・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12182,
+      "name": "幻影の金脈・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12183,
+      "name": "幻影の金脈・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12184,
+      "name": "幻影の金脈・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12185,
+      "name": "幻影の超金脈・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing stair destination 20300"
+      ]
+    },
+    {
+      "id": 12186,
+      "name": "幻影の超金脈・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop enemy17",
+        "missing stair destination 20301"
+      ]
+    },
+    {
+      "id": 12187,
+      "name": "幻影の超金脈・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy17",
+        "missing stair destination 20302"
+      ]
+    },
+    {
+      "id": 12188,
+      "name": "幻影の超金脈・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing stair destination 20300"
+      ]
+    },
+    {
+      "id": 12189,
+      "name": "幻影の超金脈・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop enemy17",
+        "missing stair destination 20301"
+      ]
+    },
+    {
+      "id": 12190,
+      "name": "幻影の超金脈・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy17",
+        "missing stair destination 20302"
+      ]
+    },
+    {
+      "id": 12191,
+      "name": "魂の器[剣]・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12192,
+      "name": "魂の器[剣]・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12193,
+      "name": "魂の器[剣]・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12194,
+      "name": "魂の器[槍]・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12195,
+      "name": "魂の器[槍]・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12196,
+      "name": "魂の器[槍]・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12197,
+      "name": "魂の器[弓]・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4"
+      ]
+    },
+    {
+      "id": 12198,
+      "name": "魂の器[弓]・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8"
+      ]
+    },
+    {
+      "id": 12199,
+      "name": "魂の器[弓]・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing model ms03_dra_un_01"
+      ]
+    },
+    {
+      "id": 12200,
+      "name": "魂の器[杖]・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8"
+      ]
+    },
+    {
+      "id": 12201,
+      "name": "魂の器[杖]・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing model ms02_four_un_02"
+      ]
+    },
+    {
+      "id": 12202,
+      "name": "魂の器[杖]・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8"
+      ]
+    },
+    {
+      "id": 12203,
+      "name": "遅咲きのひな祭り・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12204,
+      "name": "遅咲きのひな祭り・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12205,
+      "name": "遅咲きのひな祭り・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12206,
+      "name": "ホワイトデー戦線・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12207,
+      "name": "ホワイトデー戦線・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12208,
+      "name": "ホワイトデー戦線・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12209,
+      "name": "ホワイトデー戦線・超級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 12210,
+      "name": "最果ての海の主・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12211,
+      "name": "最果ての海の主・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12212,
+      "name": "最果ての海の主・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12213,
+      "name": "正義と悪の番人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12214,
+      "name": "正義と悪の番人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12215,
+      "name": "正義と悪の番人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12216,
+      "name": "集う魂の結晶・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy18",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4"
+      ]
+    },
+    {
+      "id": 12217,
+      "name": "集う魂の結晶・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy18",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4"
+      ]
+    },
+    {
+      "id": 12218,
+      "name": "集う魂の結晶・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy18",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7"
+      ]
+    },
+    {
+      "id": 12219,
+      "name": "サクラ色の門出・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12220,
+      "name": "サクラ色の門出・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12221,
+      "name": "サクラ色の門出・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12222,
+      "name": "古の制心兵器・降臨",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy10",
+        "missing drop enemy11",
+        "missing drop enemy12",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing drop enemy9",
+        "missing model c02_wz_atf_un_01",
+        "missing model ms01_golem_dark",
+        "missing model ms01_golem_fire",
+        "missing model ms01_golem_holy",
+        "missing model ms01_golem_water"
+      ]
+    },
+    {
+      "id": 12223,
+      "name": "古の時間兵器・激烈",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy10",
+        "missing drop enemy11",
+        "missing drop enemy12",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing drop enemy9",
+        "missing model ms01_sco_sh_dark",
+        "missing model ms01_sco_sh_fire",
+        "missing model ms01_sco_sh_holy",
+        "missing model ms01_sco_sh_water",
+        "missing model ms01_squ_sh_dark",
+        "missing model ms01_squ_sh_fire",
+        "missing model ms01_squ_sh_holy",
+        "missing model ms01_squ_sh_water",
+        "missing model ms01_wolf_sh_dark",
+        "missing model ms01_wolf_sh_fire",
+        "missing model ms01_wolf_sh_holy",
+        "missing model ms01_wolf_sh_water",
+        "missing model ms04_legend_01"
+      ]
+    },
+    {
+      "id": 12230,
+      "name": "３分間の死闘・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12231,
+      "name": "３分間の死闘・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12232,
+      "name": "３分間の死闘・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12233,
+      "name": "孤独の狩人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12234,
+      "name": "孤独の狩人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12235,
+      "name": "孤独の狩人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12236,
+      "name": "魂との旅路・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12237,
+      "name": "魂との旅路・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12238,
+      "name": "魂との旅路・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12239,
+      "name": "月夜と狩人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12240,
+      "name": "月夜と狩人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12241,
+      "name": "月夜と狩人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12242,
+      "name": "聖剣と怨槍・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12243,
+      "name": "聖剣と怨槍・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12244,
+      "name": "聖剣と怨槍・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12245,
+      "name": "真理を記す者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12246,
+      "name": "真理を記す者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12247,
+      "name": "真理を記す者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12248,
+      "name": "３分間の成金・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12249,
+      "name": "３分間の成金・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12250,
+      "name": "３分間の成金・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12251,
+      "name": "屋根より高い魂・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12252,
+      "name": "屋根より高い魂・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12253,
+      "name": "屋根より高い魂・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing enemy table"
+      ]
+    },
+    {
+      "id": 12254,
+      "name": "十の挑戦・０１",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing model ms02_four_un_02"
+      ]
+    },
+    {
+      "id": 12255,
+      "name": "十の挑戦・０２",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_wolf_sh_holy",
+        "missing model ms02_dra_un_03"
+      ]
+    },
+    {
+      "id": 12256,
+      "name": "十の挑戦・０３",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1"
+      ]
+    },
+    {
+      "id": 12257,
+      "name": "十の挑戦・０４",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing drop enemy9",
+        "missing model ms02_four_fire_01_zako"
+      ]
+    },
+    {
+      "id": 12258,
+      "name": "十の挑戦・０５",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing model ms01_wolf_sh_holy",
+        "missing model ms03_fly_un_03"
+      ]
+    },
+    {
+      "id": 12259,
+      "name": "十の挑戦・０６",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing model ms01_wolf_lv1",
+        "missing texture ms01_wolf_lv1_dark",
+        "missing texture ms01_wolf_lv1_fire",
+        "missing texture ms01_wolf_lv1_holy",
+        "missing texture ms01_wolf_lv1_water"
+      ]
+    },
+    {
+      "id": 12260,
+      "name": "十の挑戦・０７",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy10",
+        "missing drop enemy11",
+        "missing drop enemy12",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing drop enemy9"
+      ]
+    },
+    {
+      "id": 12261,
+      "name": "十の挑戦・０８",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8"
+      ]
+    },
+    {
+      "id": 12262,
+      "name": "十の挑戦・０９",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3"
+      ]
+    },
+    {
+      "id": 12263,
+      "name": "十の挑戦・１０",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms04_legend_01"
+      ]
+    },
+    {
+      "id": 12264,
+      "name": "幻影の超金脈・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing stair destination 20300"
+      ]
+    },
+    {
+      "id": 12265,
+      "name": "幻影の超金脈・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop enemy17",
+        "missing stair destination 20301"
+      ]
+    },
+    {
+      "id": 12266,
+      "name": "幻影の超金脈・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy17",
+        "missing stair destination 20302"
+      ]
+    },
+    {
+      "id": 12267,
+      "name": "幻影の超金脈・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing stair destination 20300"
+      ]
+    },
+    {
+      "id": 12268,
+      "name": "幻影の超金脈・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop enemy17",
+        "missing stair destination 20301"
+      ]
+    },
+    {
+      "id": 12269,
+      "name": "幻影の超金脈・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy17",
+        "missing stair destination 20302"
+      ]
+    },
+    {
+      "id": 13000,
+      "name": "閃光の雷撃戦線・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13001,
+      "name": "閃光の雷撃戦線・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13002,
+      "name": "閃光の雷撃戦線・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13010,
+      "name": "真書の使途・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13011,
+      "name": "真書の使途・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13012,
+      "name": "真書の使途・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13013,
+      "name": "真書の使途・超級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13014,
+      "name": "真書の使途・激烈",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13020,
+      "name": "電撃の未来少女・初級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13021,
+      "name": "電撃の未来少女・中級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13022,
+      "name": "電撃の未来少女・上級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13030,
+      "name": "閃光の雷撃戦線・超級",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13031,
+      "name": "閃光の雷撃戦線・激烈",
+      "status": "supported",
+      "reasons": []
+    },
+    {
+      "id": 13040,
+      "name": "電撃の未来少女・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_sla_sh_dark",
+        "missing model ms01_sla_sh_holy",
+        "missing model ms03_four_un_01"
+      ]
+    },
+    {
+      "id": 13041,
+      "name": "電撃の未来少女・激烈",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing model ms01_bear_sh_holy",
+        "missing model ms01_squ_sh_dark",
+        "missing model ms01_squ_sh_holy"
+      ]
+    },
+    {
+      "id": 13100,
+      "name": "ドラコのロードうらない",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3"
+      ]
+    },
+    {
+      "id": 13101,
+      "name": "ロード・トゥ・ドラコ",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7"
+      ]
+    },
+    {
+      "id": 13102,
+      "name": "ドラコのたから探し",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3"
+      ]
+    },
+    {
+      "id": 13200,
+      "name": "狂精神界への誘い・奇",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01"
+      ]
+    },
+    {
+      "id": 13201,
+      "name": "狂精神界への誘い・承",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01"
+      ]
+    },
+    {
+      "id": 13202,
+      "name": "狂精神界への誘い・転",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01"
+      ]
+    },
+    {
+      "id": 13203,
+      "name": "交差する運命・決",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01",
+        "unsupported challenge 10406"
+      ]
+    },
+    {
+      "id": 13204,
+      "name": "交差する運命・傑",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01",
+        "unsupported challenge 10418"
+      ]
+    },
+    {
+      "id": 13205,
+      "name": "交差する運命・結",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_mind_dark",
+        "missing model ms01_mind_fire",
+        "missing model ms01_mind_holy",
+        "missing model ms01_mind_water",
+        "missing model ms03_mind_01"
+      ]
+    },
+    {
+      "id": 13206,
+      "name": "ボクの名はアルフォンス",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2"
+      ]
+    },
+    {
+      "id": 13207,
+      "name": "はじめてのドラゴン戦！",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3"
+      ]
+    },
+    {
+      "id": 13208,
+      "name": "条件：ドラゴン100体",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4"
+      ]
+    },
+    {
+      "id": 13209,
+      "name": "妻との誓い",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4"
+      ]
+    },
+    {
+      "id": 13210,
+      "name": "誰が為に",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_bear_sh_holy",
+        "missing model ms01_dra_sh_holy",
+        "missing model ms01_sla_sh_holy",
+        "missing model ms01_squ_sh_holy"
+      ]
+    },
+    {
+      "id": 13211,
+      "name": "さよならアルフォンス",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy8",
+        "missing model k01_kn_swd_holy_01",
+        "missing model k02_kn_grt_holy_01",
+        "missing model k03_kn_grt_holy_01",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 13220,
+      "name": "自分の道 ～リィン～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_cat_fire_01",
+        "missing model ms01_sen_cat_holy_01",
+        "missing model ms01_sen_cat_un_01",
+        "missing model ms03_sen_ansult_01"
+      ]
+    },
+    {
+      "id": 13221,
+      "name": "強き意志 ～アリサ～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_cat_dark_01",
+        "missing model ms01_sen_cat_un_01",
+        "missing model ms01_sen_cat_water_01",
+        "missing model ms03_sen_ansult_01"
+      ]
+    },
+    {
+      "id": 13222,
+      "name": "誇り高く ～ラウラ～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_sheep_fire_01",
+        "missing model ms01_sen_sheep_un_01",
+        "missing model ms01_sen_sheep_water_01",
+        "missing model ms03_sen_grunoja_01"
+      ]
+    },
+    {
+      "id": 13223,
+      "name": "高貴の剣 ～ユーシス～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_drome_fire_01",
+        "missing model ms01_sen_drome_holy_01",
+        "missing model ms01_sen_drome_un_01",
+        "missing model ms03_sen_olgadia_01"
+      ]
+    },
+    {
+      "id": 13224,
+      "name": "無垢の牙 ～フィー～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_drome_dark_01",
+        "missing model ms01_sen_drome_un_01",
+        "missing model ms01_sen_drome_water_01",
+        "missing model ms03_sen_olgadia_01"
+      ]
+    },
+    {
+      "id": 13225,
+      "name": "鬼教官、現る！",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_sen_sheep_dark_01",
+        "missing model ms01_sen_sheep_holy_01",
+        "missing model ms01_sen_sheep_un_01",
+        "missing model ms03_sen_grunoja_01"
+      ]
+    },
+    {
+      "id": 13226,
+      "name": "舞い降りし一輪の花",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing model ms01_sen_cat_dark_01",
+        "missing model ms01_sen_cat_fire_01",
+        "missing model ms01_sen_cat_holy_01",
+        "missing model ms01_sen_cat_un_01",
+        "missing model ms01_sen_cat_water_01",
+        "missing model ms03_sen_ansult_01"
+      ]
+    },
+    {
+      "id": 13227,
+      "name": "アキバ戦線異状アリ！",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ms01_akb_dra_dark_01",
+        "missing model ms01_akb_dra_fire_01",
+        "missing model ms01_akb_dra_holy_01",
+        "missing model ms01_akb_dra_water_01",
+        "missing model ms03_akb_dra_un_01"
+      ]
+    },
+    {
+      "id": 13228,
+      "name": "秋葉原 昭和通り",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing model akm01_ar_gun_fire_01",
+        "missing model ms01_akb_dra_fire_01"
+      ]
+    },
+    {
+      "id": 13229,
+      "name": "秋葉原 電気街",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing model akm01_la_fla_un_01",
+        "missing model ms01_akb_dra_water_01"
+      ]
+    },
+    {
+      "id": 13230,
+      "name": "秋葉原 UD+",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing model akm01_kn_rpa_holy_01",
+        "missing model ms01_akb_dra_holy_01"
+      ]
+    },
+    {
+      "id": 13231,
+      "name": "秋葉原 裏通り",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing model akm01_wz_fat_dark_01",
+        "missing model ms01_akb_dra_dark_01"
+      ]
+    },
+    {
+      "id": 13232,
+      "name": "秋葉原 %A.+ゞ]?",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ak01_wz_fst_dark_01",
+        "missing model akm01_ar_gun_fire_01",
+        "missing model akm01_kn_rpa_holy_01",
+        "missing model akm01_la_fla_un_01",
+        "missing model akm01_wz_fat_dark_01"
+      ]
+    },
+    {
+      "id": 13233,
+      "name": "あどれなRin",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model ak01_kn_fgr_dark_01",
+        "missing model akm01_kn_rpa_holy_01",
+        "missing model akm01_wz_fat_dark_01",
+        "missing model ms01_akb_dra_dark_01",
+        "missing model ms01_akb_dra_holy_01"
+      ]
+    },
+    {
+      "id": 13234,
+      "name": "アキバの未来と俺の夢",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model ms01_akb_dra_dark_01",
+        "missing model ms01_akb_dra_fire_01",
+        "missing model ms01_akb_dra_holy_01",
+        "missing model ms01_akb_dra_water_01",
+        "missing model ms03_akb_dra_un_01"
+      ]
+    },
+    {
+      "id": 13235,
+      "name": "奇跡の人～ティズ～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_man_d_01",
+        "missing model 220_ms01_bd_man_h_01"
+      ]
+    },
+    {
+      "id": 13236,
+      "name": "カルディス地方",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_man_u_01",
+        "missing model ms01_wolf_lv1",
+        "missing texture ms01_wolf_lv1_dark",
+        "missing texture ms01_wolf_lv1_holy"
+      ]
+    },
+    {
+      "id": 13237,
+      "name": "ナダラケス地方",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_golem_h_01",
+        "missing model ms01_sco_lv1",
+        "missing texture ms01_sco_lv1_dark",
+        "missing texture ms01_sco_lv1_holy"
+      ]
+    },
+    {
+      "id": 13238,
+      "name": "災厄を引き寄せし者",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_ms01_bd_golem_h_01",
+        "missing model 220_ms03_bd_altros_f_01"
+      ]
+    },
+    {
+      "id": 13239,
+      "name": "風の巫女～アニエス～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_man_f_01",
+        "missing model 220_ms01_bd_man_h_01",
+        "missing model 220_ms01_bd_man_w_01"
+      ]
+    },
+    {
+      "id": 13240,
+      "name": "フロウエル地方",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing model 220_ms01_bd_kap_d_01",
+        "missing model ms02_four_fire_01_zako"
+      ]
+    },
+    {
+      "id": 13241,
+      "name": "キレート山",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model 220_ms01_bd_kap_d_01",
+        "missing model 220_ms01_bd_kap_h_01",
+        "missing model 220_ms01_bd_kap_u_01"
+      ]
+    },
+    {
+      "id": 13242,
+      "name": "災厄を浸透せし者",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_ms01_bd_golem_h_01",
+        "missing model 220_ms03_bd_rusa_w_01"
+      ]
+    },
+    {
+      "id": 13243,
+      "name": "D～リングアベル～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_kap_f_01",
+        "missing model 220_ms01_bd_kap_w_01",
+        "missing model 220_ms01_bd_man_w_01"
+      ]
+    },
+    {
+      "id": 13244,
+      "name": "エイゼン地方",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing model 220_ms01_bd_golem_f_01",
+        "missing model 220_ms01_bd_kap_f_01"
+      ]
+    },
+    {
+      "id": 13245,
+      "name": "地底火山洞",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_ms01_bd_golem_f_01",
+        "missing model 220_ms01_bd_golem_u_01"
+      ]
+    },
+    {
+      "id": 13246,
+      "name": "災厄を刻印せし者",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_golem_f_01",
+        "missing model 220_ms01_bd_golem_h_01",
+        "missing model 220_ms03_bd_chau_h_01"
+      ]
+    },
+    {
+      "id": 13247,
+      "name": "白か黒か～イデア～",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing model 220_ms01_bd_kap_d_01",
+        "missing model 220_ms01_bd_kap_f_01",
+        "missing model 220_ms01_bd_kap_h_01"
+      ]
+    },
+    {
+      "id": 13248,
+      "name": "エタルニア地方",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model 220_ms01_bd_golem_w_01",
+        "missing model 220_ms01_bd_kap_w_01"
+      ]
+    },
+    {
+      "id": 13249,
+      "name": "不死の塔",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing model 220_ms01_bd_golem_d_01",
+        "missing model 220_ms01_bd_golem_h_01",
+        "missing model ms02_four_dark_01_zako"
+      ]
+    },
+    {
+      "id": 13250,
+      "name": "災厄を蔓延せし者",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_ms01_bd_golem_d_01",
+        "missing model 220_ms03_bd_giga_d_01"
+      ]
+    },
+    {
+      "id": 13251,
+      "name": "災厄を引き寄せし者再び",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing model 220_ms01_bd_golem_f_01",
+        "missing model 220_ms01_bd_golem_w_01",
+        "missing model 220_ms03_bd_altros_w_01",
+        "missing model ms01_bear_sh_fire",
+        "missing model ms01_bear_sh_water",
+        "missing model ms01_sla_sh_fire",
+        "missing model ms01_sla_sh_water"
+      ]
+    },
+    {
+      "id": 13252,
+      "name": "暗黒騎士のアスタリスク",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_bd07_kn_swd_d_02",
+        "missing model 220_ms01_bd_golem_u_01",
+        "missing model 220_ms01_bd_kap_u_01",
+        "missing model 220_ms01_bd_man_u_01"
+      ]
+    },
+    {
+      "id": 13253,
+      "name": "もう一人のD",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing model 220_bd07_kn_swd_d_02",
+        "missing model 220_ms01_bd_golem_u_01",
+        "missing model 220_ms01_bd_kap_u_01",
+        "missing model 220_ms01_bd_man_u_01"
+      ]
+    },
+    {
+      "id": 13254,
+      "name": "惑わされるんじゃない！",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing model 220_bd07_kn_swd_d_02",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20000,
+      "name": "月の遺跡(全6洞窟)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20001,
+      "name": "火の遺跡(全3洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing enemy enemy9",
+        "missing model ms01_sco_sh_fire",
+        "missing model ms02_four_fire_01",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20002,
+      "name": "水の遺跡(全3洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing enemy enemy9",
+        "missing model ms01_sco_sh_water",
+        "missing model ms02_four_water_01",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20003,
+      "name": "木の遺跡(全4洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy13",
+        "missing drop enemy14",
+        "missing drop enemy15",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20004,
+      "name": "金の遺跡(全4洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy13",
+        "missing drop enemy14",
+        "missing drop enemy15",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing model ms02_four_holy_01",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20005,
+      "name": "土の遺跡(全4洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy13",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing model ms02_four_dark_01_zako",
+        "missing model ms02_four_fire_01_zako",
+        "missing model ms02_four_water_01_zako",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20006,
+      "name": "日の遺跡(全4洞窟)",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing model ms01_sco_sh_holy",
+        "requires additional floor protocol"
+      ]
+    },
+    {
+      "id": 20100,
+      "name": "No.01：魂の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20101,
+      "name": "No.13：逃走の洞窟(木)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20102,
+      "name": "No.10：闇の洞窟(水)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20103,
+      "name": "No.02：蠢動の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20110,
+      "name": "No.03：永時の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20111,
+      "name": "No.07：死神の洞窟(火)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20112,
+      "name": "No.14：火の洞窟(木)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20113,
+      "name": "No.08：業火の洞窟(火)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20120,
+      "name": "No.04：直走の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20121,
+      "name": "No.21：殺神の洞窟(土)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20122,
+      "name": "No.05：水の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20123,
+      "name": "No.11：深海の洞窟(水)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20130,
+      "name": "No.15：火流の洞窟(木)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20131,
+      "name": "No.06：戦逃の洞窟(月)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20132,
+      "name": "No.17：氷炎の洞窟(金)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20133,
+      "name": "No.16：蒼炎の洞窟(木)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20140,
+      "name": "No.18：三択の洞窟(金)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20141,
+      "name": "No.25：魂器の洞窟(日)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20142,
+      "name": "No.09：暗光の洞窟(火)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20143,
+      "name": "No.19：陰陽の洞窟(金)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20150,
+      "name": "No.22：全力の洞窟(土)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20151,
+      "name": "No.12：運の洞窟(水)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20152,
+      "name": "No.26：力の洞窟(日)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20153,
+      "name": "No.23：四族の洞窟(土)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20160,
+      "name": "No.27：走破の洞窟(日)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20161,
+      "name": "No.20：明闇の洞窟(金)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20162,
+      "name": "No.24：光の洞窟(土)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20163,
+      "name": "No.28：極光の洞窟(日)",
+      "status": "existing_layer_protocol",
+      "reasons": []
+    },
+    {
+      "id": 20200,
+      "name": "No.29：失われた洞窟",
+      "status": "excluded",
+      "reasons": [
+        "missing drop death",
+        "missing drop enemy1",
+        "missing drop enemy10",
+        "missing drop enemy17",
+        "missing drop enemy2",
+        "missing drop enemy3",
+        "missing drop enemy4",
+        "missing drop enemy5",
+        "missing drop enemy6",
+        "missing drop enemy7",
+        "missing drop enemy8",
+        "missing drop enemy9",
+        "missing model ms01_sla_sh_dark",
+        "missing model ms01_sla_sh_fire",
+        "missing model ms01_sla_sh_holy",
+        "missing model ms01_sla_sh_water",
+        "missing model ms02_dra_un_03"
+      ]
+    },
+    {
+      "id": 20201,
+      "name": "No.30：失われた洞窟",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20202,
+      "name": "No.31：失われた洞窟",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20203,
+      "name": "No.32：失われた洞窟",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20204,
+      "name": "No.33：失われた洞窟",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20205,
+      "name": "No.00：時間の守護神",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20206,
+      "name": "No.XX：戦魂の守護神",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20300,
+      "name": "金脈の下層・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20301,
+      "name": "金脈の下層・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20302,
+      "name": "金脈の下層・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20500,
+      "name": "はじまりの間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20501,
+      "name": "金塊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20502,
+      "name": "経験の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20503,
+      "name": "悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20504,
+      "name": "超悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20505,
+      "name": "進化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20506,
+      "name": "強化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20507,
+      "name": "亡霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20508,
+      "name": "火霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20509,
+      "name": "水霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20510,
+      "name": "光霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20511,
+      "name": "闇霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20512,
+      "name": "はざまの間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20513,
+      "name": "金塊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20514,
+      "name": "経験の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20515,
+      "name": "悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20516,
+      "name": "超悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20517,
+      "name": "進化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20518,
+      "name": "強化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20519,
+      "name": "火英霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20520,
+      "name": "水英霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20521,
+      "name": "光英霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20522,
+      "name": "闇英霊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20523,
+      "name": "封印の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20524,
+      "name": "おわりの間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20525,
+      "name": "金塊の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20526,
+      "name": "経験の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20527,
+      "name": "悪の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20528,
+      "name": "超悪の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20529,
+      "name": "進化の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20530,
+      "name": "強化の間・解",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20531,
+      "name": "永久へ…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20600,
+      "name": "幻の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20601,
+      "name": "幻の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20700,
+      "name": "戦火の兆し",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20701,
+      "name": "四天王と呼ばれる男",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20702,
+      "name": "意志を継ぐ者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20703,
+      "name": "炎火の使役竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20704,
+      "name": "妖刀使い",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20705,
+      "name": "戦況を変える力",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20706,
+      "name": "挨拶は抜き",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20707,
+      "name": "手荒な歓迎",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20708,
+      "name": "弓術王の間合い",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20709,
+      "name": "射抜くべき敵",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20710,
+      "name": "召喚",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20711,
+      "name": "降臨",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20712,
+      "name": "それでも私は…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20713,
+      "name": "最強の布陣",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20714,
+      "name": "大将出陣",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20715,
+      "name": "野望の潰えし時",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20750,
+      "name": "ワノクニの烈魂・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20751,
+      "name": "ワノクニの烈魂・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20752,
+      "name": "ワノクニの烈魂・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20753,
+      "name": "ワノクニの烈魂・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20754,
+      "name": "七色の結晶・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20755,
+      "name": "七色の結晶・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20756,
+      "name": "七色の結晶・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20757,
+      "name": "×：導かれし狩人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20758,
+      "name": "×：導かれし狩人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20759,
+      "name": "×：導かれし狩人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20760,
+      "name": "遺跡から来たモノ・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20761,
+      "name": "遺跡から来たモノ・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20762,
+      "name": "遺跡から来たモノ・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20763,
+      "name": "神々のドール・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20764,
+      "name": "神々のドール・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20765,
+      "name": "神々のドール・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20766,
+      "name": "黒き刀剣・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20767,
+      "name": "黒き刀剣・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20768,
+      "name": "黒き刀剣・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20769,
+      "name": "夕暮れのひといき・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20770,
+      "name": "夕暮れのひといき・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20771,
+      "name": "夕暮れのひといき・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20772,
+      "name": "神のマリオネット・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20773,
+      "name": "神のマリオネット・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20774,
+      "name": "神のマリオネット・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20775,
+      "name": "滅びの使者たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20776,
+      "name": "滅びの使者たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20777,
+      "name": "滅びの使者たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20778,
+      "name": "葬送の槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20779,
+      "name": "聖なる怨槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20780,
+      "name": "虹に願いを",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20781,
+      "name": "暴虐の王・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20782,
+      "name": "暴虐の王・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20783,
+      "name": "暴虐の王・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20784,
+      "name": "教国への道・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20785,
+      "name": "教国への道・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20786,
+      "name": "教国への道・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20787,
+      "name": "教国への道・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20788,
+      "name": "竜鱗砕きの異名・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20789,
+      "name": "竜鱗砕きの異名・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20790,
+      "name": "竜鱗砕きの異名・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20791,
+      "name": "咎色の印・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20792,
+      "name": "咎色の印・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20793,
+      "name": "咎色の印・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20794,
+      "name": "未来飛行術・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20795,
+      "name": "未来飛行術・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20796,
+      "name": "未来飛行術・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20797,
+      "name": "黄金の泉・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20798,
+      "name": "黄金の泉・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20799,
+      "name": "黄金の泉・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20800,
+      "name": "金塊の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20801,
+      "name": "経験の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20802,
+      "name": "悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20803,
+      "name": "超悪の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20804,
+      "name": "進化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20805,
+      "name": "強化の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20806,
+      "name": "孤高の少年たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20807,
+      "name": "孤高の少年たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20808,
+      "name": "孤高の少年たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20809,
+      "name": "孤高の少女たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20810,
+      "name": "孤高の少女たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20811,
+      "name": "孤高の少女たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20812,
+      "name": "魂の大器[剣]・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20813,
+      "name": "魂の大器[剣]・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20814,
+      "name": "魂の大器[剣]・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20815,
+      "name": "はてしない物語・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20816,
+      "name": "はてしない物語・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20817,
+      "name": "はてしない物語・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20818,
+      "name": "契約のうた・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20819,
+      "name": "契約のうた・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20820,
+      "name": "契約のうた・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20830,
+      "name": "闇の処刑人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20831,
+      "name": "闇の処刑人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20832,
+      "name": "闇の処刑人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20833,
+      "name": "書を歓ぶ者たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20837,
+      "name": "終わりを告げる者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20838,
+      "name": "終わりを告げる者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20839,
+      "name": "終わりを告げる者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20840,
+      "name": "剣の大器",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20841,
+      "name": "槍の大器",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20842,
+      "name": "弓の大器",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20843,
+      "name": "杖の大器",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20844,
+      "name": "荒ぶる狩りの血・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20845,
+      "name": "荒ぶる狩りの血・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20846,
+      "name": "荒ぶる狩りの血・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20847,
+      "name": "遺跡に眠りし魂・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20848,
+      "name": "遺跡に眠りし魂・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20849,
+      "name": "遺跡に眠りし魂・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20850,
+      "name": "剣の大器・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20851,
+      "name": "槍の大器・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20852,
+      "name": "弓の大器・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20853,
+      "name": "杖の大器・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20854,
+      "name": "造りだされし結晶・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20855,
+      "name": "造りだされし結晶・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20856,
+      "name": "造りだされし結晶・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20857,
+      "name": "火の亡霊たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20858,
+      "name": "水の亡霊たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20859,
+      "name": "光の亡霊たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20860,
+      "name": "闇の亡霊たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20861,
+      "name": "影なる時間兵器・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20862,
+      "name": "影なる時間兵器・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20863,
+      "name": "影なる時間兵器・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20864,
+      "name": "十五の挑戦・01",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20865,
+      "name": "十五の挑戦・02",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20866,
+      "name": "十五の挑戦・03",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20867,
+      "name": "十五の挑戦・04",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20868,
+      "name": "十五の挑戦・05",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20869,
+      "name": "十五の挑戦・06",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20870,
+      "name": "十五の挑戦・07",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20871,
+      "name": "十五の挑戦・08",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20872,
+      "name": "十五の挑戦・09",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20873,
+      "name": "十五の挑戦・10",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20874,
+      "name": "十五の挑戦・11",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20875,
+      "name": "十五の挑戦・12",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20876,
+      "name": "十五の挑戦・13",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20877,
+      "name": "十五の挑戦・14",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20878,
+      "name": "十五の挑戦・15",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20879,
+      "name": "観測者の方程式・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20880,
+      "name": "観測者の方程式・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20881,
+      "name": "観測者の方程式・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20882,
+      "name": "I AM ヒーロー！・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20883,
+      "name": "I AM ヒーロー！・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20884,
+      "name": "I AM ヒーロー！・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20885,
+      "name": "月夜の願い・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20886,
+      "name": "月夜の願い・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20887,
+      "name": "月夜の願い・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20888,
+      "name": "対なる平原・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20889,
+      "name": "対なる平原・初級(裏)",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20890,
+      "name": "対なる平原・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20891,
+      "name": "対なる平原・中級(裏)",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20892,
+      "name": "対なる平原・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20893,
+      "name": "対なる平原・上級(裏)",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20894,
+      "name": "六戦士の力・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20895,
+      "name": "六戦士の力・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20896,
+      "name": "六戦士の力・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20897,
+      "name": "海姫の願い・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20898,
+      "name": "海姫の願い・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20899,
+      "name": "海姫の願い・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20900,
+      "name": "金脈探訪・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20901,
+      "name": "金脈探訪・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20902,
+      "name": "金脈探訪・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20903,
+      "name": "黄金の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20904,
+      "name": "経験の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20905,
+      "name": "進化・強化の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20906,
+      "name": "黄金の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20907,
+      "name": "経験の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20908,
+      "name": "進化・強化の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20909,
+      "name": "黄金の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20910,
+      "name": "経験の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20911,
+      "name": "進化・強化の遺跡",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20912,
+      "name": "迫り来る火竜・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20913,
+      "name": "迫り来る火竜・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20914,
+      "name": "迫り来る火竜・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20915,
+      "name": "静かなる水竜・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20916,
+      "name": "静かなる水竜・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20917,
+      "name": "静かなる水竜・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20918,
+      "name": "気高き光竜・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20919,
+      "name": "気高き光竜・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20920,
+      "name": "気高き光竜・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20921,
+      "name": "暴撃の闇竜・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20922,
+      "name": "暴撃の闇竜・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20923,
+      "name": "暴撃の闇竜・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20924,
+      "name": "闇の刀剣・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20925,
+      "name": "闇の刀剣・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20926,
+      "name": "闇の刀剣・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20927,
+      "name": "悪食王と恐怖の門・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20928,
+      "name": "悪食王と恐怖の門・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20929,
+      "name": "悪食王と恐怖の門・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20930,
+      "name": "帝国の復興！？・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20931,
+      "name": "帝国の復興！？・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20932,
+      "name": "帝国の復興！？・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20933,
+      "name": "ワノクニの誇り・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20934,
+      "name": "ワノクニの誇り・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20935,
+      "name": "ワノクニの誇り・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20936,
+      "name": "司りしは烈火の槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20937,
+      "name": "司りしは水麗の槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20938,
+      "name": "司りしは白夜の槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20939,
+      "name": "司りしは闇夜の槍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20940,
+      "name": "クロマの物語",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20941,
+      "name": "アリシアの物語",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20942,
+      "name": "カイトの物語",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20943,
+      "name": "ニコラの物語",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20944,
+      "name": "魔剣バルムンク・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20945,
+      "name": "魔剣バルムンク・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20946,
+      "name": "魔剣バルムンク・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20947,
+      "name": "業の血統・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20948,
+      "name": "業の血統・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20949,
+      "name": "業の血統・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20950,
+      "name": "造りだされし魂・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20951,
+      "name": "造りだされし魂・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20952,
+      "name": "造りだされし魂・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20953,
+      "name": "追憶の地平線・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20954,
+      "name": "追憶の地平線・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20955,
+      "name": "追憶の地平線・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20956,
+      "name": "火の魔物たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20957,
+      "name": "水の魔物たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20958,
+      "name": "光の魔物たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 20959,
+      "name": "闇の魔物たち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21000,
+      "name": "選ばれし六戦士",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21001,
+      "name": "出港準備",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21002,
+      "name": "襲撃！海のハンター",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21003,
+      "name": "おもかじいっぱい！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21004,
+      "name": "危険な海",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21005,
+      "name": "立ち込める闇",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21006,
+      "name": "海の怪物",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21007,
+      "name": "古地図が示す先",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21008,
+      "name": "上陸前の激闘",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21009,
+      "name": "幻魂の塔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21010,
+      "name": "大王種ＶＳ六戦士",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21012,
+      "name": "孤独なる機兵・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21013,
+      "name": "孤独なる機兵・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21014,
+      "name": "孤独なる機兵・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21015,
+      "name": "暗き海を進む",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21016,
+      "name": "大海を知らず",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21017,
+      "name": "暗闇のハンター",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21018,
+      "name": "暗闇の支配者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21019,
+      "name": "激怒の触手",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21020,
+      "name": "闇を切り裂いて",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21021,
+      "name": "光の海域",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21022,
+      "name": "光のハンター",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21023,
+      "name": "光の守護神",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21024,
+      "name": "スイカ割り大会開幕！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21025,
+      "name": "そっちじゃない！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21026,
+      "name": "まだまだ割れる！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21027,
+      "name": "スイカを統べし者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21028,
+      "name": "スイカ割り大会開幕！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21029,
+      "name": "そっちじゃない！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21030,
+      "name": "まだまだ割れる！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21031,
+      "name": "スイカを統べし者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21032,
+      "name": "存在しない島へ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21033,
+      "name": "迫り来る荒海",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21034,
+      "name": "灼熱の悪魔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21035,
+      "name": "極寒の悪魔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21036,
+      "name": "灼光の悪魔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21037,
+      "name": "常闇の悪魔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21038,
+      "name": "出現！絶海の大海竜！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21039,
+      "name": "決着！荒海の超決戦！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21040,
+      "name": "超激戦！大王種再び！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21041,
+      "name": "海神の加護・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21042,
+      "name": "海神の加護・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21043,
+      "name": "海神の加護・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21100,
+      "name": "進軍開始",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21101,
+      "name": "脅威の軍事力",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21102,
+      "name": "ここから先は通さない",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21103,
+      "name": "ポンコツ軍団現る！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21104,
+      "name": "ガラクタ達の意地",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21105,
+      "name": "目覚めたロボット",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21106,
+      "name": "進撃の機竜！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21107,
+      "name": "ザメリの策略",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21108,
+      "name": "人売りのザメリ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21109,
+      "name": "凍てつく戦場",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21110,
+      "name": "冷たい視線",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21111,
+      "name": "私に近づくな",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21112,
+      "name": "何のつもりだ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21113,
+      "name": "立ちなさい",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21114,
+      "name": "戦場へ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21115,
+      "name": "敵討ち",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21116,
+      "name": "怒りの鉄槌",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21117,
+      "name": "本部奇襲作戦",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21118,
+      "name": "要撃の機竜兵団",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21119,
+      "name": "帝国本部総大将",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21120,
+      "name": "虚無なる将",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21121,
+      "name": "帝国残兵の襲撃",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21122,
+      "name": "書から現れし者達",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 21123,
+      "name": "禁書を守りし竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25000,
+      "name": "広がる異変",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25001,
+      "name": "無垢なる暴君",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25002,
+      "name": "ガイチュウクジョ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25003,
+      "name": "闇夜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25004,
+      "name": "その名は「G.S」",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25005,
+      "name": "砂漠の戦争",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25006,
+      "name": "ロストNo.07",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25007,
+      "name": "獄炎の適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25008,
+      "name": "獄炎の適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25009,
+      "name": "獄炎の適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25010,
+      "name": "地獄の鉄塊・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25011,
+      "name": "地獄の鉄塊・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25012,
+      "name": "地獄の鉄塊・絶級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25013,
+      "name": "境界に立ちし神・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25014,
+      "name": "異界への門",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25015,
+      "name": "蒼天の龍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25016,
+      "name": "朱天の龍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25017,
+      "name": "白天の龍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25018,
+      "name": "玄天の龍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25019,
+      "name": "始元なる龍",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25020,
+      "name": "魔導サムライ「Ｘ」",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25021,
+      "name": "貫く焔心・超級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25022,
+      "name": "獄闇の適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25023,
+      "name": "獄闇の適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25024,
+      "name": "獄闇の適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25025,
+      "name": "獄流の適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25026,
+      "name": "獄流の適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25027,
+      "name": "獄流の適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25035,
+      "name": "運命へ続く道・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25036,
+      "name": "運命へ続く道・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25037,
+      "name": "運命へ続く道・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25038,
+      "name": "前・海のぷにスープ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25039,
+      "name": "主・灼熱のドラバーグ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25040,
+      "name": "甘・砂漠風三色団子",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25041,
+      "name": "かぼちゃドラゴン登場",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25042,
+      "name": "こらしめないと…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25043,
+      "name": "いたずらするぞ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25044,
+      "name": "王の品格・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25045,
+      "name": "王の品格・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25046,
+      "name": "王の品格・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25047,
+      "name": "レポート１：レッド",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25048,
+      "name": "レポート２：アクア",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25049,
+      "name": "レポート３：ピュア",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25050,
+      "name": "レポート４：ダーク",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25051,
+      "name": "未レポート：？？？",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25052,
+      "name": "かぼちゃドラゴン登場",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25053,
+      "name": "こらしめないと…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25054,
+      "name": "いたずらするぞ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25055,
+      "name": "かぼちゃドラゴン登場",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25056,
+      "name": "こらしめないと…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25057,
+      "name": "いたずらするぞ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25058,
+      "name": "夜明けの決意・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25059,
+      "name": "夜明けの決意・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25060,
+      "name": "夜明けの決意・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25061,
+      "name": "光の魂たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25062,
+      "name": "光の魂たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25063,
+      "name": "光の魂たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25064,
+      "name": "黄金の泉・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25065,
+      "name": "黄金の泉・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25066,
+      "name": "黄金の泉・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25067,
+      "name": "いたずらな魂たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25068,
+      "name": "いたずらな魂たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25069,
+      "name": "いたずらな魂たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25070,
+      "name": "造りだされし魂・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25071,
+      "name": "造りだされし魂・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25072,
+      "name": "造りだされし魂・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25073,
+      "name": "火の魂たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25074,
+      "name": "火の魂たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25075,
+      "name": "火の魂たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25076,
+      "name": "水の魂たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25077,
+      "name": "水の魂たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25078,
+      "name": "水の魂たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25079,
+      "name": "闇の魂たち・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25080,
+      "name": "闇の魂たち・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25081,
+      "name": "闇の魂たち・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25082,
+      "name": "追憶の地平線・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25083,
+      "name": "追憶の地平線・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25084,
+      "name": "追憶の地平線・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25085,
+      "name": "風が集う場所・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25086,
+      "name": "風が集う場所・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25087,
+      "name": "風が集う場所・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25088,
+      "name": "導かれし狩人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25089,
+      "name": "導かれし狩人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25090,
+      "name": "導かれし狩人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25091,
+      "name": "妖精の通り道・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25092,
+      "name": "妖精の通り道・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25093,
+      "name": "妖精の通り道・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25094,
+      "name": "書を記す者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25095,
+      "name": "書を記す者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25096,
+      "name": "書を記す者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25097,
+      "name": "深紅の罪状・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25098,
+      "name": "深紅の罪状・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25099,
+      "name": "深紅の罪状・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25100,
+      "name": "天界へと達する塔",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25101,
+      "name": "立ちふさがりし者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25102,
+      "name": "そして、天空へ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25103,
+      "name": "雲間の狭間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25104,
+      "name": "神の使徒・猪",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25105,
+      "name": "空の上の道",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25106,
+      "name": "神の使徒・鹿",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25107,
+      "name": "天界への道",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25108,
+      "name": "道を閉ざす者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25109,
+      "name": "神の使徒・蝶",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25110,
+      "name": "神の使徒・猪 再び",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25111,
+      "name": "神の使徒・鹿 再び",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25112,
+      "name": "神の使徒・蝶 再び",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25113,
+      "name": "天の番人",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25114,
+      "name": "神の領域",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25118,
+      "name": "任務をこなせ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25119,
+      "name": "エアキア火山散策",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25120,
+      "name": "ポイム・レポート",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25121,
+      "name": "古の遺跡めぐり",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25122,
+      "name": "虹色食堂SOS！！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25123,
+      "name": "火山に棲む竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25124,
+      "name": "ポイム大発生！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25125,
+      "name": "未確認生物をさがせ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25126,
+      "name": "虹色食堂からの依頼",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25127,
+      "name": "火竜退治",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25128,
+      "name": "ポイムの王様",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25129,
+      "name": "未確認生物出現！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25130,
+      "name": "食材を集めろ！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25131,
+      "name": "ひみつの抜け道１",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25132,
+      "name": "ひみつの抜け道２",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25133,
+      "name": "ひみつの抜け道３",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25134,
+      "name": "ひみつの抜け道４",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25135,
+      "name": "最後の抜け道",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25136,
+      "name": "最後の教え",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25137,
+      "name": "永誓王の塔１Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25138,
+      "name": "永誓王の塔２Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25139,
+      "name": "永誓王の塔３Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25140,
+      "name": "永誓王の塔４Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25141,
+      "name": "永誓王の塔５Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25142,
+      "name": "永誓王の塔６Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25143,
+      "name": "永誓王の塔７Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25144,
+      "name": "永誓王の塔８Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25145,
+      "name": "永誓王の塔９Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25146,
+      "name": "永誓王の塔１０Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25147,
+      "name": "永誓王の塔１１Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25148,
+      "name": "永誓王の塔１２Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25149,
+      "name": "永誓王の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25150,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25151,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25152,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25153,
+      "name": "永霊王の塔１Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25154,
+      "name": "永霊王の塔２Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25155,
+      "name": "永霊王の塔３Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25156,
+      "name": "永霊王の塔４Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25157,
+      "name": "永霊王の塔５Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25158,
+      "name": "永霊王の塔６Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25159,
+      "name": "永霊王の塔７Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25160,
+      "name": "永霊王の塔８Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25161,
+      "name": "永霊王の塔９Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25162,
+      "name": "永霊王の塔１０Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25163,
+      "name": "永霊王の塔１１Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25164,
+      "name": "永霊王の塔１２Ｆ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25165,
+      "name": "永霊王の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25166,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25167,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25168,
+      "name": "幻夢の間",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25169,
+      "name": "地下通路",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25170,
+      "name": "地下通路",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25171,
+      "name": "古びた階段",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25172,
+      "name": "古びた階段",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25173,
+      "name": "悪の化身",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25174,
+      "name": "機械の兵隊",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25175,
+      "name": "氷の女王",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25176,
+      "name": "狂信的な忠義心",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25177,
+      "name": "赤い剣",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25178,
+      "name": "青い鉄槌",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25179,
+      "name": "帝国軍第零大隊隊長",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25180,
+      "name": "滅びの司令官",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25181,
+      "name": "強襲の破壊者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25182,
+      "name": "強襲の破壊者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25183,
+      "name": "強襲の破壊者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25184,
+      "name": "聖なる夜の物語・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25185,
+      "name": "聖なる夜の物語・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25186,
+      "name": "聖なる夜の物語・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25187,
+      "name": "雪の精出現！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25188,
+      "name": "雪の精、再び！！",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25189,
+      "name": "聖夜の決戦",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25190,
+      "name": "樹木の誘いに導かれ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25191,
+      "name": "さまよう手配者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25192,
+      "name": "ためらう手配者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25193,
+      "name": "密林に巣食う竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25194,
+      "name": "激闘サバイバルゲーム",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25196,
+      "name": "戦場に現る者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25200,
+      "name": "ゆめをみる者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25201,
+      "name": "竜と化し者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25202,
+      "name": "ゆめにねむる者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25203,
+      "name": "人を願いし者",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25204,
+      "name": "つみの適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25205,
+      "name": "つみの適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25206,
+      "name": "つみの適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25207,
+      "name": "しょけいの適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25208,
+      "name": "しょけいの適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25209,
+      "name": "しょけいの適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25210,
+      "name": "じゃあくな適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25211,
+      "name": "じゃあくな適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25212,
+      "name": "じゃあくな適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25213,
+      "name": "えいえんの適格者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25214,
+      "name": "えいえんの適格者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25215,
+      "name": "えいえんの適格者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25216,
+      "name": "ようこそこの世界へ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25217,
+      "name": "最初の試練",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25218,
+      "name": "強さの秘密",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25219,
+      "name": "より高みを目指して",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25220,
+      "name": "ここは一体？",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25221,
+      "name": "新たな道へ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25222,
+      "name": "手加減無用",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25223,
+      "name": "試練は続く",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25224,
+      "name": "次のステップ",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25225,
+      "name": "通過点",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25226,
+      "name": "達成地点:90",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25227,
+      "name": "達成地点:120",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25228,
+      "name": "達成地点:160",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25229,
+      "name": "達成地点:200",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25230,
+      "name": "達成地点:250",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25231,
+      "name": "達成地点:330",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25232,
+      "name": "底力",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25233,
+      "name": "彼の者も本望",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25234,
+      "name": "最後の試練",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25235,
+      "name": "炎の大地",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25236,
+      "name": "火流に耐えて",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25237,
+      "name": "火柱に棲むもの",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25238,
+      "name": "獄炎の竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25239,
+      "name": "火竜の巣",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25240,
+      "name": "焦熱の壁",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25241,
+      "name": "獄炎竜フェニクス",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25242,
+      "name": "氷の大地",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25243,
+      "name": "氷の大地２",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25244,
+      "name": "氷の大地３",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25245,
+      "name": "氷晶竜",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25246,
+      "name": "氷の大地５",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25247,
+      "name": "氷の大地６",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 25248,
+      "name": "氷の大地７",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50000,
+      "name": "教国を統べし者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50001,
+      "name": "教国を統べし者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50002,
+      "name": "教国を統べし者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50003,
+      "name": "未来からの使者・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50004,
+      "name": "未来からの使者・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50005,
+      "name": "未来からの使者・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50006,
+      "name": "伝説の料理人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50007,
+      "name": "伝説の料理人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50008,
+      "name": "伝説の料理人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50009,
+      "name": "閃きの解法・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50010,
+      "name": "閃きの解法・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50011,
+      "name": "閃きの解法・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50012,
+      "name": "歴代最強の騎士・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50013,
+      "name": "歴代最強の騎士・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50014,
+      "name": "歴代最強の騎士・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50015,
+      "name": "正義の光・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50016,
+      "name": "正義の光・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50017,
+      "name": "正義の光・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50018,
+      "name": "麗双の貴人・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50019,
+      "name": "麗双の貴人・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50020,
+      "name": "麗双の貴人・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50021,
+      "name": "強牙の徒・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50022,
+      "name": "強牙の徒・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50023,
+      "name": "強牙の徒・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50024,
+      "name": "新たなる門出",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50025,
+      "name": "新しき馬の年・初級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50026,
+      "name": "新しき馬の年・中級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50027,
+      "name": "新しき馬の年・上級",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 50028,
+      "name": "おとしだま2014",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    },
+    {
+      "id": 60000,
+      "name": "永遠へ…",
+      "status": "excluded",
+      "reasons": [
+        "missing map"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import copy
+import hashlib
+import json
 import os
 import time
 
@@ -31,10 +33,21 @@ class API:
         if visual not in ('0', '1'):
             raise RuntimeError('RTD_VISUAL_RECOVERY must be 0 or 1')
         self.visual_recovery = apply_visual_recovery(self.masters) if visual == '1' else None
-        configurable=(SINGLE_QUESTS|layer_quests(self))-{10001}
+        from ..policies.event_visuals import apply_event_visuals
+        self.event_visual_substitutions=apply_event_visuals(self.masters,self.levels) if visual=='1' else []
+        if self.event_visual_substitutions:
+            self.visual_recovery['substitutions'] += self.event_visual_substitutions
+            self.visual_recovery['quest_ids']=sorted(set(self.visual_recovery['quest_ids']) |
+                {q for row in self.event_visual_substitutions for q in row['quest_ids']})
+            self.visual_recovery['derived_hash']=self.masters[20]['hash']
+            payload=json.dumps(self.masters[20]['data_list'],sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()
+            self.visual_recovery['payload_sha256']=hashlib.sha256(payload).hexdigest()
+        from ..policies.event_content import audit_events, single_quests, recovered_asset_names
+        self.event_quests,self.event_rejections=audit_events(self.masters,self.levels,recovered_asset_names())
+        configurable=(single_quests(self)|layer_quests(self))-{10001}
         self.operations=Operations(self.store,self.masters,lambda:load_pools(self.masters)[0],
             event_quests=configurable-self.blocked_quests,
-            configurable_quests=configurable,playable_quests=(SINGLE_QUESTS|layer_quests(self)|{10000})-self.blocked_quests)
+            configurable_quests=configurable,playable_quests=(single_quests(self)|layer_quests(self)|{10000})-self.blocked_quests)
 
     def master_table(self,kind):
         return self.operations.quest_table() if kind==30 else self.masters.get(kind)
