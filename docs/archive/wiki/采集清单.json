@@ -1,0 +1,956 @@
+[
+  {
+    "name": "絶園の地ヴァザール",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%B5%B6%E5%9C%92%E3%81%AE%E5%9C%B0%E3%83%B4%E3%82%A1%E3%82%B6%E3%83%BC%E3%83%AB?variant=zh-mo",
+    "captured_at": "2026-11-02T15:24:50.289Z",
+    "html_file": "原始页面正文/001.html",
+    "html_sha256": "c713845eea00f42bdb33af9ad47b00d0182a5a7210b0f7269fffa63a601d87d2",
+    "markdown_file": "关卡详情/001-絶園の地ヴァザール.md"
+  },
+  {
+    "name": "空白の時代",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A9%BA%E7%99%BD%E3%81%AE%E6%99%82%E4%BB%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:24:55.878Z",
+    "html_file": "原始页面正文/002.html",
+    "html_sha256": "1790b13e1e0e0c967bc6ba73851aa877caef2a7301c15b1f147854cf478de95a",
+    "markdown_file": "关卡详情/002-空白の時代.md"
+  },
+  {
+    "name": "闇の時代",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%97%87%E3%81%AE%E6%99%82%E4%BB%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:01.403Z",
+    "html_file": "原始页面正文/003.html",
+    "html_sha256": "c414a1f77a358d44a3ab4dad8e5cfe5b2734ab85b6f05fce92b06f5095fa9124",
+    "markdown_file": "关卡详情/003-闇の時代.md"
+  },
+  {
+    "name": "光の時代",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%85%89%E3%81%AE%E6%99%82%E4%BB%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:07.020Z",
+    "html_file": "原始页面正文/004.html",
+    "html_sha256": "6efc6d4178631612c75c8da6edf42a1825aa306c574a9b726afe95e6b492014f",
+    "markdown_file": "关卡详情/004-光の時代.md"
+  },
+  {
+    "name": "水の時代",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%B0%B4%E3%81%AE%E6%99%82%E4%BB%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:11.704Z",
+    "html_file": "原始页面正文/005.html",
+    "html_sha256": "0d6cd3c039a18be1ed113e4ed0b021bdecfc18955fbd115c02f454dd8767c02f",
+    "markdown_file": "关卡详情/005-水の時代.md"
+  },
+  {
+    "name": "火の時代",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%81%AB%E3%81%AE%E6%99%82%E4%BB%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:16.133Z",
+    "html_file": "原始页面正文/006.html",
+    "html_sha256": "d564b015b41904a016e780e94efd63855fb4d885b19e75a7e6c9fc23704d40ac",
+    "markdown_file": "关卡详情/006-火の時代.md"
+  },
+  {
+    "name": "悠久の地エリュシオル",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%82%A0%E4%B9%85%E3%81%AE%E5%9C%B0%E3%82%A8%E3%83%AA%E3%83%A5%E3%82%B7%E3%82%AA%E3%83%AB?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:21.059Z",
+    "html_file": "原始页面正文/007.html",
+    "html_sha256": "7d28379fb375eb06519bef997b9248dbcb1f7322696d574fb306e4b367a025fe",
+    "markdown_file": "关卡详情/007-悠久の地エリュシオル.md"
+  },
+  {
+    "name": "神世界への闇",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A5%9E%E4%B8%96%E7%95%8C%E3%81%B8%E3%81%AE%E9%97%87?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:25.837Z",
+    "html_file": "原始页面正文/008.html",
+    "html_sha256": "4a9bef372593eb687a8ea1b9bad772bd5b634b8641c9bc469674778729252acd",
+    "markdown_file": "关卡详情/008-神世界への闇.md"
+  },
+  {
+    "name": "観測者の洞穴",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%A6%B3%E6%B8%AC%E8%80%85%E3%81%AE%E6%B4%9E%E7%A9%B4?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:30.794Z",
+    "html_file": "原始页面正文/009.html",
+    "html_sha256": "022064ea6a0f1f65c246be91dd6241f8dd4fd72641da020e442196f364585247",
+    "markdown_file": "关卡详情/009-観測者の洞穴.md"
+  },
+  {
+    "name": "最果ての地エウレカ",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%80%E6%9E%9C%E3%81%A6%E3%81%AE%E5%9C%B0%E3%82%A8%E3%82%A6%E3%83%AC%E3%82%AB?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:35.953Z",
+    "html_file": "原始页面正文/010.html",
+    "html_sha256": "66d5bf8fcd92a177602083a84822890dfd418e88d575d833011ab6996507803a",
+    "markdown_file": "关卡详情/010-最果ての地エウレカ.md"
+  },
+  {
+    "name": "龍王ヴィルムの墓",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%BE%8D%E7%8E%8B%E3%83%B4%E3%82%A3%E3%83%AB%E3%83%A0%E3%81%AE%E5%A2%93?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:40.594Z",
+    "html_file": "原始页面正文/011.html",
+    "html_sha256": "d15b8cfd739061b3b8aece2a913be101be13ef1da76e581d26cef380018c47f0",
+    "markdown_file": "关卡详情/011-龍王ヴィルムの墓.md"
+  },
+  {
+    "name": "霊峰ザルトゥーニ",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%9C%8A%E5%B3%B0%E3%82%B6%E3%83%AB%E3%83%88%E3%82%A5%E3%83%BC%E3%83%8B?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:46.274Z",
+    "html_file": "原始页面正文/012.html",
+    "html_sha256": "757b316b2587e599def922c17b987df431f467435b29c1f110de13bcc4cdd29d",
+    "markdown_file": "关卡详情/012-霊峰ザルトゥーニ.md"
+  },
+  {
+    "name": "蒼界タリアス",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%92%BC%E7%95%8C%E3%82%BF%E3%83%AA%E3%82%A2%E3%82%B9?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:50.740Z",
+    "html_file": "原始页面正文/013.html",
+    "html_sha256": "e951898329612ab74cab9ff5591560359d176efb49adf95fb6287d061d0e6a62",
+    "markdown_file": "关卡详情/013-蒼界タリアス.md"
+  },
+  {
+    "name": "炎山ガスタール",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%82%8E%E5%B1%B1%E3%82%AC%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%AB?variant=zh-mo",
+    "captured_at": "2026-11-02T15:25:55.573Z",
+    "html_file": "原始页面正文/014.html",
+    "html_sha256": "921e84f4cf43ce273cb171354f44f7f52776c398949944b2bc5bca9df31d3723",
+    "markdown_file": "关卡详情/014-炎山ガスタール.md"
+  },
+  {
+    "name": "幻地ラムリア",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%B9%BB%E5%9C%B0%E3%83%A9%E3%83%A0%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:00.481Z",
+    "html_file": "原始页面正文/015.html",
+    "html_sha256": "6819114299ef1abb2e61d37575ec18de6106a516755959567022e7d5d461ed4a",
+    "markdown_file": "关卡详情/015-幻地ラムリア.md"
+  },
+  {
+    "name": "ラカンカグア火口",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%A9%E3%82%AB%E3%83%B3%E3%82%AB%E3%82%B0%E3%82%A2%E7%81%AB%E5%8F%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:05.900Z",
+    "html_file": "原始页面正文/016.html",
+    "html_sha256": "81e48f856b31e222aae5954a055037a29706894a02ffea5ce3ffd39e5cb2f6ed",
+    "markdown_file": "关卡详情/016-ラカンカグア火口.md"
+  },
+  {
+    "name": "南セルヴァン斷崖",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%8D%97%E3%82%BB%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%B3%E6%96%AD%E5%B4%96?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:10.369Z",
+    "html_file": "原始页面正文/017.html",
+    "html_sha256": "e08b90b57c05fd2378ea4b353a71191e4ba2b17a93faf0ca11a31af7732a3225",
+    "markdown_file": "关卡详情/017-南セルヴァン斷崖.md"
+  },
+  {
+    "name": "北セルヴァン斷崖",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%8C%97%E3%82%BB%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%B3%E6%96%AD%E5%B4%96?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:15.215Z",
+    "html_file": "原始页面正文/018.html",
+    "html_sha256": "7fc6ae090d0dbaf9cfe34b65a6740dd6e77212576591f2c08fcb1aa43d01829f",
+    "markdown_file": "关卡详情/018-北セルヴァン斷崖.md"
+  },
+  {
+    "name": "ナナタク雪原",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%8A%E3%83%8A%E3%82%BF%E3%82%AF%E9%9B%AA%E5%8E%9F?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:19.854Z",
+    "html_file": "原始页面正文/019.html",
+    "html_sha256": "d9027cc5e55f22c16bddf42c34a11037d1af367b90b4f8a849053ad1a884c8b2",
+    "markdown_file": "关卡详情/019-ナナタク雪原.md"
+  },
+  {
+    "name": "エルバルス山嶽",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%A8%E3%83%AB%E3%83%90%E3%83%AB%E3%82%B9%E5%B1%B1%E5%B2%B3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:24.800Z",
+    "html_file": "原始页面正文/020.html",
+    "html_sha256": "3a8ca7962bd8e930374394f59d40c327165de8a3944eb169ddc774a26e5422a2",
+    "markdown_file": "关卡详情/020-エルバルス山嶽.md"
+  },
+  {
+    "name": "フォロンバイル平原",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%95%E3%82%A9%E3%83%AD%E3%83%B3%E3%83%90%E3%82%A4%E3%83%AB%E5%B9%B3%E5%8E%9F?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:29.342Z",
+    "html_file": "原始页面正文/021.html",
+    "html_sha256": "21d49ca4efd5e965123f6e23b3a080b0fae6fb25dbbe1a9e457f5d211dc00e57",
+    "markdown_file": "关卡详情/021-フォロンバイル平原.md"
+  },
+  {
+    "name": "エアキア火山",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%A8%E3%82%A2%E3%82%AD%E3%82%A2%E7%81%AB%E5%B1%B1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:34.039Z",
+    "html_file": "原始页面正文/022.html",
+    "html_sha256": "f9d0c814c63d55ae3f1445ea456e5ec538bf1dcc23db1119cabdba993d06064b",
+    "markdown_file": "关卡详情/022-エアキア火山.md"
+  },
+  {
+    "name": "西ガルダ砂漠",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%A5%BF%E3%82%AC%E3%83%AB%E3%83%80%E7%A0%82%E6%BC%A0?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:39.310Z",
+    "html_file": "原始页面正文/023.html",
+    "html_sha256": "7204d1a80d3d22ea1f27808ec787604a6bbbc010126031fa9d334bd91a641901",
+    "markdown_file": "关卡详情/023-西ガルダ砂漠.md"
+  },
+  {
+    "name": "東ガルダ砂漠",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9D%B1%E3%82%AC%E3%83%AB%E3%83%80%E7%A0%82%E6%BC%A0?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:44.552Z",
+    "html_file": "原始页面正文/024.html",
+    "html_sha256": "f2b5c0e0b75653193fab147a08272c5aa1c6ddb9d338f6348229176d974a4001",
+    "markdown_file": "关卡详情/024-東ガルダ砂漠.md"
+  },
+  {
+    "name": "アルマフ海岸",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%A2%E3%83%AB%E3%83%9E%E3%83%95%E6%B5%B7%E5%B2%B8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:49.098Z",
+    "html_file": "原始页面正文/025.html",
+    "html_sha256": "154d0d35662fde235d2fbf8f86ffcf5eda4ec1154bd9fd633c34bded2022d2fa",
+    "markdown_file": "关卡详情/025-アルマフ海岸.md"
+  },
+  {
+    "name": "ウルヌス山脈",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%A6%E3%83%AB%E3%83%8C%E3%82%B9%E5%B1%B1%E8%84%88?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:54.315Z",
+    "html_file": "原始页面正文/026.html",
+    "html_sha256": "8884aa6dab5dbd93ba3bd2fdaaad207e91cb51960f8fbd346e4d8d6056e02a89",
+    "markdown_file": "关卡详情/026-ウルヌス山脈.md"
+  },
+  {
+    "name": "ハイリア平原",
+    "category": "主线关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%8F%E3%82%A4%E3%83%AA%E3%82%A2%E5%B9%B3%E5%8E%9F?variant=zh-mo",
+    "captured_at": "2026-11-02T15:26:59.008Z",
+    "html_file": "原始页面正文/027.html",
+    "html_sha256": "2937d50dfe76d3b2a17bba2c9668cf32cf6472a610a90caf318fdec0f50396d6",
+    "markdown_file": "关卡详情/027-ハイリア平原.md"
+  },
+  {
+    "name": "神月のケモノ",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A5%9E%E6%9C%88%E3%81%AE%E3%82%B1%E3%83%A2%E3%83%8E?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:03.893Z",
+    "html_file": "原始页面正文/028.html",
+    "html_sha256": "d8aeb80cce06362ab906745986ed8553d39c9a5f3cb3fb539ebdbf28c8ae9add",
+    "markdown_file": "关卡详情/028-神月のケモノ.md"
+  },
+  {
+    "name": "四種の大器",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%9B%9B%E7%A8%AE%E3%81%AE%E5%A4%A7%E5%99%A8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:08.508Z",
+    "html_file": "原始页面正文/029.html",
+    "html_sha256": "a3919fa1b60008f666d3872b53831d5bbe089d64fd052a65de2078a41a0ad70e",
+    "markdown_file": "关卡详情/029-四種の大器.md"
+  },
+  {
+    "name": "終わりを告げる者",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%B5%82%E3%82%8F%E3%82%8A%E3%82%92%E5%91%8A%E3%81%92%E3%82%8B%E8%80%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:13.161Z",
+    "html_file": "原始页面正文/030.html",
+    "html_sha256": "f26c346ffce746870a2c798120413734ca30f7c2647aa3cf527fc4bc99b252e9",
+    "markdown_file": "关卡详情/030-終わりを告げる者.md"
+  },
+  {
+    "name": "絶海にそびえる塔",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%B5%B6%E6%B5%B7%E3%81%AB%E3%81%9D%E3%81%B3%E3%81%88%E3%82%8B%E5%A1%94?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:17.841Z",
+    "html_file": "原始页面正文/031.html",
+    "html_sha256": "a30b6849458d6e39f906c4e5ce57ce8470fdf9d3adaee17649b91bed7378f4fc",
+    "markdown_file": "关卡详情/031-絶海にそびえる塔.md"
+  },
+  {
+    "name": "闇に染まる海",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%97%87%E3%81%AB%E6%9F%93%E3%81%BE%E3%82%8B%E6%B5%B7?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:23.053Z",
+    "html_file": "原始页面正文/032.html",
+    "html_sha256": "709246e8121bc5261726dadfbbaf3b0bec916bb0bd78a316f5838aed0bcb28d4",
+    "markdown_file": "关卡详情/032-闇に染まる海.md"
+  },
+  {
+    "name": "恐怖の觸手",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%81%90%E6%80%96%E3%81%AE%E8%A7%A6%E6%89%8B?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:28.013Z",
+    "html_file": "原始页面正文/033.html",
+    "html_sha256": "52db11ff5b7f4a41165133d2a68420af3ef9efca195f430a4035a62d9b70a84c",
+    "markdown_file": "关卡详情/033-恐怖の觸手.md"
+  },
+  {
+    "name": "脅威！深海の大怪物",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%84%85%E5%A8%81%EF%BC%81%E6%B7%B1%E6%B5%B7%E3%81%AE%E5%A4%A7%E6%80%AA%E7%89%A9?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:32.868Z",
+    "html_file": "原始页面正文/034.html",
+    "html_sha256": "510bb17f5ab5339fa9b6012f4345089c026bf0778839f70e91db9396b79d92e7",
+    "markdown_file": "关卡详情/034-脅威！深海の大怪物.md"
+  },
+  {
+    "name": "新たなる世界へ",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%96%B0%E3%81%9F%E3%81%AA%E3%82%8B%E4%B8%96%E7%95%8C%E3%81%B8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:37.442Z",
+    "html_file": "原始页面正文/035.html",
+    "html_sha256": "b8222090706ebab3c83632b76d3aa6114840efb6d00dd538da7f8c2bedfea0bb",
+    "markdown_file": "关卡详情/035-新たなる世界へ.md"
+  },
+  {
+    "name": "禁書館の聖祭",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A6%81%E6%9B%B8%E9%A4%A8%E3%81%AE%E8%81%96%E7%A5%AD?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:41.862Z",
+    "html_file": "原始页面正文/036.html",
+    "html_sha256": "8a9b1cc7a9d941d9d8815b6954d193ac60b267e01101f01d2902fc3e6ca978c7",
+    "markdown_file": "关卡详情/036-禁書館の聖祭.md"
+  },
+  {
+    "name": "機兵と騎士と妖精と",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%A9%9F%E5%85%B5%E3%81%A8%E9%A8%8E%E5%A3%AB%E3%81%A8%E5%A6%96%E7%B2%BE%E3%81%A8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:46.909Z",
+    "html_file": "原始页面正文/037.html",
+    "html_sha256": "8b04b40e3eabb46341660dbd065238eb0b16cf80f0a2f0532da66168bfb1be44",
+    "markdown_file": "关卡详情/037-機兵と騎士と妖精と.md"
+  },
+  {
+    "name": "頑張れアルフォンス！",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%A0%91%E5%BC%B5%E3%82%8C%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A9%E3%83%B3%E3%82%B9%EF%BC%81?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:51.734Z",
+    "html_file": "原始页面正文/038.html",
+    "html_sha256": "44e4a3d9894537e37a36b90155f095f129b52549f502617294ac7294fa726095",
+    "markdown_file": "关卡详情/038-頑張れアルフォンス！.md"
+  },
+  {
+    "name": "処刑の銃口",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%87%A6%E5%88%91%E3%81%AE%E9%8A%83%E5%8F%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:27:57.300Z",
+    "html_file": "原始页面正文/039.html",
+    "html_sha256": "6b35a1b3cfba0fea648dc25e76f242416a4fef777cc5ff3990adc9dd38767b01",
+    "markdown_file": "关卡详情/039-処刑の銃口.md"
+  },
+  {
+    "name": "四人の魔女",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%9B%9B%E4%BA%BA%E3%81%AE%E9%AD%94%E5%A5%B3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:02.857Z",
+    "html_file": "原始页面正文/040.html",
+    "html_sha256": "c5832865d7d9204cb11b46fbfa45f7b07279a70388bb9213af30cc91c701cd50",
+    "markdown_file": "关卡详情/040-四人の魔女.md"
+  },
+  {
+    "name": "MIND≒0コラボ弐",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/MIND%E2%89%920%E3%82%B3%E3%83%A9%E3%83%9C%E5%BC%90?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:07.341Z",
+    "html_file": "原始页面正文/041.html",
+    "html_sha256": "c74106fccdef665422429cc42ed55ebdc02eae2da5ea0696e6dcd7bd317bf55a",
+    "markdown_file": "关卡详情/041-MIND≒0コラボ弐.md"
+  },
+  {
+    "name": "悪食王と歌姫さま",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%82%AA%E9%A3%9F%E7%8E%8B%E3%81%A8%E6%AD%8C%E5%A7%AB%E3%81%95%E3%81%BE?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:12.690Z",
+    "html_file": "原始页面正文/042.html",
+    "html_sha256": "50839952deb645033e2b2c7460c9d2a48f796c1776b5ba8365748ac1bb606bb1",
+    "markdown_file": "关卡详情/042-悪食王と歌姫さま.md"
+  },
+  {
+    "name": "進化の夜明け",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%80%B2%E5%8C%96%E3%81%AE%E5%A4%9C%E6%98%8E%E3%81%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:17.040Z",
+    "html_file": "原始页面正文/043.html",
+    "html_sha256": "5c1b7201463050fe303219fc28c1041526e88a583ef53fa7840f52b0a136a2af",
+    "markdown_file": "关卡详情/043-進化の夜明け.md"
+  },
+  {
+    "name": "野望潰えし時",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%87%8E%E6%9C%9B%E6%BD%B0%E3%81%88%E3%81%97%E6%99%82?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:21.758Z",
+    "html_file": "原始页面正文/044.html",
+    "html_sha256": "4661ba2d189d2fd5b4045a0464d7fba0d13024a591e727eb6da12a051e39d43d",
+    "markdown_file": "关卡详情/044-野望潰えし時.md"
+  },
+  {
+    "name": "MIND≒0コラボ壱",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/MIND%E2%89%920%E3%82%B3%E3%83%A9%E3%83%9C%E5%A3%B1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:26.609Z",
+    "html_file": "原始页面正文/045.html",
+    "html_sha256": "28513e22a31d3191b12f930a4465c9eb4bed8f9a3736cd2b00b4da745a7586db",
+    "markdown_file": "关卡详情/045-MIND≒0コラボ壱.md"
+  },
+  {
+    "name": "歴史の闇を知りし者",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%AD%B4%E5%8F%B2%E3%81%AE%E9%97%87%E3%82%92%E7%9F%A5%E3%82%8A%E3%81%97%E8%80%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:31.492Z",
+    "html_file": "原始页面正文/046.html",
+    "html_sha256": "6ee73fcd24278636de628e0a38d9f8003a57312868ddff7732b7f1a328d15eeb",
+    "markdown_file": "关卡详情/046-歴史の闇を知りし者.md"
+  },
+  {
+    "name": "新たなる冒険者たち(少女)",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%96%B0%E3%81%9F%E3%81%AA%E3%82%8B%E5%86%92%E9%99%BA%E8%80%85%E3%81%9F%E3%81%A1(%E5%B0%91%E5%A5%B3)?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:36.255Z",
+    "html_file": "原始页面正文/047.html",
+    "html_sha256": "4455aa6bd326a8b34c86206ba20d5b26ee15c5170b868a07c13b604624cd302b",
+    "markdown_file": "关卡详情/047-新たなる冒険者たち(少女).md"
+  },
+  {
+    "name": "広がる戦火、高まる感情",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%BA%83%E3%81%8C%E3%82%8B%E6%88%A6%E7%81%AB%E3%80%81%E9%AB%98%E3%81%BE%E3%82%8B%E6%84%9F%E6%83%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:40.782Z",
+    "html_file": "原始页面正文/048.html",
+    "html_sha256": "7b6b81ba8bc25e26b38b8571defaae2ead70698328d61d71ce798639c3be88c5",
+    "markdown_file": "关卡详情/048-広がる戦火、高まる感情.md"
+  },
+  {
+    "name": "新たなる冒険者たち(少年)",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%96%B0%E3%81%9F%E3%81%AA%E3%82%8B%E5%86%92%E9%99%BA%E8%80%85%E3%81%9F%E3%81%A1(%E5%B0%91%E5%B9%B4)?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:45.559Z",
+    "html_file": "原始页面正文/049.html",
+    "html_sha256": "8b5474f9168458e64e552681ba262570a41574eb4c272bd1a6899105298b08d3",
+    "markdown_file": "关卡详情/049-新たなる冒険者たち(少年).md"
+  },
+  {
+    "name": "私がやらねば誰がやる",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A7%81%E3%81%8C%E3%82%84%E3%82%89%E3%81%AD%E3%81%B0%E8%AA%B0%E3%81%8C%E3%82%84%E3%82%8B?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:50.789Z",
+    "html_file": "原始页面正文/050.html",
+    "html_sha256": "d42bcd9c948190bd7190196a069cf7230e61aff2a4d56bb6dd28b5b863b21518",
+    "markdown_file": "关卡详情/050-私がやらねば誰がやる.md"
+  },
+  {
+    "name": "戦の匂いに導かれ",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%88%A6%E3%81%AE%E5%8C%82%E3%81%84%E3%81%AB%E5%B0%8E%E3%81%8B%E3%82%8C?variant=zh-mo",
+    "captured_at": "2026-11-02T15:28:55.434Z",
+    "html_file": "原始页面正文/051.html",
+    "html_sha256": "fa365777ba7523204b00c2819f6c4283acb5063ed0e95a3e0bb03383cd1e9006",
+    "markdown_file": "关卡详情/051-戦の匂いに導かれ.md"
+  },
+  {
+    "name": "シーフの流儀",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%B7%E3%83%BC%E3%83%95%E3%81%AE%E6%B5%81%E5%84%80?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:00.689Z",
+    "html_file": "原始页面正文/052.html",
+    "html_sha256": "e0627a666b2b759b906adfb8a83619003e24cc08c3718c3ffd62edc61d5ab501",
+    "markdown_file": "关卡详情/052-シーフの流儀.md"
+  },
+  {
+    "name": "未來からの使者",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%AA%E6%9D%A5%E3%81%8B%E3%82%89%E3%81%AE%E4%BD%BF%E8%80%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:05.353Z",
+    "html_file": "原始页面正文/053.html",
+    "html_sha256": "b96176904daacb175ea54dcbd341cea6e6a330582acb8d72a0e4d442cfc8b238",
+    "markdown_file": "关卡详情/053-未來からの使者.md"
+  },
+  {
+    "name": "魂の塔",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%AE%E5%A1%94?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:09.874Z",
+    "html_file": "原始页面正文/054.html",
+    "html_sha256": "d8811c27418dd6a705d33e4f6c31acdb806e9f4071f3e71abd8851dca9fbaf11",
+    "markdown_file": "关卡详情/054-魂の塔.md"
+  },
+  {
+    "name": "フィーバーロード",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%90%E3%83%BC%E3%83%AD%E3%83%BC%E3%83%89?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:14.312Z",
+    "html_file": "原始页面正文/055.html",
+    "html_sha256": "db83eb7b72c805401ff0f406e0a659964392a081bad6392f7b252f43e8ef96f3",
+    "markdown_file": "关卡详情/055-フィーバーロード.md"
+  },
+  {
+    "name": "砕く大剣",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A0%95%E3%81%8F%E5%A4%A7%E5%89%A3?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:18.783Z",
+    "html_file": "原始页面正文/056.html",
+    "html_sha256": "f1338fe65ee95e475e2d4c2e948a647d83e1016dc60e07684b7ea81e8201f58c",
+    "markdown_file": "关卡详情/056-砕く大剣.md"
+  },
+  {
+    "name": "王の再臨",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%8E%8B%E3%81%AE%E5%86%8D%E8%87%A8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:23.212Z",
+    "html_file": "原始页面正文/057.html",
+    "html_sha256": "0850768bdb5a27f3e200ff710ed6e253e54b0adfa1dabf8fd1adc08de94874cc",
+    "markdown_file": "关卡详情/057-王の再臨.md"
+  },
+  {
+    "name": "七色海岸の軌跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E4%B8%83%E8%89%B2%E6%B5%B7%E5%B2%B8%E3%81%AE%E8%BB%8C%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:27.993Z",
+    "html_file": "原始页面正文/058.html",
+    "html_sha256": "3395a4cfe6177833e8bc3bb0bc4f0089bd0da74418c6703481ecce92aea1d790",
+    "markdown_file": "关卡详情/058-七色海岸の軌跡.md"
+  },
+  {
+    "name": "裁きの槍",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%A3%81%E3%81%8D%E3%81%AE%E6%A7%8D?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:33.392Z",
+    "html_file": "原始页面正文/059.html",
+    "html_sha256": "dcc540ebdbcccb52a459fa2a7047afde65f8e48ca41a4e52f71513a603082f57",
+    "markdown_file": "关卡详情/059-裁きの槍.md"
+  },
+  {
+    "name": "神々のマリオネット",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A5%9E%E3%80%85%E3%81%AE%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%8D%E3%83%83%E3%83%88?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:37.739Z",
+    "html_file": "原始页面正文/060.html",
+    "html_sha256": "f51b1b4240748628941741eef47623f71f4be9d8d7b7a1ddc227be2a86a9b565",
+    "markdown_file": "关卡详情/060-神々のマリオネット.md"
+  },
+  {
+    "name": "戦士の安らぎ",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%88%A6%E5%A3%AB%E3%81%AE%E5%AE%89%E3%82%89%E3%81%8E?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:43.887Z",
+    "html_file": "原始页面正文/061.html",
+    "html_sha256": "2b62c56fae64f9cc875a8a9d57a9537e35abbdba3692580ec36ffabeef0bcbbd",
+    "markdown_file": "关卡详情/061-戦士の安らぎ.md"
+  },
+  {
+    "name": "神の使者",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%A5%9E%E3%81%AE%E4%BD%BF%E8%80%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:48.990Z",
+    "html_file": "原始页面正文/062.html",
+    "html_sha256": "961c5d6311943f4fea898de286e15a85cdf50c51a12bd5f307ee7d3749e653a3",
+    "markdown_file": "关卡详情/062-神の使者.md"
+  },
+  {
+    "name": "闇夜の定め",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%97%87%E5%A4%9C%E3%81%AE%E5%AE%9A%E3%82%81?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:53.944Z",
+    "html_file": "原始页面正文/063.html",
+    "html_sha256": "7ef665ee3f821563e21c3caf9d288e59618ffde9c41c7ee11dd61be9bea0a8a8",
+    "markdown_file": "关卡详情/063-闇夜の定め.md"
+  },
+  {
+    "name": "熱風の遺跡探訪",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%86%B1%E9%A2%A8%E3%81%AE%E9%81%BA%E8%B7%A1%E6%8E%A2%E8%A8%AA?variant=zh-mo",
+    "captured_at": "2026-11-02T15:29:59.261Z",
+    "html_file": "原始页面正文/064.html",
+    "html_sha256": "920126e9a1e8d797ee86a7a1d14e433c26ddfec35bbf31662115b2f527b43ca1",
+    "markdown_file": "关卡详情/064-熱風の遺跡探訪.md"
+  },
+  {
+    "name": "狩りの雪原",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%8B%A9%E3%82%8A%E3%81%AE%E9%9B%AA%E5%8E%9F?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:04.242Z",
+    "html_file": "原始页面正文/065.html",
+    "html_sha256": "1893a155d012e4e92afac6232af0be85c5fb1485a654dd354b0aae2932924332",
+    "markdown_file": "关卡详情/065-狩りの雪原.md"
+  },
+  {
+    "name": "七色の海岸",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E4%B8%83%E8%89%B2%E3%81%AE%E6%B5%B7%E5%B2%B8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:09.625Z",
+    "html_file": "原始页面正文/066.html",
+    "html_sha256": "d7330725b6fb48f6c25f3fac09f2e39f63da04054cf4c8487594128de9451c68",
+    "markdown_file": "关卡详情/066-七色の海岸.md"
+  },
+  {
+    "name": "ワノクニの志士たち",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%AF%E3%83%8E%E3%82%AF%E3%83%8B%E3%81%AE%E5%BF%97%E5%A3%AB%E3%81%9F%E3%81%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:14.370Z",
+    "html_file": "原始页面正文/067.html",
+    "html_sha256": "91b5b3aa64fba1279cd0fa2b72f496c0cf6e7bb93599945730159c32cb1aab76",
+    "markdown_file": "关卡详情/067-ワノクニの志士たち.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：隠し洞窟",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E9%9A%A0%E3%81%97%E6%B4%9E%E7%AA%9F?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:19.596Z",
+    "html_file": "原始页面正文/068.html",
+    "html_sha256": "8055a16aef2b01ce52cfefe8638f05f68faa985d193a3cf5c8abe14e1a3c8852",
+    "markdown_file": "关卡详情/068-超古代遺跡の秘法：隠し洞窟.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：日の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E6%97%A5%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:24.173Z",
+    "html_file": "原始页面正文/069.html",
+    "html_sha256": "05d53a2bf606e1345fba925708476bffaa3ad2fa4ec03ad1d62edf0f67a0a05e",
+    "markdown_file": "关卡详情/069-超古代遺跡の秘法：日の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：土の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E5%9C%9F%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:29.278Z",
+    "html_file": "原始页面正文/070.html",
+    "html_sha256": "986433ab6bad1aa1ae6ea92f35f9d76f5489063bf23e11c85018adf1a264f49c",
+    "markdown_file": "关卡详情/070-超古代遺跡の秘法：土の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：金の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E9%87%91%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:34.524Z",
+    "html_file": "原始页面正文/071.html",
+    "html_sha256": "5dbc9f58ef1e34883454af1ddd0a425b9540d1a79b0f25226d2cff9e66fd0126",
+    "markdown_file": "关卡详情/071-超古代遺跡の秘法：金の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：木の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E6%9C%A8%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:39.299Z",
+    "html_file": "原始页面正文/072.html",
+    "html_sha256": "fee77e73de15755f8817248daa34168907cb63a223a3de5ebf786f1e8fc96114",
+    "markdown_file": "关卡详情/072-超古代遺跡の秘法：木の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：水の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E6%B0%B4%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:44.087Z",
+    "html_file": "原始页面正文/073.html",
+    "html_sha256": "b9b045e235c49c882caeedae0c5d972a83c98de7329a81e41b74c2f7613b79df",
+    "markdown_file": "关卡详情/073-超古代遺跡の秘法：水の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：火の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E7%81%AB%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:49.418Z",
+    "html_file": "原始页面正文/074.html",
+    "html_sha256": "21c6c137c42b41c71463d4becf61e3b0ca3329907a054452c332d3acdc1e5e54",
+    "markdown_file": "关卡详情/074-超古代遺跡の秘法：火の遺跡.md"
+  },
+  {
+    "name": "超古代遺跡の秘法：月の遺跡",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%B6%85%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1%E3%81%AE%E7%A7%98%E6%B3%95%EF%BC%9A%E6%9C%88%E3%81%AE%E9%81%BA%E8%B7%A1?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:54.770Z",
+    "html_file": "原始页面正文/075.html",
+    "html_sha256": "96f95fed43b6ac037b35cec4024d1eb31584eaaa19c616e1bbaf0caa47097a81",
+    "markdown_file": "关卡详情/075-超古代遺跡の秘法：月の遺跡.md"
+  },
+  {
+    "name": "真理を記す者",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E7%9C%9F%E7%90%86%E3%82%92%E8%A8%98%E3%81%99%E8%80%85?variant=zh-mo",
+    "captured_at": "2026-11-02T15:30:59.619Z",
+    "html_file": "原始页面正文/076.html",
+    "html_sha256": "eb020be93451dc1d9f3b976df36e771cc611f93b9a6546c9bf0b24c39652a1e1",
+    "markdown_file": "关卡详情/076-真理を記す者.md"
+  },
+  {
+    "name": "屋根より高い魂",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%B1%8B%E6%A0%B9%E3%82%88%E3%82%8A%E9%AB%98%E3%81%84%E9%AD%82?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:04.378Z",
+    "html_file": "原始页面正文/077.html",
+    "html_sha256": "6b469461f00a231b7f00f7f0c75c5ae16d4ba850bec9b6954b86620ecdbea382",
+    "markdown_file": "关卡详情/077-屋根より高い魂.md"
+  },
+  {
+    "name": "最果ての海の主",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%80%E6%9E%9C%E3%81%A6%E3%81%AE%E6%B5%B7%E3%81%AE%E4%B8%BB?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:09.589Z",
+    "html_file": "原始页面正文/078.html",
+    "html_sha256": "c13645065827b10db5e8a909dd082e4491b5e7f7392928c8d7b4847142889cee",
+    "markdown_file": "关卡详情/078-最果ての海の主.md"
+  },
+  {
+    "name": "3分間の成金",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/3%E5%88%86%E9%96%93%E3%81%AE%E6%88%90%E9%87%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:14.637Z",
+    "html_file": "原始页面正文/079.html",
+    "html_sha256": "a7560584fc009216f80590cba23ee760c4153c9de73098a64b22ef190f62e8ff",
+    "markdown_file": "关卡详情/079-3分間の成金.md"
+  },
+  {
+    "name": "聖剣と怨槍",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E8%81%96%E5%89%A3%E3%81%A8%E6%80%A8%E6%A7%8D?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:19.492Z",
+    "html_file": "原始页面正文/080.html",
+    "html_sha256": "ca9bad4698f64fe780eadfb47d2f51f32e70b5fd8ba73289d85f483ffb2ff16f",
+    "markdown_file": "关卡详情/080-聖剣と怨槍.md"
+  },
+  {
+    "name": "月夜と狩人",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%88%E5%A4%9C%E3%81%A8%E7%8B%A9%E4%BA%BA?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:24.505Z",
+    "html_file": "原始页面正文/081.html",
+    "html_sha256": "7a78691d5c368b4c727c390009da77430e4ce78edc9d8804b4a3ee279825e253",
+    "markdown_file": "关卡详情/081-月夜と狩人.md"
+  },
+  {
+    "name": "十の挑戦",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%8D%81%E3%81%AE%E6%8C%91%E6%88%A6?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:29.984Z",
+    "html_file": "原始页面正文/082.html",
+    "html_sha256": "c32dbc088f80a80a44fba00b4845b8cadee2389820849ec2a9b414e168d60b62",
+    "markdown_file": "关卡详情/082-十の挑戦.md"
+  },
+  {
+    "name": "魂との旅路",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%A8%E3%81%AE%E6%97%85%E8%B7%AF?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:34.743Z",
+    "html_file": "原始页面正文/083.html",
+    "html_sha256": "4d92efc608394c5ca38474e86c62c0f0e4e1d9fbc3437262b7badd591e971dbd",
+    "markdown_file": "关卡详情/083-魂との旅路.md"
+  },
+  {
+    "name": "孤獨の狩人",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%AD%A4%E7%8B%AC%E3%81%AE%E7%8B%A9%E4%BA%BA?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:39.796Z",
+    "html_file": "原始页面正文/084.html",
+    "html_sha256": "2278cfb04cfd48f5d6778e953e95a32ba4d7103418a1ecc2e5d577f099b57e18",
+    "markdown_file": "关卡详情/084-孤獨の狩人.md"
+  },
+  {
+    "name": "集う魂の結晶",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%9B%86%E3%81%86%E9%AD%82%E3%81%AE%E7%B5%90%E6%99%B6?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:44.508Z",
+    "html_file": "原始页面正文/085.html",
+    "html_sha256": "a684b8ed442303bd60d4c30a22cae9f7deca86e2cd2fd2d1b69bcb9803840e89",
+    "markdown_file": "关卡详情/085-集う魂の結晶.md"
+  },
+  {
+    "name": "3分間の死闘",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/3%E5%88%86%E9%96%93%E3%81%AE%E6%AD%BB%E9%97%98?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:49.351Z",
+    "html_file": "原始页面正文/086.html",
+    "html_sha256": "673618a39998011b56f2f8c831fe1ebfa83147eee5738dea21c05f2f90ba90cf",
+    "markdown_file": "关卡详情/086-3分間の死闘.md"
+  },
+  {
+    "name": "古の時間兵器",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%8F%A4%E3%81%AE%E6%99%82%E9%96%93%E5%85%B5%E5%99%A8?variant=zh-mo",
+    "captured_at": "2026-11-02T15:31:55.315Z",
+    "html_file": "原始页面正文/087.html",
+    "html_sha256": "4a4002d26ce5a41236838981388fd12651bc64e88f9a70b8b02fb13ad172a330",
+    "markdown_file": "关卡详情/087-古の時間兵器.md"
+  },
+  {
+    "name": "サクラ色の門出",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%B5%E3%82%AF%E3%83%A9%E8%89%B2%E3%81%AE%E9%96%80%E5%87%BA?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:00.356Z",
+    "html_file": "原始页面正文/088.html",
+    "html_sha256": "d816aabfa45f6b402b611cf80d26316f367eee9e88a69fed8fb559e6d829140e",
+    "markdown_file": "关卡详情/088-サクラ色の門出.md"
+  },
+  {
+    "name": "魂の器【剣】",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%AE%E5%99%A8%E3%80%90%E5%89%A3%E3%80%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:04.971Z",
+    "html_file": "原始页面正文/089.html",
+    "html_sha256": "3ce5661ac24c1cbd20fcd7ba947dcc4a57cd8129bab00091c6cb41aa400774e9",
+    "markdown_file": "关卡详情/089-魂の器【剣】.md"
+  },
+  {
+    "name": "魂の器【杖】",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%AE%E5%99%A8%E3%80%90%E6%9D%96%E3%80%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:09.767Z",
+    "html_file": "原始页面正文/090.html",
+    "html_sha256": "ff1d23e4505147a4b082e40e803bfecf458bc2b65ba38c9552a6ab21ffe14a14",
+    "markdown_file": "关卡详情/090-魂の器【杖】.md"
+  },
+  {
+    "name": "魂の器【槍】",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%AE%E5%99%A8%E3%80%90%E6%A7%8D%E3%80%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:14.468Z",
+    "html_file": "原始页面正文/091.html",
+    "html_sha256": "dab935c39584f57961cb133a81aa5f3a9fe7735f26e40f9858b0aa5e3794bbfe",
+    "markdown_file": "关卡详情/091-魂の器【槍】.md"
+  },
+  {
+    "name": "魂の器【弓】",
+    "category": "期间限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%AD%82%E3%81%AE%E5%99%A8%E3%80%90%E5%BC%93%E3%80%91?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:19.456Z",
+    "html_file": "原始页面正文/092.html",
+    "html_sha256": "26dda1df1af34aaca932db569bab6350557d6f262057364148e061e86bc22349",
+    "markdown_file": "关卡详情/092-魂の器【弓】.md"
+  },
+  {
+    "name": "月曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%88%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:24.026Z",
+    "html_file": "原始页面正文/093.html",
+    "html_sha256": "510c6f0b38ae2b3bcc1b4a5b75b31ebf9e8f0cdef5f93d784a8815a5a1878e84",
+    "markdown_file": "关卡详情/093-月曜日限定エリア.md"
+  },
+  {
+    "name": "火曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%A5%AD%E7%81%AB%E3%81%AE%E5%91%BC%E8%81%B2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:29.141Z",
+    "html_file": "原始页面正文/094.html",
+    "html_sha256": "0e80533e6ce7fcc4bb43ae4c1262b9006e8df339356bdd82e40dd473a405633a",
+    "markdown_file": "关卡详情/094-火曜日限定エリア.md"
+  },
+  {
+    "name": "水曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%B0%B4%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:34.190Z",
+    "html_file": "原始页面正文/095.html",
+    "html_sha256": "a4618702901f88b539b841ad79392b9a7949c5ed3348b4199fd40ddb95f28d10",
+    "markdown_file": "关卡详情/095-水曜日限定エリア.md"
+  },
+  {
+    "name": "木曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%9C%A8%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:39.442Z",
+    "html_file": "原始页面正文/096.html",
+    "html_sha256": "c32eb17323b521e36dc57a8132c29f7f656032bd263832f2771e6878a62e54d1",
+    "markdown_file": "关卡详情/096-木曜日限定エリア.md"
+  },
+  {
+    "name": "金曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%87%91%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:43.933Z",
+    "html_file": "原始页面正文/097.html",
+    "html_sha256": "67c9d5db0d030a005b4c135159c5a12a4feb98822d3a98b1b6d6f7b78e6caaa8",
+    "markdown_file": "关卡详情/097-金曜日限定エリア.md"
+  },
+  {
+    "name": "土曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%9C%9F%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:49.848Z",
+    "html_file": "原始页面正文/098.html",
+    "html_sha256": "cc3c6496598e3c3ebbe091b5ba796aa38cc31d62f9809a1fbe55634748f97ba6",
+    "markdown_file": "关卡详情/098-土曜日限定エリア.md"
+  },
+  {
+    "name": "日曜日限定エリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E6%97%A5%E6%9B%9C%E6%97%A5%E9%99%90%E5%AE%9A%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:54.802Z",
+    "html_file": "原始页面正文/099.html",
+    "html_sha256": "1b8e9b83c4fb8471fe0f9effc1d566a72b7f91c37d5d3a97f08a5c08b9f8db82",
+    "markdown_file": "关卡详情/099-日曜日限定エリア.md"
+  },
+  {
+    "name": "DXよりしろエリア",
+    "category": "每日限定关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/DX%E3%82%88%E3%82%8A%E3%81%97%E3%82%8D%E3%82%A8%E3%83%AA%E3%82%A2?variant=zh-mo",
+    "captured_at": "2026-11-02T15:32:59.907Z",
+    "html_file": "原始页面正文/100.html",
+    "html_sha256": "a5dcbef2c61687336d785c3c34dc9cf526aa413633a9c275c1468221a9f0d4bd",
+    "markdown_file": "关卡详情/100-DXよりしろエリア.md"
+  },
+  {
+    "name": "スマホGameRコラボ",
+    "category": "协作任务关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%B9%E3%83%9E%E3%83%9BGameR%E3%82%B3%E3%83%A9%E3%83%9C?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:04.725Z",
+    "html_file": "原始页面正文/101.html",
+    "html_sha256": "3bc75f8e40ca9935f5217dda2c807bffcf5d0a0cad49223703c6386a2f99b928",
+    "markdown_file": "关卡详情/101-スマホGameRコラボ.md"
+  },
+  {
+    "name": "電撃PSコラボ",
+    "category": "协作任务关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%9B%BB%E6%92%83PS%E3%82%B3%E3%83%A9%E3%83%9C?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:09.649Z",
+    "html_file": "原始页面正文/102.html",
+    "html_sha256": "d3386513fd2512d7b922d426f61a8e08aaf05819ca0a8ff92fc0c51741c94a51",
+    "markdown_file": "关卡详情/102-電撃PSコラボ.md"
+  },
+  {
+    "name": "ファミ通Appコラボ",
+    "category": "协作任务关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%83%95%E3%82%A1%E3%83%9F%E9%80%9AApp%E3%82%B3%E3%83%A9%E3%83%9C?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:15.032Z",
+    "html_file": "原始页面正文/103.html",
+    "html_sha256": "c8c7d0b8c53e015a50c627d0afde562409286191cf1f9736697ca19da1f62fb9",
+    "markdown_file": "关卡详情/103-ファミ通Appコラボ.md"
+  },
+  {
+    "name": "電撃GAコラボ",
+    "category": "协作任务关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E9%9B%BB%E6%92%83GA%E3%82%B3%E3%83%A9%E3%83%9C?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:19.447Z",
+    "html_file": "原始页面正文/104.html",
+    "html_sha256": "bf212272845be51a4e6734f4ff1fd0f7667f04e6ba956586eb3530cb14a9c7ef",
+    "markdown_file": "关卡详情/104-電撃GAコラボ.md"
+  },
+  {
+    "name": "幻影の金脈",
+    "category": "紧急关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E5%B9%BB%E5%BD%B1%E3%81%AE%E9%87%91%E8%84%88?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:24.101Z",
+    "html_file": "原始页面正文/105.html",
+    "html_sha256": "7512dc147b741a5a709d2798d191405712b61dccf119774c582b20ba18a95df3",
+    "markdown_file": "关卡详情/105-幻影の金脈.md"
+  },
+  {
+    "name": "スイカ割り大會！",
+    "category": "紧急关卡",
+    "source": "https://r2d.fandom.com/zh/wiki/%E3%82%B9%E3%82%A4%E3%82%AB%E5%89%B2%E3%82%8A%E5%A4%A7%E4%BC%9A%EF%BC%81?variant=zh-mo",
+    "captured_at": "2026-11-02T15:33:29.301Z",
+    "html_file": "原始页面正文/106.html",
+    "html_sha256": "dd17b341c4abd77b86dd6dbc57b597a63dfdeaca6e6d56158611c4e8de72f8a3",
+    "markdown_file": "关卡详情/106-スイカ割り大會！.md"
+  }
+]
