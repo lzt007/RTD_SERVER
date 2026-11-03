@@ -21,6 +21,7 @@ def layer_quests(api):
 
 
 def available(api,quest_id):
+    if quest_id in getattr(api,'reconstructed_quests',set()) and not api.operations.event_for_quest(quest_id):return False
     return quest_id not in getattr(api, 'blocked_quests', set())
 
 

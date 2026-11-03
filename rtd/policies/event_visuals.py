@@ -5,9 +5,9 @@ import zlib
 from .event_content import audit_events, recovered_asset_names, recovered_asset_manifest
 
 
-def apply_event_visuals(masters, levels):
-    names=recovered_asset_names()
-    assets=recovered_asset_manifest()
+def apply_event_visuals(masters, levels, *, quest_ids=None, protected_enemies=(), asset_manifest=None):
+    assets=asset_manifest if asset_manifest is not None else recovered_asset_manifest()
+    names=set(assets['names'])
     textures=set(assets["textures"])
     prefab_names=set(assets["models"])
     models=sorted(n[4:] for n in names if n.startswith('ast_ms'))
@@ -17,12 +17,14 @@ def apply_event_visuals(masters, levels):
     enemies={e['id']:e for e in masters[20]['data_list']}
     used={}
     for id in accepted:
+        if quest_ids is not None and id not in quest_ids:continue
         table=tables[quests[id]['enemy_table_id']]
         slots={b&31 for b in bytes.fromhex(levels[id]['map_data']) if 1<=b&31<=18}
         for prefix in ['boss','death']+[f'enemy{s}' for s in slots]:
             used.setdefault(table[prefix+'_set_id'],set()).add(id)
     changes=[]
     for id,quest_ids in sorted(used.items()):
+        if id in protected_enemies:continue
         enemy=enemies[id];model=enemy['model'].lower();texture=(enemy.get('texture') or '').lower()
         model_missing=model not in prefab_names and 'ast_'+model not in prefab_names
         texture_missing=bool(texture and texture!='na' and texture not in textures)

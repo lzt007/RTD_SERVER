@@ -1,0 +1,4222 @@
+{
+  "attack_effects": {
+    "evidence": "original CIL EnemyAttackEffectAssign::.cctor + ParticleManager.LoadEnemyAtkEffect",
+    "unit_enemy_types": [
+      22,
+      24,
+      30,
+      31,
+      33,
+      37
+    ],
+    "type23_is_unit_enemy": false,
+    "effects": [
+      {
+        "effect_id": 0,
+        "resources": [
+          {
+            "name": "ef_damage",
+            "path": "Prefab/ParticleEffects/ef_damage",
+            "objects": [],
+            "apk_local": false,
+            "load_skipped_by_code": true
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 1,
+        "resources": [
+          {
+            "name": "ef_damage",
+            "path": "Prefab/ParticleEffects/ef_damage",
+            "objects": [],
+            "apk_local": false,
+            "load_skipped_by_code": true
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 2,
+        "resources": [
+          {
+            "name": "ef_damage",
+            "path": "Prefab/ParticleEffects/ef_damage",
+            "objects": [],
+            "apk_local": false,
+            "load_skipped_by_code": true
+          },
+          {
+            "name": "ef_fire_01",
+            "path": "Prefab/ParticleEffects/ef_fire_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/56cf651bfb5b3b34facfcee588761b7d",
+                "sha256": "f5bcc6e42c8f92baf3db7dccdfd424e53196b7e4f9880ef23e943e301b74ed5a",
+                "path_id": 5,
+                "type": "GameObject"
+              },
+              {
+                "source": "apk:assets/bin/Data/level3",
+                "sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+                "path_id": 779,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 3,
+        "resources": [
+          {
+            "name": "ef_tentacle_01",
+            "path": "Prefab/ParticleEffects/ef_tentacle_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/cf1ddf28c3d1e4e479f0ad4de2a0b9d9",
+                "sha256": "058d5e311b68fd206f4da508637abca384add3c0c42a98ff3724a64f2bb41c2b",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 4,
+        "resources": [
+          {
+            "name": "ef_beam_01",
+            "path": "Prefab/ParticleEffects/ef_beam_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/861c3ae5619101143b2e3e3d82c2668a",
+                "sha256": "ed5701fab9b8eb29a7ba0c892a85e01dccdc615495c901e025ccf31d25dd1574",
+                "path_id": 9,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 5,
+        "resources": [
+          {
+            "name": "ef_atk_arrow_01_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_arrow_01_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/4139f7460c415f4499a3a3aa9b8c03eb",
+                "sha256": "e104995f8ea4131c65469907210fb70a23cd26ec3eb4b93c2e9f20139aea9103",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 6,
+        "resources": [
+          {
+            "name": "ef_atk_arrow_02_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_arrow_02_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/66c1c813566139f4fa1857cc472f56dd",
+                "sha256": "9704c2adffea46b625b2336a0ad3dfb20dfe6e20876a57d8971dab6e1cdcfb80",
+                "path_id": 4,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 7,
+        "resources": [
+          {
+            "name": "ef_atk_arrow_03_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_arrow_03_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/5c9d5f0b246151143a8f834d4ca5744a",
+                "sha256": "536f1765f39f593872d44565e8fb5c5f9b64e9c62668bdca616048734e70eba2",
+                "path_id": 9,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 8,
+        "resources": [
+          {
+            "name": "ef_atk_arrow_04_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_arrow_04_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/7577c6b2430df964dbd88ac06364aca5",
+                "sha256": "9535bf1979ed677224446d5b4f7569b18c26c63b8a348b38c18ca8c873f6ee92",
+                "path_id": 10,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 9,
+        "resources": [
+          {
+            "name": "ef_atk_blade_01_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_01_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/b2970bf64bad5a646ae6731a7926e7e9",
+                "sha256": "ac8b13ce6b8cd91298667203c658c24c3bc93472759a7aea12db116f8c8e1168",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 10,
+        "resources": [
+          {
+            "name": "ef_atk_blade_02_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_02_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/a612bfacd899e8e40b484efb44b9737c",
+                "sha256": "cd38d943e5cff8ed683350fb5389f7ecb0b49817e9161bc52964f97e1e9c0bae",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 11,
+        "resources": [
+          {
+            "name": "ef_atk_blade_03_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_03_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/da7e2d9f18c0dca47a73580c275af1ce",
+                "sha256": "e76fd2d2eeea9146577945b693c19faf5a9aeeaf1c96014b4cb92cd20656cc65",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 12,
+        "resources": [
+          {
+            "name": "ef_atk_blade_04_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_04_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/8be457bc857e07245a95dde806f40093",
+                "sha256": "1cd6ed7c107f1d4a76bf07e27e488ad929c51bb09040cb549de122ea71252e9e",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 13,
+        "resources": [
+          {
+            "name": "ef_atk_blade_05_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_05_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/60a0ae9f648759c478669b66f4b2f703",
+                "sha256": "62fc0c8e5adda2e2f360ee3dec37d701f2f01248f2a5d06121ff55619c5d1604",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 14,
+        "resources": [
+          {
+            "name": "ef_atk_magic_01_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_magic_01_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/ff6795ea72b709d459c6265517163163",
+                "sha256": "4569329ee7a2b6b4e09a9dfe8c9c6c44afaae54c3a683debbda619bd81bcad2b",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 15,
+        "resources": [
+          {
+            "name": "ef_atk_magic_03_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_magic_03_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/e9b25ff572402c949a728a4df5ca8d04",
+                "sha256": "c1c96053a5bc17e437edd8b461ba8dc7677ecb4282d867d718e7e3873d14e5ac",
+                "path_id": 7,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 16,
+        "resources": [
+          {
+            "name": "ef_atk_magic_04_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_magic_04_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/2a31a2b36a2028e42b112a1d5ed30128",
+                "sha256": "4714b4a58011b87a4a2703f6403c13b59e1d9c9c900190f4016584e2bfc606a5",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 17,
+        "resources": [
+          {
+            "name": "ef_atk_spear_01_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_01_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/cdb0e6df4e6ed2f4a89abf05886b6d40",
+                "sha256": "768d3094f7a50d960d6ef92e4a86b310a0950083955b2c7cffac57bbb48e5b2e",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 18,
+        "resources": [
+          {
+            "name": "ef_atk_spear_02_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_02_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/30897b0067cf0fe4a94cfe92d5cbfea8",
+                "sha256": "b0ce454be0c8be1c0b32ba30b993c2ee31440c48ffd46ed2a2f4509a5ae928c8",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 19,
+        "resources": [
+          {
+            "name": "ef_atk_spear_03_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_03_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/0442dc91b57cc614a99af6fe883186a0",
+                "sha256": "ab60ecd36fade5d346f7c691aedc3b31e8d645a5e2cc5c759db5da169e2c7788",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 20,
+        "resources": [
+          {
+            "name": "ef_atk_spear_04_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_04_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/0e42361d251e8b64ab32b6fdd21552b0",
+                "sha256": "0991ce8c5bebc51fe846932b191cf663f45c6f14a79a0613938b5d8afad9e734",
+                "path_id": 7,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 21,
+        "resources": [
+          {
+            "name": "ef_atk_spear_05_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_05_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/30022bbf667ca6149a457357699432a5",
+                "sha256": "5277cb59509fe6b7ce5a1a96a38b98067cc76333728f9072a02989c6bad27eb5",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 22,
+        "resources": [
+          {
+            "name": "ef_atk_spear_06_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_06_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/59ec9f5e867b8084c978619b7196efe9",
+                "sha256": "9978c9a0ab403150ccfdb13b79156bb94cdd9a6ddafab02c4d73c3520ea5e7af",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 23,
+        "resources": [
+          {
+            "name": "ef_wall_01",
+            "path": "Prefab/ParticleEffects/ef_wall_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/a577a6fe5f03793468faa2bf2122d70e",
+                "sha256": "7c64d625b6abddca95f9e17b18e1cd3496c4dc90adff104b8c3db81c2cb342f2",
+                "path_id": 10,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 24,
+        "resources": [
+          {
+            "name": "ef_btl_thunder_01",
+            "path": "Prefab/ParticleEffects/ef_btl_thunder_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/ea7ba815a05e9ea4c809289bc9becfaf",
+                "sha256": "5ebc1e1570e420cd45e983cda08fb0378ccbbf957b88c65c25847db8433923b9",
+                "path_id": 9,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 25,
+        "resources": [
+          {
+            "name": "ef_btl_hurricane_01",
+            "path": "Prefab/ParticleEffects/ef_btl_hurricane_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/69f77cf82be2bfc46b3708bac048b6e9",
+                "sha256": "4a52bb9992da51af5be4dd50a498d30686fbbf1f22b513f88fadfa13d77ff9b2",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 26,
+        "resources": [
+          {
+            "name": "ef_btl_meteo_01",
+            "path": "Prefab/ParticleEffects/ef_btl_meteo_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/2f761f99c1ff5a14390b3b020ee8397f",
+                "sha256": "c039ae5be5bd2a9276b769a72810b08377c8e8c36d6dd6a31eecd564b168c911",
+                "path_id": 7,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 27,
+        "resources": [
+          {
+            "name": "ef_btl_beam_01_ms",
+            "path": "Prefab/ParticleEffects/ef_btl_beam_01_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+                "sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+                "path_id": 13,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 28,
+        "resources": [
+          {
+            "name": "ef_atk_blade_06_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_blade_06_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/30c6c3f73beac1f40833d4f008cabe6a",
+                "sha256": "9592ec37f3f1f4ca91c3fa5660fd87602539107f44f07257e9ed94d9298e056c",
+                "path_id": 3,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 29,
+        "resources": [
+          {
+            "name": "ef_atk_spear_07_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_spear_07_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/8bc333b90d65ea94daaa7716548d5684",
+                "sha256": "20c82d05ba1a076ad5fd5bba97fed0b1b76a1037402c3aa173fb78aea631296c",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 30,
+        "resources": [
+          {
+            "name": "ef_atk_arrow_05_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_arrow_05_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/bfb3f511e7a62444582d0bb13934094a",
+                "sha256": "df9b6b9e452d8f11192ee931d999cf662eb547304e5ac8d24c34d7d54208dffc",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 31,
+        "resources": [
+          {
+            "name": "ef_atk_magic_05_ms",
+            "path": "Prefab/ParticleEffects/ef_atk_magic_05_ms",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/80d9b98e8f3c27b46a9b532a95eab0c3",
+                "sha256": "b80a92383a6e8b4f6c7df8be5e067a5cb3be78b389e969549bc14a9f11d31fc4",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 32,
+        "resources": [
+          {
+            "name": "ef_btl_impact_01",
+            "path": "Prefab/ParticleEffects/ef_btl_impact_01",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/16928d3e52259164b9b621bc903663ca",
+                "sha256": "1de33d9bff74a4e21b26168987b30e2712f77ee852dc00571cb5e1824022d54a",
+                "path_id": 7,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 33,
+        "resources": [
+          {
+            "name": "ef_btl_breath_dark",
+            "path": "Prefab/ParticleEffects/ef_btl_breath_dark",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/550d0c022c3cda147816767fe2ea852b",
+                "sha256": "8e5181ed9148ad72620c3e5829f7def286ccfdbc08a72103123d4fce222eeef8",
+                "path_id": 5,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 34,
+        "resources": [
+          {
+            "name": "ef_btl_blizzard",
+            "path": "Prefab/ParticleEffects/ef_btl_blizzard",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/bbe919bec713d694298327d2f47a6be7",
+                "sha256": "700531d585832b90bd4da0750d41bd19a01d1b439fd3741960ef459f53eb0964",
+                "path_id": 8,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 35,
+        "resources": [
+          {
+            "name": "ef_fire_02",
+            "path": "Prefab/ParticleEffects/ef_fire_02",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/b1a4ca39b83cf7b41b2c6e8ebf05fafd",
+                "sha256": "8e35ee859ec6c9d6a1c767a1aa85fe5e7f9acea6d1e94a009860b794443aa939",
+                "path_id": 6,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      },
+      {
+        "effect_id": 36,
+        "resources": [
+          {
+            "name": "ef_beam_02",
+            "path": "Prefab/ParticleEffects/ef_beam_02",
+            "objects": [
+              {
+                "source": "apk:assets/bin/Data/f8e53177cf4872c4fbd2c95cb51ca8dc",
+                "sha256": "2b19935cb771c5d3923a412ed7942419b072a7580ac5c744fa96c3506518eeb3",
+                "path_id": 9,
+                "type": "GameObject"
+              }
+            ],
+            "apk_local": true,
+            "load_skipped_by_code": false
+          }
+        ],
+        "all_typed_present": true
+      }
+    ],
+    "used_master_effect_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "unknown_used_ids": [],
+    "limitations": [
+      "Typed presence does not prove Resources path binding or HTTP availability.",
+      "MotionAssign tables require serialized field decoding; motion closure not proven."
+    ]
+  },
+  "motions": {
+    "source_artifact": "offline-original-analysis/Assembly-CSharp.dll",
+    "source_artifact_sha256": "cd8969401672485c95dbc8336864bfe54a1bfce242f4048b32341a2ab0953ac2",
+    "cil_sha256": "757a2fb7f96bfbe20f75a0cd8f592313598ec4aefe286800cb630383f2c24f1f",
+    "methods": [
+      "MotionData::.cctor",
+      "Enemy::.cctor",
+      "Enemy::SetEnemyParameter",
+      "EnemyManager (direction-animation transition callsite IL_0257–02c4)"
+    ],
+    "motions": [
+      {
+        "name": "null",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/null",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/047fb8bcb4c0102469e0dbc582896d16",
+            "source_sha256": "8e0289db4ac69a55def1b71f2e1a8c68aebbc390ec692f8dc651140d7e3a9289",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/10aac82264d93574ea3202d83474d17d",
+            "source_sha256": "fcdaf0852f5ef59d8f799631a693505fa4cfce31a92d594612b13a21ff2c6d57",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16928d3e52259164b9b621bc903663ca",
+            "source_sha256": "1de33d9bff74a4e21b26168987b30e2712f77ee852dc00571cb5e1824022d54a",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16ff06b4fd07996418b4a2077f7a26a4",
+            "source_sha256": "20b62c9ba073776eabb25bd7e5427ada75604d30a983caf0f5dc9b98e5ab1ae3",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16ff06b4fd07996418b4a2077f7a26a4",
+            "source_sha256": "20b62c9ba073776eabb25bd7e5427ada75604d30a983caf0f5dc9b98e5ab1ae3",
+            "path_id": 6,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16ff06b4fd07996418b4a2077f7a26a4",
+            "source_sha256": "20b62c9ba073776eabb25bd7e5427ada75604d30a983caf0f5dc9b98e5ab1ae3",
+            "path_id": 7,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16ff06b4fd07996418b4a2077f7a26a4",
+            "source_sha256": "20b62c9ba073776eabb25bd7e5427ada75604d30a983caf0f5dc9b98e5ab1ae3",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/16ff06b4fd07996418b4a2077f7a26a4",
+            "source_sha256": "20b62c9ba073776eabb25bd7e5427ada75604d30a983caf0f5dc9b98e5ab1ae3",
+            "path_id": 14,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/1bec230c1426a504aa2952950d3508a3",
+            "source_sha256": "a84f05886fd99618a16d868487afc4a63f74b2c5d173a4c9b4bc428f4b1b8929",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/1c9e595e6f8fbf34980287a2cacd403d",
+            "source_sha256": "38fa5b141752a34804263c23db9737c6e775c3fdc64c281f11d10688ad1c93b3",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/245c9964563c8a14fa923b792dcb29cc",
+            "source_sha256": "4b05f948129dff443f7d8fb7e269745ae0d02501770276a470efd838509b4562",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/245c9964563c8a14fa923b792dcb29cc",
+            "source_sha256": "4b05f948129dff443f7d8fb7e269745ae0d02501770276a470efd838509b4562",
+            "path_id": 6,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/2a31a2b36a2028e42b112a1d5ed30128",
+            "source_sha256": "4714b4a58011b87a4a2703f6403c13b59e1d9c9c900190f4016584e2bfc606a5",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/2f50496b96d083244b7520f9c3846a3d",
+            "source_sha256": "3369b4fa98bd4b0a3bad3a49dcf2402bedee07d7af49a30790b72c4e7ba6384e",
+            "path_id": 31,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/2f761f99c1ff5a14390b3b020ee8397f",
+            "source_sha256": "c039ae5be5bd2a9276b769a72810b08377c8e8c36d6dd6a31eecd564b168c911",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/2fb19fa7844cdf742a3f01407046f627",
+            "source_sha256": "dcef1f0e7a24d9669245efff6107f08a7a9a7e34e71ec1c7b655fc4e1ba80634",
+            "path_id": 6,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/30c6c3f73beac1f40833d4f008cabe6a",
+            "source_sha256": "9592ec37f3f1f4ca91c3fa5660fd87602539107f44f07257e9ed94d9298e056c",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/35b38394a2230c94abf758b5aabd5e15",
+            "source_sha256": "c54d82af71d9fb9c3ce1f4c7f90311b455030c60ddbd9a7b38972653b9027e88",
+            "path_id": 6,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+            "source_sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+            "source_sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+            "source_sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+            "path_id": 11,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+            "source_sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+            "path_id": 12,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+            "source_sha256": "f2c93c724b55d35cda00222379d7bb2fdead2a61d52e1e3720f20f72b6c4740a",
+            "path_id": 14,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/416230f262100e54dac9f2abeb225f53",
+            "source_sha256": "64b4ab2fcaf18e8391cd25ca57111afb460e7b3078174394a6a2d0d28d8304ea",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/4fc0998adfc4f5d40bb7adbdde6c1643",
+            "source_sha256": "b7107c18c85820521ae54f0ba3ce63cb97259c9b818e4df2e3cf9af368a65100",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/550d0c022c3cda147816767fe2ea852b",
+            "source_sha256": "8e5181ed9148ad72620c3e5829f7def286ccfdbc08a72103123d4fce222eeef8",
+            "path_id": 3,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/56cf651bfb5b3b34facfcee588761b7d",
+            "source_sha256": "f5bcc6e42c8f92baf3db7dccdfd424e53196b7e4f9880ef23e943e301b74ed5a",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/5732d0709b4bdff4bb29d855f23555e7",
+            "source_sha256": "749a9993a9caae6a38df9dde6efcaeeae98dbfdd619b395ba811cf286cebec69",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/581bb93a5dc482c4189fbb11061756a3",
+            "source_sha256": "5e5b50cee95950fce95f70baece183bddcc3fea743b43a0c8947df91c6c04812",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/581bb93a5dc482c4189fbb11061756a3",
+            "source_sha256": "5e5b50cee95950fce95f70baece183bddcc3fea743b43a0c8947df91c6c04812",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/581bb93a5dc482c4189fbb11061756a3",
+            "source_sha256": "5e5b50cee95950fce95f70baece183bddcc3fea743b43a0c8947df91c6c04812",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/581bb93a5dc482c4189fbb11061756a3",
+            "source_sha256": "5e5b50cee95950fce95f70baece183bddcc3fea743b43a0c8947df91c6c04812",
+            "path_id": 13,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/5c9d5f0b246151143a8f834d4ca5744a",
+            "source_sha256": "536f1765f39f593872d44565e8fb5c5f9b64e9c62668bdca616048734e70eba2",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/60a0ae9f648759c478669b66f4b2f703",
+            "source_sha256": "62fc0c8e5adda2e2f360ee3dec37d701f2f01248f2a5d06121ff55619c5d1604",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/61066e1c5f27d8a4b9b80bb2a5834475",
+            "source_sha256": "70cf8de5f7e894c9e9ee793b670bdf5ddcc151f201b6dd11ac0b75a3e6120376",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/69f77cf82be2bfc46b3708bac048b6e9",
+            "source_sha256": "4a52bb9992da51af5be4dd50a498d30686fbbf1f22b513f88fadfa13d77ff9b2",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/749892e09d006394393fee0943a088e7",
+            "source_sha256": "b22d2161ccb05b014e1a106ba2b568b1063648f95044b4fa2f1ab6aafea02e38",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/76ec445aa20c3c04c92c8243be427557",
+            "source_sha256": "1b2e034c91223a52f5c4b5c5373e54216959ce62992054d5b5d57e5cc4a1db77",
+            "path_id": 11,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/77cf868797bb5bc42aaa0e7f4f4dc011",
+            "source_sha256": "64a7c10fe9102cc7e4d834111aa070d04cc52f5fa713492482484b6e44a0f155",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/7e89cb6c4fb84a447a1e652aa856d5fe",
+            "source_sha256": "b15251b9c27c0c4c80631c439581f1331e99da38dead72e350f6aa8ebab4de21",
+            "path_id": 15,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/7e89cb6c4fb84a447a1e652aa856d5fe",
+            "source_sha256": "b15251b9c27c0c4c80631c439581f1331e99da38dead72e350f6aa8ebab4de21",
+            "path_id": 16,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/7e89cb6c4fb84a447a1e652aa856d5fe",
+            "source_sha256": "b15251b9c27c0c4c80631c439581f1331e99da38dead72e350f6aa8ebab4de21",
+            "path_id": 25,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/80d9b98e8f3c27b46a9b532a95eab0c3",
+            "source_sha256": "b80a92383a6e8b4f6c7df8be5e067a5cb3be78b389e969549bc14a9f11d31fc4",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/84ec80e1f6061804aa331a0e42dd23bf",
+            "source_sha256": "34575946392fe4b86a10b46fb65fb5ccb8648163f2282e0097163aced35e91db",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/861c3ae5619101143b2e3e3d82c2668a",
+            "source_sha256": "ed5701fab9b8eb29a7ba0c892a85e01dccdc615495c901e025ccf31d25dd1574",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/8bc333b90d65ea94daaa7716548d5684",
+            "source_sha256": "20c82d05ba1a076ad5fd5bba97fed0b1b76a1037402c3aa173fb78aea631296c",
+            "path_id": 3,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/96707422b9ed6c34baedd2832a65ba24",
+            "source_sha256": "b74176ff55fb4e8951fd504eece1b66f931f00f813b2c17eb2bec97322ecc95f",
+            "path_id": 3,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/982e155eaf7cfe34c8cc72d69c16854c",
+            "source_sha256": "7a40957b58bd3e24a9d4e118de4c62490138e589eb7458aebe85b4179a0810af",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/a0e0427948beb904e8b274e11286a497",
+            "source_sha256": "be4c777a0a9273057a415d17ffe73afea71ed084f5eac8ab7a856e4bb5311714",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/b1a4ca39b83cf7b41b2c6e8ebf05fafd",
+            "source_sha256": "8e35ee859ec6c9d6a1c767a1aa85fe5e7f9acea6d1e94a009860b794443aa939",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/b79439bd3ea72ae49af4242ab6751f6e",
+            "source_sha256": "f7764df9b948f88128f628850bf36837353da60fedc45e0f49bf1ca9766293b2",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/bbe919bec713d694298327d2f47a6be7",
+            "source_sha256": "700531d585832b90bd4da0750d41bd19a01d1b439fd3741960ef459f53eb0964",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/bfb3f511e7a62444582d0bb13934094a",
+            "source_sha256": "df9b6b9e452d8f11192ee931d999cf662eb547304e5ac8d24c34d7d54208dffc",
+            "path_id": 3,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/c12aa65077425c942a1816143fbe5d4c",
+            "source_sha256": "8144cd2b1f1ad91713cee4b70787cce3b769bd2adbd5cc2e587ffa9fc6236a24",
+            "path_id": 1,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/c78a9a9a267a946439e09be4250a2e7f",
+            "source_sha256": "1bd0d478a287ba13ba4886db726b005a39104ec4ca1efc97f6106015f4891f9c",
+            "path_id": 4,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/d1fc28bb7cef5e84ea0d8b032c1221a5",
+            "source_sha256": "a22039e936299e7b35dd2d3270c6fb952e96e1be77318b2fd570995004d44c47",
+            "path_id": 2,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/e9b25ff572402c949a728a4df5ca8d04",
+            "source_sha256": "c1c96053a5bc17e437edd8b461ba8dc7677ecb4282d867d718e7e3873d14e5ac",
+            "path_id": 6,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/ea7ba815a05e9ea4c809289bc9becfaf",
+            "source_sha256": "5ebc1e1570e420cd45e983cda08fb0378ccbbf957b88c65c25847db8433923b9",
+            "path_id": 8,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/f2257da6288fdd246b7f45c92078a58d",
+            "source_sha256": "04fc0e9494fdd71558f13846e3b536614726718bb787f205b360529a59801561",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/f7906d5a3664e26409005480f2688403",
+            "source_sha256": "e34a9a4fe00f435b05607b102ce066698855e145675a363c6802194a60fb5653",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/f8e53177cf4872c4fbd2c95cb51ca8dc",
+            "source_sha256": "2b19935cb771c5d3923a412ed7942419b072a7580ac5c744fa96c3506518eeb3",
+            "path_id": 7,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/ff6795ea72b709d459c6265517163163",
+            "source_sha256": "4569329ee7a2b6b4e09a9dfe8c9c6c44afaae54c3a683debbda619bd81bcad2b",
+            "path_id": 5,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level0",
+            "source_sha256": "896b5f9b17e14bcc6d7de1c61f0f60bde7a586d4c7bd77280eb383f354ee61c8",
+            "path_id": 59,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 25,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 71,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 100,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 105,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 169,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 175,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 197,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 214,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 279,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 349,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 402,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 409,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 410,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 435,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 454,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 468,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 477,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 494,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 513,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 612,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 693,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 713,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 736,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 744,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 761,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 798,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 831,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 839,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 870,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 889,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 922,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/level3",
+            "source_sha256": "dda7fe39a768dc1b3f1c5d6795cfaf65baf1eeb24e8ef31e6c280741d4240455",
+            "path_id": 969,
+            "type": "GameObject"
+          }
+        ],
+        "status": "sentinel_not_loaded"
+      },
+      {
+        "name": "pc_run_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/23b85c4bfb92d0e4187006bcbe8a779b",
+            "source_sha256": "2d4195b75404c56d3bc809d8e91caf09c3b70bbdab660f4cbea853229d222113",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_jump_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_jump_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bafe5bef23f643d40a65e4e057b7b454",
+            "source_sha256": "f9033a811fd349c3e6bd12de0d1f508b785f9b568b8eb5ebc005d0519af1021b",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_dmg_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_dmg_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7cbe134eac84b694c8578a14c050061f",
+            "source_sha256": "1b5cfe9e59029675ecbaeee7efe7082953fbab691bf82298100ccebd9738372c",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_knt_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_knt_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/fdc42588bf6d1dd43aea7f2cfe63cb57",
+            "source_sha256": "fb5598188abbeca7da851a71c09666c9b4d22b9096df046642c2e40a434ab9f7",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_grt_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_grt_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2e0ade753af943d488003869194d6c1f",
+            "source_sha256": "8d61cdb8318558a67c2db2fbadf401ad6009c53a26e121e3f31ed1d378d59698",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9ac253e968ab78645a5772921110aae1",
+            "source_sha256": "cf5b3414c588263463723bd706ac12dc93177c50310dbf688ad5d493e288003a",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_ban_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_ban_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/96f5ac0305906fb4596a1fadb3cd60c9",
+            "source_sha256": "42322dcadad05ae609494fa90a0cc1ccd9a56fb4d7b7690dc0b9b0e2c0d3d31c",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_bow_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_bow_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/6dd07df9ef75d4540988d706e6d4468f",
+            "source_sha256": "0ce0473846c6409aece078b7cb4c4bb02a2befc16c78539cf46663fcbdbb0f38",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_gun_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_gun_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8ba9a620b777dcc47a5082768a4938fa",
+            "source_sha256": "1fac0767ebba72a3ab4b568c32ba3c9d6f94b2ccf999470f7cc0234f2d41ec35",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/41544a50e5150db42afdc7bcbbf25c0a",
+            "source_sha256": "0f7b0e704987c32fb059ab53e9a8430bd6f8afd46974fd0ef19a69d34425d13e",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_atf_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_atf_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/937442cc8e6430c459f411e710ebfc45",
+            "source_sha256": "79c287ede904239e53bd04739ad3bf0af14eb47bd4d957b0a455cf4b44e49db7",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_knt_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_knt_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/45ef641b746ef28409cc671ed7babc40",
+            "source_sha256": "16d50977e4320242a72300ad55cef338196c49e8851c56b455fecee9310fadbc",
+            "path_id": 21,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_grt_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_grt_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a15f988337088ca4aa082c6c996b5cb6",
+            "source_sha256": "aad511f4a519d9a5c0c97e91280b7036fe6f90538e8887d7077947ee101c8ca9",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8dfdca02ac62e5f43bee59d729c9ee03",
+            "source_sha256": "fb0eec61664c9929b113c012807912c036b86f0dc23c1e4b2d639a754984ce80",
+            "path_id": 17,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_ban_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_ban_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/89a3be4fd15994c4a8f6e93d5aecf18d",
+            "source_sha256": "d1c1d96a8a037aaf542274116c90a649e66ba52c4a16b881f09b06997b0f8513",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_bow_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_bow_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1270fafd809723848a5a5fab73725a5e",
+            "source_sha256": "82a9b9c5b606b9680164fba645d14fab43a13d7085cbbce402c07f7e49fca5bc",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_gun_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_gun_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/14908bd92c3dbc54a9ccd91ad1b7c1d0",
+            "source_sha256": "919ce7dfe8aef8f27fd47915ca6b91c612c9e5083623c0ad252420a33af98e86",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "resources/bundles/41-50.unity3d",
+            "source_sha256": "bff41aa4f4083cf5f13f2af6134ecd521dacbdcb7aeb46c656be3a1aa2c1021f",
+            "path_id": 298,
+            "type": "GameObject"
+          },
+          {
+            "source": "resources/cache/Shared/ed54b265a70b72cda72db2fcccd4ef0c5d9bbad6/CustomAssetBundle-a6703d8e30f68054a9308414021c7d81",
+            "source_sha256": "d7ad707d7dbef0ed9820ad372f38dec90690e4f5ba60351eb5b0460eb650b673",
+            "path_id": 298,
+            "type": "GameObject"
+          },
+          {
+            "source": "apk:assets/bin/Data/574c4ebae0b951447b14e8d55fd39438",
+            "source_sha256": "f5102ce37c32ffbc08c9543c1d6488ffeedb3699a1b4681bbe6743edb681cd21",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_atf_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_atf_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f97fea87c9961bd43993f1ea29803426",
+            "source_sha256": "ecdb7c1a5e17c29a1ac29d1ee82fa9496783fe8d7257904fe256d8ee3dbf2621",
+            "path_id": 17,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_skill_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_skill_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0b69a10e1a26e8d4c8220ca63dc5d72d",
+            "source_sha256": "1eafa19f6c1e6e7dc2a684337aaa0d8d6948611f272aae4c8abb07df410820fd",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms00_death_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms00_death_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7f065589a4d888f4484d0ceaf67536cb",
+            "source_sha256": "a730227b5cc073f4caca24697904e9c56086f6e7bf5cafe26c4d27533e6d2a1d",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms00_death_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms00_death_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/63be418e626e61d46b5bff33281ec33c",
+            "source_sha256": "847382ba55d787ebabf7079224aebc79cf2f5048338df8e9adfc61e9bd2e4ccb",
+            "path_id": 12,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_sla_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_sla_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a77d8255e59f108409a1a8a93cd3b95a",
+            "source_sha256": "cccf718a3af0b045b7b06b93a2fc5567cdbe3322169f19426dcd49823c6b5ca3",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_sla_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_sla_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ce9e4fa0754eeff4ba1813ea0eb6114c",
+            "source_sha256": "789c0b87b51097abc4016d14d6d2bba84a2572b8629ec94e8ec5d6a6da1227b1",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_squ_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_squ_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/060a590210903b74191545e510516b98",
+            "source_sha256": "18c1101131f0032ebaa2c9aed01c569097a8f6ae9b77b00307000e8aae4fcedc",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_squ_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_squ_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ab2953c2c6566794fa7f32ca842c7c2b",
+            "source_sha256": "8dfa3511ae6ba520ef5ae571fc1fe7a8aa82b7dc1f740a90424c4dd2290e84ca",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_wolf_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_wolf_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/339ed0ade0d76694f872b2407d89880a",
+            "source_sha256": "e069b69c6f1f8713f1671024138d1260afcb31178cf3b7afd5185b6ac4faab17",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_wolf_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_wolf_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ba7e5e66d1262374da9e65d834d6b256",
+            "source_sha256": "59114688e43a28a5b90470b676adaf58c9d83500d51ab543aa922fa040be71b6",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_dra_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_dra_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/56bb5eaf731a8944da5ff84ef269a406",
+            "source_sha256": "296d82b8532c1800a1a2123b01e123575f085c0652c02b9df139991e53bac089",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_dra_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_dra_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/43df10e5b74508448bd884469c94f342",
+            "source_sha256": "4e96f91b09dd9054a899a6435e5e122f53123cd98b0e9ee8dd6e4b10c2788217",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_sco_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_sco_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bf8d92635dc1f66448eba04719f71433",
+            "source_sha256": "79faf83e7572ce0d998322fad5093fa6e15f482f713a3dce08977ce37d5ddc72",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_sco_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_sco_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ac4c6b5fff212ab4fac51ce607d06515",
+            "source_sha256": "6b67ca315791bd12d41feda95539d41965b7801e8014e5cba68a6d1e926e811e",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_bear_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_bear_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2a404d6214bf8194caa2f4a96178f64b",
+            "source_sha256": "72c8bb61d1e967bcb4700e4a34fa30f5d26d121a5a3283f3073788a6926defb4",
+            "path_id": 8,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_bear_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_bear_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/b686e67731961a9408d06c4b24d1151d",
+            "source_sha256": "2e89e39bd1abb53bb189db0797e51fed3d43d3f31a73634a5e742f35e4d0173f",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_dra_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_dra_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2819d970d8cd1994891038b4ac85c6a6",
+            "source_sha256": "8040aecd939f012de95e982abe21664977145f84bfc57ad20585222738a89ed1",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_dra_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_dra_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/684fb7be9cdb29143b9ecf2c892de80a",
+            "source_sha256": "79c97046e0ca6816e558a1e0499b632716ad591e3ed7ced9eabc2e3319445eca",
+            "path_id": 22,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_dra_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_dra_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2a6461cdb8f422340a0b82068cc59b18",
+            "source_sha256": "aab893e25e1fb203486ce618ea81a534ef3ac44684080d36e289cf87b6504f84",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/aac11af0f450f6b4bb87d703b4dfc520",
+            "source_sha256": "44df293f80c80f5f7c19cdd1d6bc7f07c87ff76ab05cb418e11c5e640891daf5",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c56ffe426eb73354d9173ffb0ac71de7",
+            "source_sha256": "390f8319f88cf10b62499396138c0a29426b05b07b8fe5717c855b84fd87d739",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/89ff0c24878b3624abdce73ed333f49d",
+            "source_sha256": "9b1b089a3fab66b37b1e73bc33d04ec75c0628a21241669db24258a2b6843c78",
+            "path_id": 22,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_dra_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_dra_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1f74228bcdf47dc4996456569ec99c67",
+            "source_sha256": "97bba0ac78c44fd80758607451a5d04e9c45991aecea5d4ea658dd33f2701744",
+            "path_id": 26,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_dra_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_dra_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/cacfd938a22b27e458a51dd75f3a62d7",
+            "source_sha256": "43fd7e60f1aaaa9f39e06f0c9563e2bef1f20c7b866dc3a3536dff996a28d9ee",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_dra_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_dra_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7311be66e784fc84499fb51f320526fd",
+            "source_sha256": "fbad4d08fb90244fd9bf027b96c6c01ed3086f1b7e2d00a6265c428b903f09f3",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_four_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_four_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1e3ea20e0774e934dafcecfa4b845fc6",
+            "source_sha256": "48f67e27306ac9c1e1b214875930e6ebd3563f4ac77395e56bcfff9eb6c37965",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_four_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_four_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/99f05e9d3753faa41be017699632e3c9",
+            "source_sha256": "448d968375b692f5dd4edb5a68fd5986d6575f038c8d4cfbc47543f652fec053",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_four_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_four_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8847af1b4d876454292a5a97a34931ba",
+            "source_sha256": "82d8071bf899f391735c5015aef6dfb50e56f79b22805f9dcc7c314905fc84a6",
+            "path_id": 31,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_fly_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_fly_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/5d4587580f9c4e94fa9257df3adcd3f3",
+            "source_sha256": "5615f4fac492d7dbd025c13c2a594d60bf092c5cd0d8a777beafd04864684152",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_fly_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_fly_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c7e25a2ec2805844c96e366be3253422",
+            "source_sha256": "dfbcf6655e927d30904ad7518020263f8493aaaa56b3b329089150cfc74de081",
+            "path_id": 11,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_fly_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_fly_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f5d170f756c4f6a4181477c5085009a4",
+            "source_sha256": "798ec22d5d47a7cd6873f39164e884ff1bb914567163d3378412890d7422d3d4",
+            "path_id": 27,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_legend_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_legend_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bd44ba5105fdac843bf23f78683f2e20",
+            "source_sha256": "ba120bed8a556a4a881f638484c79751659eaeaa3df86c2a3ceee0f556e24cdb",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_legend_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_legend_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7e092975bfd4cec42af9a10dc8c7ae1e",
+            "source_sha256": "1bd38f09f8f988964b18ee1007041a975083cce674aba6a2c667b899796fa11c",
+            "path_id": 21,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_legend_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_legend_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8a60622dccc19e94aa3373214718c6d1",
+            "source_sha256": "efb01d936b4f368909a53c99c6fe736da08b7637e795d55c44cc19e0d5ec3064",
+            "path_id": 29,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms00_treasure_unit_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms00_treasure_unit_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7e2f928e715dacc4c9ab00011d3c4a26",
+            "source_sha256": "6372f04d263d1f7f3f1e63813e5ebb6eb22ad7f08904c193173f1088990dfed8",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms00_treasure_unit_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms00_treasure_unit_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a351918086115b2408fa6f056e0aaf1d",
+            "source_sha256": "5b7180f3716138f6c99c3c01fcaddcc20d852a23e412b59fdc3f9cd5af2f6c8e",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms05_ryu_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms05_ryu_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f341e5d56b583384aaf7abf1357bf9c3",
+            "source_sha256": "0a5f2e03871bf893198e7ae241640f5482f4453abd4d06f54144faeccda85697",
+            "path_id": 25,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms05_ryu_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms05_ryu_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/04140e70095fe944290dbc59239dd914",
+            "source_sha256": "46d00f65592d053894c7c408c767da06964fbb3acd88d6c1223546a5c78408d1",
+            "path_id": 12,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms05_ryu_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms05_ryu_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/4681fa29675a69e42974083aad2b7ca6",
+            "source_sha256": "524db523a7f5279a98205a800365ad6f1868293247963d636a0a617fbcc051a5",
+            "path_id": 39,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_fst_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_fst_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f5153ed6e5dba6c449e3fbcf473e678b",
+            "source_sha256": "70fe13d0c6674d45620871c79a8833ee92d1811ffb06daf45953b2dd85a09edf",
+            "path_id": 8,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_tsw_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_tsw_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7d605998d5711b14ab6d38f0976e0035",
+            "source_sha256": "1738b330eb4e7cf331661e03149cf248ef9438df89e3a624e21a5e9cb28251a5",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_fst_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_fst_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/08810eb12121b654f90604ed205024eb",
+            "source_sha256": "8ec83185dbc6eff3093f0663dc47eb4d1b52f370b3c49e3341c3d6e574705b21",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_tsw_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_tsw_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bd4e84a73e6fb344394df17b5086754b",
+            "source_sha256": "b150e84843dfcfe834ee0421e956790fe9b274b616341b530d99ccb038a272cd",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_fst_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_fst_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a3166c2e8b296c44d95239b5f184868d",
+            "source_sha256": "73b148524869b7d7ae421628ed7a117fc117b4dd562673391bdc0be58434bac9",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_tsw_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_tsw_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/6f6c23ee3c7b87340aa7084fb6bb0ada",
+            "source_sha256": "c0cda684e3ec526c34e73e70ea99394d81bb75c276c6769d50f705157045dced",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_tla_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_tla_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0ad878369e3909840879a21415d7fb85",
+            "source_sha256": "01df249b80a398d5b0d093354f2465c34f8026924328404ef0165d1d984a99eb",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_can_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_can_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/83894e0549d7fd049a94db5b6599dec5",
+            "source_sha256": "ac518b6a169396878f354d0a2d3a30422e923abc3853a5e7b0b0bfd1ca1dd43f",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_tla_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_tla_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1733fef74ff5ccb4ca3bdbd3d184e79b",
+            "source_sha256": "e615fb737002ca9cb0ef85dc33cdb1e42371162673f0ec185b93c3fe07421d84",
+            "path_id": 21,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_can_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_can_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c20a88258a969274ea840581ce9ae90f",
+            "source_sha256": "0bc77d7638d0741b9c64f939deab0575f51997951d8ebd1e7eb5b40e6d9ea9f2",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_tla_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_tla_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0721b9ba6cb4ce541bccd0193d9c99d7",
+            "source_sha256": "7f975c1e4ff8e3de455459ec2169ba1995135d20b8476227bb9d6fc6ff632fae",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_can_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_can_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2503c66a462d55c40ae2a3ac661f473a",
+            "source_sha256": "ce76e130c3c65ea0371a39416d0c702b28945aa5a9452b6b1732d6aec8da7bf4",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_chaos_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_chaos_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bf553f514b39a4145b2b667ee53b7315",
+            "source_sha256": "49fa61ab8b093bbaf976806b9084100e17ba3ba9d552de4c5eafa17f30970537",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_mbo_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_mbo_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/e82c75b6d85392548816e1e60e37234a",
+            "source_sha256": "dd012ecf7c77302fea709dc01e96cde374cb58c9c15e6b39035bc27a8e6d591d",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_mbo_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_mbo_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2e9197e4af6c42142a0a009b7f6a4517",
+            "source_sha256": "5f5cf8037e9c9433550c3b694754917cb70b98695aee10c5d052a7961035286b",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_kfu_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_kfu_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/6d2435345b049d64c96c4a40e114a887",
+            "source_sha256": "8e1c0f5352eecf9510185ce122b6047abba7088496c7def7f2054905996f6bc9",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_kfu_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_kfu_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/23f304ea74a96c34db4929776779301a",
+            "source_sha256": "97655c6617f9f1bd2370a4425283cc3717a8df808ea146351f6db3e4c8727fe4",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_kfu_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_kfu_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/fd115a8cbfed86745aa3d69f58b28ae6",
+            "source_sha256": "0f32d0c4e1c9470e7ea316e04084d3fd287a69427d02bae4161fddb1d686eb0b",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_element_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_element_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/790ef0a605f1e8341835b4f2dcb0901b",
+            "source_sha256": "e1c56ae9aa409176019d68e34e8e898fec40e533108184d3c061b23eac8fb1a5",
+            "path_id": 12,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_unit_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_unit_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2f82b8783a83f4d409d191003e8c1f30",
+            "source_sha256": "9208b863720c63d3d55fa829afce491e7d4e6e48354ca7a88f2cd0b15fd7fde9",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_four_atk_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_four_atk_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/04cd7766bfdbe4740b6860e4ef09805d",
+            "source_sha256": "4e8902cf5374970554947edd30b1932dd0228b64228f420b04453afb5fefe351",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_skill_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_skill_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/28c6123b9aa74fc49bf1a436d3fda38c",
+            "source_sha256": "de58c1c1a1cf36f85ebd858ab74c2145ded012379adb58245d418a74326dca4d",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_dmg_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_dmg_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d1e67b13cecfe7547a354cdfcf77abc3",
+            "source_sha256": "abb23f22ff941b1f429e7b4e4846a798c1c1bacc0c23bb32ef919a22c7e03765",
+            "path_id": 25,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_jump_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_jump_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8861efe705c46d54aafcff0b5a2c6df6",
+            "source_sha256": "fe9c19fd43f48867f0d731c40c1cb74e90a8c9153ac19f6216ec808050bcc2b7",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_run_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_run_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9b290c59032e0c047b2bf678c357365d",
+            "source_sha256": "4dc585096a676e7cdeba2a6571a24d84ce64ec77155847b1bc1bdfe5ab2ad7f0",
+            "path_id": 25,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_atk_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_atk_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/17ce3cbd992744045a7bbbfef11d768a",
+            "source_sha256": "cec5cf62514699f2ce6f655fb284bc7af7e9ebb4037d76718f8e98cd586fe318",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_wait_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_wait_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/614f93a34f8b8144abdaa05cea1b2d95",
+            "source_sha256": "6c2257db2d5b837c936ff104da535698e319125658d7a0358df8be620c615e3c",
+            "path_id": 8,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_run_02_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_run_02_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/47101ac9b220b19469cb8d87e5f0e9d1",
+            "source_sha256": "69f3a0dab0bc48231594ece9780ea759d7a8dfba5a53035811a3e859d70c4cc3",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_atk_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_atk_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/887139e225b01ad4f9782159a5c80ca1",
+            "source_sha256": "e369ea59cc0d16ca674acdc7fc4a72d20ae312a55915f386d0fd211c643fa604",
+            "path_id": 11,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_wait_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_wait_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7d1b4c426ef63ae44a3aece256e22366",
+            "source_sha256": "cb5066dab60db618eccade483f94abc1dc85ba1fa561bb8938ccde4a126e88a8",
+            "path_id": 22,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_oct_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_oct_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/b1bdab5085e14df4482e3ed3f89a6aba",
+            "source_sha256": "e870db1483acc4b4534a2c33bf63d9ddf823f3dcda9e4c251704c92e4ff61ec6",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_oct_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_oct_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c8eb6bce10cacb341931821168fc4080",
+            "source_sha256": "b8abe1cead6c51b48b014bcc6df51268bb9a6e5b148fb30ebc1f1a2d066e252b",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_oct_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_oct_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/eecad05df1964f34ba36487eebe0d37a",
+            "source_sha256": "f9b9ce74e503b9073bef3969583d2761c4d9b855912d1e1da5e5c36043aea6d3",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sea_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sea_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/cdf547f505d16d645a6dd612bb888116",
+            "source_sha256": "78d24d73178bb6418dd3c550a5aff8f5de88984c4e5fa60f7bae1ab6a1c1b431",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sea_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sea_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c6285e2c0bed18a43a6478b5d6d28b52",
+            "source_sha256": "e276eec0e44faf0a647feab3edd865c4525fa67683c7db2709c701c7c1333696",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sea_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sea_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/81cc1897ad46a35438f3b0616d2fc8da",
+            "source_sha256": "51f9bb3919507d0f60cc102b3850420889774b3d0b20f7a0ca10bff1469fefe0",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_wait_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_wait_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f5d3a0a956dcc5e4ebe15384b26bcc37",
+            "source_sha256": "c6eebc2a87af8da6e7df5d3a247857567a6b8237849126337f81e6dafcb0336d",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_atk_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_atk_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1a145ac5182923343bb36ceeb685092b",
+            "source_sha256": "d987350cf81a27112626b14e939c8ea26781fa8b401a9359ffa69f7dc93a804a",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms02_four_run_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms02_four_run_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/5ec7af243162da64d9e004ed40e471bc",
+            "source_sha256": "83d889fcd3b672b0105d41f3fd676c5b66c97a98b0f0b46358b0f472707a6e01",
+            "path_id": 12,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_fish_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_fish_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c438c6cbe347e044fb95f64b576a1b8b",
+            "source_sha256": "37c4fb1fc182fd18e1b2c4f183ede987a28568b6dcfc0f01e13acfacfdbd7e52",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_fish_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_fish_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a63aff4dc03f45a4b9b5091b72aacf25",
+            "source_sha256": "4b34deabb3b422cb75cd979a2294f52dcf839a5d94781046b940d131d3220d5d",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_fish_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_fish_run_01",
+        "apk_present": false,
+        "objects": [],
+        "status": "unresolved_absent"
+      },
+      {
+        "name": "pc_run_fla_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_fla_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/127ea2e99edac2041983967a4b0ee484",
+            "source_sha256": "2b79c5a7c6bc0b9a2004f05ee2f25592dd0b08ee7fbdda19d2ab6ae8fd928a42",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_fla_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_fla_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/94b39e3f8ef4db948ada994fc378fb81",
+            "source_sha256": "28d11cd188d7da5d0e0d2c6d58168f8214e3da252dbaa806f52b44ae5da10c20",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_fla_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_fla_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/832c7162ad1209246a2d71c37459adce",
+            "source_sha256": "2c39ad9701710621aeb48e214c0cd8e61efbcace5fa21c2333a06d77b07a83d5",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_rpa_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_rpa_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f88d87c744498104da09270206201864",
+            "source_sha256": "03fe50e8cdb42840e54f354f3e28443553a1c78d7a8634f198579f358647db38",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_rpa_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_rpa_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/e3b0b765a4f01f144a98d2f6467016bf",
+            "source_sha256": "cc3c50e53e1ae1e49534f5049d7033f6df73005d1a5ea66b09447f10648fde95",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_rpa_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_rpa_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d448048f8ec5d5249a6efb0e889aafa3",
+            "source_sha256": "0c76ba701e6c85ab9c5c8a85877c85cb38ab19a4764bf738c2a682d4c30fde74",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_skill_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_skill_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/45c28b028b3a214409d35df1a82b3063",
+            "source_sha256": "d103993f82bb0ab2e7743c187ce001162363fccb71733df29856940580b7a3e1",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_dmg_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_dmg_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9a1c6a614832d894aabd2e756df48e1f",
+            "source_sha256": "26e9a150d7818ee431c384ff8d7ca89f3417c4d699d44731d9b41b3b73a5cd10",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_jump_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_jump_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/444246ae29d8f7845955b845d9bd1880",
+            "source_sha256": "fe3dab9542f8737d5e82a1aab679fee31b4049095f93c698930e5463be764729",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_run_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_run_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ab91099dee2e0c84b8b6aa7d939951a6",
+            "source_sha256": "c3326fc162c3c135b8b29632c0e544cc880afd2952ac752bdc7d77ae4c8988e1",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_atk_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_atk_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2bdb1272930e60e468774403731d3e0d",
+            "source_sha256": "35cd5d08420276688e953d999c08c2c31f466936b3f20d906d774d0a01972436",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_wait_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_wait_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/06ab475b4c077eb4ead390eaaab5a709",
+            "source_sha256": "efe51bf165817e4200acf49705d68daec25124891ba0e7e08c16ad89da17f60b",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_run_02_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_run_02_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8328dcfd166a21b4c9b55fab94c4a15f",
+            "source_sha256": "a62226e95eab5d7c4b29750335c1bacb38779a4c4e6e994ac5ba68d17c2370c2",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_atk_gun_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_atk_gun_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d268865b2c59c7a45a50b837b632dca8",
+            "source_sha256": "42cffc77eb2b54ac8f3a0767570b253953c68f615c7b0a3696eb32bca404211f",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_wait_gun_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_wait_gun_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0d6e2e09f491a7b4689d5483eb2e80b5",
+            "source_sha256": "b822c6be53305c93bb2ed7e7450e2f9ea975a5b5b5bbf2144283f42058c3d5d7",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms00_wall_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms00_wall_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/429aaebd90d926b428df3a3c51edd708",
+            "source_sha256": "fb15184d1589ab4b9cd840035d49eb10ba0ba91d736ce54c81212756c8a51ca7",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_org_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_org_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/279511c8b70a53047a8aa4df92d35fdc",
+            "source_sha256": "8a5b09d50890148e900e923aa1cfa1e2e0bd574cd62cbeb9d9b3a8e91e84b4a5",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_pok_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_pok_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0b86c1e5cb45d2e4993353a9e3536547",
+            "source_sha256": "37a9d52ee8be93f133f241a28c1efb3819fb59930d59ff561ea54896ae7f9886",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_fgr_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_fgr_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ad6ab5ebbf054d843ba0df25ae3d4b7d",
+            "source_sha256": "7e67c073142bcfc6e2b0e4f4522caa19cd8907fae7fc512b6ad490d114920ce9",
+            "path_id": 13,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_fgr_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_fgr_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/50bd37ec70d1dea47bf7bc6687401682",
+            "source_sha256": "46dbe649db559dc5ce457c1a59b37a1a21be0de74c60e938ff5306d164ac4543",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_fgr_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_fgr_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f65f6fb6eb381014badc450db581a876",
+            "source_sha256": "e177d84aee8ca596bed66da186c122ec1c04d0c040b9d9cbb45e4cd4756e91be",
+            "path_id": 24,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_fly_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_fly_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/b79ec95a55d30994bb8321481d7112b2",
+            "source_sha256": "2e06886d0780844dee56c44ab91a9c6e5fbd404cdaa0c4237a378077121e22cb",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_fly_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_fly_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f23ebd49252884f499446797a43af223",
+            "source_sha256": "859c36388cd53e666c1a4afc53a7d1530d67d2dde70b3671742dfd0b36ac6d09",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_run_fat_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_run_fat_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/912f397d5df6e384299354cc1410376e",
+            "source_sha256": "d3f9fb1a748999063a89b60c97e824276e5d36424430370c86ed1a77f9662ad3",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_atk_fat_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_atk_fat_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/6a1fc8f084172a04987a911ae5bb61e1",
+            "source_sha256": "5f811a57cbf6188d89a31d171e71ad0e95cf74126ec7f523ecd9cc71b58663bb",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_wait_fat_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_wait_fat_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/8d683100be409344ca2be8b09982df57",
+            "source_sha256": "033bad0e0642c7eef6edb7657c84c47fae337c48ed1bae1cbaae8ffc28efa40b",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_run_03_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_run_03_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/1bbfe04e21b2ced4e9b9ca4d8fe2829a",
+            "source_sha256": "fa5480691d8d7c813c5e3240118f0b83aec7e888be8c8dbda71143b60eb238a9",
+            "path_id": 22,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_atk_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_atk_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f0014a69c962f404a9b0023bf96c3902",
+            "source_sha256": "369092705a88cf93f5a7075266625cf4e8e03e6121b017ee6d98717f30373e5c",
+            "path_id": 25,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_wait_can_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_wait_can_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/06683a3a37350f74eb9e779991a24309",
+            "source_sha256": "57dfa5f93b2b0adf3f03a1d812f539425dbb1096f96213183e7e387dd3d71035",
+            "path_id": 25,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_run_04_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_run_04_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a13d20629ea2fe24d9b5a95c407111e4",
+            "source_sha256": "37a3f7d5c1c134bd05b0a2fc23c16c32067e675bed8e0462789b5848a82571f4",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_atk_can_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_atk_can_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/eded6ff8645d4cd43bf38e2d1dfaa26a",
+            "source_sha256": "125257f9f5e3b077f88d31d17d989b940720018ef7158c6552734ee201d18dc8",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_wait_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_wait_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9edd211f347bf5845b6c0564032c9866",
+            "source_sha256": "8184fe5768a90c77b86f9de92a50f4fa79a24a67e703a56cd28eb5bcc4f216ff",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_run_03_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_run_03_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9cf2bd6b6210c7e41accb527177e92b1",
+            "source_sha256": "57d8e6d8bc46f6113f354dafb319e5dd243e5d46977066457ad99da8e46849fe",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_atk_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_atk_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c00dba6cd2ee42f40824a864462a96a2",
+            "source_sha256": "39d1d3b9f7bb5f5f3d386fcc9356101b6bf8c1b1c7c04e97d7692d018028c9af",
+            "path_id": 18,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_wait_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_wait_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/eb7c6c2e6aa91294cabdab877b0c41cc",
+            "source_sha256": "c75ad9ef1d638d7b11b368c06a4645747b434aaddfaada9e4eaee0fc86d2a378",
+            "path_id": 20,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_skill_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_skill_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/c58dbe3007dcee94a8993e660c3154fc",
+            "source_sha256": "baa663f26884988dde01f06bcd8b01d9f0ec46609ccc3e45b0ced6eef10646fc",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_dmg_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_dmg_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/617c6b788ad47ca4a947f061cb43fadc",
+            "source_sha256": "63ca7c586d8769314d9b9068ca32329460b51238c4b2c52c3298886f536a5dc7",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_head_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_head_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/95ee5505d13c6414ebfd3ffcd7d88bfe",
+            "source_sha256": "bde5c041a0004dc37682b93b202c60df88af63f93608f9b09604bc0208f0b906",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_head_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_head_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/3df6fc84b64c8bf41a82b00cbdbfc495",
+            "source_sha256": "8470e1aa292090b1cbfb868a1f3cd6841eff6ea78ffcaf1ad33969a14d770a3c",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_head_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_head_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7e8e205ef62843f46afd3d90277f210a",
+            "source_sha256": "89924a451534dd034628ad597946770122261884a9872e476f41308baf1febd9",
+            "path_id": 6,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_tail_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_tail_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d60a2a559225c1a44930241cd79488b6",
+            "source_sha256": "06a9535f51ac866cc49e482a927a29531ba702148bdcb6c91a8d0ec71bd90ebc",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_tail_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_tail_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/3459912371883b84db63ae533772b226",
+            "source_sha256": "ad2bbc009c77c6277c17e68aff2338a761b7feb17e7bdcc30bdf7336004b0fcf",
+            "path_id": 7,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_tail_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_tail_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/565d2cb068d175848be41ac081980d67",
+            "source_sha256": "48b2f7649ee19f70344705945bc3232b2ee3bb99f5af8907851dd875a93e5168",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_wing_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_wing_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f0ddf9dfa464c7e40862e27fba327640",
+            "source_sha256": "fe85936ba7524c1173f985e23bcdd1727f4cd641df6c4dfd699de626277c34a3",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_wing_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_wing_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/f4a7f015ffe686b48ae918a1a8c1d760",
+            "source_sha256": "f7eaf4cf543c0b4cb722ae8b3e60c0d067629cfb498e2319fe3490202424dc44",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms04_dra_wing_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms04_dra_wing_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/fac356d5c78c81845958d5f6f3bf0365",
+            "source_sha256": "4fa3de9fe2c93999e84b47409ab6cf44b0aa6ff648e8b368b24f09caf4113249",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_win_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_win_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d18481d892845b54898866b0c525ea02",
+            "source_sha256": "a987792877e3d6f829edce96456d730bbbfc1c181ca3ff8cfb4e7246fe384229",
+            "path_id": 28,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_run_swd_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_run_swd_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/de32e6edfccd85942afaf07926f77866",
+            "source_sha256": "8396535a6c6ef53f2c9ed2689a51bafcec754b5dd502b6c4920130b9e05f3252",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_atk_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_atk_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/4c015204f2d70954aa81c255a9890253",
+            "source_sha256": "6563d5a48e76c44a5bfabda6b1fae34b1c9d1d3922c9c66584aa9ff6eb6da04d",
+            "path_id": 28,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_wait_swd_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_wait_swd_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/43d36d229ef458c418301e5655895ed6",
+            "source_sha256": "f3fd9a9b1fae7a84825e06214d7952c5a80d5efc2408153ad19b4dec86870b1f",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_run_lan_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_run_lan_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ed9597db7db140641860ed8c61664495",
+            "source_sha256": "3d137165eff5e24c03cf61e1fc5b6b6c97e5dec0da7beae484f4f57471e4fd5a",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_atk_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_atk_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/4104a2c9b97564f4ab38dff397651113",
+            "source_sha256": "73876948ff44a0829b3ca72c49e8de1580d9b73e0e273c66aa851cdc02e2721e",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_wait_lan_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_wait_lan_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/580587386ed258e4c9915f48cd016902",
+            "source_sha256": "d878cdd5225f783667a6d290fd021204a23b15f0e0274f5ea960f1bf9ad6795c",
+            "path_id": 27,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_run_stk_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_run_stk_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/6ab712bb75b886848a60b6590ea4beb1",
+            "source_sha256": "0f1f347efceca4a2e581e0e1b3380e6d91a4d38b84ef6deac2c17b4ea67e3244",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_atk_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_atk_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/7eddcc56ecd7ead458ea4675eb88c4f0",
+            "source_sha256": "5627ec54b8b7a68f89740d9d7c1cffa5cd0b8b0225ec6f5911e65965272f4bbc",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_wait_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_wait_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/295eb68bdb7052f478a9a354fac7276b",
+            "source_sha256": "ece8c068822330a28279270b6609626dd8b5f7d25e1ba86c549eac1296477813",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_run_bow_01_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_run_bow_01_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/5d0071db190dd77428720cbb4246c107",
+            "source_sha256": "efd997330420d479191b3188cabc4b849e79e8b20671a061a985ce58c10f1333",
+            "path_id": 26,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_atk_bow_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_atk_bow_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/203271d524b950242bcfd3796f691453",
+            "source_sha256": "0cf2278f92631c97bc33ba12face5d081f9d2f220add7ebf8822caf5fc1bfb72",
+            "path_id": 29,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_wait_bow_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_wait_bow_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/646a25d2519730d418f54bc59ffec0f1",
+            "source_sha256": "5eed5b5072a9303c78f4aebe93c9649fea2c21731dfdb119880702027ffa8fba",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_skill_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_skill_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/551bc73de1fb34e4e9ec0e58bc020e9c",
+            "source_sha256": "2c29f2a6f7f0296608338de3803bfaf9ecdf8efc90833b8a85fd637dc4eadf78",
+            "path_id": 4,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_dmg_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_dmg_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/24d7c1f89a648ac469bb740f6353f40e",
+            "source_sha256": "61cbeac4c9a957b2bbc4f572616e709a6bb9179c8cbd705eaefbd4d7546b4bed",
+            "path_id": 15,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "win_jump_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/win_jump_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/d1744cd9ba016b84e882517b0dc3dec0",
+            "source_sha256": "3a66f162e574260657a3b0464306d490e746985c8f5f2a7049e38dcd257b2872",
+            "path_id": 19,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_wait_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_wait_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/443267f31ec030c40b7b304373f5ebac",
+            "source_sha256": "e599eaab0c4b09dd5b203b87d59d8937f9696cdd78662979654d1a4c736317b2",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "org_atk_stk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/org_atk_stk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/498e7e517d5fe81498fa0e7073ea6066",
+            "source_sha256": "529f16aa92557834139fc90ec2a26759d16dabdcd62aa3554b446911b2256764",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_slawing_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_slawing_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/adc20dd3fea2f8c489d58c7efed8eb08",
+            "source_sha256": "2e8e80a9aa719f2100500d2fd80c5f0330d8706e30ae46bcbf3eeb40abeeb0d9",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms01_slawing_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms01_slawing_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/ebb09e1511b407841b238775837cd438",
+            "source_sha256": "f99abe64dad82a3aab03625eda41224c1fdaaaccd4074316a69931a763f3bb95",
+            "path_id": 2,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_chau_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_chau_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/a2d07840bd4ad1a46b7f7266be505e3c",
+            "source_sha256": "c02d8acc6108d9cbdd3777d302db12c8b257843ed676a9fdce573aad734ab80e",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_chau_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_chau_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bf4b1bdef2c4bac40860c686eee24d81",
+            "source_sha256": "31d7ded3c4325f5089bb62ee90200b596f9337b78cfe5e7b2049687eb21b7a3e",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_chau_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_chau_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/0b56cd39b3d56de49895334f78a75819",
+            "source_sha256": "203751a8e3f17ab22579b9ca85e9263d936ef383dc95b01072d022bc65c5b508",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_giga_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_giga_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/40c8ab9258a4780448859a176258423d",
+            "source_sha256": "4128b322c2b2c05d6b2b81c58ab9fe86c098e3d881731c01f6353ed15fb1a87e",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_giga_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_giga_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/90911c8399f4bfb44b74d6e4337984aa",
+            "source_sha256": "35aa37d1132ed8ba2aa5e75f0f5ce88dc31a94061dca4cb70542440749609e2c",
+            "path_id": 16,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_giga_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_giga_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/9ae2eeb193c721046ba7ea8b80150b2c",
+            "source_sha256": "e5d743e30f0a2168fc1b420831bc9a93cfbeaf8fcc8d5183fd973a99bd3daf43",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_rusa_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_rusa_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/5934a92e8070f4a46bd4fec57d802a38",
+            "source_sha256": "f6a736b91a438fd9500f6c0cee79058c0ba9fb64ff01d7985b22556d9c3729e2",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_rusa_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_rusa_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/da80acfbd1fdd804f93ef869b521ea64",
+            "source_sha256": "e7a18677ee01d440ca56f43062071b631c18b88ced2ac5792fa512911186a3d0",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_bd_rusa_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_bd_rusa_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/4bd999db4f6709b4e8cade0acd82c0cc",
+            "source_sha256": "8d25e4b8eae9d3bdc755b9f648a1ff0c5a90756aca9fd206d8d2e0c212879f28",
+            "path_id": 3,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_skill_jump_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_skill_jump_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/50dbfeea44ec79b4b854a3b4715ca3f9",
+            "source_sha256": "61cea134fb834e286342e39afec9373e3ab3f0b6d1c923069e90fe001292098c",
+            "path_id": 23,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pc_skill_jump_02",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pc_skill_jump_02",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/dde90fa906eb6d345986bf502ab71a5a",
+            "source_sha256": "5d4df6441e6397220880a88ca0d976c43d09b27e8d06b1b8427fc8175f4fd3b3",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_run_05_lp",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_run_05_lp",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/bddfde1496d373d4db9fe2c548ff89f4",
+            "source_sha256": "a94e147c98cea94404935e62cfee2b515d85d9b6b887ea7e6612c2cf82f34d55",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_atk_atf_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_atk_atf_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/80618526eaf6a0440921c74a5f8fb426",
+            "source_sha256": "b1d515c6647d7d6ef00d5a3ed822f70365af3e0aeac10d8f06beb3c5e6883fad",
+            "path_id": 5,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "pok_wait_atf_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/pok_wait_atf_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/e8599c09a9337904a940004557c4e98c",
+            "source_sha256": "8d14dc5924c348d8fe5efd5027b62b5eeafc49573c324734af463ce3159bb0e6",
+            "path_id": 14,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sr_tiamat_run_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sr_tiamat_run_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/e2fc9df9c0ce13a4ebcbaf47ec765727",
+            "source_sha256": "35180b319041c7a348ad50f9c9b86f96610f630dabe4970a2c645a7c90dd66cc",
+            "path_id": 8,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sr_tiamat_wait_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sr_tiamat_wait_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2d028909fae720f49a761e4252f55dc0",
+            "source_sha256": "4698d205dd1d09a67197c1a49a2165b5fbc034cdc24b0d0dedd21909984e87df",
+            "path_id": 9,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "ms03_sr_tiamat_atk_01",
+        "requested_type": "GameObject",
+        "path": "AnimationData/Motion/ms03_sr_tiamat_atk_01",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/2494719b5b5c70541809be3e901d59e9",
+            "source_sha256": "a496faac978c581c49595ac37ba7d8ebe51027b729b1e01841f368c247de0652",
+            "path_id": 10,
+            "type": "GameObject"
+          }
+        ],
+        "status": "typed_present"
+      }
+    ],
+    "direction_clips": [
+      {
+        "name": "el_wait",
+        "requested_type": "AnimationClip",
+        "path": "AnimationData/DirectionAnimation/el_wait",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/26595f22f2533e947a90160e552b4934",
+            "source_sha256": "f703839f7bc1442901b3b972998b695949716abf7de636600c31c3be3efea42e",
+            "path_id": 1,
+            "type": "AnimationClip"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "el_boss_tob",
+        "requested_type": "AnimationClip",
+        "path": "AnimationData/DirectionAnimation/el_boss_tob",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/25b086d8e9c4f814a8b83b440a4f3e5a",
+            "source_sha256": "c5815484b335351bc04064226dbada1bf9dbea6e1177c54e959bddf68cec2dda",
+            "path_id": 1,
+            "type": "AnimationClip"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "el_zako_tob",
+        "requested_type": "AnimationClip",
+        "path": "AnimationData/DirectionAnimation/el_zako_tob",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/5ad8722908a70b04aaf713e2950eaca7",
+            "source_sha256": "9b656b9afa9f76992898fa119db116113f842e81af7f35a491d4093fbe867df4",
+            "path_id": 1,
+            "type": "AnimationClip"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "el_boss_tob_6",
+        "requested_type": "AnimationClip",
+        "path": "AnimationData/DirectionAnimation/el_boss_tob_6",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/32045e2cfe4208e4892d98827fb1b122",
+            "source_sha256": "a9deb4552c3f2ed42048d0d979517876e1a384239d8984d5be5ab4306b2e4514",
+            "path_id": 1,
+            "type": "AnimationClip"
+          }
+        ],
+        "status": "typed_present"
+      },
+      {
+        "name": "el_zako_tob_6",
+        "requested_type": "AnimationClip",
+        "path": "AnimationData/DirectionAnimation/el_zako_tob_6",
+        "apk_present": true,
+        "objects": [
+          {
+            "source": "apk:assets/bin/Data/e98bf1ea3ca1b3845802441480251116",
+            "source_sha256": "b83b64345b7fbe8e7b91ec72c57bc5946cdfbea23083ac27bdf67549e882a689",
+            "path_id": 1,
+            "type": "AnimationClip"
+          }
+        ],
+        "status": "typed_present"
+      }
+    ],
+    "limitations": [
+      "Typed APK object existence does not independently prove Resources path binding, embedded animation completeness or runtime behavior."
+    ]
+  },
+  "fish_motion": {
+    "motion_index": 99,
+    "action_assign_hits": [
+      {
+        "row": 61,
+        "column": 2,
+        "category": "MS01FISH"
+      }
+    ],
+    "action_assign_sha256": "9aaefb8fbb549dda386eb0771a61fd4fedbfdc5c6400f7e6ae5e3266786e3388",
+    "unit_enemy_reachable": false,
+    "reason": "ConvertKindToCategory returns only categories 0..35; missing motion occurs exclusively row61",
+    "ordinary_enemy_type": 25,
+    "ordinary_loading_condition": "IsBoss true at column2; nonboss type!=16 returns before load",
+    "missing_load_behavior": "Enemy.SetEnemyParameter IL035d-0365 null GameObject skips AddClip; no retry in this callsite",
+    "resource_binding_verified": false
+  }
+}

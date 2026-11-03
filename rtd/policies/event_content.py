@@ -1,7 +1,7 @@
 """Fail-closed audit of recovered event maps and their combat dependencies."""
 
-def audit_events(masters, levels, asset_names=None):
-    assets=recovered_asset_manifest() if asset_names is not None else None
+def audit_events(masters, levels, asset_names=None, *, asset_manifest=None):
+    assets=asset_manifest if asset_manifest is not None else recovered_asset_manifest() if asset_names is not None else None
     tables={k:{r['id']:r for r in v['data_list'] if 'id' in r} for k,v in masters.items()}
     tables[34]={r['sp_event_id']:r for r in masters.get(34,{}).get('data_list',[])}
     accepted=set(); rejected={}

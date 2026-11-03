@@ -62,6 +62,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
         else:
             name=pathlib.PurePosixPath(path).name
             file=bundle_root/name if name.endswith('.unity3d') else None
+            if file is not None and not file.is_file():
+                from .policies.reconstructed_resources import bundle_file
+                file=bundle_file(name)
         if file is None or not file.is_file():
             self.send_error(404);return
         self.send_response(200)
