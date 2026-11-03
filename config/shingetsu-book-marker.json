@@ -1,0 +1,16 @@
+{
+  "policy": "inferred-shingetsu-book-marker-v1",
+  "source_bundle": "151-160.unity3d",
+  "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+  "source_prefab_path_id": 609,
+  "generated_bundle": "ms00_book_el_05.unity3d",
+  "generated_sha256": "ae8fc933c64c928c06cf55e6b11040cc9615d3af375a3582002d3dc6f2af1555",
+  "prefab": "ast_ms00_book_el_05",
+  "original_internal_files": [
+    "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+  ],
+  "generated_internal_files": [
+    "CustomAssetBundle-cc9a3d16e07ac3d4e3de3da1cfe69eba"
+  ],
+  "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+}

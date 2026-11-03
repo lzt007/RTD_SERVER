@@ -35,3 +35,9 @@ def require_party_units(api,state,required):
     present={unit['id'] for unit in _party_masters(api,state)}
     if any(unit_id and unit_id not in present for unit_id in required):
         raise ProtocolError(8194,'Party including helper lacks a required original unit')
+
+
+def require_party_style(api,state,style):
+    # Original BattleChallengeData compares UNIT_MASTER.style, including helper.
+    if any(unit['style']!=style for unit in _party_masters(api,state)):
+        raise ProtocolError(8194,'Party including helper does not satisfy the weapon challenge')

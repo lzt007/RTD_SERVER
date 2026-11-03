@@ -1,7 +1,7 @@
 """Supported single-floor settlement with bounded validation, not battle replay."""
 import copy
 from ..policies.instance_ids import allocate_instance_ids
-from ..policies.party_challenges import require_party_attribute,require_party_rarity,require_party_units
+from ..policies.party_challenges import require_party_attribute,require_party_rarity,require_party_units,require_party_style
 from ..policies.attribute_rewards import apply_rewards
 from ..policies.event_points import apply as apply_event_points
 from ..policies.helper_rewards import credit as credit_helper
@@ -76,6 +76,8 @@ def settle_single_floor(api, state, req, quest_id, *, layer=False):
                     raise ProtocolError(8194,'Wanted challenge exceeds original target encounters')
             elif kind==20:
                 require_party_units(api,state,[condition['param_'+str(i)] for i in range(4)])
+            elif kind==22:
+                require_party_style(api,state,limit)
             elif kind==23:
                 require_party_attribute(api,state,limit)
             elif kind==21:

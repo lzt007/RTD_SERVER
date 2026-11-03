@@ -5,6 +5,7 @@ import time
 from ..common import compact
 from ..config import path_for
 from ..policies.quest_content import EVENT_POINT_QUESTS
+from ..masters.shingetsu import QUEST_IDS as SHINGETSU_QUESTS
 import json
 import zlib
 
@@ -101,7 +102,7 @@ class Operations:
         source=self.masters[30];table=None
         for event in self.read()['events']:
             for quest in event['quests']:
-                if quest['quest_id'] not in {20000}|EVENT_POINT_QUESTS:continue
+                if quest['quest_id'] not in {20000}|EVENT_POINT_QUESTS|set(SHINGETSU_QUESTS):continue
                 if table is None:table=copy.deepcopy(source)
                 row=next(q for q in table['data_list'] if q['id']==quest['quest_id'])
                 for i in range(1,7):

@@ -1,0 +1,122 @@
+[
+  {
+    "bundle": "151-160.unity3d",
+    "bundle_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "container_key": "g01_kn_grt_fire_01",
+    "path_id": 128,
+    "components": [
+      {
+        "type": "Transform",
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      {
+        "type": "Animation"
+      }
+    ]
+  },
+  {
+    "bundle": "151-160.unity3d",
+    "bundle_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "container_key": "g01_kn_grt_fire_01",
+    "path_id": 609,
+    "components": [
+      {
+        "type": "Transform",
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.009999999776482582
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      {
+        "type": "Animation"
+      }
+    ]
+  },
+  {
+    "bundle": "261-270.unity3d",
+    "bundle_sha256": "d6e92d5a72d3cd5d629a4133927cdaea10362ee941ce4037523439b299ca8b7e",
+    "container_key": "g02_kn_grt_fire_01",
+    "path_id": 61,
+    "components": [
+      {
+        "type": "Transform",
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      {
+        "type": "Animation"
+      }
+    ]
+  },
+  {
+    "bundle": "261-270.unity3d",
+    "bundle_sha256": "d6e92d5a72d3cd5d629a4133927cdaea10362ee941ce4037523439b299ca8b7e",
+    "container_key": "g02_kn_grt_fire_01",
+    "path_id": 46,
+    "components": [
+      {
+        "type": "Transform",
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 0.009999999776482582
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0,
+          "w": -4.371138828673793e-08
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      {
+        "type": "Animation"
+      }
+    ]
+  }
+]

@@ -25,6 +25,14 @@ class API:
         self.blocked_quests = set(SETTINGS.get('features', {}).get('blocked_quests', []))
         self.store = Store(database)
         self.masters, self.levels = load_catalog()
+        reconstruction=os.environ.get('RTD_SHINGETSU_RECONSTRUCTION','0')
+        if reconstruction not in ('0','1'):
+            raise RuntimeError('RTD_SHINGETSU_RECONSTRUCTION must be 0 or 1')
+        self.shingetsu_reconstruction=None
+        if reconstruction=='1':
+            from ..masters.shingetsu import build_candidate,apply_missing
+            self.shingetsu_reconstruction=build_candidate(self.masters,self.levels)
+            self.masters,self.levels=apply_missing(self.masters,self.levels,self.shingetsu_reconstruction)
         self.delivery=Delivery(self.store,self.masters)
         content=os.environ.get('RTD_CONTENT_EXPERIMENTAL','1' if SETTINGS['features']['experimental_content'] else '0')
         if content not in ('0','1'):raise RuntimeError('RTD_CONTENT_EXPERIMENTAL must be 0 or 1')

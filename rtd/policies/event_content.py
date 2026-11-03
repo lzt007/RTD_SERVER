@@ -30,7 +30,7 @@ def audit_events(masters, levels, asset_names=None):
             if cid and cid in tables[32] and tables[32][cid]['type']==20:
                 if any(tables[32][cid][f'param_{i}'] and tables[32][cid][f'param_{i}'] not in tables[10] for i in range(4)):
                     reasons.append('missing challenge unit')
-            if cid and (cid not in tables[32] or tables[32][cid]['type'] not in (10,20,21,23,30,31,40,41,42)):
+            if cid and (cid not in tables[32] or tables[32][cid]['type'] not in (10,20,21,22,23,30,31,40,41,42)):
                 reasons.append('unsupported challenge '+str(cid))
         for key in ('sp_event_id','open_sp_event_id'):
             if q[key] and q[key] not in tables.get(34,{}):reasons.append('missing event identity')
