@@ -138,8 +138,9 @@ class ShingetsuBattleTest(unittest.TestCase):
         import os
         from unittest.mock import patch
         import test_quest_content as fixtures
-        with patch.dict(os.environ,{'RTD_SHINGETSU_RECONSTRUCTION':'1'}):
-            fixtures.QuestContentTest.setUp(self)
+        flag=patch.dict(os.environ,{'RTD_SHINGETSU_RECONSTRUCTION':'1'})
+        flag.start();self.addCleanup(flag.stop)
+        fixtures.QuestContentTest.setUp(self)
         source=copy.deepcopy(self.api.masters[30])
         body=dict(name='神月のケモノ',enabled=True,starts_at=None,ends_at=None,
                   quests=[dict(quest_id=q,drops=[]) for q in QUEST_IDS])
@@ -171,8 +172,9 @@ class ShingetsuBattleTest(unittest.TestCase):
         import os
         from unittest.mock import patch
         import test_quest_content as fixtures
-        with patch.dict(os.environ,{'RTD_SHINGETSU_RECONSTRUCTION':'1'}):
-            fixtures.QuestContentTest.setUp(self)
+        flag=patch.dict(os.environ,{'RTD_SHINGETSU_RECONSTRUCTION':'1'})
+        flag.start();self.addCleanup(flag.stop)
+        fixtures.QuestContentTest.setUp(self)
         for id in QUEST_IDS:
             state=self.state()
             state['player']['action_point']=999

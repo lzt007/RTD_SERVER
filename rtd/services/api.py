@@ -52,9 +52,23 @@ class API:
             self.visual_recovery['payload_sha256']=hashlib.sha256(payload).hexdigest()
         from ..policies.event_content import audit_events, single_quests, recovered_asset_names
         self.event_quests,self.event_rejections=audit_events(self.masters,self.levels,recovered_asset_names())
+        batch=os.environ.get('RTD_EVENT_RECONSTRUCTION','0')
+        if batch not in ('0','1'):raise RuntimeError('RTD_EVENT_RECONSTRUCTION must be 0 or 1')
+        self.event_reconstruction=None
+        self.reconstructed_quests=set()
+        if batch=='1':
+            from ..masters.event_reconstruction import prepare_runtime
+            baseline=set(self.event_quests)
+            self.masters,self.levels,self.event_reconstruction=prepare_runtime(self.masters,self.levels,baseline)
+            self.reconstructed_quests=set(self.event_reconstruction['ready_quests'])
+            self.event_quests=baseline|self.reconstructed_quests
+            self.event_rejections.update({int(k):v for k,v in self.event_reconstruction['blocked'].items()})
+        from ..policies.monster_recovery import apply_monster_recovery
+        self.monster_recovery=apply_monster_recovery(self.masters,self.levels,
+            (single_quests(self)|layer_quests(self)|{10000})-self.blocked_quests)
         configurable=(single_quests(self)|layer_quests(self))-{10001}
         self.operations=Operations(self.store,self.masters,lambda:load_pools(self.masters)[0],
-            event_quests=configurable-self.blocked_quests,
+            event_quests=configurable-self.blocked_quests,reconstructed_quests=self.reconstructed_quests,reconstructed_levels=self.levels,
             configurable_quests=configurable,playable_quests=(single_quests(self)|layer_quests(self)|{10000})-self.blocked_quests)
 
     def master_table(self,kind):

@@ -128,3 +128,13 @@ python scripts/smoke_test.py
 新项目当前运行入口和配置以本文为准。原后台接口文档为 [ADMIN_OPERATIONS.md](docs/archive/api/ADMIN_OPERATIONS.md)，原后台使用验收为 [ADMIN_WEB_ACCEPTANCE.md](docs/archive/protocol/ADMIN_WEB_ACCEPTANCE.md)，业务策略见 `docs/archive/rules/`。这些文档按原样归档，可能出现历史目录、实验端口、旧 APK 和阶段性状态；它们不是本项目启动脚本，也不表示当前实例已完成那些客户端验收。归档 README 位于 `docs/archive/ORIGINAL_SERVER_README.md`。
 
 变更业务时请优先在 `rtd/services/`、`policies/`、`operations/` 添加测试；严格 DTO、请求原子事务、回执重放与已验收资源映射是兼容重点。后台读写与 API 共库，操作会影响本地模拟经济。本项目仍为原服协议的本地重建，不实现支付，不承诺历史原服所有行为一致。
+
+## 活动关卡重建与测试开放（2026-11-03）
+
+批量重建只补缺失地图、掉落和资源，已有真实记录及原本正常关卡的有效配置保持不变。`RTD_EVENT_RECONSTRUCTION` 默认关闭；启用后仍需明确排期才开放。推测数据和原始记录分开保存，角色Boss优先复用原角色模型，缺失书本标记使用独立内部资源名的临时包。
+
+- [逐关修复与受阻清单](docs/superpowers/specs/2026-11-03-event-reconstruction-batch-result.md)：全量882条活动记录，84条新增准备完成，82条原本可用保持不变，716条按当前证据仍受阻；含攻略来源和具体方案。
+- [生产测试开放记录](docs/deployment-20261103-event-batch.md)：后续按用户要求将84关分29组开放测试，保留原有4组；已有前置通关与积分条件不变，仍待客户端验证。
+- 离线资源准备：使用UnityPy==1.25.4运行`python scripts/prepare_event_reconstruction_resources.py --output resources/reconstructed/events/bundles`，输出目录必须不存在，已有原资源不覆盖。派生二进制及生产排期数据库不进入Git。
+
+- [提交前回归说明](docs/verification-20261103-event-batch.md)：记录完整测试结果、远端基线已有失败与测试隔离修正，避免把相关测试通过表述为全量通过。

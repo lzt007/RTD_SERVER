@@ -1,0 +1,3 @@
+# Offline model conversion/inspection only; not needed by running services.
+-r requirements-dev.txt
+numpy>=1.26,<3

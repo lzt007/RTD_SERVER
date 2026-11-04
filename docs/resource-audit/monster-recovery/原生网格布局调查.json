@@ -1,0 +1,139 @@
+{
+  "topology_counts": {
+    "2": 2154,
+    "0": 18
+  },
+  "vertex_layouts": {
+    "(43, 48)": 692,
+    "(9, 20)": 956
+  },
+  "non_strip": [
+    {
+      "name": "s06_kn_grt_dw_01",
+      "source": "RTD_SERVER/resources/cache/Shared/d849627a123d7182cd0842f89f39463e489efbf5/CustomAssetBundle-84551a78dba09dd4fa7987fd8d3d47a6",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "s06_kn_grt_df_01",
+      "source": "RTD_SERVER/resources/cache/Shared/d849627a123d7182cd0842f89f39463e489efbf5/CustomAssetBundle-84551a78dba09dd4fa7987fd8d3d47a6",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "s06_kn_grt_d_01",
+      "source": "RTD_SERVER/resources/cache/Shared/d849627a123d7182cd0842f89f39463e489efbf5/CustomAssetBundle-84551a78dba09dd4fa7987fd8d3d47a6",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "g03_kn_grt_dark_01",
+      "source": "RTD_SERVER/resources/cache/Shared/e8bfa64b42f3713a43e34da1863516b874bc52b5/CustomAssetBundle-d85de00d1dedf794a87c6aff616793a1",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "g03_wz_stk_water_03",
+      "source": "RTD_SERVER/resources/cache/Shared/fa61caffa89ca74dcb70316b93a16173e7993349/CustomAssetBundle-42aedc6c1ed42d743a535ababe374126",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_wh_01",
+      "source": "RTD_SERVER/resources/cache/Shared/ae490ba63d729d9b221815ef8b0b5d421f987694/CustomAssetBundle-bea95209990adb14fa81c7c5f74e0aa8",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_w_01",
+      "source": "RTD_SERVER/resources/cache/Shared/ae490ba63d729d9b221815ef8b0b5d421f987694/CustomAssetBundle-bea95209990adb14fa81c7c5f74e0aa8",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_wd_01",
+      "source": "RTD_SERVER/resources/cache/Shared/ae490ba63d729d9b221815ef8b0b5d421f987694/CustomAssetBundle-bea95209990adb14fa81c7c5f74e0aa8",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "k02_ar_gun_dark_01",
+      "source": "RTD_SERVER/resources/cache/Shared/d2b5afc593cfb50f5b33f7e30fb0de6281738a19/CustomAssetBundle-6d6aee5920d2fa94db52bc9a5a263af2",
+      "topology": 0,
+      "indices": 879,
+      "triangles": 293
+    },
+    {
+      "name": "g03_wz_stk_water_03",
+      "source": "RTD_SERVER/resources/bundles/331-340.unity3d",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_wh_01",
+      "source": "RTD_SERVER/resources/bundles/741-750.unity3d",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_w_01",
+      "source": "RTD_SERVER/resources/bundles/741-750.unity3d",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "s06_wz_stk_wd_01",
+      "source": "RTD_SERVER/resources/bundles/741-750.unity3d",
+      "topology": 0,
+      "indices": 996,
+      "triangles": 332
+    },
+    {
+      "name": "k02_ar_gun_dark_01",
+      "source": "RTD_SERVER/resources/bundles/81-90.unity3d",
+      "topology": 0,
+      "indices": 879,
+      "triangles": 293
+    },
+    {
+      "name": "g03_kn_grt_dark_01",
+      "source": "RTD_SERVER/resources/bundles/321-330.unity3d",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "s06_kn_grt_dw_01",
+      "source": "RTD_SERVER/resources/bundles/721-730.unity3d",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "s06_kn_grt_df_01",
+      "source": "RTD_SERVER/resources/bundles/721-730.unity3d",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    },
+    {
+      "name": "s06_kn_grt_d_01",
+      "source": "RTD_SERVER/resources/bundles/721-730.unity3d",
+      "topology": 0,
+      "indices": 3876,
+      "triangles": 1292
+    }
+  ],
+  "errors": []
+}

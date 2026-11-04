@@ -42,13 +42,15 @@ def integer(value,minimum,maximum):
 
 
 class Operations:
-    def __init__(self,store,masters,pools,*,event_quests=None,configurable_quests=None,playable_quests=None):
+    def __init__(self,store,masters,pools,*,event_quests=None,configurable_quests=None,playable_quests=None,reconstructed_quests=(),reconstructed_levels=None):
         self.store=store;self.masters=masters
         self.units={u['id']:u for u in masters[10]['data_list']}
         self.quests={q['id']:q for q in masters[30]['data_list']}
         self.event_quests=set(EVENT_QUESTS if event_quests is None else event_quests)
         self.configurable_quests=set(self.event_quests if configurable_quests is None else configurable_quests)
         self.playable_quests=set((10000,10001,11000) if playable_quests is None else playable_quests)
+        self.reconstructed_quests=set(reconstructed_quests)
+        self.reconstructed_levels=reconstructed_levels or {}
         with store.transaction():
             with store.connect() as db:
                 if db.execute('SELECT 1 FROM runtime_config WHERE id=1').fetchone():return
@@ -91,6 +93,10 @@ class Operations:
         quest=self.quests[quest_id]
         table=next(t for t in self.masters[21]['data_list'] if t['id']==quest['enemy_table_id'])
         types={e['id']:e['type'] for e in self.masters[20]['data_list']}
+        if quest_id in self.reconstructed_quests:
+            level=self.reconstructed_levels[quest_id]
+            slots={b&31 for b in bytes.fromhex(level['map_data']) if 1<=b&31<=18}
+            return {table[prefix+'_drop_id'] for prefix in ['boss','death']+[f'enemy{i}' for i in slots]}
         return {v for k,v in table.items() if k.endswith('_drop_id') and types.get(table[k.replace('_drop_id','_set_id')]) not in (20,21)}
 
     def next_quests(self,quest_id):
@@ -100,9 +106,14 @@ class Operations:
 
     def quest_table(self):
         source=self.masters[30];table=None
+        if self.reconstructed_quests:
+            table=copy.deepcopy(source)
+            for row in table['data_list']:
+                if row['id'] in self.reconstructed_quests:
+                    row.update(open_type_6=6,open_param_6=1)
         for event in self.read()['events']:
             for quest in event['quests']:
-                if quest['quest_id'] not in {20000}|EVENT_POINT_QUESTS|set(SHINGETSU_QUESTS):continue
+                if quest['quest_id'] not in {20000}|EVENT_POINT_QUESTS|set(SHINGETSU_QUESTS)|self.reconstructed_quests:continue
                 if table is None:table=copy.deepcopy(source)
                 row=next(q for q in table['data_list'] if q['id']==quest['quest_id'])
                 for i in range(1,7):

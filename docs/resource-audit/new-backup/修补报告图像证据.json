@@ -1,0 +1,1530 @@
+[
+  {
+    "model": "ms00_book_el_01",
+    "sha256": "03e7e51c4cd82b66163039cb8fc238ebd6293fb530e6742de9e1b5bbd792ca60",
+    "images": [
+      [
+        "ms00_book_el_01",
+        "repair-images/ms00_book_el_01__ms00_book_el_01.png"
+      ],
+      [
+        "ms00_book_el_01_icon",
+        "repair-images/ms00_book_el_01__ms00_book_el_01_icon.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_book_el_02",
+    "sha256": "f0d96508ffa196d273bcb4c60f7b25b0cf0a2f8ab5684306af681541fd091faa",
+    "images": [
+      [
+        "ms00_book_el_02",
+        "repair-images/ms00_book_el_02__ms00_book_el_02.png"
+      ],
+      [
+        "ms00_book_el_02_icon",
+        "repair-images/ms00_book_el_02__ms00_book_el_02_icon.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_book_el_03",
+    "sha256": "0a39a33f89a1a0e7a007f9b4e78f8aa52546f46564c3d5d7cd961d544bd8aace",
+    "images": [
+      [
+        "ms00_book_el_03_icon",
+        "repair-images/ms00_book_el_03__ms00_book_el_03_icon.png"
+      ],
+      [
+        "ms00_book_el_03",
+        "repair-images/ms00_book_el_03__ms00_book_el_03.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_book_el_05",
+    "sha256": "f4645f98e9fa4e8eebbbbab01a1caea2c7ee042d669bf42d58e454f036b751f5",
+    "images": [
+      [
+        "ms00_book_el_05_icon",
+        "repair-images/ms00_book_el_05__ms00_book_el_05_icon.png"
+      ],
+      [
+        "ms00_book_el_05",
+        "repair-images/ms00_book_el_05__ms00_book_el_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_book_el_06",
+    "sha256": "680f8f37de3b01b0c7d10c926c598c9ead9576b5a8f2531c1b3e34b6c5dfe89d",
+    "images": [
+      [
+        "ms00_book_el_06",
+        "repair-images/ms00_book_el_06__ms00_book_el_06.png"
+      ],
+      [
+        "ms00_book_el_06_icon",
+        "repair-images/ms00_book_el_06__ms00_book_el_06_icon.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_death_01_zako",
+    "sha256": "a09a2b2436e2516c5df3fcc8b831b7b42f28b675742f8cb876e543cce56e84c5",
+    "images": [
+      [
+        "ms00_death_01",
+        "repair-images/ms00_death_01_zako__ms00_death_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_death_shadow",
+    "sha256": "b65e29be42275458185032b0a54a3a60328925ea00fc77444b1c4d2b47a065b2",
+    "images": [
+      [
+        "ms00_death_shadow",
+        "repair-images/ms00_death_shadow__ms00_death_shadow.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_floor_move_l",
+    "sha256": "9c0c9968c5752fb477603664adc99a16f023425a83a4bcce8f3604511cf9214b",
+    "images": [
+      [
+        "ms00_floor_move_l",
+        "repair-images/ms00_floor_move_l__ms00_floor_move_l.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_floor_move_r",
+    "sha256": "1f0e829d4697cf2b48c4e8e574eb7132b08d37eeb297fe90ef534fc613dbded5",
+    "images": [
+      [
+        "ms00_floor_move_r",
+        "repair-images/ms00_floor_move_r__ms00_floor_move_r.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_floor_move_s",
+    "sha256": "665db287f2631917891d615a7b535534b5597485ad794f966450760136ebb18f",
+    "images": [
+      [
+        "ms00_floor_move_s",
+        "repair-images/ms00_floor_move_s__ms00_floor_move_s.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms00_kaidan_iseki",
+    "sha256": "544fc3411932a7f499690bd42d041b5f8438d4efccec5b9785b9fd13053b3558",
+    "images": [
+      [
+        "ms00_kaidan_iseki",
+        "repair-images/ms00_kaidan_iseki__ms00_kaidan_iseki.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bear_lv1",
+    "sha256": "bcf9df59b5c710b6fb2a0a5230c942bb8cdf17384c610a369a7ebb53d43dea1e",
+    "images": [
+      [
+        "ms01_bear_lv1_holy",
+        "repair-images/ms01_bear_lv1__ms01_bear_lv1_holy.png"
+      ],
+      [
+        "ms01_bear_lv1_dark",
+        "repair-images/ms01_bear_lv1__ms01_bear_lv1_dark.png"
+      ],
+      [
+        "ms01_bear_lv1_water",
+        "repair-images/ms01_bear_lv1__ms01_bear_lv1_water.png"
+      ],
+      [
+        "ms01_bear_lv1_fire",
+        "repair-images/ms01_bear_lv1__ms01_bear_lv1_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bear_lv2",
+    "sha256": "cdd4f7a87c98ae4cc434c032fbdbbddd7143d9f29ccf47cae978c76348a8789e",
+    "images": [
+      [
+        "ms01_bear_lv2_holy",
+        "repair-images/ms01_bear_lv2__ms01_bear_lv2_holy.png"
+      ],
+      [
+        "ms01_bear_lv2_water",
+        "repair-images/ms01_bear_lv2__ms01_bear_lv2_water.png"
+      ],
+      [
+        "ms01_bear_lv2_dark",
+        "repair-images/ms01_bear_lv2__ms01_bear_lv2_dark.png"
+      ],
+      [
+        "ms01_bear_lv2_fire",
+        "repair-images/ms01_bear_lv2__ms01_bear_lv2_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bear_lv4",
+    "sha256": "e4729be7bf8ee579ebcabaaab2357c6b4d45ba36b81167594b6d8443e9b2b85f",
+    "images": [
+      [
+        "ms01_bear_lv4_dark",
+        "repair-images/ms01_bear_lv4__ms01_bear_lv4_dark.png"
+      ],
+      [
+        "ms01_bear_lv4_water",
+        "repair-images/ms01_bear_lv4__ms01_bear_lv4_water.png"
+      ],
+      [
+        "ms01_bear_lv4_fire",
+        "repair-images/ms01_bear_lv4__ms01_bear_lv4_fire.png"
+      ],
+      [
+        "ms01_bear_lv4_holy",
+        "repair-images/ms01_bear_lv4__ms01_bear_lv4_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv1_dark",
+    "sha256": "451e0f0da98ff39a0a44af424146ab5862e2a2afc810df618e575c5114e70d3e",
+    "images": [
+      [
+        "ms01_bird_lv1_dark",
+        "repair-images/ms01_bird_lv1_dark__ms01_bird_lv1_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv1_fire",
+    "sha256": "49bf52831194407e3980af9a2039927174554972b46cd1a7b40f5a7b14a842b5",
+    "images": [
+      [
+        "ms01_bird_lv1_fire",
+        "repair-images/ms01_bird_lv1_fire__ms01_bird_lv1_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv1_holy",
+    "sha256": "9363cd731d6cbebd5a7f4cac9591cae13768a3d9da5a24c752dc7084eb6d92b4",
+    "images": [
+      [
+        "ms01_bird_lv1_holy",
+        "repair-images/ms01_bird_lv1_holy__ms01_bird_lv1_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv1_water",
+    "sha256": "f078f2db8888e66f8dd06fa547b672a6e6cc75ecea930032af00857487f77200",
+    "images": [
+      [
+        "ms01_bird_lv1_water",
+        "repair-images/ms01_bird_lv1_water__ms01_bird_lv1_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv2_dark",
+    "sha256": "f50bd718dba7a62c597af0672eef73cc17903866f19ea2facc1303d770d958ec",
+    "images": [
+      [
+        "ms01_bird_lv2_dark",
+        "repair-images/ms01_bird_lv2_dark__ms01_bird_lv2_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv2_fire",
+    "sha256": "7974f70107289bcca1f0b566b5ad1843d34ef63a7b1b962057f9e55074465247",
+    "images": [
+      [
+        "ms01_bird_lv2_fire",
+        "repair-images/ms01_bird_lv2_fire__ms01_bird_lv2_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv2_holy",
+    "sha256": "5f281e2a22f93d017394bec4a77c396dda0e2e29b6f00f48ad48574493bb0929",
+    "images": [
+      [
+        "ms01_bird_lv2_holy",
+        "repair-images/ms01_bird_lv2_holy__ms01_bird_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_bird_lv2_water",
+    "sha256": "856d92dc14a582b09bef1c99076e14b02e2b8a58d50c3235c381d2b9697609e0",
+    "images": [
+      [
+        "ms01_bird_lv2_water",
+        "repair-images/ms01_bird_lv2_water__ms01_bird_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv1_dark",
+    "sha256": "2ace256ade6acf98de5b2605c8e675165dfe2df7d8e7bf203fc7ff1e8b806e25",
+    "images": [
+      [
+        "ms01_crab_lv1_dark",
+        "repair-images/ms01_crab_lv1_dark__ms01_crab_lv1_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv1_fire",
+    "sha256": "2bbd140776fc378184e5e4305d58a458371c732ed2850bd3b4edb4b85b6ba00a",
+    "images": [
+      [
+        "ms01_crab_lv1_fire",
+        "repair-images/ms01_crab_lv1_fire__ms01_crab_lv1_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv1_holy",
+    "sha256": "b5699fa00c2da5bafd05aa8024ca91baa02ec1393d83ac673dbb6b2a357fee2a",
+    "images": [
+      [
+        "ms01_crab_lv1_holy",
+        "repair-images/ms01_crab_lv1_holy__ms01_crab_lv1_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv1_water",
+    "sha256": "80ae56122f86c77659b13972aa987e091b196e9d0653c1dea8ecf61e34b895bc",
+    "images": [
+      [
+        "ms01_crab_lv1_water",
+        "repair-images/ms01_crab_lv1_water__ms01_crab_lv1_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv2_dark",
+    "sha256": "8ae644bbd37e45a3417dfdd7e242cbf25c1465e2baf0d465bd6bb811f247dcea",
+    "images": [
+      [
+        "ms01_crab_lv2_dark",
+        "repair-images/ms01_crab_lv2_dark__ms01_crab_lv2_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv2_fire",
+    "sha256": "c4ea67409ac25df589393dd4611a6fa95dbc8327b8c5977a2501d66fef8eb840",
+    "images": [
+      [
+        "ms01_crab_lv2_fire",
+        "repair-images/ms01_crab_lv2_fire__ms01_crab_lv2_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv2_holy",
+    "sha256": "c45dd105c18f1d3b971f24d9db231cf4c8ba5b0d67e33ea9b5922517dc84e57f",
+    "images": [
+      [
+        "ms01_crab_lv2_holy",
+        "repair-images/ms01_crab_lv2_holy__ms01_crab_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_crab_lv2_water",
+    "sha256": "da6aec3a5f19e86124abd6182deb99867d60dbe60ea4f3100ce834f6e0a388fd",
+    "images": [
+      [
+        "ms01_crab_lv2_water",
+        "repair-images/ms01_crab_lv2_water__ms01_crab_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_dra_lv1",
+    "sha256": "03facfcb8875f08c5cb8b5d2d061a94928aeb93c921cc66f4fbe369a7c30a0e8",
+    "images": [
+      [
+        "ms01_dra_lv1_dark",
+        "repair-images/ms01_dra_lv1__ms01_dra_lv1_dark.png"
+      ],
+      [
+        "ms01_dra_lv1_water",
+        "repair-images/ms01_dra_lv1__ms01_dra_lv1_water.png"
+      ],
+      [
+        "ms01_dra_lv1_fire",
+        "repair-images/ms01_dra_lv1__ms01_dra_lv1_fire.png"
+      ],
+      [
+        "ms01_dra_lv1_holy",
+        "repair-images/ms01_dra_lv1__ms01_dra_lv1_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_dra_lv2",
+    "sha256": "0d1a347c9eeb8e6c93ac84f49c890fc05f65a0eeaf045b3c267ed4934930e104",
+    "images": [
+      [
+        "ms01_dra_lv2_dark",
+        "repair-images/ms01_dra_lv2__ms01_dra_lv2_dark.png"
+      ],
+      [
+        "ms01_dra_lv2_fire",
+        "repair-images/ms01_dra_lv2__ms01_dra_lv2_fire.png"
+      ],
+      [
+        "ms01_dra_lv2_holy",
+        "repair-images/ms01_dra_lv2__ms01_dra_lv2_holy.png"
+      ],
+      [
+        "ms01_dra_lv2_water",
+        "repair-images/ms01_dra_lv2__ms01_dra_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_dra_lv3",
+    "sha256": "f4ccfbfd2645d6b5564e7897007bb06a9c995706809d66f777901aa1100fdc3a",
+    "images": [
+      [
+        "ms01_dra_lv3_fire",
+        "repair-images/ms01_dra_lv3__ms01_dra_lv3_fire.png"
+      ],
+      [
+        "ms01_dra_lv3_holy",
+        "repair-images/ms01_dra_lv3__ms01_dra_lv3_holy.png"
+      ],
+      [
+        "ms01_dra_lv3_dark",
+        "repair-images/ms01_dra_lv3__ms01_dra_lv3_dark.png"
+      ],
+      [
+        "ms01_dra_lv3_water",
+        "repair-images/ms01_dra_lv3__ms01_dra_lv3_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_dra_sh_fire",
+    "sha256": "a2bc614ba03b9d1df3ad6f29e18e0a8f2888987037dfc396536a3935ca3b76fa",
+    "images": [
+      [
+        "ms01_dra_sh_fire",
+        "repair-images/ms01_dra_sh_fire__ms01_dra_sh_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv1_dark",
+    "sha256": "86ed68966315176a4d68f48ecc89de4b53d9a52bcd5d3ce66c1777f51558babf",
+    "images": [
+      [
+        "ms01_fugu_lv2_holy",
+        "repair-images/ms01_fugu_lv1_dark__ms01_fugu_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv1_fire",
+    "sha256": "590d616afefe3bf3b03541f337d5a37964689d7d5254e99d693a4c1b9ce7c5b7",
+    "images": [
+      [
+        "ms01_fugu_lv2_holy",
+        "repair-images/ms01_fugu_lv1_fire__ms01_fugu_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv1_water",
+    "sha256": "244ade670e033eed6dc6d62ab0308f6d4d90918a5b81504788b8709aecaf9225",
+    "images": [
+      [
+        "ms01_fugu_lv2_water",
+        "repair-images/ms01_fugu_lv1_water__ms01_fugu_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv2_dark",
+    "sha256": "e7278fa58e70344dbca76a5429f2a3a6d0d7f819afcc448d5f1c3ad32b2153cf",
+    "images": [
+      [
+        "ms01_fugu_lv2_holy",
+        "repair-images/ms01_fugu_lv2_dark__ms01_fugu_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv2_fire",
+    "sha256": "70cebb63276aaaddc2c370a0d29c465d751e54ecfb9cf9c02e447f746031e5cf",
+    "images": [
+      [
+        "ms01_fugu_lv2_holy",
+        "repair-images/ms01_fugu_lv2_fire__ms01_fugu_lv2_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_fugu_lv2_water",
+    "sha256": "94960acef5d96535e092cf9f48d95a6caddb2365a823f3ca5e71070299f8f6d3",
+    "images": [
+      [
+        "ms01_fugu_lv2_water",
+        "repair-images/ms01_fugu_lv2_water__ms01_fugu_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_golem_dark",
+    "sha256": "f1bac54c31dd72ee5aed5f89b94ce67bc16ca49758fa8cfdea61fc5d5aa3abc6",
+    "images": [
+      [
+        "ms01_golem_dark",
+        "repair-images/ms01_golem_dark__ms01_golem_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_golem_fire",
+    "sha256": "f871c81d8fe4f2ea8330c07bf0373eda858bfa257828d5e147660ebfe4a1ec11",
+    "images": [
+      [
+        "ms01_golem_fire",
+        "repair-images/ms01_golem_fire__ms01_golem_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_golem_holy",
+    "sha256": "9a5904e3e1fde3fbc8cfa6a2bb10a9dfea908def5be832c2a7086cd4cfb0c18f",
+    "images": [
+      [
+        "ms01_golem_holy",
+        "repair-images/ms01_golem_holy__ms01_golem_holy.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_golem_un",
+    "sha256": "cc38ad1ec02f6ee67bc7288c0518438692c4589058cc64b1645147b977ab237e",
+    "images": [
+      [
+        "ms01_golem_un",
+        "repair-images/ms01_golem_un__ms01_golem_un.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_golem_water",
+    "sha256": "c0fc63e76985c164a6e32f22e2b3a4b0c9cb9f3d7f2ab2ced881cddc027590eb",
+    "images": [
+      [
+        "ms01_golem_water",
+        "repair-images/ms01_golem_water__ms01_golem_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_mind_dark",
+    "sha256": "a738baaff95458a03e30d2685e482fea5f64c525c51680904da70ad780ffb624",
+    "images": [
+      [
+        "ms01_mind_dark",
+        "repair-images/ms01_mind_dark__ms01_mind_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_mind_fire",
+    "sha256": "1f8db3cd2711ca63dc7daf3f3ad06c8bbe4a84f08e1daa72eea9963a6986155d",
+    "images": [
+      [
+        "ms01_mind_fire",
+        "repair-images/ms01_mind_fire__ms01_mind_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_mind_holy",
+    "sha256": "3ee2760813b8bfdc958099c9320487b9633003d1daccc2e650342f3f8ea672c4",
+    "images": [
+      [
+        "ms01_mind_dark",
+        "repair-images/ms01_mind_holy__ms01_mind_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_mind_water",
+    "sha256": "f8e16cb6806103160a755c43e399b5655d28d50bc8528086e05e879b0edbcae6",
+    "images": [
+      [
+        "ms01_mind_dark",
+        "repair-images/ms01_mind_water__ms01_mind_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_lv1",
+    "sha256": "4668a53104e8204bd33ff795ba2f5b414b7282f57d76d9f4b59df41a811d28af",
+    "images": [
+      [
+        "ms01_sco_dark_02",
+        "repair-images/ms01_sco_lv1__ms01_sco_dark_02.png"
+      ],
+      [
+        "ms01_sco_lv1_dark",
+        "repair-images/ms01_sco_lv1__ms01_sco_lv1_dark.png"
+      ],
+      [
+        "ms01_sco_lv1_fire",
+        "repair-images/ms01_sco_lv1__ms01_sco_lv1_fire.png"
+      ],
+      [
+        "ms01_sco_lv1_holy",
+        "repair-images/ms01_sco_lv1__ms01_sco_lv1_holy.png"
+      ],
+      [
+        "ms01_sco_lv1_water",
+        "repair-images/ms01_sco_lv1__ms01_sco_lv1_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_lv2",
+    "sha256": "5552919340f030ff3ab0add364b314299d0e672d5b8800c29fbee8ecce3c2796",
+    "images": [
+      [
+        "ms01_sco_dark_02",
+        "repair-images/ms01_sco_lv2__ms01_sco_dark_02.png"
+      ],
+      [
+        "ms01_sco_lv2_dark",
+        "repair-images/ms01_sco_lv2__ms01_sco_lv2_dark.png"
+      ],
+      [
+        "ms01_sco_lv2_fire",
+        "repair-images/ms01_sco_lv2__ms01_sco_lv2_fire.png"
+      ],
+      [
+        "ms01_sco_lv2_holy",
+        "repair-images/ms01_sco_lv2__ms01_sco_lv2_holy.png"
+      ],
+      [
+        "ms01_sco_lv2_water",
+        "repair-images/ms01_sco_lv2__ms01_sco_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_lv3",
+    "sha256": "5cb6053ecf1f97ec24659962cc5d4e72abaffd9b88f532a8d7f759dcc0165cc6",
+    "images": [
+      [
+        "ms01_sco_dark_02",
+        "repair-images/ms01_sco_lv3__ms01_sco_dark_02.png"
+      ],
+      [
+        "ms01_sco_lv3_dark",
+        "repair-images/ms01_sco_lv3__ms01_sco_lv3_dark.png"
+      ],
+      [
+        "ms01_sco_lv3_fire",
+        "repair-images/ms01_sco_lv3__ms01_sco_lv3_fire.png"
+      ],
+      [
+        "ms01_sco_lv3_holy",
+        "repair-images/ms01_sco_lv3__ms01_sco_lv3_holy.png"
+      ],
+      [
+        "ms01_sco_lv3_water",
+        "repair-images/ms01_sco_lv3__ms01_sco_lv3_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_lv4",
+    "sha256": "06894457a5b49831467c75a27a17732c31dbf10e8e139b69a0bb78d329dd994d",
+    "images": [
+      [
+        "ms01_sco_dark_02",
+        "repair-images/ms01_sco_lv4__ms01_sco_dark_02.png"
+      ],
+      [
+        "ms01_sco_lv4_dark",
+        "repair-images/ms01_sco_lv4__ms01_sco_lv4_dark.png"
+      ],
+      [
+        "ms01_sco_lv4_fire",
+        "repair-images/ms01_sco_lv4__ms01_sco_lv4_fire.png"
+      ],
+      [
+        "ms01_sco_lv4_holy",
+        "repair-images/ms01_sco_lv4__ms01_sco_lv4_holy.png"
+      ],
+      [
+        "ms01_sco_lv4_water",
+        "repair-images/ms01_sco_lv4__ms01_sco_lv4_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_sh_dark",
+    "sha256": "a8347d949e00bfef0b2115c1e6e3796602e4a62f31df271be73bcc1281ac2373",
+    "images": [
+      [
+        "ms01_sco_dark_02",
+        "repair-images/ms01_sco_sh_dark__ms01_sco_dark_02.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_sh_fire",
+    "sha256": "c34df5c5e2deb5e4639a0b0ee0309c5fd0226384208756c08e862e3e2c84fec9",
+    "images": [
+      [
+        "ms01_sco_fire_02",
+        "repair-images/ms01_sco_sh_fire__ms01_sco_fire_02.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_sh_holy",
+    "sha256": "0d7da9d68c3ee21568585ff13df23d08b53b4b08bc7575c86747b19b8e4a70ad",
+    "images": [
+      [
+        "ms01_sco_holy_02",
+        "repair-images/ms01_sco_sh_holy__ms01_sco_holy_02.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sco_sh_water",
+    "sha256": "0a6d9034a7a4fe14b3a9701f3c8c284516e79da6712019ed38d4a9a1270558b1",
+    "images": [
+      [
+        "ms01_sco_water_02",
+        "repair-images/ms01_sco_sh_water__ms01_sco_water_02.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv1_silver",
+    "sha256": "4dc5e496a6b898f8502eedd777ac7cdc4af86f7b820fcf86790a429f4a2d021e",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv1_silver__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv2",
+    "sha256": "2dd9f4547b47aad45d6cc1d7ac959240c664dcad1d70df3f2ea7dd00fc34ed95",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv2__240_ms01_sla_u_01.png"
+      ],
+      [
+        "ms01_sla_lv2_dark",
+        "repair-images/ms01_sla_lv2__ms01_sla_lv2_dark.png"
+      ],
+      [
+        "ms01_sla_lv2_fire",
+        "repair-images/ms01_sla_lv2__ms01_sla_lv2_fire.png"
+      ],
+      [
+        "ms01_sla_lv2_holy",
+        "repair-images/ms01_sla_lv2__ms01_sla_lv2_holy.png"
+      ],
+      [
+        "ms01_sla_lv2_water",
+        "repair-images/ms01_sla_lv2__ms01_sla_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv2_gold",
+    "sha256": "e9b5e04275557e32f03d3c6d9bd3188bdaeb0e40913fc17503e1f0e13fd4d684",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv2_gold__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv2_silver",
+    "sha256": "37307b432e6e5be7a437af5839122743bb6698daf457361f33d158d6d4ac81c0",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv2_silver__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv3",
+    "sha256": "32b3439783623c69ca66a6b6c17266d551115f77f559f3f7f6b3370f32b7de7b",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv3__240_ms01_sla_u_01.png"
+      ],
+      [
+        "ms01_sla_lv3_dark",
+        "repair-images/ms01_sla_lv3__ms01_sla_lv3_dark.png"
+      ],
+      [
+        "ms01_sla_lv3_fire",
+        "repair-images/ms01_sla_lv3__ms01_sla_lv3_fire.png"
+      ],
+      [
+        "ms01_sla_lv3_holy",
+        "repair-images/ms01_sla_lv3__ms01_sla_lv3_holy.png"
+      ],
+      [
+        "ms01_sla_lv3_water",
+        "repair-images/ms01_sla_lv3__ms01_sla_lv3_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv3_gold",
+    "sha256": "a157dcb9a572b272ce88a153afd5bb4bfacd2b2627eceab21aa77fa24fa33d42",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv3_gold__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv3_silver",
+    "sha256": "a2e9d87d39b793b27c67ec2b6a62cd70ca7ea9d0d7fa7040dacdcdb01cd6fa35",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv3_silver__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv4",
+    "sha256": "445caeed6d1235e864dcf8f74b6f8964f3f66b4913fdf3528a89150e240da563",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv4__240_ms01_sla_u_01.png"
+      ],
+      [
+        "ms01_sla_lv4_dark",
+        "repair-images/ms01_sla_lv4__ms01_sla_lv4_dark.png"
+      ],
+      [
+        "ms01_sla_lv4_fire",
+        "repair-images/ms01_sla_lv4__ms01_sla_lv4_fire.png"
+      ],
+      [
+        "ms01_sla_lv4_holy",
+        "repair-images/ms01_sla_lv4__ms01_sla_lv4_holy.png"
+      ],
+      [
+        "ms01_sla_lv4_water",
+        "repair-images/ms01_sla_lv4__ms01_sla_lv4_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_lv4_silver",
+    "sha256": "9b6950cd20fc24aa38811a1b1f60e06094cbdd6d26b0902c50b71be391bda821",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_lv4_silver__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_sla_sh_water",
+    "sha256": "92e9dfe38378a57424a3b84badb3acff5c27dc5d7fb33d508b9d73a005e52403",
+    "images": [
+      [
+        "240_ms01_sla_u_01",
+        "repair-images/ms01_sla_sh_water__240_ms01_sla_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv1_dark",
+    "sha256": "ee0eccc05ff314361fff7a81d4b66aa20fd09e10178da4e9937460c007fbdd2c",
+    "images": [
+      [
+        "ms01_tatu_lv1_dark",
+        "repair-images/ms01_tatu_lv1_dark__ms01_tatu_lv1_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv1_fire",
+    "sha256": "759108939e71348ea1194b1ad0c670b89ba3d40fb8a97cc54ab89f7b03e78541",
+    "images": [
+      [
+        "ms01_tatu_lv1_fire",
+        "repair-images/ms01_tatu_lv1_fire__ms01_tatu_lv1_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv1_water",
+    "sha256": "20613bf9a37559b78f851c66d276fd6eeb638f207432671657970a39e5a5bda6",
+    "images": [
+      [
+        "ms01_tatu_lv1_water",
+        "repair-images/ms01_tatu_lv1_water__ms01_tatu_lv1_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv2_dark",
+    "sha256": "694511d1c4f7d23b0ab3a375131a3d64406612de1b24094c2d4505f85ab32135",
+    "images": [
+      [
+        "ms01_tatu_lv2_dark",
+        "repair-images/ms01_tatu_lv2_dark__ms01_tatu_lv2_dark.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv2_fire",
+    "sha256": "5a0f4da4e1014e35bc529efa3e9867c4ec255f9ac1fb351faaea6f89733a7ff7",
+    "images": [
+      [
+        "ms01_tatu_lv2_fire",
+        "repair-images/ms01_tatu_lv2_fire__ms01_tatu_lv2_fire.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_tatu_lv2_water",
+    "sha256": "ac6381f9a2d96b124811ca65e0e59826416d884ecf62d053d2f42de79fd39294",
+    "images": [
+      [
+        "ms01_tatu_lv2_water",
+        "repair-images/ms01_tatu_lv2_water__ms01_tatu_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_lv1",
+    "sha256": "0e18c78377d836ccfff5c858a1ad3f9af519f54795a317e4c9387d20613d79e3",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_d_01",
+        "repair-images/ms01_wolf_lv1__330_ms01_wolf_lv1_d_01.png"
+      ],
+      [
+        "ms01_wolf_lv1_dark",
+        "repair-images/ms01_wolf_lv1__ms01_wolf_lv1_dark.png"
+      ],
+      [
+        "ms01_wolf_lv1_fire",
+        "repair-images/ms01_wolf_lv1__ms01_wolf_lv1_fire.png"
+      ],
+      [
+        "ms01_wolf_lv1_holy",
+        "repair-images/ms01_wolf_lv1__ms01_wolf_lv1_holy.png"
+      ],
+      [
+        "ms01_wolf_lv1_water",
+        "repair-images/ms01_wolf_lv1__ms01_wolf_lv1_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_lv2",
+    "sha256": "6f694c95744311b6e44637e98f0ebeaa56a4a49508af7094e27d2d74576b880e",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_d_01",
+        "repair-images/ms01_wolf_lv2__330_ms01_wolf_lv1_d_01.png"
+      ],
+      [
+        "ms01_wolf_lv2_dark",
+        "repair-images/ms01_wolf_lv2__ms01_wolf_lv2_dark.png"
+      ],
+      [
+        "ms01_wolf_lv2_fire",
+        "repair-images/ms01_wolf_lv2__ms01_wolf_lv2_fire.png"
+      ],
+      [
+        "ms01_wolf_lv2_holy",
+        "repair-images/ms01_wolf_lv2__ms01_wolf_lv2_holy.png"
+      ],
+      [
+        "ms01_wolf_lv2_water",
+        "repair-images/ms01_wolf_lv2__ms01_wolf_lv2_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_lv3",
+    "sha256": "cf24990307041424c1d2d9fab91098a98e071836a91623f2317a85b387e252af",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_d_01",
+        "repair-images/ms01_wolf_lv3__330_ms01_wolf_lv1_d_01.png"
+      ],
+      [
+        "ms01_wolf_lv3_dark",
+        "repair-images/ms01_wolf_lv3__ms01_wolf_lv3_dark.png"
+      ],
+      [
+        "ms01_wolf_lv3_fire",
+        "repair-images/ms01_wolf_lv3__ms01_wolf_lv3_fire.png"
+      ],
+      [
+        "ms01_wolf_lv3_holy",
+        "repair-images/ms01_wolf_lv3__ms01_wolf_lv3_holy.png"
+      ],
+      [
+        "ms01_wolf_lv3_water",
+        "repair-images/ms01_wolf_lv3__ms01_wolf_lv3_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_lv4",
+    "sha256": "df2f923f977fa29ed4ef5e4c37fb1fe9820ad9686dd91bfc75c0c11e7071ab09",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_d_01",
+        "repair-images/ms01_wolf_lv4__330_ms01_wolf_lv1_d_01.png"
+      ],
+      [
+        "ms01_wolf_lv4_dark",
+        "repair-images/ms01_wolf_lv4__ms01_wolf_lv4_dark.png"
+      ],
+      [
+        "ms01_wolf_lv4_fire",
+        "repair-images/ms01_wolf_lv4__ms01_wolf_lv4_fire.png"
+      ],
+      [
+        "ms01_wolf_lv4_holy",
+        "repair-images/ms01_wolf_lv4__ms01_wolf_lv4_holy.png"
+      ],
+      [
+        "ms01_wolf_lv4_water",
+        "repair-images/ms01_wolf_lv4__ms01_wolf_lv4_water.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_sh_dark",
+    "sha256": "5491c0ac7f902553ae7a5295f0ae05b889cf5a90837cdff5294437f786213080",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_d_01",
+        "repair-images/ms01_wolf_sh_dark__330_ms01_wolf_lv1_d_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_sh_fire",
+    "sha256": "a4f379d771a57ff3aeeb65fc93e125e33f04de8412b845c585d1b7bfa30f9e51",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_f_01",
+        "repair-images/ms01_wolf_sh_fire__330_ms01_wolf_lv1_f_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_sh_holy",
+    "sha256": "d25db1857e47701449990fd093bc8f85518baeb2a5462bdd1e85c2df9fb19627",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_h_01",
+        "repair-images/ms01_wolf_sh_holy__330_ms01_wolf_lv1_h_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms01_wolf_sh_water",
+    "sha256": "349bb0e0b9fd97fa2d7e951d4567ede86b2a5058bd99ec8caed17b5dfecc71c6",
+    "images": [
+      [
+        "330_ms01_wolf_lv1_u_01",
+        "repair-images/ms01_wolf_sh_water__330_ms01_wolf_lv1_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_dark_01",
+    "sha256": "bcf14de3f2c87d2021949d7c7288dd532741c5641a2928285abafe59b787c112",
+    "images": [
+      [
+        "290_ms02_dra_d_01",
+        "repair-images/ms02_dra_dark_01__290_ms02_dra_d_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_fire_01",
+    "sha256": "4b3f9851ea6a474aa5eff943cd114815726c548c5677ecebb757b4a68623876b",
+    "images": [
+      [
+        "290_ms02_dra_f_01",
+        "repair-images/ms02_dra_fire_01__290_ms02_dra_f_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_holy_01",
+    "sha256": "a31140ec5114c068d61962d2d27abaa47ec51db7430e94c40c2bf86932670f61",
+    "images": [
+      [
+        "290_ms02_dra_h_01",
+        "repair-images/ms02_dra_holy_01__290_ms02_dra_h_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_un_02",
+    "sha256": "524fa90a2e34d91f5b7806c930d9803c9a085675b48e2fd859e9e6f7c1b35de5",
+    "images": [
+      [
+        "250_ms02_dra_u_01",
+        "repair-images/ms02_dra_un_02__250_ms02_dra_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_un_04",
+    "sha256": "4c5b0d58a3ac6ba8094563125f56f1159da5d03029cd55ca9448cbd58b902c05",
+    "images": [
+      [
+        "250_ms02_dra_u_01",
+        "repair-images/ms02_dra_un_04__250_ms02_dra_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_dra_water_01",
+    "sha256": "a2d8de3dff228f5dd9bb3ff9cbdce22309ad2fb950aef035b3fc05053a088949",
+    "images": [
+      [
+        "250_ms02_dra_u_01",
+        "repair-images/ms02_dra_water_01__250_ms02_dra_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_dark_01_zako",
+    "sha256": "2c9dd6ff6a9ff90b14efa69b9018201472582e47eb7967e198fb84a358e9f99c",
+    "images": [
+      [
+        "ms02_four_dark_05",
+        "repair-images/ms02_four_dark_01_zako__ms02_four_dark_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_dark_05",
+    "sha256": "8d8316dad90b7c41f265f1b600b235393b585f29e63a1a5aef046136909ea30b",
+    "images": [
+      [
+        "ms02_four_dark_05",
+        "repair-images/ms02_four_dark_05__ms02_four_dark_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_fire_01",
+    "sha256": "ccfcb1d6375a719c4f40ad77fe8e9d86159cf2285a14a77b9f2822c0ec7bfb2d",
+    "images": [
+      [
+        "ms02_four_fire_05",
+        "repair-images/ms02_four_fire_01__ms02_four_fire_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_fire_01_zako",
+    "sha256": "c93f09b7d0b15d5e5da9af48e84bbc9d1ac53c5d555a66117c96f87fc93b4312",
+    "images": [
+      [
+        "ms02_four_fire_05",
+        "repair-images/ms02_four_fire_01_zako__ms02_four_fire_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_fire_05",
+    "sha256": "55e7f83bf4bc4f85f21f21e4535fbb47db5d4417c64e4f0c537e20acb6ca41bc",
+    "images": [
+      [
+        "ms02_four_fire_05",
+        "repair-images/ms02_four_fire_05__ms02_four_fire_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_holy_01",
+    "sha256": "5bc843b619d4de1b44c9ebb7d51e6c9c1afbacd44a7d153153400cee25cf3b3e",
+    "images": [
+      [
+        "ms02_four_holy_05",
+        "repair-images/ms02_four_holy_01__ms02_four_holy_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_holy_01_zako",
+    "sha256": "cb1c53a5df688b276be86933ebb6b51a8419e089f669a7192b4acad5bd4b87c6",
+    "images": [
+      [
+        "ms02_four_holy_05",
+        "repair-images/ms02_four_holy_01_zako__ms02_four_holy_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_un_02",
+    "sha256": "00fc8473e35fc41d86d0d03b988442ac38898acc92cc9d374155216e1078c222",
+    "images": [
+      [
+        "ms02_four_un_05",
+        "repair-images/ms02_four_un_02__ms02_four_un_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_un_05",
+    "sha256": "f30f9d685862d07de84c32e4a0da4a3d17d5b053dbe2bdb034b7aff4638a69c7",
+    "images": [
+      [
+        "ms02_four_un_05",
+        "repair-images/ms02_four_un_05__ms02_four_un_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_water_01",
+    "sha256": "9e9832f6f9d89c2a7cc26a51ce2cd25cf477f631626554671a1306a8c65d4643",
+    "images": [
+      [
+        "250_ms02_four_u_01",
+        "repair-images/ms02_four_water_01__250_ms02_four_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_water_01_zako",
+    "sha256": "96b8ed2c17107b2c2113262f57e86f249d1c777abb4c0e6063c80832d1f51cf2",
+    "images": [
+      [
+        "250_ms02_four_u_01",
+        "repair-images/ms02_four_water_01_zako__250_ms02_four_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms02_four_water_05",
+    "sha256": "7798a3e41e7af7c768f49805aab3b84f9024d5e9499c602623c377db0aed88d4",
+    "images": [
+      [
+        "ms02_four_water_05",
+        "repair-images/ms02_four_water_05__ms02_four_water_05.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_dark_01",
+    "sha256": "89ed66ed21c967a844a3b2a54a73215dc57597d8887eea499b972610ef6c77f4",
+    "images": [
+      [
+        "310_ms03_dra_d_01",
+        "repair-images/ms03_dra_dark_01__310_ms03_dra_d_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_dark_04",
+    "sha256": "4f80379c1945ff9bc119e2cc3e4694fd521c0e4e6b8ca3aa79ec38fde034122c",
+    "images": [
+      [
+        "ms03_dra_dark_04",
+        "repair-images/ms03_dra_dark_04__ms03_dra_dark_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_fire_01",
+    "sha256": "326bb3d2916b0ba3afd18d21df676120fadfc9c22fa250a40a15e2e49a49355b",
+    "images": [
+      [
+        "310_ms03_dra_f_01",
+        "repair-images/ms03_dra_fire_01__310_ms03_dra_f_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_fire_04",
+    "sha256": "c70b6b69f42008d26a5361b812a847e02b2022a53b363d2a533bf72f7670f1a6",
+    "images": [
+      [
+        "ms03_dra_fire_04",
+        "repair-images/ms03_dra_fire_04__ms03_dra_fire_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_holy_01",
+    "sha256": "e58d8749c0915d89d6ccec883f63c88d4f094d24ddb49fd0da8dae8d615b1965",
+    "images": [
+      [
+        "310_ms03_dra_h_01",
+        "repair-images/ms03_dra_holy_01__310_ms03_dra_h_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_holy_04",
+    "sha256": "8e1b69b8c100123b3acb755b8a433b5786e5b681e857c47a0c372d68cddc2871",
+    "images": [
+      [
+        "ms03_dra_holy_04",
+        "repair-images/ms03_dra_holy_04__ms03_dra_holy_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_un_01",
+    "sha256": "d1e99d6d62478e284d38b7c2d53d5ad73cc3a0504453339982b406030c5caf52",
+    "images": [
+      [
+        "ms03_dra_un_04",
+        "repair-images/ms03_dra_un_01__ms03_dra_un_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_un_02",
+    "sha256": "0272322f2f5efedbaaa9a85f0b20f2708b3be6173e1cfdd9946022282a07a59e",
+    "images": [
+      [
+        "ms03_dra_un_04",
+        "repair-images/ms03_dra_un_02__ms03_dra_un_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_water_01",
+    "sha256": "eed8db5eb65e507c1a7e78c3acf04a8e41e598797104ab5fd575aa0d0ec8e3ef",
+    "images": [
+      [
+        "250_ms03_dra_u_01",
+        "repair-images/ms03_dra_water_01__250_ms03_dra_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_dra_water_04",
+    "sha256": "000606d3b24f716b41b37e917d9eb4a45e86d1365383fc80e12587a2ace0559d",
+    "images": [
+      [
+        "ms03_dra_water_04",
+        "repair-images/ms03_dra_water_04__ms03_dra_water_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_dark_01",
+    "sha256": "c53013bb651158c96045953fe676a4cd3801402260c00a40706e9b7a30b2fcb4",
+    "images": [
+      [
+        "550_ms03_fly_d_01",
+        "repair-images/ms03_fly_dark_01__550_ms03_fly_d_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_fire_01",
+    "sha256": "6e969f2b818673bf6f7b1ccc63fa7525e67a161254050a53fd79baf1713e0e89",
+    "images": [
+      [
+        "230_ms03_fly_lv1_f_01",
+        "repair-images/ms03_fly_fire_01__230_ms03_fly_lv1_f_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_holy_01",
+    "sha256": "1a863dc585a529da62769bd73a94264c4d034659e3cee081e5715a2f77210130",
+    "images": [
+      [
+        "260_ms03_fly_lv1_h_01",
+        "repair-images/ms03_fly_holy_01__260_ms03_fly_lv1_h_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_un_01",
+    "sha256": "e82176cba178f4a371a65284add4ea3bedf3bf4a7156f7f8963b0deb8b8de9ab",
+    "images": [
+      [
+        "ms03_fly_un_04",
+        "repair-images/ms03_fly_un_01__ms03_fly_un_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_un_02",
+    "sha256": "152d2b619ec84dbdb1d3332a9915b69f8a23ec520899bd71f2bb2ecc760060a0",
+    "images": [
+      [
+        "ms03_fly_un_04",
+        "repair-images/ms03_fly_un_02__ms03_fly_un_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_un_03",
+    "sha256": "7de0cc8223b91587aa91530f0b86fd85920cce280a81e2e4d27cb1cfe3befd90",
+    "images": [
+      [
+        "ms03_fly_un_04",
+        "repair-images/ms03_fly_un_03__ms03_fly_un_04.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_fly_water_01",
+    "sha256": "076cf5d8684e9a66267b9ce112b12c7957ceea83d57c35723065ff5730f76efc",
+    "images": [
+      [
+        "240_ms03_fly_u_01",
+        "repair-images/ms03_fly_water_01__240_ms03_fly_u_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_dark_01",
+    "sha256": "3f5a9eebc0e4ef44ab8b1fe2ec74bba8aa3ea65c7ed70f04354282cc3ef66ea6",
+    "images": [
+      [
+        "230_ms03_four_lv1_w_01",
+        "repair-images/ms03_four_dark_01__230_ms03_four_lv1_w_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_fire_01",
+    "sha256": "589fb4012e3643540ef8e76629b8e98660bb12e81e63a3fe4a70435a56fd3d6f",
+    "images": [
+      [
+        "230_ms03_four_lv1_w_01",
+        "repair-images/ms03_four_fire_01__230_ms03_four_lv1_w_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_holy_01",
+    "sha256": "ab86cab1d8840faa60626f43c03eb23830023b3b5f7bd89269abaa59b02436aa",
+    "images": [
+      [
+        "230_ms03_four_lv1_w_01",
+        "repair-images/ms03_four_holy_01__230_ms03_four_lv1_w_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_un_01",
+    "sha256": "254106bbfd21e5ba73ed93f134503298b093e506c47e645b2c18595bd9c08677",
+    "images": [
+      [
+        "230_ms03_four_lv1_w_01",
+        "repair-images/ms03_four_un_01__230_ms03_four_lv1_w_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_un_03",
+    "sha256": "2dc0b274598303c95bdb7c9d4b7deb7e65ada0aca8a55cc34554e19d75f83143",
+    "images": [
+      [
+        "500_ms03_four_d_03",
+        "repair-images/ms03_four_un_03__500_ms03_four_d_03.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_four_water_01",
+    "sha256": "a53bd536c5dfb7a460e1571cbdc8e964e2dcfc116103dbcda44bf4ea3a23a3de",
+    "images": [
+      [
+        "230_ms03_four_lv1_w_01",
+        "repair-images/ms03_four_water_01__230_ms03_four_lv1_w_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_oct_dark_01",
+    "sha256": "3cb5b63f229acb299428bd54d41bb0c9f2f306dd9656da4763778b954f06bd99",
+    "images": [
+      [
+        "ms03_oct_dark_01",
+        "repair-images/ms03_oct_dark_01__ms03_oct_dark_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_oct_fire_01",
+    "sha256": "53504d2dc5767ccff3eb95a2579ae49ce1b9721bc6fe8942b5027180941cf2b0",
+    "images": [
+      [
+        "ms03_oct_fire_01",
+        "repair-images/ms03_oct_fire_01__ms03_oct_fire_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms03_oct_un_01",
+    "sha256": "dc6cdd5c2f205bc281b5c7a3479cb9b2f39f9ba2f01c64aa54359ebb124e2232",
+    "images": [
+      [
+        "ms03_oct_un_01",
+        "repair-images/ms03_oct_un_01__ms03_oct_un_01.png"
+      ]
+    ]
+  },
+  {
+    "model": "ms04_legend_01",
+    "sha256": "c197c87986899a87d0fe90c3ef167197cddef297a949b76e5679f37e76ec7a94",
+    "images": [
+      [
+        "330_ms04_legend_d_01",
+        "repair-images/ms04_legend_01__330_ms04_legend_d_01.png"
+      ]
+    ]
+  }
+]

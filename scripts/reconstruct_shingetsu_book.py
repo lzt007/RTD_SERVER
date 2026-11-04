@@ -12,8 +12,11 @@ SOURCE_SHA256='8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8'
 PREFAB='ast_ms00_book_el_05'
 
 
-def build_book(source,output):
+def build_book(source,output,book_color=5):
     import UnityPy
+    if type(book_color) is not int or book_color not in range(1,7):
+        raise ValueError('Original book colors are 1 through 6')
+    prefab_name=f'ast_ms00_book_el_0{book_color}'
     source=Path(source);output=Path(output)
     if output.exists():raise FileExistsError(output)
     source_bytes=source.read_bytes()
@@ -29,8 +32,8 @@ def build_book(source,output):
             if info.asset.type.name=='GameObject' and info.asset.path_id==609:
                 prefab=info.asset.read()
                 if prefab.m_Name!='g01_kn_grt_fire_01':raise ValueError('Unexpected source prefab')
-                prefab.m_Name=PREFAB;prefab.save()
-                containers.append((PREFAB,info));matches+=1
+                prefab.m_Name=prefab_name;prefab.save()
+                containers.append((prefab_name,info));matches+=1
         # Only publish the audited marker entry; retain its serialized dependencies.
         bundle.m_Container=containers
         bundle.m_Name='local-shingetsu-book-marker'
@@ -41,7 +44,8 @@ def build_book(source,output):
     original_names=list(env.file.files)
     for name in original_names:
         asset=env.file.files.pop(name)
-        unique='CustomAssetBundle-'+hashlib.md5(('inferred-shingetsu-book-v1:'+name).encode()).hexdigest()
+        salt='inferred-shingetsu-book-v1:' if book_color==5 else f'inferred-events-book-{book_color}-v1:'
+        unique='CustomAssetBundle-'+hashlib.md5((salt+name).encode()).hexdigest()
         asset.name=unique
         env.file.files[unique]=asset
     payload=env.file.save()
@@ -50,7 +54,7 @@ def build_book(source,output):
     return dict(policy='inferred-shingetsu-book-marker-v1',source_bundle=source.name,
                 source_sha256=SOURCE_SHA256,source_prefab_path_id=609,
                 generated_bundle=output.name,generated_sha256=hashlib.sha256(payload).hexdigest(),
-                prefab=PREFAB,original_internal_files=original_names,
+                prefab=prefab_name,original_internal_files=original_names,
                 generated_internal_files=list(env.file.files),
                 reason='Original book bundle absent; temporary Fenris map marker only. Battle character remains original.')
 

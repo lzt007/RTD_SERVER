@@ -8,6 +8,15 @@ import unittest
 
 @unittest.skipUnless(importlib.util.find_spec('UnityPy'), 'Offline asset tool UnityPy is required')
 class ShingetsuBookTest(unittest.TestCase):
+    def test_other_missing_book_colors_use_distinct_internal_files(self):
+        import UnityPy
+        from scripts.reconstruct_shingetsu_book import build_book
+        with tempfile.TemporaryDirectory() as tmp:
+            one=build_book(Path('resources/bundles/151-160.unity3d'),Path(tmp)/'one.unity3d',book_color=1)
+            two=build_book(Path('resources/bundles/151-160.unity3d'),Path(tmp)/'two.unity3d',book_color=2)
+            self.assertEqual(one['prefab'],'ast_ms00_book_el_01')
+            self.assertTrue(set(one['generated_internal_files']).isdisjoint(two['generated_internal_files']))
+
     def test_marker_resolves_correct_prefab_and_preserves_original_bundle(self):
         import UnityPy
         from scripts.reconstruct_shingetsu_book import build_book
@@ -17,6 +26,7 @@ class ShingetsuBookTest(unittest.TestCase):
             output=Path(tmp)/'ms00_book_el_05.unity3d'
             report=build_book(source,output)
             self.assertEqual(report['source_sha256'],before)
+            self.assertEqual(report['generated_sha256'],'ae8fc933c64c928c06cf55e6b11040cc9615d3af375a3582002d3dc6f2af1555')
             env=UnityPy.load(str(output))
             original=UnityPy.load(str(source))
             self.assertTrue(set(env.file.files).isdisjoint(original.file.files))
