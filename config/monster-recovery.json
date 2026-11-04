@@ -1,0 +1,3088 @@
+{
+  "original_apk_dependencies": {
+    "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97": "54587b5f261feb3611b76718d3c251efbd48cf838d90ffadf99862c871530781",
+    "assets/bin/Data/b9f3841bc1470724a91ffe24993cdb8a": "8109cc957af099517c43e40e2377720c41b23c038647de217d22068ea2640283",
+    "assets/bin/Data/97079297be5b76a458cafdee6e86b5a2": "14d81704fb10cd076012bad067152754f8e57dbee9f444a48a4f6580fcc69999",
+    "assets/bin/Data/f5d437c126c91ec4091f6a2b3007637a": "3987f7d7c9f396786c4a6de9772d512104a2761abb7369226294700c51a69edd",
+    "assets/bin/Data/9c9c7a4553394714794d5e8123862c8f": "b1b7c1c140d1aca30f1d29c8ec4bcae5e100608deae09231510c0916966736c1",
+    "assets/bin/Data/31adf56cc15e7604ca8d48fddcb9fd3a": "3f9aaf2622c77fcbe4f646b47b1c05f8e7254669c66e978a6eb19f0f750d7e36",
+    "assets/bin/Data/aa283bb828f0b7443a8dc6ddb266fef4": "b85265f9de1f74910b96b9fcce57465c08f034700f545bbb7b8a6272b2ef8dbf",
+    "assets/bin/Data/da1cc5d8973ef9b429a3c3de4595a9f1": "718aca2fcad7aa56bb3cefa982faa9b65c70e7658f9a3d1fc70ab638130fff96",
+    "assets/bin/Data/fbabf6e2a2084f049acb48a677ef9c2f": "83d340296bcfa622a83c3ac68b2c8ebba663c91b0d677ce58ab420206e2354fa",
+    "assets/bin/Data/cfca7759a83b3c845b0eecb64ff9b403": "725f0a75f528e0c2730f6af6f433cd1771f18601a400b188502373dd8d7138d5"
+  },
+  "source_enemy_master_hash": "700614136",
+  "policy": "wolf-slime-compatibility-v1",
+  "apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+  "template_sha256": "fd55ee4e6759e305df0caf2f83960a946b78c66fb046652253b9aa487485fb44",
+  "scope": "Currently playable story and repaired events; input active model list required.",
+  "unchanged_existing": [
+    "ms01_sla_lv1",
+    "ms01_sla_lv1_gold",
+    "ms01_sla_lv4_gold"
+  ],
+  "bundles": [
+    {
+      "model": "ms01_sla_lv1_silver",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+      "source_sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9",
+      "bundle": "ms01_sla_lv1_silver.unity3d",
+      "sha256": "90f6953da20161897414af2674ce5d2da3715056debaff3fd31bb503ec8e09b1",
+      "internal_file": "CustomAssetBundle-5311c34ee1c0eea5cfcbc8a7ce39c358",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv1_silver": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+          "sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv2",
+      "source": "RTD_SERVER/resources/reconstructed/monsters/sources/original-sla-lv1.assets",
+      "source_sha256": "a8cdf5f13ad54b17aa1b423de38074d2fc0fe5dd569a90319c2543835ed1d8fa",
+      "bundle": "ms01_sla_lv2.unity3d",
+      "sha256": "ddd50c9c9245c4a8697ea5b0fc370c9144dcae5961e8385db91346265af4fd42",
+      "internal_file": "CustomAssetBundle-34c80745851bb70cb9a3c0ea76159fc1",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv2_fire": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_fire.assets",
+          "sha256": "6dda02a6bf2d31045f82d81f44fb1ad45e1264c70eab101009174b328510406e"
+        },
+        "ms01_sla_lv2_water": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_water.assets",
+          "sha256": "c78c2bc9fd6233e31fa245d73168d1104b6adb93dd07b646634e1006a87770aa"
+        },
+        "ms01_sla_lv2_holy": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_holy.assets",
+          "sha256": "992ea13bcd581d0fb9dee6eb306e3a9492e1afbcf49fd25e6a6e4204aa12c47a"
+        },
+        "ms01_sla_lv2_dark": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_dark.assets",
+          "sha256": "980653e162c282363e2765853470aee9b0ca1e895cf741f7589c8535c9e17162"
+        }
+      },
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred.",
+      "requested_textures": [
+        "ms01_sla_lv2_dark",
+        "ms01_sla_lv2_fire",
+        "ms01_sla_lv2_holy",
+        "ms01_sla_lv2_water"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv2_gold",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+      "source_sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9",
+      "bundle": "ms01_sla_lv2_gold.unity3d",
+      "sha256": "8c4b237f28c80b570738c77a2a2576d4e6b8e781d4f8f1cc8a271c51b4be0f12",
+      "internal_file": "CustomAssetBundle-a10df15a52e09d093db9d426b5c307c2",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv2_gold": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+          "sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv2_silver",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+      "source_sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9",
+      "bundle": "ms01_sla_lv2_silver.unity3d",
+      "sha256": "67bacbcd3a32a194f161c61f349ceb07612ce0f6d1841b23f1b2c6592fcee521",
+      "internal_file": "CustomAssetBundle-89213240a46d3272ae1dd2bdc77013d1",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv2_silver": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+          "sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv3",
+      "source": "RTD_SERVER/resources/reconstructed/monsters/sources/original-sla-lv1.assets",
+      "source_sha256": "a8cdf5f13ad54b17aa1b423de38074d2fc0fe5dd569a90319c2543835ed1d8fa",
+      "bundle": "ms01_sla_lv3.unity3d",
+      "sha256": "b8aef36e14b4829017f9134279e4f4118d418fc5a84b303445025bb79b4cdcc4",
+      "internal_file": "CustomAssetBundle-386d8a7b72ef11664b11382f5ced0153",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv3_fire": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_fire.assets",
+          "sha256": "6dda02a6bf2d31045f82d81f44fb1ad45e1264c70eab101009174b328510406e"
+        },
+        "ms01_sla_lv3_water": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_water.assets",
+          "sha256": "c78c2bc9fd6233e31fa245d73168d1104b6adb93dd07b646634e1006a87770aa"
+        },
+        "ms01_sla_lv3_holy": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_holy.assets",
+          "sha256": "992ea13bcd581d0fb9dee6eb306e3a9492e1afbcf49fd25e6a6e4204aa12c47a"
+        },
+        "ms01_sla_lv3_dark": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_dark.assets",
+          "sha256": "980653e162c282363e2765853470aee9b0ca1e895cf741f7589c8535c9e17162"
+        }
+      },
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred.",
+      "requested_textures": [
+        "ms01_sla_lv3_dark",
+        "ms01_sla_lv3_fire",
+        "ms01_sla_lv3_holy",
+        "ms01_sla_lv3_water"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv3_gold",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+      "source_sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9",
+      "bundle": "ms01_sla_lv3_gold.unity3d",
+      "sha256": "254362df59f2666178a9eed605d74b16c812b2e4d0941f89193ef0f2176f5ac9",
+      "internal_file": "CustomAssetBundle-d828b92156e25a7c353942578631af5c",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv3_gold": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+          "sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv3_silver",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+      "source_sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9",
+      "bundle": "ms01_sla_lv3_silver.unity3d",
+      "sha256": "18b9f9e26b15911ae97dbaa23247d6f432fcfe608891dbe0bda06dee543ae4e1",
+      "internal_file": "CustomAssetBundle-1d089b13892e3fcf1979d07cf6465ebd",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv3_silver": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv1_gold.unity3d",
+          "sha256": "a703046c85529b8712fcb203ae93d8b4e9420f78c99642ee6894d9168e6296e9"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv4",
+      "source": "RTD_SERVER/resources/reconstructed/monsters/sources/original-sla-lv1.assets",
+      "source_sha256": "a8cdf5f13ad54b17aa1b423de38074d2fc0fe5dd569a90319c2543835ed1d8fa",
+      "bundle": "ms01_sla_lv4.unity3d",
+      "sha256": "49c99880b24f2f919ce4a0c3eab497a8f8bdd4062e270ec4bd58ac0ab8376c03",
+      "internal_file": "CustomAssetBundle-a010ab89d868c67fdbce16a0c8ec0603",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv4_fire": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_fire.assets",
+          "sha256": "6dda02a6bf2d31045f82d81f44fb1ad45e1264c70eab101009174b328510406e"
+        },
+        "ms01_sla_lv4_water": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_water.assets",
+          "sha256": "c78c2bc9fd6233e31fa245d73168d1104b6adb93dd07b646634e1006a87770aa"
+        },
+        "ms01_sla_lv4_holy": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_holy.assets",
+          "sha256": "992ea13bcd581d0fb9dee6eb306e3a9492e1afbcf49fd25e6a6e4204aa12c47a"
+        },
+        "ms01_sla_lv4_dark": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_dark.assets",
+          "sha256": "980653e162c282363e2765853470aee9b0ca1e895cf741f7589c8535c9e17162"
+        }
+      },
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred.",
+      "requested_textures": [
+        "ms01_sla_lv4_dark",
+        "ms01_sla_lv4_fire",
+        "ms01_sla_lv4_holy",
+        "ms01_sla_lv4_water"
+      ]
+    },
+    {
+      "model": "ms01_sla_lv4_silver",
+      "source": "RTD_SERVER/resources/bundles/ms01_sla_lv4_gold.unity3d",
+      "source_sha256": "774b94c4e540af47b7d754428d63407ca6b64f26d1e5ad1bab94850c64ae53c7",
+      "bundle": "ms01_sla_lv4_silver.unity3d",
+      "sha256": "0fba7c8bd068d8fd26cd4d6d298c7113d4acd50fb7613282ef8a26aed5e3b002",
+      "internal_file": "CustomAssetBundle-c4f9534b9c7e83a4ad7ea8aa1ced2283",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_lv4_silver": {
+          "source": "RTD_SERVER/resources/bundles/ms01_sla_lv4_gold.unity3d",
+          "sha256": "774b94c4e540af47b7d754428d63407ca6b64f26d1e5ad1bab94850c64ae53c7"
+        }
+      },
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_sla_sh_water",
+      "source": "RTD_SERVER/resources/reconstructed/monsters/sources/original-sla-lv1.assets",
+      "source_sha256": "a8cdf5f13ad54b17aa1b423de38074d2fc0fe5dd569a90319c2543835ed1d8fa",
+      "bundle": "ms01_sla_sh_water.unity3d",
+      "sha256": "8bf3329a45c8f12425d0ffc75ae497d76f1fb85fe04482f66c0bc8dc10a084b8",
+      "internal_file": "CustomAssetBundle-6a4c0166dd89aad20b0af2dd76453ecd",
+      "vertices": 18,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_sla_sh_water": {
+          "source": "RTD_SERVER/resources/reconstructed/monsters/sources/ms01_sla_lv1_water.assets",
+          "sha256": "c78c2bc9fd6233e31fa245d73168d1104b6adb93dd07b646634e1006a87770aa"
+        }
+      },
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred.",
+      "requested_textures": [
+        "na"
+      ]
+    },
+    {
+      "model": "ms01_wolf_lv1",
+      "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_f_01.unity3d",
+      "source_sha256": "1ec20a579b8d4cead2073a8534a9ffcc28657b1dae8bba15fde7bcbebb8f11a5",
+      "bundle": "ms01_wolf_lv1.unity3d",
+      "sha256": "34eaa4dd83a70ebf9a9d2bc83140e24d62b9b19b88c1ab574c50661b6f8dc7f8",
+      "internal_file": "CustomAssetBundle-332732d57b7c79d8b381aa45c63addae",
+      "vertices": 80,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_lv1_fire": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_f_01.unity3d",
+          "sha256": "1ec20a579b8d4cead2073a8534a9ffcc28657b1dae8bba15fde7bcbebb8f11a5"
+        },
+        "ms01_wolf_lv1_water": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_w_01.unity3d",
+          "sha256": "27e75d19622e3b16005257e657217d56516f24fcd719e0bb0436479f9b13bc4c"
+        },
+        "ms01_wolf_lv1_holy": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_h_01.unity3d",
+          "sha256": "9fd1ddac74f80f3d489a5cbd83895a62998a3296dd9a10f98d302ac284724e9c"
+        },
+        "ms01_wolf_lv1_dark": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_d_01.unity3d",
+          "sha256": "a0035152dd0dd24260cf924b3de22ca7568c849163f4431e6a4f8beb9de743aa"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "ms01_wolf_lv1_dark",
+        "ms01_wolf_lv1_fire",
+        "ms01_wolf_lv1_holy",
+        "ms01_wolf_lv1_water"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 52,
+          "strip_indices": 309,
+          "decoded_triangles": 52,
+          "oriented_triangle_equality": true,
+          "max_index": 79,
+          "vertices": 80
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_lv1",
+          "ms01_wolf_lv1_dark",
+          "ms01_wolf_lv1_fire",
+          "ms01_wolf_lv1_holy",
+          "ms01_wolf_lv1_water"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "330_ms01_wolf_lv1_f_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "ms01_wolf_lv1_f_01"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 65,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_lv2",
+      "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_f_01.unity3d",
+      "source_sha256": "1ec20a579b8d4cead2073a8534a9ffcc28657b1dae8bba15fde7bcbebb8f11a5",
+      "bundle": "ms01_wolf_lv2.unity3d",
+      "sha256": "f1b6f2a20a76adcc425cb7f73a48d14ab82e5c87e4bdd2f9c50e8ad1736447c1",
+      "internal_file": "CustomAssetBundle-e357f90a09b415a41538273804219b8c",
+      "vertices": 80,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_lv2_fire": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_f_01.unity3d",
+          "sha256": "1ec20a579b8d4cead2073a8534a9ffcc28657b1dae8bba15fde7bcbebb8f11a5"
+        },
+        "ms01_wolf_lv2_water": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_w_01.unity3d",
+          "sha256": "27e75d19622e3b16005257e657217d56516f24fcd719e0bb0436479f9b13bc4c"
+        },
+        "ms01_wolf_lv2_holy": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_h_01.unity3d",
+          "sha256": "9fd1ddac74f80f3d489a5cbd83895a62998a3296dd9a10f98d302ac284724e9c"
+        },
+        "ms01_wolf_lv2_dark": {
+          "source": "resources/unpacked/assets/assets/quest/330_ms01_wolf_lv1_d_01.unity3d",
+          "sha256": "a0035152dd0dd24260cf924b3de22ca7568c849163f4431e6a4f8beb9de743aa"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "ms01_wolf_lv2_dark",
+        "ms01_wolf_lv2_fire",
+        "ms01_wolf_lv2_holy",
+        "ms01_wolf_lv2_water"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 52,
+          "strip_indices": 309,
+          "decoded_triangles": 52,
+          "oriented_triangle_equality": true,
+          "max_index": 79,
+          "vertices": 80
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_lv2",
+          "ms01_wolf_lv2_dark",
+          "ms01_wolf_lv2_fire",
+          "ms01_wolf_lv2_holy",
+          "ms01_wolf_lv2_water"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "330_ms01_wolf_lv1_f_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "ms01_wolf_lv1_f_01"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 65,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_lv3",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+      "source_sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581",
+      "bundle": "ms01_wolf_lv3.unity3d",
+      "sha256": "6b8d044dc450971aa451ae1a40c7be1a8d33421de157e45fc1215e87e966acd9",
+      "internal_file": "CustomAssetBundle-e7367422a1ef94af35c48e21abfba97a",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_lv3_fire": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+          "sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581"
+        },
+        "ms01_wolf_lv3_water": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_w_01.unity3d",
+          "sha256": "7df929396f60367c36c905e775ce1f76df3fc78c564d59ab3e024f3d232d25fd"
+        },
+        "ms01_wolf_lv3_holy": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_h_01.unity3d",
+          "sha256": "e28d8f56d6053e40eefc283429b68b1893ff37c3a1b1fd43e48c1a3e3b4d6354"
+        },
+        "ms01_wolf_lv3_dark": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_d_01.unity3d",
+          "sha256": "8277fb3cfe4d59b66564e9185eb89264eeae6ce64854f915799019ceb13b45d4"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "ms01_wolf_lv3_dark",
+        "ms01_wolf_lv3_fire",
+        "ms01_wolf_lv3_holy",
+        "ms01_wolf_lv3_water"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_lv3",
+          "ms01_wolf_lv3_dark",
+          "ms01_wolf_lv3_fire",
+          "ms01_wolf_lv3_holy",
+          "ms01_wolf_lv3_water"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 65,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_lv4",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+      "source_sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581",
+      "bundle": "ms01_wolf_lv4.unity3d",
+      "sha256": "864348823675e5fb08b333ceae692e8d94228b5308041b220ba7d3513204a45f",
+      "internal_file": "CustomAssetBundle-2f751037d2eba857f6eb8c4e331a0cf5",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_lv4_fire": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+          "sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581"
+        },
+        "ms01_wolf_lv4_water": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_w_01.unity3d",
+          "sha256": "7df929396f60367c36c905e775ce1f76df3fc78c564d59ab3e024f3d232d25fd"
+        },
+        "ms01_wolf_lv4_holy": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_h_01.unity3d",
+          "sha256": "e28d8f56d6053e40eefc283429b68b1893ff37c3a1b1fd43e48c1a3e3b4d6354"
+        },
+        "ms01_wolf_lv4_dark": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_d_01.unity3d",
+          "sha256": "8277fb3cfe4d59b66564e9185eb89264eeae6ce64854f915799019ceb13b45d4"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "ms01_wolf_lv4_dark",
+        "ms01_wolf_lv4_fire",
+        "ms01_wolf_lv4_holy",
+        "ms01_wolf_lv4_water"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_lv4",
+          "ms01_wolf_lv4_dark",
+          "ms01_wolf_lv4_fire",
+          "ms01_wolf_lv4_holy",
+          "ms01_wolf_lv4_water"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 65,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_sh_dark",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_d_01.unity3d",
+      "source_sha256": "8277fb3cfe4d59b66564e9185eb89264eeae6ce64854f915799019ceb13b45d4",
+      "bundle": "ms01_wolf_sh_dark.unity3d",
+      "sha256": "520e6388b0dfcb12615a46d3aecc6c8c3932008e28904096c49dd3f7e4523a2b",
+      "internal_file": "CustomAssetBundle-1034ae9acb08680029b1456267f0600d",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_sh_dark": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_d_01.unity3d",
+          "sha256": "8277fb3cfe4d59b66564e9185eb89264eeae6ce64854f915799019ceb13b45d4"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "na"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_sh_dark",
+          "ms01_wolf_sh_dark"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_d_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 58,
+          "type": "GameObject",
+          "name": "_ms01_wolf_d_01"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 109,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 62,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        57
+      ]
+    },
+    {
+      "model": "ms01_wolf_sh_fire",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+      "source_sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581",
+      "bundle": "ms01_wolf_sh_fire.unity3d",
+      "sha256": "32aa6e66b75fb769ba5f3400ceb35b163ca2efa30ff2292e831902086431e30b",
+      "internal_file": "CustomAssetBundle-c28e378dae0e22625a6d65bf8718dccf",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_sh_fire": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_f_01.unity3d",
+          "sha256": "dd5ef29e9bc041984f131ef8a4bc5f43747f7e672eddbbfda9e5a547add78581"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "na"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_sh_fire",
+          "ms01_wolf_sh_fire"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "_ms01_wolf_f_01"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 62,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_sh_holy",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_h_01.unity3d",
+      "source_sha256": "e28d8f56d6053e40eefc283429b68b1893ff37c3a1b1fd43e48c1a3e3b4d6354",
+      "bundle": "ms01_wolf_sh_holy.unity3d",
+      "sha256": "39b75f1f526d2e3ac46c6b92a2e633a7757b290877b56584425ebc1f8a94ee5e",
+      "internal_file": "CustomAssetBundle-775c95ee192cfd81426167677698098e",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_sh_holy": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_h_01.unity3d",
+          "sha256": "e28d8f56d6053e40eefc283429b68b1893ff37c3a1b1fd43e48c1a3e3b4d6354"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "na"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_sh_holy",
+          "ms01_wolf_sh_holy"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_h_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "_ms01_wolf_h_01"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 62,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    },
+    {
+      "model": "ms01_wolf_sh_water",
+      "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_w_01.unity3d",
+      "source_sha256": "7df929396f60367c36c905e775ce1f76df3fc78c564d59ab3e024f3d232d25fd",
+      "bundle": "ms01_wolf_sh_water.unity3d",
+      "sha256": "c878dbaea616678e28b000e58d4d8f02380fded9391ac7ed2831cc06fb96f948",
+      "internal_file": "CustomAssetBundle-43b3eb847ea29d06f6345e7fae284403",
+      "vertices": 192,
+      "mesh_roundtrip": true,
+      "missing_pointers": [],
+      "missing_motion_paths": [],
+      "texture_roundtrip": true,
+      "textures": {
+        "ms01_wolf_sh_water": {
+          "source": "resources/unpacked/assets/assets/quest/550_ms01_wolf_w_01.unity3d",
+          "sha256": "7df929396f60367c36c905e775ce1f76df3fc78c564d59ab3e024f3d232d25fd"
+        }
+      },
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling. v2 strip-topology compatibility experiment; runtime display and settlement not verified. v3 exports only dependency closure; removed unrelated active source scene copies. Runtime debris and settlement not yet verified. v4 matches native Unity 3.5 GameObject activation flags; mesh, animation and texture bytes unchanged. Extra source-prototype display remains pending runtime test.",
+      "requested_textures": [
+        "na"
+      ],
+      "policy": "wolf-native-activation-v4",
+      "strip_validation": [
+        {
+          "triangles": 124,
+          "strip_indices": 741,
+          "decoded_triangles": 124,
+          "oriented_triangle_equality": true,
+          "max_index": 191,
+          "vertices": 192
+        }
+      ],
+      "runtime_verified": false,
+      "reference_coverage": {
+        "expected": [
+          "ast_ms01_wolf_sh_water",
+          "ms01_wolf_sh_water"
+        ],
+        "missing": []
+      },
+      "removed_objects": [
+        {
+          "path_id": 9,
+          "type": "GameObject",
+          "name": "550_ms01_wolf_w_01"
+        },
+        {
+          "path_id": 11,
+          "type": "GameObject",
+          "name": "_ms01_wolf_w_01"
+        },
+        {
+          "path_id": 13,
+          "type": "GameObject",
+          "name": "en_c_head"
+        },
+        {
+          "path_id": 15,
+          "type": "GameObject",
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 17,
+          "type": "GameObject",
+          "name": "en_l_ankle"
+        },
+        {
+          "path_id": 19,
+          "type": "GameObject",
+          "name": "en_l_wrist"
+        },
+        {
+          "path_id": 21,
+          "type": "GameObject",
+          "name": "en_r_ankle"
+        },
+        {
+          "path_id": 23,
+          "type": "GameObject",
+          "name": "en_r_wrist"
+        },
+        {
+          "path_id": 25,
+          "type": "GameObject",
+          "name": "mn_c_chest"
+        },
+        {
+          "path_id": 27,
+          "type": "GameObject",
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 29,
+          "type": "GameObject",
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 31,
+          "type": "GameObject",
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 33,
+          "type": "GameObject",
+          "name": "mn_l_ankle"
+        },
+        {
+          "path_id": 35,
+          "type": "GameObject",
+          "name": "mn_l_elbow"
+        },
+        {
+          "path_id": 37,
+          "type": "GameObject",
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 39,
+          "type": "GameObject",
+          "name": "mn_l_knee"
+        },
+        {
+          "path_id": 41,
+          "type": "GameObject",
+          "name": "mn_l_shoulder"
+        },
+        {
+          "path_id": 43,
+          "type": "GameObject",
+          "name": "mn_l_wrist"
+        },
+        {
+          "path_id": 45,
+          "type": "GameObject",
+          "name": "mn_r_ankle"
+        },
+        {
+          "path_id": 47,
+          "type": "GameObject",
+          "name": "mn_r_elbow"
+        },
+        {
+          "path_id": 49,
+          "type": "GameObject",
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 51,
+          "type": "GameObject",
+          "name": "mn_r_knee"
+        },
+        {
+          "path_id": 53,
+          "type": "GameObject",
+          "name": "mn_r_shoulder"
+        },
+        {
+          "path_id": 55,
+          "type": "GameObject",
+          "name": "mn_r_wrist"
+        },
+        {
+          "path_id": 57,
+          "type": "GameObject",
+          "name": "move"
+        },
+        {
+          "path_id": 60,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 62,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 64,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 66,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 68,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 70,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 72,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 74,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 76,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 78,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 80,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 82,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 84,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 86,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 88,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 90,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 92,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 94,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 96,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 98,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 100,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 102,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 104,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 106,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 108,
+          "type": "Transform",
+          "name": null
+        },
+        {
+          "path_id": 111,
+          "type": "Animation",
+          "name": null
+        },
+        {
+          "path_id": 114,
+          "type": "SkinnedMeshRenderer",
+          "name": null
+        }
+      ],
+      "retained_objects": 62,
+      "retained_object_bytes_unchanged": false,
+      "non_gameobject_bytes_unchanged": true,
+      "only_gameobject_activation_changed": true,
+      "activation_flag": 0,
+      "activation_changed_gameobject_ids": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58
+      ]
+    }
+  ],
+  "wolf_revision": "wolf-native-activation-v4"
+}

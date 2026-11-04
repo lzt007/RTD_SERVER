@@ -63,6 +63,9 @@ class API:
             self.reconstructed_quests=set(self.event_reconstruction['ready_quests'])
             self.event_quests=baseline|self.reconstructed_quests
             self.event_rejections.update({int(k):v for k,v in self.event_reconstruction['blocked'].items()})
+        from ..policies.monster_recovery import apply_monster_recovery
+        self.monster_recovery=apply_monster_recovery(self.masters,self.levels,
+            (single_quests(self)|layer_quests(self)|{10000})-self.blocked_quests)
         configurable=(single_quests(self)|layer_quests(self))-{10001}
         self.operations=Operations(self.store,self.masters,lambda:load_pools(self.masters)[0],
             event_quests=configurable-self.blocked_quests,reconstructed_quests=self.reconstructed_quests,reconstructed_levels=self.levels,

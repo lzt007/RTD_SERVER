@@ -1,0 +1,1518 @@
+{
+  "policy": "wolf-slime-compatibility-v1",
+  "substitutions": [
+    {
+      "enemy_id": 10010,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_fire"
+      },
+      "quest_ids": [
+        11010,
+        11050,
+        11052,
+        11103,
+        20791,
+        20810,
+        25074
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10011,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_water"
+      },
+      "quest_ids": [
+        11020,
+        11050,
+        11101,
+        20781,
+        20791,
+        25077
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10012,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_holy"
+      },
+      "quest_ids": [
+        11030,
+        11052,
+        11102,
+        13207,
+        20781,
+        20791,
+        20831,
+        25062
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10013,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2",
+        "texture": "ms01_sla_lv2_dark"
+      },
+      "quest_ids": [
+        11040,
+        11100,
+        20788,
+        20791,
+        20806,
+        25080
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10020,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_fire"
+      },
+      "quest_ids": [
+        11103,
+        11110,
+        11130,
+        20112,
+        20132,
+        20152,
+        20810,
+        25075
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10021,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_water"
+      },
+      "quest_ids": [
+        11101,
+        11120,
+        11130,
+        20122,
+        20132,
+        20152,
+        25078
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10022,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_holy"
+      },
+      "quest_ids": [
+        11102,
+        11110,
+        11120,
+        11130,
+        20112,
+        20162,
+        25063
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10023,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_dark"
+      },
+      "quest_ids": [
+        11100,
+        11110,
+        11120,
+        20122,
+        20162,
+        25081
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10030,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "quest_ids": [
+        11140,
+        12010,
+        12030,
+        12201,
+        13010,
+        13101,
+        20112,
+        20132,
+        20152,
+        25073,
+        25074,
+        25075
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10031,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "quest_ids": [
+        11140,
+        12020,
+        12030,
+        12201,
+        13101,
+        20122,
+        20132,
+        20152,
+        25076,
+        25077,
+        25078
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10032,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "quest_ids": [
+        12040,
+        12060,
+        12201,
+        13000,
+        13010,
+        13020,
+        13101,
+        20112,
+        20162,
+        20765,
+        20832,
+        25061,
+        25062,
+        25063
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10033,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "quest_ids": [
+        11140,
+        12000,
+        12040,
+        12201,
+        13020,
+        13101,
+        20122,
+        20162,
+        20832,
+        25079,
+        25080,
+        25081
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10037,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "quest_ids": [
+        20141
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10038,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "quest_ids": [
+        20141
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10041,
+      "before": {
+        "model": "ms01_sla_lv1_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_sh_water",
+        "texture": "na"
+      },
+      "quest_ids": [
+        20754
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 10200,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_fire"
+      },
+      "quest_ids": [
+        11012,
+        11051,
+        12009,
+        12203,
+        20151,
+        20750,
+        20840,
+        20844
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10201,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_water"
+      },
+      "quest_ids": [
+        11022,
+        11051,
+        11052,
+        12019,
+        20101,
+        20151,
+        20809
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10202,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_holy"
+      },
+      "quest_ids": [
+        11032,
+        11051,
+        11053,
+        12059,
+        12203,
+        13207,
+        20151,
+        20775,
+        20807,
+        20833
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10203,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv1",
+        "texture": "ms01_wolf_lv1_dark"
+      },
+      "quest_ids": [
+        11042,
+        11051,
+        11052,
+        11053,
+        11999,
+        20101,
+        20151,
+        20775,
+        20833,
+        25079
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10210,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_fire"
+      },
+      "quest_ids": [
+        11012,
+        11051,
+        11103,
+        11111,
+        11113,
+        11131,
+        11142,
+        20131,
+        20151,
+        20751,
+        20845
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10211,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_water"
+      },
+      "quest_ids": [
+        11022,
+        11051,
+        11052,
+        11101,
+        11121,
+        11123,
+        11131,
+        11142,
+        20101,
+        20131,
+        20151,
+        20809,
+        20951,
+        25071
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10212,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_holy"
+      },
+      "quest_ids": [
+        11032,
+        11051,
+        11053,
+        11102,
+        11111,
+        11113,
+        11121,
+        11123,
+        11131,
+        13208,
+        20151,
+        20807
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10213,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv2",
+        "texture": "ms01_wolf_lv2_dark"
+      },
+      "quest_ids": [
+        11042,
+        11051,
+        11052,
+        11053,
+        11100,
+        11111,
+        11113,
+        11121,
+        11123,
+        11142,
+        20101,
+        20151,
+        20789,
+        20831,
+        20951,
+        25071,
+        25080
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 330 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10220,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_fire"
+      },
+      "quest_ids": [
+        11130,
+        11140,
+        11142,
+        20112,
+        20845,
+        25075
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10221,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_water"
+      },
+      "quest_ids": [
+        11130,
+        11140,
+        11142,
+        20782,
+        25077
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10222,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_holy"
+      },
+      "quest_ids": [
+        11130,
+        13208,
+        20112,
+        20142,
+        20764,
+        20782
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10223,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv3",
+        "texture": "ms01_wolf_lv3_dark"
+      },
+      "quest_ids": [
+        11140,
+        11142,
+        20142,
+        20789
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10230,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "quest_ids": [
+        12010,
+        12011,
+        12030,
+        12031,
+        12050,
+        12051,
+        12061,
+        12171,
+        12192,
+        13010,
+        13011,
+        20112,
+        20752,
+        20846
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10231,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_water"
+      },
+      "quest_ids": [
+        11101,
+        12001,
+        12020,
+        12021,
+        12030,
+        12031,
+        12050,
+        12051,
+        12171,
+        12192,
+        25078
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10232,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "quest_ids": [
+        12011,
+        12040,
+        12041,
+        12050,
+        12051,
+        12060,
+        12061,
+        12171,
+        12192,
+        13000,
+        13001,
+        13010,
+        13011,
+        20112,
+        20142,
+        20765,
+        20776
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10233,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "quest_ids": [
+        12000,
+        12001,
+        12021,
+        12040,
+        12041,
+        12050,
+        12051,
+        12171,
+        12192,
+        20142,
+        20776
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10235,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_sh_fire",
+        "texture": "na"
+      },
+      "quest_ids": [
+        20846
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10239,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_sh_fire",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12223
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10240,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_sh_water",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12223
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10241,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_sh_holy",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12223
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 10242,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_sh_dark",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12223
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 12100,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv1_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11012,
+        11022,
+        11032,
+        11042
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12101,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11052
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12102,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11053,
+        11103,
+        12000,
+        12010,
+        12020,
+        12030,
+        12040,
+        12050,
+        12060,
+        13010,
+        20100,
+        20110,
+        20120,
+        20130,
+        20140,
+        20150,
+        20160,
+        20161
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12103,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12002,
+        12012,
+        12022,
+        12032,
+        12042,
+        12052,
+        12062,
+        13012,
+        20102,
+        20112,
+        20122,
+        20132,
+        20142,
+        20152,
+        20162,
+        20502,
+        20514,
+        20801
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12104,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv1_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11999,
+        12009,
+        12019,
+        12029,
+        12039,
+        12049,
+        12059,
+        13206,
+        20951,
+        25061,
+        25071,
+        25073,
+        25076,
+        25079
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12105,
+      "before": {
+        "model": "ms01_sla_lv1_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        20840,
+        20841,
+        20842,
+        20843,
+        25062,
+        25074,
+        25077,
+        25080
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12106,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12191,
+        12194,
+        12197,
+        12200,
+        12203,
+        13020,
+        13207,
+        20750,
+        20754,
+        20763,
+        20775,
+        20781,
+        20788,
+        20791,
+        20806,
+        20809,
+        20830,
+        20844,
+        25063,
+        25075,
+        25078,
+        25081
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12107,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12000,
+        12010,
+        12020,
+        12030,
+        12040,
+        12050,
+        12060,
+        12192,
+        12193,
+        12196,
+        12199,
+        12202,
+        12204,
+        13010,
+        13013,
+        13014,
+        13020,
+        13022,
+        13101,
+        20751,
+        20755,
+        20764,
+        20776,
+        20782,
+        20789,
+        20792,
+        20807,
+        20810,
+        20831,
+        20840,
+        20841,
+        20842,
+        20843,
+        20845,
+        20951,
+        25071
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12110,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12173,
+        12174,
+        12176,
+        12177,
+        12179,
+        12180,
+        12182,
+        12183
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12201,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11112,
+        11122,
+        11132,
+        11142,
+        13001
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 12202,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        11113,
+        11123,
+        11133,
+        11143,
+        12001,
+        12011,
+        12021,
+        12031,
+        12041,
+        12051,
+        12061,
+        13002,
+        13011,
+        20101,
+        20111,
+        20121,
+        20131,
+        20141,
+        20151
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 12206,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12195,
+        12198,
+        12201,
+        13021
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 12210,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12175,
+        12178,
+        12181,
+        12184
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 12212,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4_silver",
+        "texture": "na"
+      },
+      "quest_ids": [
+        12173,
+        12174,
+        12176,
+        12177,
+        12179,
+        12180,
+        12182,
+        12183
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred grayscale silver palette, not recovered original silver artwork."
+    },
+    {
+      "enemy_id": 12329,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "quest_ids": [
+        12029
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 12330,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "quest_ids": [
+        12039
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 12331,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "quest_ids": [
+        12049
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 14230,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "quest_ids": [
+        12012,
+        12062,
+        12199,
+        13013,
+        13014,
+        20846
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 14231,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_water"
+      },
+      "quest_ids": [
+        12002,
+        12022,
+        12199,
+        12209,
+        13013
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 14232,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "quest_ids": [
+        12012,
+        12062,
+        12199,
+        13002,
+        13013,
+        13014,
+        13022,
+        13030,
+        13031
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 14233,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "quest_ids": [
+        12002,
+        12022,
+        12199,
+        12209,
+        13014,
+        13022
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 14242,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_holy"
+      },
+      "quest_ids": [
+        20141
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 14243,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_dark"
+      },
+      "quest_ids": [
+        20141
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    },
+    {
+      "enemy_id": 40133,
+      "before": {
+        "model": "ms01_sla_lv1_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv2_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        20501,
+        20513,
+        20800
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 40134,
+      "before": {
+        "model": "ms01_sla_lv4_gold",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv3_gold",
+        "texture": "na"
+      },
+      "quest_ids": [
+        20501,
+        20513,
+        20800
+      ],
+      "inferred": true,
+      "reason": "Original gold slime geometry; inferred reuse for missing level variant."
+    },
+    {
+      "enemy_id": 41221,
+      "before": {
+        "model": "ms01_sla_lv1",
+        "texture": "ms01_sla_lv1_fire"
+      },
+      "after": {
+        "model": "ms01_sla_lv3",
+        "texture": "ms01_sla_lv3_fire"
+      },
+      "quest_ids": [
+        11000
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 41224,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_fire"
+      },
+      "quest_ids": [
+        11010
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 41227,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_water"
+      },
+      "quest_ids": [
+        11020
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 41230,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_holy"
+      },
+      "quest_ids": [
+        11030
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 41233,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_sla_lv4",
+        "texture": "ms01_sla_lv4_dark"
+      },
+      "quest_ids": [
+        11040
+      ],
+      "inferred": true,
+      "reason": "Original APK normal Lv1 slime geometry and matching original attribute texture reused for missing variant; level appearance inferred."
+    },
+    {
+      "enemy_id": 41237,
+      "before": {
+        "model": "ms02_four_un_01_zako",
+        "texture": "na"
+      },
+      "after": {
+        "model": "ms01_wolf_lv4",
+        "texture": "ms01_wolf_lv4_fire"
+      },
+      "quest_ids": [
+        11051
+      ],
+      "inferred": true,
+      "reason": "Recovered wolf 550 design; legacy level/special-design correspondence inferred; no gameplay scaling."
+    }
+  ],
+  "available_models": [
+    "ms01_sla_lv1_silver",
+    "ms01_sla_lv2",
+    "ms01_sla_lv2_gold",
+    "ms01_sla_lv2_silver",
+    "ms01_sla_lv3",
+    "ms01_sla_lv3_gold",
+    "ms01_sla_lv3_silver",
+    "ms01_sla_lv4",
+    "ms01_sla_lv4_silver",
+    "ms01_sla_sh_water",
+    "ms01_wolf_lv1",
+    "ms01_wolf_lv2",
+    "ms01_wolf_lv3",
+    "ms01_wolf_lv4",
+    "ms01_wolf_sh_dark",
+    "ms01_wolf_sh_fire",
+    "ms01_wolf_sh_holy",
+    "ms01_wolf_sh_water"
+  ],
+  "derived_hash": "1953008314"
+}

@@ -1,0 +1,2197 @@
+B	ms00_book_el_01	1	Android/V1011
+B	ms00_book_el_02	1	Android/V1011
+B	ms00_book_el_03	1	Android/V1011
+B	ms00_book_el_04	1	Android/V1011
+B	ms00_book_el_05	1	Android/V1011
+B	ms00_book_el_06	1	Android/V1011
+B	ms00_death_01	1	Android/V1011
+B	ms00_death_01_zako	1	Android/V1011
+B	ms00_death_shadow	1	Android/V1011
+B	ms00_death_shadow_zako	1	Android/V1011
+B	ms00_floor_move_l	1	Android/V1011
+B	ms00_floor_move_r	1	Android/V1011
+B	ms00_floor_move_s	1	Android/V1011
+B	ms00_kaidan_iseki	1	Android/V1011
+B	ms00_kaidan_tower	1	Android/V1011
+B	ms01_bear_lv1	1	Android/V1011
+B	ms01_bear_lv2	1	Android/V1011
+B	ms01_bear_lv3	1	Android/V1011
+B	ms01_bear_lv4	1	Android/V1011
+B	ms01_bear_sh_dark	1	Android/V1011
+B	ms01_bear_sh_fire	1	Android/V1011
+B	ms01_bear_sh_holy	1	Android/V1011
+B	ms01_bear_sh_water	1	Android/V1011
+B	ms01_bird_lv1_dark	1	Android/V1011
+B	ms01_bird_lv1_fire	1	Android/V1011
+B	ms01_bird_lv1_holy	1	Android/V1011
+B	ms01_bird_lv1_water	1	Android/V1011
+B	ms01_bird_lv2_dark	1	Android/V1011
+B	ms01_bird_lv2_fire	1	Android/V1011
+B	ms01_bird_lv2_holy	1	Android/V1011
+B	ms01_bird_lv2_water	1	Android/V1011
+B	ms01_crab_lv1_dark	1	Android/V1011
+B	ms01_crab_lv1_fire	1	Android/V1011
+B	ms01_crab_lv1_holy	1	Android/V1011
+B	ms01_crab_lv1_water	1	Android/V1011
+B	ms01_crab_lv2_dark	1	Android/V1011
+B	ms01_crab_lv2_fire	1	Android/V1011
+B	ms01_crab_lv2_holy	1	Android/V1011
+B	ms01_crab_lv2_water	1	Android/V1011
+B	ms01_dra_lv1	1	Android/V1011
+B	ms01_dra_lv2	1	Android/V1011
+B	ms01_dra_lv3	1	Android/V1011
+B	ms01_dra_lv4	1	Android/V1011
+B	ms01_dra_sh_dark	2	Android/V1012
+B	ms01_dra_sh_fire	2	Android/V1012
+B	ms01_dra_sh_holy	2	Android/V1012
+B	ms01_dra_sh_water	2	Android/V1012
+B	ms01_golem_dark	2	Android/V1012
+B	ms01_golem_fire	2	Android/V1012
+B	ms01_golem_holy	2	Android/V1012
+B	ms01_golem_water	2	Android/V1012
+B	ms01_golem_un	1	Android/V1011
+B	ms01_mind_dark	1	Android/V1011
+B	ms01_mind_fire	1	Android/V1011
+B	ms01_mind_holy	1	Android/V1011
+B	ms01_mind_water	1	Android/V1011
+B	ms01_sco_lv1	1	Android/V1011
+B	ms01_sco_lv2	1	Android/V1011
+B	ms01_sco_lv3	1	Android/V1011
+B	ms01_sco_lv4	1	Android/V1011
+B	ms01_sco_sh_dark	1	Android/V1011
+B	ms01_sco_sh_fire	1	Android/V1011
+B	ms01_sco_sh_holy	1	Android/V1011
+B	ms01_sco_sh_water	1	Android/V1011
+B	ms01_sla_lv1_gold	1	Android/V1011
+B	ms01_sla_lv1_silver	1	Android/V1011
+B	ms01_sla_lv2	1	Android/V1011
+B	ms01_sla_lv2_gold	1	Android/V1011
+B	ms01_sla_lv2_silver	1	Android/V1011
+B	ms01_sla_lv3	1	Android/V1011
+B	ms01_sla_lv3_gold	1	Android/V1011
+B	ms01_sla_lv3_silver	1	Android/V1011
+B	ms01_sla_lv4	1	Android/V1011
+B	ms01_sla_lv4_gold	1	Android/V1011
+B	ms01_sla_lv4_silver	1	Android/V1011
+B	ms01_sla_sh_dark	1	Android/V1011
+B	ms01_sla_sh_fire	1	Android/V1011
+B	ms01_sla_sh_holy	1	Android/V1011
+B	ms01_sla_sh_water	1	Android/V1011
+B	ms01_squ_lv2	1	Android/V1011
+B	ms01_squ_lv3	1	Android/V1011
+B	ms01_squ_lv4	1	Android/V1011
+B	ms01_squ_sh_dark	1	Android/V1011
+B	ms01_squ_sh_fire	1	Android/V1011
+B	ms01_squ_sh_holy	1	Android/V1011
+B	ms01_squ_sh_water	1	Android/V1011
+B	ms01_wolf_lv1	1	Android/V1011
+B	ms01_wolf_lv2	1	Android/V1011
+B	ms01_wolf_lv3	1	Android/V1011
+B	ms01_wolf_lv4	1	Android/V1011
+B	ms01_wolf_sh_dark	1	Android/V1011
+B	ms01_wolf_sh_fire	1	Android/V1011
+B	ms01_wolf_sh_holy	1	Android/V1011
+B	ms01_wolf_sh_water	1	Android/V1011
+B	ms02_dra_dark_01	1	Android/V1011
+B	ms02_dra_fire_01	1	Android/V1011
+B	ms02_dra_holy_01	1	Android/V1011
+B	ms02_dra_water_01	1	Android/V1011
+B	ms02_dra_un_02	1	Android/V1011
+B	ms02_dra_un_03	1	Android/V1011
+B	ms02_dra_un_04	1	Android/V1011
+B	ms02_four_dark_01	1	Android/V1011
+B	ms02_four_dark_01_zako	1	Android/V1011
+B	ms02_four_fire_01	1	Android/V1011
+B	ms02_four_fire_01_zako	1	Android/V1011
+B	ms02_four_holy_01	1	Android/V1011
+B	ms02_four_holy_01_zako	1	Android/V1011
+B	ms02_four_water_01	1	Android/V1011
+B	ms02_four_water_01_zako	1	Android/V1011
+B	ms02_four_un_01_zako	1	Android/V1011
+B	ms02_four_un_02	1	Android/V1011
+B	ms02_four_un_03	1	Android/V1011
+B	ms02_four_un_04	1	Android/V1011
+B	ms03_dra_dark_01	1	Android/V1011
+B	ms03_dra_fire_01	1	Android/V1011
+B	ms03_dra_holy_01	1	Android/V1011
+B	ms03_dra_water_01	1	Android/V1011
+B	ms03_dra_un_01	1	Android/V1011
+B	ms03_dra_un_02	1	Android/V1011
+B	ms03_dra_un_03	1	Android/V1011
+B	ms03_fly_dark_01	1	Android/V1011
+B	ms03_fly_fire_01	5	Android/V1015
+B	ms03_fly_holy_01	1	Android/V1011
+B	ms03_fly_water_01	1	Android/V1011
+B	ms03_fly_un_01	1	Android/V1011
+B	ms03_fly_un_02	1	Android/V1011
+B	ms03_fly_un_03	1	Android/V1011
+B	ms03_four_dark_01	1	Android/V1011
+B	ms03_four_fire_01	1	Android/V1011
+B	ms03_four_holy_01	1	Android/V1011
+B	ms03_four_water_01	1	Android/V1011
+B	ms03_four_un_01	1	Android/V1011
+B	ms03_four_un_02	1	Android/V1011
+B	ms03_four_un_03	1	Android/V1011
+B	ms03_four_un_04	1	Android/V1011
+B	ms03_mind_01	1	Android/V1011
+B	ms04_legend_01	1	Android/V1011
+B	ms04_legend_02	1	Android/V1011
+B	ms04_legend_ev_sakura	1	Android/V1011
+B	ms05_ryu_01	1	Android/V1011
+B	ms01_fish_dark	5	Android/V1015
+B	ms01_fish_fire	5	Android/V1015
+B	ms01_fish_holy	5	Android/V1015
+B	ms01_fish_water	5	Android/V1015
+B	ms01_fish_un	5	Android/V1015
+B	ms01_fugu_lv1_dark	5	Android/V1015
+B	ms01_fugu_lv1_fire	5	Android/V1015
+B	ms01_fugu_lv1_holy	5	Android/V1015
+B	ms01_fugu_lv1_water	5	Android/V1015
+B	ms01_fugu_lv2_dark	5	Android/V1015
+B	ms01_fugu_lv2_fire	5	Android/V1015
+B	ms01_fugu_lv2_holy	5	Android/V1015
+B	ms01_fugu_lv2_water	5	Android/V1015
+B	ms01_tatu_lv1_dark	5	Android/V1015
+B	ms01_tatu_lv1_fire	5	Android/V1015
+B	ms01_tatu_lv1_holy	5	Android/V1015
+B	ms01_tatu_lv1_water	5	Android/V1015
+B	ms01_tatu_lv1_un	5	Android/V1015
+B	ms01_tatu_lv2_dark	5	Android/V1015
+B	ms01_tatu_lv2_fire	5	Android/V1015
+B	ms01_tatu_lv2_holy	5	Android/V1015
+B	ms01_tatu_lv2_water	5	Android/V1015
+B	ms01_tatu_lv2_un	5	Android/V1015
+B	ms01_suika_01	5	Android/V1015
+B	ms02_four_dark_05	5	Android/V1015
+B	ms02_four_fire_05	5	Android/V1015
+B	ms02_four_holy_05	5	Android/V1015
+B	ms02_four_water_05	5	Android/V1015
+B	ms02_four_un_05	5	Android/V1015
+B	ms03_dra_dark_04	5	Android/V1015
+B	ms03_dra_fire_04	5	Android/V1015
+B	ms03_dra_holy_04	5	Android/V1015
+B	ms03_dra_water_04	5	Android/V1015
+B	ms03_dra_un_04	5	Android/V1015
+B	ms03_kra_01	5	Android/V1015
+B	ms03_oct_dark_01	5	Android/V1015
+B	ms03_oct_fire_01	5	Android/V1015
+B	ms03_oct_holy_01	5	Android/V1015
+B	ms03_oct_water_01	5	Android/V1015
+B	ms03_oct_un_01	5	Android/V1015
+B	ms03_sea_water_01	5	Android/V1015
+B	ms05_ryu_02	5	Android/V1015
+B	ms00_wall_01	5	Android/V1015
+B	ms01_pumpkin_01	5	Android/V1015
+B	ms03_fly_un_04	5	Android/V1015
+B	ms04_legend_03	5	Android/V1015
+B	ms01_sen_cat_dark_01	5	Android/V1015
+B	ms01_sen_cat_fire_01	5	Android/V1015
+B	ms01_sen_cat_holy_01	5	Android/V1015
+B	ms01_sen_cat_un_01	5	Android/V1015
+B	ms01_sen_cat_water_01	5	Android/V1015
+B	ms01_sen_drome_dark_01	5	Android/V1015
+B	ms01_sen_drome_fire_01	5	Android/V1015
+B	ms01_sen_drome_holy_01	5	Android/V1015
+B	ms01_sen_drome_un_01	5	Android/V1015
+B	ms01_sen_drome_water_01	5	Android/V1015
+B	ms01_sen_sheep_dark_01	5	Android/V1015
+B	ms01_sen_sheep_fire_01	5	Android/V1015
+B	ms01_sen_sheep_holy_01	5	Android/V1015
+B	ms01_sen_sheep_un_01	5	Android/V1015
+B	ms01_sen_sheep_water_01	5	Android/V1015
+B	ms03_sen_ansult_01	5	Android/V1015
+B	ms03_sen_grunoja_01	5	Android/V1015
+B	ms03_sen_olgadia_01	5	Android/V1015
+B	ms01_bee_dark_01	5	Android/V1015
+B	ms01_bee_fire_01	5	Android/V1015
+B	ms01_bee_holy_01	5	Android/V1015
+B	ms01_bee_water_01	5	Android/V1015
+B	ms01_sco_dark_02	5	Android/V1015
+B	ms01_sco_fire_02	5	Android/V1015
+B	ms01_sco_holy_02	5	Android/V1015
+B	ms01_sco_water_02	5	Android/V1015
+B	ms02_dra_dark_02	5	Android/V1015
+B	ms02_dra_fire_02	5	Android/V1015
+B	ms02_dra_holy_02	5	Android/V1015
+B	ms02_dra_water_02	5	Android/V1015
+B	ms01_akb_dra_dark_01	7	Android/V1017
+B	ms01_akb_dra_fire_01	7	Android/V1017
+B	ms01_akb_dra_holy_01	7	Android/V1017
+B	ms01_akb_dra_water_01	7	Android/V1017
+B	ms01_fly_dark_01	7	Android/V1017
+B	ms01_fly_fire_01	7	Android/V1017
+B	ms01_fly_holy_01	7	Android/V1017
+B	ms01_fly_water_01	7	Android/V1017
+B	ms01_fly_un_01	7	Android/V1017
+B	ms01_slawing_dark_01	7	Android/V1017
+B	ms01_slawing_fire_01	7	Android/V1017
+B	ms01_slawing_holy_01	7	Android/V1017
+B	ms01_slawing_water_01	7	Android/V1017
+B	ms01_slawing_gold_01	7	Android/V1017
+B	ms01_slawing_silver_01	7	Android/V1017
+B	ms03_akb_dra_un_01	7	Android/V1017
+B	ms04_dra_head_un_01	7	Android/V1017
+B	ms04_dra_tail_un_01	7	Android/V1017
+B	ms04_dra_wing_un_01	7	Android/V1017
+B	220_ms01_bd_golem_d_01	8	Android/V1018
+B	220_ms01_bd_golem_f_01	8	Android/V1018
+B	220_ms01_bd_golem_h_01	8	Android/V1018
+B	220_ms01_bd_golem_u_01	8	Android/V1018
+B	220_ms01_bd_golem_w_01	8	Android/V1018
+B	220_ms01_bd_kap_d_01	8	Android/V1018
+B	220_ms01_bd_kap_f_01	8	Android/V1018
+B	220_ms01_bd_kap_h_01	8	Android/V1018
+B	220_ms01_bd_kap_u_01	8	Android/V1018
+B	220_ms01_bd_kap_w_01	8	Android/V1018
+B	220_ms01_bd_man_d_01	8	Android/V1018
+B	220_ms01_bd_man_f_01	8	Android/V1018
+B	220_ms01_bd_man_h_01	8	Android/V1018
+B	220_ms01_bd_man_u_01	8	Android/V1018
+B	220_ms01_bd_man_w_01	8	Android/V1018
+B	220_ms03_bd_altros_f_01	8	Android/V1018
+B	220_ms03_bd_altros_w_01	8	Android/V1018
+B	220_ms03_bd_chau_h_01	8	Android/V1018
+B	220_ms03_bd_giga_d_01	8	Android/V1018
+B	220_ms03_bd_rusa_w_01	8	Android/V1018
+B	230_ms01_neko_lv1_d	9	Android/V1019
+B	230_ms01_neko_lv1_f	9	Android/V1019
+B	230_ms01_neko_lv1_h	9	Android/V1019
+B	230_ms01_neko_lv1_u	9	Android/V1019
+B	230_ms01_neko_lv1_w	9	Android/V1019
+B	230_ms01_neko_lv2_d	9	Android/V1019
+B	230_ms01_neko_lv2_f	9	Android/V1019
+B	230_ms01_neko_lv2_h	9	Android/V1019
+B	230_ms01_neko_lv2_u	9	Android/V1019
+B	230_ms01_neko_lv2_w	9	Android/V1019
+B	230_ms03_fly_lv1_f_01	9	Android/V1019
+B	230_ms03_fly_lv2_f_01	9	Android/V1019
+B	230_ms03_four_lv1_w_01	9	Android/V1019
+B	230_ms03_four_lv2_w_01	9	Android/V1019
+B	230_ms01_kame_lv1_d	9	Android/V1019
+B	230_ms01_kame_lv1_f	9	Android/V1019
+B	230_ms01_kame_lv1_h	9	Android/V1019
+B	230_ms01_kame_lv1_u	9	Android/V1019
+B	230_ms01_kame_lv1_w	9	Android/V1019
+B	230_ms01_kame_lv2_d	9	Android/V1019
+B	230_ms01_kame_lv2_f	9	Android/V1019
+B	230_ms01_kame_lv2_h	9	Android/V1019
+B	230_ms01_kame_lv2_u	9	Android/V1019
+B	230_ms01_kame_lv2_w	9	Android/V1019
+B	240_ms01_sla_u_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_d_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_f_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_h_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_u_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_w_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_d_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_f_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_h_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_u_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_w_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_fly_u_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_four_u_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_four_u_02	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_lindf_f_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_salam_f_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_tiamat_d_01	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sla_u_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_d_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_f_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_h_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_u_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_lev_w_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_d_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_f_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_h_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_u_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms01_sr_yan_w_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_fly_u_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_four_u_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_four_u_02.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_lindf_f_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_salam_f_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+B	240_ms03_sr_tiamat_d_01.meta	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+L	ms00_tresure_unit_01
+L	ms01_sla_lv1
+L	ms01_squ_lv1
+L	ms02_four_un_01
+L	ms02_dra_un_01
+U	22
+U	24
+U	30
+U	31
+U	33
+U	37
+M	0	null
+M	1	pc_run_01_lp
+M	2	pc_jump_01
+M	3	pc_dmg_01
+M	4	pc_wait_knt_01
+M	5	pc_wait_grt_01
+M	6	pc_wait_lan_01
+M	7	pc_wait_ban_01
+M	8	pc_wait_bow_01
+M	9	pc_wait_gun_01
+M	10	pc_wait_stk_01
+M	11	pc_wait_atf_01
+M	12	pc_atk_knt_01
+M	13	pc_atk_grt_01
+M	14	pc_atk_lan_01
+M	15	pc_atk_ban_01
+M	16	pc_atk_bow_01
+M	17	pc_atk_gun_01
+M	18	pc_atk_stk_01
+M	19	pc_atk_atf_01
+M	20	pc_skill_01
+M	21	ms00_death_wait_01
+M	22	ms00_death_atk_01
+M	23	ms01_sla_wait_01
+M	24	ms01_sla_atk_01
+M	25	ms01_squ_wait_01
+M	26	ms01_squ_atk_01
+M	27	ms01_wolf_wait_01
+M	28	ms01_wolf_atk_01
+M	29	ms01_dra_wait_01
+M	30	ms01_dra_atk_01
+M	31	ms01_sco_wait_01
+M	32	ms01_sco_atk_01
+M	33	ms01_bear_wait_01
+M	34	ms01_bear_atk_01
+M	35	ms02_dra_wait_01
+M	36	ms02_dra_atk_01
+M	37	ms02_dra_run_01
+M	38	ms02_four_wait_01
+M	39	ms02_four_atk_01
+M	40	ms02_four_run_01
+M	41	ms03_dra_wait_01
+M	42	ms03_dra_atk_01
+M	43	ms03_dra_run_01
+M	44	ms03_four_wait_01
+M	45	ms03_four_atk_01
+M	46	ms03_four_run_01
+M	47	ms03_fly_wait_01
+M	48	ms03_fly_atk_01
+M	49	ms03_fly_run_01
+M	50	ms04_legend_wait_01
+M	51	ms04_legend_atk_01
+M	52	ms04_legend_run_01
+M	53	ms00_treasure_unit_wait_01
+M	54	ms00_treasure_unit_run_01
+M	55	ms05_ryu_wait_01
+M	56	ms05_ryu_atk_01
+M	57	ms05_ryu_run_01
+M	58	pc_run_fst_01_lp
+M	59	pc_run_tsw_01_lp
+M	60	pc_wait_fst_01
+M	61	pc_wait_tsw_01
+M	62	pc_atk_fst_01
+M	63	pc_atk_tsw_01
+M	64	pc_run_tla_01_lp
+M	65	pc_run_can_01_lp
+M	66	pc_wait_tla_01
+M	67	pc_wait_can_01
+M	68	pc_atk_tla_01
+M	69	pc_atk_can_01
+M	70	pc_run_chaos_01_lp
+M	71	pc_wait_mbo_01
+M	72	pc_atk_mbo_01
+M	73	pc_run_kfu_01_lp
+M	74	pc_wait_kfu_01
+M	75	pc_atk_kfu_01
+M	76	ms03_element_run_01
+M	77	ms03_unit_run_01
+M	78	ms03_four_atk_02
+M	79	pok_skill_01
+M	80	pok_dmg_01
+M	81	pok_jump_01
+M	82	pok_run_01_lp
+M	83	pok_atk_lan_01
+M	84	pok_wait_lan_01
+M	85	pok_run_02_lp
+M	86	pok_atk_stk_01
+M	87	pok_wait_stk_01
+M	88	ms03_oct_wait_01
+M	89	ms03_oct_atk_01
+M	90	ms03_oct_run_01
+M	91	ms03_sea_wait_01
+M	92	ms03_sea_atk_01
+M	93	ms03_sea_run_01
+M	94	ms02_four_wait_02
+M	95	ms02_four_atk_02
+M	96	ms02_four_run_02
+M	97	ms01_fish_wait_01
+M	98	ms01_fish_atk_01
+M	99	ms01_fish_run_01
+M	100	pc_run_fla_01_lp
+M	101	pc_atk_fla_01
+M	102	pc_wait_fla_01
+M	103	pc_run_rpa_01_lp
+M	104	pc_atk_rpa_01
+M	105	pc_wait_rpa_01
+M	106	org_skill_01
+M	107	org_dmg_01
+M	108	org_jump_01
+M	109	org_run_01_lp
+M	110	org_atk_swd_01
+M	111	org_wait_swd_01
+M	112	org_run_02_lp
+M	113	org_atk_gun_01
+M	114	org_wait_gun_01
+M	115	ms00_wall_atk_01
+M	116	ms03_org_run_01
+M	117	ms03_pok_run_01
+M	118	pc_run_fgr_01_lp
+M	119	pc_atk_fgr_01
+M	120	pc_wait_fgr_01
+M	121	ms01_fly_wait_01
+M	122	ms01_fly_atk_01
+M	123	pc_run_fat_01_lp
+M	124	pc_atk_fat_01
+M	125	pc_wait_fat_01
+M	126	pok_run_03_lp
+M	127	pok_atk_swd_01
+M	128	pok_wait_can_01
+M	129	pok_run_04_lp
+M	130	pok_atk_can_01
+M	131	pok_wait_swd_01
+M	132	org_run_03_lp
+M	133	org_atk_lan_01
+M	134	org_wait_lan_01
+M	135	pok_skill_02
+M	136	pok_dmg_02
+M	137	ms04_dra_head_atk_01
+M	138	ms04_dra_head_wait_01
+M	139	ms04_dra_head_run_01
+M	140	ms04_dra_tail_atk_01
+M	141	ms04_dra_tail_wait_01
+M	142	ms04_dra_tail_run_01
+M	143	ms04_dra_wing_atk_01
+M	144	ms04_dra_wing_wait_01
+M	145	ms04_dra_wing_run_01
+M	146	ms03_win_run_01
+M	147	win_run_swd_01_lp
+M	148	win_atk_swd_01
+M	149	win_wait_swd_01
+M	150	win_run_lan_01_lp
+M	151	win_atk_lan_01
+M	152	win_wait_lan_01
+M	153	win_run_stk_01_lp
+M	154	win_atk_stk_01
+M	155	win_wait_stk_01
+M	156	win_run_bow_01_lp
+M	157	win_atk_bow_01
+M	158	win_wait_bow_01
+M	159	win_skill_01
+M	160	win_dmg_01
+M	161	win_jump_01
+M	162	org_wait_stk_01
+M	163	org_atk_stk_01
+M	164	ms01_slawing_atk_01
+M	165	ms01_slawing_wait_01
+M	166	ms03_bd_chau_run_01
+M	167	ms03_bd_chau_wait_01
+M	168	ms03_bd_chau_atk_01
+M	169	ms03_bd_giga_run_01
+M	170	ms03_bd_giga_wait_01
+M	171	ms03_bd_giga_atk_01
+M	172	ms03_bd_rusa_run_01
+M	173	ms03_bd_rusa_wait_01
+M	174	ms03_bd_rusa_atk_01
+M	175	pc_skill_jump_01
+M	176	pc_skill_jump_02
+M	177	pok_run_05_lp
+M	178	pok_atk_atf_01
+M	179	pok_wait_atf_01
+M	180	ms03_sr_tiamat_run_01
+M	181	ms03_sr_tiamat_wait_01
+M	182	ms03_sr_tiamat_atk_01
+A	0	0	4
+A	0	1	12
+A	0	2	1
+A	0	3	2
+A	0	4	3
+A	0	5	20
+A	0	6	0
+A	0	7	0
+A	0	8	76
+A	0	9	77
+A	0	10	0
+A	0	11	0
+A	0	12	0
+A	0	13	0
+A	0	14	0
+A	0	15	0
+A	0	16	0
+A	0	17	0
+A	1	0	5
+A	1	1	13
+A	1	2	1
+A	1	3	2
+A	1	4	3
+A	1	5	20
+A	1	6	0
+A	1	7	0
+A	1	8	76
+A	1	9	77
+A	1	10	0
+A	1	11	0
+A	1	12	0
+A	1	13	0
+A	1	14	0
+A	1	15	0
+A	1	16	0
+A	1	17	0
+A	2	0	6
+A	2	1	14
+A	2	2	1
+A	2	3	2
+A	2	4	3
+A	2	5	20
+A	2	6	0
+A	2	7	0
+A	2	8	76
+A	2	9	77
+A	2	10	0
+A	2	11	0
+A	2	12	0
+A	2	13	0
+A	2	14	0
+A	2	15	0
+A	2	16	0
+A	2	17	0
+A	3	0	7
+A	3	1	15
+A	3	2	1
+A	3	3	2
+A	3	4	3
+A	3	5	20
+A	3	6	0
+A	3	7	0
+A	3	8	76
+A	3	9	77
+A	3	10	0
+A	3	11	0
+A	3	12	0
+A	3	13	0
+A	3	14	0
+A	3	15	0
+A	3	16	0
+A	3	17	0
+A	4	0	8
+A	4	1	16
+A	4	2	1
+A	4	3	2
+A	4	4	3
+A	4	5	20
+A	4	6	0
+A	4	7	0
+A	4	8	76
+A	4	9	77
+A	4	10	0
+A	4	11	0
+A	4	12	0
+A	4	13	0
+A	4	14	0
+A	4	15	0
+A	4	16	0
+A	4	17	0
+A	5	0	9
+A	5	1	17
+A	5	2	1
+A	5	3	2
+A	5	4	3
+A	5	5	20
+A	5	6	0
+A	5	7	0
+A	5	8	76
+A	5	9	77
+A	5	10	0
+A	5	11	0
+A	5	12	0
+A	5	13	0
+A	5	14	0
+A	5	15	0
+A	5	16	0
+A	5	17	0
+A	6	0	10
+A	6	1	18
+A	6	2	1
+A	6	3	2
+A	6	4	3
+A	6	5	20
+A	6	6	0
+A	6	7	0
+A	6	8	76
+A	6	9	77
+A	6	10	0
+A	6	11	0
+A	6	12	0
+A	6	13	0
+A	6	14	0
+A	6	15	0
+A	6	16	0
+A	6	17	0
+A	7	0	11
+A	7	1	19
+A	7	2	1
+A	7	3	2
+A	7	4	3
+A	7	5	20
+A	7	6	0
+A	7	7	0
+A	7	8	76
+A	7	9	77
+A	7	10	0
+A	7	11	0
+A	7	12	0
+A	7	13	0
+A	7	14	0
+A	7	15	0
+A	7	16	0
+A	7	17	0
+A	8	0	60
+A	8	1	62
+A	8	2	58
+A	8	3	2
+A	8	4	3
+A	8	5	20
+A	8	6	0
+A	8	7	0
+A	8	8	76
+A	8	9	77
+A	8	10	0
+A	8	11	0
+A	8	12	0
+A	8	13	0
+A	8	14	0
+A	8	15	0
+A	8	16	0
+A	8	17	0
+A	9	0	61
+A	9	1	63
+A	9	2	59
+A	9	3	2
+A	9	4	3
+A	9	5	20
+A	9	6	0
+A	9	7	0
+A	9	8	76
+A	9	9	77
+A	9	10	0
+A	9	11	0
+A	9	12	0
+A	9	13	0
+A	9	14	0
+A	9	15	0
+A	9	16	0
+A	9	17	0
+A	10	0	66
+A	10	1	68
+A	10	2	64
+A	10	3	2
+A	10	4	3
+A	10	5	20
+A	10	6	0
+A	10	7	0
+A	10	8	76
+A	10	9	77
+A	10	10	0
+A	10	11	0
+A	10	12	0
+A	10	13	0
+A	10	14	0
+A	10	15	0
+A	10	16	0
+A	10	17	0
+A	11	0	67
+A	11	1	69
+A	11	2	65
+A	11	3	2
+A	11	4	3
+A	11	5	20
+A	11	6	0
+A	11	7	0
+A	11	8	76
+A	11	9	77
+A	11	10	0
+A	11	11	0
+A	11	12	0
+A	11	13	0
+A	11	14	0
+A	11	15	0
+A	11	16	0
+A	11	17	0
+A	12	0	4
+A	12	1	12
+A	12	2	70
+A	12	3	2
+A	12	4	3
+A	12	5	20
+A	12	6	0
+A	12	7	0
+A	12	8	76
+A	12	9	77
+A	12	10	0
+A	12	11	0
+A	12	12	0
+A	12	13	0
+A	12	14	0
+A	12	15	0
+A	12	16	0
+A	12	17	0
+A	13	0	9
+A	13	1	17
+A	13	2	70
+A	13	3	2
+A	13	4	3
+A	13	5	20
+A	13	6	0
+A	13	7	0
+A	13	8	76
+A	13	9	77
+A	13	10	0
+A	13	11	0
+A	13	12	0
+A	13	13	0
+A	13	14	0
+A	13	15	0
+A	13	16	0
+A	13	17	0
+A	14	0	7
+A	14	1	15
+A	14	2	70
+A	14	3	2
+A	14	4	3
+A	14	5	20
+A	14	6	0
+A	14	7	0
+A	14	8	76
+A	14	9	77
+A	14	10	0
+A	14	11	0
+A	14	12	0
+A	14	13	0
+A	14	14	0
+A	14	15	0
+A	14	16	0
+A	14	17	0
+A	15	0	11
+A	15	1	19
+A	15	2	70
+A	15	3	2
+A	15	4	3
+A	15	5	20
+A	15	6	0
+A	15	7	0
+A	15	8	76
+A	15	9	77
+A	15	10	0
+A	15	11	0
+A	15	12	0
+A	15	13	0
+A	15	14	0
+A	15	15	0
+A	15	16	0
+A	15	17	0
+A	16	0	71
+A	16	1	72
+A	16	2	1
+A	16	3	2
+A	16	4	3
+A	16	5	20
+A	16	6	0
+A	16	7	0
+A	16	8	76
+A	16	9	77
+A	16	10	0
+A	16	11	0
+A	16	12	0
+A	16	13	0
+A	16	14	0
+A	16	15	0
+A	16	16	0
+A	16	17	0
+A	17	0	74
+A	17	1	75
+A	17	2	73
+A	17	3	2
+A	17	4	3
+A	17	5	20
+A	17	6	0
+A	17	7	0
+A	17	8	76
+A	17	9	77
+A	17	10	0
+A	17	11	0
+A	17	12	0
+A	17	13	0
+A	17	14	0
+A	17	15	0
+A	17	16	0
+A	17	17	0
+A	18	0	84
+A	18	1	83
+A	18	2	82
+A	18	3	81
+A	18	4	80
+A	18	5	79
+A	18	6	0
+A	18	7	0
+A	18	8	0
+A	18	9	0
+A	18	10	117
+A	18	11	0
+A	18	12	0
+A	18	13	0
+A	18	14	0
+A	18	15	0
+A	18	16	0
+A	18	17	0
+A	19	0	87
+A	19	1	86
+A	19	2	85
+A	19	3	81
+A	19	4	80
+A	19	5	79
+A	19	6	0
+A	19	7	0
+A	19	8	0
+A	19	9	0
+A	19	10	117
+A	19	11	0
+A	19	12	0
+A	19	13	0
+A	19	14	0
+A	19	15	0
+A	19	16	0
+A	19	17	0
+A	20	0	102
+A	20	1	101
+A	20	2	100
+A	20	3	2
+A	20	4	3
+A	20	5	20
+A	20	6	0
+A	20	7	0
+A	20	8	76
+A	20	9	77
+A	20	10	0
+A	20	11	0
+A	20	12	0
+A	20	13	0
+A	20	14	0
+A	20	15	0
+A	20	16	0
+A	20	17	0
+A	21	0	105
+A	21	1	104
+A	21	2	103
+A	21	3	2
+A	21	4	3
+A	21	5	20
+A	21	6	0
+A	21	7	0
+A	21	8	76
+A	21	9	77
+A	21	10	0
+A	21	11	0
+A	21	12	0
+A	21	13	0
+A	21	14	0
+A	21	15	0
+A	21	16	0
+A	21	17	0
+A	22	0	111
+A	22	1	110
+A	22	2	109
+A	22	3	108
+A	22	4	107
+A	22	5	106
+A	22	6	0
+A	22	7	0
+A	22	8	0
+A	22	9	0
+A	22	10	0
+A	22	11	116
+A	22	12	116
+A	22	13	0
+A	22	14	0
+A	22	15	0
+A	22	16	0
+A	22	17	0
+A	23	0	114
+A	23	1	113
+A	23	2	112
+A	23	3	108
+A	23	4	107
+A	23	5	106
+A	23	6	0
+A	23	7	0
+A	23	8	0
+A	23	9	0
+A	23	10	0
+A	23	11	116
+A	23	12	116
+A	23	13	0
+A	23	14	0
+A	23	15	0
+A	23	16	0
+A	23	17	0
+A	24	0	120
+A	24	1	119
+A	24	2	118
+A	24	3	2
+A	24	4	3
+A	24	5	20
+A	24	6	0
+A	24	7	0
+A	24	8	76
+A	24	9	77
+A	24	10	0
+A	24	11	0
+A	24	12	0
+A	24	13	0
+A	24	14	0
+A	24	15	0
+A	24	16	0
+A	24	17	0
+A	25	0	125
+A	25	1	124
+A	25	2	123
+A	25	3	2
+A	25	4	3
+A	25	5	20
+A	25	6	0
+A	25	7	0
+A	25	8	76
+A	25	9	77
+A	25	10	0
+A	25	11	0
+A	25	12	0
+A	25	13	0
+A	25	14	0
+A	25	15	0
+A	25	16	0
+A	25	17	0
+A	26	0	131
+A	26	1	127
+A	26	2	126
+A	26	3	81
+A	26	4	80
+A	26	5	79
+A	26	6	0
+A	26	7	0
+A	26	8	0
+A	26	9	0
+A	26	10	117
+A	26	11	0
+A	26	12	0
+A	26	13	0
+A	26	14	0
+A	26	15	0
+A	26	16	0
+A	26	17	0
+A	27	0	128
+A	27	1	130
+A	27	2	129
+A	27	3	81
+A	27	4	136
+A	27	5	135
+A	27	6	0
+A	27	7	0
+A	27	8	0
+A	27	9	0
+A	27	10	117
+A	27	11	0
+A	27	12	0
+A	27	13	0
+A	27	14	0
+A	27	15	0
+A	27	16	0
+A	27	17	0
+A	28	0	134
+A	28	1	133
+A	28	2	132
+A	28	3	108
+A	28	4	107
+A	28	5	106
+A	28	6	0
+A	28	7	0
+A	28	8	0
+A	28	9	0
+A	28	10	0
+A	28	11	116
+A	28	12	116
+A	28	13	0
+A	28	14	0
+A	28	15	0
+A	28	16	0
+A	28	17	0
+A	29	0	149
+A	29	1	148
+A	29	2	147
+A	29	3	161
+A	29	4	160
+A	29	5	159
+A	29	6	0
+A	29	7	0
+A	29	8	0
+A	29	9	0
+A	29	10	0
+A	29	11	0
+A	29	12	0
+A	29	13	146
+A	29	14	0
+A	29	15	0
+A	29	16	0
+A	29	17	0
+A	30	0	152
+A	30	1	151
+A	30	2	150
+A	30	3	161
+A	30	4	160
+A	30	5	159
+A	30	6	0
+A	30	7	0
+A	30	8	0
+A	30	9	0
+A	30	10	0
+A	30	11	0
+A	30	12	0
+A	30	13	146
+A	30	14	0
+A	30	15	0
+A	30	16	0
+A	30	17	0
+A	31	0	158
+A	31	1	157
+A	31	2	156
+A	31	3	161
+A	31	4	160
+A	31	5	159
+A	31	6	0
+A	31	7	0
+A	31	8	0
+A	31	9	0
+A	31	10	0
+A	31	11	0
+A	31	12	0
+A	31	13	146
+A	31	14	0
+A	31	15	0
+A	31	16	0
+A	31	17	0
+A	32	0	155
+A	32	1	154
+A	32	2	153
+A	32	3	161
+A	32	4	160
+A	32	5	159
+A	32	6	0
+A	32	7	0
+A	32	8	0
+A	32	9	0
+A	32	10	0
+A	32	11	0
+A	32	12	0
+A	32	13	146
+A	32	14	0
+A	32	15	0
+A	32	16	0
+A	32	17	0
+A	33	0	8
+A	33	1	16
+A	33	2	1
+A	33	3	2
+A	33	4	3
+A	33	5	20
+A	33	6	0
+A	33	7	0
+A	33	8	76
+A	33	9	77
+A	33	10	0
+A	33	11	0
+A	33	12	0
+A	33	13	0
+A	33	14	0
+A	33	15	0
+A	33	16	0
+A	33	17	0
+A	34	0	162
+A	34	1	163
+A	34	2	109
+A	34	3	108
+A	34	4	107
+A	34	5	106
+A	34	6	0
+A	34	7	0
+A	34	8	0
+A	34	9	0
+A	34	10	0
+A	34	11	116
+A	34	12	116
+A	34	13	0
+A	34	14	0
+A	34	15	0
+A	34	16	0
+A	34	17	0
+A	35	0	179
+A	35	1	178
+A	35	2	177
+A	35	3	81
+A	35	4	80
+A	35	5	79
+A	35	6	0
+A	35	7	0
+A	35	8	0
+A	35	9	0
+A	35	10	117
+A	35	11	0
+A	35	12	0
+A	35	13	0
+A	35	14	0
+A	35	15	0
+A	35	16	0
+A	35	17	0
+A	36	0	0
+A	36	1	0
+A	36	2	0
+A	36	3	0
+A	36	4	0
+A	36	5	0
+A	36	6	0
+A	36	7	0
+A	36	8	0
+A	36	9	0
+A	36	10	0
+A	36	11	0
+A	36	12	0
+A	36	13	0
+A	36	14	0
+A	36	15	0
+A	36	16	0
+A	36	17	0
+A	37	0	23
+A	37	1	24
+A	37	2	0
+A	37	3	0
+A	37	4	0
+A	37	5	0
+A	37	6	0
+A	37	7	0
+A	37	8	0
+A	37	9	0
+A	37	10	0
+A	37	11	0
+A	37	12	0
+A	37	13	0
+A	37	14	0
+A	37	15	0
+A	37	16	0
+A	37	17	0
+A	38	0	25
+A	38	1	26
+A	38	2	0
+A	38	3	0
+A	38	4	0
+A	38	5	0
+A	38	6	0
+A	38	7	0
+A	38	8	0
+A	38	9	0
+A	38	10	0
+A	38	11	0
+A	38	12	0
+A	38	13	0
+A	38	14	0
+A	38	15	0
+A	38	16	0
+A	38	17	0
+A	39	0	27
+A	39	1	28
+A	39	2	0
+A	39	3	0
+A	39	4	0
+A	39	5	0
+A	39	6	0
+A	39	7	0
+A	39	8	0
+A	39	9	0
+A	39	10	0
+A	39	11	0
+A	39	12	0
+A	39	13	0
+A	39	14	0
+A	39	15	0
+A	39	16	0
+A	39	17	0
+A	40	0	29
+A	40	1	30
+A	40	2	0
+A	40	3	0
+A	40	4	0
+A	40	5	0
+A	40	6	0
+A	40	7	0
+A	40	8	0
+A	40	9	0
+A	40	10	0
+A	40	11	0
+A	40	12	0
+A	40	13	0
+A	40	14	0
+A	40	15	0
+A	40	16	0
+A	40	17	0
+A	41	0	33
+A	41	1	34
+A	41	2	0
+A	41	3	0
+A	41	4	0
+A	41	5	0
+A	41	6	0
+A	41	7	0
+A	41	8	0
+A	41	9	0
+A	41	10	0
+A	41	11	0
+A	41	12	0
+A	41	13	0
+A	41	14	0
+A	41	15	0
+A	41	16	0
+A	41	17	0
+A	42	0	31
+A	42	1	32
+A	42	2	0
+A	42	3	0
+A	42	4	0
+A	42	5	0
+A	42	6	0
+A	42	7	0
+A	42	8	0
+A	42	9	0
+A	42	10	0
+A	42	11	0
+A	42	12	0
+A	42	13	0
+A	42	14	0
+A	42	15	0
+A	42	16	0
+A	42	17	0
+A	43	0	35
+A	43	1	36
+A	43	2	37
+A	43	3	0
+A	43	4	0
+A	43	5	0
+A	43	6	0
+A	43	7	0
+A	43	8	0
+A	43	9	0
+A	43	10	0
+A	43	11	0
+A	43	12	0
+A	43	13	0
+A	43	14	0
+A	43	15	0
+A	43	16	0
+A	43	17	0
+A	44	0	38
+A	44	1	39
+A	44	2	40
+A	44	3	0
+A	44	4	0
+A	44	5	0
+A	44	6	0
+A	44	7	0
+A	44	8	0
+A	44	9	0
+A	44	10	0
+A	44	11	0
+A	44	12	0
+A	44	13	0
+A	44	14	0
+A	44	15	0
+A	44	16	0
+A	44	17	0
+A	45	0	41
+A	45	1	42
+A	45	2	43
+A	45	3	0
+A	45	4	0
+A	45	5	0
+A	45	6	0
+A	45	7	0
+A	45	8	0
+A	45	9	0
+A	45	10	0
+A	45	11	0
+A	45	12	0
+A	45	13	0
+A	45	14	0
+A	45	15	0
+A	45	16	0
+A	45	17	0
+A	46	0	44
+A	46	1	45
+A	46	2	46
+A	46	3	0
+A	46	4	0
+A	46	5	0
+A	46	6	0
+A	46	7	0
+A	46	8	0
+A	46	9	0
+A	46	10	0
+A	46	11	0
+A	46	12	0
+A	46	13	0
+A	46	14	0
+A	46	15	0
+A	46	16	0
+A	46	17	0
+A	47	0	47
+A	47	1	48
+A	47	2	49
+A	47	3	0
+A	47	4	0
+A	47	5	0
+A	47	6	0
+A	47	7	0
+A	47	8	0
+A	47	9	0
+A	47	10	0
+A	47	11	0
+A	47	12	0
+A	47	13	0
+A	47	14	0
+A	47	15	0
+A	47	16	0
+A	47	17	0
+A	48	0	50
+A	48	1	51
+A	48	2	52
+A	48	3	0
+A	48	4	0
+A	48	5	0
+A	48	6	0
+A	48	7	0
+A	48	8	0
+A	48	9	0
+A	48	10	0
+A	48	11	0
+A	48	12	0
+A	48	13	0
+A	48	14	0
+A	48	15	0
+A	48	16	0
+A	48	17	0
+A	49	0	21
+A	49	1	22
+A	49	2	0
+A	49	3	0
+A	49	4	0
+A	49	5	0
+A	49	6	0
+A	49	7	0
+A	49	8	0
+A	49	9	0
+A	49	10	0
+A	49	11	0
+A	49	12	0
+A	49	13	0
+A	49	14	0
+A	49	15	0
+A	49	16	0
+A	49	17	0
+A	50	0	23
+A	50	1	24
+A	50	2	0
+A	50	3	0
+A	50	4	0
+A	50	5	0
+A	50	6	0
+A	50	7	0
+A	50	8	0
+A	50	9	0
+A	50	10	0
+A	50	11	0
+A	50	12	0
+A	50	13	0
+A	50	14	0
+A	50	15	0
+A	50	16	0
+A	50	17	0
+A	51	0	23
+A	51	1	24
+A	51	2	0
+A	51	3	0
+A	51	4	0
+A	51	5	0
+A	51	6	0
+A	51	7	0
+A	51	8	0
+A	51	9	0
+A	51	10	0
+A	51	11	0
+A	51	12	0
+A	51	13	0
+A	51	14	0
+A	51	15	0
+A	51	16	0
+A	51	17	0
+A	52	0	53
+A	52	1	53
+A	52	2	54
+A	52	3	0
+A	52	4	0
+A	52	5	0
+A	52	6	0
+A	52	7	0
+A	52	8	0
+A	52	9	0
+A	52	10	0
+A	52	11	0
+A	52	12	0
+A	52	13	0
+A	52	14	0
+A	52	15	0
+A	52	16	0
+A	52	17	0
+A	53	0	55
+A	53	1	56
+A	53	2	57
+A	53	3	0
+A	53	4	0
+A	53	5	0
+A	53	6	0
+A	53	7	0
+A	53	8	0
+A	53	9	0
+A	53	10	0
+A	53	11	0
+A	53	12	0
+A	53	13	0
+A	53	14	0
+A	53	15	0
+A	53	16	0
+A	53	17	0
+A	54	0	25
+A	54	1	26
+A	54	2	0
+A	54	3	0
+A	54	4	0
+A	54	5	0
+A	54	6	0
+A	54	7	0
+A	54	8	0
+A	54	9	0
+A	54	10	0
+A	54	11	0
+A	54	12	0
+A	54	13	0
+A	54	14	0
+A	54	15	0
+A	54	16	0
+A	54	17	0
+A	55	0	31
+A	55	1	32
+A	55	2	0
+A	55	3	0
+A	55	4	0
+A	55	5	0
+A	55	6	0
+A	55	7	0
+A	55	8	0
+A	55	9	0
+A	55	10	0
+A	55	11	0
+A	55	12	0
+A	55	13	0
+A	55	14	0
+A	55	15	0
+A	55	16	0
+A	55	17	0
+A	56	0	0
+A	56	1	0
+A	56	2	0
+A	56	3	0
+A	56	4	0
+A	56	5	0
+A	56	6	0
+A	56	7	0
+A	56	8	0
+A	56	9	0
+A	56	10	0
+A	56	11	0
+A	56	12	0
+A	56	13	0
+A	56	14	0
+A	56	15	0
+A	56	16	0
+A	56	17	0
+A	57	0	0
+A	57	1	0
+A	57	2	0
+A	57	3	0
+A	57	4	0
+A	57	5	0
+A	57	6	0
+A	57	7	0
+A	57	8	0
+A	57	9	0
+A	57	10	0
+A	57	11	0
+A	57	12	0
+A	57	13	0
+A	57	14	0
+A	57	15	0
+A	57	16	0
+A	57	17	0
+A	58	0	0
+A	58	1	0
+A	58	2	0
+A	58	3	0
+A	58	4	0
+A	58	5	0
+A	58	6	0
+A	58	7	0
+A	58	8	76
+A	58	9	0
+A	58	10	0
+A	58	11	0
+A	58	12	0
+A	58	13	0
+A	58	14	0
+A	58	15	0
+A	58	16	0
+A	58	17	0
+A	59	0	44
+A	59	1	45
+A	59	2	46
+A	59	3	0
+A	59	4	0
+A	59	5	0
+A	59	6	0
+A	59	7	0
+A	59	8	0
+A	59	9	0
+A	59	10	0
+A	59	11	0
+A	59	12	0
+A	59	13	0
+A	59	14	0
+A	59	15	0
+A	59	16	0
+A	59	17	0
+A	60	0	0
+A	60	1	0
+A	60	2	0
+A	60	3	0
+A	60	4	0
+A	60	5	0
+A	60	6	0
+A	60	7	0
+A	60	8	0
+A	60	9	77
+A	60	10	0
+A	60	11	0
+A	60	12	0
+A	60	13	0
+A	60	14	0
+A	60	15	0
+A	60	16	0
+A	60	17	0
+A	61	0	97
+A	61	1	98
+A	61	2	99
+A	61	3	0
+A	61	4	0
+A	61	5	0
+A	61	6	0
+A	61	7	0
+A	61	8	0
+A	61	9	0
+A	61	10	0
+A	61	11	0
+A	61	12	0
+A	61	13	0
+A	61	14	0
+A	61	15	0
+A	61	16	0
+A	61	17	0
+A	62	0	94
+A	62	1	95
+A	62	2	96
+A	62	3	0
+A	62	4	0
+A	62	5	0
+A	62	6	0
+A	62	7	0
+A	62	8	0
+A	62	9	0
+A	62	10	0
+A	62	11	0
+A	62	12	0
+A	62	13	0
+A	62	14	0
+A	62	15	0
+A	62	16	0
+A	62	17	0
+A	63	0	88
+A	63	1	89
+A	63	2	90
+A	63	3	0
+A	63	4	0
+A	63	5	0
+A	63	6	0
+A	63	7	0
+A	63	8	0
+A	63	9	0
+A	63	10	0
+A	63	11	0
+A	63	12	0
+A	63	13	0
+A	63	14	0
+A	63	15	0
+A	63	16	0
+A	63	17	0
+A	64	0	91
+A	64	1	92
+A	64	2	93
+A	64	3	0
+A	64	4	0
+A	64	5	0
+A	64	6	0
+A	64	7	0
+A	64	8	0
+A	64	9	0
+A	64	10	0
+A	64	11	0
+A	64	12	0
+A	64	13	0
+A	64	14	0
+A	64	15	0
+A	64	16	0
+A	64	17	0
+A	65	0	0
+A	65	1	115
+A	65	2	0
+A	65	3	0
+A	65	4	0
+A	65	5	0
+A	65	6	0
+A	65	7	0
+A	65	8	0
+A	65	9	0
+A	65	10	0
+A	65	11	0
+A	65	12	0
+A	65	13	0
+A	65	14	0
+A	65	15	0
+A	65	16	0
+A	65	17	0
+A	66	0	0
+A	66	1	0
+A	66	2	0
+A	66	3	0
+A	66	4	0
+A	66	5	0
+A	66	6	0
+A	66	7	0
+A	66	8	0
+A	66	9	0
+A	66	10	0
+A	66	11	0
+A	66	12	116
+A	66	13	0
+A	66	14	0
+A	66	15	0
+A	66	16	0
+A	66	17	0
+A	67	0	0
+A	67	1	0
+A	67	2	0
+A	67	3	0
+A	67	4	0
+A	67	5	0
+A	67	6	0
+A	67	7	0
+A	67	8	0
+A	67	9	0
+A	67	10	117
+A	67	11	0
+A	67	12	0
+A	67	13	0
+A	67	14	0
+A	67	15	0
+A	67	16	0
+A	67	17	0
+A	68	0	121
+A	68	1	122
+A	68	2	0
+A	68	3	0
+A	68	4	0
+A	68	5	0
+A	68	6	0
+A	68	7	0
+A	68	8	0
+A	68	9	0
+A	68	10	0
+A	68	11	0
+A	68	12	0
+A	68	13	0
+A	68	14	0
+A	68	15	0
+A	68	16	0
+A	68	17	0
+A	69	0	111
+A	69	1	110
+A	69	2	116
+A	69	3	0
+A	69	4	0
+A	69	5	0
+A	69	6	0
+A	69	7	0
+A	69	8	0
+A	69	9	0
+A	69	10	0
+A	69	11	116
+A	69	12	116
+A	69	13	0
+A	69	14	0
+A	69	15	0
+A	69	16	0
+A	69	17	0
+A	70	0	138
+A	70	1	137
+A	70	2	139
+A	70	3	0
+A	70	4	0
+A	70	5	0
+A	70	6	0
+A	70	7	0
+A	70	8	0
+A	70	9	0
+A	70	10	0
+A	70	11	0
+A	70	12	0
+A	70	13	0
+A	70	14	0
+A	70	15	0
+A	70	16	0
+A	70	17	0
+A	71	0	141
+A	71	1	140
+A	71	2	142
+A	71	3	0
+A	71	4	0
+A	71	5	0
+A	71	6	0
+A	71	7	0
+A	71	8	0
+A	71	9	0
+A	71	10	0
+A	71	11	0
+A	71	12	0
+A	71	13	0
+A	71	14	0
+A	71	15	0
+A	71	16	0
+A	71	17	0
+A	72	0	144
+A	72	1	143
+A	72	2	145
+A	72	3	0
+A	72	4	0
+A	72	5	0
+A	72	6	0
+A	72	7	0
+A	72	8	0
+A	72	9	0
+A	72	10	0
+A	72	11	0
+A	72	12	0
+A	72	13	0
+A	72	14	0
+A	72	15	0
+A	72	16	0
+A	72	17	0
+A	73	0	0
+A	73	1	0
+A	73	2	0
+A	73	3	0
+A	73	4	0
+A	73	5	0
+A	73	6	0
+A	73	7	0
+A	73	8	0
+A	73	9	0
+A	73	10	0
+A	73	11	0
+A	73	12	0
+A	73	13	146
+A	73	14	0
+A	73	15	0
+A	73	16	0
+A	73	17	0
+A	74	0	165
+A	74	1	164
+A	74	2	0
+A	74	3	0
+A	74	4	0
+A	74	5	0
+A	74	6	0
+A	74	7	0
+A	74	8	0
+A	74	9	0
+A	74	10	0
+A	74	11	0
+A	74	12	0
+A	74	13	0
+A	74	14	0
+A	74	15	0
+A	74	16	0
+A	74	17	0
+A	75	0	167
+A	75	1	168
+A	75	2	166
+A	75	3	0
+A	75	4	0
+A	75	5	0
+A	75	6	0
+A	75	7	0
+A	75	8	0
+A	75	9	0
+A	75	10	0
+A	75	11	0
+A	75	12	0
+A	75	13	0
+A	75	14	166
+A	75	15	0
+A	75	16	0
+A	75	17	0
+A	76	0	170
+A	76	1	171
+A	76	2	169
+A	76	3	0
+A	76	4	0
+A	76	5	0
+A	76	6	0
+A	76	7	0
+A	76	8	0
+A	76	9	0
+A	76	10	0
+A	76	11	0
+A	76	12	0
+A	76	13	0
+A	76	14	0
+A	76	15	169
+A	76	16	0
+A	76	17	0
+A	77	0	173
+A	77	1	174
+A	77	2	172
+A	77	3	0
+A	77	4	0
+A	77	5	0
+A	77	6	0
+A	77	7	0
+A	77	8	0
+A	77	9	0
+A	77	10	0
+A	77	11	0
+A	77	12	0
+A	77	13	0
+A	77	14	0
+A	77	15	0
+A	77	16	172
+A	77	17	0
+A	78	0	181
+A	78	1	182
+A	78	2	180
+A	78	3	0
+A	78	4	0
+A	78	5	0
+A	78	6	0
+A	78	7	0
+A	78	8	0
+A	78	9	0
+A	78	10	0
+A	78	11	0
+A	78	12	0
+A	78	13	0
+A	78	14	0
+A	78	15	0
+A	78	16	0
+A	78	17	180
+A	79	0	114
+A	79	1	113
+A	79	2	116
+A	79	3	0
+A	79	4	0
+A	79	5	0
+A	79	6	0
+A	79	7	0
+A	79	8	0
+A	79	9	0
+A	79	10	0
+A	79	11	116
+A	79	12	116
+A	79	13	0
+A	79	14	0
+A	79	15	0
+A	79	16	0
+A	79	17	0
+C	0	0
+C	1	0
+C	2	1
+C	3	9
+C	4	12
+C	5	21
+C	6	22
+C	7	24
+C	8	26
+C	9	29
+C	10	0
+C	11	0
+C	12	0
+C	13	0
+C	14	0
+C	15	0
+C	16	0
+C	17	0
+C	18	0
+C	19	0
+C	20	0
+C	21	0
+C	22	0
+C	23	0
+C	24	0
+C	25	0
+C	26	0
+C	27	0
+C	28	0
+C	29	0
+C	30	0
+C	31	0
+C	32	0
+C	33	0
+C	34	0
+C	35	0
+C	36	0
+C	37	0
+C	38	0
+C	39	0
+C	40	0
+C	41	0
+C	42	0
+C	43	0
+C	44	0
+C	45	0
+C	46	0
+C	47	0
+C	48	0
+C	49	0
+C	50	0
+C	51	0
+C	52	0
+C	53	0
+C	54	0
+C	55	0
+C	56	0
+C	57	0
+C	58	0
+C	59	0
+C	60	0
+C	61	0
+C	62	0
+C	63	0
+C	64	0
+C	65	0
+C	66	0
+C	67	0
+C	68	0
+C	69	0
+C	70	0
+C	71	0
+C	72	0
+C	73	0
+C	74	0
+C	75	0
+C	76	0
+C	77	0
+C	78	0
+C	79	0
+C	80	0
+C	81	0
+C	82	0
+C	83	0
+C	84	0
+C	85	0
+C	86	0
+C	87	0
+C	88	0
+C	89	0
+C	90	0
+C	91	0
+C	92	0
+C	93	0
+C	94	0
+C	95	0
+C	96	0
+C	97	0
+C	98	0
+C	99	0
+E	0	m_MainAtkEffectName	ef_damage
+E	0	m_SubAtkEffectName	
+E	1	m_MainAtkEffectName	ef_damage
+E	1	m_SubAtkEffectName	
+E	2	m_MainAtkEffectName	ef_damage
+E	2	m_SubAtkEffectName	ef_fire_01
+E	3	m_MainAtkEffectName	ef_tentacle_01
+E	3	m_SubAtkEffectName	
+E	4	m_MainAtkEffectName	ef_beam_01
+E	4	m_SubAtkEffectName	
+E	5	m_MainAtkEffectName	ef_atk_arrow_01_ms
+E	5	m_SubAtkEffectName	
+E	6	m_MainAtkEffectName	ef_atk_arrow_02_ms
+E	6	m_SubAtkEffectName	
+E	7	m_MainAtkEffectName	ef_atk_arrow_03_ms
+E	7	m_SubAtkEffectName	
+E	8	m_MainAtkEffectName	ef_atk_arrow_04_ms
+E	8	m_SubAtkEffectName	
+E	9	m_MainAtkEffectName	ef_atk_blade_01_ms
+E	9	m_SubAtkEffectName	
+E	10	m_MainAtkEffectName	ef_atk_blade_02_ms
+E	10	m_SubAtkEffectName	
+E	11	m_MainAtkEffectName	ef_atk_blade_03_ms
+E	11	m_SubAtkEffectName	
+E	12	m_MainAtkEffectName	ef_atk_blade_04_ms
+E	12	m_SubAtkEffectName	
+E	13	m_MainAtkEffectName	ef_atk_blade_05_ms
+E	13	m_SubAtkEffectName	
+E	14	m_MainAtkEffectName	ef_atk_magic_01_ms
+E	14	m_SubAtkEffectName	
+E	15	m_MainAtkEffectName	ef_atk_magic_03_ms
+E	15	m_SubAtkEffectName	
+E	16	m_MainAtkEffectName	ef_atk_magic_04_ms
+E	16	m_SubAtkEffectName	
+E	17	m_MainAtkEffectName	ef_atk_spear_01_ms
+E	17	m_SubAtkEffectName	
+E	18	m_MainAtkEffectName	ef_atk_spear_02_ms
+E	18	m_SubAtkEffectName	
+E	19	m_MainAtkEffectName	ef_atk_spear_03_ms
+E	19	m_SubAtkEffectName	
+E	20	m_MainAtkEffectName	ef_atk_spear_04_ms
+E	20	m_SubAtkEffectName	
+E	21	m_MainAtkEffectName	ef_atk_spear_05_ms
+E	21	m_SubAtkEffectName	
+E	22	m_MainAtkEffectName	ef_atk_spear_06_ms
+E	22	m_SubAtkEffectName	
+E	23	m_MainAtkEffectName	ef_wall_01
+E	23	m_SubAtkEffectName	
+E	24	m_MainAtkEffectName	ef_btl_thunder_01
+E	24	m_SubAtkEffectName	
+E	25	m_MainAtkEffectName	ef_btl_hurricane_01
+E	25	m_SubAtkEffectName	
+E	26	m_MainAtkEffectName	ef_btl_meteo_01
+E	26	m_SubAtkEffectName	
+E	27	m_MainAtkEffectName	ef_btl_beam_01_ms
+E	27	m_SubAtkEffectName	
+E	28	m_MainAtkEffectName	ef_atk_blade_06_ms
+E	28	m_SubAtkEffectName	
+E	29	m_MainAtkEffectName	ef_atk_spear_07_ms
+E	29	m_SubAtkEffectName	
+E	30	m_MainAtkEffectName	ef_atk_arrow_05_ms
+E	30	m_SubAtkEffectName	
+E	31	m_MainAtkEffectName	ef_atk_magic_05_ms
+E	31	m_SubAtkEffectName	
+E	32	m_MainAtkEffectName	
+E	32	m_SubAtkEffectName	ef_btl_impact_01
+E	33	m_MainAtkEffectName	
+E	33	m_SubAtkEffectName	ef_btl_breath_dark
+E	34	m_MainAtkEffectName	
+E	34	m_SubAtkEffectName	ef_btl_blizzard
+E	35	m_MainAtkEffectName	ef_fire_02
+E	35	m_SubAtkEffectName	
+E	36	m_MainAtkEffectName	
+E	36	m_SubAtkEffectName	ef_beam_02
+G	AudioClipManager	6	Android/V1016
+G	1-10	1	Android/V1011
+G	11-20	1	Android/V1011
+G	21-30	1	Android/V1011
+G	31-40	1	Android/V1011
+G	41-50	1	Android/V1011
+G	51-60	1	Android/V1011
+G	61-70	1	Android/V1011
+G	71-80	1	Android/V1011
+G	81-90	1	Android/V1011
+G	91-100	1	Android/V1011
+G	101-110	1	Android/V1011
+G	111-120	1	Android/V1011
+G	121-130	1	Android/V1011
+G	131-140	1	Android/V1011
+G	141-150	1	Android/V1011
+G	151-160	1	Android/V1011
+G	161-170	1	Android/V1011
+G	171-180	1	Android/V1011
+G	181-190	1	Android/V1011
+G	191-200	1	Android/V1011
+G	201-210	1	Android/V1011
+G	211-220	1	Android/V1011
+G	221-230	1	Android/V1011
+G	231-240	1	Android/V1011
+G	241-250	1	Android/V1011
+G	251-260	1	Android/V1011
+G	261-270	1	Android/V1011
+G	271-280	1	Android/V1011
+G	281-290	1	Android/V1011
+G	291-300	1	Android/V1011
+G	301-310	1	Android/V1011
+G	311-320	1	Android/V1011
+G	321-330	1	Android/V1011
+G	331-340	6	Android/V1016
+G	341-350	6	Android/V1016
+G	351-360	6	Android/V1016
+G	361-370	6	Android/V1016
+G	371-380	6	Android/V1016
+G	381-390	6	Android/V1016
+G	391-400	6	Android/V1016
+G	401-410	6	Android/V1016
+G	411-420	6	Android/V1016
+G	421-430	6	Android/V1016
+G	431-440	6	Android/V1016
+G	441-450	6	Android/V1016
+G	451-460	6	Android/V1016
+G	461-470	6	Android/V1016
+G	471-480	6	Android/V1016
+G	481-490	6	Android/V1016
+G	491-500	6	Android/V1016
+G	501-510	6	Android/V1016
+G	511-520	6	Android/V1016
+G	521-530	6	Android/V1016
+G	531-540	6	Android/V1016
+G	541-550	5	Android/V1015
+G	551-560	4	Android/V1014
+G	561-570	5	Android/V1015
+G	571-580	5	Android/V1015
+G	581-590	6	Android/V1016
+G	591-600	6	Android/V1016
+G	601-610	6	Android/V1016
+G	611-620	6	Android/V1016
+G	621-630	7	Android/V1017
+G	631-640	8	Android/V1018
+G	641-650	8	Android/V1018
+G	651-660	8	Android/V1018
+G	661-670	8	Android/V1018
+G	671-680	9	Android/V1019
+G	681-690	9	Android/V1019
+G	691-700	9	Android/V1019
+G	701-710	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+G	711-720	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+G	721-730	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+G	731-740	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf
+G	741-750	10	Android/V1020c7R7HlupcYzJ80UutCh3B4HQc9MEHUvf

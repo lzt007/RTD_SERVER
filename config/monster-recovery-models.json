@@ -1,0 +1,89 @@
+{
+  "ms01_sla_lv1": [
+    "ms01_sla_lv1_dark",
+    "ms01_sla_lv1_fire",
+    "ms01_sla_lv1_holy",
+    "ms01_sla_lv1_water"
+  ],
+  "ms01_sla_lv1_gold": [
+    "na"
+  ],
+  "ms01_sla_lv1_silver": [
+    "na"
+  ],
+  "ms01_sla_lv2": [
+    "ms01_sla_lv2_dark",
+    "ms01_sla_lv2_fire",
+    "ms01_sla_lv2_holy",
+    "ms01_sla_lv2_water"
+  ],
+  "ms01_sla_lv2_gold": [
+    "na"
+  ],
+  "ms01_sla_lv2_silver": [
+    "na"
+  ],
+  "ms01_sla_lv3": [
+    "ms01_sla_lv3_dark",
+    "ms01_sla_lv3_fire",
+    "ms01_sla_lv3_holy",
+    "ms01_sla_lv3_water"
+  ],
+  "ms01_sla_lv3_gold": [
+    "na"
+  ],
+  "ms01_sla_lv3_silver": [
+    "na"
+  ],
+  "ms01_sla_lv4": [
+    "ms01_sla_lv4_dark",
+    "ms01_sla_lv4_fire",
+    "ms01_sla_lv4_holy",
+    "ms01_sla_lv4_water"
+  ],
+  "ms01_sla_lv4_gold": [
+    "na"
+  ],
+  "ms01_sla_lv4_silver": [
+    "na"
+  ],
+  "ms01_sla_sh_water": [
+    "na"
+  ],
+  "ms01_wolf_lv1": [
+    "ms01_wolf_lv1_dark",
+    "ms01_wolf_lv1_fire",
+    "ms01_wolf_lv1_holy",
+    "ms01_wolf_lv1_water"
+  ],
+  "ms01_wolf_lv2": [
+    "ms01_wolf_lv2_dark",
+    "ms01_wolf_lv2_fire",
+    "ms01_wolf_lv2_holy",
+    "ms01_wolf_lv2_water"
+  ],
+  "ms01_wolf_lv3": [
+    "ms01_wolf_lv3_dark",
+    "ms01_wolf_lv3_fire",
+    "ms01_wolf_lv3_holy",
+    "ms01_wolf_lv3_water"
+  ],
+  "ms01_wolf_lv4": [
+    "ms01_wolf_lv4_dark",
+    "ms01_wolf_lv4_fire",
+    "ms01_wolf_lv4_holy",
+    "ms01_wolf_lv4_water"
+  ],
+  "ms01_wolf_sh_dark": [
+    "na"
+  ],
+  "ms01_wolf_sh_fire": [
+    "na"
+  ],
+  "ms01_wolf_sh_holy": [
+    "na"
+  ],
+  "ms01_wolf_sh_water": [
+    "na"
+  ]
+}
