@@ -1,0 +1,327 @@
+{
+  "model": "ms03_mind_01",
+  "enemy_types": [
+    5
+  ],
+  "motion_prefixes": [
+    "ms01_bear"
+  ],
+  "sources": [
+    {
+      "source": "resources/unpacked/assets/assets/quest/ms01_mind_dark.unity3d",
+      "required": [
+        "",
+        "mn_c_main",
+        "mn_c_main/mn_c_chest",
+        "mn_c_main/mn_c_chest/mn_c_neck",
+        "mn_c_main/mn_c_chest/mn_c_neck/mn_c_head",
+        "mn_c_main/mn_c_chest/mn_l_shoulder",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+        "mn_c_main/mn_c_chest/mn_r_shoulder",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+        "mn_c_main/mn_l_hip",
+        "mn_c_main/mn_l_hip/mn_l_knee",
+        "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+        "mn_c_main/mn_r_hip",
+        "mn_c_main/mn_r_hip/mn_r_knee",
+        "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+      ],
+      "skeleton_paths": [
+        [
+          "",
+          "mn_c_main",
+          "mn_c_main/mn_c_head",
+          "mn_c_main/mn_c_tail_01",
+          "mn_c_main/mn_c_tail_01/en_c_tail_02",
+          "mn_c_main/mn_l_hip",
+          "mn_c_main/mn_l_hip/en_l_hip",
+          "mn_c_main/mn_r_hip",
+          "mn_c_main/mn_r_hip/en_r_toe"
+        ],
+        [
+          "",
+          "mn_c_main",
+          "mn_c_main/mn_c_head",
+          "mn_c_main/mn_c_tail_01",
+          "mn_c_main/mn_c_tail_01/en_c_tail_02",
+          "mn_c_main/mn_l_hip",
+          "mn_c_main/mn_l_hip/en_l_hip",
+          "mn_c_main/mn_r_hip",
+          "mn_c_main/mn_r_hip/en_r_toe"
+        ]
+      ],
+      "missing": [
+        "mn_c_main/mn_c_chest",
+        "mn_c_main/mn_c_chest/mn_c_neck",
+        "mn_c_main/mn_c_chest/mn_c_neck/mn_c_head",
+        "mn_c_main/mn_c_chest/mn_l_shoulder",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+        "mn_c_main/mn_c_chest/mn_r_shoulder",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+        "mn_c_main/mn_l_hip/mn_l_knee",
+        "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+        "mn_c_main/mn_r_hip/mn_r_knee",
+        "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+      ],
+      "objects": [
+        {
+          "path_id": 8,
+          "name": "ast_ms01_mind_dark"
+        },
+        {
+          "path_id": 9,
+          "name": "en_r_toe"
+        },
+        {
+          "path_id": 10,
+          "name": "ms01_mind_dark"
+        },
+        {
+          "path_id": 11,
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 12,
+          "name": "ms01_mind_dark"
+        },
+        {
+          "path_id": 13,
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 14,
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 15,
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 16,
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 17,
+          "name": "en_l_hip"
+        },
+        {
+          "path_id": 18,
+          "name": "en_l_hip"
+        },
+        {
+          "path_id": 19,
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 20,
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 21,
+          "name": "ms01_mind_dark"
+        },
+        {
+          "path_id": 22,
+          "name": "en_r_toe"
+        },
+        {
+          "path_id": 23,
+          "name": "ms01_mind_dark"
+        },
+        {
+          "path_id": 24,
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 25,
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 26,
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 27,
+          "name": "move"
+        },
+        {
+          "path_id": 28,
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 29,
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 30,
+          "name": "move"
+        }
+      ],
+      "source_sha256": "bbf1a4df6aee0d64380efecfd567bd29625fc1353d34e15f1808f09ff60d4005",
+      "assessment": "Both recovered mind designs have main/head/tail and two simple hip/end chains. They lack actual chest/neck, both shoulder/elbow/wrist chains and knee/ankle chains required by original type5 bear motion. Renaming alone cannot provide these articulated body parts; inserting dummy transforms would not animate missing skinned anatomy."
+    },
+    {
+      "source": "resources/unpacked/assets/assets/quest/ms01_mind_fire.unity3d",
+      "required": [
+        "",
+        "mn_c_main",
+        "mn_c_main/mn_c_chest",
+        "mn_c_main/mn_c_chest/mn_c_neck",
+        "mn_c_main/mn_c_chest/mn_c_neck/mn_c_head",
+        "mn_c_main/mn_c_chest/mn_l_shoulder",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+        "mn_c_main/mn_c_chest/mn_r_shoulder",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+        "mn_c_main/mn_l_hip",
+        "mn_c_main/mn_l_hip/mn_l_knee",
+        "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+        "mn_c_main/mn_r_hip",
+        "mn_c_main/mn_r_hip/mn_r_knee",
+        "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+      ],
+      "skeleton_paths": [
+        [
+          "",
+          "mn_c_main",
+          "mn_c_main/mn_c_head",
+          "mn_c_main/mn_c_tail_01",
+          "mn_c_main/mn_c_tail_01/en_c_tail_02",
+          "mn_c_main/mn_l_hip",
+          "mn_c_main/mn_l_hip/en_l_hip",
+          "mn_c_main/mn_r_hip",
+          "mn_c_main/mn_r_hip/en_r_toe"
+        ],
+        [
+          "",
+          "mn_c_main",
+          "mn_c_main/mn_c_head",
+          "mn_c_main/mn_c_tail_01",
+          "mn_c_main/mn_c_tail_01/en_c_tail_02",
+          "mn_c_main/mn_l_hip",
+          "mn_c_main/mn_l_hip/en_l_hip",
+          "mn_c_main/mn_r_hip",
+          "mn_c_main/mn_r_hip/en_r_toe"
+        ]
+      ],
+      "missing": [
+        "mn_c_main/mn_c_chest",
+        "mn_c_main/mn_c_chest/mn_c_neck",
+        "mn_c_main/mn_c_chest/mn_c_neck/mn_c_head",
+        "mn_c_main/mn_c_chest/mn_l_shoulder",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+        "mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+        "mn_c_main/mn_c_chest/mn_r_shoulder",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+        "mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+        "mn_c_main/mn_l_hip/mn_l_knee",
+        "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+        "mn_c_main/mn_r_hip/mn_r_knee",
+        "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+      ],
+      "objects": [
+        {
+          "path_id": 8,
+          "name": "ast_ms01_mind_fire"
+        },
+        {
+          "path_id": 9,
+          "name": "ms01_mind_fire"
+        },
+        {
+          "path_id": 10,
+          "name": "ms01_mind_fire"
+        },
+        {
+          "path_id": 11,
+          "name": "ms01_mind_fire"
+        },
+        {
+          "path_id": 12,
+          "name": "ms01_mind_fire"
+        },
+        {
+          "path_id": 13,
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 14,
+          "name": "en_c_tail_02"
+        },
+        {
+          "path_id": 15,
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 16,
+          "name": "mn_c_tail_01"
+        },
+        {
+          "path_id": 17,
+          "name": "en_l_hip"
+        },
+        {
+          "path_id": 18,
+          "name": "en_l_hip"
+        },
+        {
+          "path_id": 19,
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 20,
+          "name": "mn_l_hip"
+        },
+        {
+          "path_id": 21,
+          "name": "en_r_toe"
+        },
+        {
+          "path_id": 22,
+          "name": "en_r_toe"
+        },
+        {
+          "path_id": 23,
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 24,
+          "name": "mn_r_hip"
+        },
+        {
+          "path_id": 25,
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 26,
+          "name": "mn_c_head"
+        },
+        {
+          "path_id": 27,
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 28,
+          "name": "mn_c_main"
+        },
+        {
+          "path_id": 29,
+          "name": "move"
+        },
+        {
+          "path_id": 30,
+          "name": "move"
+        }
+      ],
+      "source_sha256": "a4c365e5f45699a9c96f7587d15d65b574b0528f54db0e017b2cff9e7e859436",
+      "assessment": "Both recovered mind designs have main/head/tail and two simple hip/end chains. They lack actual chest/neck, both shoulder/elbow/wrist chains and knee/ankle chains required by original type5 bear motion. Renaming alone cannot provide these articulated body parts; inserting dummy transforms would not animate missing skinned anatomy."
+    }
+  ],
+  "decision": "keep_existing_handling",
+  "reason": "All two same-family recovered designs evaluated; original enemy type selects ms01_bear wait/attack. No compatible same-family articulated skeleton exists. Safe compatibility adaptation requires a new rig/weighting and visual motion verification, not an evidence-preserving rename."
+}

@@ -1,0 +1,2369 @@
+{
+  "summary": {
+    "total": 218,
+    "status": {
+      "已安装兼容资源，待实机验收": 194,
+      "无同族来源，保留原处理": 22,
+      "已有原优先资源，保留": 1,
+      "转换待解决": 1
+    }
+  },
+  "items": [
+    {
+      "category": "模型",
+      "original": "ast_ms00_book_el_01",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_book_el_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_book_el_02",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_book_el_02"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_book_el_03",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_book_el_03"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_book_el_05",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_book_el_05"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_book_el_06",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_book_el_06"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_death_01_zako",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_death_01_zako"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_death_shadow",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_death_shadow"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_floor_move_l",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_floor_move_l"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_floor_move_r",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_floor_move_r"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_floor_move_s",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_floor_move_s"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms00_kaidan_iseki",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms00_kaidan_iseki"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bear_lv1",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bear_lv2",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bear_lv4",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv1_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv1_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv1_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv1_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv1_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv1_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv1_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv1_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv2_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv2_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv2_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv2_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv2_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv2_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_bird_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bird_lv2_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv1_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv1_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv1_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv1_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv1_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv1_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv1_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv1_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv2_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv2_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv2_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv2_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv2_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv2_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_crab_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_crab_lv2_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_dra_lv1",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_dra_lv2",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_dra_lv3",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_dra_sh_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_sh_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fish_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fish_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fish_un",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv1_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv1_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv1_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv1_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv1_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv1_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv2_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv2_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv2_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv2_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_fugu_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_fugu_lv2_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_golem_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_golem_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_golem_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_golem_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_golem_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_golem_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_golem_un",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_golem_un"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_golem_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_golem_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_mind_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_mind_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_mind_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_mind_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_mind_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_mind_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_mind_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_mind_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_lv1",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_lv2",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_lv3",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_lv4",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_sh_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_sh_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_sh_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_sh_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_sh_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_sh_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sco_sh_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_sh_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv1_silver",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv1_silver"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv2",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv2_gold",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2_gold"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv2_silver",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2_silver"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv3",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv3_gold",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3_gold"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv3_silver",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3_silver"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv4",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_lv4_silver",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4_silver"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_sla_sh_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_sh_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_lv2",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_lv3",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_lv4",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_sh_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_sh_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_sh_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_squ_sh_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv1_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv1_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv1_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv1_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv1_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv1_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv2_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv2_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv2_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv2_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_tatu_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_tatu_lv2_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_lv1",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_lv2",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_lv3",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_lv4",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_sh_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_sh_dark"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_sh_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_sh_fire"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_sh_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_sh_holy"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms01_wolf_sh_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_sh_water"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_dark_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_fire_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_holy_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_holy_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_un_02",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_un_02"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_un_04",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_un_04"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_dra_water_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_dra_water_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_dark_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已有原优先资源，保留",
+      "models": [
+        "ms02_four_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_dark_01_zako",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_dark_01_zako"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_dark_05",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_dark_05"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_fire_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_fire_01_zako",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_fire_01_zako"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_fire_05",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_fire_05"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_holy_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_holy_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_holy_01_zako",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_holy_01_zako"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_un_02",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_un_02"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_un_05",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_un_05"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_water_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_water_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_water_01_zako",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_water_01_zako"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms02_four_water_05",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms02_four_water_05"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_dark_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_dark_04",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_dark_04"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_fire_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_fire_04",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_fire_04"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_holy_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_holy_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_holy_04",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_holy_04"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_un_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_un_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_un_02",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_un_02"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_water_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_water_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_dra_water_04",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_dra_water_04"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_dark_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_fire_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_holy_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_holy_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_un_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_un_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_un_02",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_un_02"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_un_03",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_un_03"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_fly_water_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_fly_water_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_dark_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_fire_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_holy_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_holy_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_un_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_un_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_un_03",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_un_03"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_four_water_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_four_water_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_mind_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "转换待解决",
+      "models": [
+        "ms03_mind_01"
+      ],
+      "errors": [
+        "{'model': 'ms03_mind_01', 'source': 'resources/unpacked/assets/assets/quest/ms01_mind_dark.unity3d', 'source_sha256': 'bbf1a4df6aee0d64380efecfd567bd29625fc1353d34e15f1808f09ff60d4005', 'bundle': 'ms03_mind_01.unity3d', 'sha256': '88db25ddc2772af8d2d37e4848abfb516ce6ed3dd83c165554415a35e435197a', 'internal_file': 'CustomAssetBundle-032065b2eb292da5088b86991bef0131', 'vertices': 44, 'mesh_roundtrip': True, 'missing_pointers': [], 'missing_motion_paths': ['mn_c_main/mn_c_chest', 'mn_c_main/mn_c_chest/mn_c_neck', 'mn_c_main/mn_c_chest/mn_c_neck/mn_c_head', 'mn_c_main/mn_c_chest/mn_l_shoulder', 'mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow', 'mn_c_main/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist', 'mn_c_main/mn_c_chest/mn_r_shoulder', 'mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow', 'mn_c_main/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist', 'mn_c_main/mn_l_hip/mn_l_knee', 'mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle', 'mn_c_main/mn_r_hip/mn_r_knee', 'mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle'], 'texture_roundtrip': True, 'textures': {}, 'shader_mapping': [{'render_state_compatible': True, 'signature': {'shader': 'Character/brightness', 'directives': {'Cull': ['Off'], 'Blend': ['SrcAlpha OneMinusSrcAlpha'], 'BlendOp': [], 'ZWrite': [], 'ZTest': [], 'ColorMask': [], 'Offset': [], 'AlphaTest': [], 'Fog': [], 'Lighting': [], 'Stencil': []}, 'tags': [('queue', 'transparent'), ('rendertype', 'transparent'), ('queue', 'transparent'), ('rendertype', 'transparent')], 'properties': '_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5', 'passes': 1}, 'scope': 'ShaderLab render state/properties only; GPU program equivalence requires separate evidence', 'native_mapping': 'brightness-native'}], 'motion_provenance': 'validated_original_apk', 'original_motion_scope': 'wait_and_attack', 'embedded_motion_clips': ['ms01_squ_lv2_tob', 'ms01_squ_lv2_tob_6'], 'source_unbound_motion_paths': [], 'embedded_motion_roundtrip': True, 'embedded_motion_samples': [{'name': 'ms01_squ_lv2_tob', 'path_id': 6, 'samples': {'m_RotationCurves': 0, 'm_CompressedRotationCurves': 0, 'm_PositionCurves': 2, 'm_ScaleCurves': 2, 'm_FloatCurves': 0}, 'compressed_rotation_curves': 0}, {'name': 'ms01_squ_lv2_tob_6', 'path_id': 7, 'samples': {'m_RotationCurves': 0, 'm_CompressedRotationCurves': 0, 'm_PositionCurves': 2, 'm_ScaleCurves': 2, 'm_FloatCurves': 0}, 'compressed_rotation_curves': 0}]}"
+      ]
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_oct_dark_01",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_oct_dark_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_oct_fire_01",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_oct_fire_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms03_oct_un_01",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms03_oct_un_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "模型",
+      "original": "ast_ms04_legend_01",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms04_legend_01"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv1_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv1_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv1_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv1_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv2_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv2_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv2_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv4_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv4_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv4_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_bear_lv4_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_bear_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv1_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv1_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv1_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv1_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv2_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv2_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv2_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv2_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv3_dark",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv3_fire",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv3_holy",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_dra_lv3_water",
+      "material_match": "找到",
+      "inferred_material": false,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_dra_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv1_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv1_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv1_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv1_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv2_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv2_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv2_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv2_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv3_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv3_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv3_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv3_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv4_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv4_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv4_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sco_lv4_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sco_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv2_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv2_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv2_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv2_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv3_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv3_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv3_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv3_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv4_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv4_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv4_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_sla_lv4_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_sla_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv2_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv2_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv2_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv2_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv3_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv3_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv3_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv3_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv4_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv4_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv4_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_squ_lv4_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "无同族来源，保留原处理",
+      "models": [],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv1_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv1_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv1_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv1_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv1"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv2_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv2_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv2_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv2_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv2"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv3_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv3_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv3_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv3_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv3"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv4_dark",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv4_fire",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv4_holy",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv4"
+      ],
+      "errors": []
+    },
+    {
+      "category": "贴图",
+      "original": "ms01_wolf_lv4_water",
+      "material_match": "未找到",
+      "inferred_material": true,
+      "status": "已安装兼容资源，待实机验收",
+      "models": [
+        "ms01_wolf_lv4"
+      ],
+      "errors": []
+    }
+  ]
+}

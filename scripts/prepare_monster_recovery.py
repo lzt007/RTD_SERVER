@@ -6,6 +6,7 @@ import hashlib
 import json
 import struct
 import zipfile
+from functools import lru_cache
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -33,18 +34,23 @@ def pointers(tree):
     elif isinstance(tree,(list,tuple)):
         for v in tree:yield from pointers(v)
 
+@lru_cache(maxsize=1)
+def motion_catalog():
+    return json.loads((ROOT/'docs/resource-audit/loading-chain/catalog.json').read_text())
+
+@lru_cache(maxsize=None)
 def motion_paths(family):
     import UnityPy
-    catalog=json.loads((ROOT/'docs/resource-audit/loading-chain/catalog.json').read_text())
+    catalog=motion_catalog()
     result=set()
     with zipfile.ZipFile(APK) as z:
         for obj in catalog['objects'].values():
-            if obj['type']!='AnimationClip' or obj['name'] not in {f'ms01_{family}_wait_01',f'ms01_{family}_atk_01'}:continue
+            if obj['type']!='AnimationClip' or obj['name'] not in ({f'{family if family.startswith("ms") else "ms01_"+family}_wait_01',f'{family if family.startswith("ms") else "ms01_"+family}_atk_01'} if family!='death' else {'ms00_death_wait_01','ms00_death_atk_01'}):continue
             source=catalog['sources'][catalog['files'][obj['file']]['source']]
             prefix=str(APK.relative_to(WS))+':'
             origin=next((o for o in source['origins']
                          if o['category']=='apk_data' and o['path'].startswith(prefix)),None)
-            if origin is None:raise ValueError('Original APK motion provenance unavailable')
+            if origin is None:continue
             entry=origin['path'][len(prefix):]
             t=next(o for o in UnityPy.load(z.read(entry)).objects if o.path_id==obj['path_id']).read_typetree()
             for k in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves'):
@@ -64,7 +70,7 @@ def hierarchy_paths(trees):
     return [set(walk(i,'')) for i,t in transforms.items()
             if trees[t['m_GameObject']['m_PathID']][1]['m_Name']=='move']
 
-def convert_model(source,output,model,textures):
+def convert_model(source,output,model,textures, *, source_model=None, motion_family=None):
     import UnityPy
     from UnityPy.helpers.MeshHelper import MeshHandler
     from PIL import Image
@@ -72,25 +78,57 @@ def convert_model(source,output,model,textures):
     templates={}
     for obj in target.objects.values():templates.setdefault(obj.type.name,obj)
     original_trees={k:o.read_typetree() for k,o in templates.items()}
-    objects={};trees={};images={};vertices=0
+    objects={};trees={};images={};vertices=0;shader_reports=[]
     src={o.path_id:o for o in env.objects}
     vertices=sum(o.read_typetree()['m_VertexData']['m_VertexCount'] for o in env.objects if o.type.name=='Mesh' and o.assets_file.header.version<=9)
     shader_id=next(i for i,o in src.items() if o.type.name=='Shader')
-    root_id=next(i for i,o in src.items() if o.type.name=='GameObject' and o.read_typetree()['m_Name'].startswith('ast_'))
+    root_id=next(i for i,o in src.items() if o.type.name=='GameObject' and (o.read_typetree()['m_Name']=='ast_'+source_model if source_model else o.read_typetree()['m_Name'].startswith('ast_')))
+    from backup_skeleton_compat import adapt_ms02_dragon_tail
+    adapted_source,skeleton_adaptations=adapt_ms02_dragon_tail({i:(o.type.name,o.read_typetree()) for i,o in src.items()},motion_family)
+    source_reachable=set(src)
+    if source_model is not None:
+        source_reachable=set();todo=[root_id]
+        while todo:
+            current=todo.pop()
+            if current in source_reachable:continue
+            source_reachable.add(current)
+            if current not in src:raise ValueError('Missing source dependency '+str(current))
+            for pointer in pointers(src[current].read_typetree()):
+                if pointer['m_FileID']:raise ValueError('External source dependency requires explicit resolution')
+                if pointer['m_PathID']:todo.append(pointer['m_PathID'])
     def add(typ,tree,pid):
         obj=copy.copy(templates[typ]);obj.assets_file=target;obj.path_id=pid
         obj.save_typetree(merge_schema(tree,original_trees[typ]));objects[pid]=obj;trees[pid]=(typ,tree)
     texture_obj=next(o for o in env.objects if o.type.name=='Texture2D')
     for pid,obj in src.items():
-        typ=obj.type.name;t=obj.read_typetree()
+        if pid not in source_reachable:continue
+        typ=obj.type.name;t=copy.deepcopy(adapted_source[pid][1])
         if typ=='AssetBundle':continue
-        if typ=='Shader':t=copy.deepcopy(original_trees['Shader'])
+        if typ=='Shader':
+            if source_model is not None:
+                from backup_shader_compatibility import native_shader_for
+                t,proof=native_shader_for(t,original_trees['Shader'])
+            else:t=copy.deepcopy(original_trees['Shader'])
         elif typ=='Material':
             # Original Android shader and its matching saved-property defaults.
-            t=copy.deepcopy(original_trees['Material']);t['m_Name']=model
-            t['m_Shader']={'m_FileID':0,'m_PathID':shader_id}
+            source_material=t
+            if source_model is not None:
+                from backup_shader_compatibility import validate_shader_mapping, native_shader_for
+                for field,default in (('m_CustomRenderQueue',-1),('m_ShaderKeywords',''),('stringTagMap',[]),('disabledShaderPasses',[])):
+                    if source_material.get(field,default)!=default and field not in original_trees['Material']:
+                        raise ValueError('Unsupported material render override '+field)
+                shader_pointer=source_material['m_Shader']
+                if shader_pointer['m_FileID']:raise ValueError('External shader requires explicit resolution')
+                mapped_shader,proof=native_shader_for(src[shader_pointer['m_PathID']].read_typetree(),original_trees['Shader'])
+                shader_reports.append(proof)
+            t=copy.deepcopy(original_trees['Material']);t['m_Name']=source_material.get('m_Name',model)
+            t['m_Shader']=copy.deepcopy(source_material['m_Shader']) if source_model is not None else {'m_FileID':0,'m_PathID':shader_id}
+            for field in ('m_Floats','m_Colors'):
+                t['m_SavedProperties'][field]=copy.deepcopy(source_material.get('m_SavedProperties',{}).get(field,t['m_SavedProperties'][field]))
             for key,v in t['m_SavedProperties']['m_TexEnvs']:
-                v['m_Texture']={'m_FileID':0,'m_PathID':texture_obj.path_id if key['name']=='_MainTex' else 0}
+                source_env=next((value for prop,value in source_material.get('m_SavedProperties',{}).get('m_TexEnvs',[]) if prop['name']==key['name']),None)
+                v.update(copy.deepcopy(source_env)) if source_env else None
+                if source_env is None:v['m_Texture']={'m_FileID':0,'m_PathID':0}
         elif typ=='Texture2D':continue
         elif typ=='GameObject':
             if obj.assets_file.header.version>9:
@@ -116,8 +154,21 @@ def convert_model(source,output,model,textures):
                 sub['isTriStrip']=0;sub['triangleCount']=sub['indexCount']//3
         add(typ,t,pid)
     exports=[('ast_'+model,root_id)]
+    texture_environments={str(Path(source)):env}
+    texture_jobs=[(o.read_typetree()['m_Name'],source,o,o.path_id,False) for o in env.objects if o.type.name=='Texture2D']
     for index,(name,path) in enumerate(textures.items()):
-        tex=next(o for o in UnityPy.load(str(path)).objects if o.type.name=='Texture2D')
+        texture_environment=texture_environments.get(str(Path(path)))
+        if texture_environment is None:
+            texture_environment=UnityPy.load(str(path));texture_environments[str(Path(path))]=texture_environment
+        candidates=[o for o in texture_environment.objects if o.type.name=='Texture2D']
+        exact=[o for o in candidates if o.read_typetree()['m_Name']==name]
+        attr=name.rsplit('_',1)[-1]
+        matched=exact or [o for o in candidates if o.read_typetree()['m_Name'].endswith('_'+attr)]
+        if not matched and len(candidates)!=1:raise ValueError('Ambiguous texture mapping '+name)
+        tex=(matched or candidates)[0]
+        existing=next((o.path_id for o in env.objects if o.type.name=='Texture2D' and o.read_typetree()['m_Name']==name),None)
+        texture_jobs.append((name,path,tex,existing or 10000+index,True))
+    for name,path,tex,pid,export in texture_jobs:
         data=tex.read()
         if tex.assets_file.header.version<=9 and data.m_TextureFormat==2:
             px=struct.unpack('<'+str(data.m_Width*data.m_Height)+'H',data.image_data[:data.m_Width*data.m_Height*2])
@@ -132,8 +183,8 @@ def convert_model(source,output,model,textures):
                  m_CompleteImageSize=image.width*image.height*4,m_MipMap=False,m_IsReadable=True,
                  m_ImageCount=1,m_TextureDimension=2)
         t['image data']=image.transpose(Image.Transpose.FLIP_TOP_BOTTOM).tobytes()
-        pid=texture_obj.path_id if index==0 else 10000+index
-        add('Texture2D',t,pid);exports.append((name,pid))
+        add('Texture2D',t,pid)
+        if export:exports.append((name,pid))
     ab=copy.deepcopy(original_trees['AssetBundle'])
     ab['m_Name']='compatible-'+model
     ab['m_PreloadTable']=[{'m_FileID':0,'m_PathID':i} for i in objects]
@@ -170,15 +221,24 @@ def convert_model(source,output,model,textures):
         if obj.type.name!='SkinnedMeshRenderer':continue
         renderer=obj.read_typetree();mesh=sf.objects[renderer['m_Mesh']['m_PathID']].read_typetree()
         if len(renderer['m_Bones'])!=len(mesh['m_BindPose']):raise ValueError('Renderer bone/bindpose mismatch')
-    family='wolf' if 'wolf' in model else ('slawing' if 'slawing' in model else 'sla')
-    expected=motion_paths(family)
-    skeletons=hierarchy_paths(trees)
-    missing_paths=sorted(set().union(*(expected-paths for paths in skeletons))) if skeletons else ['no move hierarchy']
-    roundtrip=all(check.container[name].read().image.convert('RGBA').tobytes()==im.tobytes() for name,im in images.items())
+    family=motion_family or ('wolf' if 'wolf' in model else ('slawing' if 'slawing' in model else 'sla'))
+    reachable=set(); pending=[root_id]
+    while pending:
+        current=pending.pop()
+        if current in reachable:continue
+        reachable.add(current)
+        pending.extend(p['m_PathID'] for p in pointers(trees[current][1]) if not p['m_FileID'] and p['m_PathID'] and p['m_PathID'] in trees)
+    motion_info=validate_motion_paths({i:trees[i] for i in reachable},family,model,source_trees=adapted_source)
+    missing_paths=motion_info['missing_motion_paths']
+    roundtrip=all(sf.objects[pid].read().image.convert('RGBA').tobytes()==images[name].tobytes() for name,path,tex,pid,export in texture_jobs)
     report=dict(model=model,source=str(Path(source).relative_to(WS)),source_sha256=hashlib.sha256(Path(source).read_bytes()).hexdigest(),
                 bundle=output.name,sha256=hashlib.sha256(output.read_bytes()).hexdigest(),internal_file=unique,
                 vertices=vertices,mesh_roundtrip=mesh_roundtrip,missing_pointers=missing,missing_motion_paths=missing_paths,texture_roundtrip=roundtrip,
                 textures={name:dict(source=str(Path(p).relative_to(WS)),sha256=hashlib.sha256(Path(p).read_bytes()).hexdigest()) for name,p in textures.items()})
+    report['skeleton_adaptations']=skeleton_adaptations
+    report['shader_mapping']=shader_reports
+    report.update(motion_info)
+    report.update(validate_embedded_motion_roundtrip(env,check,source_reachable,adapted_source))
     if missing or missing_paths or not roundtrip or not mesh_roundtrip:raise ValueError(report)
     return report
 
@@ -286,6 +346,105 @@ def build(active_models,output):
                   unchanged_existing=['ms01_sla_lv1','ms01_sla_lv1_gold','ms01_sla_lv4_gold'],bundles=reports)
     (output/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     return manifest
+
+
+def validate_embedded_motion_roundtrip(source_env, converted_env, only_path_ids=None, source_overrides=None):
+    """Reject animation conversions that lose authored samples or packed curves."""
+    original={o.path_id:o.read_typetree() for o in source_env.objects if o.type.name=='AnimationClip' and (only_path_ids is None or o.path_id in only_path_ids)}
+    if source_overrides is not None:original={pid:source_overrides[pid][1] for pid in original}
+    converted={o.path_id:o.read_typetree() for o in converted_env.objects if o.type.name=='AnimationClip'}
+    reports=[]
+    def normalized(value):
+        if isinstance(value,dict):
+            # Unity 3.5 has quaternion curves but no newer Euler rotation-order tag.
+            return {k:normalized(v) for k,v in value.items() if k!='m_RotationOrder'}
+        if isinstance(value,(tuple,list)):return [normalized(v) for v in value]
+        return value
+    for pid,src in original.items():
+        if pid not in converted:raise ValueError('Embedded animation clip missing after conversion '+str(pid))
+        dst=converted[pid];name=src.get('m_Name',str(pid))
+        if src.get('m_Legacy') is False:raise ValueError('Non-legacy muscle animation requires explicit bake: '+name)
+        if src.get('m_EulerCurves'):raise ValueError('Euler animation requires quaternion bake: '+name)
+        if src.get('m_PPtrCurves'):raise ValueError('Object-reference animation unsupported by target: '+name)
+        samples={}
+        for key in ('m_RotationCurves','m_CompressedRotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves'):
+            a=src.get(key,[]);b=dst.get(key,[])
+            if normalized(a)!=normalized(b):raise ValueError('Animation curve/packed-data loss '+name+':'+key)
+            samples[key]=sum(len(c.get('curve',{}).get('m_Curve',[])) for c in a)
+        for key in ('m_SampleRate','m_WrapMode','m_Compressed'):
+            if src.get(key)!=dst.get(key):raise ValueError('Animation metadata loss '+name+':'+key)
+        if not any(samples.values()) and not src.get('m_CompressedRotationCurves'):
+            raise ValueError('Embedded clip contains no supported animation samples: '+name)
+        reports.append(dict(name=name,path_id=pid,samples=samples,compressed_rotation_curves=len(src.get('m_CompressedRotationCurves',[]))))
+    return dict(embedded_motion_roundtrip=True,embedded_motion_samples=reports)
+
+
+def validate_motion_paths(trees, family, model, source_trees=None):
+    """Check original APK runtime clips when present, plus all embedded clips.
+
+    Missing APK clips are reported as such, never claimed to be recovered.
+    Embedded animation validation follows the actual Animation component owner.
+    """
+    def paths_from(transform_id, data=None):
+        data=trees if data is None else data
+        found=set()
+        def walk(tid,prefix):
+            found.add(prefix)
+            tree=data[tid][1]
+            for pointer in tree['m_Children']:
+                child=pointer['m_PathID']; node=data[child][1]
+                name=data[node['m_GameObject']['m_PathID']][1]['m_Name']
+                walk(child,prefix+'/'+name if prefix else name)
+        walk(transform_id,'')
+        return found
+    transforms={t['m_GameObject']['m_PathID']:pid for pid,(typ,t) in trees.items() if typ=='Transform'}
+    missing=[]; clips=[]; source_unbound=[]
+    for pid,(typ,animation) in trees.items():
+        if typ!='Animation':continue
+        owner=animation['m_GameObject']['m_PathID']
+        actual=paths_from(transforms[owner])
+        references=list(animation.get('m_Animations',[]))+[animation.get('m_Animation',{'m_PathID':0})]
+        seen_clips=set()
+        for pointer in references:
+            clip_id=pointer['m_PathID']
+            if not clip_id or clip_id in seen_clips:continue
+            seen_clips.add(clip_id)
+            clip_type,clip=trees[clip_id]
+            if clip_type!='AnimationClip':raise ValueError('Animation references non-clip')
+            clips.append(clip.get('m_Name',str(clip_id)))
+            required={c['path'] for key in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves') for c in clip.get(key,[])}
+            absent=required-actual
+            if source_trees is not None and owner in transforms:
+                source_transforms={t['m_GameObject']['m_PathID']:i for i,(typ,t) in source_trees.items() if typ=='Transform'}
+                source_animation=source_trees.get(pid)
+                source_clip=source_trees.get(clip_id)
+                if source_animation and source_clip and owner in source_transforms and source_animation[1]['m_GameObject']['m_PathID']==owner:
+                    source_actual=paths_from(source_transforms[owner],source_trees)
+                    for path in sorted(absent-source_actual):
+                        curves=[(key,c) for key in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves') for c in clip.get(key,[]) if c['path']==path]
+                        safe=True
+                        for key,c in curves:
+                            keys=c.get('curve',{}).get('m_Curve',[])
+                            is_static_scale=key=='m_ScaleCurves'
+                            is_historical_fly_position=key=='m_PositionCurves' and family=='ms03_fly' and clip.get('m_Name') in {'ms03_fly_tob','ms03_fly_tob_6'} and path=='ms03_fly_fire_01'
+                            safe &= (is_static_scale or is_historical_fly_position) and len(keys)==1 and all(isinstance(v,(int,float)) and __import__('math').isfinite(v) and (v!=0 or is_historical_fly_position) for v in keys[0].get('value',{}).values()) and set(keys[0].get('value',{}))=={'x','y','z'} and all(keys[0].get(slope)==dict(x=0.,y=0.,z=0.) for slope in ('inSlope','outSlope'))
+                            safe &= any({k:v for k,v in c.items() if k!='curve'}=={k:v for k,v in sc.items() if k!='curve'} and {k:v for k,v in c.get('curve',{}).items() if k!='m_RotationOrder'}=={k:v for k,v in sc.get('curve',{}).items() if k!='m_RotationOrder'} for sc in source_clip[1].get(key,[]))
+                        if curves and safe:
+                            absent.remove(path);source_unbound.append(dict(animation_id=pid,clip_id=clip_id,path=path,reason='Source already unbound single constant sample preserved verbatim',curve_types=[key for key,c in curves],samples=[c['curve']['m_Curve'][0] for key,c in curves]))
+            missing.extend(absent)
+    try:
+        expected=motion_paths(family)
+    except ValueError as exc:
+        if str(exc)!='Original motions not found':raise
+        original='not_present_in_original_apk'
+        if not clips and family not in {'book','floor','kaidan'}:
+            missing.append('no original or embedded motion evidence')
+    else:
+        original='validated_original_apk'
+        skeletons=hierarchy_paths(trees)
+        if not skeletons:missing.append('no move hierarchy for original runtime clips')
+        for paths in skeletons:missing.extend(expected-paths)
+    return dict(missing_motion_paths=sorted(set(missing)),motion_provenance=original,original_motion_scope='wait_and_attack',embedded_motion_clips=sorted(set(clips)),source_unbound_motion_paths=source_unbound)
 
 if __name__=='__main__':
     import argparse

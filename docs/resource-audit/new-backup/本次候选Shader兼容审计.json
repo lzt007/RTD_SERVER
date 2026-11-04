@@ -1,0 +1,2160 @@
+{
+  "scope": "当前validation已选择源；原完整审计按source索引去重加载",
+  "selected_source_count": 44,
+  "selected_models": 44,
+  "rows": [
+    {
+      "source": "assets/assets/quest/ms01_dra_lv1.unity3d",
+      "source_sha256": "82cfd9bcaa730ecac717aca20aaf62e52d547ac9dced81bb0b50827ca6defd28",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv1_holy.unity3d",
+      "source_sha256": "d33313bca05fea54cc7359e2884e7e0fd2d88d94d3e37534095d13c5895b1f80",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_mind_fire.unity3d",
+      "source_sha256": "a4c365e5f45699a9c96f7587d15d65b574b0528f54db0e017b2cff9e7e859436",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_book_el_06.unity3d",
+      "source_sha256": "4e37cbe8dad3b84c6ce5dde5e71c3abcd601ca754ed32546f179614d2725cbd4",
+      "path_id": 8,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bear_lv4.unity3d",
+      "source_sha256": "05d3611184b7f43988646f0432660fd5ace2339b25b72eedd2f85c0b910f2791",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_dra_sh_fire.unity3d",
+      "source_sha256": "faf92d52f54bf8b53629c73ad2e8425f4aa8622b0f97c5fc930b69dc8c92aabd",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bear_lv1.unity3d",
+      "source_sha256": "048dbe36f4609fd39022e59cfa4566ba2c32430546b075d7302f3da133eb95fb",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_golem_un.unity3d",
+      "source_sha256": "573a5fa86ebb99baa1676c0854dc56b603f272b4acf2331fdefa22dc3839b7e6",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_death_shadow.unity3d",
+      "source_sha256": "69487a5092b3aed8fdfb4adb376b54af738f25cd299711d256f54d823150a179",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_floor_move_l.unity3d",
+      "source_sha256": "479ae745deb4449a66b5c6a3bba75c5ecc3e8e3dc3079bdec3b6f155ad7f91a4",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_book_el_02.unity3d",
+      "source_sha256": "a79f7e94bc73673f0247c4f6405f9e76d3e485cb345d43cf9b250637eaa11280",
+      "path_id": 8,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv1_fire.unity3d",
+      "source_sha256": "c83678033692403438dd28b5c61102b88393bb93efbf2bdef315b0e3f53c50b7",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv1_fire.unity3d",
+      "source_sha256": "93ca40b2c0c48caeaef26cb002830e1347612a846552a44f3cf22df1ac241d6d",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv2_water.unity3d",
+      "source_sha256": "4aab3c4590ce0005c797e60fecd16770ae8a8b3ff716193f0eeab133bf25a7e4",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv1_dark.unity3d",
+      "source_sha256": "fbd7bf30a888631954c5181247da31c2b30e621bd8dd0dd58f10f2bc6e6e8d1a",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_golem_water.unity3d",
+      "source_sha256": "acee12040aad3657eacb47c0820e992073587b782aacec125a1747d72f37f14c",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_golem_dark.unity3d",
+      "source_sha256": "53afadf6a251de64aad8604295caf547eaf6fccf7d17fd72d0354b013548e3fe",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv2_holy.unity3d",
+      "source_sha256": "52cfb6a7f805cfd8170c3a348a789ceec7be1b86c6a736e56bbcc301a1e4bdf4",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_floor_move_r.unity3d",
+      "source_sha256": "85bf828a2720d19bde33323f722e7bcc4b1aa6909b93d28df6080ea70a270fc9",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv1_water.unity3d",
+      "source_sha256": "1196a761316371d7c41431e0e215aa36e9d012e0d80baa07076e7464151b5606",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_golem_fire.unity3d",
+      "source_sha256": "74efa6db199a00e1b986a972675a8da3281135e13f0dd25aef1a9062554bfec2",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_mind_dark.unity3d",
+      "source_sha256": "bbf1a4df6aee0d64380efecfd567bd29625fc1353d34e15f1808f09ff60d4005",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_fugu_lv2_holy.unity3d",
+      "source_sha256": "b54efce4866344863f211e25a9961038939653f17a3dd8dd878e589662caff6a",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv2_water.unity3d",
+      "source_sha256": "11d654c20e86090be21418efb68a56369b6a1e0d33dc1de2e0bf8bb15ee22f11",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv2_fire.unity3d",
+      "source_sha256": "1e526ac8dac974ecfe2a3dea0e6f3a7f019487d86f1e1843dc5d631275b23739",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bird_lv2_dark.unity3d",
+      "source_sha256": "a716f0b8460ea200904946605377087ac67e53eb77857f09e62f74988781904a",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_bear_lv2.unity3d",
+      "source_sha256": "0537913fca2c9c7c099b9b9fe1d1b8b0ffaa94a0c274e0e971807411c4b65357",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv2_fire.unity3d",
+      "source_sha256": "5b7ce345fc17c5c88d9fc5b883ae37c29f6d994079293c463182e24916a63b65",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_golem_holy.unity3d",
+      "source_sha256": "e40de1b3f16b5dbec65232bd81a95990e6b737aaadfdb965922cddc6f606f113",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_dra_lv2.unity3d",
+      "source_sha256": "f694d3f0bab738fe9e69a1cab2852f15ea8b6fbdeb987f12537ef9272eda0e6b",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_kaidan_iseki.unity3d",
+      "source_sha256": "5ea66dbf09a79b8041202507ce3c2be2b81c88639404e3d54e3a68515c28f59a",
+      "path_id": 5,
+      "shader": "brightnessCullBack",
+      "signature": {
+        "shader": "Character/brightnessCullBack",
+        "directives": {
+          "Cull": [],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "status": "blocked",
+      "error": "Unverified shader mapping Character/brightnessCullBack: shader,directives"
+    },
+    {
+      "source": "assets/assets/quest/ms00_floor_move_s.unity3d",
+      "source_sha256": "1c2842a270403f2b36584b6ca50877fc25c84bd9c6dcbfe767b21c4283759b17",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_death_01_zako.unity3d",
+      "source_sha256": "b3dcd5d6b21b0da6632f42b93a5e578346d56e56672c5f1a3fe80645d21798f9",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv2_holy.unity3d",
+      "source_sha256": "71fd58fe86913ec310a01935c85f888b6d3ef0ddc4b13fc498e4b9150c814071",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv1_holy.unity3d",
+      "source_sha256": "837af1531cb9c13144244945353e299b343d79af2cdd8b5b5db1a60806b92e57",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv2_dark.unity3d",
+      "source_sha256": "1f12c0b12f6203446ff37ddfe97c93c638d29300baa4a5f1bb64c821b0e54d58",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv1_dark.unity3d",
+      "source_sha256": "5a6a98fedbac78174e84b8371d2a61da1273d243cec8dd265ab33e5683e8f524",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_sco_dark_02.unity3d",
+      "source_sha256": "d0664937abe522a801246c55366acfbec1e856bad7aee8b12c29ee3435f300cf",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_crab_lv1_water.unity3d",
+      "source_sha256": "def0137131e5317eaa50043b2ec7127542337f58927433be1313e49c1ef7973c",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_fugu_lv2_water.unity3d",
+      "source_sha256": "116aedb63ebc572e7f3371f633b525953d531b996a2f2bcc0b2771575248e076",
+      "path_id": 5,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_book_el_03.unity3d",
+      "source_sha256": "c1048b3b44c7d2d8511bee70d15d71612eaed85f4cb6742e288ccbf5479e18f5",
+      "path_id": 8,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms01_dra_lv3.unity3d",
+      "source_sha256": "e1b62e3dea42e7d3577ee719e368c7842301edfc48b4e5724aedbd2cada59f2d",
+      "path_id": 9,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_book_el_01.unity3d",
+      "source_sha256": "a08e1edf21163995ba906ecd1e593c0ecee669995a853dfdfd2f1e9d99c08adb",
+      "path_id": 8,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    },
+    {
+      "source": "assets/assets/quest/ms00_book_el_05.unity3d",
+      "source_sha256": "4390378c13a2645ac90ad0c6cc06b61585a33a898e876c78619023038771e1fd",
+      "path_id": 8,
+      "shader": "brightness",
+      "signature": {
+        "shader": "Character/brightness",
+        "directives": {
+          "Cull": [
+            "Off"
+          ],
+          "Blend": [
+            "SrcAlpha OneMinusSrcAlpha"
+          ],
+          "BlendOp": [],
+          "ZWrite": [],
+          "ZTest": [],
+          "ColorMask": [],
+          "Offset": [],
+          "AlphaTest": [],
+          "Fog": [],
+          "Lighting": [],
+          "Stencil": []
+        },
+        "tags": [
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ],
+          [
+            "queue",
+            "transparent"
+          ],
+          [
+            "rendertype",
+            "transparent"
+          ]
+        ],
+        "properties": "_Color(\"MainColor\",Color)=(1,1,1,1)_MainTex(\"Base(RGB)Trans(A)\",2D)=\"white\"{}_Cutoff(\"Cutoff\",Range(0,1))=0.5",
+        "passes": 1
+      },
+      "render_state_compatible": true,
+      "scope": "ShaderLab render state/properties only; GPU program equivalence requires separate evidence",
+      "status": "render_state_compatible"
+    }
+  ]
+}

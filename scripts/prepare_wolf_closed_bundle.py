@@ -10,7 +10,7 @@ from prepare_monster_recovery import pointers
 POLICY='wolf-export-closure-v3'
 ROOT=Path(__file__).resolve().parents[1]
 
-def rebuild(source,output):
+def rebuild(source,output, *, policy=POLICY):
     env=UnityPy.load(str(source));objects={o.path_id:o for o in env.objects}
     ab_obj=next(o for o in env.objects if o.type.name=='AssetBundle');ab=ab_obj.read_typetree()
     original={i:o.get_raw_data() for i,o in objects.items()}
@@ -35,7 +35,7 @@ def rebuild(source,output):
     removed=[dict(path_id=i,type=o.type.name,name=o.read_typetree().get('m_Name')) for i,o in objects.items() if i not in keep]
     ab.update(m_PreloadTable=preload,m_Container=exports);ab_obj.save_typetree(ab)
     sf=ab_obj.assets_file;sf.objects={i:o for i,o in objects.items() if i in keep}
-    unique='CustomAssetBundle-'+hashlib.md5((POLICY+':'+Path(output).stem).encode()).hexdigest()
+    unique='CustomAssetBundle-'+hashlib.md5((policy+':'+Path(output).stem).encode()).hexdigest()
     sf.name=unique;env.file.files={unique:sf};payload=env.file.save()
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True);output.write_bytes(payload)
     check=UnityPy.load(str(output));actual={o.path_id:o for o in check.objects}
