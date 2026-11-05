@@ -2,6 +2,8 @@
 
 Requires the offline UnityPy tool. Original bundles and master data stay intact.
 This is a Fenris marker, not a recovery of the original book artwork.
+Historical reproduction only. New overlays use reconstruct_gacha_book.py through
+prepare_event_reconstruction_resources.py; do not deploy this old marker again.
 """
 import argparse
 import hashlib
