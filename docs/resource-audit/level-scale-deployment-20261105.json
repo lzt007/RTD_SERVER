@@ -1,0 +1,39 @@
+{
+  "status": "deployed",
+  "api_health": "ok",
+  "http_bundles_verified": 17,
+  "services": "active",
+  "live_feature_flag": "1",
+  "changed_visual_records": 0,
+  "original_resources_preserved": 92,
+  "backup": "backups/deployment/level-scale-20261105T004210Z",
+  "runtime_verified": false,
+  "tests_passed": 31,
+  "other_compatibility_bundles_unchanged": 261,
+  "effective_configuration_unchanged": true,
+  "bundles": {
+    "ms01_crab_lv2_un": "d6612b19ac2533c3aab39809419b8dfb4638507af8e8e1edf6aeb0617157541e",
+    "ms01_sco_lv2": "8c4014cf43ed1c49f27778f45c2e9e4877a2c17b89dd9117a9226f392887bf8a",
+    "ms01_sco_lv3": "27e53d4864f37577f2b7dc601a7b3e786e6abd5eec9c4490e46c9d789b13ab30",
+    "ms01_sco_lv4": "e02e1ce377a8ccdd130d0bb3760841acc72e2b04d6b633202c50e697cb22ecce",
+    "ms01_sla_lv2": "27daea1cfe7b78043ce595098b94b0268264ac2d481dd9560f3e7a3bec4e32da",
+    "ms01_sla_lv2_gold": "44d35f5cfe8dcd2bc5dfcd17df2bd13af7d0a815a9261f11f4c8e85660af5fb8",
+    "ms01_sla_lv2_silver": "7b105af5367165399b9fd75f016cad5905c9f6fcc83968798830df1c3a39e7e9",
+    "ms01_sla_lv3": "a861bb2c88a6781a2dd2d93d47c879c6f8b4b5050b06e7f7227f6f1bebe3ecae",
+    "ms01_sla_lv3_gold": "50a84117c049c3984883cdb7eaae4512bb9572008bee626c244f81cfe29a358f",
+    "ms01_sla_lv3_silver": "a8ee2beea5128ca5f675eb2c37a335fbebd8e9aba15bfea64ff26378e7ed9a8a",
+    "ms01_sla_lv4": "a7a6869d32aef376efc5065cd08f6e638873d00e0437688bf477f697db346c9c",
+    "ms01_squ_lv2": "bc4e189bbd12ebb351d85f941749ebef3659e7186c2e2491d42997e69df7a7c1",
+    "ms01_squ_lv3": "a39a5ffc7e7692c1590dafb6fbcd25e01fba8a20d64d5c758f7a79cf8a4c17e4",
+    "ms01_squ_lv4": "a5d7f672892aaf1a742c16ac69869f14dd6e09ebef201fc9f72e2774564eecde",
+    "ms01_wolf_lv2": "1a12be9dc1b9290c1d7ca70b01cc532ff94f7efc486bb01b8ee55ef2d8088647",
+    "ms01_wolf_lv3": "2a558e006dec0f1e79328fcc9c3ecb5780f56da8b104ba4c02a54a09bfd24fbd",
+    "ms01_wolf_lv4": "4359ed3e5602a90d114b77249116ae2b65e96e1bcc4e65be14971055bde94c5a"
+  },
+  "multipliers": {
+    "lv2": 1.3,
+    "lv3": 1.6,
+    "lv4": 1.9
+  },
+  "local_other_compatibility_bundles_unchanged": 270
+}

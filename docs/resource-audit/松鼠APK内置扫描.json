@@ -1,0 +1,128 @@
+[
+  {
+    "apk": "RTD_CLIENT/inputs/original/game.apk",
+    "sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "entries": 2865,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/060a590210903b74191545e510516b98",
+        "name": "ms01_squ_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/61e49136283f84750be6bda44c9b211a",
+        "name": "ms01_squ_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/8cc1aeae581fb42429400b7b605ff967",
+        "name": "ms01_squ_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9afa0c828262e48f9bc4d591fafc97f0",
+        "name": "ms01_squ_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ab2953c2c6566794fa7f32ca842c7c2b",
+        "name": "ms01_squ_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ad67afd0c92c03f40b3f0630c0f552ff",
+        "name": "ms01_squ_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f7e23a6dc1111464c9ffadba85ac4fac",
+        "name": "ms01_squ_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      }
+    ],
+    "containers": [],
+    "errors": []
+  },
+  {
+    "apk": "resources/ロードラ_7.0.1.0.apk",
+    "sha256": "c3bcb5a6f6ecc1f27a9b661882e8bfc7fd3b94367aa9222634395add101b57e0",
+    "entries": 2210,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/060a590210903b74191545e510516b98",
+        "name": "ms01_squ_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/61e49136283f84750be6bda44c9b211a",
+        "name": "ms01_squ_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/8cc1aeae581fb42429400b7b605ff967",
+        "name": "ms01_squ_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9afa0c828262e48f9bc4d591fafc97f0",
+        "name": "ms01_squ_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ab2953c2c6566794fa7f32ca842c7c2b",
+        "name": "ms01_squ_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ad67afd0c92c03f40b3f0630c0f552ff",
+        "name": "ms01_squ_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f7e23a6dc1111464c9ffadba85ac4fac",
+        "name": "ms01_squ_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      }
+    ],
+    "containers": [],
+    "errors": []
+  }
+]

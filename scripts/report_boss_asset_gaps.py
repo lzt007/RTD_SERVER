@@ -1,0 +1,26 @@
+"""Summarize audited Boss visual substitutions and actual character loading scope."""
+import csv,json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'docs/resource-audit'
+def main():
+ report=json.loads((OUT/'最终敌人替换报告.json').read_text());units=json.loads((OUT/'角色型敌人加载审计.json').read_text())
+ rows=[r for r in report['models'] if r['family'].startswith(('ms02','ms03','ms04','ms05')) and r['model']!=r['mesh_source']]
+ with (OUT/'Boss同族复用明细.csv').open('w',newline='') as f:
+  w=csv.writer(f,lineterminator="\n");w.writerow(['目标模型','实际源模型','敌人ID与名称','处理','原图精确恢复已确认'])
+  for r in rows:w.writerow([r['model'],r['mesh_source'],'；'.join(str(e['id'])+' '+e['name'] for e in r['enemy_records']),'；'.join(r['methods']),'否：源名不同仅作追溯，不单凭版本前缀判定造型差异'])
+ lines=['# Boss资源缺口复核（2026-11-05）','','本报告区分原图稿缺口、已有同族替代、角色加载依赖和实机验收。使用生产清单与原客户端加载链；不以ms命名决定是否纳入。','','## 仍未精确恢复的重点图稿','','|对象|当前方案|仍有的缺口|','|---|---|---|',
+ '|Mind Boss `ms03_mind_01`|普通暗Mind，补色并接入旧动作控制|原Boss独立几何未恢复；并非精确Boss原型|',
+ '|巨龙头 `ms04_dra_head_un_01`|330火属性头染无属性|原无属性头未完成旧客户端shader兼容验证；翼、尾使用各自同名资源|',
+ '|达哈卡01/02|330暗型复用、补色|原01/02专属造型未确认恢复；03使用同名素材|',
+ '|樱花达哈卡|330暗型复用、补色|樱花专属图稿未恢复|',
+ '|神龙01|330光型染无属性|原01图稿未精确恢复|',
+ '|各龙系、四足兽系的亜种/影型/囚われ型|对应同族基础模型或其他变体|对应变体专属几何未确认恢复，不能只因同族就标记原版完整|',
+ '|火法夫尼尔 `ms03_four_fire_01`|水属性同族模型补色|原火属性原图未精确恢复|',
+ '',f'所有目标/源名不同的Boss族条目共{len(rows)}项，完整列于 `Boss同族复用明细.csv`。其中包含版本前缀不同的同属性素材；不能单凭前缀不同断定缺失专属造型。当前生产Boss清单无明确跨种族映射，但这不等于全部Boss已精确恢复。鱼类5项跨族替代为另一项普通敌人图稿缺口。',
+ '','## 角色型Boss（按兽王加载方式复核）','',f"按原客户端IsUnitEnemy类型22/24/30/31/33/37，识别{units['enemy_records']}条角色型敌人，{units['distinct_models']}个模型，其中183个不带ms。185条非ms记录保留原model/texture引用；所有183个非ms模型均找到同名GameObject素材，其中135个也在新缓存中找到。",'',f"角色组包/直接模型包加六属性书本共{units['bundle_count']}包，{units['http_verified']}包生产HTTP内容哈希匹配。加载目标导出与根Animation均核对；这证明下载与基本加载对象存在，不代表全动作和实机战斗验收。",'',
+ '兽王的关键经验是补齐书本与数字角色分组包，保留原type、chara_g_id、symbol及角色本体。gid>0从数字组包取原模型名；gid=0从独立包取ast_原名。不能统一套普通怪物ast_导出，也不能一律选择Y180副本，原ChangeUnitEnemy自身还会镜像X并设置Z缩放。',
+ '','## 奥尔·加迪亚41317特殊项','','`ms03_sen_olgadia_01`带ms，但原type33/gid0，实际也是角色型加载。当前直接包有正确ast_导出及根Animation。原APK含org_wait_swd_01、org_atk_swd_01、ms03_org_run_01、el_boss_tob及六人版；攻击特效ef_atk_blade_02_ms也有Resources绑定。之前“原APK没有动作”的判定是按模型前缀猜动作造成的假阴性，必须改为实际type/MotionAssign验证。实测待机和攻击各19条骨骼路径全部命中move层级；两版入战动作只绑定根路径，也均命中。跑步动作另有两条anckle/ankle拼写差异，尚未确认实际流程调用，不以改骨骼破坏正常待机攻击。详见orlgadia-original-motion-audit.json；离线匹配不等于实机全流程验收。',
+ '','## 命名与后续匹配规则','','非ms仅指模型名字不含ms，不是游戏种族/加载类型。ms本身不能作为资源边界。无论有无ms，都应追原模型引用、GameObject导出、网格、材质和贴图；能可靠解析的种族/子种、属性和明确lv可用于降级匹配。kn/ar/la/wz等职业及swd/grt/gun等武器字段应结合角色主表解析；220/330等版本前缀和末尾01/02不能未经证实直接当等级。','','完整逐条角色证据：`角色型敌人加载审计.json`；非ms源对象线索：`non-ms-model-inventory.json`。本轮未改变关卡开放、角色属性、等级或掉落。']
+ (OUT/'Boss资源缺口复核.md').write_text('\n'.join(lines)+'\n')
+ print('Boss source reuse rows:',len(rows),'Unit records:',units['enemy_records'])
+if __name__=='__main__':main()
