@@ -17,9 +17,15 @@ class GachaBookResourcesTest(unittest.TestCase):
                 report=build_gacha_book(apk,root/'resources/bundles/151-160.unity3d',out,color)
                 result=validate_book(out,color)
                 import UnityPy
-                flags=[o.read_typetree()['m_IsActive'] for o in UnityPy.load(str(out)).objects
+                flags=[o.read_typetree()['m_IsActive'] for o in UnityPy.load(out.read_bytes()).objects
                        if o.type.name=='GameObject']
                 self.assertEqual(flags,[0,0], 'Unity 3.5 book prototypes require native activation encoding')
+                env=UnityPy.load(out.read_bytes())
+                objects={o.path_id:o for o in env.objects}
+                for gameobject_id in (609,603):
+                    animations=[objects[p['m_PathID']] for cls,p in objects[gameobject_id].read_typetree()['m_Component'] if cls==111]
+                    self.assertEqual(len(animations),1,'Both root cleanup and move controller require an Animation')
+                    self.assertEqual(animations[0].read_typetree()['m_GameObject']['m_PathID'],gameobject_id)
                 self.assertEqual(result['vertex_count'],4)
                 self.assertEqual(result['external_references'],0)
                 self.assertLess(out.stat().st_size,100000)
@@ -34,7 +40,7 @@ class GachaBookResourcesTest(unittest.TestCase):
             out=Path(tmp)/'book.unity3d'
             build_gacha_book(root.parent/'RTD_CLIENT/inputs/original/game.apk',
                              root/'resources/bundles/151-160.unity3d',out,5)
-            env=UnityPy.load(str(out))
+            env=UnityPy.load(out.read_bytes())
             mesh=next(o for o in env.objects if o.type.name=='Mesh')
             decoded=MeshHandler(mesh.read());decoded.process()
             faces=decoded.get_triangles()[0]

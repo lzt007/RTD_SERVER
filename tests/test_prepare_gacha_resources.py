@@ -22,5 +22,5 @@ class PrepareGachaResourcesTest(unittest.TestCase):
             reports = prepare(root, root/'derived/bundles',
                               apk=source.parent/'RTD_CLIENT/inputs/original/game.apk')
             self.assertEqual(len(reports), 6)
-            self.assertTrue(all(r['policy'] == 'inferred-gacha-book-billboard-native-activation-v3' for r in reports))
+            self.assertTrue(all(r['policy'] == 'inferred-gacha-book-billboard-root-animation-v4' for r in reports))
             self.assertEqual(json.loads((root/'derived/resource-provenance.json').read_text()), reports)
