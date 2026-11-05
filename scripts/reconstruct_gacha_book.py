@@ -4,6 +4,7 @@ Only the quad geometry, scale and binding are inferred. Inputs are never overwri
 UnityPy is an offline build dependency, not a server dependency.
 """
 import argparse
+import copy
 import hashlib
 import json
 from pathlib import Path
@@ -13,7 +14,7 @@ import zipfile
 TEMPLATE_SHA256='8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8'
 ATLAS_MEMBER='assets/bin/Data/sharedassets1.assets'
 ATLAS_SHA256='7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267'
-POLICY='inferred-gacha-book-billboard-native-activation-v3'
+POLICY='inferred-gacha-book-billboard-root-animation-v4'
 
 def digest(data):return hashlib.sha256(data).hexdigest()
 def ptr(path):return dict(m_FileID=0,m_PathID=path)
@@ -58,11 +59,20 @@ def build_gacha_book(apk,template,output,book_color=5):
     sf=objects[1].assets_file
     keep={1,6,26,42,52,609,1174,603,1160,1184,1214}
     sf.objects={i:o for i,o in sf.objects.items() if i in keep}
+    # Enemy.UnLoad reads root.animation.clip even for map book markers.
+    # Keep the move animation too: AnimationController attaches to that child.
+    root_animation=copy.copy(objects[1184])
+    root_animation.path_id=1300
+    sf.objects[1300]=root_animation
+    tree=objects[1184].read_typetree()
+    tree.update(m_GameObject=ptr(609),m_Animation=ptr(0),m_Animations=[])
+    root_animation.save_typetree(tree)
+    keep.add(1300)
     sf.externals=[]
     name=f'ast_ms00_book_el_0{book_color}'
     def save(i,tree):objects[i].save_typetree(tree)
     root=objects[609].read_typetree()
-    root.update(m_Name=name,m_IsActive=0,m_Component=[(4,ptr(1174)),(137,ptr(1214))])
+    root.update(m_Name=name,m_IsActive=0,m_Component=[(4,ptr(1174)),(137,ptr(1214)),(111,ptr(1300))])
     save(609,root)
     transform=objects[1174].read_typetree()
     transform.update(m_LocalRotation=dict(x=0.,y=0.,z=0.,w=1.),m_LocalScale=vector(1.,1.,1.),m_Children=[ptr(1160)])
@@ -118,9 +128,9 @@ def build_gacha_book(apk,template,output,book_color=5):
 
 def validate_book(path,color):
     import UnityPy
-    env=UnityPy.load(str(path));a={o.path_id:o for o in env.objects}
+    env=UnityPy.load(Path(path).read_bytes());a={o.path_id:o for o in env.objects}
     allowed={'AssetBundle','GameObject','Transform','Animation','SkinnedMeshRenderer','Mesh','Material','Texture2D','Shader'}
-    if len(a)!=11 or any(o.type.name not in allowed for o in a.values()):raise ValueError('Unexpected retained objects')
+    if len(a)!=12 or any(o.type.name not in allowed for o in a.values()):raise ValueError('Unexpected retained objects')
     externals=0
     def check(tree):
         nonlocal externals
@@ -146,6 +156,10 @@ def validate_book(path,color):
     if len(decoded.m_Vertices)!=4 or any(abs(v[2])>1e-6 for v in decoded.m_Vertices):raise ValueError('Invalid decoded planar geometry')
     if len(mesh['m_Skin'])!=4 or len(mesh['m_BindPose'])!=1:raise ValueError('Invalid single-bone skin')
     if a[603].read_typetree()['m_Name']!='move' or a[1184].read_typetree()['m_GameObject']!=ptr(603):raise ValueError('Missing AnimationController attachment contract')
+    if ((111,ptr(1300)) not in a[609].read_typetree()['m_Component']
+            or a[1300].type.name!='Animation'
+            or a[1300].read_typetree()['m_GameObject']!=ptr(609)):
+        raise ValueError('Missing root Animation required by Enemy.UnLoad')
     shader=a[52].read_typetree()['m_Script']
     if 'Cull Off' not in shader or 'discard' not in shader:raise ValueError('Shader transparency or double-sided support missing')
     faces=decoded.get_triangles()
