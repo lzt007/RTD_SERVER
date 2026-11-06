@@ -28,8 +28,10 @@ def unavailable_units(masters):
     return result
 
 
-def build_pools(masters):
+def build_pools(masters, *, levels=None, playable=None, overrides=None):
     units={u['id']:u for u in masters[10]['data_list']}
+    if levels is None or playable is None:
+        raise ValueError('Effective levels and playable quests required; legacy all-slot policy is unsafe')
     unavailable=unavailable_units(masters)
     invalid=set(map(int,unavailable))
     tables={t['id']:t for t in masters[21]['data_list']}
@@ -40,23 +42,11 @@ def build_pools(masters):
     def record(uid,qid):
         if uid in units:
             obtained.add(uid);sources.setdefault(uid,set()).add(qid)
-    for q in masters[30]['data_list']:
-        table=tables.get(q['enemy_table_id'],{})
-        for key,drop_id in table.items():
-            if not key.endswith('_drop_id'):continue
-            prefix=key[:-8]
-            if table.get(prefix+'_rate',0)<=0:continue
-            if enemies.get(table.get(prefix+'_set_id'),{}).get('type') in (20,21):continue
-            drop=drops.get(drop_id,{})
-            cumulative=0
-            for i in range(1,5):
-                rate=drop.get(f'unit{i}_rate',0)
-                if rate>0 and cumulative<100:record(drop.get(f'unit{i}_id'),q['id'])
-                cumulative+=rate
-        if q.get('present_type')==4:record(q['present_param'],q['id'])
-        for i in range(3):
-            c=challenges.get(q.get(f'challenge_id_{i}'),{})
-            if c.get('present_type')==4:record(c['present_param_0'],q['id'])
+    from .gacha_cleanup import exclusions
+    effective=exclusions(masters,levels,playable,overrides)
+    for uid,reasons in effective.items():
+        for reason in reasons:
+            if reason['kind'] in ('drop','override_drop'):record(uid,reason['quest'])
     material=(set(units)&MATERIAL_IDS)-invalid
     excluded=(obtained-material)|STARTER_IDS
     eligible=set(units)-material-excluded-invalid
@@ -68,4 +58,8 @@ def build_pools(masters):
     report=dict(material_ids=sorted(material),excluded_ids=sorted(excluded),eligible_ids=sorted(eligible),unavailable_units=unavailable,
         quest_sources={str(k):sorted(v) for k,v in sorted(sources.items())},
         counts=dict(total=len(units),materials=len(material),excluded=len(excluded),eligible=len(eligible),unavailable=len(invalid)))
+    from .gacha_cleanup import exclusions,clean_pools
+    reasons=exclusions(masters,levels,playable,overrides)
+    cleaned,cleanup=clean_pools({k:pools[k] for k in ('normal','rare')},reasons)
+    pools.update(cleaned);report['cleanup']=cleanup
     return pools,report
