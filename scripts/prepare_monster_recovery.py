@@ -475,7 +475,9 @@ def validate_motion_paths(trees, family, model, source_trees=None):
                 source_transforms={t['m_GameObject']['m_PathID']:i for i,(typ,t) in source_trees.items() if typ=='Transform'}
                 source_animation=source_trees.get(pid)
                 source_clip=source_trees.get(clip_id)
-                if source_animation and source_clip and owner in source_transforms and source_animation[1]['m_GameObject']['m_PathID']==owner:
+                if (source_animation and source_clip and owner in source_transforms
+                        and source_clip[1].get('m_Name') == clip.get('m_Name')
+                        and source_animation[1]['m_GameObject']['m_PathID']==owner):
                     source_actual=paths_from(source_transforms[owner],source_trees)
                     for path in sorted(absent-source_actual):
                         curves=[(key,c) for key in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves') for c in clip.get(key,[]) if c['path']==path]
