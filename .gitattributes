@@ -1,0 +1,3 @@
+
+# Preserve original shader names, including meaningful trailing spaces in CSV fields.
+docs/resource-audit/loading-chain/APK_Resources绑定核对.csv -whitespace

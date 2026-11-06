@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-06T00:34:31.064552+00:00",
+  "production_revision": 40,
+  "quests": 12,
+  "enemy_records": 41,
+  "http_bundles_verified": 22,
+  "source_hashes_verified": 28,
+  "enemy_dependency_issues": 0,
+  "map_resource_bindings_verified": 12,
+  "map_custom_script_payloads_unverified": 8,
+  "android_runtime_verified": false,
+  "production_mutated": false
+}

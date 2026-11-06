@@ -1,0 +1,10 @@
+{
+  "status": "deployed",
+  "bundles": 6,
+  "http_hashes_verified": 6,
+  "effective_configuration_unchanged": true,
+  "other_resources_unchanged": true,
+  "backup": "backups/deployment/book-root-animation-v6-20261105T162120Z",
+  "runtime_verified": false,
+  "production_files_verified": 7
+}

@@ -34,3 +34,12 @@ __pycache__/
 *.obb
 *.unity3d
 *.assets
+
+# Regenerable resource inventories; retain locally (see resource-audit README).
+/docs/resource-audit/loading-chain/catalog.json
+/docs/resource-audit/loading-chain/全部资源对象.csv
+/docs/resource-audit/loading-chain/资源来源.csv
+/docs/resource-audit/独立资源重扫证据.json
+/docs/resource-audit/image-manifest.json
+/docs/resource-audit/loading-chain/image-manifest.json
+/config/gacha-cleanup-audit.json
