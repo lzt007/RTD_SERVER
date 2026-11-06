@@ -2,7 +2,7 @@
   "policy": "inferred-gacha-book-billboards-not-original-map-art",
   "bundles": [
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -22,15 +22,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_01",
       "generated_bundle": "ms00_book_el_01.unity3d",
-      "generated_sha256": "c67a68d810cb9a15cf6b54580752f295b425c30bf0c53046f9df355fe9e7eb21",
+      "generated_sha256": "13da1601e9d9fc6163cb3abc8c4df4355052e319dc9f40146ea15b482844d831",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-395ae47490e822da0ca27c64a21a12ae"
+        "CustomAssetBundle-9242ede89606afc2433d6f362f0eec32"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -64,15 +64,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_02",
       "generated_bundle": "ms00_book_el_02.unity3d",
-      "generated_sha256": "aec75306824eb6a7505bb9d31b7ad4ea4176f3d3f50bc2773fcef6c91cc2b4d3",
+      "generated_sha256": "5a0dc6eccdc971d852aa3908f4da52e612946315f121dd38713823db0bfbdf37",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-56e73dc13afc1b0601e6b34016dd55d3"
+        "CustomAssetBundle-6b67218a32ab24c393b302cb74058d0e"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -106,15 +106,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_03",
       "generated_bundle": "ms00_book_el_03.unity3d",
-      "generated_sha256": "4dbddc1b53e09bb379be14fa7b82c1946cb7c05d37714a7b058f94e3bf50e183",
+      "generated_sha256": "860a7a1948e0d4d083100661bf079be96b5cfca86c9b86bba788676cb956e4cc",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-a50eb6cdde605579def127001b818cf3"
+        "CustomAssetBundle-085a27b0e46674bd57f0290579d3cca2"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -148,15 +148,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_04",
       "generated_bundle": "ms00_book_el_04.unity3d",
-      "generated_sha256": "ba2f5163b50acc4a872f1cdb75d414b765a528c5f46fe54a5e336ae65d85a722",
+      "generated_sha256": "67a03e7d139b94bd96855bb70d91d7861768e7ab89da132a7a0dfa5396ecdd0b",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-84a9913cae438a2403fa57cc8ac9fb56"
+        "CustomAssetBundle-3cf52b73def2284b842678c5b87494c9"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -190,15 +190,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_05",
       "generated_bundle": "ms00_book_el_05.unity3d",
-      "generated_sha256": "df7975e11cd2faadf5d1437e1edf470a1ed875774ba06c3e59a4bd39b6ad99a5",
+      "generated_sha256": "5ba15f754919c02b85b7d596d0a8dc54c28c0c724ec44ef8bc8b9ab0d2a186db",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-a54314eab7ab67b39d340e3c0a045f6e"
+        "CustomAssetBundle-d4e1f9209955f9c3cbc15309edcff016"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "policy": "inferred-gacha-book-billboard-native-activation-v3",
       "inferred": true,
       "source_apk": "game.apk",
       "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
@@ -232,15 +232,15 @@
       "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_06",
       "generated_bundle": "ms00_book_el_06.unity3d",
-      "generated_sha256": "98bdb58a95b1e0f5f4067be5acf1c251b4183ddb0c562333340229f11f1a9494",
+      "generated_sha256": "dc0ff315b946ebb3e5b130b8da02700ebbf39d55ae35610b36e2528f9b472e18",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-3dc7ffb2b59ee044d2650a2a174a8209"
+        "CustomAssetBundle-197df56f648c97e901c8c54593869827"
       ],
       "validation": {
-        "objects": 13,
+        "objects": 11,
         "external_references": 0,
         "vertex_count": 4,
         "triangles": 2,

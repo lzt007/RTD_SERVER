@@ -14,16 +14,12 @@ import zipfile
 TEMPLATE_SHA256='8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8'
 ATLAS_MEMBER='assets/bin/Data/sharedassets1.assets'
 ATLAS_SHA256='7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267'
-POLICY='inferred-gacha-book-billboard-root-animation-hover-v7'
+POLICY='inferred-gacha-book-billboard-root-animation-v4'
 
 def digest(data):return hashlib.sha256(data).hexdigest()
 def ptr(path):return dict(m_FileID=0,m_PathID=path)
 def vector(x,y,z):return dict(x=x,y=y,z=z)
-BOOK_WIDTH=.505
-BOOK_HEIGHT=.68
-BOOK_BOTTOM=.59
-HOVER_HEIGHT=.10086922347545624
-def bounds():return dict(m_Center=vector(0,BOOK_BOTTOM+(BOOK_HEIGHT+HOVER_HEIGHT)/2,0),m_Extent=vector(BOOK_WIDTH/2,(BOOK_HEIGHT+HOVER_HEIGHT)/2,.01))
+def bounds():return dict(m_Center=vector(0,.68,0),m_Extent=vector(.505,.68,.01))
 
 def sprites(raw):
     # Old UIAtlas.Sprite: aligned UTF8 name, outer/inner Rects, rotated/padding.
@@ -49,7 +45,6 @@ def build_gacha_book(apk,template,output,book_color=5):
     apk=Path(apk)
     with zipfile.ZipFile(apk) as archive:
         atlas_bytes=archive.read(ATLAS_MEMBER)
-        hover_bytes=archive.read("assets/bin/Data/26595f22f2533e947a90160e552b4934")
     if digest(atlas_bytes)!=ATLAS_SHA256:raise ValueError('Original gacha atlas differs from audited bytes')
     atlas=UnityPy.load(atlas_bytes);a={o.path_id:o for o in atlas.objects}
     material=a[2].read_typetree()
@@ -73,21 +68,6 @@ def build_gacha_book(apk,template,output,book_color=5):
     tree.update(m_GameObject=ptr(609),m_Animation=ptr(0),m_Animations=[])
     root_animation.save_typetree(tree)
     keep.add(1300)
-    # Original map-book idle: retain its exact keyframes, only retarget to move.
-    hover_env=UnityPy.load(hover_bytes)
-    original_clip=next(o for o in hover_env.objects if o.type.name=='AnimationClip')
-    hover_tree=original_clip.read_typetree()
-    if hover_tree['m_Name']!='el_wait' or len(hover_tree['m_PositionCurves'])!=1:
-        raise ValueError('Unexpected original book idle clip')
-    hover_tree['m_PositionCurves'][0]['path']='move'
-    hover=copy.copy(original_clip)
-    hover.path_id=1301
-    hover.assets_file=sf
-    hover.save_typetree(hover_tree)
-    sf.objects[1301]=hover
-    keep.add(1301)
-    tree.update(m_Animation=ptr(1301),m_Animations=[ptr(1301)],m_PlayAutomatically=True,m_WrapMode=2)
-    root_animation.save_typetree(tree)
     sf.externals=[]
     name=f'ast_ms00_book_el_0{book_color}'
     def save(i,tree):objects[i].save_typetree(tree)
@@ -118,7 +98,7 @@ def build_gacha_book(apk,template,output,book_color=5):
     vertex['m_Streams[0]']=dict(channelMask=43,offset=0,stride=48,align=16)
     for i in range(1,4):vertex[f'm_Streams[{i}]']=dict(channelMask=0,offset=0,stride=0,align=16)
     # Legacy Unity 3.5 interleaving: position, normal, UV0, tangent.
-    vertex['m_DataSize']=b''.join(struct.pack('<12f',px,py,0,0,0,-1,u,v,1,0,0,1) for px,py,u,v in [(-BOOK_WIDTH/2,BOOK_BOTTOM,0,0),(BOOK_WIDTH/2,BOOK_BOTTOM,1,0),(BOOK_WIDTH/2,BOOK_BOTTOM+BOOK_HEIGHT,1,1),(-BOOK_WIDTH/2,BOOK_BOTTOM+BOOK_HEIGHT,0,1)])
+    vertex['m_DataSize']=b''.join(struct.pack('<12f',px,py,0,0,0,-1,u,v,1,0,0,1) for px,py,u,v in [(-.505,0,0,0),(.505,0,1,0),(.505,1.36,1,1),(-.505,1.36,0,1)])
     # Clear compressed payload so only the new four vertices are authoritative.
     for field,value in mesh['m_CompressedMesh'].items():
         if isinstance(value,dict):
@@ -149,8 +129,8 @@ def build_gacha_book(apk,template,output,book_color=5):
 def validate_book(path,color):
     import UnityPy
     env=UnityPy.load(Path(path).read_bytes());a={o.path_id:o for o in env.objects}
-    allowed={'AssetBundle','GameObject','Transform','Animation','SkinnedMeshRenderer','Mesh','Material','Texture2D','Shader','AnimationClip'}
-    if len(a)!=13 or any(o.type.name not in allowed for o in a.values()):raise ValueError('Unexpected retained objects')
+    allowed={'AssetBundle','GameObject','Transform','Animation','SkinnedMeshRenderer','Mesh','Material','Texture2D','Shader'}
+    if len(a)!=12 or any(o.type.name not in allowed for o in a.values()):raise ValueError('Unexpected retained objects')
     externals=0
     def check(tree):
         nonlocal externals
@@ -180,11 +160,6 @@ def validate_book(path,color):
             or a[1300].type.name!='Animation'
             or a[1300].read_typetree()['m_GameObject']!=ptr(609)):
         raise ValueError('Missing root Animation required by Enemy.UnLoad')
-    hover=a[1301].read_typetree()
-    if (a[1300].read_typetree()['m_Animation']!=ptr(1301)
-            or hover['m_PositionCurves'][0]['path']!='move'
-            or hover['m_WrapMode']!=2):
-        raise ValueError('Missing looping book hover contract')
     shader=a[52].read_typetree()['m_Script']
     if 'Cull Off' not in shader or 'discard' not in shader:raise ValueError('Shader transparency or double-sided support missing')
     faces=decoded.get_triangles()
