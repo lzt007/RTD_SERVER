@@ -78,7 +78,7 @@ class Story160200Test(unittest.TestCase):
     def test_main_story_available_without_experimental_mode(self):
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):self.api=API(self.path)
         for qid in QUESTS:self.assertTrue(available(self.api,qid))
-        for qid in (11150,20101):self.assertFalse(available(self.api,qid))
+        for qid in (11150,20101):self.assertTrue(available(self.api,qid))
 
     def test_fixed_visuals_preserve_all_original_gameplay_fields(self):
         document=json.loads((ROOT/'config/enemy-visual-placeholders.json').read_text())

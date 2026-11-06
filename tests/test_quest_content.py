@@ -59,13 +59,13 @@ class QuestContentTest(unittest.TestCase):
         self.assertEqual(self.state()['player']['total_paid_point'],first)
         self.assertEqual(first,1)
 
-    def test_unverified_content_requires_explicit_experimental_opt_in(self):
+    def test_expired_event_still_requires_schedule_without_experimental_mode(self):
         state=self.state();state['player']['quest_clear_flags'][0]|=16;self.api.store.save(state)
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):
             api=API(self.path);before=api.store.session(self.token)
             self.assertTrue(available(api,11002))
             self.assertTrue(available(api,20000))
-            self.assertFalse(available(api,20101))
+            self.assertTrue(available(api,20101))
             with self.assertRaises(ProtocolError):api.call('order_quest',self.request(20000),self.token)
             self.assertEqual(api.store.session(self.token),before)
 

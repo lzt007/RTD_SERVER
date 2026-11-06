@@ -2,6 +2,7 @@ import http.client
 import http.server
 import importlib
 import json
+import os
 import pathlib
 import tempfile
 import threading
@@ -13,12 +14,16 @@ from rtd.transport.http import handler_for
 
 
 class HealthIdentityTest(unittest.TestCase):
-    def test_path_identity_is_canonical_case_insensitive_and_does_not_create_database(self):
+    def test_path_identity_is_canonical_respects_platform_case_and_does_not_create_database(self):
         identity=importlib.import_module('rtd.storage.identity').database_path_id
         with tempfile.TemporaryDirectory(prefix='rtd identity 中文 ') as folder:
             root=pathlib.Path(folder);path=root/'new dir'/'测试.sqlite3'
             self.assertEqual(identity(path),identity(root/'unused'/'..'/'new dir'/'测试.sqlite3'))
-            self.assertEqual(identity(path),identity(str(path).upper()))
+            upper = str(path).upper()
+            if os.path.normcase(str(path)) == os.path.normcase(upper):
+                self.assertEqual(identity(path),identity(upper))
+            else:
+                self.assertNotEqual(identity(path),identity(upper))
             self.assertNotEqual(identity(path),identity(root/'other.sqlite3'))
             self.assertFalse((root/'new dir').exists())
 

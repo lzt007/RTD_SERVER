@@ -47,12 +47,13 @@ class VisualRecoveryTest(unittest.TestCase):
             key=str(uuid.uuid4())
             disabled.call('create_user',dict(ver='2.4.0',uuid=key,unit_no='3',user_name='Disabled'))
             session=disabled.call('auth_user',dict(ver='2.4.0',uuid=key))['session_id']
+            # Disabling visuals does not override original progress gates.
             with self.assertRaises(ProtocolError) as error:
                 disabled.call('order_quest',dict(ver='2.4.0',quest_id='11000'),session)
-            self.assertEqual(error.exception.code,8197)
+            self.assertEqual(error.exception.code,9472)
             with self.assertRaises(ProtocolError) as error:
                 disabled.call('order_quest',dict(ver='2.4.0',quest_id='11001'),session)
-            self.assertEqual(error.exception.code,8197)
+            self.assertEqual(error.exception.code,9472)
 
 
 if __name__ == '__main__':

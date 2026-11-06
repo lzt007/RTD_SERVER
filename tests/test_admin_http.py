@@ -8,6 +8,7 @@ import unittest
 import io
 from email.message import Message
 from unittest.mock import Mock
+from admin_http_auth import credentials
 from rtd.services.api import API
 from rtd.transport.admin import handle_admin
 from rtd.transport.http import handler_for
@@ -16,6 +17,7 @@ from test_live_configuration import event
 
 class AdminHttpTest(unittest.TestCase):
     def setUp(self):
+        self.admin_headers = credentials(self)
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         root=pathlib.Path(self.temp.name);self.api=API(root/'http.sqlite3')
         self.server=http.server.ThreadingHTTPServer(('127.0.0.1',0),handler_for(self.api,root/'http.log'))
@@ -27,7 +29,7 @@ class AdminHttpTest(unittest.TestCase):
         connection=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=5)
         try:
             data=json.dumps(body).encode() if raw is None and body is not None else raw
-            connection.request(method,'/admin/v1/'+path,body=data,headers={'Content-Type':content_type})
+            connection.request(method,'/admin/v1/'+path,body=data,headers={**self.admin_headers, 'Content-Type':content_type})
             response=connection.getresponse();payload=response.read()
             self.assertTrue(response.getheader('Content-Type','').startswith('application/json'))
             return response.status,json.loads(payload)

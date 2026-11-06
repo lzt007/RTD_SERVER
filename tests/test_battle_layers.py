@@ -48,12 +48,12 @@ class BattleLayersTest(unittest.TestCase):
     def clear_req(self):return dict(ver='2.4.0',retry=0,list=[self.entry(20000),self.entry(20100)],
         party_instance_id=self.state()['battle_party_instance_ids'])
 
-    def test_formal_verified_paths_require_explicit_event_and_keep_other_children_gated(self):
+    def test_layer_paths_require_schedule_and_honor_explicit_child_block(self):
         from rtd.policies.quest_content import available
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):self.api=API(self.path)
         children=(20100,20103,20110,20120,20122,20131)
         self.assertTrue(available(self.api,20000))
-        self.assertFalse(available(self.api,20101))
+        self.assertTrue(available(self.api,20101))
         self.assertEqual(self.api.operations.read()['events'],[])
         before=self.state()
         with self.assertRaises(ProtocolError):self.order()
@@ -61,7 +61,7 @@ class BattleLayersTest(unittest.TestCase):
         catalog=self.api.operations.catalog()
         rows={q['quest_id']:q for q in catalog['quests']}
         for qid in (20000,)+children:self.assertTrue(rows[qid]['playable'])
-        self.assertFalse(rows[20101]['playable'])
+        self.assertTrue(rows[20101]['playable'])
         event_quests=[]
         for qid in (20000,)+children:
             drops=[dict(drop_data_id=d['drop_data_id'],entries=[],no_drop_weight=1)
@@ -76,7 +76,9 @@ class BattleLayersTest(unittest.TestCase):
                 hashes={str(t):str(self.api.master_table(t)['hash']) for t in HASH_TYPES}
                 root_request,root=self.order(hashes=hashes);self.assertEqual(root['code'],4096)
                 paid=self.state()
+                self.api.blocked_quests.add(20101)
                 with self.assertRaises(ProtocolError):self.order(20101,1,hashes=hashes)
+                self.api.blocked_quests.remove(20101)
                 self.assertEqual(self.state(),paid)
                 self.assertEqual(self.order(child,1,hashes=hashes)[1]['code'],4096)
                 self.assertEqual(self.state()['player']['action_point'],paid['player']['action_point'])

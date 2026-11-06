@@ -24,7 +24,7 @@ class StoryArea150Test(unittest.TestCase):
     order=story_tests.StoryBatchTest.order
     clear_request=story_tests.StoryBatchTest.clear_request
 
-    def test_formal_area150_orders_events_and_unverified_floor_gate(self):
+    def test_formal_area150_orders_and_events_without_experimental_whitelist(self):
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):self.api=API(self.path)
         catalog={q['quest_id']:q for q in self.api.operations.catalog()['quests']}
         self.assertTrue(all(catalog[q]['playable'] for q in QUESTS))
@@ -39,9 +39,10 @@ class StoryArea150Test(unittest.TestCase):
         self.api.operations.update('events','area150',cfg)
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):self.api=API(self.path)
         self.assertTrue(all(self.api.operations.event_for_quest(q)[0]['id']=='area150' for q in QUESTS))
-        self.assertFalse(available(self.api,20101))
+        self.assertTrue(available(self.api,20101))
         before=self.api.operations.read()
-        with self.assertRaises(ConfigurationError):
+        # Availability is separate from mandatory missing-drop configuration.
+        with self.assertRaisesRegex(ConfigurationError,'Explicit local rules'):
             self.api.operations.update('events','unverified',event(id='unverified',quests=[dict(quest_id=20101,drops=[])]))
         self.assertEqual(self.api.operations.read(),before)
 

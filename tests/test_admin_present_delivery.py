@@ -10,6 +10,7 @@ import unittest
 import uuid
 from unittest.mock import patch
 
+from admin_http_auth import credentials
 from rtd.services.api import API
 from rtd.services.presents import PRESENT_FIELDS
 from rtd.transport.http import handler_for
@@ -18,6 +19,7 @@ from rtd.policies.unit_progression import level_exp
 
 class AdminDeliveryTest(unittest.TestCase):
     def setUp(self):
+        self.admin_headers = credentials(self)
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.root=pathlib.Path(self.temp.name);self.path=self.root/'state.sqlite3'
         self.api=API(self.path);self.tokens=[]
@@ -36,7 +38,7 @@ class AdminDeliveryTest(unittest.TestCase):
         c=http.client.HTTPConnection('127.0.0.1',self.http.server_port,timeout=10)
         try:
             c.request(method,'/admin/v1/'+path,body=json.dumps(body).encode() if body is not None else raw,
-                      headers={'Content-Type':media})
+                      headers={**self.admin_headers, 'Content-Type':media})
             r=c.getresponse();self.assertIn('application/json',r.getheader('Content-Type'))
             return r.status,json.loads(r.read())
         finally:c.close()
