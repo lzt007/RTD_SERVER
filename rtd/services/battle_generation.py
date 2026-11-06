@@ -1,9 +1,10 @@
 """Single-floor random choices sampled once into the durable order snapshot."""
 import secrets
 from ..common import ProtocolError
+from ..policies.event_point_recovery import missing_point
 
 
-def generate_enemies(table, level, drops, rng=None, drop_attempts=1, drop_overrides=None, enemy_masters=None):
+def generate_enemies(table, level, drops, rng=None, drop_attempts=1, drop_overrides=None, enemy_masters=None, event_id=0):
     rng = rng or secrets.SystemRandom()
     enemies = []
 
@@ -36,9 +37,13 @@ def generate_enemies(table, level, drops, rng=None, drop_attempts=1, drop_overri
                         unit_level = rng.randint(drop[f'unit{index}_lv_min'],drop[f'unit{index}_lv_max'])
                     break
             if unit_id:break
+        # Explicit operator and recovered values (including zero) win.
+        original = drops.get(drop_id, {})
+        point_source = override if override is not None and 'sp_event_point' in override else original
+        point_default = missing_point(event_id, table[prefix+'_set_id'])
         enemies.append(dict(enemy_id=table[prefix+'_id'],enemy_set_id=table[prefix+'_set_id'],
             x=x,y=y,flag=present,drop_data_id=drop['id'],drop_unit_id=unit_id,
-            drop_unit_level=unit_level,sp_event_point=(override.get('sp_event_point',0) if override is not None else drop.get('sp_event_point',0))
+            drop_unit_level=unit_level,sp_event_point=point_source.get('sp_event_point',point_default)
                 if present and not field_object else 0,
             add_attribute_exp=(override.get('attribute_exp',0) if override is not None else drop.get('add_attribute_exp',0))
                 if present and not field_object else 0))

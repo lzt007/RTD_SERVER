@@ -26,11 +26,13 @@ class ShingetsuBookTest(unittest.TestCase):
             output=Path(tmp)/'ms00_book_el_05.unity3d'
             report=build_book(source,output)
             self.assertEqual(report['source_sha256'],before)
-            self.assertEqual(report['generated_sha256'],'ae8fc933c64c928c06cf55e6b11040cc9615d3af375a3582002d3dc6f2af1555')
+            self.assertEqual(report['generated_sha256'],'3a8f0f0e25def0ab35ebc116e7fdf43c52b42e423a1ffc06e713965858911b49')
             env=UnityPy.load(str(output))
             original=UnityPy.load(str(source))
             self.assertTrue(set(env.file.files).isdisjoint(original.file.files))
             self.assertEqual(env.file.signature,original.file.signature)
+            self.assertEqual({obj.read_typetree()['m_IsActive'] for obj in env.objects
+                              if obj.type.name=='GameObject'},{0})
             matches=[]
             for obj in env.objects:
                 if obj.type.name=='AssetBundle':

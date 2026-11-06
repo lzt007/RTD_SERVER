@@ -26,7 +26,10 @@ def _route(quest,table,enemies,challenges):
         if not candidates:raise ValueError('wanted challenge identity absent from original encounter table')
         counts[candidates[0]]=max(counts.get(candidates[0],0),c['param_1'])
     mandatory=[i for i,n in counts.items() for _ in range(n)]
-    count=max(distance-1,need,len(mandatory))
+    # A walkable inferred route spans the map instead of placing every enemy
+    # on the start column. Budget the lateral encounters before checking souls.
+    rows=distance-1
+    count=max(rows+rows//2,need,len(mandatory))
     boss_soul=enemies[table['death_set_id']]['soul_pt']
     def sequence(n):return mandatory+[ordinary[i%len(ordinary)] for i in range(n-len(mandatory))]
     while count<=3*(distance-1):
@@ -40,15 +43,23 @@ def _route(quest,table,enemies,challenges):
         count+=1
     else:raise ValueError('known soul gains cannot support the original challenge on inferred route')
     width=9;height=distance+14;cells=bytearray(width*height)
-    extra=count-(distance-1);x=4;path=[]
-    for y in range(5,height-10):
+    extra=count-rows;x=4;direction=1;path=[]
+    for row,y in enumerate(range(5,height-10)):
         path.append((x,y))
-        step=-1 if x==6 else 1
-        for _ in range(min(extra,2)):
-            x+=step;path.append((x,y));extra-=1
+        # Spread turns over the full depth; at most two per row, matching the
+        # existing encounter-capacity bound. Stay inside the two outer margins.
+        turns=(row+1)*extra//rows-row*extra//rows
+        if not 1<=x+direction*turns<=7:direction=-direction
+        for _ in range(turns):
+            if x==7:direction=-1
+            elif x==1:direction=1
+            x+=direction;path.append((x,y))
     for (x,y),slot in zip(path,encounter):cells[y*width+x]=slot
     for i in (17,18):
-        if slots[i] and slots[i]['id'] and i not in counts:cells[(5+(i-17))*width+3]=i
+        if slots[i] and slots[i]['id'] and i not in counts:
+            y=5+(i-17)
+            x=next(x for x in (3,5,2,6,1,7,0,8) if not cells[y*width+x])
+            cells[y*width+x]=i
     cells[(height-10)*width:(height-9)*width]=bytes([160])*width
     cells[(height-5)*width:(height-4)*width]=bytes([192])*width
     level=dict(level_data_id=quest['id'],format=0,start_x=4,start_y=4,width=width,height=height,map_data=cells.hex().upper())

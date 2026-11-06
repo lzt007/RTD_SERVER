@@ -12,6 +12,43 @@ from rtd.services.api import API
 
 
 class ShopTest(unittest.TestCase):
+    def test_ap_recovery_keeps_active_battle_and_retries_without_second_charge(self):
+        state=self.state()
+        state['battle']=dict(quest_id=20842,quest_status=1,quest_continue=0,
+                             enemy_info_list=[dict(enemy_id=0,flag=1)])
+        state['battle_party_instance_ids']=[1,2,3,4,5,0]
+        state['battle_order_token']='frozen-order'
+        self.api.store.save(state)
+        before=copy.deepcopy(self.state())
+        result=self.call('buy_recover_ap')['result']
+        after=self.state()
+        self.assertEqual(result['action_point'],result['max_action_point'])
+        self.assertEqual(result['total_paid_point'],before['player']['total_paid_point']-1)
+        self.assertEqual(after['battle'],before['battle'])
+        self.assertEqual(after['battle_party_instance_ids'],before['battle_party_instance_ids'])
+        self.assertEqual(after['battle_order_token'],before['battle_order_token'])
+        self.assertEqual(self.call('buy_recover_ap',api=API(self.path),retry=1)['result'],result)
+        self.assertEqual(self.state(),after)
+
+    def test_capacity_purchases_with_retained_battle_keep_snapshot_and_retry(self):
+        state=self.state()
+        state['battle']=dict(quest_id=20710,quest_status=1)
+        state['battle_order_token']='retained-order'
+        self.api.store.save(state)
+        frozen=copy.deepcopy(self.state()['battle'])
+        for operation,field in [('buy_max_unit','max_unit'),('buy_max_friend','max_friend')]:
+            before=self.state()
+            old=before['player'][field]
+            result=self.call(operation,**{field:old})['result']
+            self.assertEqual(result[field],old+5)
+            after=copy.deepcopy(self.state())
+            self.assertEqual(after['battle'],frozen)
+            self.assertEqual(after['battle_order_token'],'retained-order')
+            self.assertEqual(after['units'],before['units'])
+            retry=self.call(operation,api=API(self.path),retry=1,**{field:old})['result']
+            self.assertEqual(retry[field],old+5)
+            self.assertEqual(self.state(),after)
+
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.path=pathlib.Path(self.temp.name)/'shop.sqlite3';self.api=API(self.path)
@@ -85,8 +122,8 @@ class ShopTest(unittest.TestCase):
         self.player(free_paid_point=0,paid_point=0,total_paid_point=0)
         self.error(8961,'buy_max_unit',max_unit=1000)
         s=self.state();s['battle']=dict(quest_id=11000);self.api.store.save(s)
-        self.error(8197,'buy_recover_ap')
-        self.error(8197,'buy_max_friend',max_friend=100)
+        self.error(8961,'buy_recover_ap')
+        self.error(8961,'buy_max_friend',max_friend=100)
 
     def test_concurrent_expansion_old_capacity_and_ap_buy_charge_once(self):
         other=API(self.path)

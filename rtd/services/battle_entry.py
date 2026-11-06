@@ -77,20 +77,21 @@ def order_single_floor(api, state, req, session, quest_id):
         if len(state['units']) > player['max_unit']:
             raise ProtocolError(9472, 'Unit inventory exceeds capacity')
         owned = {u['instance_id']:u for u in state['units']}
-        party = state['party']['party'][state['party']['active']]['instanceIds'][:3]
-        if len(party) != 3 or len(set(party)) != 3 or any(i not in owned for i in party):
-            raise ProtocolError(9472, 'A complete three-unit party is required')
+        party_size = 5 if quest['pt_num'] == 6 else 3
+        party = state['party']['party'][state['party']['active']]['instanceIds'][:party_size]
+        if len(party) != party_size or len(set(party[:3])) != 3 or any(i not in owned for i in party[:3]) or len([i for i in party if i]) != len(set(i for i in party if i)) or any(i and i not in owned for i in party):
+            raise ProtocolError(9472, 'A complete owned party is required')
         quest = next(q for q in api.masters[30]['data_list'] if q['id'] == quest_id)
         if player['action_point'] < quest['stamina']:
             raise ProtocolError(9472, 'Not enough stamina')
         table = next(t for t in api.masters[21]['data_list'] if t['id'] == quest['enemy_table_id'])
         drops = {d['id']:d for d in api.masters[22]['data_list']}
         bonus = active_bonus(state)
-        enemies = generate_enemies(table,level,drops,
+        enemies = generate_enemies(table,level,drops,event_id=quest.get('sp_event_id',0),
             drop_attempts=2 if bonus['type']==7 and bonus['num']>0 else 1,
             drop_overrides={r['drop_data_id']:r for r in event[1]['drops']} if event else None,
             enemy_masters={e['id']:e for e in api.masters[20]['data_list']})
-        attribute_rewards=reward_snapshot(api,state,enemies,party)
+        attribute_rewards=reward_snapshot(api,state,enemies,[i for i in party if i])
         if replace:
             # Local lifecycle policy: explicit fresh order retires an orphaned
             # tutorial. Validate/generate first; the request transaction rolls
@@ -115,9 +116,10 @@ def order_single_floor(api, state, req, session, quest_id):
         reward=freeze(state,helper,bonus)
         if reward is None:state.pop('battle_helper_reward',None)
         else:state['battle_helper_reward']=reward
-        # RequestClearQuest2 carries six battle slots, unlike five saved-party slots.
-        state['battle_party_instance_ids'] = list(party) + [0,0,0]
-        state['battle_party_unit_ids'] = [owned[i]['unit_id'] for i in party]
+        # Original PT_NUM=6 uses all five saved slots; ordinary quests use three.
+        # The helper has no owned instance ID, and remaining wire slots stay zero.
+        state['battle_party_instance_ids'] = list(party) + [0] * (6-len(party))
+        state['battle_party_unit_ids'] = [owned[i]['unit_id'] for i in party if i]
         state['battle_attribute_rewards']=attribute_rewards
         state['battle_event_points']=freeze_event_points(quest,enemies,{r['sp_event_id'] for r in api.masters[34]['data_list']})
         spend(player, quest['stamina'], time.time())

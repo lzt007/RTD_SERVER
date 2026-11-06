@@ -1,101 +1,257 @@
 {
-  "policy": "inferred-fenris-markers-not-original-book-art",
+  "policy": "inferred-gacha-book-billboards-not-original-map-art",
   "bundles": [
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_01.unity3d",
-      "generated_sha256": "16aeee2cca537b760d73018d559ff74988a0339ff7642c458705e8e03c2252c0",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_01",
+      "source_rect_xywh": [
+        381,
+        0,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "d6b64d1f283efb828eac3a9051602da6855f88814504afc7bde901a995d4af95",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_01",
+      "generated_bundle": "ms00_book_el_01.unity3d",
+      "generated_sha256": "c67a68d810cb9a15cf6b54580752f295b425c30bf0c53046f9df355fe9e7eb21",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-75bdb823d9927571f6bacf734c686ebf"
+        "CustomAssetBundle-395ae47490e822da0ca27c64a21a12ae"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     },
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_02.unity3d",
-      "generated_sha256": "4fca0d8a19e930cdfc16694210299555b4929e0dd42c14132dbc6ea8f046c3a1",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_02",
+      "source_rect_xywh": [
+        342,
+        272,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "3d7ecb9bfc02a8f871d28803a8db3f5b88c3d6a48582d54112875e24584c7b26",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_02",
+      "generated_bundle": "ms00_book_el_02.unity3d",
+      "generated_sha256": "aec75306824eb6a7505bb9d31b7ad4ea4176f3d3f50bc2773fcef6c91cc2b4d3",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-4786066820f96d2b637aae53131dbfef"
+        "CustomAssetBundle-56e73dc13afc1b0601e6b34016dd55d3"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     },
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_03.unity3d",
-      "generated_sha256": "47e89b21e29d2e6111c9d6b2df65357575379f9f620cf54fd81aabccac8d31fb",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_03",
+      "source_rect_xywh": [
+        280,
+        136,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "49500eba93118bdeb5e04a015f9944009e05ce94acbec3cab51da353c74ad21d",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_03",
+      "generated_bundle": "ms00_book_el_03.unity3d",
+      "generated_sha256": "4dbddc1b53e09bb379be14fa7b82c1946cb7c05d37714a7b058f94e3bf50e183",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-5b892f1d0e5854598b574ea97ca6f7d5"
+        "CustomAssetBundle-a50eb6cdde605579def127001b818cf3"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     },
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_04.unity3d",
-      "generated_sha256": "16d77f491f3111ffdaa9e4e7c375647d2313662fa2ad97df3ce7798d87c585f3",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_04",
+      "source_rect_xywh": [
+        280,
+        0,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "12fd78ab322883345b177bce80202725926dd2d706c7ea98defac30c7f01afd0",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_04",
+      "generated_bundle": "ms00_book_el_04.unity3d",
+      "generated_sha256": "ba2f5163b50acc4a872f1cdb75d414b765a528c5f46fe54a5e336ae65d85a722",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-a750fb72d9de877fb3155b3bf1aee662"
+        "CustomAssetBundle-84a9913cae438a2403fa57cc8ac9fb56"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     },
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_05.unity3d",
-      "generated_sha256": "ae8fc933c64c928c06cf55e6b11040cc9615d3af375a3582002d3dc6f2af1555",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_05",
+      "source_rect_xywh": [
+        241,
+        303,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "95e6648186baba1f621c4cf5691931faffe0ee983d03d0f5116d86582560adc5",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_05",
+      "generated_bundle": "ms00_book_el_05.unity3d",
+      "generated_sha256": "df7975e11cd2faadf5d1437e1edf470a1ed875774ba06c3e59a4bd39b6ad99a5",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-cc9a3d16e07ac3d4e3de3da1cfe69eba"
+        "CustomAssetBundle-a54314eab7ab67b39d340e3c0a045f6e"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     },
     {
-      "policy": "inferred-shingetsu-book-marker-v1",
-      "source_bundle": "151-160.unity3d",
-      "source_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
-      "source_prefab_path_id": 609,
-      "generated_bundle": "ms00_book_el_06.unity3d",
-      "generated_sha256": "105f207cc90c0155e373fa3766801fd7ca691025ae0a676726226e7f9ec8225a",
+      "policy": "inferred-gacha-book-billboard-root-animation-hover-v7",
+      "inferred": true,
+      "source_apk": "game.apk",
+      "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+      "source_member": "assets/bin/Data/sharedassets1.assets",
+      "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+      "source_atlas_path_id": 47,
+      "source_texture_path_id": 15,
+      "source_sprite": "book_06",
+      "source_rect_xywh": [
+        140,
+        303,
+        101,
+        136
+      ],
+      "source_pixels_sha256": "ac5ddb48044a57734f00c2a3c3763af9400e20e34c4404745cb1635441324c1b",
+      "serialization_template": "151-160.unity3d",
+      "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
       "prefab": "ast_ms00_book_el_06",
+      "generated_bundle": "ms00_book_el_06.unity3d",
+      "generated_sha256": "98bdb58a95b1e0f5f4067be5acf1c251b4183ddb0c562333340229f11f1a9494",
       "original_internal_files": [
         "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
       ],
       "generated_internal_files": [
-        "CustomAssetBundle-f1ac14ae470ab0e70c89566e53e81753"
+        "CustomAssetBundle-3dc7ffb2b59ee044d2650a2a174a8209"
       ],
-      "reason": "Original book bundle absent; temporary Fenris map marker only. Battle character remains original."
+      "validation": {
+        "objects": 13,
+        "external_references": 0,
+        "vertex_count": 4,
+        "triangles": 2,
+        "has_camera": false,
+        "has_particles": false,
+        "has_ui_scripts": false
+      },
+      "limitations": [
+        "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+        "No live Unity client validation; visual scale, orientation and animation require device check."
+      ]
     }
   ]
 }

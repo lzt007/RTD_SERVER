@@ -30,7 +30,11 @@ def resource_issues(masters,levels,quest_ids,assets):
         path=original if original.is_file() else ROOT/'resources/reconstructed/events/bundles'/name
         expected=assets['source_hashes'].get('resources/bundles/'+name)
         if not original.is_file():expected=assets['bundle_sources'].get(name,{}).get('sha256') or marker_hashes.get(name)
-        checked[name]=path.is_file() and bool(expected) and hashlib.sha256(path.read_bytes()).hexdigest()==expected
+        # Earlier deployments put the inferred color05 book in the canonical
+        # directory. Its location does not make the old placeholder original art;
+        # accept the current explicitly audited replacement there as well.
+        accepted={value for value in (expected,marker_hashes.get(name)) if value}
+        checked[name]=path.is_file() and bool(accepted) and hashlib.sha256(path.read_bytes()).hexdigest() in accepted
         return checked[name]
     for id in quest_ids:
         table=tables[quests[id]['enemy_table_id']]

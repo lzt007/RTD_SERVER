@@ -12,6 +12,23 @@ from rtd.services.api import API
 
 
 class GachaTest(unittest.TestCase):
+    def test_retained_battle_does_not_block_draw_or_duplicate_retry(self):
+        state=self.state()
+        state['battle']=dict(quest_id=20710,quest_status=1,quest_continue=0,
+                             enemy_info_list=[dict(enemy_id=0,flag=1)])
+        state['battle_order_token']='retained-order'
+        self.api.store.save(state)
+        before=copy.deepcopy(self.state())
+        result=self.call(gacha_id=20000,tutorial_flag=False,paid_point=7)['result']
+        after=copy.deepcopy(self.state())
+        self.assertEqual(result['total_paid_point'],2)
+        self.assertEqual(len(after['units']),len(before['units'])+1)
+        self.assertEqual(after['battle'],before['battle'])
+        self.assertEqual(after['battle_order_token'],before['battle_order_token'])
+        self.assertEqual(self.call(api=API(self.path),gacha_id=20000,tutorial_flag=False,
+                                   paid_point=7,retry=1)['result'],result)
+        self.assertEqual(self.state(),after)
+
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.path=pathlib.Path(self.temp.name)/'gacha.sqlite3';self.api=API(self.path)
@@ -89,7 +106,7 @@ class GachaTest(unittest.TestCase):
         self.player(friend_point=99)
         self.error(8961,gacha_id=10000)
         s=self.state();s['battle']=dict(quest_id=11000);self.api.store.save(s)
-        self.error(8197,gacha_id=10000)
+        self.error(8961,gacha_id=10000)
 
     def test_ten_fault_rolls_back_and_concurrent_network_retries_never_issue_more(self):
         before=self.state();save=self.api.store.save
