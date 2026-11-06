@@ -38,7 +38,8 @@ def purchase(api,state,req,token,operation):
     if gacha_id not in (10000,20000,30000):raise ProtocolError(8197,'Local pool is not configured')
     if (operation=='buy_gacha_special')!=(gacha_id==30000):
         raise ProtocolError(8194,'Draw type does not match operation')
-    if state.get('battle'):raise ProtocolError(8197,'Draw is unavailable during an active battle')
+    # Drawing adds inventory and spends account currency; it does not modify
+    # the party or encounter snapshot of a retained quest.
     balance=number(req.get('paid_point')) if gacha_id==20000 else None
     receipts=state.get('gacha_receipts',{});key=str(gacha_id)
     if retry:

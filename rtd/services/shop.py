@@ -19,7 +19,8 @@ def number(value,positive=False):
 def purchase(api,state,req,token,operation):
     retry=number(req.get('retry',0))
     old=number(req.get(CAPACITY[operation][0]),True) if operation in CAPACITY else None
-    if state.get('battle'):raise ProtocolError(8197,'Shop is unavailable during an active battle')
+    # Stamina and capacity belong to the account, not the frozen battle.
+    # A retained run can remain after the original client returns to menus.
     player=state['player'];receipts=state.get('shop_receipts',{})
     funds=[player[k] for k in ('free_paid_point','paid_point','total_paid_point')]
     if any(type(n) is not int or n<0 for n in funds) or funds[0]+funds[1]!=funds[2]:

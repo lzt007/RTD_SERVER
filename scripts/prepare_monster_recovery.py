@@ -39,13 +39,14 @@ def motion_catalog():
     return json.loads((ROOT/'docs/resource-audit/loading-chain/catalog.json').read_text())
 
 @lru_cache(maxsize=None)
-def motion_paths(family):
+def motion_paths(family, clip_names=None):
     import UnityPy
     catalog=motion_catalog()
-    result=set()
+    result=set();found=set()
+    names=set(clip_names) if clip_names is not None else ({f'{family if family.startswith("ms") else "ms01_"+family}_wait_01',f'{family if family.startswith("ms") else "ms01_"+family}_atk_01'} if family!='death' else {'ms00_death_wait_01','ms00_death_atk_01'})
     with zipfile.ZipFile(APK) as z:
         for obj in catalog['objects'].values():
-            if obj['type']!='AnimationClip' or obj['name'] not in ({f'{family if family.startswith("ms") else "ms01_"+family}_wait_01',f'{family if family.startswith("ms") else "ms01_"+family}_atk_01'} if family!='death' else {'ms00_death_wait_01','ms00_death_atk_01'}):continue
+            if obj['type']!='AnimationClip' or obj['name'] not in names:continue
             source=catalog['sources'][catalog['files'][obj['file']]['source']]
             prefix=str(APK.relative_to(WS))+':'
             origin=next((o for o in source['origins']
@@ -53,9 +54,10 @@ def motion_paths(family):
             if origin is None:continue
             entry=origin['path'][len(prefix):]
             t=next(o for o in UnityPy.load(z.read(entry)).objects if o.path_id==obj['path_id']).read_typetree()
+            found.add(obj['name'])
             for k in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves'):
                 result.update(c['path'] for c in t[k])
-    if not result:raise ValueError('Original motions not found')
+    if not result or (clip_names is not None and found!=names):raise ValueError('Original motions not found')
     return result
 
 def hierarchy_paths(trees):
@@ -70,13 +72,55 @@ def hierarchy_paths(trees):
     return [set(walk(i,'')) for i,t in transforms.items()
             if trees[t['m_GameObject']['m_PathID']][1]['m_Name']=='move']
 
-def convert_model(source,output,model,textures, *, source_model=None, motion_family=None):
+def unused_brightness_keywords(keywords, script):
+    """One known Standard-material leftover, absent from custom brightness variants."""
+    return (keywords=='_ALPHAPREMULTIPLY_ON' and 'Shader "Character/brightness"' in script
+            and 'Blend SrcAlpha OneMinusSrcAlpha' in script and keywords not in script
+            and not any(token in script for token in ('multi_compile','shader_feature','Keywords {')))
+
+def redundant_transparent_tag(tags, script):
+    """A material tag identical to the custom shader's own tag changes no state."""
+    import re
+    values=re.findall(r'"RenderType"\s*=\s*"([^"]+)"',script)
+    return (list(tags)==[('RenderType','Transparent')] and bool(values)
+            and all(value=='Transparent' for value in values)
+            and 'Shader "Character/brightness"' in script)
+
+@lru_cache(maxsize=1)
+def native_animation_controller_templates():
+    """Use the shipped 3.5 script schema, never a Unity 5 MonoScript hash/layout."""
+    import UnityPy
+    catalog=motion_catalog()
+    for meta in catalog['objects'].values():
+        if meta['type']!='MonoScript' or meta['name']!='AnimationController':continue
+        source=catalog['sources'][catalog['files'][meta['file']]['source']]
+        origin=next((o for o in source['origins'] if o['category']=='preload90'),None)
+        if origin is None:continue
+        env=UnityPy.load(str(WS/origin['path']))
+        script=next(o for o in env.objects if o.path_id==meta['path_id'])
+        for obj in env.objects:
+            if obj.type.name!='MonoBehaviour':continue
+            tree=obj.read_typetree()
+            if tree.get('m_Script',{}).get('m_PathID')==script.path_id and tree['m_Script']['m_FileID']==0:
+                return {'MonoScript':script,'MonoBehaviour':obj}
+    raise ValueError('Native AnimationController templates unavailable')
+
+def convert_model(source,output,model,textures, *, source_model=None, motion_family=None, texture_aliases=None):
     import UnityPy
     from UnityPy.helpers.MeshHelper import MeshHandler
     from PIL import Image
     env=UnityPy.load(str(source));target=UnityPy.load(str(TEMPLATE)).file
     templates={}
     for obj in target.objects.values():templates.setdefault(obj.type.name,obj)
+    if any(o.type.name in ('MonoScript','MonoBehaviour') for o in env.objects):
+        for typ,obj in native_animation_controller_templates().items():
+            obj=copy.copy(obj);schema=copy.deepcopy(obj.serialized_type)
+            occupied={t.class_id for t in target.types}
+            if obj.type_id in occupied and typ=='MonoBehaviour':
+                obj.type_id=min(occupied|{0})-1
+                if schema is not None:schema.class_id=obj.type_id
+            if schema is not None and obj.type_id not in occupied:target.types.append(schema)
+            obj.serialized_type=schema;templates[typ]=obj
     original_trees={k:o.read_typetree() for k,o in templates.items()}
     objects={};trees={};images={};vertices=0;shader_reports=[]
     src={o.path_id:o for o in env.objects}
@@ -99,12 +143,18 @@ def convert_model(source,output,model,textures, *, source_model=None, motion_fam
     def add(typ,tree,pid):
         obj=copy.copy(templates[typ]);obj.assets_file=target;obj.path_id=pid
         obj.save_typetree(merge_schema(tree,original_trees[typ]));objects[pid]=obj;trees[pid]=(typ,tree)
-    texture_obj=next(o for o in env.objects if o.type.name=='Texture2D')
     for pid,obj in src.items():
         if pid not in source_reachable:continue
         typ=obj.type.name;t=copy.deepcopy(adapted_source[pid][1])
         if typ=='AssetBundle':continue
-        if typ=='Shader':
+        if typ=='MonoScript':
+            if any(t.get(k)!=original_trees['MonoScript'].get(k) for k in ('m_ClassName','m_Namespace','m_AssemblyName')):raise ValueError('Unsupported native script class')
+            t=copy.deepcopy(original_trees['MonoScript'])
+        elif typ=='MonoBehaviour':
+            if set(t)!=set(original_trees['MonoBehaviour']):raise ValueError('Unsupported script serialized fields')
+            script=src[t['m_Script']['m_PathID']].read_typetree()
+            if script.get('m_ClassName')!='AnimationController':raise ValueError('Unsupported behaviour class')
+        elif typ=='Shader':
             if source_model is not None:
                 from backup_shader_compatibility import native_shader_for
                 t,proof=native_shader_for(t,original_trees['Shader'])
@@ -114,12 +164,18 @@ def convert_model(source,output,model,textures, *, source_model=None, motion_fam
             source_material=t
             if source_model is not None:
                 from backup_shader_compatibility import validate_shader_mapping, native_shader_for
+                source_shader=src[source_material['m_Shader']['m_PathID']].read_typetree()
+                ignored_keywords=unused_brightness_keywords(source_material.get('m_ShaderKeywords',''),source_shader.get('m_Script',''))
                 for field,default in (('m_CustomRenderQueue',-1),('m_ShaderKeywords',''),('stringTagMap',[]),('disabledShaderPasses',[])):
+                    if field=='m_ShaderKeywords' and ignored_keywords:continue
+                    if field=='stringTagMap' and redundant_transparent_tag(source_material.get(field,[]),source_shader.get('m_Script','')):continue
                     if source_material.get(field,default)!=default and field not in original_trees['Material']:
                         raise ValueError('Unsupported material render override '+field)
                 shader_pointer=source_material['m_Shader']
                 if shader_pointer['m_FileID']:raise ValueError('External shader requires explicit resolution')
                 mapped_shader,proof=native_shader_for(src[shader_pointer['m_PathID']].read_typetree(),original_trees['Shader'])
+                if ignored_keywords:proof['unused_source_material_keywords']=['_ALPHAPREMULTIPLY_ON']
+                if redundant_transparent_tag(source_material.get('stringTagMap',[]),source_shader.get('m_Script','')):proof['redundant_source_material_tags']=[['RenderType','Transparent']]
                 shader_reports.append(proof)
             t=copy.deepcopy(original_trees['Material']);t['m_Name']=source_material.get('m_Name',model)
             t['m_Shader']=copy.deepcopy(source_material['m_Shader']) if source_model is not None else {'m_FileID':0,'m_PathID':shader_id}
@@ -161,7 +217,8 @@ def convert_model(source,output,model,textures, *, source_model=None, motion_fam
         if texture_environment is None:
             texture_environment=UnityPy.load(str(path));texture_environments[str(Path(path))]=texture_environment
         candidates=[o for o in texture_environment.objects if o.type.name=='Texture2D']
-        exact=[o for o in candidates if o.read_typetree()['m_Name']==name]
+        selected_name=(texture_aliases or {}).get(name,name)
+        exact=[o for o in candidates if o.read_typetree()['m_Name']==selected_name]
         attr=name.rsplit('_',1)[-1]
         matched=exact or [o for o in candidates if o.read_typetree()['m_Name'].endswith('_'+attr)]
         if not matched and len(candidates)!=1:raise ValueError('Ambiguous texture mapping '+name)
@@ -242,7 +299,7 @@ def convert_model(source,output,model,textures, *, source_model=None, motion_fam
     if missing or missing_paths or not roundtrip or not mesh_roundtrip:raise ValueError(report)
     return report
 
-def extract_originals(directory):
+def extract_originals(directory, family="sla"):
     """Flatten actual APK Resources prefab closure; resolve every external PPtr."""
     import UnityPy
     from functools import lru_cache
@@ -276,7 +333,7 @@ def extract_originals(directory):
             proof[member]=hashlib.sha256(z.read(member)).hexdigest()
         def reader(oid):
             obj=objects[oid];record(obj['file']);return read_file(obj['file']).objects[obj['path_id']]
-        binding=next(b for b in catalog['bindings'] if b['path']=='prefab/enemies/ms01_sla_lv1')
+        binding=next(b for b in catalog['bindings'] if b['path']=='prefab/enemies/ms01_'+family+'_lv1')
         root=resolve(binding['file'],binding['pointer']);queue=[root];trees={}
         while queue:
             oid=queue.pop()
@@ -290,14 +347,14 @@ def extract_originals(directory):
             for p in pointers(t):
                 key=resolve(objects[oid]['file'],p)
                 p.update(m_FileID=0,m_PathID=ids[key] if key else 0)
-            if oid==root:t['m_Name']='ast_ms01_sla_lv1'
+            if oid==root:t['m_Name']='ast_ms01_'+family+'_lv1'
             obj=copy.copy(templates[objects[oid]['type']]);obj.assets_file=target;obj.path_id=ids[oid]
             obj.save_typetree(t);out[obj.path_id]=obj
         target.objects=out;target.externals=[]
-        prefab=directory/'original-sla-lv1.assets';prefab.write_bytes(target.save())
+        prefab=directory/('original-'+family+'-lv1.assets');prefab.write_bytes(target.save())
         textures={}
         for attr in ('fire','water','holy','dark'):
-            name='ms01_sla_lv1_'+attr
+            name='ms01_'+family+'_lv1_'+attr
             binding=next(b for b in catalog['bindings'] if b['path']=='prefab/enemies/textures/'+name)
             oid=resolve(binding['file'],binding['pointer'])
             path=directory/(name+'.assets');path.write_bytes(read_file(objects[oid]['file']).save());textures[attr]=path;record(objects[oid]['file'])
@@ -418,7 +475,9 @@ def validate_motion_paths(trees, family, model, source_trees=None):
                 source_transforms={t['m_GameObject']['m_PathID']:i for i,(typ,t) in source_trees.items() if typ=='Transform'}
                 source_animation=source_trees.get(pid)
                 source_clip=source_trees.get(clip_id)
-                if source_animation and source_clip and owner in source_transforms and source_animation[1]['m_GameObject']['m_PathID']==owner:
+                if (source_animation and source_clip and owner in source_transforms
+                        and source_clip[1].get('m_Name') == clip.get('m_Name')
+                        and source_animation[1]['m_GameObject']['m_PathID']==owner):
                     source_actual=paths_from(source_transforms[owner],source_trees)
                     for path in sorted(absent-source_actual):
                         curves=[(key,c) for key in ('m_RotationCurves','m_PositionCurves','m_ScaleCurves','m_FloatCurves') for c in clip.get(key,[]) if c['path']==path]
@@ -426,25 +485,30 @@ def validate_motion_paths(trees, family, model, source_trees=None):
                         for key,c in curves:
                             keys=c.get('curve',{}).get('m_Curve',[])
                             is_static_scale=key=='m_ScaleCurves'
-                            is_historical_fly_position=key=='m_PositionCurves' and family=='ms03_fly' and clip.get('m_Name') in {'ms03_fly_tob','ms03_fly_tob_6'} and path=='ms03_fly_fire_01'
-                            safe &= (is_static_scale or is_historical_fly_position) and len(keys)==1 and all(isinstance(v,(int,float)) and __import__('math').isfinite(v) and (v!=0 or is_historical_fly_position) for v in keys[0].get('value',{}).values()) and set(keys[0].get('value',{}))=={'x','y','z'} and all(keys[0].get(slope)==dict(x=0.,y=0.,z=0.) for slope in ('inSlope','outSlope'))
+                            is_source_static_position=key=='m_PositionCurves'
+                            safe &= (is_static_scale or is_source_static_position) and len(keys)==1 and all(isinstance(v,(int,float)) and __import__('math').isfinite(v) and (v!=0 or is_source_static_position) for v in keys[0].get('value',{}).values()) and set(keys[0].get('value',{}))=={'x','y','z'} and all(keys[0].get(slope)==dict(x=0.,y=0.,z=0.) for slope in ('inSlope','outSlope'))
                             safe &= any({k:v for k,v in c.items() if k!='curve'}=={k:v for k,v in sc.items() if k!='curve'} and {k:v for k,v in c.get('curve',{}).items() if k!='m_RotationOrder'}=={k:v for k,v in sc.get('curve',{}).items() if k!='m_RotationOrder'} for sc in source_clip[1].get(key,[]))
                         if curves and safe:
                             absent.remove(path);source_unbound.append(dict(animation_id=pid,clip_id=clip_id,path=path,reason='Source already unbound single constant sample preserved verbatim',curve_types=[key for key,c in curves],samples=[c['curve']['m_Curve'][0] for key,c in curves]))
             missing.extend(absent)
+    # Original EnemyData type 33 uses MotionAssign's org sword clips, not
+    # names derived from the ms03_sen resource family.
+    original_clips=('org_atk_swd_01','org_wait_swd_01') if model=='ms03_sen_olgadia_01' else None
     try:
-        expected=motion_paths(family)
+        expected=motion_paths(family,original_clips) if original_clips else motion_paths(family)
     except ValueError as exc:
         if str(exc)!='Original motions not found':raise
         original='not_present_in_original_apk'
         if not clips and family not in {'book','floor','kaidan'}:
             missing.append('no original or embedded motion evidence')
     else:
-        original='validated_original_apk'
+        original='validated_original_apk_type33' if original_clips else 'validated_original_apk'
         skeletons=hierarchy_paths(trees)
         if not skeletons:missing.append('no move hierarchy for original runtime clips')
         for paths in skeletons:missing.extend(expected-paths)
-    return dict(missing_motion_paths=sorted(set(missing)),motion_provenance=original,original_motion_scope='wait_and_attack',embedded_motion_clips=sorted(set(clips)),source_unbound_motion_paths=source_unbound)
+    result=dict(missing_motion_paths=sorted(set(missing)),motion_provenance=original,original_motion_scope='wait_and_attack',embedded_motion_clips=sorted(set(clips)),source_unbound_motion_paths=source_unbound)
+    if original_clips:result['original_motion_clips']=list(original_clips)
+    return result
 
 if __name__=='__main__':
     import argparse

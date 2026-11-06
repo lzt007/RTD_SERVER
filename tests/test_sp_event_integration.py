@@ -120,7 +120,7 @@ class EventIntegrationTests(unittest.TestCase):
                         self.api.call('clear_quest2',req,self.token)
                     self.assertEqual(self.durable(),before)
 
-    def test_config_validation_wrong_original_event_and_formal_gate(self):
+    def test_config_validation_wrong_original_event_and_explicit_block(self):
         for amount in (True,-1,1000,'3',1.5):
             before=self.api.operations.read()
             with self.assertRaises(ConfigurationError):self.api.operations.update('events','point-event',self.config(amount))
@@ -129,9 +129,14 @@ class EventIntegrationTests(unittest.TestCase):
             with self.assertRaises(ConfigurationError):self.api.operations.update('events','point-event',self.config(1,qid))
         self.api.operations.update('events','point-event',self.config(999))
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):formal=API(self.path)
+        # Experimental mode no longer controls availability; explicit server
+        # blocks still reject orders without consuming AP or creating a run.
+        formal.blocked_quests.add(13208)
         before=self.durable()
         with self.assertRaises(ProtocolError):formal.call('order_quest',self.request(),self.token)
         self.assertEqual(self.durable(),before)
+        formal.blocked_quests.remove(13208)
+        self.assertEqual(formal.call('order_quest',self.request(),self.token)['code'],4096)
 
     def test_config_open_schedule_preserves_original_prerequisites_and_freezes_after_delete(self):
         before=self.durable()

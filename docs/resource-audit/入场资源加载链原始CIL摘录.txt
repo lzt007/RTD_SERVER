@@ -1,0 +1,1237 @@
+说明：历史网络端点字符串已替换为 example.invalid；原指令偏移和方法引用保留。此文件不是逐字节原件。
+
+// Original monodis lines 118100-118138
+	// Code size 30 (0x1e)
+	.maxstack 8
+	IL_0000:  ldc.i4.1
+	IL_0001:  stsfld bool ClientData::m_Battling
+	IL_0006:  ldc.i4.1
+	IL_0007:  stsfld bool ClientData::m_BattleWin
+	IL_000c:  ldsfld class MasterDataRTD.QuestMaster[] ClientData::m_QuestMaster
+	IL_0011:  ldc.i4.0
+	IL_0012:  ldelem.ref
+	IL_0013:  stsfld class MasterDataRTD.QuestMaster ClientData::m_SelectedQuest
+	IL_0018:  call void class ClientData::SetupChooseQuest()
+	IL_001d:  ret
+    } // end of method ClientData::LD_SetupTutorialQuest
+
+    // method line 1895
+    .method public static hidebysig
+           default void SetupChooseQuest ()  cil managed
+    {
+        // Method begins at RVA 0x3d49c
+	// Code size 36 (0x24)
+	.maxstack 8
+	IL_0000:  ldsfld class MasterDataRTD.QuestMaster ClientData::m_SelectedQuest
+	IL_0005:  ldfld int32 MasterDataRTD.QuestMaster::enemy_table_id
+	IL_000a:  call class MasterDataRTD.EnemyTableMaster class ClientData::GetEnemyTableMasterRecord(int32)
+	IL_000f:  stsfld class MasterDataRTD.EnemyTableMaster ClientData::m_EnemyTable
+	IL_0014:  ldsfld class MasterDataRTD.EnemyTableMaster ClientData::m_EnemyTable
+	IL_0019:  newobj instance void class MasterDataRTD.EnemyArrangeTable::'.ctor'(class MasterDataRTD.EnemyTableMaster)
+	IL_001e:  stsfld class MasterDataRTD.EnemyArrangeTable ClientData::m_EnemyArrange
+	IL_0023:  ret
+    } // end of method ClientData::SetupChooseQuest
+
+    // method line 1896
+    .method public static hidebysig
+           default string LD_GetCurrentLevelName ()  cil managed
+    {
+        // Method begins at RVA 0x3d4c4
+	// Code size 16 (0x10)
+	.maxstack 8
+	IL_0000:  call void class ClientData::_QuestCheck()
+
+// Original monodis lines 128568-128660
+  .class public auto ansi serializable beforefieldinit EnemyArrangeTable
+    extends [mscorlib]System.Object
+  {
+    .field  public  int32 id
+    .field  public  class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> enemies
+
+    // method line 2157
+    .method public hidebysig specialname rtspecialname
+           instance default void '.ctor' (class MasterDataRTD.EnemyTableMaster master)  cil managed
+    {
+        // Method begins at RVA 0x40d24
+	// Code size 2177 (0x881)
+	.maxstack 89
+	.locals init (
+		class MasterDataRTD.EnemyArrange	V_0,
+		class MasterDataRTD.EnemyArrange	V_1,
+		class MasterDataRTD.EnemyArrange	V_2,
+		class MasterDataRTD.EnemyArrange	V_3,
+		class MasterDataRTD.EnemyArrange	V_4,
+		class MasterDataRTD.EnemyArrange	V_5,
+		class MasterDataRTD.EnemyArrange	V_6,
+		class MasterDataRTD.EnemyArrange	V_7,
+		class MasterDataRTD.EnemyArrange	V_8,
+		class MasterDataRTD.EnemyArrange	V_9,
+		class MasterDataRTD.EnemyArrange	V_10,
+		class MasterDataRTD.EnemyArrange	V_11,
+		class MasterDataRTD.EnemyArrange	V_12,
+		class MasterDataRTD.EnemyArrange	V_13,
+		class MasterDataRTD.EnemyArrange	V_14,
+		class MasterDataRTD.EnemyArrange	V_15,
+		class MasterDataRTD.EnemyArrange	V_16,
+		class MasterDataRTD.EnemyArrange	V_17,
+		class MasterDataRTD.EnemyArrange	V_18,
+		class MasterDataRTD.EnemyArrange	V_19)
+	IL_0000:  ldarg.0
+	IL_0001:  ldc.i4.s 0x14
+	IL_0003:  newobj instance void class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::'.ctor'(int32)
+	IL_0008:  stfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_000d:  ldarg.0
+	IL_000e:  call instance void object::'.ctor'()
+	IL_0013:  ldarg.1
+	IL_0014:  brtrue IL_002f
+
+	IL_0019:  ldarg.0
+	IL_001a:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_001f:  callvirt instance void class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::Clear()
+	IL_0024:  ldstr "No Data"
+	IL_0029:  call void class DebugLogger::Log(object)
+	IL_002e:  ret
+	IL_002f:  ldarg.0
+	IL_0030:  ldarg.1
+	IL_0031:  ldfld int32 MasterDataRTD.EnemyTableMaster::id
+	IL_0036:  stfld int32 MasterDataRTD.EnemyArrangeTable::id
+	IL_003b:  ldarg.0
+	IL_003c:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_0041:  callvirt instance void class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::Clear()
+	IL_0046:  newobj instance void class MasterDataRTD.EnemyArrange::'.ctor'()
+	IL_004b:  stloc.0
+	IL_004c:  ldloc.0
+	IL_004d:  ldarg.1
+	IL_004e:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_set_id
+	IL_0053:  stfld int32 MasterDataRTD.EnemyArrange::enemy_id
+	IL_0058:  ldloc.0
+	IL_0059:  ldarg.1
+	IL_005a:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_id
+	IL_005f:  stfld int32 MasterDataRTD.EnemyArrange::arrange_id
+	IL_0064:  ldloc.0
+	IL_0065:  ldarg.1
+	IL_0066:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_lv_min
+	IL_006b:  stfld int32 MasterDataRTD.EnemyArrange::lv_min
+	IL_0070:  ldloc.0
+	IL_0071:  ldarg.1
+	IL_0072:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_lv_max
+	IL_0077:  stfld int32 MasterDataRTD.EnemyArrange::lv_max
+	IL_007c:  ldloc.0
+	IL_007d:  ldarg.1
+	IL_007e:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_rate
+	IL_0083:  stfld int32 MasterDataRTD.EnemyArrange::arrange_rate
+	IL_0088:  ldloc.0
+	IL_0089:  ldarg.1
+	IL_008a:  ldfld int32 MasterDataRTD.EnemyTableMaster::enemy1_drop_id
+	IL_008f:  stfld int32 MasterDataRTD.EnemyArrange::drop_id
+	IL_0094:  ldloc.0
+	IL_0095:  callvirt instance void class MasterDataRTD.EnemyArrange::SetMasterRecord()
+	IL_009a:  ldarg.0
+	IL_009b:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_00a0:  ldc.i4.1
+	IL_00a1:  ldloc.0
+	IL_00a2:  callvirt instance void class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::Add(!0, !1)
+	IL_00a7:  newobj instance void class MasterDataRTD.EnemyArrange::'.ctor'()
+	IL_00ac:  stloc.1
+	IL_00ad:  ldloc.1
+	IL_00ae:  ldarg.1
+
+// Original monodis lines 129290-129354
+    .method public hidebysig
+           instance default int32[] GetUniqueEnemyList ()  cil managed
+    {
+        // Method begins at RVA 0x415b4
+	// Code size 137 (0x89)
+	.maxstack 21
+	.locals init (
+		class [mscorlib]System.Collections.Generic.List`1<int32>	V_0,
+		int32	V_1,
+		valuetype [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<int32, class MasterDataRTD.EnemyArrange>	V_2,
+		int32[]	V_3)
+	IL_0000:  ldarg.0
+	IL_0001:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_0006:  callvirt instance int32 class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::get_Count()
+	IL_000b:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'(int32)
+	IL_0010:  stloc.0
+	IL_0011:  ldarg.0
+	IL_0012:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	IL_0017:  callvirt instance class [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection<!0,!1> class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::get_Keys()
+	IL_001c:  callvirt instance valuetype [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<!0,!1> class [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection<int32, class MasterDataRTD.EnemyArrange>::GetEnumerator()
+	IL_0021:  stloc.2
+	.try { // 0
+	  IL_0022:  br IL_005c
+
+	  IL_0027:  ldloca.s 2
+	  IL_0029:  call instance !0 valuetype [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<int32, class MasterDataRTD.EnemyArrange>::get_Current()
+	  IL_002e:  stloc.1
+	  IL_002f:  ldarg.0
+	  IL_0030:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	  IL_0035:  ldloc.1
+	  IL_0036:  callvirt instance !1 class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::get_Item(!0)
+	  IL_003b:  ldfld int32 MasterDataRTD.EnemyArrange::enemy_id
+	  IL_0040:  brfalse IL_005c
+
+	  IL_0045:  ldloc.0
+	  IL_0046:  ldarg.0
+	  IL_0047:  ldfld class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class MasterDataRTD.EnemyArrange> MasterDataRTD.EnemyArrangeTable::enemies
+	  IL_004c:  ldloc.1
+	  IL_004d:  callvirt instance !1 class [mscorlib]System.Collections.Generic.Dictionary`2<int32, class MasterDataRTD.EnemyArrange>::get_Item(!0)
+	  IL_0052:  ldfld int32 MasterDataRTD.EnemyArrange::enemy_id
+	  IL_0057:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	  IL_005c:  ldloca.s 2
+	  IL_005e:  call instance bool valuetype [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<int32, class MasterDataRTD.EnemyArrange>::MoveNext()
+	  IL_0063:  brtrue IL_0027
+
+	  IL_0068:  leave IL_0079
+
+	} // end .try 0
+	finally  { // 0
+	  IL_006d:  ldloc.2
+	  IL_006e:  box valuetype [mscorlib]System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<int32,class MasterDataRTD.EnemyArrange>
+	  IL_0073:  callvirt instance void class [mscorlib]System.IDisposable::Dispose()
+	  IL_0078:  endfinally
+	} // end handler 0
+	IL_0079:  ldloc.0
+	IL_007a:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Distinct<int32> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_007f:  call !!0[] class [System.Core]System.Linq.Enumerable::ToArray<int32> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_0084:  stloc.3
+	IL_0085:  ldnull
+	IL_0086:  stloc.0
+	IL_0087:  ldloc.3
+	IL_0088:  ret
+    } // end of method EnemyArrangeTable::GetUniqueEnemyList
+
+    // method line 2159
+
+// Original monodis lines 139925-140462
+    {
+        // Method begins at RVA 0xa8ff0
+	// Code size 1677 (0x68d)
+	.maxstack 112
+	.locals init (
+		unsigned int32	V_0,
+		valuetype AssetBundleLoader/E_LOAD_STEP	V_1,
+		bool	V_2)
+	IL_0000:  ldarg.0
+	IL_0001:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$PC
+	IL_0006:  stloc.0
+	IL_0007:  ldarg.0
+	IL_0008:  ldc.i4.m1
+	IL_0009:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$PC
+	IL_000e:  ldloc.0
+	IL_000f:  switch (
+	  IL_0025,
+	  IL_0426,
+	  IL_0639)
+	IL_0020:  br IL_0687
+
+	IL_0025:  ldarg.0
+	IL_0026:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_002b:  ldc.i4.0
+	IL_002c:  stfld bool GameManager::mb_LoadFinish_Enemy
+	IL_0031:  ldarg.0
+	IL_0032:  ldsfld class MasterDataRTD.EnemyArrangeTable ClientData::m_EnemyArrange
+	IL_0037:  stfld class MasterDataRTD.EnemyArrangeTable GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyTabele>__0'
+	IL_003c:  ldarg.0
+	IL_003d:  ldarg.0
+	IL_003e:  ldfld class MasterDataRTD.EnemyArrangeTable GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyTabele>__0'
+	IL_0043:  callvirt instance int32[] class MasterDataRTD.EnemyArrangeTable::GetUniqueEnemyList()
+	IL_0048:  stfld int32[] GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyIdArray>__1'
+	IL_004d:  ldarg.0
+	IL_004e:  ldc.i4.s 0x40
+	IL_0050:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<string>::'.ctor'(int32)
+	IL_0055:  stfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyPrefabNameList>__2'
+	IL_005a:  ldarg.0
+	IL_005b:  ldc.i4.s 0x40
+	IL_005d:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'(int32)
+	IL_0062:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_0067:  ldarg.0
+	IL_0068:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_006d:  ldc.i4.s 0x40
+	IL_006f:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.AssetBundle>::'.ctor'(int32)
+	IL_0074:  stfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.AssetBundle> GameManager::m_EnemyAssetList
+	IL_0079:  ldarg.0
+	IL_007a:  ldc.i4.s 0x40
+	IL_007c:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'(int32)
+	IL_0081:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyTypeList>__4'
+	IL_0086:  ldarg.0
+	IL_0087:  ldc.i4.s 0x40
+	IL_0089:  newobj instance void class [mscorlib]System.Collections.Generic.List`1<int32>::'.ctor'(int32)
+	IL_008e:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyEffectList>__5'
+	IL_0093:  ldarg.0
+	IL_0094:  ldnull
+	IL_0095:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_009a:  ldarg.0
+	IL_009b:  ldc.i4.0
+	IL_009c:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__7'
+	IL_00a1:  br IL_0259
+
+	IL_00a6:  ldarg.0
+	IL_00a7:  ldarg.0
+	IL_00a8:  ldfld int32[] GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyIdArray>__1'
+	IL_00ad:  ldarg.0
+	IL_00ae:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__7'
+	IL_00b3:  ldelem.i4
+	IL_00b4:  call class EnemyData class ClientData::GetEnemyData(int32)
+	IL_00b9:  stfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_00be:  ldarg.0
+	IL_00bf:  ldarg.0
+	IL_00c0:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_00c5:  ldfld string EnemyData::PrefabName
+	IL_00ca:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_00cf:  ldarg.0
+	IL_00d0:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_00d5:  callvirt instance bool class EnemyData::IsUnitEnemy()
+	IL_00da:  brfalse IL_014d
+
+	IL_00df:  ldarg.0
+	IL_00e0:  ldarg.0
+	IL_00e1:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_00e6:  ldfld int32 EnemyData::Enemy_Symbol
+	IL_00eb:  call int32 class ConvertServerToClient::UnitEnemySymbolToBookColor(int32)
+	IL_00f0:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unit_rank>__9'
+	IL_00f5:  ldarg.0
+	IL_00f6:  ldstr "ms00_book_el_0"
+	IL_00fb:  ldarg.0
+	IL_00fc:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unit_rank>__9'
+	IL_0101:  call instance string int32::ToString()
+	IL_0106:  call string string::Concat(string, string)
+	IL_010b:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_0110:  ldarg.0
+	IL_0111:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_0116:  ldfld int32 EnemyData::Zukan_ID
+	IL_011b:  ldc.i4.0
+	IL_011c:  ble IL_014d
+
+	IL_0121:  ldarg.0
+	IL_0122:  ldsfld !0 class Singleton`1<class AssetBundleLoader>::Instance
+	IL_0127:  ldarg.0
+	IL_0128:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_012d:  ldfld int32 EnemyData::Zukan_ID
+	IL_0132:  callvirt instance int32 class AssetBundleLoader::GetAssetBundleID(int32)
+	IL_0137:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__10'
+	IL_013c:  ldarg.0
+	IL_013d:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_0142:  ldarg.0
+	IL_0143:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__10'
+	IL_0148:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_014d:  ldarg.0
+	IL_014e:  ldarg.0
+	IL_014f:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_0154:  ldfld int32 EnemyData::AtkEffectID
+	IL_0159:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<effectID>__11'
+	IL_015e:  ldarg.0
+	IL_015f:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyEffectList>__5'
+	IL_0164:  ldarg.0
+	IL_0165:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<effectID>__11'
+	IL_016a:  callvirt instance bool class [mscorlib]System.Collections.Generic.List`1<int32>::Contains(!0)
+	IL_016f:  brtrue IL_0185
+
+	IL_0174:  ldarg.0
+	IL_0175:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyEffectList>__5'
+	IL_017a:  ldarg.0
+	IL_017b:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<effectID>__11'
+	IL_0180:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_0185:  ldarg.0
+	IL_0186:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_018b:  ldfld string EnemyData::PrefabName
+	IL_0190:  call bool class AssetBundleLoader::IsLocalAsset(string)
+	IL_0195:  brtrue IL_01ba
+
+	IL_019a:  ldarg.0
+	IL_019b:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_01a0:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager::m_UniqueEnemyPrefabNameList
+	IL_01a5:  ldarg.0
+	IL_01a6:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_01ab:  ldfld string EnemyData::PrefabName
+	IL_01b0:  callvirt instance bool class [mscorlib]System.Collections.Generic.List`1<string>::Contains(!0)
+	IL_01b5:  brfalse IL_01bf
+
+	IL_01ba:  br IL_024b
+
+	IL_01bf:  ldarg.0
+	IL_01c0:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyPrefabNameList>__2'
+	IL_01c5:  ldarg.0
+	IL_01c6:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_01cb:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Add(!0)
+	IL_01d0:  ldarg.0
+	IL_01d1:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_01d6:  callvirt instance bool class EnemyData::IsUnitEnemy()
+	IL_01db:  brfalse IL_0213
+
+	IL_01e0:  ldarg.0
+	IL_01e1:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_01e6:  ldfld int32 EnemyData::Zukan_ID
+	IL_01eb:  ldc.i4.0
+	IL_01ec:  bgt IL_0213
+
+	IL_01f1:  ldarg.0
+	IL_01f2:  ldarg.0
+	IL_01f3:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_01f8:  ldfld string EnemyData::PrefabName
+	IL_01fd:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_0202:  ldarg.0
+	IL_0203:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyPrefabNameList>__2'
+	IL_0208:  ldarg.0
+	IL_0209:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_020e:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<string>::Add(!0)
+	IL_0213:  ldarg.0
+	IL_0214:  ldarg.0
+	IL_0215:  ldfld class EnemyData GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyData>__8'
+	IL_021a:  ldfld int32 EnemyData::Type
+	IL_021f:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyType>__12'
+	IL_0224:  ldarg.0
+	IL_0225:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyTypeList>__4'
+	IL_022a:  ldarg.0
+	IL_022b:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyType>__12'
+	IL_0230:  callvirt instance bool class [mscorlib]System.Collections.Generic.List`1<int32>::Contains(!0)
+	IL_0235:  brtrue IL_024b
+
+	IL_023a:  ldarg.0
+	IL_023b:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyTypeList>__4'
+	IL_0240:  ldarg.0
+	IL_0241:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyType>__12'
+	IL_0246:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<int32>::Add(!0)
+	IL_024b:  ldarg.0
+	IL_024c:  ldarg.0
+	IL_024d:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__7'
+	IL_0252:  ldc.i4.1
+	IL_0253:  add
+	IL_0254:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__7'
+	IL_0259:  ldarg.0
+	IL_025a:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__7'
+	IL_025f:  ldarg.0
+	IL_0260:  ldfld int32[] GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyIdArray>__1'
+	IL_0265:  ldlen
+	IL_0266:  conv.i4
+	IL_0267:  blt IL_00a6
+
+	IL_026c:  ldsfld !0 class Singleton`1<class ParticleManager>::Instance
+	IL_0271:  callvirt instance void class ParticleManager::SetUpDamageEffect()
+	IL_0276:  ldarg.0
+	IL_0277:  ldc.i4.0
+	IL_0278:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_027d:  ldarg.0
+	IL_027e:  ldc.i4.0
+	IL_027f:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__14'
+	IL_0284:  br IL_0307
+
+	IL_0289:  ldarg.0
+	IL_028a:  ldarg.0
+	IL_028b:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyEffectList>__5'
+	IL_0290:  ldarg.0
+	IL_0291:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__14'
+	IL_0296:  callvirt instance !0 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Item(int32)
+	IL_029b:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02a0:  ldarg.0
+	IL_02a1:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02a6:  ldc.i4.0
+	IL_02a7:  blt IL_02be
+
+	IL_02ac:  ldarg.0
+	IL_02ad:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02b2:  ldsfld valuetype EffectData/EnemyEffectAssign[] EnemyAttackEffectAssign::m_DataList
+	IL_02b7:  ldlen
+	IL_02b8:  conv.i4
+	IL_02b9:  blt IL_02df
+
+	IL_02be:  ldstr ">Enemy_Attack_Effect_ID_is_out_of_range. / "
+	IL_02c3:  ldarg.0
+	IL_02c4:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02c9:  call instance string int32::ToString()
+	IL_02ce:  call string string::Concat(string, string)
+	IL_02d3:  call void class DebugLogger::LogWarning(object)
+	IL_02d8:  ldarg.0
+	IL_02d9:  ldc.i4.0
+	IL_02da:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02df:  ldsfld !0 class Singleton`1<class ParticleManager>::Instance
+	IL_02e4:  ldsfld valuetype EffectData/EnemyEffectAssign[] EnemyAttackEffectAssign::m_DataList
+	IL_02e9:  ldarg.0
+	IL_02ea:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<temp_effectID>__13'
+	IL_02ef:  ldelema EffectData/EnemyEffectAssign
+	IL_02f4:  callvirt instance void class ParticleManager::LoadEnemyAtkEffect([out] valuetype EffectData/EnemyEffectAssign&)
+	IL_02f9:  ldarg.0
+	IL_02fa:  ldarg.0
+	IL_02fb:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__14'
+	IL_0300:  ldc.i4.1
+	IL_0301:  add
+	IL_0302:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__14'
+	IL_0307:  ldarg.0
+	IL_0308:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__14'
+	IL_030d:  ldarg.0
+	IL_030e:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyEffectList>__5'
+	IL_0313:  callvirt instance int32 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Count()
+	IL_0318:  blt IL_0289
+
+	IL_031d:  ldarg.0
+	IL_031e:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_0323:  ldarg.0
+	IL_0324:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyPrefabNameList>__2'
+	IL_0329:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Distinct<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_032e:  call class [mscorlib]System.Collections.Generic.List`1<!!0> class [System.Core]System.Linq.Enumerable::ToList<string> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_0333:  stfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager::m_UniqueEnemyPrefabNameList
+	IL_0338:  ldarg.0
+	IL_0339:  ldnull
+	IL_033a:  stfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<enemyPrefabNameList>__2'
+	IL_033f:  ldarg.0
+	IL_0340:  ldc.i4.0
+	IL_0341:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_0346:  br IL_04eb
+
+	IL_034b:  ldarg.0
+	IL_034c:  ldarg.0
+	IL_034d:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_0352:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager::m_UniqueEnemyPrefabNameList
+	IL_0357:  ldarg.0
+	IL_0358:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_035d:  callvirt instance !0 class [mscorlib]System.Collections.Generic.List`1<string>::get_Item(int32)
+	IL_0362:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_0367:  ldarg.0
+	IL_0368:  ldarg.0
+	IL_0369:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_036e:  call valuetype AssetBundleDefine/AssetBundleInfo class AssetBundleDefine::GetEnemyBundleInfo(string)
+	IL_0373:  stfld valuetype AssetBundleDefine/AssetBundleInfo GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<info>__16'
+	IL_0378:  ldarg.0
+	IL_0379:  ldarg.0
+	IL_037a:  ldflda valuetype AssetBundleDefine/AssetBundleInfo GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<info>__16'
+	IL_037f:  call instance string valuetype AssetBundleDefine/AssetBundleInfo::GetURL()
+	IL_0384:  stfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<fileUrl>__17'
+	IL_0389:  ldarg.0
+	IL_038a:  ldarg.0
+	IL_038b:  ldflda valuetype AssetBundleDefine/AssetBundleInfo GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<info>__16'
+	IL_0390:  call instance int32 valuetype AssetBundleDefine/AssetBundleInfo::GetVersion()
+	IL_0395:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetVer>__18'
+	IL_039a:  ldstr ">Set URL_"
+	IL_039f:  ldarg.0
+	IL_03a0:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_03a5:  call instance string int32::ToString()
+	IL_03aa:  ldstr " : "
+	IL_03af:  ldarg.0
+	IL_03b0:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<fileUrl>__17'
+	IL_03b5:  call string string::Concat(string, string, string, string)
+	IL_03ba:  call void class DebugLogger::Log(object)
+	IL_03bf:  ldarg.0
+	IL_03c0:  ldarg.0
+	IL_03c1:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<fileUrl>__17'
+	IL_03c6:  ldarg.0
+	IL_03c7:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetVer>__18'
+	IL_03cc:  call class [UnityEngine]UnityEngine.WWW class [UnityEngine]UnityEngine.WWW::LoadFromCacheOrDownload(string, int32)
+	IL_03d1:  stfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_03d6:  br IL_0426
+
+	IL_03db:  ldarg.0
+	IL_03dc:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_03e1:  callvirt instance string class [UnityEngine]UnityEngine.WWW::get_error()
+	IL_03e6:  call bool string::IsNullOrEmpty(string)
+	IL_03eb:  brtrue IL_040a
+
+	IL_03f0:  ldstr ">DownLoad Faild / "
+	IL_03f5:  ldarg.0
+	IL_03f6:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_03fb:  call string string::Concat(string, string)
+	IL_0400:  call void class DebugLogger::LogError(object)
+	IL_0405:  br IL_0436
+
+	IL_040a:  ldarg.0
+	IL_040b:  ldc.r4 0.016000000759959221
+	IL_0410:  newobj instance void class [UnityEngine]UnityEngine.WaitForSeconds::'.ctor'(float32)
+	IL_0415:  stfld object GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$current
+	IL_041a:  ldarg.0
+	IL_041b:  ldc.i4.1
+	IL_041c:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$PC
+	IL_0421:  br IL_0689
+
+	IL_0426:  ldarg.0
+	IL_0427:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_042c:  callvirt instance bool class [UnityEngine]UnityEngine.WWW::get_isDone()
+	IL_0431:  brfalse IL_03db
+
+	IL_0436:  ldarg.0
+	IL_0437:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_043c:  callvirt instance string class [UnityEngine]UnityEngine.WWW::get_error()
+	IL_0441:  call bool string::IsNullOrEmpty(string)
+	IL_0446:  brfalse IL_0493
+
+	IL_044b:  ldarg.0
+	IL_044c:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<fileUrl>__17'
+	IL_0451:  ldarg.0
+	IL_0452:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetVer>__18'
+	IL_0457:  call bool class [UnityEngine]UnityEngine.Caching::MarkAsUsed(string, int32)
+	IL_045c:  pop
+	IL_045d:  ldarg.0
+	IL_045e:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_0463:  callvirt instance class [UnityEngine]UnityEngine.AssetBundle class [UnityEngine]UnityEngine.WWW::get_assetBundle()
+	IL_0468:  ldarg.0
+	IL_0469:  ldfld string GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<bundle_name>__6'
+	IL_046e:  callvirt instance void class [UnityEngine]UnityEngine.Object::set_name(string)
+	IL_0473:  ldarg.0
+	IL_0474:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_0479:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.AssetBundle> GameManager::m_EnemyAssetList
+	IL_047e:  ldarg.0
+	IL_047f:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_0484:  callvirt instance class [UnityEngine]UnityEngine.AssetBundle class [UnityEngine]UnityEngine.WWW::get_assetBundle()
+	IL_0489:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.AssetBundle>::Add(!0)
+	IL_048e:  br IL_04c0
+
+	IL_0493:  ldstr ">error : "
+	IL_0498:  ldarg.0
+	IL_0499:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_049e:  callvirt instance string class [UnityEngine]UnityEngine.WWW::get_error()
+	IL_04a3:  call string string::Concat(string, string)
+	IL_04a8:  call void class [UnityEngine]UnityEngine.Debug::Log(object)
+	IL_04ad:  ldarg.0
+	IL_04ae:  ldarg.0
+	IL_04af:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_04b4:  ldc.i4.1
+	IL_04b5:  sub
+	IL_04b6:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_04bb:  br IL_04dd
+
+	IL_04c0:  ldarg.0
+	IL_04c1:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_04c6:  brfalse IL_04dd
+
+	IL_04cb:  ldarg.0
+	IL_04cc:  ldfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_04d1:  callvirt instance void class [UnityEngine]UnityEngine.WWW::Dispose()
+	IL_04d6:  ldarg.0
+	IL_04d7:  ldnull
+	IL_04d8:  stfld class [UnityEngine]UnityEngine.WWW GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<loader>__19'
+	IL_04dd:  ldarg.0
+	IL_04de:  ldarg.0
+	IL_04df:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_04e4:  ldc.i4.1
+	IL_04e5:  add
+	IL_04e6:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_04eb:  ldarg.0
+	IL_04ec:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__15'
+	IL_04f1:  ldarg.0
+	IL_04f2:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_04f7:  ldfld class [mscorlib]System.Collections.Generic.List`1<string> GameManager::m_UniqueEnemyPrefabNameList
+	IL_04fc:  callvirt instance int32 class [mscorlib]System.Collections.Generic.List`1<string>::get_Count()
+	IL_0501:  blt IL_034b
+
+	IL_0506:  ldarg.0
+	IL_0507:  ldarg.0
+	IL_0508:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_050d:  call class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0> class [System.Core]System.Linq.Enumerable::Distinct<int32> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_0512:  call class [mscorlib]System.Collections.Generic.List`1<!!0> class [System.Core]System.Linq.Enumerable::ToList<int32> (class [mscorlib]System.Collections.Generic.IEnumerable`1<!!0>)
+	IL_0517:  stfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_051c:  ldarg.0
+	IL_051d:  ldc.i4.0
+	IL_051e:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_0523:  br IL_0657
+
+	IL_0528:  ldarg.0
+	IL_0529:  ldarg.0
+	IL_052a:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_052f:  ldarg.0
+	IL_0530:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_0535:  callvirt instance !0 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Item(int32)
+	IL_053a:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_053f:  ldsfld !0 class Singleton`1<class AssetBundleLoader>::Instance
+	IL_0544:  ldarg.0
+	IL_0545:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_054a:  callvirt instance bool class AssetBundleLoader::AssetBundleCheck(int32)
+	IL_054f:  brtrue IL_0649
+
+	IL_0554:  ldstr ">PlayerAsset_"
+	IL_0559:  ldarg.0
+	IL_055a:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_055f:  call instance string int32::ToString()
+	IL_0564:  ldstr " : Loading."
+	IL_0569:  call string string::Concat(string, string, string)
+	IL_056e:  call void class DebugLogger::Log(object)
+	IL_0573:  ldarg.0
+	IL_0574:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_0579:  ldsfld !0 class Singleton`1<class AssetBundleLoader>::Instance
+	IL_057e:  ldarg.0
+	IL_057f:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_0584:  callvirt instance class [mscorlib]System.Collections.IEnumerator class AssetBundleLoader::LoadAssetBundle_Single(int32)
+	IL_0589:  call instance class [UnityEngine]UnityEngine.Coroutine class [UnityEngine]UnityEngine.MonoBehaviour::StartCoroutine(class [mscorlib]System.Collections.IEnumerator)
+	IL_058e:  pop
+	IL_058f:  ldarg.0
+	IL_0590:  ldc.i4.1
+	IL_0591:  stfld bool GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<b_loading>__22'
+	IL_0596:  br IL_063e
+
+	IL_059b:  ldsfld !0 class Singleton`1<class AssetBundleLoader>::Instance
+	IL_05a0:  callvirt instance valuetype AssetBundleLoader/E_LOAD_STEP class AssetBundleLoader::get_singlePhase()
+	IL_05a5:  stloc.1
+	IL_05a6:  ldloc.1
+	IL_05a7:  ldc.i4.3
+	IL_05a8:  beq IL_05f2
+
+	IL_05ad:  ldloc.1
+	IL_05ae:  ldc.i4.4
+	IL_05af:  beq IL_05b9
+
+	IL_05b4:  br IL_061d
+
+	IL_05b9:  ldstr ">PlayerAsset_"
+	IL_05be:  ldarg.0
+	IL_05bf:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_05c4:  call instance string int32::ToString()
+	IL_05c9:  ldstr " : Loading Faild. Retry."
+	IL_05ce:  call string string::Concat(string, string, string)
+	IL_05d3:  call void class DebugLogger::LogWarning(object)
+	IL_05d8:  ldarg.0
+	IL_05d9:  ldarg.0
+	IL_05da:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_05df:  ldc.i4.1
+	IL_05e0:  sub
+	IL_05e1:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_05e6:  ldarg.0
+	IL_05e7:  ldc.i4.0
+	IL_05e8:  stfld bool GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<b_loading>__22'
+	IL_05ed:  br IL_063e
+
+	IL_05f2:  ldstr ">PlayerAsset_"
+	IL_05f7:  ldarg.0
+	IL_05f8:  ldflda int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<assetID>__21'
+	IL_05fd:  call instance string int32::ToString()
+	IL_0602:  ldstr " : Loading Finish."
+	IL_0607:  call string string::Concat(string, string, string)
+	IL_060c:  call void class DebugLogger::Log(object)
+	IL_0611:  ldarg.0
+	IL_0612:  ldc.i4.0
+	IL_0613:  stfld bool GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<b_loading>__22'
+	IL_0618:  br IL_063e
+
+	IL_061d:  ldarg.0
+	IL_061e:  ldc.r4 0.016000000759959221
+	IL_0623:  newobj instance void class [UnityEngine]UnityEngine.WaitForSeconds::'.ctor'(float32)
+	IL_0628:  stfld object GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$current
+	IL_062d:  ldarg.0
+	IL_062e:  ldc.i4.2
+	IL_062f:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$PC
+	IL_0634:  br IL_0689
+
+	IL_0639:  br IL_063e
+
+	IL_063e:  ldarg.0
+	IL_063f:  ldfld bool GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<b_loading>__22'
+	IL_0644:  brtrue IL_059b
+
+	IL_0649:  ldarg.0
+	IL_064a:  ldarg.0
+	IL_064b:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_0650:  ldc.i4.1
+	IL_0651:  add
+	IL_0652:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_0657:  ldarg.0
+	IL_0658:  ldfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<i>__20'
+	IL_065d:  ldarg.0
+	IL_065e:  ldfld class [mscorlib]System.Collections.Generic.List`1<int32> GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<unitEnemyAssetIDList>__3'
+	IL_0663:  callvirt instance int32 class [mscorlib]System.Collections.Generic.List`1<int32>::get_Count()
+	IL_0668:  blt IL_0528
+
+	IL_066d:  ldarg.0
+	IL_066e:  ldnull
+	IL_066f:  stfld int32[] GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<uniqueEnemyIdArray>__1'
+	IL_0674:  ldarg.0
+	IL_0675:  ldfld class GameManager GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::'<>f__this'
+	IL_067a:  ldc.i4.1
+	IL_067b:  stfld bool GameManager::mb_LoadFinish_Enemy
+	IL_0680:  ldarg.0
+	IL_0681:  ldc.i4.m1
+	IL_0682:  stfld int32 GameManager/'<LoadEnemyAssetBundle>c__Iterator7'::$PC
+	IL_0687:  ldc.i4.0
+	IL_0688:  ret
+	IL_0689:  ldc.i4.1
+	IL_068a:  ret
+	IL_068b:  ldloc.2
+	IL_068c:  ret
+
+// Original monodis lines 102342-102540
+           instance default void ResourceLoad (int32[] uniqueEnemyIdArray)  cil managed
+    {
+        // Method begins at RVA 0x34298
+	// Code size 491 (0x1eb)
+	.maxstack 53
+	.locals init (
+		class [UnityEngine]UnityEngine.GameObject	V_0,
+		class [UnityEngine]UnityEngine.Texture2D	V_1,
+		class [UnityEngine]UnityEngine.Material	V_2,
+		bool	V_3,
+		class [UnityEngine]UnityEngine.AssetBundle	V_4,
+		string	V_5,
+		int32	V_6,
+		class EnemyData	V_7,
+		int32	V_8,
+		class [UnityEngine]UnityEngine.GameObject	V_9)
+	IL_0000:  ldnull
+	IL_0001:  stloc.0
+	IL_0002:  ldnull
+	IL_0003:  stloc.1
+	IL_0004:  ldnull
+	IL_0005:  stloc.2
+	IL_0006:  ldc.i4.0
+	IL_0007:  stloc.3
+	IL_0008:  ldnull
+	IL_0009:  stloc.s 4
+	IL_000b:  ldnull
+	IL_000c:  stloc.s 5
+	IL_000e:  ldc.i4.0
+	IL_000f:  stloc.s 6
+	IL_0011:  br IL_01e0
+
+	IL_0016:  ldnull
+	IL_0017:  stloc.0
+	IL_0018:  ldnull
+	IL_0019:  stloc.1
+	IL_001a:  ldnull
+	IL_001b:  stloc.2
+	IL_001c:  ldc.i4.0
+	IL_001d:  stloc.3
+	IL_001e:  ldarg.1
+	IL_001f:  ldloc.s 6
+	IL_0021:  ldelem.i4
+	IL_0022:  call class EnemyData class ClientData::GetEnemyData(int32)
+	IL_0027:  stloc.s 7
+	IL_0029:  ldloc.s 7
+	IL_002b:  callvirt instance bool class EnemyData::IsUnitEnemy()
+	IL_0030:  brfalse IL_005b
+
+	IL_0035:  ldloc.s 7
+	IL_0037:  ldfld int32 EnemyData::Enemy_Symbol
+	IL_003c:  call int32 class ConvertServerToClient::UnitEnemySymbolToBookColor(int32)
+	IL_0041:  stloc.s 8
+	IL_0043:  ldstr "ms00_book_el_0"
+	IL_0048:  ldloca.s 8
+	IL_004a:  call instance string int32::ToString()
+	IL_004f:  call string string::Concat(string, string)
+	IL_0054:  stloc.s 5
+	IL_0056:  br IL_0064
+
+	IL_005b:  ldloc.s 7
+	IL_005d:  ldfld string EnemyData::PrefabName
+	IL_0062:  stloc.s 5
+	IL_0064:  ldsfld !0 class Singleton`1<class GameManager>::Instance
+	IL_0069:  ldloc.s 5
+	IL_006b:  callvirt instance class [UnityEngine]UnityEngine.AssetBundle class GameManager::GetEnemyAssetBundle(string)
+	IL_0070:  stloc.s 4
+	IL_0072:  ldloc.s 4
+	IL_0074:  ldnull
+	IL_0075:  call bool class [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object, class [UnityEngine]UnityEngine.Object)
+	IL_007a:  brfalse IL_0199
+
+	IL_007f:  ldloc.s 4
+	IL_0081:  ldstr "ast_"
+	IL_0086:  ldloc.s 5
+	IL_0088:  call string string::Concat(string, string)
+	IL_008d:  ldtoken [UnityEngine]UnityEngine.GameObject
+	IL_0092:  call class [mscorlib]System.Type class [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.RuntimeTypeHandle)
+	IL_0097:  callvirt instance class [UnityEngine]UnityEngine.Object class [UnityEngine]UnityEngine.AssetBundle::Load(string, class [mscorlib]System.Type)
+	IL_009c:  isinst [UnityEngine]UnityEngine.GameObject
+	IL_00a1:  stloc.0
+	IL_00a2:  ldloc.0
+	IL_00a3:  ldloc.s 5
+	IL_00a5:  callvirt instance void class [UnityEngine]UnityEngine.Object::set_name(string)
+	IL_00aa:  ldarg.0
+	IL_00ab:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.GameObject> EnemyManager::m_OriginalObjList
+	IL_00b0:  ldloc.0
+	IL_00b1:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.GameObject>::Add(!0)
+	IL_00b6:  ldloc.s 7
+	IL_00b8:  ldfld string EnemyData::Tex
+	IL_00bd:  brfalse IL_00fd
+
+	IL_00c2:  ldstr "0"
+	IL_00c7:  ldloc.s 7
+	IL_00c9:  ldfld string EnemyData::Tex
+	IL_00ce:  call bool string::op_Inequality(string, string)
+	IL_00d3:  brfalse IL_00fd
+
+	IL_00d8:  ldloc.s 4
+	IL_00da:  ldloc.s 7
+	IL_00dc:  ldfld string EnemyData::Tex
+	IL_00e1:  ldtoken [UnityEngine]UnityEngine.Texture2D
+	IL_00e6:  call class [mscorlib]System.Type class [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.RuntimeTypeHandle)
+	IL_00eb:  callvirt instance class [UnityEngine]UnityEngine.Object class [UnityEngine]UnityEngine.AssetBundle::Load(string, class [mscorlib]System.Type)
+	IL_00f0:  isinst [UnityEngine]UnityEngine.Texture2D
+	IL_00f5:  stloc.1
+	IL_00f6:  ldc.i4.1
+	IL_00f7:  stloc.3
+	IL_00f8:  br IL_0116
+
+	IL_00fd:  ldloc.s 4
+	IL_00ff:  ldloc.s 5
+	IL_0101:  ldtoken [UnityEngine]UnityEngine.Texture2D
+	IL_0106:  call class [mscorlib]System.Type class [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.RuntimeTypeHandle)
+	IL_010b:  callvirt instance class [UnityEngine]UnityEngine.Object class [UnityEngine]UnityEngine.AssetBundle::Load(string, class [mscorlib]System.Type)
+	IL_0110:  isinst [UnityEngine]UnityEngine.Texture2D
+	IL_0115:  stloc.1
+	IL_0116:  ldloc.1
+	IL_0117:  ldnull
+	IL_0118:  call bool class [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object, class [UnityEngine]UnityEngine.Object)
+	IL_011d:  brfalse IL_012e
+
+	IL_0122:  ldarg.0
+	IL_0123:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Texture> EnemyManager::m_OriginalTexList
+	IL_0128:  ldloc.1
+	IL_0129:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Texture>::Add(!0)
+	IL_012e:  ldloc.s 4
+	IL_0130:  ldloc.s 5
+	IL_0132:  ldtoken [UnityEngine]UnityEngine.Material
+	IL_0137:  call class [mscorlib]System.Type class [mscorlib]System.Type::GetTypeFromHandle(valuetype [mscorlib]System.RuntimeTypeHandle)
+	IL_013c:  callvirt instance class [UnityEngine]UnityEngine.Object class [UnityEngine]UnityEngine.AssetBundle::Load(string, class [mscorlib]System.Type)
+	IL_0141:  isinst [UnityEngine]UnityEngine.Material
+	IL_0146:  stloc.2
+	IL_0147:  ldloc.2
+	IL_0148:  ldnull
+	IL_0149:  call bool class [UnityEngine]UnityEngine.Object::op_Inequality(class [UnityEngine]UnityEngine.Object, class [UnityEngine]UnityEngine.Object)
+	IL_014e:  brfalse IL_018e
+
+	IL_0153:  ldloc.3
+	IL_0154:  brfalse IL_0182
+
+	IL_0159:  ldloc.2
+	IL_015a:  ldloc.s 7
+	IL_015c:  ldfld string EnemyData::Tex
+	IL_0161:  callvirt instance void class [UnityEngine]UnityEngine.Object::set_name(string)
+	IL_0166:  ldloc.2
+	IL_0167:  ldloc.1
+	IL_0168:  callvirt instance void class [UnityEngine]UnityEngine.Material::set_mainTexture(class [UnityEngine]UnityEngine.Texture)
+	IL_016d:  ldstr ">Set Tex : "
+	IL_0172:  ldloc.1
+	IL_0173:  callvirt instance string class [UnityEngine]UnityEngine.Object::get_name()
+	IL_0178:  call string string::Concat(string, string)
+	IL_017d:  call void class [UnityEngine]UnityEngine.Debug::LogWarning(object)
+	IL_0182:  ldarg.0
+	IL_0183:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Material> EnemyManager::m_OriginalMatList
+	IL_0188:  ldloc.2
+	IL_0189:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Material>::Add(!0)
+	IL_018e:  ldnull
+	IL_018f:  stloc.0
+	IL_0190:  ldnull
+	IL_0191:  stloc.1
+	IL_0192:  ldnull
+	IL_0193:  stloc.2
+	IL_0194:  br IL_01d7
+
+	IL_0199:  ldloc.s 7
+	IL_019b:  callvirt instance class [UnityEngine]UnityEngine.GameObject class EnemyData::LoadPrefab()
+	IL_01a0:  stloc.s 9
+	IL_01a2:  ldarg.0
+	IL_01a3:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.GameObject> EnemyManager::m_OriginalObjList
+	IL_01a8:  ldloc.s 9
+	IL_01aa:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.GameObject>::Add(!0)
+	IL_01af:  ldsfld string EnemyData::EnemyTexturePath
+	IL_01b4:  ldloc.s 7
+	IL_01b6:  ldfld string EnemyData::Tex
+	IL_01bb:  call string string::Concat(string, string)
+	IL_01c0:  call class [UnityEngine]UnityEngine.Object class AssetLoader::Load(string)
+	IL_01c5:  isinst [UnityEngine]UnityEngine.Texture2D
+	IL_01ca:  stloc.1
+	IL_01cb:  ldarg.0
+	IL_01cc:  ldfld class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Texture> EnemyManager::m_OriginalTexList
+	IL_01d1:  ldloc.1
+	IL_01d2:  callvirt instance void class [mscorlib]System.Collections.Generic.List`1<class [UnityEngine]UnityEngine.Texture>::Add(!0)
+	IL_01d7:  ldnull
+	IL_01d8:  stloc.s 4
+	IL_01da:  ldloc.s 6
+	IL_01dc:  ldc.i4.1
+	IL_01dd:  add
+	IL_01de:  stloc.s 6
+	IL_01e0:  ldloc.s 6
+	IL_01e2:  ldarg.1
+	IL_01e3:  ldlen
+	IL_01e4:  conv.i4
+	IL_01e5:  blt IL_0016
+
+	IL_01ea:  ret
+    } // end of method EnemyManager::ResourceLoad
+
+    // method line 1742
+
+// Original monodis lines 100767-100832
+	IL_000a:  ldstr "Prefab/Enemies/Textures/"
+	IL_000f:  stsfld string EnemyData::EnemyTexturePath
+	IL_0014:  ldstr "UnitPreview/Enemy/"
+	IL_0019:  stsfld string EnemyData::EnemyPreviewPath
+	IL_001e:  ret
+    } // end of method EnemyData::.cctor
+
+    // method line 1716
+    .method public hidebysig
+           instance default class [UnityEngine]UnityEngine.GameObject LoadPrefab ()  cil managed
+    {
+        // Method begins at RVA 0x333fc
+	// Code size 148 (0x94)
+	.maxstack 9
+	.locals init (
+		class [UnityEngine]UnityEngine.GameObject	V_0)
+	IL_0000:  ldnull
+	IL_0001:  stloc.0
+	.try { // 0
+	  IL_0002:  ldsfld string EnemyData::EnemyPrefabPath
+	  IL_0007:  ldarg.0
+	  IL_0008:  ldfld string EnemyData::PrefabName
+	  IL_000d:  call string string::Concat(string, string)
+	  IL_0012:  call class [UnityEngine]UnityEngine.Object class AssetLoader::Load(string)
+	  IL_0017:  isinst [UnityEngine]UnityEngine.GameObject
+	  IL_001c:  stloc.0
+	  IL_001d:  ldnull
+	  IL_001e:  ldloc.0
+	  IL_001f:  call bool class [UnityEngine]UnityEngine.Object::op_Equality(class [UnityEngine]UnityEngine.Object, class [UnityEngine]UnityEngine.Object)
+	  IL_0024:  brfalse IL_0058
+
+	  IL_0029:  ldstr "Enemy Prefab1 not found : "
+	  IL_002e:  ldarg.0
+	  IL_002f:  ldfld string EnemyData::PrefabName
+	  IL_0034:  call string string::Concat(string, string)
+	  IL_0039:  call void class DebugLogger::LogWarning(object)
+	  IL_003e:  ldsfld string EnemyData::EnemyPrefabPath
+	  IL_0043:  ldstr "ms02_four_dark_01"
+	  IL_0048:  call string string::Concat(string, string)
+	  IL_004d:  call class [UnityEngine]UnityEngine.Object class AssetLoader::Load(string)
+	  IL_0052:  isinst [UnityEngine]UnityEngine.GameObject
+	  IL_0057:  stloc.0
+	  IL_0058:  leave IL_0092
+
+	} // end .try 0
+	catch class [mscorlib]System.Object { // 0
+	  IL_005d:  pop
+	  IL_005e:  ldstr "Enemy Prefab2 not found : "
+	  IL_0063:  ldarg.0
+	  IL_0064:  ldfld string EnemyData::PrefabName
+	  IL_0069:  call string string::Concat(string, string)
+	  IL_006e:  call void class DebugLogger::LogWarning(object)
+	  IL_0073:  ldsfld string EnemyData::EnemyPrefabPath
+	  IL_0078:  ldstr "ms02_four_dark_01"
+	  IL_007d:  call string string::Concat(string, string)
+	  IL_0082:  call class [UnityEngine]UnityEngine.Object class AssetLoader::Load(string)
+	  IL_0087:  isinst [UnityEngine]UnityEngine.GameObject
+	  IL_008c:  stloc.0
+	  IL_008d:  leave IL_0092
+
+	} // end handler 0
+	IL_0092:  ldloc.0
+	IL_0093:  ret
+    } // end of method EnemyData::LoadPrefab
+
+    // method line 1717
+
+// Original monodis lines 318630-318735
+    .field  private  valuetype AssetBundleLoader/E_LOAD_STEP m_Phase
+    .field  private  int32 m_LoadAssetID
+    .field  private  string m_FileURL
+    .field  public  float32 m_ProgressValue
+    .field  private  valuetype AssetBundleLoader/E_LOAD_STEP m_SinglePhase
+    .field  private  class [mscorlib]System.Collections.Generic.Dictionary`2<int32,class [UnityEngine]UnityEngine.AssetBundle> m_BasicBundleList
+    .custom instance void class [UnityEngine]UnityEngine.SerializeField::'.ctor'() =  (01 00 00 00 ) // ....
+
+
+    // method line 4570
+    .method public hidebysig specialname rtspecialname
+           instance default void '.ctor' ()  cil managed
+    {
+        // Method begins at RVA 0xa7dac
+	// Code size 43 (0x2b)
+	.maxstack 2
+	IL_0000:  ldarg.0
+	IL_0001:  ldstr "https://example.invalid/redacted-endpoint"
+	IL_0006:  stfld string AssetBundleLoader::m_ServerPath
+	IL_000b:  ldarg.0
+	IL_000c:  ldstr "V1000"
+	IL_0011:  stfld string AssetBundleLoader::m_ServerVer
+	IL_0016:  ldarg.0
+	IL_0017:  ldc.i4.1
+	IL_0018:  stfld bool AssetBundleLoader::m_bLoadFinish
+	IL_001d:  ldarg.0
+	IL_001e:  ldc.i4.1
+	IL_001f:  stfld valuetype AssetBundleLoader/E_LOAD_STEP AssetBundleLoader::m_SinglePhase
+	IL_0024:  ldarg.0
+	IL_0025:  call instance void class Singleton`1<class AssetBundleLoader>::'.ctor'()
+	IL_002a:  ret
+    } // end of method AssetBundleLoader::.ctor
+
+    // method line 4571
+    .method private static specialname rtspecialname
+           default void '.cctor' ()  cil managed
+    {
+        // Method begins at RVA 0xa7de4
+	// Code size 52 (0x34)
+	.maxstack 8
+	IL_0000:  ldc.i4.5
+	IL_0001:  newarr [mscorlib]System.String
+	IL_0006:  dup
+	IL_0007:  ldc.i4.0
+	IL_0008:  ldstr "ms00_tresure_unit_01"
+	IL_000d:  stelem.ref
+	IL_000e:  dup
+	IL_000f:  ldc.i4.1
+	IL_0010:  ldstr "ms01_sla_lv1"
+	IL_0015:  stelem.ref
+	IL_0016:  dup
+	IL_0017:  ldc.i4.2
+	IL_0018:  ldstr "ms01_squ_lv1"
+	IL_001d:  stelem.ref
+	IL_001e:  dup
+	IL_001f:  ldc.i4.3
+	IL_0020:  ldstr "ms02_four_un_01"
+	IL_0025:  stelem.ref
+	IL_0026:  dup
+	IL_0027:  ldc.i4.4
+	IL_0028:  ldstr "ms02_dra_un_01"
+	IL_002d:  stelem.ref
+	IL_002e:  stsfld string[] AssetBundleLoader::ms_LocalAssetNameList
+	IL_0033:  ret
+    } // end of method AssetBundleLoader::.cctor
+
+    // method line 4572
+    .method public static hidebysig
+           default bool IsLocalAsset (string fileName)  cil managed
+    {
+        // Method begins at RVA 0xa7e1c
+	// Code size 53 (0x35)
+	.maxstack 5
+	.locals init (
+		bool	V_0,
+		int32	V_1)
+	IL_0000:  ldc.i4.0
+	IL_0001:  stloc.0
+	IL_0002:  ldc.i4.0
+	IL_0003:  stloc.1
+	IL_0004:  br IL_0026
+
+	IL_0009:  ldarg.0
+	IL_000a:  ldsfld string[] AssetBundleLoader::ms_LocalAssetNameList
+	IL_000f:  ldloc.1
+	IL_0010:  ldelem.ref
+	IL_0011:  callvirt instance bool string::Equals(string)
+	IL_0016:  brfalse IL_0022
+
+	IL_001b:  ldc.i4.1
+	IL_001c:  stloc.0
+	IL_001d:  br IL_0033
+
+	IL_0022:  ldloc.1
+	IL_0023:  ldc.i4.1
+	IL_0024:  add
+	IL_0025:  stloc.1
+	IL_0026:  ldloc.1
+	IL_0027:  ldsfld string[] AssetBundleLoader::ms_LocalAssetNameList
+	IL_002c:  ldlen
+	IL_002d:  conv.i4
+	IL_002e:  blt IL_0009
+
+	IL_0033:  ldloc.0
+	IL_0034:  ret
+    } // end of method AssetBundleLoader::IsLocalAsset
+
+// Original monodis lines 318400-318445
+    .method public static hidebysig
+           default valuetype AssetBundleDefine/AssetBundleInfo GetEnemyBundleInfo (string fileName)  cil managed
+    {
+        // Method begins at RVA 0xa7c78
+	// Code size 88 (0x58)
+	.maxstack 9
+	.locals init (
+		valuetype AssetBundleDefine/AssetBundleInfo	V_0,
+		int32	V_1)
+	IL_0000:  ldloca.s 0
+	IL_0002:  ldc.i4.0
+	IL_0003:  ldstr "error"
+	IL_0008:  call instance void valuetype AssetBundleDefine/AssetBundleInfo::'.ctor'(valuetype AssetBundleDefine/E_BUNDLE_VERSION, string)
+	IL_000d:  ldc.i4.0
+	IL_000e:  stloc.1
+	IL_000f:  br IL_0049
+
+	IL_0014:  ldsfld valuetype AssetBundleDefine/AssetBundleInfo[] AssetBundleDefine::m_EnemyBundles
+	IL_0019:  ldloc.1
+	IL_001a:  ldelema AssetBundleDefine/AssetBundleInfo
+	IL_001f:  call instance string valuetype AssetBundleDefine/AssetBundleInfo::get_fileName()
+	IL_0024:  ldarg.0
+	IL_0025:  callvirt instance bool string::Equals(string)
+	IL_002a:  brfalse IL_0045
+
+	IL_002f:  ldsfld valuetype AssetBundleDefine/AssetBundleInfo[] AssetBundleDefine::m_EnemyBundles
+	IL_0034:  ldloc.1
+	IL_0035:  ldelema AssetBundleDefine/AssetBundleInfo
+	IL_003a:  ldobj AssetBundleDefine/AssetBundleInfo
+	IL_003f:  stloc.0
+	IL_0040:  br IL_0056
+
+	IL_0045:  ldloc.1
+	IL_0046:  ldc.i4.1
+	IL_0047:  add
+	IL_0048:  stloc.1
+	IL_0049:  ldloc.1
+	IL_004a:  ldsfld valuetype AssetBundleDefine/AssetBundleInfo[] AssetBundleDefine::m_EnemyBundles
+	IL_004f:  ldlen
+	IL_0050:  conv.i4
+	IL_0051:  blt IL_0014
+
+	IL_0056:  ldloc.0
+	IL_0057:  ret
+    } // end of method AssetBundleDefine::GetEnemyBundleInfo
+
+
+// Original monodis lines 318520-318585
+
+    // method line 4566
+    .method public hidebysig
+           instance default string GetURL ()  cil managed
+    {
+        // Method begins at RVA 0xa7d30
+	// Code size 70 (0x46)
+	.maxstack 7
+	.locals init (
+		string	V_0)
+	IL_0000:  ldc.i4.6
+	IL_0001:  newarr [mscorlib]System.String
+	IL_0006:  dup
+	IL_0007:  ldc.i4.0
+	IL_0008:  ldstr "https://example.invalid/redacted-endpoint"
+	IL_000d:  stelem.ref
+	IL_000e:  dup
+	IL_000f:  ldc.i4.1
+	IL_0010:  call string class SystemUtility::GetPlatformURL()
+	IL_0015:  stelem.ref
+	IL_0016:  dup
+	IL_0017:  ldc.i4.2
+	IL_0018:  ldsfld string[] AssetBundleDefine::VersionDir
+	IL_001d:  ldarg.0
+	IL_001e:  ldfld valuetype AssetBundleDefine/E_BUNDLE_VERSION AssetBundleDefine/AssetBundleInfo::m_Version
+	IL_0023:  ldelem.ref
+	IL_0024:  stelem.ref
+	IL_0025:  dup
+	IL_0026:  ldc.i4.3
+	IL_0027:  ldstr "/"
+	IL_002c:  stelem.ref
+	IL_002d:  dup
+	IL_002e:  ldc.i4.4
+	IL_002f:  ldarg.0
+	IL_0030:  ldfld string AssetBundleDefine/AssetBundleInfo::m_FileName
+	IL_0035:  stelem.ref
+	IL_0036:  dup
+	IL_0037:  ldc.i4.5
+	IL_0038:  ldstr ".unity3d"
+	IL_003d:  stelem.ref
+	IL_003e:  call string string::Concat(string[])
+	IL_0043:  stloc.0
+	IL_0044:  ldloc.0
+	IL_0045:  ret
+    } // end of method AssetBundleInfo::GetURL
+
+    // method line 4567
+    .method public hidebysig
+           instance default int32 GetVersion ()  cil managed
+    {
+        // Method begins at RVA 0xa7d84
+	// Code size 9 (0x9)
+	.maxstack 2
+	.locals init (
+		int32	V_0)
+	IL_0000:  ldarg.0
+	IL_0001:  ldfld valuetype AssetBundleDefine/E_BUNDLE_VERSION AssetBundleDefine/AssetBundleInfo::m_Version
+	IL_0006:  stloc.0
+	IL_0007:  ldloc.0
+	IL_0008:  ret
+    } // end of method AssetBundleInfo::GetVersion
+
+    // method line 4568
+    .method public hidebysig specialname
+           instance default string get_fileName ()  cil managed
+    {

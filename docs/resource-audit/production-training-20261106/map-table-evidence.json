@@ -1,0 +1,519 @@
+{
+  "source": "RTD_CLIENT/inputs/original/game.apk:assets/bin/Data/c76f7d11d52c39e488488729e75eb0d2",
+  "source_sha256": "97623d4b5cd45833c4351b78a2dc792f5beb07a82ed74599157adde2c0220533",
+  "text": "<?xml version=\"1.0\"?>\r\n<Root>\r\n\t<GroundTexture path=\"Level/GroundTextures/\">\r\n\t\t<data>field_a_01</data>\r\n\t\t<data>field_a_02</data>\r\n\t\t<data>field_a_03</data>\r\n\t\t<data>field_b_01</data>\r\n\t\t<data>field_b_02</data>\r\n\t\t<data>field_b_03</data>\r\n\t\t<data>field_c_01</data>\r\n\t\t<data>field_c_02</data>\r\n\t\t<data>field_c_03</data>\r\n\t\t<data>mountain_a_01</data>\r\n\t\t<data>mountain_a_02</data>\r\n\t\t<data>mountain_a_03</data>\r\n\t\t<data>desert_a_01</data>\r\n\t\t<data>desert_a_02</data>\r\n\t\t<data>desert_a_03</data>\r\n\t\t<data>snow_a_01</data>\r\n\t\t<data>snow_a_02</data>\r\n\t\t<data>snow_a_03</data>\r\n\t\t<data>snow_b_01</data>\r\n\t\t<data>snow_b_02</data>\r\n\t\t<data>snow_b_03</data>\r\n\t\t<data>volcano_a_01</data>\r\n\t\t<data>volcano_b_01</data>\r\n\t\t<data>cavern_a_01</data>\r\n\t\t<data>dungeon_a_01</data>\r\n\t\t<data>field_a_04</data>\r\n\t\t<data>mountain_a_04</data>\r\n\t\t<data>desert_a_04</data>\r\n\t\t<data>snow_b_04</data>\r\n\t\t<data>volcano_b_02</data>\r\n\t\t<data>cavern_a_02</data>\r\n\t\t<data>dungeon_a_02</data>\r\n\t\t<data>ev_sakura_a_01</data>\r\n\t\t<data>akukan_a_01</data>\r\n\t\t<data>iseki_a_01</data>\r\n\t\t<data>tower_a_01</data>\r\n\t\t<data>tower_a_02</data>\r\n\t\t<data>tower_a_03</data>\r\n\t\t<data>mind_a_01</data>\r\n\t\t<data>wanokuni_a_01</data>\r\n\t\t<data>wanokuni_a_02</data>\r\n\t\t<data>wanokuni_a_03</data>\r\n\t\t<data>ship_b_01</data>\r\n\t\t<data>ship_c_01</data>\r\n\t\t<data>empire_a_01</data>\r\n\t\t<data>empire_a_02</data>\r\n\t\t<data>empire_a_03</data>\r\n\t\t<data>empire_b_01</data>\r\n\t\t<data>grave_a_01</data>\r\n\t\t<data>sen_a_01</data>\r\n\t\t<data>sen_b_01</data>\r\n\t\t<data>sen_c_01</data>\r\n\t\t<data>sky_a_01</data>\r\n\t\t<data>sky_b_01</data>\r\n\t\t<data>sky_c_01</data>\r\n\t\t<data>akb_a_01</data>\r\n\t\t<data>bd_a_01</data>\r\n\t\t<data>bd_b_01</data>\r\n\t\t<data>bd_c_01</data>\r\n\t\t<data>230_flame_a_01</data>\r\n\t\t<data>230_ice_a_01</data>\r\n\t\t<data>230_setsubun_a_01</data>\r\n\t\t<data>240_sr_a_01</data>\r\n\t\t<data>240_sr_b_01</data>\r\n\t</GroundTexture>\r\n\t<ObjectPrefab path=\"Level/Background/\">\r\n\t\t<data>bg_field_a_01_tree</data>\r\n\t\t<data>bg_field_a_02_tree</data>\r\n\t\t<data>bg_field_a_03_tree</data>\r\n\t\t<data>bg_field_b_01_tree</data>\r\n\t\t<data>bg_field_b_02_tree</data>\r\n\t\t<data>bg_field_b_03_tree</data>\r\n\t\t<data>bg_field_c_01_rock</data>\r\n\t\t<data>bg_field_c_01_forest</data>\r\n\t\t<data>bg_field_c_02_rock</data>\r\n\t\t<data>bg_field_c_02_forest</data>\r\n\t\t<data>bg_field_c_03_rock</data>\r\n\t\t<data>bg_field_c_03_forest</data>\r\n\t\t<data>bg_mountain_a_01_rock</data>\r\n\t\t<data>bg_mountain_a_01_forest</data>\r\n\t\t<data>bg_mountain_a_02_rock</data>\r\n\t\t<data>bg_mountain_a_02_forest</data>\r\n\t\t<data>bg_mountain_a_03_rock</data>\r\n\t\t<data>bg_mountain_a_03_forest</data>\r\n\t\t<data>bg_desert_a_01_tree</data>\r\n\t\t<data>bg_desert_a_01_rock</data>\r\n\t\t<data>bg_desert_a_02_tree</data>\r\n\t\t<data>bg_desert_a_02_rock</data>\r\n\t\t<data>bg_desert_a_03_tree</data>\r\n\t\t<data>bg_desert_a_03_rock</data>\r\n\t\t<data>bg_snow_a_01_tree</data>\r\n\t\t<data>bg_snow_a_01_forest</data>\r\n\t\t<data>bg_snow_a_02_tree</data>\r\n\t\t<data>bg_snow_a_02_forest</data>\r\n\t\t<data>bg_snow_a_03_tree</data>\r\n\t\t<data>bg_snow_a_03_forest</data>\r\n\t\t<data>bg_snow_b_01_rock</data>\r\n\t\t<data>bg_snow_b_01_forest</data>\r\n\t\t<data>bg_snow_b_02_rock</data>\r\n\t\t<data>bg_snow_b_02_forest</data>\r\n\t\t<data>bg_snow_b_03_rock</data>\r\n\t\t<data>bg_snow_b_03_forest</data>\r\n\t\t<data>bg_volcano_a_01_tree</data>\r\n\t\t<data>bg_volcano_b_01_rock</data>\r\n\t\t<data>bg_cavern_a_01_rock</data>\r\n\t\t<data>bg_dungeon_a_01_stone</data>\r\n\t\t<data>bg_field_a_04_tree</data>\r\n\t\t<data>bg_mountain_a_04_forest</data>\r\n\t\t<data>bg_desert_a_04_rock</data>\r\n\t\t<data>bg_snow_b_04_forest</data>\r\n\t\t<data>bg_volcano_b_02_rock</data>\r\n\t\t<data>bg_cavern_a_02_rock</data>\r\n\t\t<data>bg_dungeon_a_02_stone</data>\r\n\t\t<data>bg_ev_sakura_a_01_obj</data>\r\n\t\t<data>bg_akukan_a_01_tree</data>\r\n\t\t<data>bg_iseki_a_01_rock</data>\r\n\t\t<data>bg_tower_a_01_piller</data>\r\n\t\t<data>bg_tower_a_03_piller</data>\r\n\t\t<data>bg_mind_a_01_obj</data>\r\n\t\t<data>bg_wanokuni_a_01_flag</data>\r\n\t\t<data>bg_wanokuni_a_02_flag</data>\r\n\t\t<data>bg_wanokuni_a_03_flag</data>\r\n\t\t<data>bg_ship_a_01_obj</data>\r\n\t\t<data>bg_ship_b_01_obj</data>\r\n\t\t<data>bg_ship_c_01_obj</data>\r\n\t\t<data>bg_empire_a_01_wall</data>\r\n\t\t<data>bg_empire_a_02_wall</data>\r\n\t\t<data>bg_empire_a_03_wall</data>\r\n\t\t<data>bg_empire_b_01_wall</data>\r\n\t\t<data>bg_grave_a_01_wall</data>\r\n\t\t<data>bg_sen_a_01_obj</data>\r\n\t\t<data>bg_sen_b_01_obj</data>\r\n\t\t<data>bg_sen_c_01_obj</data>\r\n\t\t<data>bg_sky_a_01_cloud</data>\r\n\t\t<data>bg_sky_b_01_cloud</data>\r\n\t\t<data>bg_sky_c_01_cloud</data>\r\n\t\t<data>bg_akiba_a_01_obj</data>\r\n\t\t<data>bg_bd_a_01_obj</data>\r\n\t\t<data>bg_bd_b_01_obj</data>\r\n\t\t<data>bg_bd_c_01_obj</data>\r\n\t\t<data>bg_230_flame_a_01_obj</data>\r\n\t\t<data>bg_230_ice_a_01_obj</data>\r\n\t\t<data>bg_230_setsubun_a_01_obj</data>\r\n\t\t<data>bg_240_sr_a_01_obj</data>\r\n\t\t<data>bg_240_sr_b_01_obj</data>\r\n\t</ObjectPrefab>\r\n\t<SkyPrefab path=\"Level/Sky/\">\r\n\t\t<data>bg_field_a_01</data>\r\n\t\t<data>bg_field_a_02</data>\r\n\t\t<data>bg_field_a_03</data>\r\n\t\t<data>bg_field_b_01</data>\r\n\t\t<data>bg_field_b_02</data>\r\n\t\t<data>bg_field_b_03</data>\r\n\t\t<data>bg_field_c_01</data>\r\n\t\t<data>bg_field_c_02</data>\r\n\t\t<data>bg_field_c_03</data>\r\n\t\t<data>bg_desert_a_01</data>\r\n\t\t<data>bg_desert_a_02</data>\r\n\t\t<data>bg_desert_a_03</data>\r\n\t\t<data>bg_mountain_a_01</data>\r\n\t\t<data>bg_mountain_a_02</data>\r\n\t\t<data>bg_mountain_a_03</data>\r\n\t\t<data>bg_snow_a_01</data>\r\n\t\t<data>bg_snow_a_02</data>\r\n\t\t<data>bg_snow_a_03</data>\r\n\t\t<data>bg_snow_b_01</data>\r\n\t\t<data>bg_snow_b_02</data>\r\n\t\t<data>bg_snow_b_03</data>\r\n\t\t<data>bg_volcano_a_01</data>\r\n\t\t<data>bg_volcano_b_01</data>\r\n\t\t<data>bg_cavern_a_01</data>\r\n\t\t<data>bg_dungeon_a_01</data>\r\n\t\t<data>bg_field_a_04</data>\r\n\t\t<data>bg_desert_a_04</data>\r\n\t\t<data>bg_mountain_a_04</data>\r\n\t\t<data>bg_snow_b_04</data>\r\n\t\t<data>bg_volcano_b_02</data>\r\n\t\t<data>bg_cavern_a_02</data>\r\n\t\t<data>bg_dungeon_a_02</data>\r\n\t\t<data>bg_ev_sakura_a_01</data>\r\n\t\t<data>bg_akukan_a_01</data>\r\n\t\t<data>bg_iseki_a_01</data>\r\n\t\t<data>bg_tower_a_01</data>\r\n\t\t<data>bg_tower_a_02</data>\r\n\t\t<data>bg_tower_a_03</data>\r\n\t\t<data>bg_mind_a_01</data>\r\n\t\t<data>bg_wanokuni_a_01</data>\r\n\t\t<data>bg_wanokuni_a_02</data>\r\n\t\t<data>bg_wanokuni_a_03</data>\r\n\t\t<data>bg_ship_a_01</data>\r\n\t\t<data>bg_ship_b_01</data>\r\n\t\t<data>bg_ship_c_01</data>\r\n\t\t<data>bg_empire_a_01</data>\r\n\t\t<data>bg_empire_a_02</data>\r\n\t\t<data>bg_empire_a_03</data>\r\n\t\t<data>bg_empire_b_01</data>\r\n\t\t<data>bg_grave_a_01</data>\r\n\t\t<data>bg_sen_a_01</data>\r\n\t\t<data>bg_sen_b_01</data>\r\n\t\t<data>bg_sen_c_01</data>\r\n\t\t<data>bg_sky_a_01</data>\r\n\t\t<data>bg_sky_b_01</data>\r\n\t\t<data>bg_sky_c_01</data>\r\n\t\t<data>bg_akiba_a_01</data>\r\n\t\t<data>bg_bd_a_01</data>\r\n\t\t<data>bg_bd_b_01</data>\r\n\t\t<data>bg_bd_c_01</data>\r\n\t\t<data>bg_230_flame_a_01</data>\r\n\t\t<data>bg_230_ice_a_01</data>\r\n\t\t<data>bg_230_setsubun_a_01</data>\r\n\t\t<data>bg_240_sr_a_01</data>\r\n\t\t<data>bg_240_sr_b_01</data>\r\n\t</SkyPrefab>\r\n\t<CliffPrefab path=\"Level/Cliff/\">\r\n\t\t<data>ship_b_01_cliff</data>\r\n\t\t<data>ship_c_01_cliff</data>\r\n\t</CliffPrefab>\r\n\t<UnderPrefab path=\"Level/Under/\">\r\n\t\t<data>ship_b_01_under</data>\r\n\t\t<data>ship_c_01_under</data>\r\n\t</UnderPrefab>\r\n\t<MapData>\r\n\t\t<data ground=\"0\" object=\"0\" sky=\"0\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"1\" object=\"1\" sky=\"1\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"2\" object=\"2\" sky=\"2\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"3\" object=\"3\" sky=\"3\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"4\" object=\"4\" sky=\"4\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"5\" object=\"5\" sky=\"5\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"6\" object=\"6\" sky=\"6\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"6\" object=\"7\" sky=\"6\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"7\" object=\"8\" sky=\"7\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"7\" object=\"9\" sky=\"7\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"8\" object=\"10\" sky=\"8\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"8\" object=\"11\" sky=\"8\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"9\" object=\"12\" sky=\"9\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"9\" object=\"13\" sky=\"9\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"10\" object=\"14\" sky=\"10\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"10\" object=\"15\" sky=\"10\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"11\" object=\"16\" sky=\"11\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"11\" object=\"17\" sky=\"11\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"12\" object=\"18\" sky=\"12\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"12\" object=\"19\" sky=\"12\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"13\" object=\"20\" sky=\"13\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"13\" object=\"21\" sky=\"13\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"14\" object=\"22\" sky=\"14\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"14\" object=\"23\" sky=\"14\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"15\" object=\"24\" sky=\"15\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"15\" object=\"25\" sky=\"15\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"16\" object=\"26\" sky=\"16\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"16\" object=\"27\" sky=\"16\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"17\" object=\"28\" sky=\"17\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"17\" object=\"29\" sky=\"17\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"18\" object=\"30\" sky=\"18\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"18\" object=\"31\" sky=\"18\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"19\" object=\"32\" sky=\"19\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"19\" object=\"33\" sky=\"19\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"20\" object=\"34\" sky=\"20\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"20\" object=\"35\" sky=\"20\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"21\" object=\"36\" sky=\"21\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"22\" object=\"37\" sky=\"22\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"23\" object=\"38\" sky=\"23\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"24\" object=\"39\" sky=\"24\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"25\" object=\"40\" sky=\"25\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"26\" object=\"41\" sky=\"26\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"27\" object=\"42\" sky=\"27\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"28\" object=\"43\" sky=\"28\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"29\" object=\"44\" sky=\"29\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"30\" object=\"45\" sky=\"30\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"31\" object=\"46\" sky=\"31\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"32\" object=\"47\" sky=\"32\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"33\" object=\"48\" sky=\"33\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"34\" object=\"49\" sky=\"34\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"35\" object=\"50\" sky=\"35\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"36\" object=\"50\" sky=\"36\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"37\" object=\"51\" sky=\"37\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"38\" object=\"52\" sky=\"38\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"39\" object=\"53\" sky=\"39\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"40\" object=\"54\" sky=\"40\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"39\" object=\"54\" sky=\"41\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"41\" object=\"55\" sky=\"41\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"42\" object=\"56\" sky=\"42\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"42\" object=\"57\" sky=\"43\" cliff=\"0\" under=\"0\" type=\"0\"/>\r\n\t\t<data ground=\"43\" object=\"58\" sky=\"44\" cliff=\"1\" under=\"1\" type=\"0\"/>\r\n\t\t<data ground=\"44\" object=\"59\" sky=\"45\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"45\" object=\"60\" sky=\"46\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"46\" object=\"61\" sky=\"47\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"47\" object=\"62\" sky=\"48\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"48\" object=\"63\" sky=\"49\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"49\" object=\"64\" sky=\"50\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"50\" object=\"65\" sky=\"51\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"51\" object=\"66\" sky=\"52\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"52\" object=\"67\" sky=\"53\" cliff=\"-1\" under=\"-1\" type=\"1\"/>\r\n\t\t<data ground=\"53\" object=\"68\" sky=\"54\" cliff=\"-1\" under=\"-1\" type=\"1\"/>\r\n\t\t<data ground=\"54\" object=\"69\" sky=\"55\" cliff=\"-1\" under=\"-1\" type=\"2\"/>\r\n\t\t<data ground=\"55\" object=\"70\" sky=\"56\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"56\" object=\"71\" sky=\"57\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"57\" object=\"72\" sky=\"58\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"58\" object=\"73\" sky=\"59\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"59\" object=\"74\" sky=\"60\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"60\" object=\"75\" sky=\"61\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"61\" object=\"76\" sky=\"62\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"62\" object=\"77\" sky=\"63\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t\t<data ground=\"63\" object=\"78\" sky=\"64\" cliff=\"-1\" under=\"-1\" type=\"0\"/>\r\n\t</MapData>\r\n</Root>\r\n",
+  "selected_maps": [
+    {
+      "map_id": 4,
+      "requirements": [
+        "Level/GroundTextures/field_b_02",
+        "Level/Background/bg_field_b_02_tree",
+        "Level/Sky/bg_field_b_02"
+      ]
+    },
+    {
+      "map_id": 19,
+      "requirements": [
+        "Level/GroundTextures/desert_a_01",
+        "Level/Background/bg_desert_a_01_rock",
+        "Level/Sky/bg_mountain_a_01"
+      ]
+    },
+    {
+      "map_id": 31,
+      "requirements": [
+        "Level/GroundTextures/snow_b_01",
+        "Level/Background/bg_snow_b_01_forest",
+        "Level/Sky/bg_snow_b_01"
+      ]
+    },
+    {
+      "map_id": 38,
+      "requirements": [
+        "Level/GroundTextures/cavern_a_01",
+        "Level/Background/bg_cavern_a_01_rock",
+        "Level/Sky/bg_cavern_a_01"
+      ]
+    }
+  ],
+  "dependency_results": [
+    {
+      "map_id": 4,
+      "path": "Level/GroundTextures/field_b_02",
+      "root_types": [
+        "Texture2D"
+      ],
+      "roots": [
+        "1472:0:1"
+      ],
+      "reachable": 1,
+      "issues": [],
+      "status": "verified"
+    },
+    {
+      "map_id": 4,
+      "path": "Level/Background/bg_field_b_02_tree",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "1136:0:8"
+      ],
+      "reachable": 36,
+      "issues": [
+        {
+          "object": "1136:0:29",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 4,
+      "path": "Level/Sky/bg_field_b_02",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "399:0:4"
+      ],
+      "reachable": 23,
+      "issues": [
+        {
+          "object": "399:0:16",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 19,
+      "path": "Level/GroundTextures/desert_a_01",
+      "root_types": [
+        "Texture2D"
+      ],
+      "roots": [
+        "1016:0:1"
+      ],
+      "reachable": 1,
+      "issues": [],
+      "status": "verified"
+    },
+    {
+      "map_id": 19,
+      "path": "Level/Background/bg_desert_a_01_rock",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "994:0:8"
+      ],
+      "reachable": 36,
+      "issues": [
+        {
+          "object": "994:0:29",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 19,
+      "path": "Level/Sky/bg_mountain_a_01",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "2328:0:4"
+      ],
+      "reachable": 21,
+      "issues": [
+        {
+          "object": "2328:0:14",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 31,
+      "path": "Level/GroundTextures/snow_b_01",
+      "root_types": [
+        "Texture2D"
+      ],
+      "roots": [
+        "1327:0:1"
+      ],
+      "reachable": 1,
+      "issues": [],
+      "status": "verified"
+    },
+    {
+      "map_id": 31,
+      "path": "Level/Background/bg_snow_b_01_forest",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "1829:0:8"
+      ],
+      "reachable": 36,
+      "issues": [
+        {
+          "object": "1829:0:29",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 31,
+      "path": "Level/Sky/bg_snow_b_01",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "972:0:4"
+      ],
+      "reachable": 21,
+      "issues": [
+        {
+          "object": "972:0:14",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 38,
+      "path": "Level/GroundTextures/cavern_a_01",
+      "root_types": [
+        "Texture2D"
+      ],
+      "roots": [
+        "853:0:1"
+      ],
+      "reachable": 1,
+      "issues": [],
+      "status": "verified"
+    },
+    {
+      "map_id": 38,
+      "path": "Level/Background/bg_cavern_a_01_rock",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "1532:0:7"
+      ],
+      "reachable": 36,
+      "issues": [
+        {
+          "object": "1532:0:29",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    },
+    {
+      "map_id": 38,
+      "path": "Level/Sky/bg_cavern_a_01",
+      "root_types": [
+        "GameObject"
+      ],
+      "roots": [
+        "1874:0:3"
+      ],
+      "reachable": 21,
+      "issues": [
+        {
+          "object": "1874:0:14",
+          "issue": "typetree unavailable",
+          "detail": "Expected to read 84 bytes, but only read 24 bytes"
+        }
+      ],
+      "status": "review_required"
+    }
+  ],
+  "legacy_monobehaviour_checks": [
+    {
+      "object": "1136:0:29",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000070000000100000005000000d300000000000000000080400000803f0000803fae47613f00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "1136:0:7",
+              "type": "GameObject",
+              "name": "BcakgroundObject"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "399:0:16",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000030000000100000004000000d3000000000000000000c0400000803f0000803fae47e13e00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "399:0:3",
+              "type": "GameObject",
+              "name": "BackgroundPlane"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "994:0:29",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000070000000100000005000000d300000000000000000080400000803f0000803fae47613f00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "994:0:7",
+              "type": "GameObject",
+              "name": "BcakgroundObject"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "2328:0:14",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000030000000100000004000000d3000000000000000000c0400000803f0000803fae47e13e00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2328:0:3",
+              "type": "GameObject",
+              "name": "BackgroundPlane"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "1829:0:29",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000070000000100000005000000d300000000000000000080400000803f0000803fae47613f00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "1829:0:7",
+              "type": "GameObject",
+              "name": "BcakgroundObject"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "972:0:14",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000030000000100000004000000d3000000000000000000c0400000803f0000803fae47e13e00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "972:0:3",
+              "type": "GameObject",
+              "name": "BackgroundPlane"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "1532:0:29",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000080000000100000005000000d300000000000000000080400000803f0000803fae47613f00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "1532:0:8",
+              "type": "GameObject",
+              "name": "BackgroundObject"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    },
+    {
+      "object": "1874:0:14",
+      "type": "MonoBehaviour",
+      "serialized_size": 84,
+      "raw_hex": "00000000020000000100000004000000d3000000000000000d71bc400000803f0000803fae47e13e00000000000000000000000000000000000000000000000000000000000040400000a0400000000000000000",
+      "enabled": 1,
+      "name_length": 0,
+      "references": [
+        {
+          "field": "GameObject",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "1874:0:2",
+              "type": "GameObject",
+              "name": "BackgroundPlane"
+            }
+          ]
+        },
+        {
+          "field": "MonoScript",
+          "status": "resolved",
+          "targets": [
+            {
+              "key": "2701:0:211",
+              "type": "MonoScript",
+              "name": "LevelBackground"
+            }
+          ]
+        }
+      ],
+      "custom_payload_bytes": 60,
+      "status": "base_header_resolved_custom_payload_unverified"
+    }
+  ]
+}

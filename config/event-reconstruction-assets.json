@@ -11077,8 +11077,8 @@
       "model": "ms03_sen_olgadia_01",
       "bundle": "ms03_sen_olgadia_01.unity3d",
       "book_color": 6,
-      "model_present": false,
-      "bundle_present": false
+      "model_present": true,
+      "bundle_present": true
     },
     {
       "enemy_id": 41318,

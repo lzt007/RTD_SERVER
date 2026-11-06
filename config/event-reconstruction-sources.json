@@ -8706,6 +8706,394 @@
       "section": "永遠へ…",
       "review_status": "category and quest section agree",
       "drops": []
+    },
+    {
+      "quest_id": 25061,
+      "quest_name": "光の魂たち・初級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "光の魂たち・初級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34470230.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15002",
+          "unit_ids": [
+            15002
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15002 | probability unknown |"
+        },
+        {
+          "name": "15002",
+          "unit_ids": [
+            15002
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15002 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25062,
+      "quest_name": "光の魂たち・中級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "光の魂たち・中級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34470230.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15002",
+          "unit_ids": [
+            15002
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15002 | probability unknown |"
+        },
+        {
+          "name": "15006",
+          "unit_ids": [
+            15006
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15006 | probability unknown |"
+        },
+        {
+          "name": "15002",
+          "unit_ids": [
+            15002
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15002 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25063,
+      "quest_name": "光の魂たち・上級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "光の魂たち・上級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34470230.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15006",
+          "unit_ids": [
+            15006
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15006 | probability unknown |"
+        },
+        {
+          "name": "15002",
+          "unit_ids": [
+            15002
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15002 | probability unknown |"
+        },
+        {
+          "name": "15006",
+          "unit_ids": [
+            15006
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15006 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25073,
+      "quest_name": "火の魂たち・初級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "火の魂たち・初級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34565499.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15000",
+          "unit_ids": [
+            15000
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15000 | probability unknown |"
+        },
+        {
+          "name": "15000",
+          "unit_ids": [
+            15000
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15000 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25074,
+      "quest_name": "火の魂たち・中級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "火の魂たち・中級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34565499.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15000",
+          "unit_ids": [
+            15000
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15000 | probability unknown |"
+        },
+        {
+          "name": "15004",
+          "unit_ids": [
+            15004
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15004 | probability unknown |"
+        },
+        {
+          "name": "15000",
+          "unit_ids": [
+            15000
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15000 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25075,
+      "quest_name": "火の魂たち・上級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "火の魂たち・上級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34565499.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15004",
+          "unit_ids": [
+            15004
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15004 | probability unknown |"
+        },
+        {
+          "name": "15000",
+          "unit_ids": [
+            15000
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15000 | probability unknown |"
+        },
+        {
+          "name": "15004",
+          "unit_ids": [
+            15004
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15004 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25076,
+      "quest_name": "水の魂たち・初級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "水の魂たち・初級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34596818.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15001",
+          "unit_ids": [
+            15001
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15001 | probability unknown |"
+        },
+        {
+          "name": "15001",
+          "unit_ids": [
+            15001
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15001 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25077,
+      "quest_name": "水の魂たち・中級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "水の魂たち・中級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34596818.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15001",
+          "unit_ids": [
+            15001
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15001 | probability unknown |"
+        },
+        {
+          "name": "15005",
+          "unit_ids": [
+            15005
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15005 | probability unknown |"
+        },
+        {
+          "name": "15001",
+          "unit_ids": [
+            15001
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15001 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25078,
+      "quest_name": "水の魂たち・上級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "水の魂たち・上級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34596818.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15005",
+          "unit_ids": [
+            15005
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15005 | probability unknown |"
+        },
+        {
+          "name": "15001",
+          "unit_ids": [
+            15001
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15001 | probability unknown |"
+        },
+        {
+          "name": "15005",
+          "unit_ids": [
+            15005
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15005 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25079,
+      "quest_name": "闇の魂たち・初級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "闇の魂たち・初級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34624301.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15003",
+          "unit_ids": [
+            15003
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15003 | probability unknown |"
+        },
+        {
+          "name": "15003",
+          "unit_ids": [
+            15003
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15003 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25080,
+      "quest_name": "闇の魂たち・中級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "闇の魂たち・中級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34624301.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15003",
+          "unit_ids": [
+            15003
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15003 | probability unknown |"
+        },
+        {
+          "name": "15007",
+          "unit_ids": [
+            15007
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15007 | probability unknown |"
+        },
+        {
+          "name": "15003",
+          "unit_ids": [
+            15003
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15003 | probability unknown |"
+        }
+      ]
+    },
+    {
+      "quest_id": 25081,
+      "quest_name": "闇の魂たち・上級",
+      "category_name": "属性育成エリア",
+      "path": "docs/archive/wiki/training-area-source-notes.md",
+      "section": "闇の魂たち・上級",
+      "source_url": "https://blog.livedoor.jp/iphonegamer/archives/34624301.html",
+      "review_status": "missing-only; geometry and drop probabilities inferred; preserve originals",
+      "drops": [
+        {
+          "name": "15007",
+          "unit_ids": [
+            15007
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| BOSS | 15007 | probability unknown |"
+        },
+        {
+          "name": "15003",
+          "unit_ids": [
+            15003
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15003 | probability unknown |"
+        },
+        {
+          "name": "15007",
+          "unit_ids": [
+            15007
+          ],
+          "confidence": "original_author_observation_identity_only",
+          "row": "| 銀史萊姆 | 15007 | probability unknown |"
+        }
+      ]
     }
   ]
 }

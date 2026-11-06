@@ -7,12 +7,14 @@ import tempfile
 import threading
 import unittest
 
+from admin_http_auth import credentials
 from rtd.services.api import API
 from rtd.transport.http import handler_for
 
 
 class AdminWebTest(unittest.TestCase):
     def setUp(self):
+        self.admin_headers = credentials(self)
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         root = pathlib.Path(self.temp.name)
@@ -30,7 +32,7 @@ class AdminWebTest(unittest.TestCase):
     def request(self, path, method='GET'):
         connection = http.client.HTTPConnection('127.0.0.1', self.server.server_port, timeout=5)
         try:
-            connection.request(method, path)
+            connection.request(method, path, headers=self.admin_headers)
             response = connection.getresponse()
             return response.status, dict(response.getheaders()), response.read()
         finally:
@@ -72,7 +74,7 @@ class AdminWebTest(unittest.TestCase):
         quests = {q['quest_id']: q for q in catalog['quests']}
         self.assertTrue(quests[11000]['event_openable'])
         self.assertFalse(quests[10000]['event_openable'])
-        self.assertFalse(quests[20101]['event_openable'])
+        self.assertTrue(quests[20101]['event_openable'])
         self.assertEqual(quests[20000]['next_quest_ids'], sorted(self.api.operations.next_quests(20000)))
         self.assertTrue(quests[20000]['next_quest_ids'])
         self.assertFalse(quests[11000]['event_point_configurable'])

@@ -1,0 +1,464 @@
+{
+  "policy": "原始精确素材优先；种族＞属性＞等级；仅缺失等级的手动替代缩放：lv2=1.3、lv3=1.6、lv4=1.9；染色保留alpha",
+  "runtime_verified": false,
+  "rows": [
+    {
+      "family": "ms00_death",
+      "requested_models": 3,
+      "validated": 2,
+      "exact_artwork_without_inference": 2,
+      "inferred": 0,
+      "locally_installed": 2,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms00_tresure",
+      "requested_models": 1,
+      "validated": 0,
+      "exact_artwork_without_inference": 0,
+      "inferred": 0,
+      "locally_installed": 0,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_akb",
+      "requested_models": 4,
+      "validated": 4,
+      "exact_artwork_without_inference": 4,
+      "inferred": 0,
+      "locally_installed": 4,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_bd",
+      "requested_models": 15,
+      "validated": 15,
+      "exact_artwork_without_inference": 15,
+      "inferred": 0,
+      "locally_installed": 15,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_bear",
+      "requested_models": 8,
+      "validated": 7,
+      "exact_artwork_without_inference": 4,
+      "inferred": 3,
+      "locally_installed": 7,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_bee",
+      "requested_models": 4,
+      "validated": 4,
+      "exact_artwork_without_inference": 4,
+      "inferred": 0,
+      "locally_installed": 4,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_bird",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 8,
+      "inferred": 2,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_crab",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 8,
+      "inferred": 2,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_dra",
+      "requested_models": 8,
+      "validated": 7,
+      "exact_artwork_without_inference": 4,
+      "inferred": 3,
+      "locally_installed": 7,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_fish",
+      "requested_models": 5,
+      "validated": 5,
+      "exact_artwork_without_inference": 0,
+      "inferred": 5,
+      "locally_installed": 5,
+      "cross_species": [
+        "ms01_fish_dark",
+        "ms01_fish_fire",
+        "ms01_fish_holy",
+        "ms01_fish_un",
+        "ms01_fish_water"
+      ],
+      "failures": []
+    },
+    {
+      "family": "ms01_fly",
+      "requested_models": 5,
+      "validated": 5,
+      "exact_artwork_without_inference": 5,
+      "inferred": 0,
+      "locally_installed": 5,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_fugu",
+      "requested_models": 8,
+      "validated": 8,
+      "exact_artwork_without_inference": 2,
+      "inferred": 6,
+      "locally_installed": 8,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_golem",
+      "requested_models": 5,
+      "validated": 5,
+      "exact_artwork_without_inference": 5,
+      "inferred": 0,
+      "locally_installed": 5,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_kame",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 10,
+      "inferred": 0,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_mind",
+      "requested_models": 4,
+      "validated": 4,
+      "exact_artwork_without_inference": 2,
+      "inferred": 2,
+      "locally_installed": 4,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_neko",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 10,
+      "inferred": 0,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_pumpkin",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 1,
+      "inferred": 0,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_sco",
+      "requested_models": 12,
+      "validated": 12,
+      "exact_artwork_without_inference": 4,
+      "inferred": 8,
+      "locally_installed": 12,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_sen",
+      "requested_models": 15,
+      "validated": 15,
+      "exact_artwork_without_inference": 15,
+      "inferred": 0,
+      "locally_installed": 15,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_sla",
+      "requested_models": 17,
+      "validated": 14,
+      "exact_artwork_without_inference": 1,
+      "inferred": 13,
+      "locally_installed": 14,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_slawing",
+      "requested_models": 6,
+      "validated": 6,
+      "exact_artwork_without_inference": 6,
+      "inferred": 0,
+      "locally_installed": 6,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_squ",
+      "requested_models": 8,
+      "validated": 0,
+      "exact_artwork_without_inference": 0,
+      "inferred": 0,
+      "locally_installed": 0,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_sr",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 10,
+      "inferred": 0,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_suika",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 0,
+      "inferred": 1,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_tatu",
+      "requested_models": 10,
+      "validated": 10,
+      "exact_artwork_without_inference": 10,
+      "inferred": 0,
+      "locally_installed": 10,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms01_wolf",
+      "requested_models": 8,
+      "validated": 8,
+      "exact_artwork_without_inference": 0,
+      "inferred": 8,
+      "locally_installed": 8,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms02_dra",
+      "requested_models": 12,
+      "validated": 11,
+      "exact_artwork_without_inference": 4,
+      "inferred": 7,
+      "locally_installed": 11,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms02_four",
+      "requested_models": 18,
+      "validated": 15,
+      "exact_artwork_without_inference": 5,
+      "inferred": 10,
+      "locally_installed": 15,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_akb",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 1,
+      "inferred": 0,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_bd",
+      "requested_models": 5,
+      "validated": 5,
+      "exact_artwork_without_inference": 5,
+      "inferred": 0,
+      "locally_installed": 5,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_dra",
+      "requested_models": 12,
+      "validated": 12,
+      "exact_artwork_without_inference": 5,
+      "inferred": 7,
+      "locally_installed": 12,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_fly",
+      "requested_models": 11,
+      "validated": 11,
+      "exact_artwork_without_inference": 4,
+      "inferred": 7,
+      "locally_installed": 11,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_four",
+      "requested_models": 12,
+      "validated": 11,
+      "exact_artwork_without_inference": 4,
+      "inferred": 7,
+      "locally_installed": 11,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_kra",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 1,
+      "inferred": 0,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_mind",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 0,
+      "inferred": 1,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_oct",
+      "requested_models": 5,
+      "validated": 5,
+      "exact_artwork_without_inference": 5,
+      "inferred": 0,
+      "locally_installed": 5,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_sea",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 1,
+      "inferred": 0,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_sen",
+      "requested_models": 3,
+      "validated": 3,
+      "exact_artwork_without_inference": 3,
+      "inferred": 0,
+      "locally_installed": 3,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms03_sr",
+      "requested_models": 3,
+      "validated": 3,
+      "exact_artwork_without_inference": 3,
+      "inferred": 0,
+      "locally_installed": 3,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms04_dra",
+      "requested_models": 3,
+      "validated": 3,
+      "exact_artwork_without_inference": 2,
+      "inferred": 1,
+      "locally_installed": 3,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms04_legend",
+      "requested_models": 4,
+      "validated": 4,
+      "exact_artwork_without_inference": 1,
+      "inferred": 3,
+      "locally_installed": 4,
+      "cross_species": [],
+      "failures": []
+    },
+    {
+      "family": "ms05_ryu",
+      "requested_models": 1,
+      "validated": 1,
+      "exact_artwork_without_inference": 0,
+      "inferred": 1,
+      "locally_installed": 1,
+      "cross_species": [],
+      "failures": []
+    }
+  ],
+  "production": {
+    "status": "deployed",
+    "api_health": "ok",
+    "http_bundles_verified": 271,
+    "services": "active",
+    "live_feature_flag": "1",
+    "changed_visual_records": 192,
+    "original_resources_preserved": 92,
+    "backup": "backups/deployment/species-20261104T191833Z",
+    "runtime_verified": false,
+    "tests_passed": 29
+  },
+  "level_scale_production": {
+    "status": "deployed",
+    "api_health": "ok",
+    "http_bundles_verified": 17,
+    "services": "active",
+    "live_feature_flag": "1",
+    "changed_visual_records": 0,
+    "original_resources_preserved": 92,
+    "backup": "backups/deployment/level-scale-20261105T004210Z",
+    "runtime_verified": false,
+    "tests_passed": 31,
+    "other_compatibility_bundles_unchanged": 261,
+    "effective_configuration_unchanged": true,
+    "multipliers": {
+      "lv2": 1.3,
+      "lv3": 1.6,
+      "lv4": 1.9
+    },
+    "local_other_compatibility_bundles_unchanged": 270
+  }
+}

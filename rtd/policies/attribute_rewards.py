@@ -8,7 +8,7 @@ def reward_snapshot(api,state,enemies,party_ids,party_snapshot=None):
     owned={u['instance_id']:u for u in state['units']}
     if party_snapshot is None:
         party_snapshot=[]
-        for instance in party_ids[:3]:
+        for instance in (i for i in party_ids if i):
             unit=owned.get(instance);master=masters.get(unit['unit_id']) if unit else None
             if master is None:raise ProtocolError(8197,'Missing original party master for attribute rewards')
             party_snapshot.append(dict(instance_id=instance,unit_id=unit['unit_id'],
@@ -44,12 +44,12 @@ def apply_rewards(state,entry):
     limits=context.get('limits');party=context.get('party')
     if (not isinstance(limits,dict) or set(limits)!=set(reported)
             or any(type(v) is not int or not 0<=v<=999999 for v in limits.values())
-            or not isinstance(party,list) or len(party)!=3):
+            or not isinstance(party,list) or not 3<=len(party)<=5):
         raise ProtocolError(8197,'Invalid frozen attribute reward context')
     if any(reported[key]>limits[key] for key in reported):
         raise ProtocolError(8194,'Attribute experience exceeds ordered encounters')
-    expected=state.get('battle_party_instance_ids',[])[:3]
-    if len(expected)!=3 or any(not isinstance(row,dict) for row in party) or [r.get('instance_id') for r in party]!=expected:
+    expected=[i for i in state.get('battle_party_instance_ids',[]) if i]
+    if len(expected)!=len(party) or any(not isinstance(row,dict) for row in party) or [r.get('instance_id') for r in party]!=expected:
         raise ProtocolError(8197,'Attribute reward party differs from entry')
     owned={u['instance_id']:u for u in state['units']};updates=[];total=sum(reported.values())
     for row in party:

@@ -1,0 +1,2132 @@
+[
+  {
+    "apk": "RTD_CLIENT/inputs/original/game.apk",
+    "sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "entries": 2865,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/03262c4993544a44eb7a852bf681a1b9",
+        "name": "ms00_ship_c_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/04140e70095fe944290dbc59239dd914",
+        "name": "ms05_ryu_atk_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/0442dc91b57cc614a99af6fe883186a0",
+        "name": "ef_atk_spear_03_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/04cd7766bfdbe4740b6860e4ef09805d",
+        "name": "ms03_four_atk_02",
+        "type": "GameObject",
+        "path_id": 18
+      },
+      {
+        "entry": "assets/bin/Data/060a590210903b74191545e510516b98",
+        "name": "ms01_squ_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/0b56cd39b3d56de49895334f78a75819",
+        "name": "ms03_bd_chau_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/0b86c1e5cb45d2e4993353a9e3536547",
+        "name": "ms03_pok_run_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/0e42361d251e8b64ab32b6fdd21552b0",
+        "name": "ef_atk_spear_04_ms",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/10a160da77aff7a42af212177dca9812",
+        "name": "ef_atk_blade_ms",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/1a145ac5182923343bb36ceeb685092b",
+        "name": "ms02_four_atk_02",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/1b13b28d2bf9194428a742ecce32e093",
+        "name": "ef_atk_spear_ms",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/1e3ea20e0774e934dafcecfa4b845fc6",
+        "name": "ms03_four_wait_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/1f74228bcdf47dc4996456569ec99c67",
+        "name": "ms03_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 26
+      },
+      {
+        "entry": "assets/bin/Data/2494719b5b5c70541809be3e901d59e9",
+        "name": "ms03_sr_tiamat_atk_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/279511c8b70a53047a8aa4df92d35fdc",
+        "name": "ms03_org_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/2819d970d8cd1994891038b4ac85c6a6",
+        "name": "ms02_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/2a31a2b36a2028e42b112a1d5ed30128",
+        "name": "ef_atk_magic_04_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/2a404d6214bf8194caa2f4a96178f64b",
+        "name": "ms01_bear_wait_01",
+        "type": "GameObject",
+        "path_id": 8
+      },
+      {
+        "entry": "assets/bin/Data/2a6461cdb8f422340a0b82068cc59b18",
+        "name": "ms02_dra_run_01",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/2d028909fae720f49a761e4252f55dc0",
+        "name": "ms03_sr_tiamat_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/2f82b8783a83f4d409d191003e8c1f30",
+        "name": "ms03_unit_run_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/30022bbf667ca6149a457357699432a5",
+        "name": "ef_atk_spear_05_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/30897b0067cf0fe4a94cfe92d5cbfea8",
+        "name": "ef_atk_spear_02_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/30c6c3f73beac1f40833d4f008cabe6a",
+        "name": "ef_atk_blade_06_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/31adf56cc15e7604ca8d48fddcb9fd3a",
+        "name": "ms01_sla_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/339ed0ade0d76694f872b2407d89880a",
+        "name": "ms01_wolf_wait_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/3459912371883b84db63ae533772b226",
+        "name": "ms04_dra_tail_wait_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/3b20c9ae74ef07b46b2e61268016c3f7",
+        "name": "ms00_ship_b_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3cdbcc1225f6e3a43ae64522af7abf68",
+        "name": "ms02_four_dark_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3df6fc84b64c8bf41a82b00cbdbfc495",
+        "name": "ms04_dra_head_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+        "name": "ef_btl_beam_01_ms",
+        "type": "GameObject",
+        "path_id": 13
+      },
+      {
+        "entry": "assets/bin/Data/40c8ab9258a4780448859a176258423d",
+        "name": "ms03_bd_giga_run_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/4139f7460c415f4499a3a3aa9b8c03eb",
+        "name": "ef_atk_arrow_01_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/429aaebd90d926b428df3a3c51edd708",
+        "name": "ms00_wall_atk_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/43df10e5b74508448bd884469c94f342",
+        "name": "ms01_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/4681fa29675a69e42974083aad2b7ca6",
+        "name": "ms05_ryu_run_01",
+        "type": "GameObject",
+        "path_id": 39
+      },
+      {
+        "entry": "assets/bin/Data/4bd999db4f6709b4e8cade0acd82c0cc",
+        "name": "ms03_bd_rusa_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/565d2cb068d175848be41ac081980d67",
+        "name": "ms04_dra_tail_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/56b6102a577bdca46ac1a71944473c0e",
+        "name": "ms02_four_un_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/56bb5eaf731a8944da5ff84ef269a406",
+        "name": "ms01_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/5934a92e8070f4a46bd4fec57d802a38",
+        "name": "ms03_bd_rusa_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/59ec9f5e867b8084c978619b7196efe9",
+        "name": "ef_atk_spear_06_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/5c9d5f0b246151143a8f834d4ca5744a",
+        "name": "ef_atk_arrow_03_ms",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/5d4587580f9c4e94fa9257df3adcd3f3",
+        "name": "ms03_fly_wait_01",
+        "type": "GameObject",
+        "path_id": 24
+      },
+      {
+        "entry": "assets/bin/Data/5ec7af243162da64d9e004ed40e471bc",
+        "name": "ms02_four_run_02",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/60a0ae9f648759c478669b66f4b2f703",
+        "name": "ef_atk_blade_05_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/61e49136283f84750be6bda44c9b211a",
+        "name": "ms01_squ_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/63be418e626e61d46b5bff33281ec33c",
+        "name": "ms00_death_atk_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/66c1c813566139f4fa1857cc472f56dd",
+        "name": "ef_atk_arrow_02_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/684fb7be9cdb29143b9ecf2c892de80a",
+        "name": "ms02_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/7311be66e784fc84499fb51f320526fd",
+        "name": "ms03_dra_run_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/7577c6b2430df964dbd88ac06364aca5",
+        "name": "ef_atk_arrow_04_ms",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/78c305b1c5e99ed469ea5ac6483d321c",
+        "name": "ef_atk_blade_ms",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/790ef0a605f1e8341835b4f2dcb0901b",
+        "name": "ms03_element_run_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/7e092975bfd4cec42af9a10dc8c7ae1e",
+        "name": "ms04_legend_atk_01",
+        "type": "GameObject",
+        "path_id": 21
+      },
+      {
+        "entry": "assets/bin/Data/7e2f928e715dacc4c9ab00011d3c4a26",
+        "name": "ms00_treasure_unit_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/7e8e205ef62843f46afd3d90277f210a",
+        "name": "ms04_dra_head_run_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/7f065589a4d888f4484d0ceaf67536cb",
+        "name": "ms00_death_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/80d9b98e8f3c27b46a9b532a95eab0c3",
+        "name": "ef_atk_magic_05_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/81cc1897ad46a35438f3b0616d2fc8da",
+        "name": "ms03_sea_run_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/83c3f28549531684fbda3e8086670230",
+        "name": "ef_slash_4_01_ms",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/8847af1b4d876454292a5a97a34931ba",
+        "name": "ms03_four_run_01",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/88a475389d670f2499cac84062d9412f",
+        "name": "ef_atk_spear_ms",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/89ff0c24878b3624abdce73ed333f49d",
+        "name": "ms02_four_run_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/8a60622dccc19e94aa3373214718c6d1",
+        "name": "ms04_legend_run_01",
+        "type": "GameObject",
+        "path_id": 29
+      },
+      {
+        "entry": "assets/bin/Data/8bc333b90d65ea94daaa7716548d5684",
+        "name": "ef_atk_spear_07_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/8be457bc857e07245a95dde806f40093",
+        "name": "ef_atk_blade_04_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/8cc1aeae581fb42429400b7b605ff967",
+        "name": "ms01_squ_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/8f13bb80ab6799540be5e04a2e61c067",
+        "name": "ms02_dra_dark_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/90911c8399f4bfb44b74d6e4337984aa",
+        "name": "ms03_bd_giga_wait_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/92a37eee7cded2d41976a3886faed497",
+        "name": "ef_slash_4_01_ms",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/95ee5505d13c6414ebfd3ffcd7d88bfe",
+        "name": "ms04_dra_head_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/99f05e9d3753faa41be017699632e3c9",
+        "name": "ms03_four_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/9ae2eeb193c721046ba7ea8b80150b2c",
+        "name": "ms03_bd_giga_atk_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/9afa0c828262e48f9bc4d591fafc97f0",
+        "name": "ms01_squ_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9bf8a19de757f9d408fcc8ee6af92f47",
+        "name": "ms02_dra_un_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9c9c7a4553394714794d5e8123862c8f",
+        "name": "ms01_sla_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a2d07840bd4ad1a46b7f7266be505e3c",
+        "name": "ms03_bd_chau_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a3199d8fa553330458a4f34ebd754ce4",
+        "name": "ms00_tresure_unit_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a351918086115b2408fa6f056e0aaf1d",
+        "name": "ms00_treasure_unit_run_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/a612bfacd899e8e40b484efb44b9737c",
+        "name": "ef_atk_blade_02_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a63aff4dc03f45a4b9b5091b72aacf25",
+        "name": "ms01_fish_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a77d8255e59f108409a1a8a93cd3b95a",
+        "name": "ms01_sla_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/aa35f9586f61e5644b2a58667dc87932",
+        "name": "ms00_ship_b_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/aac11af0f450f6b4bb87d703b4dfc520",
+        "name": "ms02_four_wait_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/ab2953c2c6566794fa7f32ca842c7c2b",
+        "name": "ms01_squ_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ac4c6b5fff212ab4fac51ce607d06515",
+        "name": "ms01_sco_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ad67afd0c92c03f40b3f0630c0f552ff",
+        "name": "ms01_squ_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/adc20dd3fea2f8c489d58c7efed8eb08",
+        "name": "ms01_slawing_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/afab335667144f14fb14ee0f6f0891a1",
+        "name": "ms00_ship_c_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/b1bdab5085e14df4482e3ed3f89a6aba",
+        "name": "ms03_oct_wait_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/b2970bf64bad5a646ae6731a7926e7e9",
+        "name": "ef_atk_blade_01_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/b686e67731961a9408d06c4b24d1151d",
+        "name": "ms01_bear_atk_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/b79ec95a55d30994bb8321481d7112b2",
+        "name": "ms01_fly_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ba7e5e66d1262374da9e65d834d6b256",
+        "name": "ms01_wolf_atk_01",
+        "type": "GameObject",
+        "path_id": 19
+      },
+      {
+        "entry": "assets/bin/Data/bd44ba5105fdac843bf23f78683f2e20",
+        "name": "ms04_legend_wait_01",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/bf4b1bdef2c4bac40860c686eee24d81",
+        "name": "ms03_bd_chau_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/bf8d92635dc1f66448eba04719f71433",
+        "name": "ms01_sco_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/bfb3f511e7a62444582d0bb13934094a",
+        "name": "ef_atk_arrow_05_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/c438c6cbe347e044fb95f64b576a1b8b",
+        "name": "ms01_fish_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/c56ffe426eb73354d9173ffb0ac71de7",
+        "name": "ms02_four_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/c6285e2c0bed18a43a6478b5d6d28b52",
+        "name": "ms03_sea_atk_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/c7e25a2ec2805844c96e366be3253422",
+        "name": "ms03_fly_atk_01",
+        "type": "GameObject",
+        "path_id": 11
+      },
+      {
+        "entry": "assets/bin/Data/c8eb6bce10cacb341931821168fc4080",
+        "name": "ms03_oct_atk_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/cacfd938a22b27e458a51dd75f3a62d7",
+        "name": "ms03_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/cdb0e6df4e6ed2f4a89abf05886b6d40",
+        "name": "ef_atk_spear_01_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/cdf547f505d16d645a6dd612bb888116",
+        "name": "ms03_sea_wait_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/ce9e4fa0754eeff4ba1813ea0eb6114c",
+        "name": "ms01_sla_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/cfca7759a83b3c845b0eecb64ff9b403",
+        "name": "ms01_sla_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/d18481d892845b54898866b0c525ea02",
+        "name": "ms03_win_run_01",
+        "type": "GameObject",
+        "path_id": 28
+      },
+      {
+        "entry": "assets/bin/Data/d5ddd94dddbdeeb498f92bfdad0d5f29",
+        "name": "ms00_ship_c_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/d60a2a559225c1a44930241cd79488b6",
+        "name": "ms04_dra_tail_atk_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/da1cc5d8973ef9b429a3c3de4595a9f1",
+        "name": "ms01_sla_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/da7e2d9f18c0dca47a73580c275af1ce",
+        "name": "ef_atk_blade_03_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/da80acfbd1fdd804f93ef869b521ea64",
+        "name": "ms03_bd_rusa_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/dec7ba846e371474fbb94a5a79fc1601",
+        "name": "ms02_four_un_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/dec7ba846e371474fbb94a5a79fc1601",
+        "name": "ms02_four_un_01",
+        "type": "GameObject",
+        "path_id": 23
+      },
+      {
+        "entry": "assets/bin/Data/e2fc9df9c0ce13a4ebcbaf47ec765727",
+        "name": "ms03_sr_tiamat_run_01",
+        "type": "GameObject",
+        "path_id": 8
+      },
+      {
+        "entry": "assets/bin/Data/e88859d87d9407d459477dd4760782f9",
+        "name": "ms00_ship_b_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/e9375f095cd340241a0e84866a9b2fdc",
+        "name": "ms02_dra_un_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/e9b25ff572402c949a728a4df5ca8d04",
+        "name": "ef_atk_magic_03_ms",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/ebb09e1511b407841b238775837cd438",
+        "name": "ms01_slawing_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ed4d5d2f69842a141a54accade9bfb2c",
+        "name": "ms02_four_un_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/eecad05df1964f34ba36487eebe0d37a",
+        "name": "ms03_oct_run_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/f0ddf9dfa464c7e40862e27fba327640",
+        "name": "ms04_dra_wing_atk_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/f16e6a49873ec4a1199425da43d59bf4",
+        "name": "ms02_dra_un_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/f16e6a49873ec4a1199425da43d59bf4",
+        "name": "ms02_dra_un_01",
+        "type": "GameObject",
+        "path_id": 23
+      },
+      {
+        "entry": "assets/bin/Data/f23ebd49252884f499446797a43af223",
+        "name": "ms01_fly_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/f341e5d56b583384aaf7abf1357bf9c3",
+        "name": "ms05_ryu_wait_01",
+        "type": "GameObject",
+        "path_id": 25
+      },
+      {
+        "entry": "assets/bin/Data/f4a7f015ffe686b48ae918a1a8c1d760",
+        "name": "ms04_dra_wing_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/f5d170f756c4f6a4181477c5085009a4",
+        "name": "ms03_fly_run_01",
+        "type": "GameObject",
+        "path_id": 27
+      },
+      {
+        "entry": "assets/bin/Data/f5d3a0a956dcc5e4ebe15384b26bcc37",
+        "name": "ms02_four_wait_02",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/f5d437c126c91ec4091f6a2b3007637a",
+        "name": "ms01_sla_lv1",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f7e23a6dc1111464c9ffadba85ac4fac",
+        "name": "ms01_squ_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/fac356d5c78c81845958d5f6f3bf0365",
+        "name": "ms04_dra_wing_run_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/fbabf6e2a2084f049acb48a677ef9c2f",
+        "name": "ms01_sla_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ff6795ea72b709d459c6265517163163",
+        "name": "ef_atk_magic_01_ms",
+        "type": "GameObject",
+        "path_id": 6
+      }
+    ],
+    "containers": [],
+    "errors": []
+  },
+  {
+    "apk": "resources/ロードラ_7.0.1.0.apk",
+    "sha256": "c3bcb5a6f6ecc1f27a9b661882e8bfc7fd3b94367aa9222634395add101b57e0",
+    "entries": 2210,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/04140e70095fe944290dbc59239dd914",
+        "name": "ms05_ryu_atk_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/0442dc91b57cc614a99af6fe883186a0",
+        "name": "ef_atk_spear_03_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/04cd7766bfdbe4740b6860e4ef09805d",
+        "name": "ms03_four_atk_02",
+        "type": "GameObject",
+        "path_id": 18
+      },
+      {
+        "entry": "assets/bin/Data/060a590210903b74191545e510516b98",
+        "name": "ms01_squ_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/096d4ce2a0d5004408d9a5480e5b8b33",
+        "name": "ms03_rvs_run_01",
+        "type": "GameObject",
+        "path_id": 8
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/0b56cd39b3d56de49895334f78a75819",
+        "name": "ms03_bd_chau_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/0b86c1e5cb45d2e4993353a9e3536547",
+        "name": "ms03_pok_run_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/0e42361d251e8b64ab32b6fdd21552b0",
+        "name": "ef_atk_spear_04_ms",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/10e00d38d44e44f46b540a9df673c27d",
+        "name": "run001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/12576860fa985434595ed78b6883148c",
+        "name": "spt001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/14e45813452712244893174e7688ca20",
+        "name": "wat003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/15ce2b9362df12f41939412135c9bf6b",
+        "name": "wat001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/15fe550c0a3e74a498b6ef92596f8ca7",
+        "name": "ef_atk_blade_07_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/17495e51d0ac7844c917eb7b307994f6",
+        "name": "ms03_wpk_run_01",
+        "type": "GameObject",
+        "path_id": 26
+      },
+      {
+        "entry": "assets/bin/Data/18056fc302c77ab4bae22fbfc4c94a12",
+        "name": "std002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/1a145ac5182923343bb36ceeb685092b",
+        "name": "ms02_four_atk_02",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/1b593a6f3024f8444aedf6c1390f6b6a",
+        "name": "ef_atk_blade_08_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/1e3ea20e0774e934dafcecfa4b845fc6",
+        "name": "ms03_four_wait_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/1f74228bcdf47dc4996456569ec99c67",
+        "name": "ms03_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 26
+      },
+      {
+        "entry": "assets/bin/Data/204dd960d7dd7ea4380651b598294b62",
+        "name": "wat002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/232b4beae4522774e9e438d40c25f9d6",
+        "name": "eat002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/23af6fdeb2d01ed43a02abc35cead455",
+        "name": "eat005_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/2494719b5b5c70541809be3e901d59e9",
+        "name": "ms03_sr_tiamat_atk_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/27251ac79a51d8d4da130a5ffd16c727",
+        "name": "spt004_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/279511c8b70a53047a8aa4df92d35fdc",
+        "name": "ms03_org_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/27d4e41e3578f294dbdb766c9a5873fe",
+        "name": "ms00_tresure_unit_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/2819d970d8cd1994891038b4ac85c6a6",
+        "name": "ms02_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/2a31a2b36a2028e42b112a1d5ed30128",
+        "name": "ef_atk_magic_04_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/2a404d6214bf8194caa2f4a96178f64b",
+        "name": "ms01_bear_wait_01",
+        "type": "GameObject",
+        "path_id": 8
+      },
+      {
+        "entry": "assets/bin/Data/2a6461cdb8f422340a0b82068cc59b18",
+        "name": "ms02_dra_run_01",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/2d028909fae720f49a761e4252f55dc0",
+        "name": "ms03_sr_tiamat_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/2f82b8783a83f4d409d191003e8c1f30",
+        "name": "ms03_unit_run_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/30022bbf667ca6149a457357699432a5",
+        "name": "ef_atk_spear_05_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/303cfa6fdcabd96488fca42aaaf8885f",
+        "name": "ef_atk_arrow_10_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/30897b0067cf0fe4a94cfe92d5cbfea8",
+        "name": "ef_atk_spear_02_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/309fa0a1d25a0254e94df6733807a029",
+        "name": "rac002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/30c6c3f73beac1f40833d4f008cabe6a",
+        "name": "ef_atk_blade_06_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/310ea549f40c7f04fbaaa859abe43054",
+        "name": "ef_atk_spear_10_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/31adf56cc15e7604ca8d48fddcb9fd3a",
+        "name": "ms01_sla_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/339ed0ade0d76694f872b2407d89880a",
+        "name": "ms01_wolf_wait_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/3459912371883b84db63ae533772b226",
+        "name": "ms04_dra_tail_wait_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/35c289e90acad334ab6f75309c713065",
+        "name": "rac001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/36b533eec3820334ba98d77cd234f04a",
+        "name": "ms06_dra_atk_02",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/392fd4f46d108b14b8478534e17c0605",
+        "name": "ms06_dra_wait_02",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/39e6f16e9254bb54584651bb11ca61af",
+        "name": "ef_atk_arrow_07_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/3a3d55b750259064099087471ad22248",
+        "name": "std003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3cdbcc1225f6e3a43ae64522af7abf68",
+        "name": "ms02_four_dark_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3d7a4cea83133774a93a6c00fe421b9e",
+        "name": "eat004_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3d81a27a72bb3d943bbd99018ca1c60a",
+        "name": "bth001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/3df6fc84b64c8bf41a82b00cbdbfc495",
+        "name": "ms04_dra_head_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/40531868f77f90c4db742aa767256ab5",
+        "name": "ef_atk_arrow_05_ms",
+        "type": "GameObject",
+        "path_id": 13
+      },
+      {
+        "entry": "assets/bin/Data/40c8ab9258a4780448859a176258423d",
+        "name": "ms03_bd_giga_run_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/410712c27e321714db90f7f16dab7a30",
+        "name": "ef_atk_blade_11_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/4139f7460c415f4499a3a3aa9b8c03eb",
+        "name": "ef_atk_arrow_01_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/429aaebd90d926b428df3a3c51edd708",
+        "name": "ms00_wall_atk_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/43df10e5b74508448bd884469c94f342",
+        "name": "ms01_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/43ecf94c26d858247a3b5ca3b463c37f",
+        "name": "spt003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/4681fa29675a69e42974083aad2b7ca6",
+        "name": "ms05_ryu_run_01",
+        "type": "GameObject",
+        "path_id": 39
+      },
+      {
+        "entry": "assets/bin/Data/4a33d14436c1d7d4487bc028d9a768ac",
+        "name": "wat008_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/4bd999db4f6709b4e8cade0acd82c0cc",
+        "name": "ms03_bd_rusa_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/565d2cb068d175848be41ac081980d67",
+        "name": "ms04_dra_tail_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/56b6102a577bdca46ac1a71944473c0e",
+        "name": "ms02_four_un_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/56bb5eaf731a8944da5ff84ef269a406",
+        "name": "ms01_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/5748788828a608e4d87850f8e4632e94",
+        "name": "wat007_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/5934a92e8070f4a46bd4fec57d802a38",
+        "name": "ms03_bd_rusa_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/59ec9f5e867b8084c978619b7196efe9",
+        "name": "ef_atk_spear_06_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/5c9d5f0b246151143a8f834d4ca5744a",
+        "name": "ef_atk_arrow_03_ms",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/5d4587580f9c4e94fa9257df3adcd3f3",
+        "name": "ms03_fly_wait_01",
+        "type": "GameObject",
+        "path_id": 24
+      },
+      {
+        "entry": "assets/bin/Data/5ec7af243162da64d9e004ed40e471bc",
+        "name": "ms02_four_run_02",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/60a0ae9f648759c478669b66f4b2f703",
+        "name": "ef_atk_blade_05_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/61e49136283f84750be6bda44c9b211a",
+        "name": "ms01_squ_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/63477bb738a30bd4b8d1c2e6a766a5ce",
+        "name": "str001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/63be418e626e61d46b5bff33281ec33c",
+        "name": "ms00_death_atk_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/66c1c813566139f4fa1857cc472f56dd",
+        "name": "ef_atk_arrow_02_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/67c1bf36618dafc468c84fdc253565e5",
+        "name": "get001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/684fb7be9cdb29143b9ecf2c892de80a",
+        "name": "ms02_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 21
+      },
+      {
+        "entry": "assets/bin/Data/69a41ebb7c90a85449f61876892d1e81",
+        "name": "ef_atk_magic_07_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/6b367bc0e1c5d60488eb65d2b2b25db8",
+        "name": "ef_atk_arrow_11_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/6c2b10b3936086b45b69897436471169",
+        "name": "ms06_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/6d4f9c439668f4942b649fdd391320ea",
+        "name": "ef_atk_spear_09_ms",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/6fa60aabc72cf064492b64aaa8430cf3",
+        "name": "run002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/70479a63e1290fb48ac860c555edf2b4",
+        "name": "ply003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7155cb9c72ef30941901677efb951c83",
+        "name": "slp002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7311be66e784fc84499fb51f320526fd",
+        "name": "ms03_dra_run_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/745c78edf235b2d4a9aebd113f450710",
+        "name": "wat005_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7577c6b2430df964dbd88ac06364aca5",
+        "name": "ef_atk_arrow_04_ms",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/75e92364da4ea471fb4cbdae1c5b87cf",
+        "name": "ms01_squ_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/770c372785b16a9428024aff6390a0fc",
+        "name": "std001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/790ef0a605f1e8341835b4f2dcb0901b",
+        "name": "ms03_element_run_01",
+        "type": "GameObject",
+        "path_id": 12
+      },
+      {
+        "entry": "assets/bin/Data/79b6c0ca5acdc5d47be1b1add2385ce9",
+        "name": "eat006_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7a63e734b641a6f4699541bfb559a6b2",
+        "name": "eat001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7e092975bfd4cec42af9a10dc8c7ae1e",
+        "name": "ms04_legend_atk_01",
+        "type": "GameObject",
+        "path_id": 21
+      },
+      {
+        "entry": "assets/bin/Data/7e2094c6934546a4ca1f21434c2d46ec",
+        "name": "ef_atk_magic_09_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7e2a73428067497468520d92ab251b78",
+        "name": "wat010_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/7e2f928e715dacc4c9ab00011d3c4a26",
+        "name": "ms00_treasure_unit_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/7e8e205ef62843f46afd3d90277f210a",
+        "name": "ms04_dra_head_run_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/7f065589a4d888f4484d0ceaf67536cb",
+        "name": "ms00_death_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/804096e160139ee40b9b1c1d76636ea2",
+        "name": "ef_atk_magic_06_ms",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/80d9b98e8f3c27b46a9b532a95eab0c3",
+        "name": "ef_atk_magic_05_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/81cc1897ad46a35438f3b0616d2fc8da",
+        "name": "ms03_sea_run_01",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/8847af1b4d876454292a5a97a34931ba",
+        "name": "ms03_four_run_01",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/89ff0c24878b3624abdce73ed333f49d",
+        "name": "ms02_four_run_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/8a60622dccc19e94aa3373214718c6d1",
+        "name": "ms04_legend_run_01",
+        "type": "GameObject",
+        "path_id": 29
+      },
+      {
+        "entry": "assets/bin/Data/8bc333b90d65ea94daaa7716548d5684",
+        "name": "ef_atk_spear_07_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/8be457bc857e07245a95dde806f40093",
+        "name": "ef_atk_blade_04_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/8c720ca6851ad1944ac08dfa2bcf9ce4",
+        "name": "ply001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/8c94884ac3e73b5428cf0db734ce3ea0",
+        "name": "bth002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/8cc1aeae581fb42429400b7b605ff967",
+        "name": "ms01_squ_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/8f13bb80ab6799540be5e04a2e61c067",
+        "name": "ms02_dra_dark_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/90911c8399f4bfb44b74d6e4337984aa",
+        "name": "ms03_bd_giga_wait_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/932139bd79ea5d8478a9a7fb0064282a",
+        "name": "ef_atk_magic_08_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/95bad56e065320e4cacc8b0e0b53863d",
+        "name": "wat004_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/95ee5505d13c6414ebfd3ffcd7d88bfe",
+        "name": "ms04_dra_head_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/975ca902d3d86b549a341a65c6a88f06",
+        "name": "chg001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/99f05e9d3753faa41be017699632e3c9",
+        "name": "ms03_four_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/9a3fde6e7fb12c44bbf6fed486db8896",
+        "name": "ef_atk_arrow_08_ms",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/9ae2eeb193c721046ba7ea8b80150b2c",
+        "name": "ms03_bd_giga_atk_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/9afa0c828262e48f9bc4d591fafc97f0",
+        "name": "ms01_squ_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9b29d3e7ce2629249bb44af1746f4d1b",
+        "name": "ef_atk_arrow_12_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9bf8a19de757f9d408fcc8ee6af92f47",
+        "name": "ms02_dra_un_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9c9c7a4553394714794d5e8123862c8f",
+        "name": "ms01_sla_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/9d869006ca84d4e4296bac01fbea75b6",
+        "name": "ef_atk_spear_12_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a157a78d8a031a04599c350e82cd04dd",
+        "name": "ms06_dra_run_02",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/a2d07840bd4ad1a46b7f7266be505e3c",
+        "name": "ms03_bd_chau_run_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a3199d8fa553330458a4f34ebd754ce4",
+        "name": "ms00_tresure_unit_01",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a351918086115b2408fa6f056e0aaf1d",
+        "name": "ms00_treasure_unit_run_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/a5f555d2fc4bf004dade462bcbbb76de",
+        "name": "ms06_dra_wait_01",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/a612bfacd899e8e40b484efb44b9737c",
+        "name": "ef_atk_blade_02_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a63aff4dc03f45a4b9b5091b72aacf25",
+        "name": "ms01_fish_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/a77d8255e59f108409a1a8a93cd3b95a",
+        "name": "ms01_sla_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/a996a0e32646da3489fb1626e9f6df5b",
+        "name": "ded001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/aa72386cf3d920643b0c98df7bef90e6",
+        "name": "ef_atk_blade_12_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/aac11af0f450f6b4bb87d703b4dfc520",
+        "name": "ms02_four_wait_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/aaeff36b81fde37448e0049a8aec4ae7",
+        "name": "ply002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ab2953c2c6566794fa7f32ca842c7c2b",
+        "name": "ms01_squ_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ac4c6b5fff212ab4fac51ce607d06515",
+        "name": "ms01_sco_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ac7cd07d80ed46d4c8bbd6865911c8cb",
+        "name": "slp001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ad67afd0c92c03f40b3f0630c0f552ff",
+        "name": "ms01_squ_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/adc20dd3fea2f8c489d58c7efed8eb08",
+        "name": "ms01_slawing_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/af0e2baab68d0d84182f01d6c5fb6481",
+        "name": "ef_atk_spear_11_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/b1bdab5085e14df4482e3ed3f89a6aba",
+        "name": "ms03_oct_wait_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/b2970bf64bad5a646ae6731a7926e7e9",
+        "name": "ef_atk_blade_01_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/b41d88e8372e59a4c878797e0c4ee8e8",
+        "name": "ef_atk_blade_10_ms",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/b686e67731961a9408d06c4b24d1151d",
+        "name": "ms01_bear_atk_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/b79ec95a55d30994bb8321481d7112b2",
+        "name": "ms01_fly_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ba7e5e66d1262374da9e65d834d6b256",
+        "name": "ms01_wolf_atk_01",
+        "type": "GameObject",
+        "path_id": 19
+      },
+      {
+        "entry": "assets/bin/Data/bb80af4c65a77e04bb75f5b0ce187a64",
+        "name": "ef_atk_blade_09_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/bd44ba5105fdac843bf23f78683f2e20",
+        "name": "ms04_legend_wait_01",
+        "type": "GameObject",
+        "path_id": 15
+      },
+      {
+        "entry": "assets/bin/Data/bf4b1bdef2c4bac40860c686eee24d81",
+        "name": "ms03_bd_chau_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/bf8d92635dc1f66448eba04719f71433",
+        "name": "ms01_sco_wait_01",
+        "type": "GameObject",
+        "path_id": 9
+      },
+      {
+        "entry": "assets/bin/Data/bfb3f511e7a62444582d0bb13934094a",
+        "name": "ef_atk_arrow_06_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/bfd357bc1d57a7b4d922a73f00b6124b",
+        "name": "ded002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/c438c6cbe347e044fb95f64b576a1b8b",
+        "name": "ms01_fish_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/c56ffe426eb73354d9173ffb0ac71de7",
+        "name": "ms02_four_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/c6285e2c0bed18a43a6478b5d6d28b52",
+        "name": "ms03_sea_atk_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/c694de2a6edccec48be6a4d6560fe3a6",
+        "name": "ef_atk_arrow_09_ms",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/c7e25a2ec2805844c96e366be3253422",
+        "name": "ms03_fly_atk_01",
+        "type": "GameObject",
+        "path_id": 11
+      },
+      {
+        "entry": "assets/bin/Data/c8eb6bce10cacb341931821168fc4080",
+        "name": "ms03_oct_atk_01",
+        "type": "GameObject",
+        "path_id": 16
+      },
+      {
+        "entry": "assets/bin/Data/cacfd938a22b27e458a51dd75f3a62d7",
+        "name": "ms03_dra_atk_01",
+        "type": "GameObject",
+        "path_id": 20
+      },
+      {
+        "entry": "assets/bin/Data/cdb0e6df4e6ed2f4a89abf05886b6d40",
+        "name": "ef_atk_spear_01_ms",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/cdf547f505d16d645a6dd612bb888116",
+        "name": "ms03_sea_wait_01",
+        "type": "GameObject",
+        "path_id": 10
+      },
+      {
+        "entry": "assets/bin/Data/ce9e4fa0754eeff4ba1813ea0eb6114c",
+        "name": "ms01_sla_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ceca2eb916b786944956697195712369",
+        "name": "wat009_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/cfca7759a83b3c845b0eecb64ff9b403",
+        "name": "ms01_sla_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/d18481d892845b54898866b0c525ea02",
+        "name": "ms03_win_run_01",
+        "type": "GameObject",
+        "path_id": 28
+      },
+      {
+        "entry": "assets/bin/Data/d60a2a559225c1a44930241cd79488b6",
+        "name": "ms04_dra_tail_atk_01",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/da1cc5d8973ef9b429a3c3de4595a9f1",
+        "name": "ms01_sla_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/da7e2d9f18c0dca47a73580c275af1ce",
+        "name": "ef_atk_blade_03_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/da80acfbd1fdd804f93ef869b521ea64",
+        "name": "ms03_bd_rusa_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/db4d5b9128c296a488b3a075194d48c5",
+        "name": "slp003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/dec7ba846e371474fbb94a5a79fc1601",
+        "name": "ms02_four_un_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/dec7ba846e371474fbb94a5a79fc1601",
+        "name": "ms02_four_un_01",
+        "type": "GameObject",
+        "path_id": 23
+      },
+      {
+        "entry": "assets/bin/Data/e0fb098112d8f3b4f9ce8f3b3133843a",
+        "name": "ef_atk_spear_08_ms",
+        "type": "GameObject",
+        "path_id": 5
+      },
+      {
+        "entry": "assets/bin/Data/e2fc9df9c0ce13a4ebcbaf47ec765727",
+        "name": "ms03_sr_tiamat_run_01",
+        "type": "GameObject",
+        "path_id": 8
+      },
+      {
+        "entry": "assets/bin/Data/e9375f095cd340241a0e84866a9b2fdc",
+        "name": "ms02_dra_un_01",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/e9b25ff572402c949a728a4df5ca8d04",
+        "name": "ef_atk_magic_03_ms",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/ebb09e1511b407841b238775837cd438",
+        "name": "ms01_slawing_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/ed4d5d2f69842a141a54accade9bfb2c",
+        "name": "ms02_four_un_01",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ee4169d2a92a4a746823599aba6de920",
+        "name": "trn001_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/eecad05df1964f34ba36487eebe0d37a",
+        "name": "ms03_oct_run_01",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/f0ddf9dfa464c7e40862e27fba327640",
+        "name": "ms04_dra_wing_atk_01",
+        "type": "GameObject",
+        "path_id": 4
+      },
+      {
+        "entry": "assets/bin/Data/f12842178fae7bb4bac3e3c36587f2b7",
+        "name": "spt002_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f23ebd49252884f499446797a43af223",
+        "name": "ms01_fly_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/f2c27fae31dae484c90d0cc7881cc34c",
+        "name": "ms06_dra_run_01",
+        "type": "GameObject",
+        "path_id": 31
+      },
+      {
+        "entry": "assets/bin/Data/f341e5d56b583384aaf7abf1357bf9c3",
+        "name": "ms05_ryu_wait_01",
+        "type": "GameObject",
+        "path_id": 25
+      },
+      {
+        "entry": "assets/bin/Data/f364ec252c92e9c4980d3cd8d0cf358d",
+        "name": "eat003_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f4a7f015ffe686b48ae918a1a8c1d760",
+        "name": "ms04_dra_wing_wait_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/f57d5cdb1bdeb4c4986d85b34ee13f88",
+        "name": "ms02_dra_un_01",
+        "type": "GameObject",
+        "path_id": 22
+      },
+      {
+        "entry": "assets/bin/Data/f57d5cdb1bdeb4c4986d85b34ee13f88",
+        "name": "ms02_dra_un_01",
+        "type": "GameObject",
+        "path_id": 23
+      },
+      {
+        "entry": "assets/bin/Data/f5d170f756c4f6a4181477c5085009a4",
+        "name": "ms03_fly_run_01",
+        "type": "GameObject",
+        "path_id": 27
+      },
+      {
+        "entry": "assets/bin/Data/f5d3a0a956dcc5e4ebe15384b26bcc37",
+        "name": "ms02_four_wait_02",
+        "type": "GameObject",
+        "path_id": 7
+      },
+      {
+        "entry": "assets/bin/Data/f5d437c126c91ec4091f6a2b3007637a",
+        "name": "ms01_sla_lv1",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/f7e23a6dc1111464c9ffadba85ac4fac",
+        "name": "ms01_squ_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/fac356d5c78c81845958d5f6f3bf0365",
+        "name": "ms04_dra_wing_run_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/fbabf6e2a2084f049acb48a677ef9c2f",
+        "name": "ms01_sla_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/fbf4c105034b9fa4c9a5ae3e6b1850ff",
+        "name": "ms03_fly_atk_02",
+        "type": "GameObject",
+        "path_id": 11
+      },
+      {
+        "entry": "assets/bin/Data/ff6795ea72b709d459c6265517163163",
+        "name": "ef_atk_magic_01_ms",
+        "type": "GameObject",
+        "path_id": 6
+      },
+      {
+        "entry": "assets/bin/Data/ffac262da9792054dab96ecb429b8fa3",
+        "name": "wat006_msk",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/level1",
+        "name": "TERMS_DIALOG_TITLE",
+        "type": "GameObject",
+        "path_id": 67
+      },
+      {
+        "entry": "assets/bin/Data/level1",
+        "name": "Dialog_TermsOfUse",
+        "type": "GameObject",
+        "path_id": 97
+      },
+      {
+        "entry": "assets/bin/Data/level1",
+        "name": "TERMS_DIALOG_MESSAGE",
+        "type": "GameObject",
+        "path_id": 142
+      },
+      {
+        "entry": "assets/bin/Data/level2",
+        "name": "Panel_1_MsgDialog",
+        "type": "GameObject",
+        "path_id": 71
+      },
+      {
+        "entry": "assets/bin/Data/level5",
+        "name": "touch_msg",
+        "type": "GameObject",
+        "path_id": 544
+      }
+    ],
+    "containers": [],
+    "errors": []
+  }
+]

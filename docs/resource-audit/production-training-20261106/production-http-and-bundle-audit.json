@@ -1,0 +1,2365 @@
+{
+  "revision": 40,
+  "quests": [
+    {
+      "quest_id": 25061,
+      "name": "光の魂たち・初級",
+      "open": true,
+      "blocked": false,
+      "map": 19,
+      "map_dimensions": [
+        9,
+        32
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10002,
+        10032,
+        10502,
+        12104,
+        31010
+      ]
+    },
+    {
+      "quest_id": 25062,
+      "name": "光の魂たち・中級",
+      "open": true,
+      "blocked": false,
+      "map": 19,
+      "map_dimensions": [
+        9,
+        36
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10012,
+        10032,
+        10112,
+        10512,
+        12105,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25063,
+      "name": "光の魂たち・上級",
+      "open": true,
+      "blocked": false,
+      "map": 19,
+      "map_dimensions": [
+        9,
+        40
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10022,
+        10032,
+        10122,
+        10322,
+        12106,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25073,
+      "name": "火の魂たち・初級",
+      "open": true,
+      "blocked": false,
+      "map": 38,
+      "map_dimensions": [
+        9,
+        32
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10000,
+        10030,
+        10300,
+        12104,
+        31010
+      ]
+    },
+    {
+      "quest_id": 25074,
+      "name": "火の魂たち・中級",
+      "open": true,
+      "blocked": false,
+      "map": 38,
+      "map_dimensions": [
+        9,
+        36
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10010,
+        10030,
+        10310,
+        10400,
+        12105,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25075,
+      "name": "火の魂たち・上級",
+      "open": true,
+      "blocked": false,
+      "map": 38,
+      "map_dimensions": [
+        9,
+        40
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10020,
+        10030,
+        10220,
+        10410,
+        12106,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25076,
+      "name": "水の魂たち・初級",
+      "open": true,
+      "blocked": false,
+      "map": 4,
+      "map_dimensions": [
+        9,
+        32
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10001,
+        10031,
+        10501,
+        12104,
+        31010
+      ]
+    },
+    {
+      "quest_id": 25077,
+      "name": "水の魂たち・中級",
+      "open": true,
+      "blocked": false,
+      "map": 4,
+      "map_dimensions": [
+        9,
+        36
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10011,
+        10031,
+        10221,
+        10511,
+        12105,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25078,
+      "name": "水の魂たち・上級",
+      "open": true,
+      "blocked": false,
+      "map": 4,
+      "map_dimensions": [
+        9,
+        40
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10021,
+        10031,
+        10131,
+        10231,
+        12106,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25079,
+      "name": "闇の魂たち・初級",
+      "open": true,
+      "blocked": false,
+      "map": 31,
+      "map_dimensions": [
+        9,
+        32
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10003,
+        10033,
+        10203,
+        12104,
+        31010
+      ]
+    },
+    {
+      "quest_id": 25080,
+      "name": "闇の魂たち・中級",
+      "open": true,
+      "blocked": false,
+      "map": 31,
+      "map_dimensions": [
+        9,
+        36
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10013,
+        10033,
+        10113,
+        10213,
+        12105,
+        31020
+      ]
+    },
+    {
+      "quest_id": 25081,
+      "name": "闇の魂たち・上級",
+      "open": true,
+      "blocked": false,
+      "map": 31,
+      "map_dimensions": [
+        9,
+        40
+      ],
+      "map_data_valid": true,
+      "enemies": [
+        10023,
+        10033,
+        10123,
+        10423,
+        12106,
+        31020
+      ]
+    }
+  ],
+  "enemy_records": [
+    {
+      "id": 10002,
+      "name": "スライム[光]",
+      "model": "ms01_sla_lv1",
+      "texture": "ms01_sla_lv1_holy",
+      "shadow": 3,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 4,
+      "soul_pt": 1,
+      "gold_pt": 200,
+      "up_life": 28,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4100,
+      "attack": 2320,
+      "defense": 170,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10032,
+      "name": "カイザー・スライム[光]",
+      "model": "ms01_sla_lv4",
+      "texture": "ms01_sla_lv4_holy",
+      "shadow": 18,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 6100,
+      "attack": 2720,
+      "defense": 220,
+      "turn": 3,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10502,
+      "name": "スコーピオン[光]",
+      "model": "ms01_sco_lv1",
+      "texture": "ms01_sco_lv1_holy",
+      "shadow": 103,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 6,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 6,
+      "up_attack": 3,
+      "up_defense": 5,
+      "life": 7200,
+      "attack": 4420,
+      "defense": 940,
+      "turn": 2,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 12104,
+      "name": "メタル・スライム＄",
+      "model": "ms01_sla_lv1_silver",
+      "texture": "na",
+      "shadow": 148,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 14,
+      "attribute": 1,
+      "soul_pt": 2,
+      "gold_pt": 400,
+      "up_life": 31,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 5000,
+      "attack": 2960,
+      "defense": 120,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 31010,
+      "name": "ハデス(ペナルティ初級)",
+      "model": "ms00_death_01",
+      "texture": "na",
+      "shadow": 147,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 13,
+      "attribute": 1,
+      "soul_pt": 10,
+      "gold_pt": 0,
+      "up_life": 25,
+      "up_attack": 12,
+      "up_defense": 2,
+      "life": 4970,
+      "attack": 2350,
+      "defense": 120,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10012,
+      "name": "ハイ・スライム[光]",
+      "model": "ms01_sla_lv2",
+      "texture": "ms01_sla_lv2_holy",
+      "shadow": 8,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 4,
+      "soul_pt": 1,
+      "gold_pt": 250,
+      "up_life": 30,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4700,
+      "attack": 2470,
+      "defense": 190,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10112,
+      "name": "ハイ・スクィレル[光]",
+      "model": "ms01_squ_lv2",
+      "texture": "ms01_squ_lv2_holy",
+      "shadow": 28,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 2,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 5350,
+      "attack": 2170,
+      "defense": 370,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10512,
+      "name": "ハイ・スコーピオン[光]",
+      "model": "ms01_sco_lv2",
+      "texture": "ms01_sco_lv2_holy",
+      "shadow": 108,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 6,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 400,
+      "up_life": 6,
+      "up_attack": 3,
+      "up_defense": 5,
+      "life": 7700,
+      "attack": 4870,
+      "defense": 990,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 12105,
+      "name": "ハイ・メタスラ＄",
+      "model": "ms01_sla_lv2_silver",
+      "texture": "na",
+      "shadow": 149,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 14,
+      "attribute": 1,
+      "soul_pt": 2,
+      "gold_pt": 800,
+      "up_life": 34,
+      "up_attack": 6,
+      "up_defense": 3,
+      "life": 5860,
+      "attack": 3410,
+      "defense": 165,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 31020,
+      "name": "ハデス(ペナルティ中級)",
+      "model": "ms00_death_01",
+      "texture": "na",
+      "shadow": 147,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 13,
+      "attribute": 1,
+      "soul_pt": 10,
+      "gold_pt": 0,
+      "up_life": 27,
+      "up_attack": 12,
+      "up_defense": 2,
+      "life": 8900,
+      "attack": 3160,
+      "defense": 360,
+      "turn": 2,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10022,
+      "name": "キラー・スライム[光]",
+      "model": "ms01_sla_lv3",
+      "texture": "ms01_sla_lv3_holy",
+      "shadow": 13,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 5300,
+      "attack": 2620,
+      "defense": 200,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10122,
+      "name": "キラー・スクィレル[光]",
+      "model": "ms01_squ_lv3",
+      "texture": "ms01_squ_lv3_holy",
+      "shadow": 33,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 2,
+      "attribute": 4,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 6,
+      "up_defense": 3,
+      "life": 5900,
+      "attack": 2420,
+      "defense": 400,
+      "turn": 2,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10322,
+      "name": "キラー・ドラン[光]",
+      "model": "ms01_dra_lv3",
+      "texture": "ms01_dra_lv3_holy",
+      "shadow": 73,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 4,
+      "attribute": 4,
+      "soul_pt": 3,
+      "gold_pt": 400,
+      "up_life": 21,
+      "up_attack": 5,
+      "up_defense": 4,
+      "life": 8500,
+      "attack": 3820,
+      "defense": 430,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 12106,
+      "name": "キラー・メタスラ＄",
+      "model": "ms01_sla_lv3_silver",
+      "texture": "na",
+      "shadow": 150,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 14,
+      "attribute": 1,
+      "soul_pt": 2,
+      "gold_pt": 1200,
+      "up_life": 35,
+      "up_attack": 7,
+      "up_defense": 3,
+      "life": 7710,
+      "attack": 3950,
+      "defense": 210,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10000,
+      "name": "スライム[火]",
+      "model": "ms01_sla_lv1",
+      "texture": "ms01_sla_lv1_fire",
+      "shadow": 1,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 2,
+      "soul_pt": 1,
+      "gold_pt": 200,
+      "up_life": 28,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 3800,
+      "attack": 2500,
+      "defense": 155,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10030,
+      "name": "カイザー・スライム[火]",
+      "model": "ms01_sla_lv4",
+      "texture": "ms01_sla_lv4_fire",
+      "shadow": 16,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 2,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 5800,
+      "attack": 2900,
+      "defense": 205,
+      "turn": 3,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10300,
+      "name": "ドラン[火]",
+      "model": "ms01_dra_lv1",
+      "texture": "ms01_dra_lv1_fire",
+      "shadow": 61,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 4,
+      "attribute": 2,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 18,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 7500,
+      "attack": 3300,
+      "defense": 330,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10010,
+      "name": "ハイ・スライム[火]",
+      "model": "ms01_sla_lv2",
+      "texture": "ms01_sla_lv2_fire",
+      "shadow": 6,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 2,
+      "soul_pt": 1,
+      "gold_pt": 250,
+      "up_life": 30,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4400,
+      "attack": 2650,
+      "defense": 175,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10310,
+      "name": "ハイ・ドラン[火]",
+      "model": "ms01_dra_lv2",
+      "texture": "ms01_dra_lv2_fire",
+      "shadow": 66,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 4,
+      "attribute": 2,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 20,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 7700,
+      "attack": 3850,
+      "defense": 360,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10400,
+      "name": "グリズリー[火]",
+      "model": "ms01_bear_lv1",
+      "texture": "ms01_bear_lv1_fire",
+      "shadow": 81,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 5,
+      "attribute": 2,
+      "soul_pt": 2,
+      "gold_pt": 400,
+      "up_life": 12,
+      "up_attack": 2,
+      "up_defense": 1,
+      "life": 15300,
+      "attack": 5400,
+      "defense": 160,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10020,
+      "name": "キラー・スライム[火]",
+      "model": "ms01_sla_lv3",
+      "texture": "ms01_sla_lv3_fire",
+      "shadow": 11,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 2,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 5000,
+      "attack": 2800,
+      "defense": 185,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10220,
+      "name": "キラー・ウルフ[火]",
+      "model": "ms01_wolf_lv3",
+      "texture": "ms01_wolf_lv3_fire",
+      "shadow": 51,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 3,
+      "attribute": 2,
+      "soul_pt": 3,
+      "gold_pt": 400,
+      "up_life": 33,
+      "up_attack": 6,
+      "up_defense": 3,
+      "life": 4200,
+      "attack": 4300,
+      "defense": 220,
+      "turn": 2,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10410,
+      "name": "ハイ・グリズリー[火]",
+      "model": "ms01_bear_lv2",
+      "texture": "ms01_bear_lv2_fire",
+      "shadow": 86,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 5,
+      "attribute": 2,
+      "soul_pt": 3,
+      "gold_pt": 450,
+      "up_life": 12,
+      "up_attack": 3,
+      "up_defense": 1,
+      "life": 17300,
+      "attack": 6000,
+      "defense": 210,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10001,
+      "name": "スライム[水]",
+      "model": "ms01_sla_lv1",
+      "texture": "ms01_sla_lv1_water",
+      "shadow": 2,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 3,
+      "soul_pt": 1,
+      "gold_pt": 200,
+      "up_life": 28,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4200,
+      "attack": 2360,
+      "defense": 160,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10031,
+      "name": "カイザー・スライム[水]",
+      "model": "ms01_sla_lv4",
+      "texture": "ms01_sla_lv4_water",
+      "shadow": 17,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 3,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 6200,
+      "attack": 2760,
+      "defense": 210,
+      "turn": 3,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10501,
+      "name": "スコーピオン[水]",
+      "model": "ms01_sco_lv1",
+      "texture": "ms01_sco_lv1_water",
+      "shadow": 102,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 6,
+      "attribute": 3,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 6,
+      "up_attack": 3,
+      "up_defense": 5,
+      "life": 7300,
+      "attack": 4460,
+      "defense": 920,
+      "turn": 2,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10011,
+      "name": "ハイ・スライム[水]",
+      "model": "ms01_sla_lv2",
+      "texture": "ms01_sla_lv2_water",
+      "shadow": 7,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 3,
+      "soul_pt": 1,
+      "gold_pt": 250,
+      "up_life": 30,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4800,
+      "attack": 2510,
+      "defense": 180,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10221,
+      "name": "キラー・ウルフ[水]",
+      "model": "ms01_wolf_lv3",
+      "texture": "ms01_wolf_lv3_water",
+      "shadow": 52,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 3,
+      "attribute": 3,
+      "soul_pt": 3,
+      "gold_pt": 400,
+      "up_life": 33,
+      "up_attack": 6,
+      "up_defense": 3,
+      "life": 4600,
+      "attack": 4160,
+      "defense": 230,
+      "turn": 2,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10511,
+      "name": "ハイ・スコーピオン[水]",
+      "model": "ms01_sco_lv2",
+      "texture": "ms01_sco_lv2_water",
+      "shadow": 107,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 6,
+      "attribute": 3,
+      "soul_pt": 2,
+      "gold_pt": 400,
+      "up_life": 6,
+      "up_attack": 3,
+      "up_defense": 5,
+      "life": 7800,
+      "attack": 4910,
+      "defense": 970,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10021,
+      "name": "キラー・スライム[水]",
+      "model": "ms01_sla_lv3",
+      "texture": "ms01_sla_lv3_water",
+      "shadow": 12,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 3,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 5400,
+      "attack": 2660,
+      "defense": 190,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10131,
+      "name": "カイザー・スクィレル[水]",
+      "model": "ms01_squ_lv4",
+      "texture": "ms01_squ_lv4_water",
+      "shadow": 37,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 2,
+      "attribute": 3,
+      "soul_pt": 2,
+      "gold_pt": 400,
+      "up_life": 36,
+      "up_attack": 6,
+      "up_defense": 4,
+      "life": 6400,
+      "attack": 2610,
+      "defense": 400,
+      "turn": 3,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10231,
+      "name": "カイザー・ウルフ[水]",
+      "model": "ms01_wolf_lv4",
+      "texture": "ms01_wolf_lv4_water",
+      "shadow": 57,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 3,
+      "attribute": 3,
+      "soul_pt": 3,
+      "gold_pt": 450,
+      "up_life": 38,
+      "up_attack": 7,
+      "up_defense": 3,
+      "life": 4700,
+      "attack": 4410,
+      "defense": 240,
+      "turn": 2,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10003,
+      "name": "スライム[闇]",
+      "model": "ms01_sla_lv1",
+      "texture": "ms01_sla_lv1_dark",
+      "shadow": 4,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 5,
+      "soul_pt": 1,
+      "gold_pt": 200,
+      "up_life": 28,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 3900,
+      "attack": 2440,
+      "defense": 140,
+      "turn": 3,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10033,
+      "name": "カイザー・スライム[闇]",
+      "model": "ms01_sla_lv4",
+      "texture": "ms01_sla_lv4_dark",
+      "shadow": 19,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 5900,
+      "attack": 2840,
+      "defense": 190,
+      "turn": 3,
+      "ui": 4,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10203,
+      "name": "ウルフ[闇]",
+      "model": "ms01_wolf_lv1",
+      "texture": "ms01_wolf_lv1_dark",
+      "shadow": 44,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 3,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 27,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4000,
+      "attack": 3840,
+      "defense": 140,
+      "turn": 2,
+      "ui": 1,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10013,
+      "name": "ハイ・スライム[闇]",
+      "model": "ms01_sla_lv2",
+      "texture": "ms01_sla_lv2_dark",
+      "shadow": 9,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 5,
+      "soul_pt": 1,
+      "gold_pt": 250,
+      "up_life": 30,
+      "up_attack": 4,
+      "up_defense": 2,
+      "life": 4500,
+      "attack": 2590,
+      "defense": 160,
+      "turn": 3,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10113,
+      "name": "ハイ・スクィレル[闇]",
+      "model": "ms01_squ_lv2",
+      "texture": "ms01_squ_lv2_dark",
+      "shadow": 29,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 2,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 5,
+      "up_defense": 3,
+      "life": 5150,
+      "attack": 2290,
+      "defense": 320,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10213,
+      "name": "ハイ・ウルフ[闇]",
+      "model": "ms01_wolf_lv2",
+      "texture": "ms01_wolf_lv2_dark",
+      "shadow": 49,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 3,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 30,
+      "up_attack": 5,
+      "up_defense": 2,
+      "life": 4150,
+      "attack": 4090,
+      "defense": 170,
+      "turn": 2,
+      "ui": 2,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10023,
+      "name": "キラー・スライム[闇]",
+      "model": "ms01_sla_lv3",
+      "texture": "ms01_sla_lv3_dark",
+      "shadow": 14,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 1,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 300,
+      "up_life": 32,
+      "up_attack": 4,
+      "up_defense": 3,
+      "life": 5100,
+      "attack": 2740,
+      "defense": 170,
+      "turn": 3,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10123,
+      "name": "キラー・スクィレル[闇]",
+      "model": "ms01_squ_lv3",
+      "texture": "ms01_squ_lv3_dark",
+      "shadow": 34,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 2,
+      "attribute": 5,
+      "soul_pt": 2,
+      "gold_pt": 350,
+      "up_life": 34,
+      "up_attack": 6,
+      "up_defense": 3,
+      "life": 5700,
+      "attack": 2540,
+      "defense": 350,
+      "turn": 2,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    },
+    {
+      "id": 10423,
+      "name": "キラー・グリズリー[闇]",
+      "model": "ms01_bear_lv3",
+      "texture": "ms01_bear_lv3_dark",
+      "shadow": 94,
+      "chara_kind": 0,
+      "chara_symbol": 0,
+      "chara_g_id": 0,
+      "type": 5,
+      "attribute": 5,
+      "soul_pt": 3,
+      "gold_pt": 500,
+      "up_life": 13,
+      "up_attack": 3,
+      "up_defense": 2,
+      "life": 17900,
+      "attack": 7140,
+      "defense": 210,
+      "turn": 4,
+      "ui": 3,
+      "flag": 0,
+      "atk_ef_id": 1,
+      "pat": 0,
+      "p0": 0,
+      "p1": 0
+    }
+  ],
+  "bundles": {
+    "ms00_death_01": {
+      "bundle": "ms00_death_01.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms00_death_01.unity3d"
+      },
+      "sha256": "b44bbc07fb1b93f94814844a319aa6d521fb36a46c9442cd652d96026ec63d1a",
+      "source": "resources/bundles/ms00_death_01.unity3d",
+      "manifest_sha256_match": null,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms00_death_01"
+      ],
+      "expected_textures": [],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms00_death_01",
+          "type": "GameObject",
+          "path_id": 8
+        },
+        {
+          "name": "ms00_death_01",
+          "type": "Texture2D",
+          "path_id": 3
+        },
+        {
+          "name": "ms00_death_01",
+          "type": "GameObject",
+          "path_id": 9
+        },
+        {
+          "name": "ms00_death_01",
+          "type": "Mesh",
+          "path_id": 4
+        },
+        {
+          "name": "ms00_death_01",
+          "type": "Material",
+          "path_id": 2
+        }
+      ],
+      "reachable_objects": 71,
+      "reachable_types": {
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1,
+        "Mesh": 1,
+        "GameObject": 30,
+        "Animation": 3,
+        "Transform": 30,
+        "SkinnedMeshRenderer": 2,
+        "AnimationClip": 2
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_bear_lv1": {
+      "bundle": "ms01_bear_lv1.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_bear_lv1.unity3d"
+      },
+      "sha256": "c98b09306a417c85a87d90335a6f185ae30ac578bd0dd942cbd0ec431a01a0bf",
+      "source": "resources/reconstructed/monsters/bundles/ms01_bear_lv1.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_bear_lv1_dark",
+        "ms01_bear_lv1_fire",
+        "ms01_bear_lv1_holy",
+        "ms01_bear_lv1_un",
+        "ms01_bear_lv1_water"
+      ],
+      "expected_textures": [
+        "ms01_bear_lv1_fire"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_bear_lv1",
+          "type": "GameObject",
+          "path_id": 12
+        }
+      ],
+      "reachable_objects": 57,
+      "reachable_types": {
+        "GameObject": 24,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 24,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_bear_lv2": {
+      "bundle": "ms01_bear_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_bear_lv2.unity3d"
+      },
+      "sha256": "f9564e556268aa4d5e089747062ec65ec6a51fb7a1af21bbdd9ef58b3bf0abc7",
+      "source": "resources/reconstructed/monsters/bundles/ms01_bear_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_bear_lv2_dark",
+        "ms01_bear_lv2_fire",
+        "ms01_bear_lv2_holy",
+        "ms01_bear_lv2_un",
+        "ms01_bear_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_bear_lv2_fire"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_bear_lv2",
+          "type": "GameObject",
+          "path_id": 12
+        }
+      ],
+      "reachable_objects": 57,
+      "reachable_types": {
+        "GameObject": 24,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 24,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_bear_lv3": {
+      "bundle": "ms01_bear_lv3.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_bear_lv3.unity3d"
+      },
+      "sha256": "6c8caf6834cae18f1d202f945e617aa1bfa8a60d2678139bae984edc41905a12",
+      "source": "resources/bundles/ms01_bear_lv3.unity3d",
+      "manifest_sha256_match": null,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_bear_lv3_dark",
+        "ms01_bear_lv3_fire",
+        "ms01_bear_lv3_holy",
+        "ms01_bear_lv3_water"
+      ],
+      "expected_textures": [
+        "ms01_bear_lv3_dark"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_bear_lv3",
+          "type": "GameObject",
+          "path_id": 11
+        },
+        {
+          "name": "ms01_bear_lv3",
+          "type": "Material",
+          "path_id": 2
+        },
+        {
+          "name": "ms01_bear_lv3",
+          "type": "GameObject",
+          "path_id": 45
+        },
+        {
+          "name": "ms01_bear_lv3",
+          "type": "Mesh",
+          "path_id": 7
+        }
+      ],
+      "reachable_objects": 107,
+      "reachable_types": {
+        "Mesh": 1,
+        "GameObject": 48,
+        "Animation": 3,
+        "Transform": 48,
+        "SkinnedMeshRenderer": 2,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1,
+        "AnimationClip": 2
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_dra_lv1": {
+      "bundle": "ms01_dra_lv1.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_dra_lv1.unity3d"
+      },
+      "sha256": "60fc99755c528bb024f5d850e3cbd5af91080dfa7b4ae14f16cd025cdc77e8d3",
+      "source": "resources/reconstructed/monsters/bundles/ms01_dra_lv1.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_dra_lv1_dark",
+        "ms01_dra_lv1_fire",
+        "ms01_dra_lv1_holy",
+        "ms01_dra_lv1_un",
+        "ms01_dra_lv1_water"
+      ],
+      "expected_textures": [
+        "ms01_dra_lv1_fire"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_dra_lv1",
+          "type": "GameObject",
+          "path_id": 12
+        }
+      ],
+      "reachable_objects": 22,
+      "reachable_types": {
+        "GameObject": 7,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 7,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_dra_lv2": {
+      "bundle": "ms01_dra_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_dra_lv2.unity3d"
+      },
+      "sha256": "76c9946ecdb53a5ad5377762ad552395112b2683462b162d5e688adddf88feb2",
+      "source": "resources/reconstructed/monsters/bundles/ms01_dra_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_dra_lv2_dark",
+        "ms01_dra_lv2_fire",
+        "ms01_dra_lv2_holy",
+        "ms01_dra_lv2_un",
+        "ms01_dra_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_dra_lv2_fire"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_dra_lv2",
+          "type": "GameObject",
+          "path_id": 12
+        }
+      ],
+      "reachable_objects": 22,
+      "reachable_types": {
+        "GameObject": 7,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 7,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_dra_lv3": {
+      "bundle": "ms01_dra_lv3.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_dra_lv3.unity3d"
+      },
+      "sha256": "a8a5ccbf3184b2caa90d786de7f3d58b3aabcee09791c249af2b93ba92fc37a1",
+      "source": "resources/reconstructed/monsters/bundles/ms01_dra_lv3.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_dra_lv3_dark",
+        "ms01_dra_lv3_fire",
+        "ms01_dra_lv3_holy",
+        "ms01_dra_lv3_un",
+        "ms01_dra_lv3_water"
+      ],
+      "expected_textures": [
+        "ms01_dra_lv3_holy"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_dra_lv3",
+          "type": "GameObject",
+          "path_id": 12
+        }
+      ],
+      "reachable_objects": 23,
+      "reachable_types": {
+        "GameObject": 7,
+        "Animation": 3,
+        "AnimationClip": 2,
+        "Transform": 7,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sco_lv1": {
+      "bundle": "ms01_sco_lv1.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sco_lv1.unity3d"
+      },
+      "sha256": "08215dcc1cba54de7bad7ec1fc9005c812d048ed3aea81f89907581bfea9db28",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sco_lv1.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sco_dark_02",
+        "ms01_sco_lv1_dark",
+        "ms01_sco_lv1_fire",
+        "ms01_sco_lv1_holy",
+        "ms01_sco_lv1_un",
+        "ms01_sco_lv1_water"
+      ],
+      "expected_textures": [
+        "ms01_sco_lv1_holy",
+        "ms01_sco_lv1_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sco_lv1",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 43,
+      "reachable_types": {
+        "GameObject": 17,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 17,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sco_lv2": {
+      "bundle": "ms01_sco_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sco_lv2.unity3d"
+      },
+      "sha256": "8c4014cf43ed1c49f27778f45c2e9e4877a2c17b89dd9117a9226f392887bf8a",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sco_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sco_dark_02",
+        "ms01_sco_lv2_dark",
+        "ms01_sco_lv2_fire",
+        "ms01_sco_lv2_holy",
+        "ms01_sco_lv2_un",
+        "ms01_sco_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_sco_lv2_holy",
+        "ms01_sco_lv2_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sco_lv2",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 43,
+      "reachable_types": {
+        "GameObject": 17,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 17,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv1_silver": {
+      "bundle": "ms01_sla_lv1_silver.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv1_silver.unity3d"
+      },
+      "sha256": "d668a0bcf6b273cc525f652c12328e6d9d926150be365788e5e095d6fc6515b0",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv1_silver.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv1_silver"
+      ],
+      "expected_textures": [],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv1_silver",
+          "type": "GameObject",
+          "path_id": 8
+        },
+        {
+          "name": "ms01_sla_lv1_silver",
+          "type": "Texture2D",
+          "path_id": 10000
+        }
+      ],
+      "reachable_objects": 19,
+      "reachable_types": {
+        "Texture2D": 1,
+        "GameObject": 5,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 5,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv2": {
+      "bundle": "ms01_sla_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv2.unity3d"
+      },
+      "sha256": "27daea1cfe7b78043ce595098b94b0268264ac2d481dd9560f3e7a3bec4e32da",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv1_fire",
+        "ms01_sla_lv2_dark",
+        "ms01_sla_lv2_fire",
+        "ms01_sla_lv2_holy",
+        "ms01_sla_lv2_un",
+        "ms01_sla_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_sla_lv2_dark",
+        "ms01_sla_lv2_fire",
+        "ms01_sla_lv2_holy",
+        "ms01_sla_lv2_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv2",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 17,
+      "reachable_types": {
+        "GameObject": 4,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 4,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv2_silver": {
+      "bundle": "ms01_sla_lv2_silver.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv2_silver.unity3d"
+      },
+      "sha256": "7b105af5367165399b9fd75f016cad5905c9f6fcc83968798830df1c3a39e7e9",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv2_silver.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv2_silver"
+      ],
+      "expected_textures": [],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv2_silver",
+          "type": "GameObject",
+          "path_id": 8
+        },
+        {
+          "name": "ms01_sla_lv2_silver",
+          "type": "Texture2D",
+          "path_id": 10000
+        }
+      ],
+      "reachable_objects": 19,
+      "reachable_types": {
+        "Texture2D": 1,
+        "GameObject": 5,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 5,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv3": {
+      "bundle": "ms01_sla_lv3.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv3.unity3d"
+      },
+      "sha256": "a861bb2c88a6781a2dd2d93d47c879c6f8b4b5050b06e7f7227f6f1bebe3ecae",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv3.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv1_fire",
+        "ms01_sla_lv3_dark",
+        "ms01_sla_lv3_fire",
+        "ms01_sla_lv3_holy",
+        "ms01_sla_lv3_un",
+        "ms01_sla_lv3_water"
+      ],
+      "expected_textures": [
+        "ms01_sla_lv3_dark",
+        "ms01_sla_lv3_fire",
+        "ms01_sla_lv3_holy",
+        "ms01_sla_lv3_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv3",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 17,
+      "reachable_types": {
+        "GameObject": 4,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 4,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv3_silver": {
+      "bundle": "ms01_sla_lv3_silver.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv3_silver.unity3d"
+      },
+      "sha256": "a8ee2beea5128ca5f675eb2c37a335fbebd8e9aba15bfea64ff26378e7ed9a8a",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv3_silver.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv3_silver"
+      ],
+      "expected_textures": [],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv3_silver",
+          "type": "GameObject",
+          "path_id": 8
+        },
+        {
+          "name": "ms01_sla_lv3_silver",
+          "type": "Texture2D",
+          "path_id": 10000
+        }
+      ],
+      "reachable_objects": 19,
+      "reachable_types": {
+        "Texture2D": 1,
+        "GameObject": 5,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 5,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_sla_lv4": {
+      "bundle": "ms01_sla_lv4.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_sla_lv4.unity3d"
+      },
+      "sha256": "a7a6869d32aef376efc5065cd08f6e638873d00e0437688bf477f697db346c9c",
+      "source": "resources/reconstructed/monsters/bundles/ms01_sla_lv4.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_sla_lv1_fire",
+        "ms01_sla_lv4_dark",
+        "ms01_sla_lv4_fire",
+        "ms01_sla_lv4_holy",
+        "ms01_sla_lv4_un",
+        "ms01_sla_lv4_water"
+      ],
+      "expected_textures": [
+        "ms01_sla_lv4_dark",
+        "ms01_sla_lv4_fire",
+        "ms01_sla_lv4_holy",
+        "ms01_sla_lv4_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_sla_lv4",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 17,
+      "reachable_types": {
+        "GameObject": 4,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 4,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_squ_lv2": {
+      "bundle": "ms01_squ_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_squ_lv2.unity3d"
+      },
+      "sha256": "bc4e189bbd12ebb351d85f941749ebef3659e7186c2e2491d42997e69df7a7c1",
+      "source": "resources/reconstructed/monsters/bundles/ms01_squ_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_squ_lv2_dark",
+        "ms01_squ_lv2_fire",
+        "ms01_squ_lv2_holy",
+        "ms01_squ_lv2_un",
+        "ms01_squ_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_squ_lv2_dark",
+        "ms01_squ_lv2_holy"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_squ_lv2",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 30,
+      "reachable_types": {
+        "GameObject": 11,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 11,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_squ_lv3": {
+      "bundle": "ms01_squ_lv3.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_squ_lv3.unity3d"
+      },
+      "sha256": "a39a5ffc7e7692c1590dafb6fbcd25e01fba8a20d64d5c758f7a79cf8a4c17e4",
+      "source": "resources/reconstructed/monsters/bundles/ms01_squ_lv3.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_squ_lv3_dark",
+        "ms01_squ_lv3_fire",
+        "ms01_squ_lv3_holy",
+        "ms01_squ_lv3_un",
+        "ms01_squ_lv3_water"
+      ],
+      "expected_textures": [
+        "ms01_squ_lv3_dark",
+        "ms01_squ_lv3_holy"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_squ_lv3",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 30,
+      "reachable_types": {
+        "GameObject": 11,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 11,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_squ_lv4": {
+      "bundle": "ms01_squ_lv4.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_squ_lv4.unity3d"
+      },
+      "sha256": "a5d7f672892aaf1a742c16ac69869f14dd6e09ebef201fc9f72e2774564eecde",
+      "source": "resources/reconstructed/monsters/bundles/ms01_squ_lv4.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "ms01_squ_lv4_dark",
+        "ms01_squ_lv4_fire",
+        "ms01_squ_lv4_holy",
+        "ms01_squ_lv4_un",
+        "ms01_squ_lv4_water"
+      ],
+      "expected_textures": [
+        "ms01_squ_lv4_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_squ_lv4",
+          "type": "GameObject",
+          "path_id": 100
+        }
+      ],
+      "reachable_objects": 30,
+      "reachable_types": {
+        "GameObject": 11,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 11,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_wolf_lv1": {
+      "bundle": "ms01_wolf_lv1.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_wolf_lv1.unity3d"
+      },
+      "sha256": "c0155a9c5e31fa5f9cf2397f177a4ba2f40c1062872e4db41c5c7967769f064f",
+      "source": "resources/reconstructed/monsters/bundles/ms01_wolf_lv1.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "330_ms01_wolf_lv1_d_01",
+        "ms01_wolf_lv1_dark",
+        "ms01_wolf_lv1_fire",
+        "ms01_wolf_lv1_holy",
+        "ms01_wolf_lv1_un",
+        "ms01_wolf_lv1_water"
+      ],
+      "expected_textures": [
+        "ms01_wolf_lv1_dark"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_wolf_lv1",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 61,
+      "reachable_types": {
+        "GameObject": 26,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 26,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_wolf_lv2": {
+      "bundle": "ms01_wolf_lv2.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_wolf_lv2.unity3d"
+      },
+      "sha256": "1a12be9dc1b9290c1d7ca70b01cc532ff94f7efc486bb01b8ee55ef2d8088647",
+      "source": "resources/reconstructed/monsters/bundles/ms01_wolf_lv2.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "330_ms01_wolf_lv1_d_01",
+        "ms01_wolf_lv2_dark",
+        "ms01_wolf_lv2_fire",
+        "ms01_wolf_lv2_holy",
+        "ms01_wolf_lv2_un",
+        "ms01_wolf_lv2_water"
+      ],
+      "expected_textures": [
+        "ms01_wolf_lv2_dark"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_wolf_lv2",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 61,
+      "reachable_types": {
+        "GameObject": 26,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 26,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_wolf_lv3": {
+      "bundle": "ms01_wolf_lv3.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_wolf_lv3.unity3d"
+      },
+      "sha256": "2a558e006dec0f1e79328fcc9c3ecb5780f56da8b104ba4c02a54a09bfd24fbd",
+      "source": "resources/reconstructed/monsters/bundles/ms01_wolf_lv3.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "330_ms01_wolf_lv1_d_01",
+        "ms01_wolf_lv3_dark",
+        "ms01_wolf_lv3_fire",
+        "ms01_wolf_lv3_holy",
+        "ms01_wolf_lv3_un",
+        "ms01_wolf_lv3_water"
+      ],
+      "expected_textures": [
+        "ms01_wolf_lv3_fire",
+        "ms01_wolf_lv3_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_wolf_lv3",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 61,
+      "reachable_types": {
+        "GameObject": 26,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 26,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    },
+    "ms01_wolf_lv4": {
+      "bundle": "ms01_wolf_lv4.unity3d",
+      "definition": {
+        "version": 1,
+        "path": "Android/V1011/ms01_wolf_lv4.unity3d"
+      },
+      "sha256": "4359ed3e5602a90d114b77249116ae2b65e96e1bcc4e65be14971055bde94c5a",
+      "source": "resources/reconstructed/monsters/bundles/ms01_wolf_lv4.unity3d",
+      "manifest_sha256_match": true,
+      "http_status": 200,
+      "http_sha256_match": true,
+      "texture_names": [
+        "330_ms01_wolf_lv1_d_01",
+        "ms01_wolf_lv4_dark",
+        "ms01_wolf_lv4_fire",
+        "ms01_wolf_lv4_holy",
+        "ms01_wolf_lv4_un",
+        "ms01_wolf_lv4_water"
+      ],
+      "expected_textures": [
+        "ms01_wolf_lv4_water"
+      ],
+      "named_texture_misses": [],
+      "exports": [
+        {
+          "name": "ast_ms01_wolf_lv4",
+          "type": "GameObject",
+          "path_id": 8
+        }
+      ],
+      "reachable_objects": 61,
+      "reachable_types": {
+        "GameObject": 26,
+        "Animation": 2,
+        "AnimationClip": 2,
+        "Transform": 26,
+        "SkinnedMeshRenderer": 1,
+        "Mesh": 1,
+        "Material": 1,
+        "Texture2D": 1,
+        "Shader": 1
+      },
+      "dependency_issues": [],
+      "status": "verified"
+    }
+  },
+  "local_models": [
+    "ms01_sla_lv1"
+  ]
+}

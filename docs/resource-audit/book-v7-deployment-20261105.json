@@ -1,0 +1,16 @@
+{
+  "status": "deployed",
+  "bundles": 6,
+  "http_hashes_verified": 6,
+  "effective_configuration_unchanged": true,
+  "other_resources_unchanged": true,
+  "backup": "backups/deployment/book-root-animation-v7-20261105T163912Z",
+  "runtime_verified": false,
+  "production_files_verified": 7,
+  "runtime_feedback": {
+    "date": "2026-11-05",
+    "book_hover_observed": false,
+    "status": "hover_not_observed_pending_investigation",
+    "cache_version_confirmed": false
+  }
+}

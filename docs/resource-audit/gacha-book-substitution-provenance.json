@@ -1,0 +1,254 @@
+[
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_01",
+    "source_rect_xywh": [
+      381,
+      0,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "d6b64d1f283efb828eac3a9051602da6855f88814504afc7bde901a995d4af95",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_01",
+    "generated_bundle": "ms00_book_el_01.unity3d",
+    "generated_sha256": "1e7bdbc30ad58c7794e345c3c9fa2e4385eb351dd9c6db593269c6c4760d978b",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-ea7d841ba3333b3cb43d46aeff4c21a3"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  },
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_02",
+    "source_rect_xywh": [
+      342,
+      272,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "3d7ecb9bfc02a8f871d28803a8db3f5b88c3d6a48582d54112875e24584c7b26",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_02",
+    "generated_bundle": "ms00_book_el_02.unity3d",
+    "generated_sha256": "82214946228c96f90d45d01dc5a7b39db1bbcf9352e41c8d83172e191a091d63",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-3f494f663b803d911cd7edb3c637b167"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  },
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_03",
+    "source_rect_xywh": [
+      280,
+      136,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "49500eba93118bdeb5e04a015f9944009e05ce94acbec3cab51da353c74ad21d",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_03",
+    "generated_bundle": "ms00_book_el_03.unity3d",
+    "generated_sha256": "0a96fce85b00a2ac2357d3c4fcac68166cf18e4346f3b2315767ac1306ef316e",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-f4f5b7544b52707ba4a489d132bb33c7"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  },
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_04",
+    "source_rect_xywh": [
+      280,
+      0,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "12fd78ab322883345b177bce80202725926dd2d706c7ea98defac30c7f01afd0",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_04",
+    "generated_bundle": "ms00_book_el_04.unity3d",
+    "generated_sha256": "b9ff1def7bf3efb2d4c9061678e83475f785015ca1a1bf290328962174ceb4a2",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-ba7a10262be0952e4b57499e91dfaf14"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  },
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_05",
+    "source_rect_xywh": [
+      241,
+      303,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "95e6648186baba1f621c4cf5691931faffe0ee983d03d0f5116d86582560adc5",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_05",
+    "generated_bundle": "ms00_book_el_05.unity3d",
+    "generated_sha256": "7ae73e45ca3eb190158cc7b3bbf3481505e8cbc688cbe1d0d931675a7bd52ad3",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-1695f3b69879344e5e1455e8aa41c75c"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  },
+  {
+    "policy": "inferred-gacha-book-billboard-v2",
+    "inferred": true,
+    "source_apk": "game.apk",
+    "source_apk_sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "source_member": "assets/bin/Data/sharedassets1.assets",
+    "source_member_sha256": "7f7418d4b276136ce878a5d717a13f8da7ada75c4ddef5c8135ba1210a58e267",
+    "source_atlas_path_id": 47,
+    "source_texture_path_id": 15,
+    "source_sprite": "book_06",
+    "source_rect_xywh": [
+      140,
+      303,
+      101,
+      136
+    ],
+    "source_pixels_sha256": "ac5ddb48044a57734f00c2a3c3763af9400e20e34c4404745cb1635441324c1b",
+    "serialization_template": "151-160.unity3d",
+    "serialization_template_sha256": "8ee34859e01f71985f023f255933c838ff30da80848cf0efd0cdc9bda6b5dac8",
+    "prefab": "ast_ms00_book_el_06",
+    "generated_bundle": "ms00_book_el_06.unity3d",
+    "generated_sha256": "fb499024168faa7f90ca38aa5e1ee919f717f99739ef22c7987b6fd0d478af4d",
+    "original_internal_files": [
+      "CustomAssetBundle-cbf7d57719d31ea4c87c3cda330ac5cd"
+    ],
+    "generated_internal_files": [
+      "CustomAssetBundle-7403b458c855fb6e8663c4f8db0dddcc"
+    ],
+    "validation": {
+      "objects": 11,
+      "external_references": 0,
+      "vertex_count": 4,
+      "triangles": 2,
+      "has_camera": false,
+      "has_particles": false,
+      "has_ui_scripts": false
+    },
+    "limitations": [
+      "Original gacha artwork; inferred flat quad and scale, not recovered original map model.",
+      "No live Unity client validation; visual scale, orientation and animation require device check."
+    ]
+  }
+]

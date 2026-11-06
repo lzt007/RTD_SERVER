@@ -1,0 +1,151 @@
+{
+  "org_wait_swd_01": {
+    "required": [
+      "",
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+    ],
+    "missing_from_move": [],
+    "missing_from_root": [
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+    ]
+  },
+  "el_boss_tob": {
+    "required": [
+      ""
+    ],
+    "missing_from_move": [],
+    "missing_from_root": []
+  },
+  "ms03_org_run_01": {
+    "required": [
+      "",
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_anckle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_anckle"
+    ],
+    "missing_from_move": [
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_anckle",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_anckle"
+    ],
+    "missing_from_root": [
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_anckle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_anckle"
+    ]
+  },
+  "org_atk_swd_01": {
+    "required": [
+      "",
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+    ],
+    "missing_from_move": [],
+    "missing_from_root": [
+      "mn_c_main",
+      "mn_c_main/mn_c_waist",
+      "mn_c_main/mn_c_waist/mn_c_chest",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_c_head",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_l_shoulder/mn_l_elbow/mn_l_wrist/mn_l_weapon",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist",
+      "mn_c_main/mn_c_waist/mn_c_chest/mn_r_shoulder/mn_r_elbow/mn_r_wrist/mn_r_weapon",
+      "mn_c_main/mn_l_hip",
+      "mn_c_main/mn_l_hip/mn_l_knee",
+      "mn_c_main/mn_l_hip/mn_l_knee/mn_l_ankle",
+      "mn_c_main/mn_r_hip",
+      "mn_c_main/mn_r_hip/mn_r_knee",
+      "mn_c_main/mn_r_hip/mn_r_knee/mn_r_ankle"
+    ]
+  },
+  "el_boss_tob_6": {
+    "required": [
+      ""
+    ],
+    "missing_from_move": [],
+    "missing_from_root": []
+  }
+}

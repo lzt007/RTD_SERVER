@@ -1,0 +1,188 @@
+[
+  {
+    "apk": "RTD_CLIENT/inputs/original/game.apk",
+    "sha256": "1e95f5a91c6d3ead09c7f5462ace6238deda87392621f07758c5dc7439d784ec",
+    "entries": 2865,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/31adf56cc15e7604ca8d48fddcb9fd3a",
+        "name": "ms01_sla_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/339ed0ade0d76694f872b2407d89880a",
+        "name": "ms01_wolf_wait_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/9c9c7a4553394714794d5e8123862c8f",
+        "name": "ms01_sla_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a77d8255e59f108409a1a8a93cd3b95a",
+        "name": "ms01_sla_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/adc20dd3fea2f8c489d58c7efed8eb08",
+        "name": "ms01_slawing_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/ba7e5e66d1262374da9e65d834d6b256",
+        "name": "ms01_wolf_atk_01",
+        "type": "GameObject",
+        "path_id": 19
+      },
+      {
+        "entry": "assets/bin/Data/ce9e4fa0754eeff4ba1813ea0eb6114c",
+        "name": "ms01_sla_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/cfca7759a83b3c845b0eecb64ff9b403",
+        "name": "ms01_sla_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/da1cc5d8973ef9b429a3c3de4595a9f1",
+        "name": "ms01_sla_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ebb09e1511b407841b238775837cd438",
+        "name": "ms01_slawing_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/f5d437c126c91ec4091f6a2b3007637a",
+        "name": "ms01_sla_lv1",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/fbabf6e2a2084f049acb48a677ef9c2f",
+        "name": "ms01_sla_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      }
+    ],
+    "containers": [],
+    "errors": []
+  },
+  {
+    "apk": "resources/ロードラ_7.0.1.0.apk",
+    "sha256": "c3bcb5a6f6ecc1f27a9b661882e8bfc7fd3b94367aa9222634395add101b57e0",
+    "entries": 2210,
+    "objects": [
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/09fe8f7a7301a0a43872be7902714b97",
+        "name": "ms01_sla_lv1",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/31adf56cc15e7604ca8d48fddcb9fd3a",
+        "name": "ms01_sla_lv1_fire",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/339ed0ade0d76694f872b2407d89880a",
+        "name": "ms01_wolf_wait_01",
+        "type": "GameObject",
+        "path_id": 14
+      },
+      {
+        "entry": "assets/bin/Data/9c9c7a4553394714794d5e8123862c8f",
+        "name": "ms01_sla_lv1",
+        "type": "Material",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/a77d8255e59f108409a1a8a93cd3b95a",
+        "name": "ms01_sla_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/adc20dd3fea2f8c489d58c7efed8eb08",
+        "name": "ms01_slawing_atk_01",
+        "type": "GameObject",
+        "path_id": 3
+      },
+      {
+        "entry": "assets/bin/Data/ba7e5e66d1262374da9e65d834d6b256",
+        "name": "ms01_wolf_atk_01",
+        "type": "GameObject",
+        "path_id": 19
+      },
+      {
+        "entry": "assets/bin/Data/ce9e4fa0754eeff4ba1813ea0eb6114c",
+        "name": "ms01_sla_atk_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/cfca7759a83b3c845b0eecb64ff9b403",
+        "name": "ms01_sla_lv1_dark",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/da1cc5d8973ef9b429a3c3de4595a9f1",
+        "name": "ms01_sla_lv1_water",
+        "type": "Texture2D",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/ebb09e1511b407841b238775837cd438",
+        "name": "ms01_slawing_wait_01",
+        "type": "GameObject",
+        "path_id": 2
+      },
+      {
+        "entry": "assets/bin/Data/f5d437c126c91ec4091f6a2b3007637a",
+        "name": "ms01_sla_lv1",
+        "type": "Mesh",
+        "path_id": 1
+      },
+      {
+        "entry": "assets/bin/Data/fbabf6e2a2084f049acb48a677ef9c2f",
+        "name": "ms01_sla_lv1_holy",
+        "type": "Texture2D",
+        "path_id": 1
+      }
+    ],
+    "containers": [],
+    "errors": []
+  }
+]

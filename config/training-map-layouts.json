@@ -1,0 +1,376 @@
+{
+  "policy": "observed-strategy-image-symbols-v1",
+  "source_url": "https://livedoor.blogimg.jp/iphonegamer/imgs/f/7/f7da541c.jpg",
+  "source_sha256": "0fda221eddf81c23a46dca3f0e1ec8a2a8426b7791e537332bc104aa37a3192f",
+  "source_date": "2013/11/19ver",
+  "difficulty": "upper",
+  "confidence": "visually transcribed symbols; not original client map bytes",
+  "axes": {
+    "remaining_steps": [
+      23,
+      22,
+      21,
+      20,
+      19,
+      18,
+      17,
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "lane_offsets": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "start": [
+      23,
+      0
+    ]
+  },
+  "original_master_distance": 26,
+  "distance_mapping_status": "unresolved: original distance 26 vs image start remaining 23; do not alter original distance",
+  "boss_position": null,
+  "boss_position_status": "not drawn in source grid",
+  "cells": [
+    {
+      "remaining_steps": 20,
+      "lane_offset": 4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 15,
+      "lane_offset": 4,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 9,
+      "lane_offset": 4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 7,
+      "lane_offset": 4,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 5,
+      "lane_offset": 4,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 2,
+      "lane_offset": 4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 18,
+      "lane_offset": 3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 16,
+      "lane_offset": 3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 14,
+      "lane_offset": 3,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 11,
+      "lane_offset": 3,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 9,
+      "lane_offset": 3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 4,
+      "lane_offset": 3,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 23,
+      "lane_offset": 2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 21,
+      "lane_offset": 2,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 19,
+      "lane_offset": 2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 17,
+      "lane_offset": 2,
+      "symbol": "silver"
+    },
+    {
+      "remaining_steps": 13,
+      "lane_offset": 2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 10,
+      "lane_offset": 2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 8,
+      "lane_offset": 2,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 5,
+      "lane_offset": 2,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 20,
+      "lane_offset": 1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 16,
+      "lane_offset": 1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 14,
+      "lane_offset": 1,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 12,
+      "lane_offset": 1,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 7,
+      "lane_offset": 1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 5,
+      "lane_offset": 1,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 23,
+      "lane_offset": 0,
+      "symbol": "start"
+    },
+    {
+      "remaining_steps": 21,
+      "lane_offset": 0,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 19,
+      "lane_offset": 0,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 17,
+      "lane_offset": 0,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 15,
+      "lane_offset": 0,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 11,
+      "lane_offset": 0,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 8,
+      "lane_offset": 0,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 6,
+      "lane_offset": 0,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 4,
+      "lane_offset": 0,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 18,
+      "lane_offset": -1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 16,
+      "lane_offset": -1,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 12,
+      "lane_offset": -1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 3,
+      "lane_offset": -1,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 21,
+      "lane_offset": -2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 17,
+      "lane_offset": -2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 15,
+      "lane_offset": -2,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 10,
+      "lane_offset": -2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 6,
+      "lane_offset": -2,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 4,
+      "lane_offset": -2,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 3,
+      "lane_offset": -2,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 22,
+      "lane_offset": -3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 20,
+      "lane_offset": -3,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 18,
+      "lane_offset": -3,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 14,
+      "lane_offset": -3,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 12,
+      "lane_offset": -3,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 11,
+      "lane_offset": -3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 9,
+      "lane_offset": -3,
+      "symbol": "silver"
+    },
+    {
+      "remaining_steps": 4,
+      "lane_offset": -3,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 2,
+      "lane_offset": -3,
+      "symbol": "wolf"
+    },
+    {
+      "remaining_steps": 19,
+      "lane_offset": -4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 15,
+      "lane_offset": -4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 9,
+      "lane_offset": -4,
+      "symbol": "box"
+    },
+    {
+      "remaining_steps": 7,
+      "lane_offset": -4,
+      "symbol": "bear"
+    },
+    {
+      "remaining_steps": 6,
+      "lane_offset": -4,
+      "symbol": "slime"
+    },
+    {
+      "remaining_steps": 1,
+      "lane_offset": -4,
+      "symbol": "bear"
+    }
+  ],
+  "symbol_semantics": {
+    "bear": "bear enemy appearance; original slot mapping requires master lookup",
+    "wolf": "wolf enemy appearance; original slot mapping requires master lookup",
+    "slime": "ordinary slime appearance; original slot mapping requires master lookup",
+    "silver": "silver enemy appearance; original slot mapping requires master lookup",
+    "box": "box marker; contents unknown",
+    "start": "S"
+  },
+  "blank_cells": "visually blank grid cells, contents absent in strategy image; not evidence of original map encoding",
+  "lower_difficulties": {
+    "beginner": "no map found; second fire image is event announcement",
+    "intermediate": "no map found; second fire image is event announcement"
+  },
+  "attribute_reuse": "Author explicitly says maps are same across attributes; light page reuses dark upper image"
+}

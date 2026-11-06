@@ -4,6 +4,25 @@ from rtd.masters.catalog import load_catalog
 
 
 class BatchReconstructionTest(unittest.TestCase):
+    def test_inferred_encounters_spread_across_lanes_and_depth(self):
+        from rtd.masters.event_reconstruction import build_candidate
+        masters, levels = load_catalog()
+        candidate = build_candidate(masters, levels)
+        for level in candidate['levels']:
+            if level['height'] < 30:
+                continue
+            with self.subTest(quest=level['level_data_id']):
+                width = level['width']
+                points = [(i % width, i // width) for i, cell in
+                          enumerate(bytes.fromhex(level['map_data'])) if 1 <= cell & 31 <= 16]
+                lanes = {x for x, _ in points}
+                self.assertGreaterEqual(len(lanes), 5)
+                self.assertLess(min(lanes), level['start_x'])
+                self.assertGreater(max(lanes), level['start_x'])
+                # Lateral encounters must reach the second half, not cluster at entry.
+                self.assertTrue(any(x != level['start_x'] and y > level['height'] // 2
+                                    for x, y in points))
+
     def test_opt_in_preserves_working_content_and_does_not_open_new_events(self):
         import os
         import tempfile
@@ -117,6 +136,7 @@ class BatchBattleTest(unittest.TestCase):
             if id not in maps:continue
             q=quests[id];table=tables[q['enemy_table_id']];level=maps[id]
             path=provenance['route'];previous=(4,4);encounters=[];soul=q['soul']
+            self.assertEqual(len(path), len({tuple(point) for point in path}))
             cells=bytes.fromhex(level['map_data'])
             for point in path:
                 self.assertEqual(abs(point[0]-previous[0])+abs(point[1]-previous[1]),1)

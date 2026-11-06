@@ -3,6 +3,8 @@ import importlib.util
 from pathlib import Path
 import tempfile
 import unittest
+import sys
+from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
 
 @unittest.skipUnless(importlib.util.find_spec('UnityPy'),'Offline UnityPy tool required')
@@ -11,7 +13,8 @@ class ConversionTests(unittest.TestCase):
         import UnityPy
         spec=importlib.util.spec_from_file_location('convert', ROOT/'scripts/prepare_monster_recovery.py')
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-        with tempfile.TemporaryDirectory() as tmp:
+        # Match the standalone converter's sibling-module import environment.
+        with tempfile.TemporaryDirectory() as tmp, patch.object(sys, 'path', [str(ROOT/'scripts'), *sys.path]):
             path=Path(tmp)/'ms01_wolf_lv1.unity3d'
             report=module.convert_model(module.WOLF_SOURCE,path,'ms01_wolf_lv1',
                                         {'ms01_wolf_lv1_fire':module.WOLF_SOURCE})

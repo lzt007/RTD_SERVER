@@ -90,7 +90,7 @@ def order_layer(api,state,req,session,quest_id):
     if not transition and event and not is_open(event[0]):raise ProtocolError(8197,'Local event is closed')
     quest=next(q for q in api.masters[30]['data_list'] if q['id']==quest_id)
     table=next(t for t in api.masters[21]['data_list'] if t['id']==quest['enemy_table_id'])
-    enemies=generate_enemies(table,level,{d['id']:d for d in api.masters[22]['data_list']},
+    enemies=generate_enemies(table,level,{d['id']:d for d in api.masters[22]['data_list']},event_id=quest.get('sp_event_id',0),
         drop_attempts=2 if bonus['type']==7 and bonus['num']>0 else 1,
         drop_overrides={r['drop_data_id']:r for r in event[1]['drops']} if event else None,
         enemy_masters={e['id']:e for e in api.masters[20]['data_list']})

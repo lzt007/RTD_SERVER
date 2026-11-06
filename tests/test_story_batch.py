@@ -67,7 +67,7 @@ class StoryBatchTest(unittest.TestCase):
             api=API(self.path)
             self.assertTrue(all(available(api,q) for q in BATCH))
 
-    def test_formal_story_orders_and_events_work_while_unverified_content_stays_blocked(self):
+    def test_formal_story_orders_and_events_preserve_original_schedule_gate(self):
         with patch.dict(os.environ,{'RTD_CONTENT_EXPERIMENTAL':'0'}):self.api=API(self.path)
         self.assertEqual(self.api.operations.read()['events'],[])
         for quest in BATCH:
@@ -79,7 +79,7 @@ class StoryBatchTest(unittest.TestCase):
         self.prepare(20000);before=self.state()
         with self.assertRaises(ProtocolError):self.order(20000)
         self.assertEqual(self.state(),before)
-        self.assertFalse(available(self.api,20101))
+        self.assertTrue(available(self.api,20101))
 
     def test_water_challenge_uses_order_snapshot_after_restart_and_unit_revision(self):
         self.prepare(11012);self.order(11012)
@@ -128,7 +128,7 @@ class StoryBatchTest(unittest.TestCase):
             self.assertTrue(catalog[qid]['event_configurable'])
             self.assertTrue(catalog[qid]['playable'])
         self.assertTrue(catalog[20000]['playable'])
-        self.assertFalse(catalog[20101]['playable'])
+        self.assertTrue(catalog[20101]['playable'])
         event=dict(name='Verified story fixture',enabled=False,starts_at=None,ends_at=None,
                    quests=[dict(quest_id=11010,drops=[])])
         api.operations.update('events','story-fixture',event)

@@ -25,27 +25,28 @@ class LiveConfigurationTest(unittest.TestCase):
         cfg=self.api.operations.read()
         self.assertEqual(cfg['revision'],1);self.assertEqual(cfg['events'],[])
         self.assertEqual([p['id'] for p in cfg['gachas']],[10000,20000,30000])
-        self.assertEqual([len(p['entries']) for p in cfg['gachas']],[550,510,550])
+        self.assertEqual([len(p['entries']) for p in cfg['gachas']],[176,162,176])
         self.assertTrue(all(p['enabled'] for p in cfg['gachas']))
         catalog=self.api.operations.catalog()
         configurable={q['quest_id'] for q in catalog['quests'] if q['event_configurable']}
         self.assertTrue({11000,11001,11002,20000,20100} <= configurable)
         self.assertTrue(next(q for q in catalog['quests'] if q['quest_id']==20000)['playable'])
-        self.assertFalse(next(q for q in catalog['quests'] if q['quest_id']==20101)['playable'])
+        self.assertTrue(next(q for q in catalog['quests'] if q['quest_id']==20101)['playable'])
         self.assertTrue(any(q['division']==20000 and not q['event_configurable'] for q in catalog['quests']))
         self.assertIn(30140,[d['drop_data_id'] for d in catalog['event_quest_drops']['11000']])
         with self.api.store.connect() as db:
-            db.executescript('DROP TABLE runtime_config; PRAGMA user_version=1;')
+            db.executescript('DROP TABLE runtime_config; DROP TABLE admin_reward_batches; '
+                             'DELETE FROM schema_history WHERE version>1; PRAGMA user_version=1;')
         self.api=API(self.path)
         self.assertEqual(self.api.operations.read(),cfg)
         with self.api.store.connect() as db:self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0],3)
 
     def test_updates_restart_other_instance_revision_and_backup(self):
-        other=API(self.path);p=copy.deepcopy(self.api.operations.read()['gachas'][0])
+        other=API(self.path);before=self.api.operations.read();p=copy.deepcopy(before['gachas'][0])
         p.update(enabled=False,entries=[dict(unit_id=10021,level=2,weight=7)])
         cfg=self.api.operations.update('gachas','10000',p)
         self.assertEqual(cfg['revision'],2);self.assertEqual(other.operations.read(),cfg)
-        self.assertEqual(cfg['gachas'][2]['entries'][0]['unit_id'],15000)
+        self.assertEqual(cfg['gachas'][2],before['gachas'][2])
         self.api.operations.update('events','local-11000',event())
         expected=other.operations.read();self.assertEqual(expected['revision'],3)
         self.assertEqual(API(self.path).operations.read(),expected)

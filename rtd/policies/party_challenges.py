@@ -1,15 +1,17 @@
-"""Original party challenges use all four accepted original unit masters."""
+"""Original party challenges use every accepted original party member."""
 from ..common import ProtocolError
 from .event_content import single_quests
 
 
 def _party_masters(api,state):
+    quest=next(q for q in api.masters[30]['data_list'] if q['id']==state['battle']['quest_id'])
+    size=5 if quest['pt_num']==6 else 3
     ids=state.get('battle_party_unit_ids')
     helper=state.get('battle_helper',{}).get('unit_id')
     # Legacy/multilayer runs without this single-floor snapshot are not evidence
     # of an attribute challenge. In particular, never fall back to evolved units.
     if (state['battle']['quest_id'] not in single_quests(api)
-            or not isinstance(ids,list) or len(ids)!=3
+            or not isinstance(ids,list) or not 3<=len(ids)<=size
             or any(type(i) is not int or i<=0 for i in ids)
             or type(helper) is not int or helper<=0):
         raise ProtocolError(8197,'Party challenge requires the original party snapshot')
