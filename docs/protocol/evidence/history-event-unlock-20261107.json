@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "event": "history-event-unlock-20261107",
+  "timezone": "Asia/Shanghai",
+  "source_baseline": {
+    "server": "346d856",
+    "client": "c6150b3",
+    "existing_point_fix_commit": "2fd7d0b"
+  },
+  "root_cause": "The deployed generator and entry callers had not applied the existing event-point recovery logic, so missing target point quantities were returned as zero.",
+  "runtime_config_revision": 40,
+  "generation_comparison": {
+    "kind": "real-masters-and-runtime-rules-with-fixed-random-seed",
+    "before_evidence_limit": "Original probe output path was reused; pre-deployment generation values are a labelled transcription of tool output, corroborated by captured deployed source.",
+    "quests": [
+      {"quest_id": 20710, "threshold": 0, "present_targets": 14, "before_each": 0, "after_each": 1, "other_each": 0},
+      {"quest_id": 20711, "threshold": 5, "present_targets": 16, "before_each": 0, "after_each": 1, "other_each": 0},
+      {"quest_id": 20712, "threshold": 50, "present_targets": 14, "before_each": 0, "after_each": 1, "other_each": 0}
+    ]
+  },
+  "android": {
+    "environment": "existing Android 9 ARM development emulator",
+    "gameplay_assembly_sha256": "c2da3b5f4d9f2d04e4987442a9cd384c8dbb23fd216fb514b58c1dcaedc6add1",
+    "gameplay_assembly_changed": false,
+    "only_changed_existing_apk_entry": "assets/bin/Data/Managed/RTDFlow.dll",
+    "added_apk_entry": "assets/bin/Data/Managed/RTDPointProbe.dll",
+    "actual_enemy_count": 27,
+    "actual_target_count": 14,
+    "actual_offered_points": 14,
+    "actual_earned_points": 7,
+    "normal_gameplay_inputs_only": true
+  },
+  "settlement": {
+    "at_local": "2026-11-07T02:36:16.643497+08:00",
+    "operation": "clear_quest2",
+    "quest_id": 20710,
+    "reported_points": 7,
+    "response_code": 4096,
+    "stored_event_id": 100001,
+    "stored_points": 7,
+    "quest_20710_cleared": true,
+    "latest_run_status": "cleared",
+    "active_battle_remaining": false,
+    "frozen_points_remaining": false
+  },
+  "relogin": {
+    "at_local": "2026-11-07T02:37:39.253542+08:00",
+    "new_client_process": true,
+    "response_code": 4096,
+    "observed_balance": 7,
+    "quest_20711_unlocked": true,
+    "quest_20712_unlocked": false
+  },
+  "regression": {
+    "related_tests_passed": 30,
+    "other_quest_generations_unchanged": 166,
+    "missing_or_unsupported_configurations_skipped": 247,
+    "protocol_test_only_bypass": "local reconstructed binary resource readiness audit",
+    "fifty_point_boundary": "49/50 verified in isolated protocol tests; not farmed on emulator"
+  },
+  "cleanup": {
+    "original_test_apk_restored_with_data_retained": true,
+    "telemetry_capture_stopped": true,
+    "emulator_closed": true,
+    "last_remote_api_health": {"http_status": 200, "status": "ok", "protocol": "RTD-2.4.0"}
+  },
+  "local_evidence_directory": "logs/20710-unlock-debug/",
+  "local_evidence_files": [
+    "deployment-result.json",
+    "production-point-baseline.json",
+    "production-points-before-transcription.json",
+    "points-live.jsonl",
+    "test-account-evidence.json",
+    "unaffected-generation-check.json"
+  ],
+  "exclusions": "No deployment endpoints, credentials, account identifiers, sessions, database snapshots, APKs, signing material, or screenshots are included in this public summary. This does not establish all-event or all-model Android acceptance."
+}
