@@ -18,7 +18,7 @@ import subprocess
 import sys
 import time
 
-from android_event_unlock_replay import observations, summary
+from android_event_unlock_replay import observations, summary, log_snapshot, window_frame, window_point
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -107,6 +107,21 @@ def longest_chains(panels):
     return {kind: [panels[i]['point'] for i in path] for kind, path in best.items()}
 
 
+def all_panel_chain(panels):
+    if len(panels) != 8:
+        raise RuntimeError('Expected eight observed battle panels')
+    rows = {}
+    for panel in panels:
+        point = panel['point']
+        rows.setdefault(round(point[1]), []).append(point)
+    if len(rows) != 2 or any(len(row) != 4 for row in rows.values()):
+        raise RuntimeError('Expected a stable two by four panel grid')
+    points = []
+    for index, y in enumerate(sorted(rows)):
+        points.extend(sorted(rows[y], key=lambda p:p[0], reverse=bool(index % 2)))
+    return points
+
+
 def battle_choice(state):
     field = state['fieldState']
     panels = state.get('panelDetails', [])
@@ -131,6 +146,10 @@ def battle_choice(state):
         damage, kind, chain = max(attacks, key=lambda row: (row[0], len(row[2])))
     elif 4 in chains:
         return chains[4], dict(kind='battle-heal', panel_class=4, chain_length=len(chains[4]))
+    elif chains and all(kind in (0, 1, 2, 3, 5) for kind in chains):
+        kind, chain = max(chains.items(), key=lambda item: len(item[1]))
+        return chain, dict(kind='battle-cycle', panel_class=kind, chain_length=len(chain),
+                           estimated_damage=0, enemy_life=enemy_life)
     else:
         raise RuntimeError('No damaging or healing observed chain')
     return chain, dict(kind='battle-attack', panel_class=kind, chain_length=len(chain),
@@ -161,7 +180,7 @@ class CureController:
                     if len(buttons) != 1:
                         return dict(kind='wait')
                     pending['phase'] = 'confirmed'
-                    pending['deadline'] = now + 10
+                    pending['deadline'] = now + 60
                     return dict(kind='cure-confirm', point=buttons[0]['point'], skill_id=11000, cost=2)
                 return dict(kind='wait')
             if pending['phase'] == 'confirmed' and field.get('partyLife', 0) > pending['life_before']:
@@ -181,7 +200,7 @@ class CureController:
         if not skills:
             return None
         skill = skills[0]
-        self.pending = dict(phase='opening', party_index=skill['partyIndex'], life_before=life, deadline=now + 10)
+        self.pending = dict(phase='opening', party_index=skill['partyIndex'], life_before=life, deadline=now + 60)
         return dict(kind='cure-open', point=skill['point'], skill_id=11000, party_index=skill['partyIndex'])
 
 
@@ -204,29 +223,37 @@ def main():
     parser.add_argument('--adb', default='adb')
     parser.add_argument('--serial', required=True)
     parser.add_argument('--quest', type=int, choices=(20710, 20711, 20712), default=20710)
+    parser.add_argument('--screenshot-every', type=int, default=1, help='Screenshot every N inputs; 0 disables images, all input states still recorded')
+    parser.add_argument('--battle-strategy', choices=('estimated', 'all-panels'), default='estimated')
+    parser.add_argument('--input-mode', choices=('dex', 'native'), default='dex')
     parser.add_argument('--input-dex', default='/data/local/tmp/rtd-input.dex')
     parser.add_argument('--output', type=Path, default=ROOT / 'logs/android-event-unlock-play')
     parser.add_argument('--timeout', type=float, default=300)
     parser.add_argument('--use-cure', action='store_true', help='Use original Cure I through observed UI only')
     parser.add_argument('--minimum-points', type=int, default=0, help='After this observed run-point target, move toward boss (0 pursues all targets)')
     args = parser.parse_args()
+    if args.screenshot_every < 0:
+        parser.error('--screenshot-every must be nonnegative')
     if args.minimum_points < 0:
         parser.error('--minimum-points must be nonnegative')
     args.output.mkdir(parents=True, exist_ok=True)
     adb = [args.adb, '-s', args.serial]
     def command(*parts):
-        return subprocess.check_output(adb + list(map(str, parts)), timeout=20)
+        return subprocess.check_output(adb + list(map(str, parts)), timeout=180)
     pid = command('shell', 'pidof', 'jp.co.acquire.RTD').decode().strip()
     if not pid.isdecimal():
         raise RuntimeError('Expected one running game process')
     # Check the requested Android-side injector before any play input.
     if not args.input_dex.startswith('/data/local/tmp/') or any(c in args.input_dex for c in " ;'\"$`\\\n\r"):
         raise RuntimeError('Input dex must be a simple /data/local/tmp/ path')
-    command('shell', 'test', '-f', args.input_dex)
+    if args.input_mode == 'dex':
+        command('shell', 'test', '-f', args.input_dex)
     level, targets, boss_y = map_for(args.quest)
     visited, attempts, inferred_route = set(), Counter(), []
     last_cell = None
     last_action_key = None
+    frame = window_frame(command)
+    viewport = (frame[0] + frame[2], frame[1] + frame[3])
     last_action_at = 0
     previous_progress = None
     progress_at = time.monotonic()
@@ -241,22 +268,31 @@ def main():
         with trace.open('a', encoding='utf-8') as out:
             out.write(json.dumps(value, ensure_ascii=True) + '\n')
 
+    input_index = 0
+    def capture(stamp):
+        nonlocal input_index
+        input_index += 1
+        if not args.screenshot_every or (input_index - 1) % args.screenshot_every:
+            return dict(screenshot_captured=False)
+        screenshot = command('exec-out', 'screencap', '-p')
+        (args.output / (stamp + '.png')).write_bytes(screenshot)
+        return dict(screenshot_captured=True, screenshot_sha256=hashlib.sha256(screenshot).hexdigest())
+
     def cure_tap(action, compact):
-        point = action['point']
+        point = window_point(action['point'], frame, viewport)
         if len(point) != 2 or not all(isinstance(v, (int, float)) and math.isfinite(v) and v >= 0 for v in point):
             raise RuntimeError('Invalid observed Cure I button coordinates')
         stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-        screenshot = command('exec-out', 'screencap', '-p')
-        (args.output / (stamp + '.png')).write_bytes(screenshot)
+        evidence = capture(stamp)
         record(dict(event='input', at=stamp, selector=action, coords=[point], state=compact,
-                    screenshot_sha256=hashlib.sha256(screenshot).hexdigest()))
+                    **evidence))
         print(json.dumps(dict(event='input', selector=action, coords=[point])), flush=True)
         command('shell', 'input', 'tap', *map(round, point))
 
     while time.monotonic() - started < args.timeout:
         if command('shell', 'pidof', 'jp.co.acquire.RTD').decode().strip() != pid:
             raise RuntimeError('Game process changed or exited; no further input')
-        log = command('logcat', '-d', '--pid=' + pid, '-t', '3500', '-v', 'raw').decode('utf-8', errors='replace')
+        log = log_snapshot(command, pid)
         for line in log.splitlines():
             if 'RTD_POINT_PROBE ' not in line:
                 continue
@@ -326,7 +362,11 @@ def main():
             active_targets = set() if args.minimum_points > 0 and (last_point or {}).get('run_points', 0) >= args.minimum_points else targets
             points, selector = field_choice(state, level, active_targets, boss_y, visited, attempts)
         elif mode == 'GameStateBattle':
-            points, selector = battle_choice(state)
+            if args.battle_strategy == 'all-panels':
+                points = all_panel_chain(state.get('panelDetails', []))
+                selector = dict(kind='battle-all-panels', chain_length=8)
+            else:
+                points, selector = battle_choice(state)
             if points is None:
                 time.sleep(.5)
                 continue
@@ -338,16 +378,32 @@ def main():
         if action_key == last_action_key or time.monotonic() - last_action_at < 1:
             time.sleep(.5)
             continue
+        try:
+            points = [window_point(p, frame, viewport) for p in points]
+        except ValueError:
+            # CanSelect may become true before panel arrival animation ends.
+            # Never inject an off-window observation; wait for visible panels.
+            time.sleep(.5)
+            continue
         if any(len(p) != 2 or not all(isinstance(v, (int, float)) and math.isfinite(v) and v >= 0 for v in p) for p in points):
             raise RuntimeError('Invalid observed input coordinates')
         stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-        screenshot = command('exec-out', 'screencap', '-p')
-        (args.output / (stamp + '.png')).write_bytes(screenshot)
+        evidence = capture(stamp)
         record(dict(event='input', at=stamp, selector=selector, coords=points,
-                    state=compact, screenshot_sha256=hashlib.sha256(screenshot).hexdigest()))
+                    state=compact, **evidence))
         print(json.dumps(dict(event='input', selector=selector, coords=points)), flush=True)
         if len(points) == 1:
             command('shell', 'input', 'tap', *map(round, points[0]))
+        elif args.input_mode == 'native':
+            if len(points) == 2:
+                command('shell', 'input', 'swipe', *(round(v) for p in points for v in p), 400)
+            else:
+                # Stock Android shell input preserves one real finger gesture.
+                # Every move visits an observed adjacent panel; no game fields.
+                parts = ['input motionevent DOWN %d %d' % tuple(points[0])]
+                parts += ['input motionevent MOVE %d %d' % tuple(p) for p in points[1:]]
+                parts += ['input motionevent UP %d %d' % tuple(points[-1])]
+                command('shell', '; '.join(parts))
         else:
             command('shell', 'CLASSPATH=' + args.input_dex, 'app_process', '/system/bin', 'RTDInput',
                     *(round(v) for p in points for v in p))

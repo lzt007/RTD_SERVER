@@ -9,9 +9,57 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import math
+import struct
+import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
 import subprocess
 import time
+
+
+def input_point(point, viewport):
+    if len(point) != 2 or any(not isinstance(v, (int, float)) or not math.isfinite(v)
+                              or not 0 <= v < bound for v, bound in zip(point, viewport)):
+        raise ValueError('Observed point is outside the current screenshot')
+    rounded = [round(v) for v in point]
+    if any(v >= bound for v, bound in zip(rounded, viewport)):
+        raise ValueError('Rounded point is outside the current screenshot')
+    return rounded
+
+
+def reference_point(point, viewport):
+    return input_point([point[0] * viewport[0] / 1080, point[1] * viewport[1] / 1920], viewport)
+
+
+def window_point(point, frame, viewport):
+    # Edge-anchored menu transforms can equal the window width exactly.
+    # Use its last visible pixel; values beyond that still fail validation.
+    local = input_point([v - 1 if v == bound else v for v, bound in zip(point, frame[2:])], frame[2:])
+    return input_point([local[0] + frame[0], local[1] + frame[1]], viewport)
+
+
+def window_frame(command):
+    command('shell', 'uiautomator', 'dump', '/data/local/tmp/rtd-window.xml')
+    xml = command('shell', 'cat', '/data/local/tmp/rtd-window.xml')
+    roots = list(ET.fromstring(xml))
+    if not roots or roots[0].get('package') != 'jp.co.acquire.RTD':
+        raise RuntimeError('RTD must be the foreground app')
+    bounds = list(map(int, re.findall(r'\d+', roots[0].get('bounds', ''))))
+    if len(bounds) != 4 or bounds[2] <= bounds[0] or bounds[3] <= bounds[1]:
+        raise RuntimeError('Unknown RTD window bounds')
+    return (bounds[0], bounds[1], bounds[2] - bounds[0], bounds[3] - bounds[1])
+
+
+def log_snapshot(command, pid, count=3500):
+    if not pid.isdecimal():
+        raise RuntimeError('Expected numeric RTD PID')
+    # Drain into a local file first. Streaming directly over a slow tunnel can
+    # keep chasing new frames indefinitely and return stale observations.
+    return command('shell', 'logcat -d --pid=' + pid + ' -t ' + str(count) +
+                   ' -v raw -s Unity:I > /data/local/tmp/rtd-flow-snapshot.txt; '
+                   'tail -n 800 /data/local/tmp/rtd-flow-snapshot.txt; '
+                   'grep RTD_POINT_PROBE /data/local/tmp/rtd-flow-snapshot.txt | tail -n 1').decode('utf-8', errors='replace')
 
 
 def observations(text):
@@ -58,10 +106,12 @@ def main():
     parser.add_argument('--adb', default='adb')
     parser.add_argument('--serial', required=True)
     parser.add_argument('--output', type=Path, default=Path('logs/android-event-unlock'))
-    parser.add_argument('--action', choices=('inspect', 'close-notice', 'title-start', 'events', 'history', 'quest', 'helper', 'confirm', 'field-forward', 'gameover-open', 'decline-continue', 'cancel-cure', 'stage-clear', 'enter-history', 'button'), default='inspect')
+    parser.add_argument('--action', choices=('inspect', 'close-notice', 'title-start', 'events', 'history', 'quest', 'helper', 'confirm', 'field-forward', 'gameover-open', 'decline-continue', 'cancel-cure', 'stage-clear', 'enter-history', 'button', 'dialog-ok'), default='inspect')
     parser.add_argument('--stop-at-list', action='store_true', help='Stop entry flow at history quest list without spending stamina')
     parser.add_argument('--helper-index', type=int, default=0, help='Index among currently visible helpers')
     parser.add_argument('--quest', type=int, choices=(20710, 20711, 20712), default=20710)
+    parser.add_argument('--expect-text', help='Required substring for a known onboarding dialog')
+    parser.add_argument('--expect-dialog', type=int)
     parser.add_argument('--button', help='Exact observed action name; no arbitrary coordinates')
     parser.add_argument('--timeout', type=float, default=25)
     args = parser.parse_args()
@@ -69,14 +119,14 @@ def main():
     adb = [args.adb, '-s', args.serial]
 
     def command(*parts):
-        return subprocess.check_output(adb + list(map(str, parts)), timeout=20)
+        return subprocess.check_output(adb + list(map(str, parts)), timeout=180)
 
     pid = command('shell', 'pidof', 'jp.co.acquire.RTD').decode().strip()
     if not pid.isdecimal():
         raise RuntimeError('Expected one running game process')
 
     def state():
-        return observations(command('logcat', '-d', '--pid=' + pid, '-v', 'raw').decode('utf-8', errors='replace'))
+        return observations(log_snapshot(command, pid))
 
     if args.action == 'enter-history':
         import sys
@@ -111,14 +161,28 @@ def main():
         raise RuntimeError('Entry flow did not reach playable field; inspect trace')
 
     before = state()
+    screenshot = command('exec-out', 'screencap', '-p')
+    if screenshot[:8] != b'\x89PNG\r\n\x1a\n':
+        raise RuntimeError('Expected PNG screenshot')
+    viewport = struct.unpack('>II', screenshot[16:24])
+    frame = window_frame(command)
+    scale_y = frame[3] / 1920
     print(json.dumps(summary(before), ensure_ascii=True), flush=True)
     if args.action == 'inspect':
         return
-    if before.get('dialog', -1) not in (-1, None):
+    if args.action != 'dialog-ok' and before.get('dialog', -1) not in (-1, None):
         raise RuntimeError('Unexpected dialog; inspect and diagnose before continuing')
     point = None
     selector = dict(action=args.action)
-    if args.action in ('close-notice', 'title-start', 'events', 'button'):
+    if args.action == 'dialog-ok':
+        if not args.expect_text or args.expect_text not in before.get('text', '') or before.get('dialog') != args.expect_dialog:
+            raise RuntimeError('Known onboarding dialog does not match')
+        matches = [b for b in before.get('buttons', []) if b['action'] == 'ClickOK']
+        if len(matches) != 1:
+            raise RuntimeError('Expected one observed OK button')
+        point = matches[0]['point']
+        selector['text_sha256'] = hashlib.sha256(before['text'].encode()).hexdigest()
+    elif args.action in ('close-notice', 'title-start', 'events', 'button'):
         action = {'close-notice': 'ClickViewClose', 'title-start': 'PushButton', 'events': 'ChangeAreaKind'}.get(args.action, args.button)
         if args.action == 'close-notice' and not (before['scene'] == 'TitleMenu' and before['mode'] == 2001):
             raise RuntimeError('Notification page is not current')
@@ -137,11 +201,12 @@ def main():
         if len(matches) != 1:
             raise RuntimeError('History category is not present')
         row = matches[0]; selector['category'] = 1640
-        if row.get('point') and 450 <= row['point'][1] <= 1550:
+        if row.get('point') and 450 * scale_y <= row['point'][1] <= 1550 * scale_y:
             point = row['point']
         else:
             y = row['scrollPoint'][1]
-            swipe = [540, 1450, 540, 550, 350] if y > 1550 else [540, 550, 540, 1450, 350]
+            ends = ([540, 1450], [540, 550]) if y > 1550 * scale_y else ([540, 550], [540, 1450])
+            swipe = window_point(reference_point(ends[0], frame[2:]), frame, viewport) + window_point(reference_point(ends[1], frame[2:]), frame, viewport) + [350]
             command('shell', 'input', 'swipe', *swipe)
             print('Scrolled toward observed category 1640; inspect before next action', flush=True)
             record = dict(at=dt.datetime.now(dt.timezone.utc).isoformat(), selector=selector, before=summary(before), swipe=swipe)
@@ -155,7 +220,7 @@ def main():
     elif args.action == 'stage-clear':
         if before.get('gameState') != 'GameStateGameClear':
             raise RuntimeError('Original game-clear state is required')
-        point = [540, 888]; selector['source'] = 'GameStatus.Update clear-state input'
+        point = reference_point([540, 888], frame[2:]); selector['source'] = 'GameStatus.Update clear-state input'
     elif args.action == 'cancel-cure':
         dialog = (before.get('fieldState') or {}).get('skillDialog') or {}
         matches = [b for b in dialog.get('buttons', []) if b.get('action') == 'ExitDialog']
@@ -165,7 +230,7 @@ def main():
     elif args.action == 'gameover-open':
         if before.get('gameState') != 'GameStateGameOver' or before.get('continuePanelOpen'):
             raise RuntimeError('Game-over screen without continue dialog is required')
-        point = [540, 888]; selector['source'] = 'GameStatus.Update Input.GetMouseButton(0)'
+        point = reference_point([540, 888], frame[2:]); selector['source'] = 'GameStatus.Update Input.GetMouseButton(0)'
     elif args.action == 'decline-continue':
         matches = [b for b in before.get('continueButtons', []) if b.get('action') == 'ContinueNo']
         if before.get('gameState') != 'GameStateGameOver' or len(matches) != 1:
@@ -181,30 +246,29 @@ def main():
     elif args.action == 'confirm':
         if before.get('menu') != 'QUEST_CONFIRM' or before.get('selectedQuestId') != args.quest:
             raise RuntimeError('Requested quest confirmation is not current')
-        matches = [b for b in before.get('buttons', []) if b.get('point') and b['point'][1] > 1100]
+        matches = [b for b in before.get('buttons', []) if b.get('point') and b['point'][1] > 1100 * scale_y]
         if len(matches) != 1:
             raise RuntimeError('Expected exactly one visible departure button')
         point = matches[0]['point']; selector['quest'] = args.quest
     elif args.action == 'helper':
-        matches = [r for r in before.get('helperRows', []) if r.get('point') and 450 <= r['point'][1] <= 1600]
+        matches = [r for r in before.get('helperRows', []) if r.get('point') and 450 * scale_y <= r['point'][1] <= 1600 * scale_y]
         if not 0 <= args.helper_index < len(matches):
             raise RuntimeError('Requested visible helper selection is unavailable')
         point = matches[args.helper_index]['point']; selector['helper_index'] = args.helper_index
     if not point:
         raise RuntimeError('Selector has no visible point; stop instead of guessing')
     stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
-    screenshot = command('exec-out', 'screencap', '-p')
     (args.output / (stamp + '.png')).write_bytes(screenshot)
-    point = [max(1, min(1079, round(point[0]))), round(point[1])]
+    point = window_point(point, frame, viewport)
     command('shell', 'input', 'tap', *point)
     record = dict(at=stamp, selector=selector, before=summary(before), tap=point, screenshot_sha256=hashlib.sha256(screenshot).hexdigest())
     with (args.output / 'steps.jsonl').open('a', encoding='utf-8') as f: f.write(json.dumps(record) + '\n')
-    old_key = tuple(before.get(k) for k in ('scene', 'mode', 'menu', 'selectedQuestId', 'dialog', 'gameState', 'turn', 'continuePanelOpen', 'controlsUnlocked'))
+    old_key = tuple(before.get(k) for k in ('scene', 'mode', 'menu', 'selectedQuestId', 'dialog', 'gameState', 'turn', 'continuePanelOpen', 'controlsUnlocked', 'text'))
     until = time.monotonic() + args.timeout
     while time.monotonic() < until:
         time.sleep(0.5)
         after = state()
-        key = tuple(after.get(k) for k in ('scene', 'mode', 'menu', 'selectedQuestId', 'dialog', 'gameState', 'turn', 'continuePanelOpen', 'controlsUnlocked'))
+        key = tuple(after.get(k) for k in ('scene', 'mode', 'menu', 'selectedQuestId', 'dialog', 'gameState', 'turn', 'continuePanelOpen', 'controlsUnlocked', 'text'))
         if key != old_key:
             print(json.dumps(summary(after), ensure_ascii=True), flush=True)
             with (args.output / 'steps.jsonl').open('a', encoding='utf-8') as f: f.write(json.dumps(dict(at=stamp, verified_transition=summary(after))) + '\n')

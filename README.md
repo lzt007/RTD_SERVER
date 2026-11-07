@@ -150,4 +150,6 @@ python scripts/check_resources.py
 - [生产育成12关补充审计](docs/resource-audit/production-training-20261106/README.md)：22个下载包的HTTP、哈希、模型导出、贴图及敌人递归依赖核查通过；地图8个LevelBackground组件的自定义字段仍有解析限制，未做实机通关验收。
 - [最新资源审计入口](docs/resource-audit/README.md)：生产兼容清单、原图稿缺口、角色型加载链与旧报告范围分开说明。狼与银色史莱姆的模型显示已获确认；通关闪退未由资源审计证明修复。
 
+- [真实手机积分复核与回放](docs/protocol/history-event-unlock-phone-20261107.md)：按实际部署核查计分文件、15个开放积分关卡及手机窗口坐标；包含可复用的原生ADB操作与只读持久化核对脚本，验收范围以该报告为准。
+
 活动运营中的“已开放”、数据层的“可支持”和客户端的“已验收”是不同状态。生产revision 40仅是2026-11-06核查快照，后续以实际部署的运行配置为准。

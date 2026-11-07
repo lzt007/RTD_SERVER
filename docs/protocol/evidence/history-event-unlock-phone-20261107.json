@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-07",
+  "source_server": "856e37c",
+  "source_client": "4ecc010",
+  "existing_deployed_fix": "2fd7d0b",
+  "production_revision": 40,
+  "open_groups": 36,
+  "open_quests": 103,
+  "point_generation_quests": 15,
+  "point_generation_all_passed": true,
+  "android": {
+    "model": "M2102K1AC",
+    "version": "14",
+    "tutorial_completed_manually_by_user": true,
+    "input_method": "stock ADB touch input; final boss used two eight-panel snake gestures",
+    "gameplay_assembly_sha256": "c2da3b5f4d9f2d04e4987442a9cd384c8dbb23fd216fb514b58c1dcaedc6add1",
+    "gameplay_assembly_modified": false,
+    "original_helpers_verified": 59,
+    "before_balance": 0,
+    "before_unlocks": [
+      {
+        "quest_id": 20710,
+        "unlocked": true
+      },
+      {
+        "quest_id": 20711,
+        "unlocked": false
+      },
+      {
+        "quest_id": 20712,
+        "unlocked": false
+      }
+    ],
+    "entry_target_count": 14,
+    "entry_offered_points": 14,
+    "entry_enemy_groups": [
+      {
+        "enemy_id": 0,
+        "enemy_set_id": 41033,
+        "sp_event_point": 0,
+        "flag": true,
+        "count": 1
+      },
+      {
+        "enemy_id": 1,
+        "enemy_set_id": 41028,
+        "sp_event_point": 1,
+        "flag": true,
+        "count": 14
+      },
+      {
+        "enemy_id": 2,
+        "enemy_set_id": 10303,
+        "sp_event_point": 0,
+        "flag": true,
+        "count": 11
+      },
+      {
+        "enemy_id": 99,
+        "enemy_set_id": 31030,
+        "sp_event_point": 0,
+        "flag": true,
+        "count": 1
+      }
+    ],
+    "observed_run_point_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "game_clear": true,
+    "normal_gameplay_only": true
+  },
+  "settlement": {
+    "at": "2026-11-07T17:18:34.253470+00:00",
+    "quest_id": 20710,
+    "event_id": 100001,
+    "stored_points": 8,
+    "cleared": true,
+    "latest_run_status": "cleared",
+    "active_battle": false,
+    "frozen_points": false,
+    "receipt_operation": "clear_quest2",
+    "receipt_present": true,
+    "receipt_result_type": "list",
+    "player_database_modified": false,
+    "last_matching_http_clear": {
+      "at": "2026-11-07T17:16:39.264163+00:00",
+      "code": 4096,
+      "reported_points": 8
+    }
+  },
+  "relogin": {
+    "new_client_process": true,
+    "balance": 8,
+    "unlocks": [
+      {
+        "quest_id": 20710,
+        "unlocked": true
+      },
+      {
+        "quest_id": 20711,
+        "unlocked": true
+      },
+      {
+        "quest_id": 20712,
+        "unlocked": false
+      }
+    ]
+  },
+  "regression": {
+    "existing_point_tests_passed": 30,
+    "phone_replay_tests_passed": 9
+  },
+  "limitations": [
+    "Only history quest 20710 was cleared on this phone; 50-point boundary is isolated protocol evidence.",
+    "Point quantities and target recovery remain inferred, explicit operator/original values win.",
+    "Tower point event 100000 has no zero-point entry in the current explicit open schedule.",
+    "Raw screenshots, logs, device addresses and account identifiers are local ignored artifacts."
+  ],
+  "cleanup": {
+    "normal_apk_restored": true,
+    "installed_apk_sha256_verified": true,
+    "original_display_restored": true,
+    "telemetry_stopped": true,
+    "earned_progress_retained": true,
+    "actual_api_health": "200 ok"
+  }
+}
