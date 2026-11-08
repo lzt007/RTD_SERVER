@@ -76,3 +76,12 @@ class ResourcePublishTest(unittest.TestCase):
         self.publish()
         for entry in catalog.load_snapshot(self.output)['resources'].values():
             self.assertGreaterEqual(entry['cacheVersion'], 1000000000)
+
+    def test_export_contract_is_included_and_invalid_names_rejected(self):
+        catalog.publish_resources({'a.unity3d':self.a},{'a.unity3d':[]},self.output,
+                                  required_prefabs={'a.unity3d':['ast_probe']})
+        entry=catalog.resolve_snapshot(catalog.load_snapshot(self.output),['a.unity3d'])['resources'][0]
+        self.assertEqual(entry['requiredPrefabs'],['ast_probe'])
+        with self.assertRaises(ValueError):
+            catalog.publish_resources({'a.unity3d':self.a},{'a.unity3d':[]},self.output,
+                                      required_prefabs={'a.unity3d':['bad\nname']})

@@ -59,24 +59,28 @@ def load_snapshot(output):
     return snapshot
 
 
-def publish_resources(sources, dependencies, output):
+def publish_resources(sources, dependencies, output, *, required_prefabs=None):
     """Publish under a process lock; active.json is the release visibility point."""
     output = Path(output); output.mkdir(parents=True, exist_ok=True)
     with (output/'.publish.lock').open('a+b') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
-        return _publish_locked(sources, dependencies, output)
+        return _publish_locked(sources, dependencies, output, required_prefabs or {})
 
 
-def _publish_locked(sources, dependencies, output):
+def _publish_locked(sources, dependencies, output, required_prefabs):
     if not sources: raise ValueError('Empty release')
     if set(dependencies)-set(sources): raise ValueError('Unknown dependency owner')
+    if set(required_prefabs)-set(sources): raise ValueError('Unknown prefab contract owner')
     resources = {}
     for identifier in sorted(sources):
         _validate_id(identifier)
         deps = dependencies.get(identifier, [])
         if not isinstance(deps, list) or any(not isinstance(d, str) for d in deps):
             raise ValueError('Invalid dependencies')
-        resources[identifier] = {'id':identifier, 'dependencies': sorted(set(deps))}
+        prefabs=required_prefabs.get(identifier, [])
+        if (not isinstance(prefabs,list) or len(prefabs)>256 or any(not isinstance(name,str) or not 0<len(name)<=256 or any(ord(c)<32 or ord(c)==127 for c in name) for name in prefabs)):
+            raise ValueError('Invalid prefab export contract')
+        resources[identifier] = {'id':identifier, 'dependencies': sorted(set(deps)), 'requiredPrefabs':sorted(set(prefabs))}
     _closure(resources, list(resources))
     registry_path = output/'versions.json'
     registry = json.loads(registry_path.read_bytes()) if registry_path.exists() else {'next':1000000000,'versions':{}}

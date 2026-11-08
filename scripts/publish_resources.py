@@ -17,11 +17,12 @@ def main():
     parser.add_argument('--output',required=True,type=Path)
     args=parser.parse_args()
     resources=json.loads(args.manifest.read_text())['resources']
-    sources, dependencies={},{}
+    sources, dependencies, prefabs={},{},{}
     for identifier,entry in resources.items():
         sources[identifier]=args.manifest.parent/entry['source']
         dependencies[identifier]=entry['dependencies']
-    print(publish_resources(sources,dependencies,args.output))
+        prefabs[identifier]=entry.get('requiredPrefabs',[])
+    print(publish_resources(sources,dependencies,args.output,required_prefabs=prefabs))
 
 
 if __name__=='__main__': main()
