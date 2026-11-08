@@ -79,7 +79,7 @@ def _publish_locked(sources, dependencies, output):
         resources[identifier] = {'id':identifier, 'dependencies': sorted(set(deps))}
     _closure(resources, list(resources))
     registry_path = output/'versions.json'
-    registry = json.loads(registry_path.read_bytes()) if registry_path.exists() else {'next':1,'versions':{}}
+    registry = json.loads(registry_path.read_bytes()) if registry_path.exists() else {'next':1000000000,'versions':{}}
     for identifier, entry in resources.items():
         data = Path(sources[identifier]).read_bytes()
         if not data: raise ValueError('Empty resource: '+identifier)

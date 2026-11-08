@@ -9,3 +9,7 @@
 POST /resources/v1/resolve 输入 protocol=1、roots 资源标识数组，可附 operationId、knownSnapshot、本地版本映射；返回 snapshotId、closureDigest 和完整 resources 依赖闭包。GET 返回的 downloadPath 下载固定字节；旧下载路由仍保留兼容。内容哈希校验不能代替客户端可加载性与对象依赖校验。
 
 同步生产前必须备份数据库（SQLite backup API，含 WAL）、程序与配置、资源及版本目录，检查备份可读和 SQLite integrity_check，保存恢复步骤。用户已授权本次开发的生产同步，但没有授权推送 Git 远端；部署不得调用自动 git pull/push 脚本。
+
+新版缓存整数从 1000000000 开始分配，避免与旧客户端固定的小整数版本相撞；该范围不能手动重置。
+
+离线 rtd.resource_dependencies.inspect_sources 使用 UnityPy 读取每个包的 SerializedFile 外部引用，映射到发布资源形成递归图。未知引用及不同内容共用相同内部文件身份会阻止发布；游戏代码动态选择的包必须由客户端入口收集为 roots，不能靠 SerializedFile 扫描替代。完全相同内容的别名允许共享内部身份。此工具不加载到 HTTP 服务进程。

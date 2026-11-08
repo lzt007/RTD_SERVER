@@ -71,3 +71,8 @@ class ResourcePublishTest(unittest.TestCase):
         self.a.write_bytes(b'ok')
         for identifier in ['../x.unity3d','/x.unity3d','a//x.unity3d','a\\x.unity3d']:
             with self.assertRaises(ValueError):catalog.publish_resources({identifier:self.a},{},self.output)
+
+    def test_new_cache_versions_do_not_collide_with_legacy_versions(self):
+        self.publish()
+        for entry in catalog.load_snapshot(self.output)['resources'].values():
+            self.assertGreaterEqual(entry['cacheVersion'], 1000000000)
