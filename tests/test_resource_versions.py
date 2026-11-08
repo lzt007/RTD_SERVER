@@ -65,7 +65,18 @@ class ResourceVersionsTest(unittest.TestCase):
         self.assertEqual(failures,[])
 
     def test_limits_and_unpublished_catalog_do_not_fall_through_to_legacy(self):
-        self.assertEqual(self.request('POST','/resources/v1/resolve','x'*1048577)[0],413)
+        # The server rejects oversized bodies from headers, before reading bytes.
+        # Sending the entire body races that early close and can raise BrokenPipe
+        # in the HTTP client before it reads the valid 413 response.
+        connection=http.client.HTTPConnection('127.0.0.1',self.server.server_port,timeout=3)
+        try:
+            connection.putrequest('POST','/resources/v1/resolve')
+            connection.putheader('Content-Length','1048577')
+            connection.endheaders()
+            response=connection.getresponse()
+            self.assertEqual(response.status,413)
+            response.read()
+        finally:connection.close()
         for roots in [[],['a.unity3d']*4097]:
             self.assertEqual(self.request('POST','/resources/v1/resolve',json.dumps({'protocol':1,'roots':roots}))[0],400)
         (self.catalog/'active.json').unlink()

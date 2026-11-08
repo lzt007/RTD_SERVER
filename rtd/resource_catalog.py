@@ -3,9 +3,12 @@ import contextlib
 import hashlib
 import json
 import os
+import re
 from pathlib import Path, PurePosixPath
 import tempfile
 import fcntl
+
+_RESOURCE_ID_CHARS = re.compile(r'[A-Za-z0-9/_.-]+')
 
 
 def _encoded(value):
@@ -34,7 +37,7 @@ def _validate_id(identifier):
     if (not isinstance(identifier, str) or not identifier or len(identifier)>256
             or identifier.startswith('/') or '\\' in identifier
             or any(p in ('', '.', '..') for p in identifier.split('/'))
-            or any(not (c.isascii() and (c.isalnum() or c in '/_.-')) for c in identifier)
+            or _RESOURCE_ID_CHARS.fullmatch(identifier) is None
             or not identifier.endswith('.unity3d')):
         raise ValueError('Invalid resource id')
 

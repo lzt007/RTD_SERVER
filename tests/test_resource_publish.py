@@ -69,8 +69,14 @@ class ResourcePublishTest(unittest.TestCase):
         self.a.write_bytes(b'')
         with self.assertRaises(ValueError):self.publish()
         self.a.write_bytes(b'ok')
-        for identifier in ['../x.unity3d','/x.unity3d','a//x.unity3d','a\\x.unity3d']:
+        for identifier in ['../x.unity3d','/x.unity3d','a//x.unity3d','a\\x.unity3d',
+                           'a/./x.unity3d','a/../x.unity3d','é.unity3d',
+                           'a\n.unity3d','a .unity3d','a?.unity3d', 'a'*249+'.unity3d']:
             with self.assertRaises(ValueError):catalog.publish_resources({identifier:self.a},{},self.output)
+
+    def test_ascii_identifier_boundaries(self):
+        for identifier in ['.unity3d','Android/V1016/A_b-9.unity3d','a'*248+'.unity3d']:
+            catalog._validate_id(identifier)
 
     def test_new_cache_versions_do_not_collide_with_legacy_versions(self):
         self.publish()
