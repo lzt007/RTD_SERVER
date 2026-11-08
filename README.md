@@ -153,3 +153,9 @@ python scripts/check_resources.py
 - [真实手机积分复核与回放](docs/protocol/history-event-unlock-phone-20261107.md)：按实际部署核查计分文件、15个开放积分关卡及手机窗口坐标；包含可复用的原生ADB操作与只读持久化核对脚本，验收范围以该报告为准。
 
 活动运营中的“已开放”、数据层的“可支持”和客户端的“已验收”是不同状态。生产revision 40仅是2026-11-06核查快照，后续以实际部署的运行配置为准。
+
+## 不可变资源版本发布
+
+`python scripts/publish_resources.py manifest.json --output <版本目录>` 发布完整资源与显式依赖图，生成 SHA256、稳定缓存整数、不可变下载文件，并原子切换活动快照。`POST /resources/v1/resolve` 批量返回所需资源的完整闭包；客户端按固定 downloadPath 下载，发布期间不会混入另一批内容。替换源文件后必须重新执行发布，服务端不会在每次校验请求中扫描或哈希整个资源目录。
+
+旧下载路由保留兼容。发布、历史清单回滚、可选 requiredPrefabs 导出约束和备份要求见 [资源版本发布说明](docs/resource-version-publishing.md)。客户端事务和真实设备验收记录在客户端仓库，服务端接口通过不等于整项体验已经验收完成。
