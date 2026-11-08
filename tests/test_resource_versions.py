@@ -39,3 +39,34 @@ class ResourceVersionsTest(unittest.TestCase):
     def test_blob_traversal_rejected(self):
         for path in ['/resources/v1/blobs/../active.json','/resources/v1/blobs/'+'a'*64+'/%2e%2e']:
             self.assertEqual(self.request('GET',path)[0],404)
+    def test_complete_dependency_pair_during_concurrent_publication(self):
+        import hashlib
+        other=self.root/'b.unity3d';other.write_bytes(b'old')
+        graph={'a.unity3d':['b.unity3d'],'b.unity3d':[]}
+        sources={'a.unity3d':self.file,'b.unity3d':other}
+        publish_resources(sources,graph,self.catalog)
+        failures=[]
+        def writer():
+            try:
+                for i in range(20):
+                    value=('release-'+str(i)).encode();self.file.write_bytes(value);other.write_bytes(value)
+                    publish_resources(sources,graph,self.catalog)
+            except Exception as error:failures.append(error)
+        thread=threading.Thread(target=writer);thread.start()
+        try:
+            for _ in range(30):
+                status,body=self.resolve();self.assertEqual(status,200)
+                entries=json.loads(body)['resources'];self.assertEqual(len(entries),2)
+                self.assertEqual(entries[0]['sha256'],entries[1]['sha256'])
+                for entry in entries:
+                    status,data=self.request('GET',entry['downloadPath']);self.assertEqual(status,200)
+                    self.assertEqual(hashlib.sha256(data).hexdigest(),entry['sha256'])
+        finally:thread.join()
+        self.assertEqual(failures,[])
+
+    def test_limits_and_unpublished_catalog_do_not_fall_through_to_legacy(self):
+        self.assertEqual(self.request('POST','/resources/v1/resolve','x'*1048577)[0],413)
+        for roots in [[],['a.unity3d']*4097]:
+            self.assertEqual(self.request('POST','/resources/v1/resolve',json.dumps({'protocol':1,'roots':roots}))[0],400)
+        (self.catalog/'active.json').unlink()
+        self.assertEqual(self.resolve()[0],503)
