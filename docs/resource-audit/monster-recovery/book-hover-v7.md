@@ -15,3 +15,17 @@
 反馈未明确说明本次缓存刷新与实际命中包，不能据此断定缓存或某个动画组件是根因。后续先确认设备实际加载v7包，再检查根Animation是否启用、clip播放状态与时间推进、move局部Y是否变化，以及运行时子Animation／控制器是否覆盖同一Transform。上述仅为排查方向，尚未验证。书本大小、锚点、无崩溃状态与悬浮效果分别验收。
 
 本轮仅记录反馈，未改资源、客户端或生产服务。
+
+## 2026-11-09：召唤关卡定向排查
+
+用户再次确认“召唤”关卡书本静止。原始主表对应 quest 20710、enemy_table 14420，其中角色敌人 41028 的 chara_symbol=12，经原客户端 UnitEnemySymbolToBookColor 映射到颜色 3，地图加载 ms00_book_el_03，而不是其战斗角色模型。未修改关卡、角色或战斗配置。
+
+生产不可变资源目录中该包版本为 1000000146，大小 9037 字节，SHA256 为 `4dbddc1b53e09bb379be14fa7b82c1946cb7c05d37714a7b058f94e3bf50e183`。服务端仍发布 v7。此证据不能证明离线设备实际命中了该包。
+
+对原始 Assembly-CSharp.dll 做静态分析：EnemyManager.SetupEnemyComponent 在名为 move 的子节点添加 AnimationController；Enemy.SetEnemyParameter 对没有 BOOK_SYMBOL 渲染器的角色书本走角色动作分支，最终 CharacterAnimation(0) 播放待机动作。chara_kind=301 映射动作类别 6，MotionAssign.ActionAssign 第 6 行第 0 项为 10，对应 MotionData.motionFilename 中的 pc_wait_stk_01。
+
+从原 APK 成员 `assets/bin/Data/41544a50e5150db42afdc7bcbbf25c0a` 提取该 AnimationClip：空路径位置曲线在 0 与 1.2000000477 秒都为 `(0.0999999940, -0.5399999619, 0)`，因此子 Animation 的待机动作持续写入其自身 move 的局部位置。v7 根 Animation 的 el_wait 曲线也以 move 为目标。已确认两个动画具有重叠的位置绑定；究竟由哪一个覆盖、是否存在嵌套 Animation 绑定边界问题，仍须实机采样，不能将静态冲突直接当成已证实的唯一根因。
+
+另发现当前受版本控制的 reconstruct_gacha_book.py 仍生成 v4 结构，不能直接重跑它来修复 v7，否则会退回大小、锚点和动画的旧版本。后续修复须同步维护可复现构建与回归测试。
+
+本轮 ADB 设备列表为空，旧连接重连失败；已请求新的远程连接信息。下一步在实际书本实例上同时记录根／move Animation 的 enabled、播放状态、时间及 move.localPosition，再做单变量覆盖实验。验证后才能确定隔离悬浮绑定的修复方式，并检查外观、角色转换及释放。当前未发布候选修复，也未宣称悬浮恢复。
