@@ -1,0 +1,17 @@
+{
+  "status": "deployed",
+  "changed_resources": 6,
+  "total_resources": 375,
+  "http_verified": 12,
+  "configuration_unchanged": true,
+  "snapshot_id": "2208f6543d2c9052b34c3b479f487da4fbd3fd4b2dc67bbab39a8b06fe0ad841",
+  "backup": "backups/deployment/book-hover-v8-20261109T130528Z",
+  "versions": {
+    "ms00_book_el_01.unity3d": 1000000380,
+    "ms00_book_el_02.unity3d": 1000000381,
+    "ms00_book_el_03.unity3d": 1000000382,
+    "ms00_book_el_04.unity3d": 1000000383,
+    "ms00_book_el_05.unity3d": 1000000384,
+    "ms00_book_el_06.unity3d": 1000000385
+  }
+}
